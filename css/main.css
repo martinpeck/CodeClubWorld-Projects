@@ -60,7 +60,6 @@ body {
     padding: 20px;
     font-size: 16px;
     margin: 20px auto;
-    background: #FFFFFF;
     clear:both;
 }
 h1, h2 {
@@ -84,7 +83,7 @@ header {
     padding:10px;
 }
 header .level {
-    background:#007CC9;
+    background: #007CC9;
     float: left;
     font-size: 30px;
     height: 100px;
@@ -116,7 +115,6 @@ header .logo img {
 
 p code {
     border-radius: 4px 4px 4px 4px;
-    background: #CCCCCC;
     background:#B9E5FA;
     padding:2px 5px;
     -webkit-hyphens: none;
