@@ -38,15 +38,15 @@ These projects are for use outside the UK only. More information is available on
 <li>Switch to the <strong>costumes</strong> tab and click edit from the <strong>Paint Editor</strong>, change the center of the image to be at the tip of the pen. To do this, click <strong>Set costume center</strong> and drag the lines until they are at the tip.</li>
 <li>Make the pencil follow the mouse around the stage using the <strong>forever</strong> and <strong>go to</strong> mouse-pointer blocks.</li>
 </ol>
-<pre class="scratch"><code>when FLAG clicked
+<p><img src="4f8373ecd120b7efca3d48550a2bf4245e36c0b3.png" alt="when FLAG clicked
 forever
     go to mouse-pointer
-(end forever)</code></pre>
+(end forever)" /></p>
 <p><strong>Now we want to use this pen sprite as an actual pen.</strong> If you look under the pen section you’ll see all sorts of drawing related blocks. The ones we’re initially interested in are <strong>pen down</strong> and <strong>pen up</strong></p>
 <ol start="6" type="1">
 <li>We want to use the mouse button to control the pen – whenever the mouse button is down the pen should be down, and when it is up the pen should be up. We can do this using an if... else and mouse down? blocks.</li>
 </ol>
-<pre class="scratch"><code>when FLAG clicked
+<p><img src="703aa85d4669e0faedfd227a2f07eb083524385c.png" alt="when FLAG clicked
 forever
     go to mouse-pointer
     if mouse down?
@@ -54,7 +54,7 @@ forever
     else
     pen up
     (end if)
-(end forever)</code></pre>
+(end forever)" /></p>
 </section>
 <section id="test-your-project" class="level2">
 <h2>Test Your Project</h2>
@@ -62,7 +62,7 @@ forever
 <ol start="7" type="1">
 <li>Eventually the screen is going to get pretty filled with scribbles. The clear block can be used to clear the screen.</li>
 </ol>
-<pre class="scratch"><code>when FLAG clicked
+<p><img src="3e9ef164c63dd092a022977c946b84a699fe63dd.png" alt="when FLAG clicked
 clear
 forever
     go to mouse-pointer
@@ -71,7 +71,7 @@ forever
     else
     pen up
     (end if)
-(end forever)</code></pre>
+(end forever)" /></p>
 </section>
 <section id="test-your-project-1" class="level2">
 <h2>Test Your Project</h2>
@@ -88,8 +88,8 @@ forever
 <li>Position the sprite near the bottom-left corner of the stage.</li>
 <li>Give the clear sprite this simple script:</li>
 </ol>
-<pre class="scratch"><code>when clear clicked
-clear</code></pre>
+<p><img src="f417a81501ad21e20c58227ba0906f36807efd83.png" alt="when clear clicked
+clear" /></p>
 </section>
 <section id="test-your-project-2" class="level2">
 <h2>Test Your Project</h2>
@@ -105,18 +105,18 @@ clear</code></pre>
 <li>Place it somewhere along the bottom of the frame, near the <strong>clear button</strong>.</li>
 <li>When the red sprite is clicked, it should broadcast the message <strong>red</strong>.</li>
 </ol>
-<pre class="scratch"><code>when Red clicked
-broadcast red</code></pre>
+<p><img src="828de93df36aebd93f1016ed025d82c16bf21161.png" alt="when Red clicked
+broadcast red" /></p>
 <p><strong>Yes, that’s all it does. The hard work is done by the pencil.</strong></p>
 <p>In the pencil, import a new costume, <strong>resources/red-pencil</strong>. Set the costume centre to be the tip of the pencil as you did for the original costume.</p>
 <ol start="4" type="1">
 <li>Add a new script to the pencil. When the pencil receives the message <strong>red</strong>, it should change to the red pencil costume and change the pen colour to red (using the set pen color to block).</li>
 </ol>
 <p><strong>Hint:</strong> if you click on the coloured square in the <strong>set pen color to</strong> block, you can click the eyedropper on the red sprite to make sure it’s the same colour.</p>
-<pre class="scratch"><code>when I receive red
+<p><img src="a183ace8d7b3ff6bda5547d8e1c86433aac90a0f.png" alt="when I receive red
 switch to costume
 red-pencil
-set pen color to (red)</code></pre>
+set pen color to (red)" /></p>
 </section>
 <section id="test-your-project-3" class="level2">
 <h2>Test Your Project</h2>
@@ -140,11 +140,11 @@ set pen color to (red)</code></pre>
 <p>To do this, wrap a new if block around your existing <strong>go to... if</strong> block, and inside this new if check for the following:</p>
 <p>mouse y is greater than -120 and mouse y is less than 170 and mouse x is greater than -230 and mouse x is less than 230</p>
 <p><strong>Note</strong> to do this you’ll need to use multiple <strong>and</strong> operator blocks, one for the two mouse x conditions, one for the two mouse y conditions and a final one to join these all together:</p>
-<pre class="scratch"><code>clear
+<p><img src="9c1120144304d1a867708b292d19bc47daed180e.png" alt="clear
 forever if mouse y is greater than -120 and mouse y is less than 170 and mouse x is greater than -230 and mouse x is less than 230
-go to mouse-pointer</code></pre>
+go to mouse-pointer" /></p>
 <p>Since we can’t draw outside of the drawing area, we could hide the pencil tool whenever we leave it. To do this, replace the <strong>if</strong> with an <strong>if else</strong> block. Keep the same condition for the <strong>if</strong>, and <strong>show</strong> the pencil if it’s true, otherwise hide it.</p>
-<pre class="scratch"><code>when FLAG clicked
+<p><img src="9ad479e5127bf0647d5bc04bd1b2a16ed94d0462.png" alt="when FLAG clicked
 pen up
 clear
 forever
@@ -159,7 +159,7 @@ forever
     else
         hide
     (end if)
-(end forever)</code></pre>
+(end forever)" /></p>
 </section>
 <section id="test-your-project-5" class="level2">
 <h2>Test Your Project</h2>

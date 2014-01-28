@@ -39,11 +39,11 @@ These projects are for use outside the UK only. More information is available on
 <li>Click the Costumes tab and import four more things. They can be anything you want, yay! Let’s now make a random picture appear.</li>
 <li>Create this script:</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="9cc2168eb9fef4bf609a5635ee3909b0d5724567.png" alt="
     when FLAG clicked
     repeat pick random 1 to 5       
         next costume
-    (end repeat)</code></pre>
+    (end repeat)" /></p>
 <section id="test-your-project" class="level3">
 <h3>Test Your Project</h3>
 <p><strong>Click the green flag.</strong></p>
@@ -59,7 +59,7 @@ These projects are for use outside the UK only. More information is available on
 <li><p>On the Variables palette, create a variable called Score.</p></li>
 <li><p>Change the script to look like this:</p></li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="74148c1a836b78f635cfb0a1512d10d6ec0786c0.png" alt="
     when FLAG clicked
     hide
     repeat pick random 1 to 5       
@@ -72,7 +72,7 @@ These projects are for use outside the UK only. More information is available on
         set colour effect to score
         show
         wait 1 secs
-    (end repeat)</code></pre>
+    (end repeat)" /></p>
 <p>You should add the hide block at the top and the set [score] to 110 block, and everything below it.</p>
 <section id="test-your-project-1" class="level3">
 <h3>Test Your Project</h3>
@@ -98,7 +98,7 @@ These projects are for use outside the UK only. More information is available on
 <li>Create a new variable called <strong>answer</strong>. Make sure it’s for all sprites.</li>
 <li>Change the script you’ve written to record the right answer. Add the set [answer] to costume # blocks just after the first repeat loop:</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="f758669f80d9cf6a9d53675a2b945d9c1a20e4e7.png" alt="
     when FLAG clicked
     hide
     repeat pick random 1 to 5       
@@ -112,7 +112,7 @@ These projects are for use outside the UK only. More information is available on
         set colour effect to score
         show
         wait 1 secs
-    (end repeat)</code></pre>
+    (end repeat)" /></p>
 <p><strong>Now we need to add the sprites that the player can click on.</strong></p>
 <ol start="3" type="1">
 <li>Duplicate the main sprite and drag the duplicate to the bottom left corner of the stage.</li>
@@ -125,20 +125,20 @@ These projects are for use outside the UK only. More information is available on
 <ol start="8" type="1">
 <li>Add this script to the answer1 sprite:</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="b6139f36dcf20eec4ce2e683b83051bd7a0f52f4.png" alt="
     when answer1 clicked
     if answer=1
         broadcast won
     else
         hide
-    (end if)</code></pre>
+    (end if)" /></p>
 <ol start="9" type="1">
 <li>Drag this script into each of the other answer sprites. <strong>In each sprite, change the 1 to 2, 3, and so on.</strong></li>
 <li>We now have to add something that responds to the won message. Go back to sprite1, the one on the blackboard. Add this extra script:</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="383c220c215436c6ee6c5f43d043b854392b5aec.png" alt="
     when I receive won
-    say join Congratulations! You scored score</code></pre>
+    say join Congratulations! You scored score" /></p>
 <section id="test-your-project-2" class="level3">
 <h3>Test Your Project</h3>
 <p><strong>Click the green flag.</strong></p>
@@ -150,15 +150,15 @@ These projects are for use outside the UK only. More information is available on
 <ol start="11" type="1">
 <li>To fix the first problem, add this script to each of the five answer sprites:</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="e2aa465e5fdb7bcc39cb638e8a7cba9374543cf9.png" alt="
     when FLAG clicked
-    show</code></pre>
+    show" /></p>
 <p>To fix the second problem, we need to stop the <strong>question sprite</strong>’s repeat until loop when the player clicks on the right answer. We’ll use a new variable to do that. We’ll set it to <strong>zero</strong> when the game starts and set it to <strong>one</strong> when the game is won. We’ll make the repeat until loop stop when either the score reaches <strong>zero</strong> OR the <strong>game-winning flag</strong> is set to <strong>one.</strong></p>
 <ol start="12" type="1">
 <li>Create a new variable called won?</li>
 <li>Change the scripts so they look like this:</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="bde46a2d5b41194874d5ffa0c0b47c9a3ffd510f.png" alt="
     when FLAG clicked
     hide
     repeat pick random 1 to 5       
@@ -178,7 +178,7 @@ These projects are for use outside the UK only. More information is available on
     When I receive won
     set won to 1
     clear graphics effects
-    say join Congratulations! You scored score</code></pre>
+    say join Congratulations! You scored score" /></p>
 <p>Save your project</p>
 <p><strong>Well done you’ve finished the basic game!</strong></p>
 <p>There are more things you can do to your game though. Have a go at these challenges!</p>

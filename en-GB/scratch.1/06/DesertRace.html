@@ -42,15 +42,15 @@ These projects are for use outside the UK only. More information is available on
 <ol type="1">
 <li>First select the lion sprite and set it to move 4 steps when you press the ‘L’ key.</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="c5374109c5a9b4fae8cdb9037eb770e6fb2114c1.png" alt="
     when l key pressed
-    move 4 steps</code></pre>
+    move 4 steps" /></p>
 <ol start="2" type="1">
 <li>Next, select the parrot sprite and set it to move 4 steps when you press the ‘A’ key.</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="f20365486a0f7f509bb7506b46b152047353b220.png" alt="
     when a key pressed
-    move 4 steps</code></pre>
+    move 4 steps" /></p>
 <section id="test-your-project" class="level3">
 <h3>Test Your Project</h3>
 <p><strong>Click the green flag</strong> Do your lion and parrot move across the screen when you press the ‘A’ and ‘L’ keys?</p>
@@ -65,19 +65,19 @@ These projects are for use outside the UK only. More information is available on
 <li>Edit the costume of the button sprite, add the text ‘start’ to it and click OK. Move the sprite to the middle of the stage.</li>
 <li>Now add a script that shows the sprite when the project is run:</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="e2aa465e5fdb7bcc39cb638e8a7cba9374543cf9.png" alt="
     when FLAG clicked
-    show</code></pre>
+    show" /></p>
 <ol start="4" type="1">
 <li>Now we want the button to count down from 3 and then say go and then hide when it is clicked. Add another script like this one:</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="9751faf98d7d9e800875e75a329449ae0d4539f8.png" alt="
     when StartRace clicked
     say 3 for 1 secs
     say 2 for 1 secs
     say 1 for 1 secs
     say GO! for 1 secs
-    hide</code></pre>
+    hide" /></p>
 <section id="test-your-project-1" class="level3">
 <h3>Test Your Project</h3>
 <p><strong>Click on the green flag.</strong></p>
@@ -88,19 +88,19 @@ These projects are for use outside the UK only. More information is available on
 <li>Add a variable for all sprites called racing. Untick the box next to it so it does not show on the stage.</li>
 <li>Now set racing to be 0 when the project is first started. Change your <code>when FLAG clicked</code> script from before to look like this:</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="103b52f66a614bfa2699134d3b907b80202ac492.png" alt="
     when FLAG clicked
     show
-    set racing to 0</code></pre>
+    set racing to 0" /></p>
 <ol start="7" type="1">
 <li>Next, set the racing variable to be 1 when the starting countdown has finished.</li>
 <li>Now we need to stop the lion and the parrot from moving unless the racing variable is set to be 1. Click on the parrot sprite. <strong>Add a control block to the script</strong> that only allows the parrot to move if <strong>racing = 1</strong>.</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="06c8e3b7edf834663afc8fb6b544bb4ccd8e2217.png" alt="
     when a key pressed
     if racing = 1
         move 4 steps
-    (end if)</code></pre>
+    (end if)" /></p>
 <ol start="9" type="1">
 <li>Now do the same for the lion sprite.</li>
 </ol>
@@ -117,19 +117,19 @@ These projects are for use outside the UK only. More information is available on
 <ol type="1">
 <li>Add a block to the parrot’s script that sets the racing variable to be 0 when the sprite touches the edge of the screen.</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="8d31ca50395b796acff3dbb8ee6faff25e1df893.png" alt="
     when a key pressed
     if racing = 1
         move 4 steps
         if touching edge?
             set racing to 0
         (end if)
-    (end if)</code></pre>
+    (end if)" /></p>
 <ol start="2" type="1">
 <li>Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click <strong>sounds</strong> and then record the sound of the parrot winning the race!</li>
 <li>Now add blocks that play the sound you recorded and makes the parrot say it has won:</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="865946245f256110e42d3b2427fc48a563bfd09f.png" alt="
     when a key pressed
     if racing = 1
         move 4 steps
@@ -138,7 +138,7 @@ These projects are for use outside the UK only. More information is available on
             play sound recording1
             say The Parrot Wins! for 3 secs
         (end if)
-    (end if)</code></pre>
+    (end if)" /></p>
 <ol start="4" type="1">
 <li>Now repeat these steps for the lion.</li>
 </ol>
@@ -156,7 +156,7 @@ These projects are for use outside the UK only. More information is available on
 <ol type="1">
 <li>Click on the Parrot sprite. Add a block that broadcasts “finished” after the sprite says it has won.</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="558ba70d7bf8b6ebdc36bbf85ca28e80e97b82a4.png" alt="
     when a key pressed
     if racing = 1
         move 4 steps
@@ -166,20 +166,20 @@ These projects are for use outside the UK only. More information is available on
             say The Parrot Wins! for 3 secs
             broadcast finished
         (end if)
-    (end if)</code></pre>
+    (end if)" /></p>
 <ol start="2" type="1">
 <li>Now we need to add a new script that listens for the finished broadcast and moves the parrot back to the start. What happens if you change the value that x is set to?</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="ef9871815a3090695275ee7b67b8731284e6dfef.png" alt="
     when I receive finished
-    set x to -175</code></pre>
+    set x to -175" /></p>
 <ol start="3" type="1">
 <li>Now add the same script for the lion. Test different x values to make sure the lion and the parrot line up at the start.</li>
 <li>We also want to put the lion and the parrot in the same position when the project is run, so add another script to each that moves them to the start when we click the flag.</li>
 </ol>
-<pre class="scratch"><code>
+<p><img src="5094b08f7a282dcee6471266287a038820e1aa9a.png" alt="
     when FLAG clicked
-    set x to -175</code></pre>
+    set x to -175" /></p>
 <ol start="5" type="1">
 <li>Now click on the button sprite and add a script that shows it when it receives the finished message. ###Test Your Project <strong>Click on the green flag.</strong></li>
 </ol>
