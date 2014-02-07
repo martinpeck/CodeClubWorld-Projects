@@ -35,17 +35,21 @@ These projects are for use outside the UK only. More information is available on
 <h1>STEP 1: Create a flying ghost</h1>
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
-<p>+. <strong>Start a new scratch project.</strong> + <strong>Remove the cat sprite</strong> and replace the background with the <strong>nature/woods</strong> background. + Use the <code>new sprite from file</code> button to add a new ghoul sprite to the project (use the <strong>fantasy/ghost1</strong> costume).</p>
+<ul>
+<li><strong>Start a new scratch project.</strong></li>
+<li><strong>Remove the cat sprite</strong> and replace the background with the <strong>nature/woods</strong> background.</li>
+<li>Use the <code class="blockgrey">Choose sprite from library</code> button to add a new ghoul sprite to the project (use the <strong>fantasy/ghost1</strong> costume).</li>
+</ul>
 <p><strong>Now we want to make our ghost move</strong></p>
 <ul>
-<li>Add a <code>Variable</code> for this sprite only called <code>speed</code>. On the <strong>Stage</strong>, the stage monitor for this variable should say “<strong>Sprite1 speed</strong>”. If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the <strong>Variables palette</strong> so it does not show on the Stage. The speed variable will control how fast the ghost moves. We use a variable so that we can change how fast the ghost moves as the game progresses.</li>
+<li>Add a <code class="blocklightgrey">Variable</code> for this sprite only called <code class="blockorange">speed</code>. On the <strong>Stage</strong>, the stage monitor for this variable should say “<strong>Ghost1 speed</strong>”. If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the <strong>Data palette</strong> so it does not show on the Stage. The speed variable will control how fast the ghost moves. We use a variable so that we can change how fast the ghost moves as the game progresses.</li>
 <li>We want the ghost to start moving when the game starts, <strong>so make a script like this</strong>:</li>
 </ul>
-<p><img src="711410b15d6008dedd441d6f9b31e3783532c69b.png" alt="
+<p><img src="fcca9c7608cebdb6b6e6aa863801c0da3be3e079.png" alt="
     when FLAG clicked
-    set [speed] to (5)
+    set [speed v] to [5]
     forever
-        move [speed] steps" /></p>
+        move (speed) steps" /></p>
 </section>
 <section id="test-your-project" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -54,16 +58,16 @@ These projects are for use outside the UK only. More information is available on
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>To stop the ghost getting stuck we need to make her go back the other way when it touches the edge of the screen. Edit your existing script by adding a an <code>if on edge, bounce</code> block below your <code>move speed steps</code> block.</li>
+<li>To stop the ghost getting stuck we need to make her go back the other way when she touches the edge of the screen. Edit your existing script by adding an <code class="blockblue">if on edge, bounce</code> block below your <code class="blockblue">move</code><code class="blockorange">speed</code><code class="blockblue">steps</code> block.</li>
 </ul>
-<p><img src="a381aee887a10f515ac4eaa09e64b270f2ab1bf5.png" alt="
+<p><img src="d2d9c2cecdface058828ae44af7c06eb56b45269.png" alt="
     when FLAG clicked
-    set [speed] to (5)
+    set [speed v] to [5]
     forever
-        move [speed] steps
+        move (speed) steps
         if on edge, bounce" /></p>
 <ul>
-<li>To stop the ghost flipping upside down, click on the <code>only face left-right</code> button in the Sprite Summary area.</li>
+<li>To stop the ghost flipping upside down, click on the <code class="blockgrey">rotation style: left-right</code> button in the Sprite Summary area.</li>
 </ul>
 </section>
 <section id="test-your-project-1" class="level2 flag">
@@ -87,13 +91,13 @@ These projects are for use outside the UK only. More information is available on
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <p><strong>Create this script for the ghost:</strong></p>
-<p><img src="d4700a01809a79854851095b402b24a327183e6b.png" alt="
+<p><img src="007cd800c885a7975a91cbcccd96dd4b0c6fd060.png" alt="
     when FLAG clicked
     forever
         hide
-        wait (pick random (2) to (5) secs)
+        wait (pick random (2) to (5)) secs
         show
-        wait (pick random (3) to (5) secs)
+        wait (pick random (3) to (5)) secs
 " /></p>
 </section>
 <section id="test-your-project-2" class="level2 flag">
@@ -116,13 +120,13 @@ These projects are for use outside the UK only. More information is available on
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>In the <strong>Sounds</strong> tab, import the sound <strong>electronic/fairydust</strong>.</p></li>
+<li><p>In the <strong>Sounds</strong> tab, add a new sound <strong>Electronic/fairydust</strong>, using the <code class="blockgrey">Choose sound from library</code> button.</p></li>
 <li><p><strong>Add this script to the ghost</strong>:</p></li>
 </ul>
-<p><img src="eab865c3be178f6684842555793fd34654e4ef46.png" alt="
-    when [sprite1] clicked
+<p><img src="e56128d597a3fa9db8c7ea258478462316694a4f.png" alt="
+    when this sprite clicked
     hide
-    play sound [Fairydust]" /></p>
+    play sound [Fairydust v]" /></p>
 </section>
 <section id="test-your-project-3" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -134,7 +138,9 @@ These projects are for use outside the UK only. More information is available on
 </section>
 <section id="things-to-try-2" class="level2 try">
 <h2>Things to try</h2>
-<p><strong>Ask your volunteer if you can record your own sound to play.</strong></p>
+<ul>
+<li><strong>Ask your volunteer if you can record your own sound to play.</strong></li>
+</ul>
 </section>
 </section>
 <section id="step-4-add-a-score-and-timer" class="level1 activity">
@@ -143,25 +149,25 @@ These projects are for use outside the UK only. More information is available on
 <section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Create a new <code>Variable</code> for all sprites called <strong>score</strong>, and alter the script for the ghost to increase this variable by one when it is clicked.</li>
+<li>Create a new <code class="blockgrey">Variable</code> for all sprites called <strong>score</strong>, and alter the script for the ghost to increase this variable by one when it is clicked.</li>
 </ul>
-<p><img src="13e1827882ae4804f30605a19cbc75599ff098b0.png" alt="
-    when [sprite1] clicked
+<p><img src="262d27d7fea586ae123b4b74a22a958667000acf.png" alt="
+    when this sprite clicked
     hide
-    play sound [Fairydust]
-    change score by (1)" /></p>
+    play sound [Fairydust v]
+    change [score v] by (1)" /></p>
 <ul>
-<li>Switch to the <strong>Stage</strong> and create a <strong>new variable</strong> (this time just for the stage) called <strong>timer</strong>. Add a new script that occurs when the green flag is clicked to set <code>timer</code> to <strong>30</strong> and reset the score to <strong>0</strong>. Then use a <code>repeat until</code> block to wait a second and then reduce <code>timer</code> by one. This should repeat until timer is 0, at which point use <code>stop all</code> to stop the game.</li>
+<li>Switch to the <strong>Stage</strong> and create a <strong>new variable</strong> called <strong>timer</strong>. Add a new script that occurs when the green flag is clicked to set <code class="blockorange">timer</code> to <strong>30</strong> and reset the score to <strong>0</strong>. Then use a <code class="blockyellow">repeat until</code> block to wait a second and then reduce <code class="blockorange">timer</code> by one. This should repeat until timer is 0, at which point use <code class="blockyellow">stop all</code> to stop the game.</li>
 </ul>
-<p><img src="5ce14e918f1fb591efa8128d87d52e6bcb1c669b.png" alt="
+<p><img src="31511bd26ed2f284b9690fde455a82271454ebbd.png" alt="
     when FLAG clicked
-    set [timer] to (30)
-    set [score]to (0)
-    repeat until &lt;[timer] = 0&gt;
+    set [timer v] to (30)
+    set [score v] to (0)
+    repeat until &lt;(timer) = [0]&gt;
         wait (1) secs
-        change [timer] by (-1)
+        change [timer v] by (-1)
     
-    stop all" /></p>
+    stop [all v]" /></p>
 </section>
 <section id="test-your-project-4" class="level2 flag">
 <h2>Test Your Project</h2>
