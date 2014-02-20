@@ -27,9 +27,7 @@ These projects are for use outside the UK only. More information is available on
 <section id="introduction" class="level1 intro">
 <h1>Introduction</h1>
 <p>A random object is shown on the blackboard, all distorted. You have to guess what it is by clicking on the right picture below. The quicker you guess, the higher your score!</p>
-<figure>
-<img src="whatsthat_screenshot.png" alt="screenshot" /><figcaption>screenshot</figcaption>
-</figure>
+<p><img src="whatsthat_screenshot.png" alt="screenshot" /></p>
 </section>
 <section id="step-1-make-different-things-appear-on-the-blackboard" class="level1 activity">
 <h1>STEP 1: Make different things appear on the blackboard</h1>
@@ -38,10 +36,10 @@ These projects are for use outside the UK only. More information is available on
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Start a new Scratch project and delete the cat sprite.</p></li>
-<li>Click Stage and then the Backdrops tab. <code class="blockgrey">Choose Backdrop From Library</code> to change the backdrop to <strong>indoors/chalkboard</strong>.</li>
-<li>Create a new sprite from the library, and give it any costume you like. You can pick something from the things folder.</li>
-<li>Position the new sprite in the middle of the blackboard. Make it bigger or smaller if you need to.</li>
-<li>Click the Costumes tab and import four more things. They can be anything you want, yay! Let’s now make a random picture appear.</li>
+<li>Click Stage and then the Backdrops tab. <code class="blockgrey">Choose Backdrop From Library</code> to change the backdrop to <strong>indoors/chalkboard</strong>.<br /></li>
+<li>Create a new sprite from the library, and give it any costume you like. You can pick something from the things folder.<br /></li>
+<li>Position the new sprite in the middle of the blackboard. Make it bigger or smaller if you need to.<br /></li>
+<li>Click the Costumes tab and import four more things. They can be anything you want, yay!<br />Let’s now make a random picture appear.<br /></li>
 <li><p>Create this script:</p></li>
 </ul>
 <p><img src="9be0ff0ad36af17882df6b6f648a0ad4a5cbab7a.png" alt="
@@ -54,7 +52,7 @@ These projects are for use outside the UK only. More information is available on
 <h2>Test Your Project</h2>
 <p><strong>Click the green flag.</strong></p>
 <p>Does the sprite show a different costume?</p>
-<p><strong>Click on it a few more times.</strong> Do you get different costumes every time? Sometimes you’ll get the same costume twice in a row, but that’s OK. You’ll also notice that you can see the sprite flicker as it changes costume. We’ll fix that in the next step.</p>
+<p><strong>Click on it a few more times.</strong><br /> Do you get different costumes every time? Sometimes you’ll get the same costume twice in a row, but that’s OK. You’ll also notice that you can see the sprite flicker as it changes costume. We’ll fix that in the next step.</p>
 </section>
 <section id="save-your-project" class="level2 save">
 <h2>Save your project</h2>
@@ -111,7 +109,7 @@ These projects are for use outside the UK only. More information is available on
 <p>So far we’ve got our random picture appearing slowly, and a score which decreases over time, but how do you win the game? We’ll add some sprites at the bottom of the screen for the player to click on. If they click on the right one, they win the game. If they click on the wrong one, that sprite disappears and the game carries on.</p>
 <p>First, we need to know what the right answer is.</p>
 <ul>
-<li><strong>Create a new variable</strong> called <strong>answer</strong>. Make sure it’s for all sprites.</li>
+<li><strong>Create a new variable</strong> called <strong>answer</strong>. Make sure it’s for all sprites.<br /></li>
 <li>Change the script you’ve written to record the right answer. Add the <code class="blockorange">set [answer] to costume #</code> blocks just after the first repeat loop:</li>
 </ul>
 <p><img src="7e373291952b3d96ce1dcc7985f285af5f17dd5b.png" alt="    when FLAG clicked
@@ -130,11 +128,11 @@ These projects are for use outside the UK only. More information is available on
     end" /></p>
 <p><strong>Now we need to add the sprites that the player can click on.</strong></p>
 <ul>
-<li>Duplicate the main sprite and drag the duplicate to the bottom left corner of the stage.</li>
-<li>Rename this sprite to <strong>answer1.</strong> (This makes it easier to talk about.)</li>
-<li>Delete <strong>answer1</strong>'s script and all its costumes but its first one.</li>
-<li>Do these last three steps again, but put the <strong>answer2</strong> sprite next to <strong>answer1</strong> and delete all but its second costume.</li>
-<li>Do it three more times for <strong>answer3</strong>, <strong>answer4</strong>, and <strong>answer5.</strong> You should end up with a row of five answer sprites along the bottom of the Stage, each showing a different costume the the main sprite can be. <strong>None of the answer sprites should have any scripts.</strong></li>
+<li>Duplicate the main sprite and drag the duplicate to the bottom left corner of the stage.<br /></li>
+<li>Rename this sprite to <strong>answer1.</strong> (This makes it easier to talk about.)<br /></li>
+<li>Delete <strong>answer1</strong>'s script and all its costumes but its first one.<br /></li>
+<li>Do these last three steps again, but put the <strong>answer2</strong> sprite next to <strong>answer1</strong> and delete all but its second costume.<br /></li>
+<li>Do it three more times for <strong>answer3</strong>, <strong>answer4</strong>, and <strong>answer5.</strong><br />You should end up with a row of five answer sprites along the bottom of the Stage, each showing a different costume the the main sprite can be. <strong>None of the answer sprites should have any scripts.</strong></li>
 </ul>
 <p>Now we want to have each sprite respond to being clicked and do something depending on whether its the right answer or not.</p>
 <ul>
@@ -148,7 +146,7 @@ These projects are for use outside the UK only. More information is available on
         hide
     " /></p>
 <ul>
-<li>Drag this script into each of the other answer sprites. <strong>In each sprite, change the 1 to 2, 3, and so on.</strong></li>
+<li>Drag this script into each of the other answer sprites. <strong>In each sprite, change the 1 to 2, 3, and so on.</strong><br /></li>
 <li>We now have to add something that responds to the won message. Go back to sprite1, the one on the blackboard. Add this extra script:</li>
 </ul>
 <p><img src="5e90161dc4fa6ec9687dcf61387e9754eb6a09fe.png" alt="
@@ -170,7 +168,7 @@ These projects are for use outside the UK only. More information is available on
     show" /></p>
 <p>To fix the second problem, we need to stop the <strong>question sprite</strong>’s repeat until loop when the player clicks on the right answer. We’ll use a new variable to do that. We’ll set it to <strong>zero</strong> when the game starts and set it to <strong>one</strong> when the game is won. We’ll make the repeat until loop stop when either the score reaches <strong>zero</strong> OR the <strong>game-winning flag</strong> is set to <strong>one.</strong></p>
 <ul>
-<li>Create a new variable called won?</li>
+<li>Create a new variable called won?<br /></li>
 <li>Change the scripts so they look like this:</li>
 </ul>
 <p><img src="80e50d10119e5a08d05814bab454a65c0b81eada.png" alt="
@@ -204,8 +202,8 @@ These projects are for use outside the UK only. More information is available on
 <h2>Challenge 1: Make the game harder or easier</h2>
 <p>Change how difficult the game is.</p>
 <ul>
-<li>Try changing how fast the picture is revealed and how fast the score goes down.</li>
-<li>Try changing the distortions on the picture.</li>
+<li>Try changing how fast the picture is revealed and how fast the score goes down.<br /></li>
+<li>Try changing the distortions on the picture.<br /></li>
 <li>Try changing the pictures being guessed, to make them either more similar or more different. If you do this, don’t forget to change the answer sprite’s costume.</li>
 </ul>
 </section>
@@ -269,7 +267,7 @@ These projects are for use outside the UK only. More information is available on
 </section>
 <section id="save-your-project-10" class="level2 save">
 <h2>Save your project</h2>
-<p><strong>Well done you’ve finished, now you can enjoy the game!</strong> Don’t forget you can share your game with all your friends and family by clicking on <strong>Share</strong> on the menu bar!</p>
+<p><strong>Well done you’ve finished, now you can enjoy the game!</strong><br />Don’t forget you can share your game with all your friends and family by clicking on <strong>Share</strong> on the menu bar!</p>
 </section>
 </section>
 <section class="legal">

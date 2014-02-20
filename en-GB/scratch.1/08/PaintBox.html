@@ -27,20 +27,18 @@ These projects are for use outside the UK only. More information is available on
 <section id="introduction" class="level1 intro">
 <h1>Introduction</h1>
 <p>The project creates a drawing tool for you to make your own art. You can change the colour of the line, clear the screen, make stamps and much more!</p>
-<figure>
-<img src="paintbox_screenshot.png" alt="screenshot" /><figcaption>screenshot</figcaption>
-</figure>
+<p><img src="paintbox_screenshot.png" alt="screenshot" /></p>
 </section>
 <section id="step-1-drag-and-draw" class="level1 activity">
 <h1>STEP 1: Drag and draw</h1>
 <p>We’ll start with a pen that draws when you drag it around the Stage.</p>
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
-<li>Start a new Scratch project. Delete the cat by right clicking it and clicking <strong>delete</strong></li>
-<li>Click <strong>Stage</strong> and then the <strong>Backdrops</strong> tab. Upload the <strong>resources.png</strong> background.</li>
-<li>Upload a new sprite called <strong>green-pencil</strong>, using <strong>resources-pencil.png</strong></li>
-<li>Switch to the <strong>costumes</strong> tab and click edit from the <strong>Paint Editor</strong>, change the center of the image to be at the tip of the pen. To do this, click the <strong>Set costume center</strong> button and drag the lines until they are at the tip.</li>
+<ol>
+<li>Start a new Scratch project. Delete the cat by right clicking it and clicking <strong>delete</strong><br /></li>
+<li>Click <strong>Stage</strong> and then the <strong>Backdrops</strong> tab. Upload the <strong>resources\frame.png</strong> background.<br /></li>
+<li>Upload a new sprite called <strong>green-pencil</strong>, using <strong>resources\green-pencil.png</strong><br /></li>
+<li>Switch to the <strong>costumes</strong> tab and click edit from the <strong>Paint Editor</strong>, change the center of the image to be at the tip of the pen. To do this, click the <strong>Set costume center</strong> button and drag the lines until they are at the tip.<br /></li>
 <li>Make the pencil follow the mouse around the stage using the <code class="blockyellow">forever</code> and <code class="blockblue">go to</code> mouse-pointer blocks.</li>
 </ol>
 <p><img src="114c4cccdc793fbabf6110c475b637da603af339.png" alt="when FLAG clicked
@@ -48,7 +46,7 @@ forever
     go to [mouse-pointer v]
 end" /></p>
 <p><strong>Now we want to use this pen sprite as an actual pen.</strong> If you look under the pen section you’ll see all sorts of drawing related blocks. The ones we’re initially interested in are <code class="blockgreen">pen down</code> and <code class="blockgreen">pen up</code>.</p>
-<ol start="6" type="1">
+<ol>
 <li>We want to use the mouse button to control the pen – whenever the mouse button is down the pen should be down, and when it is up the pen should be up. We can do this using an <code class="blockyellow">if... else</code> and <code class="blocklightblue">mouse down?</code> blocks.</li>
 </ol>
 <p><img src="0335211614918d072cc714a07c49863a32b89d4e.png" alt="when FLAG clicked
@@ -63,8 +61,8 @@ end" /></p>
 </section>
 <section id="test-your-project" class="level2 flag">
 <h2>Test Your Project</h2>
-<p><strong>Click on the green flag.</strong> Does the pen follow the mouse around? What happens if you hold the mouse button down and move the mouse? Don’t worry about the pen colour for now.</p>
-<ol start="7" type="1">
+<p><strong>Click on the green flag.</strong><br />Does the pen follow the mouse around? What happens if you hold the mouse button down and move the mouse? Don’t worry about the pen colour for now.</p>
+<ol>
 <li>Eventually the screen is going to get pretty filled with scribbles. The clear block can be used to clear the screen.</li>
 </ol>
 <p><img src="a5d678e7067f6ca67aba536d05bac1763087f1f1.png" alt="when FLAG clicked
@@ -91,11 +89,11 @@ end" /></p>
 <h1>STEP 2: Clearing up</h1>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
-<p>Rather than having to stop and start the whole project, let’s add a button that clears the drawing. It will do that using the clear block.</p>
-<ol type="1">
-<li>Create a new sprite from the <strong>resources/cancel-button.png</strong> costume.</li>
-<li>Change the sprite’s name to <strong>clear</strong>.</li>
-<li>Position the sprite near the bottom-left corner of the stage.</li>
+<p>Rather than having to stop and start the whole project, let’s add a button that<br />clears the drawing. It will do that using the clear block.</p>
+<ol>
+<li>Create a new sprite from the <strong>resources/cancel-button.png</strong> costume.<br /></li>
+<li>Change the sprite’s name to <strong>clear</strong>.<br /></li>
+<li>Position the sprite near the bottom-left corner of the stage.<br /></li>
 <li>Give the clear sprite this simple script:</li>
 </ol>
 <p><img src="459fde6a9e9bb3d03456f45d44fa7dbc956abd14.png" alt="when this sprite clicked
@@ -115,19 +113,19 @@ clear" /></p>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <p>So far, we can only draw blue lines. Let’s draw with some different colours! We’ll add some sprites at the bottom of the frame. The sprites will look like coloured buttons. If we click on a button, it will change the colour of the line we draw. So we know what colour we’re using, the button will also change the colour of the pencil sprite.</p>
-<ol type="1">
-<li>Add a new sprite, called <strong>red</strong>, using the <strong>resources/red-selector.png</strong> costume.</li>
-<li>Place it somewhere along the bottom of the frame, near the <strong>clear button</strong>.</li>
+<ol>
+<li>Add a new sprite, called <strong>red</strong>, using the <strong>resources/red-selector.png</strong> costume.<br /></li>
+<li>Place it somewhere along the bottom of the frame, near the <strong>clear button</strong>.<br /></li>
 <li>When the red sprite is clicked, it should broadcast the message <strong>red</strong>.</li>
 </ol>
 <p><img src="be778103a7cd23ceaed7ad99d56a2e6a72b4894d.png" alt="when this sprite clicked
 broadcast [red v]" /></p>
 <p><strong>Yes, that’s all it does. The hard work is done by the pencil.</strong></p>
 <p>In the pencil, upload a new costume, <strong>resources/red-pencil.png</strong>. Set the costume centre to be the tip of the pencil as you did for the original costume.</p>
-<ol start="4" type="1">
+<ol>
 <li>Add a new script to the pencil. When the pencil receives the message <strong>red</strong>, it should change to the red pencil costume and change the pen colour to red (using the <code class="blockgreen">set pen color to</code> block).</li>
 </ol>
-<p><strong>Hint:</strong> if you click on the coloured square in the <code class="blockgreen">set pen color to</code> block, you can click the red button sprite to make sure it’s the same colour.</p>
+<p><strong>Hint:</strong> if you click on the coloured square in the <code class="blockgreen">set pen color to</code> block, you can<br />click the red button sprite to make sure it’s the same colour.</p>
 <p><img src="1770ec6fed72a7284134c838efd6b783c8d46907.png" alt="when I receive [red v]
 switch to costume [red-pencil v]
 set pen color to [#FF0000]" /></p>
@@ -139,7 +137,7 @@ set pen color to [#FF0000]" /></p>
 </section>
 <section id="save-your-project-2" class="level2 save">
 <h2>Save your project</h2>
-<ol start="5" type="1">
+<ol>
 <li>Repeat what you just did for the blue, yellow, and green selector sprites.</li>
 </ol>
 </section>
@@ -157,7 +155,7 @@ set pen color to [#FF0000]" /></p>
 <p>You’ve probably noticed that you can draw all over the Stage, even in the border. We don’t want that to happen. We want to keep the drawing in the middle of the Stage. We can do this by making sure the pen isn’t allowed to leave the drawing area - the light grey part on the Stage.</p>
 <p>Remember that Scratch defines points using x and y axis. Our drawing area lies between 230 and -230 on the x-axis and 170 and -120 on the y-axis. We can use these values in an <code class="blockyellow">if</code> block, making sure the mouse is inside this area before we move the pencil to it.</p>
 <p>To do this, wrap a new if block around your existing <code class="blockblue">goto...</code><code class="blockyellow">if</code> block, and inside this new if check for the following:</p>
-<p>mouse y is greater than -120 and mouse y is less than 170 and mouse x is greater than -230 and mouse x is less than 230</p>
+<p>mouse y is greater than -120 and mouse y is less than 170<br />and mouse x is greater than -230 and mouse x is less than 230</p>
 <p><strong>Note</strong> to do this you’ll need to use multiple <code class="blockgreen">and</code> operator blocks, one for the two mouse x conditions, one for the two mouse y conditions and a final one to join these all together:</p>
 <p><img src="4f95ac677849eaa30b89aafa12b6e18aef2bda24.png" alt="clear
 forever 
@@ -209,12 +207,12 @@ end" /></p>
 <p>The next thing to add is a stamp tool, to stamp small pictures on the drawing.</p>
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
-<ol type="1">
-<li>Add a new sprite, using whichever image or costume you want. Shrink the sprite down and place it at the bottom of the screen alongside the other tools. When this sprite is clicked, it should <code class="blockyellow">broadcast stamp</code></li>
-<li>Add a new costume for this pencil sprite, the same as the one you chose for the <strong>stamp</strong> button.</li>
-<li>Select the pencil sprite and create a new <code class="blocklightgrey">variable</code> <code class="blockorange">pencil mode</code> for this sprite only. We’ll use this variable to keep track of whether or not we are drawing or stamping.</li>
-<li>Add a new script to respond to the stamp message. It needs to set the costume to the stamp and set the <code class="blockorange">pencil mode</code> variable to <strong>false</strong>.</li>
-<li>Change the other scripts that respond to tool-selection messages (red, green, blue, and eraser) so that they each set the <code class="blockorange">pencil mode</code> to <strong>true</strong>.</li>
+<ol>
+<li>Add a new sprite, using whichever image or costume you want. Shrink the sprite down and place it at the bottom of the screen alongside the other tools. When this sprite is clicked, it should <code class="blockyellow">broadcast stamp</code><br /></li>
+<li>Add a new costume for this pencil sprite, the same as the one you chose for the <strong>stamp</strong> button.<br /></li>
+<li>Select the pencil sprite and create a new <code class="blocklightgrey">variable</code> <code class="blockorange">pencil mode</code> for this sprite only. We’ll use this variable to keep track of whether or not we are drawing or stamping.<br /></li>
+<li>Add a new script to respond to the stamp message. It needs to set the costume to the stamp and set the <code class="blockorange">pencil mode</code> variable to <strong>false</strong>.<br /></li>
+<li>Change the other scripts that respond to tool-selection messages (red, green, blue, and eraser) so that they each set the <code class="blockorange">pencil mode</code> to <strong>true</strong>.<br /></li>
 <li>Finally, lets check this variable <strong>when the mouse button is down</strong> to see if we should be drawing or stamping. If <code class="blockorange">pencil mode</code> = true we should use the existing <code class="blockgreen">pen down</code>, if not we should <code class="blockgreen">stamp</code> instead.</li>
 </ol>
 </section>
@@ -226,14 +224,14 @@ end" /></p>
 </section>
 <section id="save-your-project-6" class="level2 save">
 <h2>Save your project</h2>
-<p><strong>Well done, you have completed the basic steps for this project.</strong> Try these challenges!</p>
+<p><strong>Well done, you have completed the basic steps for this project.</strong><br />Try these challenges!</p>
 </section>
 <section id="challenge-1-rainbow-pencil" class="level2 challenge">
 <h2>Challenge 1: Rainbow pencil</h2>
 <p><strong>Let’s add a special pencil that paints in rainbow colours.</strong> It’s something that you can’t do with ordinary pens and pencils, so it’s nice to show off how drawing on a computer allows you do to different things. The secret to making it work is the change pen colour by block.</p>
 <p><strong>First, add the rainbow tool selection sprite and the rainbow tool costume to the pencil sprite:</strong></p>
-<ol type="1">
-<li><strong>Create a new tool selection sprite</strong> and place it at the bottom of the stage, alongside all the other pencil colour sprites. Use the <strong>resources/rainbow-selector.gif</strong> costume and have it <code class="blockyellow">broadcast rainbow</code> when clicked.</li>
+<ol>
+<li><strong>Create a new tool selection sprite</strong> and place it at the bottom of the stage, alongside all the other pencil colour sprites. Use the <strong>resources/rainbow-selector.gif</strong> costume and have it <code class="blockyellow">broadcast rainbow</code> when clicked.<br /></li>
 <li>Add the <strong>resources/rainbow-pencil.png</strong> costume to the <strong>pencil sprite</strong>.</li>
 </ol>
 <p>You need to build a script that will change the pen colour many times a second to give the rainbow effect (<strong>I found that changing it by 5 every 0.05 seconds works well, but you should try out different values</strong>). The timer Scratch card shows how you can make something change every so often. Use a <code class="blockgreen">change pen colour by 5</code> block instead of a <code class="blockorange">change timer by -1</code> block inside the loop.</p>
@@ -251,8 +249,18 @@ end" /></p>
 </section>
 <section id="challenge-2-keyboard-shortcuts" class="level2 challenge">
 <h2>Challenge 2: Keyboard shortcuts</h2>
-<p>Rather than using the tool-selection sprites at the bottom of the stage, you can use the keyboard to select the different tools. You can use the <code class="blockyellow">if</code><code class="blocklightblue">key [] pressed</code> blocks to respond to the keyboard. For each key you want to use, you’ll need another <code class="blockyellow">if</code><code class="blocklightblue">key [] pressed</code>, which sends the same message as the respective tool-selection sprite does when its clicked. Add these scripts to the stage.</p>
-<p>I used these shortcuts: * Clear all - a * Eraser - e * Red pencil -r * Blue pencil - b * Yellow pencil - y * Green pencil - g * Rainbow pencil - w * Stamp - s</p>
+<p>Rather than using the tool-selection sprites at the bottom of the stage, you can use the keyboard to select the different tools.<br />You can use the <code class="blockyellow">if</code><code class="blocklightblue">key [] pressed</code> blocks to respond to the keyboard. For each key you want to use, you’ll need another <code class="blockyellow">if</code><code class="blocklightblue">key [] pressed</code>, which sends the same message as the respective tool-selection sprite does when its clicked. Add these scripts to the stage.</p>
+<p>I used these shortcuts:</p>
+<ul>
+<li>Clear all - a<br /></li>
+<li>Eraser - e<br /></li>
+<li>Red pencil -r<br /></li>
+<li>Blue pencil - b<br /></li>
+<li>Yellow pencil - y<br /></li>
+<li>Green pencil - g<br /></li>
+<li>Rainbow pencil - w<br /></li>
+<li>Stamp - s</li>
+</ul>
 </section>
 <section id="test-your-project-9" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -264,13 +272,13 @@ end" /></p>
 </section>
 <section id="challenge-3-big-and-small" class="level2 challenge">
 <h2>Challenge 3: Big and Small</h2>
-<p><strong>Another feature that most drawing packages have is the ability to change the size of the pencil. Let’s add that.</strong> There’s one complication, though, which is that sometimes the resizing needs to change the pen size and sometimes it needs to change the pencil sprite’s costume size. It depends on whether you’re using a pencil or a stamp.</p>
+<p><strong>Another feature that most drawing packages have is the ability to change the size of the pencil. Let’s add that.</strong><br />There’s one complication, though, which is that sometimes the resizing needs to change the pen size and sometimes it needs to change the pencil sprite’s costume size. It depends on whether you’re using a pencil or a stamp.</p>
 <p><strong>Create two new tool-selection sprites</strong>, called <strong>bigger</strong> and <strong>smaller</strong>. They should have the <strong>resources/bigger-selector.gif</strong> and <strong>resources/smaller-selector.gif</strong> costumes and should send the bigger and smaller messages.</p>
-<p>The pencil sprite can respond to the messages by changing either the pen size by 1 or the costume size by 10, depending on the value of pencil mode (use an <code class="blockyellow">if-else</code> block, similar to how the sprite chooses between putting the pen down or stamping) Don’t forget the keyboard shortcuts for the bigger and smaller tools. I used the up and down arrows.</p>
+<p>The pencil sprite can respond to the messages by changing either the pen size by 1 or the costume size by 10, depending on the value of pencil mode (use an <code class="blockyellow">if-else</code> block, similar to how the sprite chooses between putting the pen down or stamping)<br />Don’t forget the keyboard shortcuts for the bigger and smaller tools. I used the up and down arrows.</p>
 </section>
 <section id="save-your-project-9" class="level2 save">
 <h2>Save your project</h2>
-<p>What you should have noticed is that changing the size of the stamp also changes the size of the pencil on-screen when you change to that tool. To stop that, you need to set the size to 100% every time you change to a pencil tool, so that the tools look the right size.</p>
+<p>What you should have noticed is that changing the size of the stamp also changes the size of the pencil on-screen when you change to that tool.<br />To stop that, you need to set the size to 100% every time you change to a pencil tool, so that the tools look the right size.</p>
 <p>To make it even better, have the stamp remember what size it was before you selected the pencil and go back to that size when you select the stamp tool again. The easiest way to do that is to create a new <code class="blocklightgrey">variable</code> called <code class="blockorange">stampSize</code>, that is updated with the current size every time the stamp is resized. When the stamp tool is selected, it can set its size from the contents of this variable.</p>
 </section>
 <section id="test-your-project-10" class="level2 flag">

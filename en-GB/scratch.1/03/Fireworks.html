@@ -27,9 +27,7 @@ These projects are for use outside the UK only. More information is available on
 <section id="introduction" class="level1 intro">
 <h1>Introduction</h1>
 <p>In this project, we’ll create a fireworks display over a city.</p>
-<figure>
-<img src="fireworks_screenshot.png" alt="screenshot" /><figcaption>screenshot</figcaption>
-</figure>
+<p><img src="fireworks_screenshot.png" alt="screenshot" /></p>
 </section>
 <section id="step-1-create-a-rocket-that-flies-towards-the-mouse" class="level1 activity">
 <h1>STEP 1: Create a rocket that flies towards the mouse</h1>
@@ -37,9 +35,9 @@ These projects are for use outside the UK only. More information is available on
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Start a new Scratch project. Delete the cat by right clicking it and clicking Delete</li>
-<li>Replace the backdrop with <strong>outdoor/city-with-water</strong></li>
-<li>Use the <code class="blockgrey">Upload sprite from file</code> button to add a Rocket sprite to the project (use the <strong>Resources/Rocket.png</strong> costume).</li>
+<li>Start a new Scratch project. Delete the cat by right clicking it and clicking Delete<br /></li>
+<li>Replace the backdrop with <strong>outdoor/city-with-water</strong><br /></li>
+<li>Use the <code class="blockgrey">Upload sprite from file</code> button to add a Rocket sprite<br />to the project (use the <strong>Resources/Rocket.png</strong> costume).<br /></li>
 <li>Make the rocket hide when the green flag is clicked.</li>
 </ul>
 <p>Now we want to make the rocket move towards the mouse when the mouse is clicked.</p>
@@ -57,7 +55,7 @@ These projects are for use outside the UK only. More information is available on
 <section id="test-your-project" class="level2 flag">
 <h2>Test Your Project</h2>
 <p><strong>Click the green flag, place your mouse over the stage and press the space bar.</strong></p>
-<p>Does the rocket appear and move to the mouse? What happens if you move the mouse and press space again?</p>
+<p>Does the rocket appear and move to the mouse?<br />What happens if you move the mouse and press space again?</p>
 </section>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
@@ -75,12 +73,12 @@ These projects are for use outside the UK only. More information is available on
 </section>
 <section id="test-your-project-1" class="level2 flag">
 <h2>Test Your Project</h2>
-<p><strong>Click the green flag, place your mouse over the stage and press the space bar.</strong> Does the rocket fly towards the mouse from the bottom of the screen? What happens if you move the mouse and press space again?</p>
+<p><strong>Click the green flag, place your mouse over the stage and press the space bar.</strong><br />Does the rocket fly towards the mouse from the bottom of the screen? What happens if you move the mouse and press space again?</p>
 </section>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Finally, lets make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a <strong>forever if mouse down</strong>. Then swap the <strong>when space key pressed</strong> control block for <strong>when flag clicked</strong> and last but not least make sure the rocket is hidden when everything starts up.</li>
+<li>Finally, lets make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a <strong>forever if mouse down</strong>.<br />Then swap the <strong>when space key pressed</strong> control block for <strong>when flag clicked</strong> and last but not least make sure the rocket is hidden when everything starts up.</li>
 </ul>
 <p><img src="2385f76aa74b16d7b68a11021da88ff675c672a2.png" alt="
     when FLAG clicked
@@ -97,8 +95,8 @@ These projects are for use outside the UK only. More information is available on
 </section>
 <section id="things-to-try" class="level2 try">
 <h2>Things to try</h2>
-<ol type="1">
-<li>Try making some rockets a little slower or faster than others.</li>
+<ol>
+<li>Try making some rockets a little slower or faster than others.<br /></li>
 <li>Try changing where the rocket moves to be fore gliding towards the mouse to make it arc a little.</li>
 </ol>
 </section>
@@ -140,12 +138,12 @@ These projects are for use outside the UK only. More information is available on
 </section>
 <section id="test-your-project-3" class="level2 flag">
 <h2>Test Your Project</h2>
-<p><strong>Click the green flag.</strong> Make sure the rocket plays a noise and hides when it reaches the mouse.</p>
+<p><strong>Click the green flag.</strong><br />Make sure the rocket plays a noise and hides when it reaches the mouse.</p>
 </section>
 <section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Create new sprite from File, <strong>Resources/firework1.png</strong></li>
+<li>Create new sprite from File, <strong>Resources/firework1.png</strong><br /></li>
 <li>When it receives the explode message, it should hide itself and then move to the position of the rocket using the go to block, show itself, and then vanish again a second later.</li>
 </ul>
 <p><img src="dfc42e82a65fccdb33e8da460ea3f7273b41a43f.png" alt="
@@ -158,7 +156,7 @@ These projects are for use outside the UK only. More information is available on
 </section>
 <section id="test-your-project-4" class="level2 flag">
 <h2>Test Your Project</h2>
-<p><strong>Send another rocket flying.</strong> Does it get replaced with the explosion graphic when it explodes? What happens if you hold the mouse button down whilst moving the mouse? (Don’t worry, we’ll fix this later on).</p>
+<p><strong>Send another rocket flying.</strong><br />Does it get replaced with the explosion graphic when it explodes?<br />What happens if you hold the mouse button down whilst moving the mouse? (Don’t worry, we’ll fix this later on).</p>
 </section>
 <section id="save-your-project-1" class="level2 save">
 <h2>Save your project</h2>
@@ -229,7 +227,7 @@ These projects are for use outside the UK only. More information is available on
 </section>
 <section id="step-4-fixing-the-broadcast-bug" class="level1 activity">
 <h1>Step 4: Fixing the Broadcast Bug</h1>
-<p>Remember earlier we had a problem involving holding down the mouse button? This occurs because when the rocket broadcasts its explosion, it will immediately repeat the if loop and send out another explosion message, before the last one has finished displaying. In computing we often call such problems &quot;bugs&quot;.</p>
+<p>Remember earlier we had a bug involving holding down the mouse button?<br />This occurs because when the rocket broadcasts its explosion, it will immediately repeat the if loop and move the rocket back to the bottom of the stage. This happens before the explosion has moved to the position of the rocket.</p>
 <section id="activity-checklist-7" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
