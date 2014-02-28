@@ -29,35 +29,31 @@ These projects are for use outside the UK only. More information is available on
 <ul>
 <li>Using two <strong>legs sprites</strong> we can make our monsters<br /> appear to walk. To do this we need to set up a<br /> <strong>variable</strong> that switches between two states, one for<br /> our leg swinging forward and another for<br /> backwards (we’ll reverse these states for the other<br /> leg). To do this we need to first set up a <code class="blockorange">step</code><br /> variable, then every time our moving broadcast is<br /> received, <strong>increase the variable by one</strong>. If the<br /> variable goes higher than one (we can test this<br /> with the greater than operator <code class="blockgreen">&gt;</code>) we reset it back<br /> to <strong>zero</strong>.</li>
 </ul>
-<p><img src="f20296f17a42bca0077707bf6df7ea397d1f25f7.png" alt="when FLAG clicked
+<p><img src="2443c495db3e6dedfea879717ccf861913bafe83.png" alt="when FLAG clicked
 set [move speed v] to [5]
 set [step v] to [0]
-stop [this script v]
 
 when I receive [moved left v]
 change [step v] by [1]
 if &lt; (step) &gt; [1] &gt;
     set [step v] to [0]
 end
-stop [this script v]
 
 when I receive [moved right v]
 change [step v] by [1]
 if &lt; (step) &gt; [1] &gt;
     set [step v] to [0]
-end
-stop [this script v]" /></p>
+end" /></p>
 <ul>
 <li>Now we can set our legs to swing by checking<br /> against our <code class="blockorange">step</code> variable. <strong>When the variable<br /> is set to zero</strong> we can change the direction of<br /> our leg (here we’ve used a fixed <code class="blockblue">direction</code> to<br /> stop our legs going mad if our variable and<br /> angle don’t match up, but maybe you want<br /> your monster to do that!). Don’t forget to move<br /> you legs along with your body using your<br /> <code class="blockorange">move speed</code> variable.</li>
 </ul>
-<p><img src="90106ddaa432f690e3ae83bea4ba51a3a5af4351.png" alt="when I receive [moved right v]
+<p><img src="3d0209f8e03dece411052c3ae502b755c8bc9b81.png" alt="when I receive [moved right v]
 change x by (move speed)
 if &lt; (step) = [0] &gt;
     point in direction (180 v)
 else
     point in direction (165 v)
 end
-stop [this script v]
 
 when I receive [moved left v]
 change x by ((move speed) * [-1])
@@ -65,8 +61,7 @@ if &lt; (step) = [1] &gt;
     point in direction (165 v)
 else
     point in direction (180 v)
-end
-stop [this script v]" /></p>
+end" /></p>
 <p><strong>You could use the same sort of actions to make<br />simple waving arms or even flapping bird wings.</strong></p>
 </section>
 <section class="legal">
