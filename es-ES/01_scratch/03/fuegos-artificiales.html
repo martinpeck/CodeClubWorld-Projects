@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="world"  lang="es-ES">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fuegos Artificiales — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+    <link rel="stylesheet" href="../../../css/prism.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Fuegos Artificiales</h1>
+      <span class="level-indicator">Nivel 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Español</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Iniciación a Scratch</a></li><li class="breadcrumbs-item current">Fuegos Artificiales</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="introduccion" class="level1 intro">
+<h1>Introducción</h1>
+<p>En este proyecto vamos a disparar fuegos artificiales sobre una ciudad.</p>
+<p><img src="fireworks_screenshot.png" alt="screenshot" /></p>
+</section>
+<section id="paso-1-crea-un-cohete-que-vuela-hacia-el-raton" class="level1 activity">
+<h1>PASO 1: Crea un cohete que vuela hacia el ratón</h1>
+<p><strong>Vamos a importar las imágenes que necesitaremos para el juego</strong></p>
+<section id="progreso" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li>Crea un nuevo proyecto Scratch. Borra el gato haciendo click con el botón derecho y pulsando Borrar.<br /></li>
+<li>Cambia el fondo por <strong>Exteriores/city-with-water</strong><br /></li>
+<li>Usa el botón <code class="blockgrey">Cargar objeto desde archivo</code> para crear un objeto Cohete en el proyecto (usa el disfraz <strong>Recursos/Cohete.png</strong>).<br /></li>
+<li>Haz que el cohete se esconda al pulsar la bandera verde.</li>
+</ul>
+<p>Ahora queremos que el cohete se mueva hacia el ratón cuando el botón esté pulsado.</p>
+<ul>
+<li>Añade un bloque al presionar tecla espacio, y dentro, haz que el cohete apareza y se deslice hacia la posición del ratón</li>
+</ul>
+<p><img src="bb7ccf2bae987606b531e3263183c90caba4819c.png" alt="
+    Al presionar BANDERA VERDE
+    esconder
+
+    al presionar tecla [espacio v]
+    mostrar
+    deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)" /></p>
+</section>
+<section id="prueba-tu-proyecto" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Pulsa la bandera verde, pon el ratón en el escenario y pulsa la tecla espacio.</strong></p>
+<p>¿Aparece el cohete y se mueve hasta el ratón?<br />¿Qué pasa si mueves el ratón a otra posición y pulsas espacio otra vez?</p>
+</section>
+<section id="progreso-1" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li>Los fuegos artificiales normalmente no vuelan de un lado a otro: Suben en línea recta. Vamos a asegurarnos de que el cohete siempre vuela hacia el ratón desde la parte de abajo de la pantalla. Antes de mostrar el cohete, usa el bloque ir a para hacer que se mueva hasta la parte de abajo, pero se quede en la misma posición horizontal.</li>
+</ul>
+<p><img src="282208a771974dd264b57b300ba9ed617aeaf311.png" alt="
+    Al presionar BANDERA VERDE
+    esconder
+
+    al presionar tecla [espacio v]
+    ir a x: (posición x del ratón) y: (-200)
+    mostrar
+    deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)" /></p>
+</section>
+<section id="prueba-tu-proyecto-1" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Pulsa la bandera verde, pon el ratón en el escenario y pulsa la tecla espacio.</strong><br />¿Vuela el cohete hacia el ratón desde la parte de abajo de la pantalla?<br />¿Qué pasa si mueves el ratón a otra posición y pulsas espacio otra vez?</p>
+</section>
+<section id="progreso-2" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li>Ahora, vamos a disparar los cohetes con el ratón, en vez de usando la tecla espacio. Para eso, podemos envolver nuestro programa en un bloque <em>por siempre si ratón presionado</em>.<br />Después, cambia el bloque <strong>al presionar tecla espacio</strong> por un bloque <strong>Al presionar BANDERA VERDE</strong> . Por último, asegúrate de que el cohete se esconde cuando empieza el juego.</li>
+</ul>
+<p><img src="968224075ab0e5c64dcd00cddbcf70b24764abd2.png" alt="
+    Al presionar BANDERA VERDE
+    esconder
+    por siempre 
+        si &lt;¿ratón presionado?&gt; entonces
+            ir a x: (posición x del ratón) y: (-200)
+            mostrar
+            deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)" /></p>
+</section>
+<section id="prueba-tu-proyecto-2" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Pulsa la bandera verde y haz click en el botón del ratón sobre el escenario. Haz click otra vez en otro sitio.</strong></p>
+</section>
+<section id="cosas-para-probar" class="level2 try">
+<h2>Cosas para probar</h2>
+<ol>
+<li>Haz que unos cohetes vayan más deprisa o más despacio que otros.<br /></li>
+<li>Intenta cambiar a dónde se mueve el cohete antes de dispararse hacia el ratón, para que haga una pequeña curva mientras vuela</li>
+</ol>
+</section>
+<section id="guarda-tu-proyecto" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+</section>
+</section>
+<section id="paso-2-hacer-que-el-cohete-explote" class="level1 activity">
+<h1>PASO 2: Hacer que el cohete explote</h1>
+<section id="progreso-3" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li>El primer paso para hacer que el cohete explote es que reproduza el sonido <strong>Recursos/bang.wav</strong> antes de empezar a moverse. Después, tiene que desaparecer cuando llega a la posición del ratón. Para importar un sonido nuevo ve a la pestaña Sonidos y haz click en el botón <code class="blockgrey">Cargar sonido desde archivo</code>.</li>
+</ul>
+<p><img src="ef214f6737a370ba977e988771066366371d5aee.png" alt="
+    Al presionar BANDERA VERDE
+    esconder
+    por siempre 
+        si &lt;¿ratón presionado?&gt; entonces
+            ir a x: (posición x del ratón) y: (-200)
+            tocar sonido [bang v]
+            mostrar
+            deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)
+            esconder" /></p>
+<ul>
+<li>Ahora, haz que el cohete envíe un mensaje cuando explota. Haremos algo con ese mensaje después (recibirlo)</li>
+</ul>
+<p><img src="8d8fab7b43f6a9ae9c7a59695d6091e72152254d.png" alt="
+    Al presionar BANDERA VERDE
+    esconder
+    por siempre 
+        si &lt;¿ratón presionado?&gt; entonces
+            ir a x: (posición x del ratón) y: (-200)
+            tocar sonido [bang v]
+            mostrar
+            deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)
+            esconder
+            enviar [explotar v]" /></p>
+</section>
+<section id="prueba-tu-proyecto-3" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Pulsa la bandera verde.</strong><br />Comprueba que el cohete hace ruido y se esconde cuando llega a la posición del ratón.</p>
+</section>
+<section id="progreso-4" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li>Crea un nuevo objeto desde un fichero, <strong>Recursos/firework1.png</strong><br /></li>
+<li>Cuando reciba el mensaje explotar, debería esconderse y moverse hacia la posición del cohete usando un bloque ir a, aparecer y desaparecer un segundo después.</li>
+</ul>
+<p><img src="d2d71015535d2471630d0e055bbd1dc5a91a5fee.png" alt="
+    al recibir [explotar v]
+    esconder
+    ir a [cohete v]
+    mostrar
+    esperar (1) segs
+    esconder" /></p>
+</section>
+<section id="prueba-tu-proyecto-4" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>¡Lanza un cohete!.</strong><br />¿Aparece el dibujo de la explosión cuando el cohete explota?<br />¿Qué pasa si dejas pulsado el ratón mientras el cohete se está moviendo? (no te preocupes, arreglaremos esto en un rato).</p>
+</section>
+<section id="guarda-tu-proyecto-1" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+</section>
+</section>
+<section id="paso-3-haz-que-cada-explosion-sea-unica" class="level1 activity">
+<h1>PASO 3: Haz que cada explosión sea única</h1>
+<ul>
+<li>Ahora queremos que cada explosión sea única, usando el bloque <code class="blockpurple">establecer efecto color</code>, y haciendo que elija un color al azar entre <strong>1</strong> y __200_ antes de mostrarse.</li>
+</ul>
+<p><img src="933178e3a48062edc0754b7f3eb509a1390baeda.png" alt="
+    al recibir [explotar v]
+    esconder
+    establecer efecto [color v] a (número al azar entre (1) y (200))
+    ir a [cohete v]
+    mostrar
+    esperar (1) segs
+    esconder
+    " /></p>
+<section id="prueba-tu-proyecto-5" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Pulsa la bandera verde.</strong></p>
+<p>¿Tiene cada explosión un color diferente?</p>
+</section>
+<section id="progreso-5" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li>Vamos a usar los disfraces para añadir más tipos de explosiones, usando <strong>Recursos/firework2.png</strong> y <strong>Recursos/firework3.png</strong>, y cambiando entre ellas para cada cohete antes de mostrarlas.</li>
+</ul>
+</section>
+<section id="prueba-tu-proyecto-6" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>¡Lanza un cohete!</strong></p>
+<p>¿Explota cada cohete de una manera distinta?</p>
+</section>
+<section id="progreso-6" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li>Por último, vamos a a hacer que la explosión se haga más grande antes de que el cohete explote! En vez de esperar un segundo, pon el tamaño del objeto a <strong>5%</strong> antes de mostrarlo y luego, cuando lo muestras, aumenta el tamaño por <strong>2 cincuenta veces</strong>, usando un bloque <code class="blockorange">repetir</code>.</li>
+</ul>
+<p><img src="6b153780a6f53cabfb931ca374c1a5d1de233983.png" alt="    
+    al recibir [explotar v]
+    esconder
+    establecer efecto [color v] a (número al azar entre (1) y (200))
+    ir a [cohete v]
+    mostrar
+    fijar tamaño a (5) %
+    repetir (50)
+        cambiar tamaño por (2)
+    fin
+    esconder
+    " /></p>
+</section>
+<section id="prueba-tu-proyecto-7" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Pulsa la bandera verde.</strong></p>
+<p>¿Crece el gráfico de la explosión desde el centro hacia afuera poco a poco?</p>
+</section>
+<section id="cosas-para-probar-1" class="level2 try">
+<h2>Cosas para probar</h2>
+<ul>
+<li>Intenta hacer cada explosión todavía más distinta cambiando el tamaño y la velocidad de la explosión.</li>
+</ul>
+</section>
+<section id="guarda-tu-proyecto-2" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+</section>
+</section>
+<section id="paso-4-arreglando-el-problema-de-la-senal-explotar" class="level1 activity">
+<h1>PASO 4: Arreglando el problema de la señal explotar</h1>
+<p>¿Te acuerdas de que antes vimos un fallo (<strong>bug</strong>) cuando el botón del ratón se quedaba pulsado?<br />Esto pasa porque cuando el cohete envía la señal de su explosión, inmediatamente va a repetir el bucle &quot;si&quot; y mover el cohete a la parte de abajo del escenario. Y esto pasa <strong>antes</strong> de que la explosión se mueva a la posición del cohete.</p>
+<section id="progreso-7" class="level2 check">
+<h2>Progreso</h2>
+<ul>
+<li>Para arreglarlo, podemos reemplazar el bloque enviar con un bloque enviar y esperar. Así, el bucle no se repetirá hasta que el objeto explosión termine de explotar.</li>
+</ul>
+<p><img src="736b313b161528659a4e979ffe37b243fd16641e.png" alt="
+    Al presionar BANDERA VERDE
+    esconder
+    por siempre 
+        si &lt;¿ratón presionado?&gt; entonces
+            ir a x: (posición x del ratón) y: (-200)
+            tocar sonido [bang v]
+            mostrar
+            deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)
+            esconder
+            enviar [explotar v] y esperar" /></p>
+</section>
+<section id="prueba-tu-proyecto-8" class="level2 flag">
+<h2>Prueba tu proyecto</h2>
+<p><strong>Pulsa la bandera verde y mueve el ratón por el escenario mientras mantienes apretado el botón.</strong></p>
+<p>¿Aparece ahora la explosión en el sitio adecuado y en el momento correcto?</p>
+</section>
+<section id="guarda-tu-proyecto-3" class="level2 save">
+<h2>Guarda tu proyecto</h2>
+<p><strong>¡Bien hecho, has acabado! Ahora ¡Disfruta de tu juego!</strong></p>
+<p>No olvides que puedes compartir el juego con tu familia y amigos pulsando el botón <strong>Compartir</strong> en la barra de herramientas</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <link rel="stylesheet" href="../../../js/prism.js">
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-2']);
+      _gaq.push(['_setDomainName', 'codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

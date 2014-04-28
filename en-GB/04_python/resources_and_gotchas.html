@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="world"  lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Volunteer resources — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../css/master.min.css">
+    <link rel="stylesheet" href="../../css/prism.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../index.html"><img alt="" class="logo" height="100" src="../../img/ccw_logo.png"></a>
+      <h1 class="title">Volunteer resources</h1>
+      
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Python</a></li><li class="breadcrumbs-item current">Volunteer Notes</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<p>This is a new-ish course, and unfortunately may have a few bugs. If you have ideas, comments or would like to help, come and join us on Github <a href="https://github.com/CodeClub/python-curriculum">https://github.com/CodeClub/python-curriculum</a></p>
+<p>You can also email <script type="text/javascript">
+<!--
+h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#x73;&#x75;&#112;&#112;&#x6f;&#114;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x73;&#x75;&#112;&#112;&#x6f;&#114;&#116;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript> too if you get really stuck. We've tested the coursework, but your feedback will be invaluable for making it better, easier and more fun.</p>
+<section id="installing-python" class="level1">
+<h1>Installing python</h1>
+<p>Although a little daunting, the python download page at <a href="http://www.python.org/download/">http://www.python.org/download/</a> has everything you need to get started.</p>
+<p>We've suggesting Python 3 over Python 2, and you will need to know which operating system and hardware to use.</p>
+</section>
+<section id="an-all-too-fast-introduction-to-python" class="level1">
+<h1>An all too fast introduction to Python</h1>
+<p>Python is a scripting language, with variables and objects. Objects can be numbers, <code>1</code> or strings <code>&quot;abc&quot;</code>, or lists <code>[ 1,2,3]</code>, or dictionaries <code>{'one': 123, 'two': 123}</code>. Variables don't need to be explicitly defined, just assigned to be used.</p>
+<pre class="language-python"><code>x = 1
+x = x + 2
+y = [ 1, 2, 3]</code></pre>
+<p>Python uses whitespace to delimit blocks of control, in functions, if, for and while loops:</p>
+<pre class="language-python"><code>
+def foo(a,b,c):
+    return a * b * c
+
+if foo(1,2,3) &lt; 8:
+    print(&quot;Hello&quot;)
+else:
+    print(&quot;Nope&quot;)
+
+x = 10
+while x &gt; 0:
+    x = x -1
+    print(x)
+
+for x in range(10):
+    print(x)</code></pre>
+<p>One thing that will trip people up is that python variables don't store the values themselves, but a reference to the value.</p>
+<pre class="language-python"><code>x = [ 1,2,3 ]
+y = x
+y.append(4)
+print(x) # prints 1,2,3,4</code></pre>
+<p>Don't worry if this seems a little confusing, we're trying to stay away from the more awkward bits of python for the introductory lessons. If you're comfortable with scratch, you should be able to start playing with Python.</p>
+<p>There is much more to python than this, and the offical python tutorial is a good place to get started.</p>
+<ul>
+<li><a href="http://docs.python.org/3/tutorial/introduction.html">http://docs.python.org/3/tutorial/introduction.html</a><br /></li>
+<li><a href="http://docs.python.org/2/tutorial/introduction.html">http://docs.python.org/2/tutorial/introduction.html</a></li>
+</ul>
+</section>
+<section id="python-problems" class="level1">
+<h1>Python Problems</h1>
+<p>We don't touch on any advanced or intermediate features in this course so far, and the majority of problems we've encountered from testing are as follows:</p>
+<ol>
+<li><p>Missing ':' at end of <code>if</code>, <code>def</code>, <code>for</code></p>
+<p>Everyone does this. I do this. This is probably the first syntax error people will encounter</p></li>
+<li><p>Using <code>-</code> instead of <code>_</code>.</p>
+<p><code>-</code> is an operator and can't appear in variable names</p></li>
+<li><p>Missing or wrong indentation.</p>
+<p>Python is very pedantic about whitespace. Tabs count as 8 spaces, but thankfully IDLE will convert tabs into 4 spaces (the python coding standard, so mixing them<br />shouldn't come up). We've tried to cover indentation as much as possible without boring the students to death</p></li>
+<li><p>Other classic syntax errors</p>
+<p>Misspelled names, missing or excess punctuation.</p></li>
+<li><p>Forgetting to open a new window in IDLE</p>
+<p>We've repeated this instruction a couple of times, but students need two windows open in IDLE to begin<br />and occasionally start writing in the output window</p></li>
+<li><p>The turtle window crashes after the program finishes running</p>
+<p>This is ok, the student can just rerun the program and it quits and restarts.</p></li>
+<li><p>The student uses a file name with the same name as a library</p>
+<p>For example, <code>turtle.py</code> will break if you have <code>from turtle import *</code></p></li>
+</ol>
+</section>
+<section id="python-2-vs-python-3" class="level1">
+<h1>Python 2 vs Python 3</h1>
+<p>The course currently suggests using Python 3, but none of the examples depend on Python 3 features. All the code should work under Python 2, although there are some minor caveats.</p>
+<section id="the-print-statement" class="level2">
+<h2>The Print statement</h2>
+<p>In python 2, print is a keyword, and so is normally written <code>print &quot;foo&quot;</code>, but in Python 3, print is an ordinary function and usually written <code>print(&quot;foo&quot;)</code>. Due to syntactic quirks, the python 3 style works in python 2, but it may lead to some confusion if a trailing comma appears, i.e <code>print(&quot;foo&quot;,)</code> works differently in Python 2 and 3.</p>
+<p>In python 2, print(&quot;foo&quot;,) is the same as print((&quot;Foo&quot;,)) in python three: printing a one element list containing &quot;Foo&quot;.</p>
+</section>
+<section id="floating-point" class="level2">
+<h2>Floating Point</h2>
+<p>In python 2, <code>1/2</code> is 0, as python assumes integer division. In python 3, <code>1/2</code> is 0.5. We've tried to avoid relying on one behaviour or the other, and for python 2 this can be remedied by using floating point, i.e <code>1.0/2</code> or <code>1/2.0</code>.</p>
+</section>
+</section>
+<section id="other-python-courses" class="level1">
+<h1>Other Python Courses</h1>
+<p>Learn Python the Hard Way<br /><a href="http://learnpythonthehardway.org/">http://learnpythonthehardway.org/</a></p>
+<p>Introduction to Computer Science 101<br /><a href="https://www.udacity.com/course/cs101">https://www.udacity.com/course/cs101</a></p>
+<p>Codecademy python track<br /><a href="http://www.codecademy.com/tracks/python">http://www.codecademy.com/tracks/python</a></p>
+<p>Dive into Python<br /><a href="http://www.diveintopython.net/">http://www.diveintopython.net/</a></p>
+</section>
+<section id="this-might-be-relevant-to-your-interests" class="level1">
+<h1>This might be relevant to your interests</h1>
+<p>Cheat sheet for translating Scratch blocks to python commands<br /><a href="https://docs.google.com/document/d/1PExbraZ6a1yK7EG0M8nHWfIuQz7-SL8XZOmPmpF05Uo/pub">https://docs.google.com/document/d/1PExbraZ6a1yK7EG0M8nHWfIuQz7-SL8XZOmPmpF05Uo/pub</a></p>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <link rel="stylesheet" href="../../js/prism.js">
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-2']);
+      _gaq.push(['_setDomainName', 'codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

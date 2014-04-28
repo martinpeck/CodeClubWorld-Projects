@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="world"  lang="sv-SE">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ökenracet — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+    <link rel="stylesheet" href="../../../css/prism.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Ökenracet</h1>
+      <span class="level-indicator">Nivå 2</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Svenska</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch</a></li><li class="breadcrumbs-item current">Ökenracet</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="introduktion" class="level1 intro">
+<h1>Introduktion</h1>
+<p>Det här är ett spel för två personer där en papegoja och ett lejon har kapplöpning genom öknen. Varje spelare ska slå på en tangent så fort den kan för att flytta på sitt djur, och den första som når kanten på skärmen vinner.</p>
+<section id="steg-1-skapa-scenen-och-lagg-till-sprites" class="level2 activity">
+<h2>STEG 1: Skapa scenen och lägg till sprites</h2>
+</section>
+<section id="checklista" class="level2 check">
+<h2>Checklista</h2>
+<ol>
+<li>Välj Scenen och lägg till ökenbakgrunden (öken heter desert på engelska)<br /></li>
+<li>Lägg till en ny sprite, välj lejonspriten som du hittar i mappen animals.<br /></li>
+<li>Lägg till en sprite till, nu papegojspiten som du också hittar i mappen animals.</li>
+</ol>
+</section>
+<section id="steg-2-fa-lejonet-och-papegojan-att-rora-pa-sig" class="level2 activity">
+<h2>STEG 2: Få lejonet och papegojan att röra på sig</h2>
+<p>Vi vill att spritearna ska röra på sig när du trycker ner en tangent.</p>
+</section>
+<section id="checklista-1" class="level2 check">
+<h2>Checklista</h2>
+<ol>
+<li>Börja med att välja lejonspriten och säg åt den att flytta sig 4 steg när du trycken ner tangenten &quot;L&quot;.</li>
+</ol>
+<p><img src="feeb31e7216dbf46b92d5a24c4cf8d8244cacd4a.png" alt="
+    när l trycks
+    gå 4 steg" /></p>
+<ol>
+<li>Välj sen papegojspriten och gör så att den rör sig 4 steg när du trycker på tangenten &quot;A&quot;.</li>
+</ol>
+<p><img src="968ea04eccafbfe2404f91d42ee6776dfe017efa.png" alt="
+    när a trycks
+    gå 4 steg" /></p>
+</section>
+<section id="testa-ditt-projekt" class="level2 flag">
+<h2>Testa ditt projekt</h2>
+<p><strong>Klicka på den gröna flaggan<br />Rör sig ditt lejon och din papegoja över skärmen när du trycker ner A och L?</strong></p>
+</section>
+<section id="spara-ditt-projekt" class="level2 save">
+<h2>Spara ditt projekt</h2>
+</section>
+<section id="steg-3-starta-racet" class="level2 activity">
+<h2>STEG 3: Starta racet</h2>
+<p>Vi behöver ha ett sätt att påbörja racet och att veta vem som har vunnit. <strong>Först skapar vi en startknapp.</strong></p>
+</section>
+<section id="checklista-2" class="level2 check">
+<h2>Checklista</h2>
+<ol>
+<li>Lägg till en ny sprite från en fil. Välj knappspriten inuti mappen &quot;things&quot;.<br /></li>
+<li>Redigera klädseln på knappspriten, lägg till texten &quot;Starta&quot; och klicka på OK. Flytta spriten till mitten av scenen.<br /></li>
+<li>Lägg nu till ett script som visar spriten när projektet körs igång:</li>
+</ol>
+<p><img src="4366bb86fccaf828b51d883ad4a529fb2d831e00.png" alt="
+    when FLAGGA klickas på
+    visa" /></p>
+<ol>
+<li>Nu vill vi att knappen ska räkna ner från 3 och sen säga &quot;GÅ!&quot;, och sen gömmas när den klickas på. Lägg till ett script som ser ut såhär:</li>
+</ol>
+<p><img src="878a87854ca4f0a1b9db93505fcdcac6e0f42ab8.png" alt="
+    när Start klickas på
+    säg klara i 1 sekunder
+    säg färdiga i 1 sekunder
+    säg GÅ! i en sekunder
+    göm" /></p>
+</section>
+<section id="testa-ditt-projekt-1" class="level2 flag">
+<h2>Testa ditt projekt</h2>
+<p><strong>Klicka på den gröna flaggan.</strong></p>
+<p>När du trycken på startknappen, räknar den ner till starten och försvinner sen?</p>
+</section>
+<section id="spara-ditt-projekt-1" class="level2 save">
+<h2>Spara ditt projekt</h2>
+<p>Vi vill bara att de tävlande ska röra på sig efter att racet har startat och vi vill veta när racet är slut så vi behöver en variabel som kan hålla koll på den informationen.</p>
+</section>
+<section id="checklista-3" class="level2 check">
+<h2>Checklista</h2>
+<ol>
+<li>Lägg till en variabel till alla sprites som du kallar springer. Kryssa ur rutan intill den så att den inte visas på scenen.<br /></li>
+<li>Sätt nu springer till 0 när projektet börjar köras. Ändra i ditt &quot;när FLAGGA klickas på&quot;-script så att det ser ut såhär:</li>
+</ol>
+<p><img src="e8652e12987a14c3c314803a85c23f726863013b.png" alt="
+    when FLAGGA klickas på
+    visa
+    sätt springer till 0" /></p>
+<ol>
+<li>Nu ska du sätta springer-variabeln till att bli 1 när nedräkningen är klar.<br /></li>
+<li>Sen behöver vi stoppa lejonet och papegojan från att röra sig om inte springer-variabeln är satt till 1. Klicka på papegojspriten. <strong>Lägg till ett kontrollblock i scriptet</strong> som bara tillåter<br />papegojan att röra sig om <strong>springer = 1</strong>.</li>
+</ol>
+<p><img src="1f9d2fdc007756da93ab059b10dc9bca4841621c.png" alt="
+    när a trycks
+    om springer = 1
+        gå 4 steg
+    (slut på om)" /></p>
+<ol>
+<li>Gör nu samma sak för lejonspriten.</li>
+</ol>
+</section>
+<section id="testa-ditt-projekt-2" class="level2 flag">
+<h2>Testa ditt projekt</h2>
+<p><strong>Klicka på den gröna flaggan.</strong></p>
+<p>Flyttar sig lejonet och papegojan bara efter att nedräkningen är färdig?</p>
+<p>Vi vill veta vem som vinner racet och återställa det när det är slut så att du kan tävla igen.</p>
+</section>
+<section id="step-4-malgangen" class="level2 activity">
+<h2>Step 4: Målgången</h2>
+<ol>
+<li>Lägg till ett block i papegojans script som sätter springer-variabeln till 0 när spriten nuddar kanten av skärmen (mål).</li>
+</ol>
+<p><img src="b7bb4d13675aeb69435d78fa60401d3bb61ffe62.png" alt="
+    när a trycks
+    om springer = 1
+        gå 4 steg
+        om rör kant?
+            sätt springer till 0
+        (slute på om)
+    (slut på om)" /></p>
+<ol>
+<li>Nu vill vi att papegojan ska säga till om den har vunnit racet. Spela in ett nytt ljud till papegojspriten som spelas upp när papegojan vinner. Klicka på <strong>ljud</strong> och spela sen in ljudet av papegojan som vinner racet!<br /></li>
+<li>Lägg nu till block som spelar upp ditt inspelade ljud och får papegojan att säga det när den har vunnit:</li>
+</ol>
+<p><img src="55bb149f69c80a2c648f8b23d9c812dd6c615da2.png" alt="
+    när a trycks
+    om springer = 1
+        gå 4 steg
+        om rör kant?
+            sätt springer till 0
+            spela ljud recording1
+            säg Papegojan vann! i 3 sekunder
+        (slut på om)
+    (slut på om)" /></p>
+<ol>
+<li>Repetera nu samma steg för lejonet.</li>
+</ol>
+</section>
+<section id="testa-ditt-projekt-3" class="level2 flag">
+<h2>Testa ditt projekt</h2>
+<p><strong>Klicka på den gröna flaggan.</strong></p>
+<p>Kan du trycka på startknappen och racea genom att trycka på A och L-tangenterna?<br />Gör spritearna sina vinnarljud och säger att de har vunnit när de når mål (kanten på skärmen)?</p>
+</section>
+<section id="spara-ditt-projekt-2" class="level2 save">
+<h2>Spara ditt projekt</h2>
+</section>
+<section id="steg-5-nollstalla-spelet" class="level2 activity">
+<h2>STEG 5: Nollställa spelet</h2>
+<p>När kapplöpningen är slut behöver vi berätta för de andra spritearna att vi har vunnit och nollställa spelet så att vi kan spela igen.</p>
+<p><strong>Vi behöver få vinnarspriten att sända ut att den har vunnit.</strong></p>
+</section>
+<section id="checklista-4" class="level2 check">
+<h2>Checklista</h2>
+<ol>
+<li>Klicka på papegojspriten.<br />Lägg till ett block som sänder ut &quot;klar&quot; efter att spriten säger att den har vunnit.</li>
+</ol>
+<p><img src="03aaf6c82ac027c562dc710174497710b0d3b7b5.png" alt="
+    när a trycks
+    om springer = 1
+        gå 4 steg
+        om rör kant?
+            sätt springer till 0
+            spela ljud recording1
+            säg Papegojan vann! i 3 sekunder
+            sända klar
+        (slut på om)
+    (slut på om)" /></p>
+<ol>
+<li>Nu behöver vi lägga till ett script som lyssnar till klar-meddelandet och flyttar tillbaka papegojan till startlinjen. Vad händer om du ändrar värdet för x?</li>
+</ol>
+<p><img src="2764f17a4bf462ad99899cb5839fa342cc3814df.png" alt="
+    when jag tar emot klar
+    sätt x till -175" /></p>
+<ol>
+<li>Lägg nu till samma script för lejonet. Pröva olika x-värden för att se till att lejonet och papegojan båda är på startlinjen.<br /></li>
+<li>Vi vill också att lejonet och papegojan ska vara på samma ställe när projektet körs, så lägg till ännu ett script till båda som flyttar dem till startlinjen<br />när vi klickar på flaggan.</li>
+</ol>
+<p><img src="03896db4ad5e57241ed21c2243146f67f642cfe5.png" alt="
+    när FLAGGA klickas på
+    sätt x till -175" /></p>
+<ol>
+<li>Klicka nu på knappspriten och lägg till ett script som visar den när den tar emot klar-meddelandet.</li>
+</ol>
+</section>
+<section id="testa-ditt-projekt-4" class="level2 flag">
+<h2>Testa ditt projekt</h2>
+<p><strong>Klicka på den gröna flaggan.</strong></p>
+<p>Kan du tävla mot en kompis genom att en av er slår på A för att flytta papegojan och den andra flyttar lejonet genom att slå på L?</p>
+</section>
+<section id="spara-ditt-projekt-3" class="level2 save">
+<h2>Spara ditt projekt</h2>
+</section>
+<section id="utmaning-lagg-till-en-booster" class="level2 challenge">
+<h2>Utmaning: Lägg till en booster</h2>
+<ul>
+<li><strong>Pröva att lägga till en booster</strong> som du kan använda en gång för varje race och som flyttar papegojan eller lejonet <strong>30 steg på en gång</strong>.<br /></li>
+<li><strong>Lägg till en ny klädsel</strong> med eld som sprutar från spriten och få den att visas när boosten används.<br /></li>
+<li><strong>Skapa ett nytt ljud</strong> som spriten kan göra när boosten används.</li>
+</ul>
+</section>
+<section id="testa-ditt-projekt-5" class="level2 flag">
+<h2>Testa ditt projekt</h2>
+</section>
+<section id="spara-ditt-projekt-4" class="level2 save">
+<h2>Spara ditt projekt</h2>
+<p><strong>Bra jobbat, nu är du klar och kan spela ditt spel!</strong><br />Glöm inte att du kan dela spelet med dina kompisar och din familj genom att klicka på <strong>Dela ut</strong> i menyn!</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <link rel="stylesheet" href="../../../js/prism.js">
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-2']);
+      _gaq.push(['_setDomainName', 'codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

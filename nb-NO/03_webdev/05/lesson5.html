@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="world"  lang="nb-NO">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Styling og formatering av tekst — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+    <link rel="stylesheet" href="../../../css/prism.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Styling og formatering av tekst</h1>
+      <span class="level-indicator">Lesson 5</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Norsk</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">HTML &amp; CSS</a></li><li class="breadcrumbs-item current">Styling og formatering av tekst</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="introduksjon" class="level2 intro">
+<h2><strong>Introduksjon:</strong></h2>
+<p>I denne seksjonen skal vi lære hvordan man kan style tekst med forskjellige skrifttyper, farger og størrelser. Vi vil også lære hvordan du legger til bakgrunnsfarger og pyntekanter. Vi skal bruke det samme prosjektet du jobbet med sist gang, så sørg for at du åpner index.html i Felix mappen.</p>
+</section>
+<section id="steg-1-skrifttyper" class="level1 activity">
+<h1>Steg 1: Skrifttyper</h1>
+<p>Vi kan endre utseendet på teksten ved å endre <strong>skrifttypen</strong> (&quot;font&quot; på englesk). De mest vanlige skrifttypene heter:</p>
+<ul>
+<li>Arial<br /></li>
+<li>Courier New, Courier<br /></li>
+<li>Garamond<br /></li>
+<li>Georgia<br /></li>
+<li>Lucida Sans, Lucida Grande, Lucida<br /></li>
+<li>Palatino Linotype<br /></li>
+<li>Tahoma<br /></li>
+<li>Times New Roman, Times<br /></li>
+<li>Trebuchet<br /></li>
+<li>Verdana</li>
+</ul>
+<p>Ikke alle skrifttyper finnes på alle datamaskiner, så vi trenger å oppgi en <strong>fall-back font</strong> (en skrifttype vi kan falle tilbake på om førstevalget vårt ikke finnes på datamaskinen) også. Disse er ganske generiske som &quot;sans serif&quot;, &quot;serif&quot;.</p>
+<p>La oss prøve å endre skrifttype på overskriften ved hjelp av <code>font-family</code>-egenskapen.</p>
+<pre class="language-css"><code>h1 {
+    color: red;
+    background-color:black;
+    font-size:72px;
+    text-transform:uppercase;
+    text-decoration:underline;
+    text-decoration:blink;
+    font-family:impact, sans-serif;
+}</code></pre>
+<p>Og skriften i avsnittene...</p>
+<pre class="language-css"><code>p {
+    font-family:georgia, &#39;times new roman&#39;, serif;
+}</code></pre>
+<section id="lagre-filen-og-se-pa-den-i-nettleseren" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettleseren</h2>
+<p>Prøv noen av de forskjellige skrifttypene for å se hvilken du liker best. Legg merke til hvordan vi skiller mellom hver skrifttype med et komma, og hvis skrifttypen har et navn med mer enn ett ord trenger vi å sette det i anførselstegn.</p>
+<p>Hvilken av skrifttypene vi nevnte tror du ser best ut? Hvilken tror du er lettest å lese?</p>
+<p>Har du andre skrifttyper på datamaskinen enn de som er nevnt? (det har du sannsynligvis). Prøv å åpne et program som Word eller Pages, alle skrifttypene som er lagret på datamaskinen kan vanligvis finnes der.</p>
+<p><img src="fonts.png" alt="screenshot" /></p>
+<p>Finn en skrifttype du liker og prøv den på websiden!</p>
+<p>Du kan gjøre teksten <strong>fet</strong>, <em>kursiv</em> eller begge deler med <code>font-style</code>. La oss endre email teksten (husk den er inni en <code>&lt;a&gt;</code>-tag).</p>
+<pre class="language-css"><code>a {
+    font-style:bold;
+}</code></pre>
+</section>
+<section id="lagre-filen-og-se-pa-den-i-nettlerseren" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
+<p>Teksten har blitt fet! La oss se hvordan den ser ut i kursiv. Kursiv på engelsk er <code>italic</code>.</p>
+<pre class="language-css"><code>a {
+    font-style:italic;
+}</code></pre>
+</section>
+<section id="lagre-filen-og-se-pa-den-i-nettlerseren-1" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
+<p>Det finnes også en <code>font-style</code>-verdi som heter ‘oblique’. Hvordan ser den ut?</p>
+<p>Vi kan til og med si hvor fet en tekst skal være ved å bruke egenskapen <code>font-weight</code>. Den tar verdiene <code>normal</code>, <code>bold</code>, <code>bolder</code> og <code>lighter</code>. Du kan også bruke tall, 100, 200, 300, 400, 500, 600, 700, 800 og 900, hvor 100 er den tynneste teksten og 900 er den tykkeste. Normal tekst er det samme som 400 og &quot;bold&quot; er det samme som 700. Men ikke alle skrifttypene har alle disse, så det er tryggere å bare bruke normal og bold. Overskrifter er normalt bold som standard. Hvis vi ikke ønsker at <code>h2</code>-overskiften vår skal være fet, må vi skrive:</p>
+<pre class="language-css"><code>h2 {
+    font-weight:normal;
+}</code></pre>
+<p>Prøv da vel!</p>
+</section>
+</section>
+<section id="steg-2-pyntekanter" class="level1 activity">
+<h1>Steg 2: Pyntekanter!</h1>
+<p>La oss legge til en ramme rundt bildet:</p>
+<pre class="language-css"><code>img {
+    border-color:green;
+    border-width:5px;
+    border-style:solid;
+}</code></pre>
+<section id="lagre-filen-og-se-pa-den-i-nettlerseren-2" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
+<p>Prøv å endre fargen (<code>border-color</code>), bredden (<code>border-width</code>) og pyntekanten (<code>border-style</code>) til du er fornøyd. Noen verdier for <code>border-style</code> er <code>dashed</code>, <code>dotted</code>, <code>double</code>, <code>groove</code>, <code>ridge</code>, <code>inset</code> og <code>outset</code>.</p>
+<p>Du kan sette kanter rundt alle typer elementer, hvorfor ikke prøve noen flere.</p>
+</section>
+</section>
+<section id="steg-3-ider-og-klasser" class="level1 activity">
+<h1>Steg 3: IDer og klasser</h1>
+<p>Vi ønsker å <strong>utheve</strong> kontakt-avsnittet. Vi kan ikke bruke <code>&lt;p&gt;</code>-taggen fordi det vil endre alle avsnittene. For å gjøre slik at en stil gjelder bare for ett element, bruker vi noe som kalles ID. Vi trenger å redigere HTML-filen slik:</p>
+<pre class="language-markup"><code>&lt;p id =&quot;uthevet&quot;&gt;Har du sett Felix? &lt;em&gt;Vennligst&lt;/em&gt; kontakt eieren hans på &lt;a href=&quot;mailto:eierentilfelix@email.com&quot;&gt;eierentilfelix@email.com&lt;/a&lt;/p&gt;</code></pre>
+<p>så kan vi style den IDen som så:</p>
+<pre class="language-css"><code>#uthevet {
+    color:red;
+}</code></pre>
+<section id="lagre-filen-og-se-pa-den-i-nettlerseren-3" class="level2 save">
+<h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
+<p>En ID er unik og kan bare brukes én gang per side. Så hva hvis vi ønsket at to av avsnittene skal ha en større tekststørrelse? Vi kan gjøre det ved hjelp av klasser. Først må vi gi klassenavn til de avsnittene vi ønsker å endre.</p>
+<pre class="language-markup"><code>&lt;p class=&quot;stor&quot;&gt;Han forvant fra hagen i går.&lt;/p&gt;
+&lt;p class=&quot;stor&quot;&gt;&lt;strong&gt;Takk!&lt;/strong&gt;&lt;p&gt;</code></pre>
+<p>Vi styler en klasse sånn (med en <code>.</code> i stedet for <code>#</code>):</p>
+<pre class="language-css"><code>.stor {
+    font-size:24px;
+}</code></pre>
+</section>
+<section id="ting-du-kan-prve" class="level2 try">
+<h2>Ting du kan prøve</h2>
+<ul>
+<li>Hvordan ville du endret siden slik at den ser bedre ut? Hvorfor ikke prøve å bruke dine favorittfonter, farger osv.<br /></li>
+<li>Hvis du er tidlig ferdig kan du style sidene vi lagde i tidligere leksjoner.<br /></li>
+<li>Forresten, visste du at <code>background</code>-egenskapen ikke bare tar verdier som er farger, men også bilder?</li>
+</ul>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <link rel="stylesheet" href="../../../js/prism.js">
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-2']);
+      _gaq.push(['_setDomainName', 'codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

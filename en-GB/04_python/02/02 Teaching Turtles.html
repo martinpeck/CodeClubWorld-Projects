@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="world"  lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teaching Turtles — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+    <link rel="stylesheet" href="../../../css/prism.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Teaching Turtles</h1>
+      <span class="level-indicator">Level 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Python</a></li><li class="breadcrumbs-item current">Teaching Turtles</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="step-1-back-to-square-one" class="level1 activity">
+<h1>Step 1: Back to Square One</h1>
+<section id="activity-checklist" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>Open IDLE, the editor and open a new file by going to File &gt; New Window, and let's get started.</li>
+</ul>
+<p>Remember you should have two windows open. One is 'Python Shell', and the other is to write your code in. Like before, the first line will always be <code>from turtle import *</code> to tell Python we want to draw!</p>
+<pre class="language-python"><code>from turtle import *
+
+    for n in range(4):
+        forward(100)
+        right(90)
+</code></pre>
+<ul>
+<li>Save it as a new file, and Run it from the Menu by going to Run &gt; Run Module.</li>
+</ul>
+<p>Remember that <code>for n in range(4)</code> repeats the code, and that the code needs to be grouped using spaces, or indented to be part of the the for loop. Use the 'Tab' key (it's above caps lock!) to move the code around.</p>
+</section>
+</section>
+<section id="step-2-a-variable-square" class="level1 activity">
+<h1>Step 2: A variable square</h1>
+<p>Like we did last time, let's use variables to make our program clearer, and easier to change:</p>
+<section id="activity-checklist-1" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li><p>Edit the file to look like the following:</p>
+<pre class="language-python"><code>from turtle import *
+
+sides = 4
+length = 100
+angle = 360/sides
+
+for n in range(sides):
+    forward(length)
+    right(angle)</code></pre></li>
+<li><p>Run it using Run &gt; Run Module in the Menu. Do you get the same square as before? Make sure it works before you move on.</p></li>
+</ul>
+<p>This is a long program, but now we can change it to draw any shape we wanted to, but we'd need to copy it over and over again. Like before, we can write some code to stop having repeating ourself. This time we will define a new command.</p>
+</section>
+</section>
+<section id="step-3-a-new-command-appears" class="level1 activity">
+<h1>Step 3: A new command appears</h1>
+<section id="activity-checklist-2" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>We will edit the code and add <code>def poly():</code>, indent the code (you can select it and press Tab), and call the new command.</li>
+</ul>
+<pre class="language-python"><code>from turtle import *
+
+    def poly():
+        sides = 4
+        length = 100
+        angle = 360/sides
+
+        for n in range(sides):
+            forward(length)
+            right(angle)
+
+    pencolor(&#39;red&#39;)
+    poly()
+    right(180)
+    poly()</code></pre>
+<ul>
+<li>Run it, it should draw two red squares.</li>
+</ul>
+<p>We've saved a little bit of time by defining a new command in python, and now we can draw a square twice, without having to write the whole thing twice. These new commands are called functions in python, and they're a great way to avoid writing so much.</p>
+</section>
+</section>
+<section id="step-4-why-stop-at-squares" class="level1 activity">
+<h1>Step 4: Why stop at squares</h1>
+<p>We're not finished yet, how about we change the function so it can draw any shape! Like with <code>forward</code> and <code>right</code>, we can pass values into the function, rather than just edit the code each time.</p>
+<section id="activity-checklist-3" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>Edit the code from the last step to look like this:</li>
+</ul>
+<pre class="language-python"><code>from turtle import *
+
+    def poly(sides, length):
+        angle = 360/sides
+
+        for n in range(sides):
+            forward(length)
+            right(angle)
+
+    pencolor(&#39;red&#39;)
+    poly(4, 100)
+    right(180)
+    pencolor(&#39;blue&#39;)
+    poly(3, 150)</code></pre>
+<ul>
+<li>Run it, and see what happens.</li>
+</ul>
+<p>Let's take it slowly here because this is quite cool. Instead of setting the variables in the function, we say that the function takes some values, with some names, and then we put the values in where we call them.</p>
+<p>We've moved the settings outside of the function, and moved them into the code that uses it. Now with one function we can draw <em>any</em> shape, of <em>any colour</em>.</p>
+<p>Being able to define new commands, that can behave differently based on the values given, is one of the most powerful tools in programming.</p>
+</section>
+</section>
+<section id="step-5-turtle-dash" class="level1 activity">
+<h1>Step 5: Turtle Dash</h1>
+<section id="activity-checklist-4" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>Although the turtle is a little robot that can draw, it can also move without drawing. Remember that we can use <code>penup()</code> and <code>pendown()</code> to turn drawing on and off. Open a new Python file, and put the following code in:</li>
+</ul>
+<pre class="language-python"><code>from turtle import *
+
+    length = 200
+    for num in range(8):
+        forward(length/16)
+        penup()
+        forward(length/16)
+        pendown()</code></pre>
+<ul>
+<li>It draws a dashed line across the screen. Run it and check!</li>
+</ul>
+</section>
+</section>
+<section id="step-6-dashing-shapes" class="level1 activity">
+<h1>Step 6: Dashing Shapes</h1>
+<p>We can put the shape and dashed line program together, by replacing the <code>forward</code> with the code we have for dashes. We repeat the outer layer to draw each side of the shape, and then repeat on the inside to draw all the dashes.</p>
+<section id="activity-checklist-5" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>Edit your code to look like the following:</li>
+</ul>
+<pre class="language-python"><code>from turtle import *
+    speed(11)
+    shape(&quot;turtle&quot;)
+
+    def dashpoly(sides, length):
+        angle = 360/sides
+
+        for n in range(sides):
+            for num in range(8):
+                forward(length/16)
+                penup()
+                forward(length/16)
+                pendown()
+            right(angle)
+
+    pencolor(&#39;red&#39;)
+    dashpoly(4, 100)
+    right(180)
+    pencolor(&#39;blue&#39;)
+    dashpoly(3, 150)</code></pre>
+<ul>
+<li>Run your code and see what it does.</li>
+</ul>
+<p>We have two for loops inside each other, an outer one and the inner one. The outer loop <code>for n in range(sides)</code> draws each side of the shape, and each time runs the inner for loop <code>for num in range(8)</code> which draws the dashes.</p>
+<p>The outer loop uses the variable <code>n</code> to keep track of how many times it has repeated, and the inner loop uses the variable <code>num</code> to keep track. You have to use different variable names loops, or python will get confused.</p>
+</section>
+</section>
+<section id="step-7-building-blocks-for-shapes" class="level1 activity">
+<h1>Step 7: Building blocks for shapes</h1>
+<section id="activity-checklist-6" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>Let's use functions again to clean up the code. Edit your code from step 6, and let's split the code apart.</li>
+</ul>
+<pre class="language-python"><code>from turtle import *
+    speed(11)
+    shape(&quot;turtle&quot;)
+
+    def dashforward(length):
+        for num in range(8):
+            forward(length/16)
+            penup()
+            forward(length/16)
+            pendown()
+
+    def dashpoly(sides, length):
+        angle = 360/sides
+
+        for n in range(sides):
+            dashforward(length)
+            right(angle)
+
+    pencolor(&#39;red&#39;)
+    dashpoly(4, 100)
+    right(180)
+    pencolor(&#39;blue&#39;)
+    dashpoly(3, 150)</code></pre>
+<ul>
+<li>Run your code and it should do the same thing.</li>
+</ul>
+<section id="protip" class="level3 protip">
+<h3>Protip</h3>
+<p>The trick is that instead of building programs by copy and pasting, we can define new commands and re-use them, making the code a little shorter and a little easier to understand.</p>
+</section>
+</section>
+</section>
+<section id="step-8-a-little-bit-random" class="level1 activity">
+<h1>Step 8: A little bit random</h1>
+<p>Just before we stop, how about doing something a little random? We can ask the computer to pick a number for us, or pick a colour for us, a bit like rolling dice. Scratch does this too with the pick operator</p>
+<section id="activity-checklist-7" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>In a new file, type the following in</li>
+</ul>
+<pre class="language-python"><code>from turtle import *
+    from random import randrange, choice
+    colors = [&#39;red&#39;, &#39;blue&#39;, &#39;green&#39;]
+
+
+    def poly(sides, length):
+        angle = 360/sides
+
+        for n in range(sides):
+            forward(length)
+            right(angle)
+
+    for count in range(10):
+        pencolor(choice(colors))
+        right(randrange(0,360))
+        poly(randrange(3,9), randrange(10,30))
+</code></pre>
+<ul>
+<li>Save and Run your Code</li>
+</ul>
+<p>It should draw ten shapes, in different colours, of different sizes. The line <code>from random import randrange, random</code> introdices two new functions to use, <code>randrange()</code> and <code>choice()</code>.</p>
+<p><code>randrange()</code> lets you pick a number between a low and a high number, so <code>randrange(1, 10)</code> will pick a number between 1 and 9 (Python starts at 1, and stops just before 10).</p>
+<p><code>choice()</code> lets us pick an item from a list. A list is a collection of values, like <code>[1, 2, 3]</code>, and above we have the list <code>colors</code>, which has the values <code>'red'</code>, <code>'blue'</code>, and <code>'green'</code>.</p>
+<p>By using <code>choice()</code> and <code>randrange()</code> we can ask the computer to pick the colour, size and shape of what we're drawing, and it will be different every time you run the program.</p>
+</section>
+<section id="things-to-try" class="level2 try">
+<h2>Things to try</h2>
+<p>Why not try adding more colours, or changing the numbers? What happens?</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <link rel="stylesheet" href="../../../js/prism.js">
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-2']);
+      _gaq.push(['_setDomainName', 'codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
