@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html class="world"  lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Głodna ryba — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+    <link rel="stylesheet" href="../../../css/prism.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Głodna ryba</h1>
+      <span class="level-indicator">Poziom 2</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Polski</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch</a></li><li class="breadcrumbs-item current">Głodna ryba</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="wstep" class="level1 intro">
+<h1>Wstęp</h1>
+<p>Zrobimy grę w karmienie ryb! Będziesz kierować dużą głodną rybą pływającą po morzu w taki sposób, aby udało jej się zjeść wszystkie rozgwiazdy.</p>
+<p><img src="glodna-ryba.png" alt="screenshot" /></p>
+</section>
+<section id="krok-1-stworz-duszka-ktory-goni-kursor-myszki" class="level1 activity">
+<h1>Krok 1: Stwórz duszka, który goni kursor myszki</h1>
+<p><strong>Dodajmy rybę, która pływa po morzu!</strong></p>
+<section id="zadania-do-wykonania" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Zacznij nowy projekt w Scratchu.<br /></li>
+<li>Zaznacz Scenę, a następnie przejdź do karty z ustawieniami tła. Zaimportuj tło <strong>underwater3</strong> z katalogu <strong>Natura</strong>. Usuń tło <strong>backdrop1</strong>.<br /></li>
+<li>Zmień nazwę duszka z Sprite1 na &quot;Głodna Ryba&quot; klikając na niebieską ikonkę <strong>i</strong>.<br /></li>
+<li>Zaimportuj kostium Głodnej Ryby wybierając z katalogu Zasoby plik <strong>ryba-paszcza-otwarta.png</strong>*, a następnie usuń istniejący <strong>costume1</strong> i <strong>costume2</strong>.<br /></li>
+<li>Kliknij ponownie na niebieską ikonkę <strong>i</strong> i upewnij się, że duszek może obracać się tylko w prawo i lewo.<br /></li>
+<li>Dodaj skrypt, który każe rybie pływać w kierunku kursora myszki:</li>
+</ul>
+<p><img src="ee78f62cb049c887767ce7018fa06f72de1d7f6d.png" alt="    kiedy kliknięto zieloną flagę
+    zawsze
+        ustaw w stronę [wskaźnik myszy v]
+        przesuń o (3) kroków" /></p>
+</section>
+<section id="przetestuj-swoj-projekt" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Wciśnij zieloną flagę.</strong><br />Poruszaj kursorem myszy po morzu. Czy ryba pływa za nim?<br />Co się dzieje, jeżeli nie ruszasz kursorem i ryba go złapie? Jak to wygląda? Dlaczego tak się dzieje?</p>
+</section>
+<section id="zadania-do-wykonania-1" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Możesz zapobiec takiemu motaniu się ryby, jeżeli każesz jej ruszać się tylko wtedy, kiedy nie jest za blisko kursora (w sekcji <code class="blocklightblue">Czujniki</code> znajdziesz blok <code class="blocklightblue">odległość do</code>).</li>
+</ul>
+<p><img src="267635e0829707b9bf8f1a4cc6748d5edc98018f.png" alt="    kiedy kliknięto zieloną flagę
+    zawsze
+        jeżeli &lt;(odległość do [wskaźnik myszy v]) &gt; (10)&gt; to
+            ustaw w stronę [wskaźnik myszy v]
+            przesuń o (3) kroków" /></p>
+</section>
+<section id="przetestuj-swoj-projekt-1" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+</section>
+<section id="zapisz-swoj-projekt." class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="rzeczy-do-sprobowania" class="level2 try">
+<h2>Rzeczy do spróbowania</h2>
+<p>Jeżeli chcesz, możesz zmienić liczby w skrypcie. W jaki sposób zmienia to sposób poruszania się Głodnej Ryby? Zmień odległość na jakiąś dużą liczbę (np. 100) albo jakąś bardzo małą (np. 1). Zmień ilość kroków na coś dużego (np. 20) lub małego (np. 1 lub nawet 0). Co się dzieje?</p>
+</section>
+</section>
+<section id="krok-2-dodaj-rozgwiazde" class="level1 activity">
+<h1>Krok 2: Dodaj rozgwiazdę</h1>
+<section id="zadania-do-wykonania-2" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Stwórz nowego duszka korzystając z kostiumu <strong>Zwierzęta/Starfish</strong>.<br /></li>
+<li>Zmniejsz nowego duszka (narzędzie do zmniejszania znajduje się nad Sceną).<br /></li>
+<li>Dodaj skrypt, który kieruje pływającą rozgwiazdą. Chcemy, aby ruszała się losowo, więc byłoby dobrze, aby najpierw ruszała się trochę do przodu, a potem skręciła albo w lewo, albo w prawo, a potem zaczęła się ruszać od nowa.</li>
+</ul>
+<p><img src="0c266e718f17738aff01779ddcc375ec86a3888b.png" alt="    kiedy kliknięto zieloną flagę
+    zawsze
+        przesuń o (2) kroków
+        obróć @ o (losuj od (-20) do (20)) stopni
+        jeżeli na brzegu, odbij się" /></p>
+</section>
+<section id="przetestuj-swoj-projekt-2" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Wciśnij zieloną flagę</strong> i popatrz, jak rozgwiazda porusza się po ekranie. Czy pływa tak jak trzeba? Czy wygląda to realistycznie?</p>
+<p><strong>Teraz ryba i rozgwiazda nie interesują się sobą. Zajmiemy się tym w następnym kroku.</strong></p>
+</section>
+<section id="zapisz-swoj-projekt" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+<section id="rzeczy-do-sprobowania-1" class="level2 try">
+<h2>Rzeczy do spróbowania</h2>
+<ul>
+<li>Zmień liczby w bloku <code class="blockgreen">losuj od .. do ...</code> oraz odległość, o jaką porusza się rozgwiazda. W jaki sposób te zmiany wpływają na sposób poruszania się?<br /></li>
+<li>Co robi blok <code class="blockblue">jeżeli na brzegu, odbij się</code>? Usuń go i zobacz co się stanie.</li>
+</ul>
+</section>
+</section>
+<section id="krok-3-godna-ryba-apie-rozgwiazde" class="level1 activity">
+<h1>Krok 3: Głodna ryba łapie rozgwiazdę</h1>
+<p><strong>Chcemy, aby ryba zjadła rozgwiazdę!</strong> Jak tylko ryba złapie żyjątko, muszą stać się dwie rzeczy:</p>
+<ul>
+<li>Ryba musi zamknąć paszczę z głośnym &quot;mlask!&quot;<br /></li>
+<li>rozgwiazda musi zniknąć i pojawić się chwilę później gdzie indziej</li>
+</ul>
+<section id="zadania-do-wykonania-3" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Na początek sprawmy, aby rozgwiazda znikała po dotknięciu ryby i po 3 sekundach pojawiała się gdzie indziej. Użyjemy bloku <code class="blocklightblue">dotyka</code>, aby sprawdzić, czy rozgwiazda jest w kontakcie z rybą.</li>
+</ul>
+<p><img src="9de2c49c0d914c04ed9eaa4f5c46ea47370556af.png" alt="    kiedy kliknięto zieloną flagę
+    zawsze
+        przesuń o (2) kroków
+        obróć @ o (losuj od (-20) do (20)) stopni
+        jeżeli na brzegu, odbij się
+        jeżeli &lt;dotyka [Głodna Ryba v]?&gt; to
+            ukryj
+            czekaj (3) s
+            pokaż" /></p>
+</section>
+<section id="przetestuj-swoj-projekt-3" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Spróbuj złapać rozgwiazdę – czy widzisz jakieś problemy?</strong> Zauważ, że rozgwiazda znika bez względu na to, z której strony dotknie rybę. Poza tym, jeżeli ryba się nie rusza, to po 3 sekundach może od razu zjeść rozgwiazdę – to jest trochę niefajne!</p>
+</section>
+<section id="zadania-do-wykonania-4" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Co możemy zrobić, aby upewnić się, że rozgwiazda znika tylko wtedy, gdy ryba dotknie jej paszczą? Możemy skorzystać z czujnika <code class="blocklightblue">dotyka koloru</code> i sprawdzać, czy rozgwiazda dotyka niebieskich zębów ryby! Aby to zrobić, zamień blok <code class="blocklightblue">dotyka</code> na <code class="blocklightblue">dotyka koloru</code>, kliknij kwadracik z kolorem, a gdy kursor myszy się zmieni, kliknij na zębach ryby.<br /></li>
+<li><p>Następnie możemy sprawić, aby rozgwiazda przesuwała się w losowe miejsce na ekranie przed ponownym pojawieniem. Możemy użyć do tego bloku <code class="blockblue">idź do</code> i użyć losowych wartości dla <strong>x</strong> i <strong>y</strong>.</p>
+<p><img src="07d867ae4733f050d40db37836b0a78243a11d8a.png" alt="    kiedy kliknięto zieloną flagę
+    zawsze
+        przesuń o (2) kroków
+        obróć @ o (losuj od (-20) do (20)) stopni
+        jeżeli na brzegu, odbij się
+        jeżeli &lt;dotyka koloru [#FFFFFF]?&gt; to
+            ukryj
+            czekaj (3) s
+            idź do x:(losuj od (-220) do (220)) y:(losuj od (-170) do (170))
+            pokaż" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-4" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p>Spróbuj złapać rozgwiazdę jeszcze raz – czy znika ona tylko wtedy, kiedy dotknie zębów ryby? I czy pojawia się w losowym miejscu na ekranie zamiast od razu tam, gdzie została zjedzona?</p>
+</section>
+<section id="zadania-do-wykonania-5" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Ryba musi wiedzieć, kiedy zjadła rozgwiazdę, aby mogła wydać dźwięk i zmienić kostium. Aby to zrobić, musimy najpierw <code class="blockbrown">nadać</code> sygnał, że rozgwiazda została zjedzona.</p>
+<p><img src="615ff2fb5a9e26de30f8fc01d3f75aed5d0721c9.png" alt="    kiedy kliknięto zieloną flagę
+    zawsze
+        przesuń o (2) kroków
+        obróć @ o (losuj od (-20) do (20)) stopni
+        jeżeli na brzegu, odbij się
+        jeżeli &lt;dotyka koloru [#FFFFFF]?&gt; to
+            nadaj [masz mnie v]
+            ukryj
+            czekaj (3) s
+            idź do x:(losuj od (-220) do (220)) y:(losuj od (-170) do (170))
+            pokaż" /></p></li>
+</ul>
+<p><strong>Teraz chcemy, aby ryba odpowiedziała na to głośnym zamknięciem paszczy.</strong></p>
+</section>
+<section id="zadania-do-wykonania-6" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Dodaj Głodnej Rybie drugi kostium importując go z pliku <strong>Zasoby/ryba-paszcza-zamknieta.png&quot;. Dodaj też dźwięk z pliku </strong>Zasoby/siorbanie.mp3**.<br /></li>
+<li><p>Następnie dodaj skrypt do Głodnej Ryby, który odpowiada na wiadomość nadaną przez rozgwiazdę. Skrypt powinien zagrać odgłos <strong>siorbania</strong> i <code class="blockpurple">zamienić kostium</code> ryby na ten z zamkniętą paszczą, a następnie poczekać chwilę i wrócić do pierwszego kostiumu.</p>
+<p><img src="f9d007fbb49187b28c77a7f5311fa249ea8d1086.png" alt="    kiedy otrzymam [masz mnie v]
+    zagraj dźwięk [siorbanie v]
+    powtórz (2) razy
+        zmień kostium na [ryba-paszcza-zamknieta v]
+        czekaj (0.5) s
+        zmień kostium na [ryba-paszcza-otwarta v]" /></p></li>
+</ul>
+<p><strong>Skoro nasza Głodna Ryba jest gotowa jeść, wypełnijmy ocean jedzeniem. Kliknij na rozgwieździe prawym przyciskiem myszy i zduplikuj ją kilka razy.</strong></p>
+</section>
+<section id="przetestuj-swoj-projekt-5" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p>Kliknij zieloną flagę.<br />Czy Głodna Ryba zjada swoje ofiary? Czy potrafi zjeść każdą rozgwiazdę?</p>
+</section>
+<section id="zapisz-swoj-projekt.-1" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="rzeczy-do-przemyslenia" class="level2">
+<h2>Rzeczy do przemyślenia</h2>
+<p>Dlaczego musimy dodać blok <code class="blockpurple">pokaż</code> na początku skryptu każdej rozgwiazdy? Pomyśl, co by się stało, gdyby gra została zatrzymana zanim zjedzona rozgwiazda ponownie pojawi się na ekranie. Co by się stało po uruchomieniu gry?</p>
+<p><strong>Brawo! Udało Ci się skończyć podstawową wersję gry. Jest jeszcze kilka rzeczy, które możesz zmienić w grze. Pora na wyzwania!</strong></p>
+</section>
+<section id="wyzwanie-1-spraw-aby-rozgwiazdy-poruszay-sie-inaczej" class="level2 challenge">
+<h2>Wyzwanie 1: Spraw, aby rozgwiazdy poruszały się inaczej</h2>
+<p>Póki co wszystkie rozgwiazdy poruszają się tak samo.</p>
+<p><strong>Spróbuj zmienić sposób w jaki porusza się jedna z rozgwiazd.</strong></p>
+<p><strong>Podpowiedź:</strong> Postaraj się nie spędzić na tym zadaniu zbyt dużo czasu. Warto również spojrzeć na inne wyzwania!</p>
+<p><strong>Wybierz jedną rozgwiazdę, nad którą będziesz pracować.</strong><br />Jeżeli ma ona ten sam kostium co inne, zmień jego kolor używając bloku <code class="blockpurple">ustaw efekt kolor na</code>. W ten sposób będziesz łatwo widzieć, nad którą rozgwiazdą pracujesz.</p>
+<p>Spraw, aby ta rozgwiazda poruszała się wolniej od innych.</p>
+<p><strong>Podpowiedź:</strong> Spójrz na blok <code class="blockblue">przesuń o 2 kroków</code>.</p>
+</section>
+<section id="przetestuj-swoj-projekt-6" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p>Czy rozgwiazda porusza się wolniej? Czy gra jest teraz lepsza?<br />Jeżeli udało ci się to zrobić, <strong>wybierz inną rozgwiazdę i spraw, aby poruszała się szybciej od innych.</strong></p>
+<p>Czy rozgwiazdy poruszają się naturalnie? Czy gra jest jeszcze lepsza po tych zmianach?</p>
+<p><strong>Podpowiedź:</strong> Jeżeli rozgwiazdy pływają w kółko, zmień wartości z bloku <code class="blockgreen">losuj od ... do ...</code>.</p>
+<p>A może spróbujesz zmienić zachowanie rozgwiazd, tak aby każda poruszała się inaczej? Wykorzystaj wprowadzone poprzednio zmiany.</p>
+<p>Czy te zmiany sprawiły, że gra jest jeszcze lepsza? Czy gra podoba ci się bardziej, jest trudniejsza czy łatwiejsza? Może któraś konkretna zmiana podoba ci się najbardziej?</p>
+</section>
+<section id="zapisz-swoj-projekt-1" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+<section id="wyzwanie-2-spraw-aby-rozgwiazdy-unikay-godnej-ryby." class="level2 challenge">
+<h2>Wyzwanie 2: Spraw, aby rozgwiazdy unikały głodnej ryby.</h2>
+<p>rozgwiazdy w tej grze nie zachowują się zbyt mądrze: po prostu pływają w kółko i dają się zjeść rybie. Prawdziwa rozgwiazda na pewno próbowała by uciec od drapieżnika!</p>
+<p><strong>Spróbujmy sprawić, aby jedna z rozgwiazd uciekała przed Głodną Rybą</strong></p>
+<p>W Scratchu nie ma bloku, który powiedziałby ci, w którym kierunku porusza się inny duszek. Ale możesz sprawić, aby duszek zwrócił się w kierunku innego duszka, a potem odwrócił się od niego plecami. Bloki, których będziesz potrzebować, znajdują się w palecie <code class="blockblue">Ruch</code>.</p>
+<p>Wykorzystując ten pomysł, <strong>spraw, aby jedna z rozgwiazd zawsze była odwrócona do Głodnej Ryby plecami</strong>. Może spróbujesz sprawić, aby się trzęsła jak będzie uciekać?</p>
+</section>
+<section id="przetestuj-swoj-projekt-7" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p>Czy teraz trudniej jest złapać rozgwiazdę? Czy gra jest teraz lepsza?</p>
+</section>
+<section id="zapisz-swoj-projekt-2" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+<section id="wyzwanie-3-dodaj-punkty" class="level2 challenge">
+<h2>Wyzwanie 3: Dodaj punkty</h2>
+<p>Ale zjadanie rozgwiazd to nie wszystko. Skąd będziesz wiedzieć, czy umiesz grać w tę grę lepiej niż inni gracze?<br /><strong>Potrzebujesz w jakiś sposób liczyć ile rozgwiazd udało Ci się zjeść</strong>. Już robiliśmy coś podobnego wcześniej.</p>
+<p>Gdzie należy dodać blok, który będzie zmieniał liczbę punktów?</p>
+<p>Upewnij się, żeby punkty przestawiały się na zero przy rozpoczęciu nowej gry. Gdzie trzeba dodać ten blok?</p>
+</section>
+<section id="przetestuj-swoj-projekt-8" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p>Czy jak zaczynasz nową grę, to liczba punktów jest równa zero? Czy dostajesz punkt za każdą zjedzoną rozgwiazdę?</p>
+</section>
+<section id="zapisz-swoj-projekt.-2" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="wyzwanie-4-dodaj-zegar" class="level2 challenge">
+<h2>Wyzwanie 4: Dodaj zegar</h2>
+<p><strong>Ograniczmy czas, w którym możesz zjadać rozgwiazdy.</strong> Jak wiele rozgwiazd uda ci się zjeść w ciągu 30 sekund?</p>
+<p>Jeżeli nie masz pomysłu, jak to zrobić, spróbuj przypomnieć sobie, jak to robiliśmy wcześniej. Na początek niech gra trwa 30 sekund.</p>
+</section>
+<section id="przetestuj-swoj-projekt-9" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p>Czy kiedy zaczynasz grę, zegar wskazuje 30?</p>
+<p>Czy zegar poprawnie odlicza czas?</p>
+<p>Czy udaje Ci się zjeść jakieś rozgwiazdy w tym czasie?</p>
+<p>Czy gra się zatrzymuje po upływie czasu?</p>
+</section>
+<section id="zapisz-swoj-projekt.-3" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="wyzwanie-5-zdobadz-dodatkowe-punkty" class="level2 challenge">
+<h2>Wyzwanie 5: Zdobądź dodatkowe punkty</h2>
+<p>Zdobywaj dodatkowe punkty, jeżeli uda Ci się zjeść 3 rozgwiazdy na raz! W jaki sposób możesz sprawdzić, ile rozgwiazd udało Ci się zjeść?</p>
+<p><strong>Podpowiedź:</strong> Jeden ze sposobów, w jaki możesz to zrobić, to <strong>użyć zmiennej, która policzy jak wiele rozgwiazd pływa wokoło ryby</strong>.</p>
+</section>
+<section id="zapisz-swoj-projekt.-4" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="wyzwanie-6-zmien-cel-gry-rozgwiazda-musi-przezyc" class="level2 challenge">
+<h2>Wyzwanie 6: Zmień cel gry: rozgwiazda musi przeżyć!</h2>
+<p>Czasami super pomysły przychodzą do głowy, jeżeli spróbujesz zrobić coś na odwrót.</p>
+<p><strong>Zmień grę w ten sposób, żeby zamiast sterować Głodną Rybą, która próbuje zjeść rozgwiazdy, sterowało się rozgwiazdą otoczoną wieloma Głodnymi Rybami</strong>. Jak długo uda jej się przetrwać, zanim zostanie zjedzona?</p>
+</section>
+<section id="zapisz-swoj-projekt.-5" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+<p><strong>Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!</strong><br />Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu <strong>Udostępnij</strong>.</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <link rel="stylesheet" href="../../../js/prism.js">
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-2']);
+      _gaq.push(['_setDomainName', 'codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

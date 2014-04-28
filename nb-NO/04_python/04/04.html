@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html class="world"  lang="nb-NO">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skilpadder hele veien ned — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+    <link rel="stylesheet" href="../../../css/prism.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Skilpadder hele veien ned</h1>
+      <span class="level-indicator">Level 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Norsk</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Python</a></li><li class="breadcrumbs-item current">Skilpadder hele veien ned</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="steg-1-tegn-et-fjell" class="level2 activity">
+<h2>Steg 1: Tegn et fjell</h2>
+<p>Hent frem skilpaddene dine, åpne IDLE, det er på tide å tegne igjen. Men<br />først, la oss se på de følgende tre figurene:<br />Hvordan kan vi tegne dem i Python?</p>
+<pre><code>_________________________
+
+            /\
+           /  \
+          /    \
+_________/      \________
+
+            /\
+         __/  \__
+         \      /
+____/\___/      \___/\___
+</code></pre>
+<ol>
+<li><p>Å tegne den første er lett. Som alltid er den første linjen <code>from turtle import *</code> så Python vet at vi vil tegne. Dette programmet tegner linjen,<br />sjekk at du får det til</p>
+<pre class="language-python"><code>
+from turtle import *
+
+def first():
+    forward(30)
+
+first()</code></pre>
+<p>Jeg har puttet det inn i en prosedyre fordi jeg liker prosedyrer. Vi<br />kommer til å lage prosedyrer for alle formene, så la oss legge dem til i<br />filen vi lager.</p></li>
+<li><p>Legg til litt kode så koden din blir slik som denne:</p>
+<pre class="language-python"><code>from turtle import *
+
+def first():
+    forward(30)
+
+def second():
+    forward(30)
+    left(60)
+    forward(30)
+    right(120)
+    forward(30)
+    left(60)
+    forward(30)
+
+second()</code></pre></li>
+<li><p>Kjør koden din og se hva den gjør, tegner den riktig figur? Det skal se slik ut</p>
+<pre><code>            /\
+           /  \
+          /    \
+_________/      \________</code></pre></li>
+</ol>
+</section>
+<section id="steg-2-et-fjell-av-fjell" class="level2 activity">
+<h2>Steg 2: Et fjell av fjell</h2>
+<p>Hva med den tredje figuren? Selv om den er litt komplisert å programmere om<br />vi må skrive alle stegene vi må ta, er det egentlig bare det første fjellet<br />tegnet fire ganger.</p>
+<pre><code>            /\
+         __/  \__
+         \      /
+____/\___/      \___/\___
+</code></pre>
+<p>Du kan se at vi tegner den andre figuren (det enkle fjellet), deretter snur vi, tegner den igjen, snur, tegner igjen, snur og tegner den en siste gang.</p>
+<ol>
+<li><p>Istedenfor å skrive alle bevegelsene, la oss tegne den tredje figuren ved å kalle <code>second</code></p>
+<pre><code>from turtle import *
+
+def second():
+    forward(30)
+    left(60)
+    forward(30)
+    right(120)
+    forward(30)
+    left(60)
+    forward(30)
+
+def third():
+    second()
+    left(60)
+    second()
+    right(120)
+    second()
+    left(60)
+    second()
+
+third()</code></pre>
+<p><code>third</code> ser veldig lik ut som <code>second</code>, men istedenfor å kalle <code>forward</code>, kaller vi <code>second</code>. Hvis vi ville, kunne vi til og med skrive en fjerde utgave og kalle <code>third</code> istedenfor. Dette høres fort ut som mye å skrive, det må da være en måte vi kan få datamaskinen til å forstå dette på?</p>
+<p>Disse figurene er spesielle på den måten at vi tegner dem ved å sette sammen enklere versjon av figurene om igjen og om igjen: Den tredje er laget av den andre, og den andre er laget av den første. Det vi virkelig har lyst til er å be datamaskinen om å tegne dette igjen og igjen helt til det er ferdig.</p></li>
+</ol>
+</section>
+<section id="steg-3-igjen-og-igjen" class="level2 activity">
+<h2>Steg 3: Igjen og igjen</h2>
+<p>Vi får til dette ved å dele problemet i to: Det enkle problemet og spesialtilfellet av problemet. Det enkle problemet er enkelt: Det er bare <code>forward(100)</code>. Spesialtilfellet er litt vanskeligere, det vil si: Tegn spesialtilfellet, men en mindre enn i sted, helt til du kommer til det enkle tilfellet. Det er kanskje enklere å se på programmet enn å forklare.</p>
+<ol>
+<li><p>Lag en ny fil med koden under:</p>
+<pre><code>from turtle import *
+
+def mountain(depth):
+    if depth == 1:
+           forward(10)
+    else:
+        newdepth = depth -1
+        mountain(newdepth)
+        left(60)
+        mountain(newdepth)
+        right(120)
+        mountain(newdepth)
+        left(60)
+        mountain(newdepth)
+
+mountain(3)</code></pre>
+<p>Du kan se at vi har brukt kode som er veldig likt <code>first,</code>second<code>og</code>third<code>. Vi bruker en</code>if<code>-setning for å finne ut om vi skal tegne det enkle tilfellet eller spesialtilfellet. I det spesielle tilfellet ber vi om å tegne et fjell, akkurat slik som</code>third<code>kalte</code>second<code>, men vi ber den om å tegne en enklere hver gang, med en ny verdi for</code>depth`, en mindre enn det vi startet med.</p></li>
+<li><p>Kjør det og se hva som skjer. Hva skjer om du prøver <code>mountain(1)</code>, <code>mountain(2)</code>, eller <code>mountain(4)</code>?</p></li>
+</ol>
+</section>
+<section id="steg-4-tegn-et-snflak-av-fjell" class="level2 activity">
+<h2>Steg 4: Tegn et snøflak av fjell</h2>
+<ol>
+<li><p>La oss bare legge til en siste ting til filen fra i sted, så den ser ut som under. Vi legger til en ny prosedyre <code>snowflake</code>:</p>
+<pre class="language-python"><code>
+from turtle import *
+
+def mountain(depth, length):
+    if depth == 1:
+           forward(length)
+    else:
+        newdepth = depth -1
+        mountain(newdepth, length)
+        left(60)
+        mountain(newdepth, length)
+        right(120)
+        mountain(newdepth, length)
+        left(60)
+        mountain(newdepth, length)
+
+def snowflake(depth, length):
+    mountain(depth, length)
+    right(120)
+    mountain(depth, length)
+    right(120)
+    mountain(depth, length)
+    right(120)
+
+snowflake(4,5)</code></pre>
+<p>Dette bildet heter Kochs snøflak. Hvis du vil kan du forsøke å endre på vinklene og se hva som skjer.</p>
+<p>Dette heter et fraktal, fordi de små bildene er laget av små versjoner av seg selv.</p></li>
+<li><p>Prøv å kjøre <code>snowflake(1, 50)</code>, <code>snowflake(2, 25)</code>, <code>snowflake(3, 20)</code>. Jo større dybde, jo lenger tar det å tegne, så husk å putte inn <code>speed(11)</code> så skilpadden går så fort den kan!</p></li>
+</ol>
+</section>
+<section id="steg-5-bokser-flere-bokser-og-enda-flere-bokser" class="level2 activity">
+<h2>Steg 5: Bokser, flere bokser, og enda flere bokser</h2>
+<p>La oss se på en annen figur, en som ligner veldig på snøflaket, men med<br />bokser istedenfor fjell.</p>
+<pre><code>
+
+___________________________
+
+        ___________
+        |         |
+        |         |
+        |         |
+        |         |
+________|         |________
+
+             _
+        ____| |____
+        |         |
+       _|         |_
+      |_           _|
+    _   |         |   _
+___| |__|         |__| |___
+
+</code></pre>
+<p>Akkurat som med fjellet er det et enkelt tilfelle: en rett linje, og et spesialtilfelle: Tegn en linje med en firkanthump på. Vi ser også at den tredje er akkurat som før, tegn den andre figuren noen ganger.</p>
+<ol>
+<li><p>La oss åpne en ny fil og forsøke å tegne det andre bildet, som er det vi skal gjenta:</p>
+<pre class="language-python"><code>
+from turtle import *
+
+forward(30)
+left(90)
+forward(30)
+right(90)
+forward(30)
+right(90)
+forward(30)
+left(90)
+forward(30)</code></pre></li>
+<li><p>Kjør det og sjekk at du får denne figuren:</p>
+<pre><code>
+        ___________
+        |         |
+        |         |
+        |         |
+        |         |
+________|         |________</code></pre></li>
+</ol>
+<p>Vi har det enkle tilellet <code>forward(100)</code>, og vi vet hvordan vi skal tegne linjen med firkanthumpen på seg, så la oss hoppe rett til tegningen!</p>
+</section>
+<section id="steg-6-klumpete-firkanter" class="level2 activity">
+<h2>Steg 6: Klumpete firkanter</h2>
+<ol>
+<li><p>Åpne en ny fil i IDLE og skriv inn følgende:</p>
+<pre class="language-python"><code>
+from turtle import *
+
+def box(depth, length):
+    if depth == 1:
+           forward(length)
+    else:
+        newdepth = depth -1
+
+        # Hva skal vi skrive her?
+        # Kopier inn koden fra `bumpy line` hit, men
+        # bruk box(newdepth, length) istedenfor forward(100)
+        # Spør om hjelp om du ikke forstår helt, men prøv deg gjerne
+        # frem først.
+
+def xcurve(depth, length):
+    box(depth, length)
+    left(90)
+    box(depth, length)
+    left(90)
+    box(depth, length)
+    left(90)
+    box(depth, length)
+    left(90)
+
+xcurve(4,5)</code></pre></li>
+<li><p>Vi har ikke skrevet inn spesialtilfellet, det har vi tenkt å la deg gjøre. Det er ganske likt som å programmere linjen vi hadde før, det burde holde å kalle <code>box(newdepth, length)</code> for å få det til. Koden burde se veldig lik ut som fjellet og snøflaket.</p></li>
+</ol>
+</section>
+<section id="steg-7-trekanter-igjen" class="level2 activity">
+<h2>Steg 7: Trekanter igjen</h2>
+<p>La oss tegne et siste fraktal, og som før har vi et enkelt tilfelle og et spesialtilfelle.</p>
+<p>De første tre versjonene ser ut som dette. Vi tegner et triangel, og så tegner vi det som tre trekanter sammen.</p>
+<pre><code>       /\
+      /  \
+     /    \
+    /      \
+   /        \
+  /          \
+ /            \
+----------------
+
+       /\
+      /  \
+     /    \
+    --------
+   /\      /\
+  /  \    /  \
+ /    \  /    \
+----------------
+
+
+       /\
+      ----
+     /\  /\
+    --------
+   /\      /\
+  ----    ----
+ /\  /\  /\  /\
+----------------</code></pre>
+<ol>
+<li><p>Lag en ny fil og prøv det!</p>
+<pre class="language-python"><code>from turtle import *
+
+def triforce(depth, length):
+
+    if depth == 0:
+        pendown()
+        forward(length)
+        left(120)
+        forward(length)
+        left(120)
+        forward(length)
+        left(120)
+        penup()
+    else:
+        penup()
+        newlength = length/2
+        newdepth = depth - 1
+
+        triforce(newdepth, newlength)
+        forward(newlength)
+        triforce(newdepth, newlength)
+
+        left(120)
+        forward(newlength)
+        right(120)
+        triforce(newdepth, newlength)
+
+        right(120)
+        forward(newlength)
+        left(120)
+
+
+speed(11)
+penup()
+setpos(-255,-255)
+triforce(7, 512)</code></pre>
+<p>Du har kanskje lagt merke til at vi bruker en ny kommando <code>setpos</code> for å flytte skilpadden til hjørnet av skjermen.</p></li>
+<li><p>Kjør det og se hva som skjer. Vi kan se at det enkle tilfellet er bare å tegne en trekant, og at spesialtilfellet er å tegne tre små trekanter.</p></li>
+<li><p>Prøv å endre verdiene vi sender til <code>triforce()</code>, endre den siste linjen til <code>triforce(5, 300)</code>, hva gjør den?</p></li>
+</ol>
+</section>
+<section id="steg-8-bobler" class="level2 activity">
+<h2>Steg 8: Bobler</h2>
+<ol>
+<li><p>Hvis du vil kan du tegne med sirkler istedenfor trekanter! Åpne en ny fil og skriv inn følgende kode:</p>
+<pre class="language-python"><code>from turtle import *
+
+def bubble(depth, length):
+    if depth == 0:
+        pendown()
+        circle(length/2)
+        penup()
+    else:
+        penup()
+        newlength = length/2
+        newdepth = depth - 1
+        bubble(newdepth, newlength)
+        forward(newlength)
+        bubble(newdepth, newlength)
+        left(120)
+        forward(newlength)
+        right(120)
+        bubble(newdepth, newlength)
+        right(120)
+        forward(newlength)
+        left(120)
+
+speed(11)
+penup()
+setpos(-255,-255)
+bubble(6, 512)</code></pre></li>
+<li><p>Hva skjer? Hva ser det ut som? Vi har brukt <code>circle</code> kommandoen for å tegne en sirkel på skjermen, som tar en radius.</p></li>
+<li><p>Forsøk å endre sirkelens radius, bytt ut <code>circle(length/2)</code> med <code>circle(length)</code>, dette tegner en større sirkel istedenfor.</p></li>
+</ol>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <link rel="stylesheet" href="../../../js/prism.js">
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-2']);
+      _gaq.push(['_setDomainName', 'codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

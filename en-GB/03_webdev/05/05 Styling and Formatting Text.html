@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="world"  lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Styling and formatting text — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+    <link rel="stylesheet" href="../../../css/prism.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Styling and formatting text</h1>
+      <span class="level-indicator">Level 2</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">HTML &amp; CSS</a></li><li class="breadcrumbs-item current">Styling and formatting text</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="introduction" class="level2 intro">
+<h2><strong>Introduction:</strong></h2>
+<p>In this session we are going to learn how to style text with different fonts, colours and sizes. We'll also learn how to add background colours and borders. We will be using the same project you worked on last time, so make sure you open the index.html from the Felix folder.</p>
+</section>
+<section id="step-1-fonts" class="level1 activity">
+<h1>Step 1: Fonts</h1>
+<p>We can change the look of the text by changing the <strong>font</strong>. The most common fonts are called</p>
+<ul>
+<li>Arial<br /></li>
+<li>Courier New, Courier<br /></li>
+<li>Garamond<br /></li>
+<li>Georgia<br /></li>
+<li>Lucida Sans, Lucida Grande, Lucida<br /></li>
+<li>Palatino Linotype<br /></li>
+<li>Tahoma<br /></li>
+<li>Times New Roman, Times<br /></li>
+<li>Trebuchet<br /></li>
+<li>Verdana</li>
+</ul>
+<p>Not all fonts exist on all computers, so we need to provide <strong>fall-back fonts</strong> as well. These are very generic like ‘sans serif’, ‘serif’.</p>
+<p>Let’s try changing the font of the headline using the <code>font-family</code> property.</p>
+<pre class="language-css"><code>h1 {
+    color: red;
+    background-color: black;
+    font-family: impact, sans-serif;
+    font-size: 72px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}</code></pre>
+<p>And the font of the paragraphs...</p>
+<pre class="language-css"><code>p {
+    font-family: Georgia, &#39;Times New Roman&#39;, serif;
+}</code></pre>
+<section id="save-and-view." class="level2 save">
+<h2><strong>Save</strong> and <strong>view</strong>.</h2>
+<p>Try some of the different fonts to see which ones you like best. Notice how we separate each font with a comma, and if the font has a name with more than one word we need to put it inside quotation marks.</p>
+<p>Which of the fonts we mentioned do you think looks best? Which one do you think is easiest to read?</p>
+<p>Do you have other fonts on your computer than the ones mentioned? (you probably do). Try opening a program like Word or Pages, all the fonts stored on the computer can usually be found there.</p>
+<p><img src="fonts.png" alt="screenshot" /></p>
+<p>Find one you like and try it out on the website!</p>
+<p>You can make text <strong>bold</strong>, <em>italic</em> or both with the font-style property. Let’s change the email text (remember it’s inside an <code>&lt;a&gt;</code> tag).</p>
+<pre class="language-css"><code>a {
+    font-style: bold;
+}</code></pre>
+</section>
+<section id="save-and-view.-1" class="level2 save">
+<h2><strong>Save</strong> and <strong>view</strong>.</h2>
+<p>Or we could make it italic.</p>
+<pre class="language-css"><code>a {
+    font-style: italic;
+}</code></pre>
+</section>
+<section id="save-and-view.-2" class="level2 save">
+<h2><strong>Save</strong> and <strong>view</strong>.</h2>
+<p>There’s also a font-style value called ‘oblique’. What does that look like?</p>
+<p>We can even say how bold some text should be using the property <code>font-weight</code>. It takes the values <code>normal</code>, <code>bold</code>, <code>bolder</code>, <code>lighter</code>. You can also use numbers, 100, 200, 300, 400, 500, 600, 700, 800, and 900, where 100 is the thinnest text and 900 is the thickest (boldest text). Normal text is the same as 400, bold is the same as 700. However, not all the fonts have all these, so it’s safer to just use normal and bold. Headlines are normally bold by default. If we wanted our <code>h2</code> to not be bold, we need to write:</p>
+<pre class="language-css"><code>h2 {
+    font-weight: normal;
+}</code></pre>
+<p>Try it!</p>
+</section>
+</section>
+<section id="step-2-borders" class="level1 activity">
+<h1>Step 2: Borders!</h1>
+<p>Let’s add a border around the image</p>
+<pre class="language-css"><code>img {
+    border-color: green;
+    border-style: solid;
+    border-width: 5px;
+}</code></pre>
+<section id="save-and-view.-3" class="level2 save">
+<h2><strong>Save</strong> and <strong>view</strong>.</h2>
+<p>Try changing the color, width and border-style until you are happy. Some values for border-syle are <code>dashed</code>, <code>dotted</code>, <code>double</code>, <code>groove</code>, <code>ridge</code>, <code>inset</code>, <code>outset</code>.</p>
+<p>You can put borders around all kinds of elements, why not try a few more.</p>
+</section>
+</section>
+<section id="step-3-ids-and-classes" class="level1 activity">
+<h1>Step 3: IDs and classes</h1>
+<p>We want to make the contact paragraph <strong>highlighted</strong>. We can’t use the <code>&lt;p&gt;</code> tag because that would change all the paragraphs. To make a style apply only to one element, we use something called IDs. We need to edit the html to this:</p>
+<pre class="language-markup"><code>&lt;p id =&quot;highlight&quot;&gt;Have you seen Felix? &lt;em&gt;Please&lt;/em&gt; contact his owners at &lt;a href=&quot;mailto:felixowners@email.com&quot;&gt;felixowners@email.com&lt;/a&gt;&lt;/p&gt;</code></pre>
+<p>Then we can style the ID like so:</p>
+<pre class="language-css"><code>#highlight {
+    color: red;
+}</code></pre>
+<section id="save-and-view.-4" class="level2 save">
+<h2><strong>Save</strong> and <strong>view</strong>.</h2>
+<p>An ID is unique and can only be used once per page. So what if we wanted to make two of the paragraphs have a larger font-size? We can do that by using classes. First we need to give class names to the paragraphs we want changing.</p>
+<pre class="language-markup"><code>&lt;p class=&quot;large&quot;&gt;He went missing from the garden yesterday.&lt;/p&gt;
+&lt;p class=&quot;large&quot;&gt;&lt;strong&gt;Thank you!&lt;/strong&gt;&lt;p&gt;</code></pre>
+<p>we style a class like this (with a <code>.</code> instead of a <code>#</code>):</p>
+<pre class="language-css"><code>.large {
+    font-size:24px;
+}</code></pre>
+</section>
+<section id="further-study" class="level2 try">
+<h2>Further study:</h2>
+<ul>
+<li>How would you change the page to make it look better? Why not try using your favourite fonts and colours?<br /></li>
+<li>If you finish early you can go back and style the html like we did in previous lessons.<br /></li>
+<li>By the way, did you know that the background property does not only take values that are colours, but also images?</li>
+</ul>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <link rel="stylesheet" href="../../../js/prism.js">
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-2']);
+      _gaq.push(['_setDomainName', 'codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
