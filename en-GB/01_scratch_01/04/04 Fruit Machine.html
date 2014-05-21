@@ -86,17 +86,17 @@
 <ul>
 <li>Create a new variable by clicking <code>Data</code> and <code>Make a variable</code>. Call it <code class="blockorange">stopped</code> and make it for only this sprite, then uncheck the box next to it so it doesn’t display on the stage.<br /></li>
 <li><p>At the start of the game, the sprite won't have been clicked so we'll set the variable to be equal to <strong>&quot;NO&quot;</strong>.</p>
-<p><img src="9daf3142ce6a83067606deb0d213eb68a830859a.png" alt="    when FLAG clicked
-    set [stopped v] to (NO)
+<p><img src="58782d563b0fa7c5b39a0339bf66cce23eda4795.png" alt="    when FLAG clicked
+    set [stopped v] to [NO]
     forever
         next costume
         wait (0.1) secs" /></p></li>
 <li><p>Now we'll set the variable <code class="blockorange">stopped</code> to <strong>&quot;YES&quot;</strong> when someone clicks on the sprite.</p>
-<p><img src="686ebeaef97bfc9cffcba798c9e32599a73d4e34.png" alt="    when this sprite clicked
-        set [stopped v] to (YES)" /></p></li>
+<p><img src="2be38add38f125213667c00a6f5b8e92bd639b96.png" alt="    when this sprite clicked
+        set [stopped v] to [YES]" /></p></li>
 <li><p>Finally we need to make the sprite stop changing costume when the variable <code class="blockorange">stopped</code> changes to &quot;YES&quot;. Add an <code class="blockyellow">if...then</code> loop and use a new <strong>equals</strong> <code class="blockgreen">[] = []</code> operator block (found under the <em>Operators</em> tab) to check if <code class="blockorange">stopped</code> is still &quot;NO&quot;.</p>
-<p><img src="4ac2837417def6ea5d876b3b7391d85b4fc44975.png" alt="    when FLAG clicked
-        set [stopped v] to (NO)
+<p><img src="8b9ee85f64ae6b21a7dadc36169f46d574366cf5.png" alt="    when FLAG clicked
+        set [stopped v] to [NO]
         forever
             if &lt;(stopped) = [NO]&gt; then
                 next costume
@@ -146,8 +146,8 @@
 <li>If you look under the <code>costumes</code> tab for a sprite then you'll see that each costume has a number. You can specify which costume a sprite is wearing using either its name or its number.<br /></li>
 <li>To make the sprite start with a random costume, let's add a <code class="blockpurple">switch costume to</code> block with <code class="blockgreen">pick random (1) to (3)</code> to choose the costume number.<br /></li>
 <li><p>We can also use exactly the same block in the <code class="blockyellow">forever</code> loop so that the sprite switches to a different costume each time it changes during the game.</p>
-<p><img src="3809515e64cf6ee455fcebdba3e1f62815c8fb2e.png" alt="    when FLAG clicked
-        set [stopped v] to (0)
+<p><img src="3a624f949d9914e259b126c0634fd8255b32bedd.png" alt="    when FLAG clicked
+        set [stopped v] to [NO]
         switch costume to &lt;pick random (1) to (3)&gt;
         forever
             if &lt;(stopped) = [NO]&gt; then
@@ -227,11 +227,11 @@ forever
 <li>We wrote the code to check that the game was over in <strong>step 6</strong>, so all we need to do now is check to see if the player has won. Go back to the backdrops and and add some more text to the GameOver backdrop so that also displays the word <strong>&quot;WIN&quot;</strong>. Then change its name to <strong>&quot;Win&quot;</strong>.<br /></li>
 <li>Copy the backdrop again to create one with a <strong>&quot;Lose&quot;</strong> message. Give it the name <strong>&quot;Lose&quot;</strong>.<br /></li>
 <li><p>Now we need some code to work out which backdrop to display once the game is over. We can use an <code class="blockyellow">if...then...else</code> block to see if the player has won or lost by comparing each <code class="blockpurple">costume #</code> (costume number) using a similar <code class="blockblue">x position of Sprite</code> block like we did before. This time, instead of looking at the <code class="blockorange">stopped</code> variable, we can check the<code class="blockpurple">costume #</code> and see if Fruit1 has the same costume as Fruit2, and if Fruit2 has the same costume as Fruit3.</p>
-<p><img src="a787dfeeae1cf0ce14ebb2da0dfc3c93025f5f60.png" alt="    when FLAG clicked
+<p><img src="4834b48ea241014b7a0efe3151eb38ab9639331b.png" alt="    when FLAG clicked
         switch backdrop to [GameOn v]
         forever
-            if &lt;&lt;&lt;([stopped v]  of [Fruit1 v]) = [1]&gt; and &lt;([stopped v]  of [Fruit2 v]) = [1]&gt;&gt; and &lt;([stopped v]  of [Fruit3 v]) = [1]&gt;&gt; then
-                if &lt;&lt;([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit1 v])&gt; and &lt;([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])&gt;&gt; then
+            if &lt;&lt;&lt;([stopped v]  of [Fruit1 v]) = [YES]&gt; and &lt;([stopped v]  of [Fruit2 v]) = [YES]&gt;&gt; and &lt;([stopped v]  of [Fruit3 v]) = [YES]&gt;&gt; then
+                if &lt;&lt;([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit2 v])&gt; and &lt;([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])&gt;&gt; then
                     switch backdrop to [Win v]
                 else
                     switch backdrop to [Lose v]" /></p></li>
