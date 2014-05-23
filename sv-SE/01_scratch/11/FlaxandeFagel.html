@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html class="world"  lang="sv-SE">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flaxande Fågel — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+    <link rel="stylesheet" href="../../../css/prism.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Flaxande Fågel</h1>
+      <span class="level-indicator">Level 2</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Svenska</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch</a></li><li class="breadcrumbs-item current">Flaxande Fågel</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="introduktion" class="level1 intro">
+<h1>Introduktion</h1>
+<p><strong>I det här projektet ska vi göra vår egen version av det väldigt populära spelet Flappy Bird. Projektet kräver Scratch 2.0.</strong><br />Tryck på mellanslag för att flaxa och försök att styra genom hålen i rören!</p>
+<p><img src="flappy_screenshot.png" alt="screenshot" /></p>
+</section>
+<section id="steg-1-fa-fageln-flappy-att-falla" class="level1 activity">
+<h1><strong>Steg 1:</strong> Få fågeln Flappy att falla</h1>
+<section id="checklista" class="level2 check">
+<h2>Checklista</h2>
+<ul>
+<li>Om Scratch inte är på svenska, så välj svenska i menyalternativet som ser ut som en jordglob.<br /></li>
+<li>Skapa ett nytt Scratch-projekt. Ta bort katten genom att högerklicka på den och välja Radera.<br /></li>
+<li>Ersätt bakgrunden med ett utomhus-landskap. <strong>desert</strong> är ett bra val.<br /></li>
+<li>Lägg till fågeln Flappy. Du behöver en sprite med kostymer för vingar upp och vingar ner. <strong>parrot</strong> är ett bra val.<br /></li>
+<li>Byt namn på spriten till <strong>Flappy</strong><br /></li>
+<li><p>Ge Flappy följande script:</p>
+<p><img src="9448d0ac967945155653a211499038540c811525.png" alt="när FLAGGA klickas på
+    gå till x: (-50) y: (0)
+    för alltid
+        ändra y med (-3)" /></p></li>
+</ul>
+</section>
+<section id="testa-ditt-projekt" class="level2 flag">
+<h2>Testa ditt projekt</h2>
+<p><strong>Klicka på den gröna flaggan</strong>, börjar Flappy i mitten på skärmen och faller ner?</p>
+</section>
+<section id="spara-ditt-projekt" class="level2 save">
+<h2>Spara ditt projekt</h2>
+</section>
+</section>
+<section id="steg-2-fa-flappy-att-flyga" class="level1 activity">
+<h1><strong>Steg 2:</strong> Få Flappy att flyga</h1>
+<p><em>Sen ska vi få Flappy att flyga uppåt när du trycker på mellanslag.</em></p>
+<section id="checklista-1" class="level2 check">
+<h2>Checklista</h2>
+<ul>
+<li>Klicka på fliken <strong>Klädslar</strong> och döp kostymerna <strong>vingar upp</strong> och <strong>vingar ner</strong>.<br /></li>
+<li><p>Byt nu tillbaks till fliken <strong>Script</strong> och lägg till detta script:</p>
+<p><img src="3ac59b4a70703175fc367f6d09be3d10ff404e80.png" alt="när [mellanslag v] trycks ned
+    byt klädsel till [vingar ner v]
+    repetera (10)
+        ändra y med (6)
+    slut
+    byt klädsel till [vingar upp v]
+    repetera (10)
+        ändra y med (6)
+    slut" /></p></li>
+</ul>
+</section>
+<section id="testa-ditt-projekt-1" class="level2 flag">
+<h2>Testa ditt projekt</h2>
+<p><strong>Klicka på den gröna flaggan</strong>, kan du kontrollera Flappy med mellanslagstangenten? Märker du att Flappy inte alltid flyger uppåt när du trycker mellanslag? Vi ska fixa det nu...</p>
+</section>
+<section id="spara-ditt-projekt-1" class="level2 save">
+<h2>Spara ditt projekt</h2>
+</section>
+</section>
+<section id="steg-3-fixa-kontrollerna" class="level1 activity">
+<h1><strong>Steg 3:</strong> Fixa kontrollerna</h1>
+<p><em>Vi vill att Flappy ska reagera varje gång vi trycker mellanslag. Men när vi trycker på mellanslag så börjar Flappy två loopar med förflyttning. Om vi trycker på mellanslag igen innan dessa loopar är färdiga så ignoreras det andra trycket. För att lösa detta så ska vi använda en variabel för att räkna hur många vingslag vi behöver göra.</em></p>
+<section id="checklista-2" class="level2 check">
+<h2>Checklista</h2>
+<ul>
+<li>Flytta undan blocken under <code class="blockbrown">när mellanslag trycks ned</code> (vi kommer att använda dom snart igen.)<br /></li>
+<li>Skapa en ny variable <code class="blockgrey">Enbart för denna sprite</code> och kalla den <code class="blockorange">Flax</code>.<br /></li>
+<li><p>Lägg till följande script genom att dra in blocken som du tidigare drog åt sidan:</p>
+<p><img src="5d350b820c9df7474f77838274012219fbb5319a.png" alt="when FLAG clicked
+    sätt [Flax v] till [0]
+    byt klädsel till [vingar upp v]
+    för alltid
+        repetera tills &lt;(Flax) = [0]&gt;
+            ändra [Flax v] med (-1)
+            byt klädsel till [vingar ner v]
+            repetera (10)
+                ändra y med (6)
+            slut
+            ändra klädsel till [vingar upp v]
+            repetera (10)
+                ändra y med (6)
+            slut
+" /></p></li>
+<li><p>Och slutligen, lägg följande till din händelse <code class="blockbrown">när mellanslag trycks ned</code>:</p>
+<p><img src="1df917d8637f021e6ea69a8192adacaad4dd48c7.png" alt="när [mellanslag v] trycks ned
+    ändra [Flax v] med (1)" /></p></li>
+</ul>
+</section>
+<section id="testa-ditt-projekt-2" class="level2 flag">
+<h2>Testa ditt projekt</h2>
+<p><strong>Klicka på den gröna flaggan</strong>, flaxar Flappy en gång för varje gång som du trycker på mellanslag?</p>
+</section>
+<section id="spara-ditt-projekt-2" class="level2 save">
+<h2>Spara ditt projekt</h2>
+</section>
+</section>
+<section id="steg-4-lagg-till-roren" class="level1 activity">
+<h1><strong>Steg 4:</strong> Lägg till rören</h1>
+<p><em>Nu ska vi lägga till några hinder som Flappy kan flyga igenom.</em></p>
+<section id="checklista-3" class="level2 check">
+<h2>Checklista</h2>
+<ul>
+<li>Klicka på <code>Rita ny sprite</code><br /></li>
+<li>Döp klädseln till <strong>rör</strong>.<br /></li>
+<li>Om klädseln är i <code class="blockgrey">Bitmapsläge</code> så klicka på knappen <code class="blockgrey">Omvandla till vektor</code>.<br /></li>
+<li>Klicka på knappen <code class="blockgrey">Zoom -</code> så att du kan se hela rit-ytan.<br /></li>
+<li>Klicka på <code class="blockgrey">Rektangel</code>, välj en färg, och klicka på knappen <code class="blockgrey">Ifylld rektangel</code>.<br /></li>
+<li>Klicka och drag två lådor, en från uppe i mitten och en från nere i mitten, som på bilden nedan:</li>
+</ul>
+<p><img src="pipe_design.png" alt="screenshot" /></p>
+<ul>
+<li>Du kan tona dina rör genom att klicka på knappen <code class="blockgrey">Färglägg en form</code> och klicka på knappen <code class="blockgrey">Horisontell gradient</code>. Välj två nyanser av samma färg, en för förgrundsfärgen och en för bakgrundsfärgen. När du klicka för att fylla i formerna, så kommer färgen att skifta mellan de valda färgerna.<br /></li>
+<li>Döp din sprite <strong>Rör</strong></li>
+</ul>
+</section>
+<section id="spara-ditt-projekt-3" class="level2 save">
+<h2>Spara ditt projekt</h2>
+</section>
+</section>
+<section id="steg-5-fa-roren-att-flytta-pa-sig" class="level1 activity">
+<h1><strong>Steg 5:</strong> Få rören att flytta på sig</h1>
+<p><em>Nu ska vi få rören att röra sig och placera sig slumpmässigt så att de skapar en hinderbana för Flappy.</em></p>
+<section id="checklista-4" class="level2 check">
+<h2>Checklista</h2>
+<ul>
+<li>Klicka på din <strong>Rör</strong> sprite och välj fliken <code>Script</code>.<br /></li>
+<li><p>Lägg till följande script:</p>
+<p><img src="7fcd84a27102c7ceca7120c300ebd4bad469623b.png" alt="när FLAGGA klickas på
+    göm
+    sät storlek till (200)%
+    för alltid
+        skapa klon av [mig själv v]
+        vänta (2) sekunder
+
+när jag startar som klon 
+    gå till x: (240) y: (slumptal (-80) till (80))
+    visa
+    repetera (120)
+        ändra x med (-4)
+    slut
+    radera klonen" /></p></li>
+</ul>
+</section>
+<section id="testa-ditt-projekt-3" class="level2 flag">
+<h2>Testa ditt projekt</h2>
+<p><strong>Klicka på den gröna flaggan</strong>, kommer det rör med hål i flygande på olika höjd? On du tycker att det är svårt att åka med Flappy genom hålen i rören så kan du göra hålen större genom att att redigera klädseln till spriten <strong>rör</strong>.</p>
+</section>
+<section id="spara-ditt-projekt-4" class="level2 save">
+<h2>Spara ditt projekt</h2>
+</section>
+</section>
+<section id="steg-6-upptacka-kollision-med-roren" class="level1 activity">
+<h1><strong>Steg 6:</strong> Upptäcka kollision med rören</h1>
+<p><em>För att göra spelet till en utmaning så behöver spelaren styra Flappy genom hålen i rören utan att röra rören eller kanterna på skärmen. Nu ska vi lägga till block som känner av om Flappy nuddar någonting.</em></p>
+<section id="checklista-5" class="level2 check">
+<h2>Checklista</h2>
+<ul>
+<li>Nu ska vi lägga till ett ljud när Flappy krockar. Klicka på spriten <strong>Flappy</strong> och sen på fliken <code class="blockgrey">Ljud</code>.<br /></li>
+<li>Klicka på knappen <code class="blockgrey">Välj ljud från biblioteket</code>.<br /></li>
+<li>Välj ett krock-ljud för <strong>Flappy</strong>. Ljudet <strong>screech</strong> är bra.<br /></li>
+<li>Klicka på fliken <code class="blockgrey">Script</code>.<br /></li>
+<li><p>Lägg till följande script:</p>
+<p><img src="0573d2b129950d6589140facf98a85b69cc32916.png" alt="när FLAGGA klickas på
+    vänta tills ((rör [kant v]?) eller (rör [Rör v]?))
+    spela ljudet [screech v]
+    säg [Spelet är över!]
+    skicka [SpeletÖver v]
+    stoppa [andra scritp i sprite v]" /></p></li>
+<li><p>Klicka på spriten <strong>Rör</strong> och lägg till följande script:</p>
+<p><img src="9da49008ecdcf461bc0f6b7ead0d2a3c93281de5.png" alt="när jag tar emot [SpeletÖver v]
+    stoppa [andra script i sprite v]" /></p></li>
+</ul>
+</section>
+<section id="testa-ditt-projekt-4" class="level2 flag">
+<h2>Testa ditt projekt</h2>
+<p><strong>Klicka på den gröna flaggan</strong>, slutar spelet när Flappy nuddar ett rör eller kanten på skärmen?</p>
+</section>
+<section id="spara-ditt-projekt-5" class="level2 save">
+<h2>Spara ditt projekt</h2>
+</section>
+</section>
+<section id="steg-7-lagg-till-poangrakning" class="level1 activity">
+<h1><strong>Steg 7:</strong> Lägg till poängräkning</h1>
+<p><em>Nu ska vi lägga till så att spelaren får poäng varje gång som Flappy kommer igenom ett rör.</em></p>
+<section id="checklista-6" class="level2 check">
+<h2>Checklista</h2>
+<ul>
+<li>Vi lägger till ett ljud som ska spelas när Flappy får ett poäng. Klicka på spriten <strong>Rör</strong> och lägg till ett poäng-ljud. <strong>bird</strong> är ett bra val.<br /></li>
+<li>Klicka nu på fliken <code class="blockgrey">Script</code>.<br /></li>
+<li>Skapa en ny variabel <code>För alla sprites</code> och döp den till <code class="blockorange">poäng</code>.<br /></li>
+<li>Lägg till ett block som sätter poängen till 0 när flaggan klickas på.<br /></li>
+<li><p>Lägg till följande block:</p>
+<p><img src="1a752f39db21b0c50c343661b6316cbdf0dfb880.png" alt="när jag startar som klon
+    vänta tills &lt;(x-läge) &lt; ([x-läge v] av [Flappy v])&gt;
+    ändra [poäng v] med (1)
+    spela ljud [bird v]" /></p></li>
+</ul>
+</section>
+<section id="testa-ditt-projekt-5" class="level2 flag">
+<h2>Testa ditt projekt</h2>
+<p><strong>Klicka på den gröna flaggan</strong>, får spelaren poäng när Flappy flyger genom hålen i rören?</p>
+</section>
+<section id="spara-ditt-projekt-6" class="level2 save">
+<h2>Spara ditt projekt</h2>
+</section>
+<section id="saker-att-forsoka" class="level2 try">
+<h2>Saker att försöka</h2>
+<ol>
+<li><strong>På hur många sätt kan du göra spelet lättare eller svårare?</strong><br />2.<strong>Grattis, du har slutfört det grundläggande spelet. Det finns dock fler saker som du kan göra med spelet. Testa gärna dom följande utmaningarna!</strong></li>
+</ol>
+</section>
+<section id="utmaning-1-lagg-till-en-high-score" class="level2 challenge">
+<h2>Utmaning 1: lägg till en high score</h2>
+<ul>
+<li>Skapa en ny variabel och klicka i boxen <code class="blockgrey">Moln variabel (lagrad på servern)</code>. Kalla variabeln <code class="blockorange">hi-score</code>. Notera att du måste vara en Scratcher för att få använda molndata.<br /></li>
+<li><p>När spelet är över så kontrollera om du behöver sätta en ny highscore:</p>
+<p><img src="6c0bbccd5f1d3ad86b061ada67716b4245b09603.png" alt="när jag tar emot [SpeletÖver v]
+    om &lt;(poäng) &gt; (hi-score)&gt; då
+        sätt [hi-score v] till (score)
+    slut
+    stoppa [andra script i sprite v]" /></p></li>
+</ul>
+</section>
+<section id="testa-ditt-projekt-6" class="level2 flag">
+<h2>Testa ditt projekt</h2>
+<p><strong>Klicka på den gröna flaggan</strong>, uppdateras highscore när du får högre poäng?</p>
+</section>
+<section id="spara-ditt-projekt-7" class="level2 save">
+<h2>Spara ditt projekt</h2>
+</section>
+<section id="utmaning-2-lagg-till-gravitation" class="level2 challenge">
+<h2>Utmaning 2: lägg till gravitation</h2>
+<p>När någonting faller under gravitation så faller det oftast inte med en konstant hastighet. I den här utmaningen ska vi göra så att Flappy faller som utav gravitation.</p>
+<ul>
+<li>Lägg till en ny variabel till <strong>Flappy</strong> (<code class="blockgrey">Enbart för denna sprite</code> ) och kalla den <code class="blockorange">stigning</code>.<br /></li>
+<li><p>Ändra Flappys script för fallandet:</p>
+<p><img src="c90127f659e5c7270757de3c1a2678c57294845b.png" alt="när FLAGGA klickas på
+    sätt [stigning v] till [0]
+    gå till x: (-50) y: (0)
+    för alltid
+        ändra y med (stigning)
+        ändra [stigning v] med (-0.4)" /></p></li>
+<li><p>Ändra Flappys script för flaxande:</p>
+<p><img src="7ef088408bb659000c1e35d93197af0235f33abd.png" alt="när FLAGGA klickas på
+    sätt [flax v] till [0]
+    byt klädsel till [vingar upp v]
+    för alltid
+        repetera tills &lt;(flax) = [0]&gt;
+            ändra [flax v] med (-1)
+            byt klädsel till [vingar ner v]
+            ändra [stigning v] med (8)
+            wait (0.2) secs
+            switch costume to [wings up v]
+            wait (0.2) secs" /></p></li>
+</ul>
+</section>
+<section id="testa-ditt-projekt-7" class="level2 flag">
+<h2>Testa ditt projekt</h2>
+<p><strong>Klicka på den gröna flaggan</strong>, accelererar Flappy när han faller och flaxar?</p>
+</section>
+<section id="spara-ditt-projekt-8" class="level2 save">
+<h2>Spara ditt projekt</h2>
+</section>
+<section id="utmaning-3-falla-ut-fran-skarmen" class="level2 challenge">
+<h2>Utmaning 3: falla ut från skärmen</h2>
+<p>Få Flappy att trilla ner till botten på skärmen när spelaren förlorar, innan spelet avslutas.</p>
+<ul>
+<li>Byt upp blocket <code class="blockbrown">skicka SpeletÖver</code> till ett block med <code class="blockbrown">skicka Fall</code><br /></li>
+<li><p>Lägg sen till följande script:</p>
+<p><img src="96364051d5fff460d7904e0fd77957cdb8641dd1.png" alt="när jag tar emot [Fall v]
+    repetera (10)
+        vänd motsols (5) grader
+
+när jag tar emot [Fall v]
+    repetera tills &lt;(y position) &lt; [-180]&gt;
+        ändra y med [stigning]
+        ändra [stigning v] med (-0.4)
+    slut
+    göm
+    skicka [SpeletÖver v]" /></p></li>
+<li>Glöm inte att lägga till blocket <code class="blockpurple">visa</code> och att återställa Flappys rotation när spelet startar om.<br /></li>
+<li><p>Se också till att du inte stoppar andra script förrän du har skickat SpeletÖver</p></li>
+</ul>
+</section>
+<section id="testa-ditt-projekt-8" class="level2 flag">
+<h2>Testa ditt projekt</h2>
+<p><strong>Klicka på den gröna flaggan</strong>, faller Fally ner och ut från skärmen efter att han träffar ett rör? Kommer Flappy tillbaks med korrekt rotation efter att ha startat om spelet?.</p>
+</section>
+<section id="spara-ditt-projekt-9" class="level2 save">
+<h2>Spara ditt projekt</h2>
+<p><strong>Bra jobbat, du är färdig! Nu kan du njuta av spelet!</strong><br />Glöm inte att du kan dela med dig av ditt spel alla dina vänner och din familj genom att klicka på <strong>Dela</strong> uppe till höger i meny-panelen!</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <link rel="stylesheet" href="../../../js/prism.js">
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-2']);
+      _gaq.push(['_setDomainName', 'codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
