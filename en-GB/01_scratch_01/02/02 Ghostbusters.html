@@ -155,14 +155,14 @@
         hide
        play sound [Fairydust v]
        change [score v] by (1)" /></p></li>
-<li>Switch to the <strong>Stage</strong> and create a <strong>new variable</strong> called <strong>timer</strong>.<br /></li>
-<li><p>Add a new script that occurs when the green flag is clicked to set <code class="blockorange">timer</code> to <strong>30</strong> and reset the score to <strong>0</strong>. Then use a <code class="blockyellow">repeat until</code> block to wait a second and then reduce <code class="blockorange">timer</code> by one. This should repeat until timer is 0, at which point use <code class="blockyellow">stop all</code> to stop the game.</p>
-<p><img src="a5316b4503d42d8da6e77ab1ee4ddcee5a3f296a.png" alt="    when FLAG clicked
-        set [timer v] to (30)
+<li>Switch to the <strong>Stage</strong> and create a <strong>new variable</strong> called <strong>time_left</strong>.<br /></li>
+<li><p>Add a new script that occurs when the green flag is clicked to set <code class="blockorange">time_left</code> to <strong>30</strong> and reset the score to <strong>0</strong>. Then use a <code class="blockyellow">repeat until</code> block to wait a second and then reduce <code class="blockorange">time_left</code> by one. This should repeat until <code>time_left</code> is 0, at which point use <code class="blockyellow">stop all</code> to stop the game.</p>
+<p><img src="0847d982950732541a79ca0d75cff76dc1eab433.png" alt="    when FLAG clicked
+        set [time_left v] to (30)
         set [score v] to (0)
-        repeat until &lt;(timer) = [0]&gt;
+        repeat until &lt;(time_left) = [0]&gt;
             wait (1) secs
-            change [timer v] by (-1)
+            change [time_left v] by (-1)
         end
         stop [all v]" /></p></li>
 </ul>
