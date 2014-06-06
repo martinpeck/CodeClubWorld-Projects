@@ -80,7 +80,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <ul>
 <li>In the Minecraft2D folder you’ll see that there are lots of images, one for each of the resources. If you right-click one of these images and open it in an image editor, you can change the graphics for a resource.</li>
 </ul>
-<p>Here are my improved graphics for the grass. I’ve added different shades of grass and even a few flowers:</p>
+<p>Here are some improved graphics for the grass. I’ve added different shades of grass and even a few flowers:</p>
 <p><img src="mine2-1.png" alt="screenshot" /></p>
 <ul>
 <li>Save the image and then reload the game and you’ll see the new graphics:</li>
@@ -104,7 +104,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 </section>
 <section id="step-3-adding-more-resources" class="level1 activity">
 <h1>Step 3: Adding more resources</h1>
-<p>We only have 4 resources in our game; dirt, grass, water and brick. Let’s add more!</p>
+<p>You only have 4 resources in your game; dirt, grass, water and brick. Let’s add more!</p>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
@@ -123,14 +123,14 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
     BRICK = 3
     WOOD  = 4</code></pre>
 <ul>
-<li>In the same file, there is also a list of all the resources. We should add wood to that list too:</li>
+<li>In the same file, there is also a list of all the resources. You should add wood to that list too:</li>
 </ul>
 <pre class="language-python"><code>    #a list of all game resources
     #----------------------------
 
     resources = [DIRT,GRASS,WATER,BRICK,WOOD]</code></pre>
 <ul>
-<li>We also need to set the image for the wood resource in the textures dictionary, so that the correct graphics will be shown:</li>
+<li>You also need to set the image for the wood resource in the textures dictionary, so that the correct graphics will be shown:</li>
 </ul>
 <pre class="language-python"><code>    #a dictionary linking resources to textures
     #------------------------------------------
@@ -144,7 +144,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
                  }</code></pre>
 <p>Notice that you need to add a comma (`,``) after the brick image in the line above.</p>
 <ul>
-<li>Let’s also add wood to our inventory dictionary. You can choose how many you start with:</li>
+<li>You can also add wood to your inventory dictionary. You can choose how many you start with:</li>
 </ul>
 <pre class="language-python"><code>    #the number of each resource that we have to start with
     #------------------------------------------------------
@@ -157,11 +157,11 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
                     WOOD    : 5
                 }</code></pre>
 <ul>
-<li>If you now run the game, you’ll see that we now have a wood resource that we can place on the map, but there isn’t any wood on the map to begin with:</li>
+<li>If you now run the game, you’ll see that we now have a wood resource that you can place on the map, but there isn’t any wood on the map to begin with:</li>
 </ul>
 <p><img src="mine3-6.png" alt="screenshot" /></p>
 <ul>
-<li>To start the game with some wood resources dotted around, we need to edit the Minecraft2D.py file. Open the file and add the following lines:</li>
+<li>To start the game with some wood resources dotted around, you need to edit the Minecraft2D.py file. Open the file and add the following lines:</li>
 </ul>
 <pre class="language-python"><code>            #pick a random number between 0 and 9
             randomNumber = random.randint(0,10)
@@ -187,7 +187,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 </section>
 <section id="step-4-crafting-new-resources" class="level1 activity">
 <h1>Step 4: Crafting new resources</h1>
-<p>We can add more resources to our game that we can only get by crafting them. Let’s create a new ‘plank’ resource, so that the player can combine 3 wood resources together to make a nice shiny plank of wood!</p>
+<p>You can add more resources to our game that we can only get by crafting them. Let’s create a new ‘plank’ resource, so that the player can combine 3 wood resources together to make a nice shiny plank of wood!</p>
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
@@ -195,7 +195,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 </ul>
 <p><img src="mine4-1.png" alt="screenshot" /></p>
 <ul>
-<li>To allow the player to craft planks of wood, we need to add a crafting rule to our game. Open the variables.py file and add the following code to the crafting rules dictionary:</li>
+<li>To allow the player to craft planks of wood, you'll need to add a crafting rule to your game. Open the variables.py file and add the following code to the crafting rules dictionary:</li>
 </ul>
 <pre class="language-python"><code>    #rules to make new objects
     #-------------------------
@@ -204,9 +204,9 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
                 BRICK    : { WATER : 1, DIRT : 2 },
                 PLANK    : { WOOD : 3 }
             }</code></pre>
-<p>This code tells the game that we can create a new plank if we have 3 wood in our inventory. Again, don’t forget the comma after the line above.</p>
+<p>This code tells the game that it can create a new plank if there are 3 wood in the player's inventory. Again, don’t forget the comma after the line above.</p>
 <ul>
-<li>We need to make sure that the player knows how to craft planks, by adding some more instructions to the list:</li>
+<li>You need to make sure that the player knows how to craft planks, by adding some more instructions to the list:</li>
 </ul>
 <pre class="language-python"><code>    #instructions list
     #-----------------
