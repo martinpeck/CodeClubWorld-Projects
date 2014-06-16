@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="world"  lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>(Beta) The Year 2025 — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+    <link rel="stylesheet" href="../../../css/prism.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">(Beta) The Year 2025</h1>
+      <span class="level-indicator">Level 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Python</a></li><li class="breadcrumbs-item current">(Beta) The Year 2025</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="heads-up" class="level1">
+<h1>Head's up!</h1>
+<p>This project is in Beta. That means we're still testing it, and there's a small chance there could be some bugs or typos. If you're a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/1eMCfpYe3v7eYu5M8rSqLKlmq7cczLCLHx66csgyUyVU/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email <script type="text/javascript">
+<!--
+h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
+</section>
+<section id="introduction" class="level1 intro">
+<h1>Introduction:</h1>
+<p>Learn how to use variables in your programs, to make them more useful.</p>
+</section>
+<section id="step-1-how-old" class="level1 activity">
+<h1>Step 1: How old?</h1>
+<section id="activity-checklist" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>With everything you've learnt so far, you should be able to write a program to calculate how old you’ll be in the year 2025. The Python program to calculate your age should work like this:</li>
+</ul>
+<p><img src="2025-age.png" alt="screenshot" /></p>
+<p>As you can see, if you were born in 2004, you can calculate your age in the year 2025 by the calculation <code>2025 - 2004</code>. So someone born in 2004 will be 21 years old in the year 2025! If you weren’t born in 2004 you can change the number in the program.</p>
+</section>
+<section id="challenge-changing-dates" class="level2 challenge">
+<h2>Challenge: Changing dates</h2>
+<p>Change your program to find out how old someone born in 1998 would be in the year 2025. How old will someone born this year be in the year 2050?</p>
+</section>
+</section>
+<section id="step-2-variables" class="level1 activity">
+<h1>Step 2: Variables</h1>
+<p>When completing the challenges above, you had to keep changing the numbers in the program for people of different ages, and for different years in the future. It would be much easier if you could ask someone what year they were born, and use the answer in your calculation. That's what variables are for!</p>
+<section id="activity-checklist-1" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>Run this Python program:</li>
+</ul>
+<pre class="language-python"><code>print(&quot;What year were you born?&quot;)
+born = input()
+born = int(born)
+print( 2025 - born )</code></pre>
+<p>This program waits for you to type in the year you were born, and press enter. You should then see how old you'll be in the year 2025:</p>
+<p><img src="2025-varProg.png" alt="screenshot" /></p>
+<p>This program uses the <code>input()</code> function to get the user's input from the keyboard, and store it in a variable called 'born', so that it can be used later. You can think of a variable as a box, which can be used to store important data.</p>
+<p><img src="2025-var.png" alt="screenshot" /></p>
+<p>Notice that the variable (the box) has been named &quot;born&quot;, as it helps you remember what you’re storing inside the box!</p>
+<p>The line...</p>
+<pre class="language-python"><code>print( 2025 - born )</code></pre>
+<p>...takes 2025 away from whatever number has been stored in the <code>born</code> variable.</p>
+<p>Anything that is typed in from the keyboard is always stored as text, so you also have to use the <code>int()</code> function to turn the user's input into a whole number (which in programming is called an <em>integer</em>).</p>
+<ul>
+<li>You can make your program much easier to understand, by adding a helpful message for the user, so they know what you're showing them. Change the last line of your program to:</li>
+</ul>
+<pre class="language-python"><code>print( &quot;In 2025 you will be&quot; , 2025 - born , &quot;years old!&quot; )</code></pre>
+<ul>
+<li>Try running your program again, to see how this change looks.</li>
+</ul>
+<p><img src="2025-print.png" alt="screenshot" /></p>
+<ul>
+<li>But why stop there? You could also use another variable to store the answer before printing it for the user. Try this program out:</li>
+</ul>
+<p><img src="2025-2vars.png" alt="screenshot" /></p>
+</section>
+<section id="challenge-the-year-3000" class="level2 challenge">
+<h2>Challenge: The year 3000!</h2>
+<p>Your program only tells people what their age will be in the year 2025. What if someone wants to know their age in the year 2050? Or the year 3000? Add another variable to your program, so that the user can find out how old they'll be in any year they choose.</p>
+<p><img src="2025-3000.png" alt="screenshot" /></p>
+</section>
+<section id="challenge-your-age-in-dog-years" class="level2 challenge">
+<h2>Challenge: Your age in dog years</h2>
+<p>Write a program to ask the user their age, and then tell them their age in dog years! You can calculate a person’s age in dog years by multiplying their age by 7.</p>
+<p><img src="2025-dogYears.png" alt="screenshot" /></p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <link rel="stylesheet" href="../../../js/prism.js">
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
