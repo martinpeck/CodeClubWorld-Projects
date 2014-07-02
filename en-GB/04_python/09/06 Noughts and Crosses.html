@@ -38,9 +38,11 @@ _|_|_
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Open up IDLE, create a New File, and save it as 'xox.py'<br /></li>
-<li><p>Write the following code</p>
-<pre class="language-python"><code>from tkinter import *
+<li>Open up IDLE, create a New File, and save it as 'xox.py'</li>
+</ul>
+<p>Write the following code:</p>
+<pre class="language-python"><code>
+from tkinter import *
 
 main = Tk()
 
@@ -53,8 +55,9 @@ c.create_line(400, 0, 400, 600)
 c.create_line(0, 200, 600, 200)
 c.create_line(0, 400, 600, 400)
 
-mainloop()</code></pre></li>
-<li><p>Save and Run your program, and it will draw a grid !</p></li>
+mainloop()</code></pre>
+<ul>
+<li>Save and Run your program, and it will draw a grid !</li>
 </ul>
 <section id="the-canvas" class="level3">
 <h3>The Canvas</h3>
@@ -108,7 +111,8 @@ mainloop()</code></pre></li>
 c.create_line(400, 0, 400, 600) # B to D
 
 c.create_line(0, 200, 600, 200) # M to O
-c.create_line(0, 400, 600, 400) # N to P</code></pre>
+c.create_line(0, 400, 600, 400) # N to P
+</code></pre>
 <p>In code, across is often called <code>x</code>, and down is often called <code>y</code>. This grid system is quite like the co-ordinates you've learned in mathematics, but we start from the top-left hand side.</p>
 </section>
 </section>
@@ -120,53 +124,58 @@ c.create_line(0, 400, 600, 400) # N to P</code></pre>
 <ul>
 <li>In the same file, let's add a new function to draw when you click the mouse!</li>
 </ul>
-<pre class="language-python"><code>from tkinter import *
-    main = Tk()
+<pre class="language-python"><code>
+from tkinter import *
 
-    c = Canvas(main, width=600, height=600)
-    c.pack()
+main = Tk()
 
-    c.create_line(200, 0, 200, 600)
-    c.create_line(400, 0, 400, 600)
+c = Canvas(main, width=600, height=600)
+c.pack()
 
-    c.create_line(0, 200, 600, 200)
-    c.create_line(0, 400, 600, 400)
+c.create_line(200, 0, 200, 600)
+c.create_line(400, 0, 400, 600)
 
-    def click(event):
-        c.create_oval(200,200,400,400)
+c.create_line(0, 200, 600, 200)
+c.create_line(0, 400, 600, 400)
 
-    c.bind(&quot;&lt;Button-1&gt;&quot;, click)
+def click(event):
+    c.create_oval(200,200,400,400)
 
-    mainloop()</code></pre>
+c.bind(&quot;&lt;Button-1&gt;&quot;, click)
+
+mainloop()
+</code></pre>
 <ul>
 <li>Run your code, and click on the grid, what happens? You should see a circle in the centre of the grid.<br /></li>
 <li>Let's edit the code, so it will draw where you click. For this we'll need to take the mouse position, and work out which grid square it is in, and change the <code>click</code> function</li>
 </ul>
-<pre class="language-python"><code>from tkinter import *
+<pre class="language-python"><code>
+from tkinter import *
 
-    main = Tk()
+main = Tk()
 
-    c = Canvas(main, width=600, height=600)
-    c.pack()
+c = Canvas(main, width=600, height=600)
+c.pack()
 
-    c.create_line(200, 0, 200, 600)
-    c.create_line(400, 0, 400, 600)
+c.create_line(200, 0, 200, 600)
+c.create_line(400, 0, 400, 600)
 
-    c.create_line(0, 200, 600, 200)
-    c.create_line(0, 400, 600, 400)
+c.create_line(0, 200, 600, 200)
+c.create_line(0, 400, 600, 400)
 
-    def click(event):
-        across = int(c.canvasx(event.x) / 200)
-        down   = int(c.canvasy(event.y) / 200)
+def click(event):
+    across = int(c.canvasx(event.x) / 200)
+    down   = int(c.canvasy(event.y) / 200)
 
-        c.create_oval(
-            across * 200, down * 200,
-            (across + 1) * 200, (down + 1) * 200
-        )
+    c.create_oval(
+        across * 200, down * 200,
+        (across + 1) * 200, (down + 1) * 200
+    )
 
-    c.bind(&quot;&lt;Button-1&gt;&quot;, click)
+c.bind(&quot;&lt;Button-1&gt;&quot;, click)
 
-    mainloop()</code></pre>
+mainloop()
+</code></pre>
 <p><code>int(c.canvasx(event.x)/200)</code> takes the mouse position, <code>event.x</code> turns it into the canvas position, <code>c.canvas(event.x)</code> and then divides it by 200, and rounds it down, so we get a number 0, 1 or 2 to tell us how far across the mouse is.</p>
 <ul>
 <li>Run the code, click in the grid squares, each one should fill in with a circle! The code <code>c.create_oval(across*200,down*200,(across+1)*200,(down+1)*200)</code> turns 'Along 1, Down 2' into positions on the grid, like Along 200, Down 400.</li>
@@ -180,46 +189,48 @@ c.create_line(0, 400, 600, 400) # N to P</code></pre>
 <ul>
 <li>In the same file, let's add some code to draw an X, then an O, then an X, ...</li>
 </ul>
-<pre class="language-python"><code>from tkinter import *
+<pre class="language-python"><code>
+from tkinter import *
 
-    main = Tk()
+main = Tk()
 
-    c = Canvas(main, width=600, height=600)
-    c.pack()
+c = Canvas(main, width=600, height=600)
+c.pack()
 
-    c.create_line(200, 0, 200, 600)
-    c.create_line(400, 0, 400, 600)
+c.create_line(200, 0, 200, 600)
+c.create_line(400, 0, 400, 600)
 
-    c.create_line(0, 200, 600, 200)
-    c.create_line(0, 400, 600, 400)
+c.create_line(0, 200, 600, 200)
+c.create_line(0, 400, 600, 400)
 
-    shape = &quot;O&quot;
+shape = &quot;O&quot;
 
-    def click(event):
-        global shape
-        across = int(c.canvasx(event.x)/200)
-        down = int(c.canvasy(event.y)/200)
+def click(event):
+    global shape
+    across = int(c.canvasx(event.x)/200)
+    down = int(c.canvasy(event.y)/200)
 
-        if shape == &quot;O&quot;:
-            c.create_oval(
-                across*200,down*200,
-                (across+1)*200,(down+1)*200
-            )
-            shape = &quot;X&quot;
-        else:
-            c.create_line(
-                across*200, down*200,
-                (across+1)*200, (down+1)*200
-            )
-            c.create_line(
-                across*200, (down+1)*200,
-                (across+1)*200, down*200
-            )
-            shape = &quot;O&quot;
+    if shape == &quot;O&quot;:
+        c.create_oval(
+            across*200,down*200,
+            (across+1)*200,(down+1)*200
+        )
+        shape = &quot;X&quot;   
+    else:
+        c.create_line(
+            across*200, down*200,
+            (across+1)*200, (down+1)*200
+        )
+        c.create_line(
+            across*200, (down+1)*200,
+            (across+1)*200, down*200
+        )
+        shape = &quot;O&quot;
 
-    c.bind(&quot;&lt;Button-1&gt;&quot;, click)
+c.bind(&quot;&lt;Button-1&gt;&quot;, click)
 
-    mainloop()</code></pre>
+mainloop()
+</code></pre>
 <ul>
 <li>Run your program, try click on a grid, it should draw a O, click elsewhere it should draw an X We've used a new feature of python, <code>global</code> to let us change the variable <code>shape</code> in the function <code>click</code>. If you change variables defined outside of a function, then you have to use <code>global</code>.<br /></li>
 <li>What happens if you click on the same square twice? This is because our code doesn't keep track of what has been drawn, or where players have moved. We will have write some more code to fix this.</li>
@@ -232,8 +243,10 @@ c.create_line(0, 400, 600, 400) # N to P</code></pre>
 <h2>Activity Checklist</h2>
 <p>To stop players playing the same move twice, we'll have to keep track of the moves they make. To do this we'll introduce a list called <code>grid</code></p>
 <ul>
-<li><p>In the same file,</p>
-<pre class="language-python"><code>from tkinter import *
+<li>In the same file,</li>
+</ul>
+<pre class="language-python"><code>
+from tkinter import *
 
 main = Tk()
 
@@ -284,8 +297,10 @@ def click(event):
 
 c.bind(&quot;&lt;Button-1&gt;&quot;, click)
 
-mainloop()</code></pre></li>
-<li><p>Run your program, and try and click in the same square twice? What happens?</p></li>
+mainloop()
+</code></pre>
+<ul>
+<li>Run your program, and try and click in the same square twice? What happens?</li>
 </ul>
 </section>
 </section>
@@ -297,85 +312,87 @@ mainloop()</code></pre></li>
 <ul>
 <li>In the same file, we're going to introduce a new function <code>winner</code>, and call it to check if the game has been won The completed code looks like this!</li>
 </ul>
-<pre class="language-python"><code>from tkinter import *
+<pre class="language-python"><code>
+from tkinter import *
 
-    main = Tk()
+main = Tk()
 
-    c = Canvas(main, width=600, height=600)
-    c.pack()
+c = Canvas(main, width=600, height=600)
+c.pack()
 
-    c.create_line(200, 0, 200, 600)
-    c.create_line(400, 0, 400, 600)
+c.create_line(200, 0, 200, 600)
+c.create_line(400, 0, 400, 600)
 
-    c.create_line(0, 200, 600, 200)
-    c.create_line(0, 400, 600, 400)
+c.create_line(0, 200, 600, 200)
+c.create_line(0, 400, 600, 400)
 
-    shape = &quot;O&quot;
-    grid = [
-        &quot;0&quot;, &quot;1&quot;, &quot;2&quot;,
-        &quot;3&quot;, &quot;4&quot;, &quot;5&quot;,
-        &quot;6&quot;, &quot;7&quot;, &quot;8&quot;,
-    ]
+shape = &quot;O&quot;
+grid = [
+    &quot;0&quot;, &quot;1&quot;, &quot;2&quot;,
+    &quot;3&quot;, &quot;4&quot;, &quot;5&quot;,
+    &quot;6&quot;, &quot;7&quot;, &quot;8&quot;,
+]
 
 
-    def click(event):
-        global shape, grid
-        across = int(c.canvasx(event.x)/200)
-        down = int(c.canvasy(event.y)/200)
+def click(event):
+    global shape, grid
+    across = int(c.canvasx(event.x)/200)
+    down = int(c.canvasy(event.y)/200)
 
-        square = across + (down*3)
+    square = across + (down*3)
 
-        if grid[square] == &quot;X&quot; or grid[square] == &quot;O&quot;:
-            return
+    if grid[square] == &quot;X&quot; or grid[square] == &quot;O&quot;:
+        return
 
-        if winner():
-            return
+    if winner():
+        return
 
-        if shape == &quot;O&quot;:
-            c.create_oval(
-                across*200,down*200,
-                (across+1)*200,(down+1)*200
-            )
-            grid[square] = &quot;O&quot;
-            shape = &quot;X&quot;
-        else:
-            c.create_line(
-                across*200, down*200,
-                (across+1)*200, (down+1)*200
-            )
-            c.create_line(
-                across*200, (down+1)*200,
-                (across+1)*200, down*200
-            )
-            grid[square] = &quot;X&quot;
-            shape = &quot;O&quot;
+    if shape == &quot;O&quot;:
+        c.create_oval(
+            across*200,down*200,
+            (across+1)*200,(down+1)*200
+        )
+        grid[square] = &quot;O&quot;
+        shape = &quot;X&quot;
+    else:
+        c.create_line(
+            across*200, down*200,
+            (across+1)*200, (down+1)*200
+        )
+        c.create_line(
+            across*200, (down+1)*200,
+            (across+1)*200, down*200
+        )
+        grid[square] = &quot;X&quot;
+        shape = &quot;O&quot;
 
-    def winner():
-        for across in range(3):
-            row = across*3
-            line = grid[row] + grid[row+1] + grid[row+2]
-            if line == &quot;XXX&quot; or line == &quot;OOO&quot;:
-                return True
-
-        for down in range(3):
-            line = grid[down] + grid[down+3] + grid[down+6]
-            if line == &quot;XXX&quot; or line == &quot;OOO&quot;:
-                return True
-
-        line = grid[0]+grid[4]+grid[8]
-
+def winner():
+    for across in range(3):
+        row = across*3
+        line = grid[row] + grid[row+1] + grid[row+2]
         if line == &quot;XXX&quot; or line == &quot;OOO&quot;:
-                return True
+            return True
 
-        line = grid[2]+grid[4]+grid[6]
-
+    for down in range(3):
+        line = grid[down] + grid[down+3] + grid[down+6]
         if line == &quot;XXX&quot; or line == &quot;OOO&quot;:
-                return True
+            return True
+
+    line = grid[0]+grid[4]+grid[8]
+
+    if line == &quot;XXX&quot; or line == &quot;OOO&quot;:
+            return True
+
+    line = grid[2]+grid[4]+grid[6]
+
+    if line == &quot;XXX&quot; or line == &quot;OOO&quot;:
+            return True
 
 
-    c.bind(&quot;&lt;Button-1&gt;&quot;, click)
+c.bind(&quot;&lt;Button-1&gt;&quot;, click)
 
-    mainloop()</code></pre>
+mainloop()
+</code></pre>
 <ul>
 <li><p>Try playing the game and winning, can you make any more moves? We have four checks in <code>winner</code></p>
 <ul>
