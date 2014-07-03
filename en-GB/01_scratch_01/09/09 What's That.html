@@ -11,7 +11,6 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <link rel="stylesheet" href="../../../css/master.min.css">
-    <link rel="stylesheet" href="../../../css/prism.css">
   </head>
 
   <body class="index-template world">
@@ -110,14 +109,14 @@
 <p>So far we’ve got our random picture appearing slowly, and a score which decreases over time, but how do you win the game? We’ll add some sprites at the bottom of the screen for the player to click on. If they click on the right one, they win the game. If they click on the wrong one, that sprite disappears and the game carries on.</p>
 <p>First, we need to know what the right answer is.</p>
 <ul>
-<li><strong>Create a new variable</strong> called <strong>answer</strong>. Make sure it’s for all sprites.<br /></li>
-<li><p>Change the script you’ve written to record the right answer. Add the <code class="blockorange">set [answer] to costume #</code> blocks just after the first repeat loop:</p>
-<p><img src="8c0771611c41aec808694100622d0fdf2159de1a.png" alt="    when FLAG clicked
+<li><strong>Create a new variable</strong> called <strong>right answer</strong>. Make sure it’s for all sprites.<br /></li>
+<li><p>Change the script you’ve written to record the right answer. Add the <code class="blockorange">set [right answer] to costume #</code> blocks just after the first repeat loop:</p>
+<p><img src="b3cff4c0bf4f2801181030cbdbe76e49821d7ee2.png" alt="    when FLAG clicked
     hide
     repeat (pick random (1) to (5)
         next costume
     end
-    set [answer v] to (costume #)
+    set [right answer v] to (costume #)
     set [score v] to (110)
     repeat until ((score) = (0))
         change [score v] by (-10)
@@ -138,8 +137,8 @@
 <p>Now we want to have each sprite respond to being clicked and do something depending on whether its the right answer or not.</p>
 <ul>
 <li><p>Add this script to the answer1 sprite:</p>
-<p><img src="cb88e35ec48577ee3d38f366e6223f78e05d3696.png" alt="    when this sprite clicked
-        if ((answer) = (1)
+<p><img src="7617657d5afe535e81c3f85447ed8b6df70fcd62.png" alt="    when this sprite clicked
+        if ((right answer) = (1))
             broadcast [won v]
         else
             hide" /></p></li>
@@ -167,12 +166,12 @@
 <ul>
 <li>Create a new variable called won?<br /></li>
 <li><p>Change the scripts so they look like this:</p>
-<p><img src="2bed6cac48bf478d1120450838c29d896e5aac5e.png" alt="    when FLAG clicked
+<p><img src="a5175fe0ac6963a3f6b2b403b3c2f6b4c2b97963.png" alt="    when FLAG clicked
         hide
         repeat (pick random (1) to (5)
             next costume
         end
-        set [answer v] to (costume)
+        set [right answer v] to (costume)
         set [score v] to (110)
         set [won v] to (0)
         repeat until &lt;&lt;(score) = (0)&gt; or &lt;(won) = (1)&gt;&gt;
@@ -273,8 +272,6 @@ when I receive [won v]
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
-
-    <link rel="stylesheet" href="../../../js/prism.js">
 
     <!-- Google Analytics -->
     <script type="text/javascript">

@@ -11,7 +11,6 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <link rel="stylesheet" href="../../../css/master.min.css">
-    <link rel="stylesheet" href="../../../css/prism.css">
   </head>
 
   <body class="index-template world">
@@ -163,9 +162,15 @@ al presionar tecla [espacio v]
 <section id="paso-3-haz-que-cada-explosion-sea-unica" class="level1 activity">
 <h1>PASO 3: Haz que cada explosión sea única</h1>
 <ul>
-<li>Ahora queremos que cada explosión sea única, usando el bloque <code class="blockpurple">establecer efecto color</code>, y haciendo que elija un color al azar entre <strong>1</strong> y <strong>200</strong> antes de mostrarse.<br />```blocks<br /> al recibir [explotar v]<br /> esconder<br /> establecer efecto [color v] a (número al azar entre (1) y (200))<br /> ir a [cohete v]<br /> mostrar<br /> esperar (1) segs<br /> esconder</li>
+<li><p>Ahora queremos que cada explosión sea única, usando el bloque <code class="blockpurple">establecer efecto color</code>, y haciendo que elija un color al azar entre <strong>1</strong> y <strong>200</strong> antes de mostrarse.</p>
+<p><img src="501b68c42c74053a09b038381d867b861ded8896.png" alt="    al recibir [explotar v]
+        esconder
+        establecer efecto [color v] a (número al azar entre (1) y (200))
+        ir a [cohete v]
+        mostrar
+        esperar (1) segs
+        esconder" /></p></li>
 </ul>
-<p>```</p>
 <section id="prueba-tu-proyecto-5" class="level2 flag">
 <h2>Prueba tu proyecto</h2>
 <p>Pulsa la bandera verde. ¿Tiene cada explosión un color diferente?</p>
@@ -184,9 +189,18 @@ al presionar tecla [espacio v]
 <section id="progreso-6" class="level2 check">
 <h2>Progreso</h2>
 <ul>
-<li>Por último, vamos a a hacer que la explosión se haga más grande después de que el cohete explote! En vez de esperar un segundo, pon el tamaño del objeto a <strong>5%</strong> antes de mostrarlo y luego, cuando lo muestras, aumenta el tamaño por <strong>2 cincuenta veces</strong>, usando un bloque <code class="blockorange">repetir</code>.<br />```blocks<br /> al recibir [explotar v]<br /> esconder<br /> establecer efecto [color v] a (número al azar entre (1) y (200))<br /> ir a [cohete v]<br /> mostrar<br /> fijar tamaño a (5) %<br /> repetir (50)<br /> cambiar tamaño por (2)<br /> fin<br /> esconder</li>
+<li><p>Por último, vamos a a hacer que la explosión se haga más grande después de que el cohete explote! En vez de esperar un segundo, pon el tamaño del objeto a <strong>5%</strong> antes de mostrarlo y luego, cuando lo muestras, aumenta el tamaño por <strong>2 cincuenta veces</strong>, usando un bloque <code class="blockorange">repetir</code>.</p>
+<p><img src="bb10d0154e54fe0aea3bb07a2d1022cea09647c2.png" alt="    al recibir [explotar v]
+        esconder
+        establecer efecto [color v] a (número al azar entre (1) y (200))
+        ir a [cohete v]
+        mostrar
+        fijar tamaño a (5) %
+        repetir (50)
+            cambiar tamaño por (2)
+        fin
+        esconder" /></p></li>
 </ul>
-<p>```</p>
 </section>
 <section id="prueba-tu-proyecto-7" class="level2 flag">
 <h2>Prueba tu proyecto</h2>
@@ -241,8 +255,6 @@ al presionar tecla [espacio v]
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
-
-    <link rel="stylesheet" href="../../../js/prism.js">
 
     <!-- Google Analytics -->
     <script type="text/javascript">

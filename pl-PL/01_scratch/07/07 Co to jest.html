@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="world"  lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Co to jest — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Co to jest</h1>
+      <span class="level-indicator">Poziom 3</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Polski</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch</a></li><li class="breadcrumbs-item current">Co to jest</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="wstep" class="level1 intro">
+<h1>Wstęp</h1>
+<p>Na tablicy znajduje się zniekształcony obrazek. Musisz odgadnąć, co to jest, klikając na odpowiednią miniaturkę. Im szybciej zgadniesz, tym więcej punktów otrzymasz!</p>
+<p><img src="cotojest.png" alt="screenshot" /></p>
+</section>
+<section id="krok-1-wyswietl-rozne-obrazki-na-tablicy" class="level1 activity">
+<h1>Krok 1: Wyświetl różne obrazki na tablicy</h1>
+<p><strong>Chcemy pokazać na tablicy kilka różnych obrazków.</strong></p>
+<section id="zadania-do-wykonania" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Stwórz nowy projekt Scratch i usuń duszka kota.<br /></li>
+<li>Kliknij na Scenę, a następnie na zakładkę Tła. Zaimportuj tło 'W pomieszczeniu/chalkboard'.<br /></li>
+<li>Zaimportuj nowego duszka i dodaj do niego kostium. Wybierz taki kostium, który Ci się podoba. Może znajdziesz coś ciekawego w katalogu 'Przedmioty'.<br /></li>
+<li>Umieść tego duszka na środku tablicy. Jeżeli trzeba, odpowiednio zwiększ lub zmniejsz jego rozmiar.<br /></li>
+<li><p>Kliknij na zakładkę Kostiumy i zaimportuj 4 dodatkowe kostiumy. Wybierz cokolwiek Ci się podoba!</p></li>
+<li><p>Wyświetlmy teraz jakiś przypadkowy obrazek. Stwórz poniższy skrypt:</p></li>
+</ul>
+<p><img src="1986e15b36b719aab75e455819a602f9688aa72c.png" alt="    kiedy kliknięto zieloną FLAGĘ
+    powtórz (losuj od (1) do (5)) razy
+        następny kostium" /></p>
+</section>
+<section id="przetestuj-swoj-projekt" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Czy duszek ma inny kostium?</p>
+<p><strong>Kliknij flagę jeszcze kilka razy</strong></p>
+<p>Czy duszek ma inny kostium za każdym razem? Czasem ten sam kostium może pojawić się 2 razy z rzędu. Ale nie przejmuj się, to nie jest problem. Prawdopodobnie zauważyliście, że duszek miga za każdym razem jak zmienia kostium. Zaraz naprawimy ten problem.</p>
+</section>
+<section id="zapisz-swoj-projekt." class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+</section>
+<section id="krok-2-znieksztacamy-obrazki" class="level1 activity">
+<h1>Krok 2: Zniekształcamy obrazki</h1>
+<p><strong>Zniekształćmy teraz obrazek, kiedy pojawi się na tablicy po raz pierwszy, a w miarę upływu czasu niech staje się on coraz wyraźniejszy</strong>.</p>
+<p>Użyjemy zmiennej z liczbą punktów, aby kontrolować jak bardzo obrazek jest zniekształcony. Jeżeli liczba punktów jest duża, obrazek będzie bardzo zniekształcony.<br />W miarę jak liczba punktów będzie się zmniejszać z czasem, obrazek będzie coraz wyraźniejszy. Liczba punktów będzie również działać jak zegar.</p>
+<section id="zadania-do-wykonania-1" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Kliknij paletę Dane i stwórz zmienną o nazwie 'Punkty'<br /></li>
+<li>Zmień skrypt, aby wyglądał tak jak ten poniżej:</li>
+</ul>
+<p><img src="ed6e3f14c9b0cd3a884b51d6248f51c32074150f.png" alt="    kiedy kliknięto zieloną FLAGĘ
+    ukryj
+    powtórz (losuj od (1) do (5)) razy
+        następny kostium
+    koniec
+    ustaw [Punkty v] na (110)
+    powtarzaj aż ((Punkty) = (0))
+        zmień [Punkty v] o (-10)
+        ustaw efekt [pikselizacja v] na (Punkty)
+        ustaw efekt [kolor v] na (Punkty)
+        pokaż
+        czekaj (1) s
+    koniec" /></p>
+<p>Nie zapomnij dodać bloku 'ukryj' {.blockpurple} na początku skryptu, <code class="blockorange">ustawić Punkty na 110</code> oraz wszystkiego poniżej.</p>
+</section>
+<section id="przetestuj-swoj-projekt-1" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<ul>
+<li>Czy na tablicy pojawia się przypadkowy, zniekształcony obrazek?<br /></li>
+<li>Czy obrazek staje się coraz bardziej wyraźny w miarę upływu czasu?<br /></li>
+<li>Czy liczba punktów zmniejsza się kiedy obrazek staje się coraz bardziej wyraźny?<br /></li>
+<li>Czy zniekształcenie znika całkowicie, kiedy liczba punktów spadnie do 0?<br /></li>
+<li>Czy na tablicy pojawia się inny obrazek po każdym wciśnięciu flagi?</li>
+</ul>
+</section>
+<section id="zapisz-swoj-projekt.-1" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="rzeczy-do-sprobowania" class="level2 try activity">
+<h2>Rzeczy do spróbowania</h2>
+<ul>
+<li><p><strong>Spróbuj zmienić liczbę punktów na początku gry i wartość o jaką liczba punktów się zmniejsza w pętli.</strong> W jaki sposób wpływa to na wygląd obrazka? Czy teraz jest trudniej czy łatwiej odgadnąć co to jest?</p></li>
+<li><p><strong>Wypróbuj inne efekty graficzne z rozwijanej listy</strong>. W jaki sposób wpływają one na poziom trudności gry?</p></li>
+</ul>
+</section>
+</section>
+<section id="krok-3-pozwol-graczowi-zgadnac-co-to-za-obrazek" class="level1 activity">
+<h1>Krok 3: Pozwól graczowi zgadnąć co to za obrazek</h1>
+<p>Póki co, nasz przypadkowy obrazek powoli pojawia się na tablicy, a liczba punktów maleje w miarę upływu czasu. Ale jak mamy tę grę wygrać? Najpierw dodamy kilka dodatkowych duszków pod tablicą, które możesz kliknąć. Jeżeli klikniesz odpowiednią miniaturkę, wygrasz grę. Jeżeli klikniesz na zły obrazek, ten duszek zniknie i musisz spróbować zgadnąć jeszcze raz.</p>
+<p>Najpierw musimy wiedzieć, która odpowiedź jest poprawna.</p>
+<ul>
+<li>Stwórz nową zmienną 'dla każdego duszka' i nazwij ją <strong>odpowiedź</strong>.<br /></li>
+<li>Zmień poprzedni skrypt i ustaw poprawną odpowiedź. Dodaj blok <code class="blockorange">ustaw [odpowiedź] na kostium #</code> zaraz za pierwszą pętlą 'powtórz':</li>
+</ul>
+<p><img src="3dc60b4ff4d6a2139e9ccacfb08caefbfdad1c86.png" alt="    kiedy kliknięto zieloną FLAGĘ
+    ukryj
+    powtórz (losuj od (1) do (5)) razy
+        następny kostium
+    koniec
+    ustaw [odpowiedź v] na (kostium #)
+    ustaw [Punkty v] na (110)
+    powtarzaj aż ((Punkty) = (0))
+        zmień [Punkty v] o (-10)
+        ustaw efekt [pikselizacja v] na (Punkty)
+        ustaw efekt [kolor v] na (Punkty)
+        pokaż
+        czekaj (1) s
+    koniec" /></p>
+<p><strong>Teraz musimy dodać duszki, które gracz będzie mógł kliknąć.</strong></p>
+<ul>
+<li>Skopiuj głównego duszka (użyj opcji duplikuj) i umieść go pod tablicą po lewej stronie.<br /></li>
+<li>Zmień nazwę tego duszka na <strong>odpowiedź1</strong>. (Będzie nam prościej odwoływać się do konkretnych duszków w następnych krokach)<br /></li>
+<li>Usuń skrypt z duszka <strong>odpowiedź1</strong> oraz wszystkie jego kostiumy oprócz pierwszego.<br /></li>
+<li>Powtórz trzy powyższe polecenia, tylko tym razem nazwij duszka <strong>odpowiedź2</strong> i usuń wszystkie kostiumy oprócz drugiego.<br /></li>
+<li>W podobny sposób stwórz duszki <strong>odpowiedź3</strong>, <strong>odpowiedź4</strong> i <strong>odpowiedź5</strong>.</li>
+</ul>
+<p>Powinniśmy teraz mieć pięć duszków w rzędzie pod tablicą, każdy z innym kostiumem, który może być wyświetlony na głównym duszku na tablicy. <strong>Upewnij się, że duszki 'odpowiedzi' nie posiadają żadnych skryptów</strong>.</p>
+<p>Teraz zmienimy sposób, w jaki duszki będą reagować na kliknięcia myszką. Dalsze akcje będą zależeć od tego, czy odpowiedź jest poprawna.</p>
+<ul>
+<li><p>Dodaj poniższy skrypt do duszka 'odpowiedź1':</p>
+<p><img src="7163b7be99fa5d573856ca2da7c96c26345cd23b.png" alt="    kiedy duszek kliknięty
+    jeżeli ((odpowiedź) = (1)) to
+        nadaj [wygrana v]
+    w przeciwnym razie
+        ukryj" /></p></li>
+<li>Przeciągnij ten skrypt na pozostałe duszki odpowiedzi. <strong>Dla każdego duszka, zmień 1 na 2, 3, itd.</strong><br /></li>
+<li><p>Teraz musimy dodać coś, co będzie reagować na naszą wiadomość 'wygrana'. Kliknij na głównego duszka, tego na tablicy i dodaj do niego ten dodatkowy skrypt:</p></li>
+</ul>
+<p><img src="22f81688659589a167a51f9cc7489461a7573f3f.png" alt="    kiedy otrzymam [wygrana v]
+    powiedz (połącz [Gratulacje! Twoje punkty: ] i (Punkty))" /></p>
+<section id="przetestuj-swoj-projekt-2" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<ul>
+<li>Podczas testowania gry warto włączyć podgląd na zmienną <strong>odpowiedź</strong>, aby widzieć poprawną odpowiedź. Na palecie Dane kliknij pole obok zmiennej <strong>odpowiedź</strong>, a pojawi się ona na scenie, w lewym górnym rogu.<br /></li>
+<li>Co się dzieje po kliknięciu na <strong>poprawną</strong> odpowiedź?<br /></li>
+<li>Co się dzieje po kliknięciu na <strong>niepoprawną</strong> odpowiedź?<br /></li>
+<li>Co się dzieje z niepoprawną odpowiedzią <strong>po rozpoczęciu nowej gry?</strong></li>
+</ul>
+<p>Podczas testów zauważysz pewnie dwa problemy. Po pierwsze, duszki z niepoprawnymi odpowiedziami nie wracają na ekran po rozpoczęciu nowej gry. Po drugie, liczba punktów nie zatrzymuje się przy kliknięciu na poprawną odpowiedź.</p>
+<ul>
+<li><p>Aby naprawić pierwszy problem, dodaj poniższy skrypt do wszystkich duszków odpowiedzi:</p>
+<p><img src="dde59853a36d5606c0dfad384ec191511656a39d.png" alt="    kiedy kliknięto zieloną FLAGĘ
+    pokaż" /></p></li>
+</ul>
+<p>Aby naprawić drugi problem, trzeba zatrzymać pętlę 'powtórz' na duszku odpowiedzi po kliknięciu poprawnej odpowiedzi. Wymaga to nowej zmiennej. Ustaw ją na <strong>0</strong> po rozpoczęciu gry, a potem na <strong>1</strong> po wygraniu gry.</p>
+<ul>
+<li>Stwórz nową zmienną i nazwij ją 'wygrano?'<br /></li>
+<li>Zmień istniejące skrypty, aby wyglądały tak jak poniżej:</li>
+</ul>
+<p><img src="af4fbd099233760a039755323a956d9e671d7840.png" alt="    kiedy kliknięto zieloną FLAGĘ
+    ukryj
+    powtórz (losuj od (1) do (5)) razy
+        następny kostium
+    koniec
+    ustaw [odpowiedź v] na (kostium #)
+    ustaw [Punkty v] na (110)
+    ustaw [wygrano? v] na (0)
+    powtarzaj aż (((Punkty) = (0)) lub ((wygrano?) = (1))
+        zmień [Punkty v] o (-10)
+        ustaw efekt [pikselizacja v] na (Punkty)
+        ustaw efekt [kolor v] na (Punkty)
+        pokaż
+        czekaj (1) s
+    koniec
+
+    kiedy otrzymam [wygrana v]
+    ustaw [wygrano? v] na (1)
+    wyczyść efekty graficzne
+    powiedz (połącz [Gratulacje! Twoje punkty: ] i (Punkty))" /></p>
+</section>
+<section id="zapisz-swoj-projekt.-2" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+<p><strong>Brawo! Podstawowa wersja gry jest już gotowa!</strong></p>
+<p>Jest jeszcze kilka rzeczy, które można zmienić, aby ulepszyć grę. Spróbuj zrobić poniższe wyzwania!</p>
+</section>
+<section id="wyzwanie-1-spraw-aby-gra-bya-trudniejsza-albo-atwiejsza" class="level2 challenge">
+<h2>Wyzwanie 1: Spraw, aby gra była trudniejsza albo łatwiejsza</h2>
+<p>Zmień poziom trudności gry.</p>
+<ul>
+<li>Zobacz, co się stanie, gdy zmienisz szybkość z jaką obrazek staje się wyraźniejszy lub z jaką zmniejsza się liczba punktów.<br /></li>
+<li>Spróbuj zmienić rodzaj zniekształceń obrazka.<br /></li>
+<li>Użyj innych obrazków. Sprawdź, czy gra jest trudniejsza czy łatwiejsza, gdy obrazki są podobne do siebie. A jak się gra, gdy obrazki znacząco się od siebie różnią? Nie zapomnij zmienić kostiumów na duszkach odpowiedzi.</li>
+</ul>
+</section>
+<section id="zapisz-swoj-projekt.-3" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="wyzwanie-2-znieksztac-obrazek-w-inny-sposob-w-kazdej-grze" class="level2 challenge">
+<h2>Wyzwanie 2: Zniekształć obrazek w inny sposób w każdej grze</h2>
+<p>Teraz, za każdym razem, gdy zaczynasz grę, obrazki są zniekształcone w ten sam sposób. W drugim kroku próbowaliśmy kombinacji różnych zniekształceń, które działały równie dobrze jak zmiana koloru i pikselizacja.</p>
+<p>Spróbuj użyć innych kombinacji zniekształceń, które działałyby równie dobrze.</p>
+<p>Zmień grę w taki sposób, że za każdym razem obrazki zniekształcane są w inny sposób.</p>
+<p><strong>Podpowiedź:</strong> Stwórz nową zmienną i nazwij ją 'zniekształcenie'. Przypisz jej przypadkową wartość zaraz na początku gry. Użyj bloku jeżeli w pętli 'powtarzaj aż', aby użyć odpowiedniego zniekształcenia.</p>
+</section>
+<section id="zapisz-swoj-projekt.-4" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="wyzwanie-3-spraw-aby-w-grze-byo-kilka-rund" class="level2 challenge">
+<h2>Wyzwanie 3: Spraw, aby w grze było kilka rund</h2>
+<p>Obecnie każda gra jest niezależna. Zmień grę tak, aby można było zagrać w nią kilka razy. Na przykład, niech gracz w ciągu jednej gry ma 3 rundy - niech spróbuje odgadnąć 3 obrazki i zdobyć maksymalnie 300 punktów.</p>
+<p><strong>Podpowiedź:</strong> Będziesz potrzebować dodatkowej zmiennej, aby wiedzieć, ile rund ma mieć każda gra. Będziesz również potrzebować odpowiedniej pętli, aby gra odbywała się w rundach.</p>
+<p><strong>Podpowiedź:</strong> Pamiętaj, aby duszki, które zniknęły po złej odpowiedzi, pojawiły się z powrotem na ekranie na początku każdej rundy. Aby to zrobić, spróbuj nadać jakąś wiadomość.</p>
+</section>
+<section id="zapisz-swoj-projekt.-5" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="wyzwanie-4-spraw-aby-kazda-nastepna-runda-bya-trudniejsza" class="level2 challenge">
+<h2>Wyzwanie 4: Spraw, aby każda następna runda była trudniejsza</h2>
+<p>Spraw, aby gra była coraz trudniejsza z rundy na rundę.</p>
+<p>Czy w każdej rundzie punkty powinny być przyznawane w ten sam sposób? Może gracz powinien zdobywać więcej punktów w póżniejszych rundach, jeżeli szybciej odgadnie obrazek?</p>
+<p><strong>Podpowiedź:</strong> Skąd będziemy wiedzieć, w której jesteśmy rundzie gry? W jaki sposób pomoże nam to zwiększyć trudność gry i przyznawać więcej punktów?</p>
+</section>
+<section id="zapisz-swoj-projekt.-6" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="wyzwanie-5-graj-tak-dugo-az-sie-pomylisz" class="level2 challenge">
+<h2>Wyzwanie 5: Graj tak długo, aż się pomylisz</h2>
+<p>Zamiast grać w określoną liczbę rund, spróbujmy zmienić grę tak, aby gracz mógł w nią grać dopóki się nie pomyli. Taki system gry będzie miał tylko sens, jeżeli gra będzie się robić coraz trudniejsza z każdą następną rundą.</p>
+</section>
+<section id="zapisz-swoj-projekt.-7" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="wyzwanie-6-spraw-aby-gra-bya-trudniejsza-albo-atwiejsza-w-zaleznosci-od-tego-jak-dobrze-gracz-zgaduje" class="level2 challenge">
+<h2>Wyzwanie 6: Spraw, aby gra była trudniejsza albo łatwiejsza w zależności od tego jak dobrze gracz zgaduje</h2>
+<p>Spróbujmy dostosować trudność gry do umiejętności gracza, zamiast zwiększać trudność gry z każdą rundą. Jeżeli gracz odgadnie obrazek szybko, spraw, aby gra była trudniejsza w następnej rundzie. Ale jeżeli gracz się pomyli, albo potrzebuje więcej czasu, aby odgadnąć obrazek, niech następna runda będzie troszkę łatwiejsza.</p>
+<p>Ten pomysł będzie miał sens tylko wtedy, kiedy nie będziemy sumować ilości punktów w ciągu całej gry.</p>
+</section>
+<section id="zapisz-swoj-projekt.-8" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="wyzwanie-7-zapamietaj-najlepszy-wynik" class="level2 challenge">
+<h2>Wyzwanie 7: Zapamiętaj najlepszy wynik</h2>
+<p>Zapamiętaj najlepszy wynik. Jeżeli ktoś będzie lepszy w kolejnej grze, zapytaj gracza o jego imię i zapisz nowy najlepszy wynik. Upewnij się, że najlepszy wynik i imię najlepszego gracza są wyświetlone na ekranie.</p>
+</section>
+<section id="zapisz-swoj-projekt.-9" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="wyzwanie-8-za-niepoprawna-odpowiedz-odejmij-punkty" class="level2 challenge">
+<h2>Wyzwanie 8: Za niepoprawną odpowiedź odejmij punkty</h2>
+<p>Póki co, gracz nie jest karany za niepoprawne odpowiedzi, więc teoretycznie może spróbować kliknąć na wszystkie odpowiedzi tak szybko jak się da, aż w końcu trafi na dobrą odpowiedź. Zmieńmy grę, aby za każdą niepoprawną odpowiedź gracz tracił punkty.</p>
+<p>Jak myślisz, czy gra teraz jest lepsza?</p>
+</section>
+<section id="zapisz-swoj-projekt.-10" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+<p><strong>Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!</strong><br />Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu <strong>Udostępnij</strong>.</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
