@@ -11,7 +11,6 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <link rel="stylesheet" href="../../../css/master.min.css">
-    <link rel="stylesheet" href="../../../css/prism.css">
   </head>
 
   <body class="index-template world">
@@ -39,12 +38,12 @@
 <li>Replace the backdrop with <strong>outdoor/city-with-water</strong>.<br /></li>
 <li>Use the <code>Upload sprite from file</code> button to add a Rocket sprite to the project (use the <strong>Resources/Rocket.png</strong> costume).<br /></li>
 <li><p>Make the rocket hide when the green flag is clicked.</p>
-<p><img src="a7f2245c8a4eb8930cdc02272b96ecc16ec2d8bf.png" alt="    when FLAG clicked
-        hide" /></p></li>
+<p><img src="85722dd9b89c28c5ac7c73fa3817b5dce3b45d77.png" alt="when FLAG clicked
+    hide" /></p></li>
 <li><p>Now we want to make the rocket move towards the mouse when the mouse is clicked. Add a <code>when space key pressed</code> control block, and under this make the rocket appear and glide towards the mouse.</p>
-<p><img src="018290c443047c164e202ba107f61899f6ef0e96.png" alt="    when [space v] key pressed
-        show
-        glide (1) secs to x: (mouse x) y: (mouse y)" /></p></li>
+<p><img src="6bae33bd1b249e2ed7b66d36b0b71426f84f9789.png" alt="when [space v] key pressed
+    show
+    glide (1) secs to x: (mouse x) y: (mouse y)" /></p></li>
 </ul>
 </section>
 <section id="test-your-project" class="level2 flag">
@@ -59,8 +58,8 @@
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Fireworks don’t tend to fly from side to side, so lets make sure it always glides towards the mouse from the bottom of the screen. Before we show the rocket, use the <code>go to</code> block to tell it to move to below the bottom of the screen, but stay in the same place horizontally.</p>
-<p><img src="ad7c9bd6e16c86d46d20cf49b373163d968b4346.png" alt="    when FLAG clicked
-        hide
+<p><img src="1a8fb57357b2041803cb72aa67232e75faf13639.png" alt="when FLAG clicked
+    hide
 
 when [space v] key pressed
     go to x: (mouse x) y: (-200)
@@ -80,13 +79,13 @@ when [space v] key pressed
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Finally, let’s make this work by using the mouse button instead of the space bar. To do this, we can wrap our script in a <code>forever if mouse down</code> block, then swap the <code>when space key pressed</code> control block for <code>when flag clicked</code>. And last but not least make sure the rocket is hidden when everything starts up.</p>
-<p><img src="c79c52c4c292170cc3ad82b85b648765cc20d38d.png" alt="    when FLAG clicked
-        hide
-        forever
-            if &lt;mouse down?&gt; then
-                go to x: (mouse x) y: (-200)
-                show
-                glide (1) secs to x: (mouse x) y: (mouse y)" /></p></li>
+<p><img src="11a2408657b8db02e2ec999a7cd7e78c3494ba2b.png" alt="when FLAG clicked
+    hide
+    forever
+        if &lt;mouse down?&gt; then
+            go to x: (mouse x) y: (-200)
+            show
+            glide (1) secs to x: (mouse x) y: (mouse y)" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-2" class="level2 flag">
@@ -110,26 +109,26 @@ when [space v] key pressed
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>The first step to make the rocket explode is to make it play a ‘bang’ sound (<strong>Resources/bang.wav</strong>) before it starts moving, and then hide itself once it reaches the mouse. To import a sound go to the Sounds tab and click the <code>Upload sound from file</code> button.</p>
-<p><img src="b44dbda9fb2852fe59d767d31fe078662e308e26.png" alt="    when FLAG clicked
-        hide
-        forever
-            if &lt;mouse down?&gt; then
-                go to x: (mouse x) y: (-200)
-                play sound [bang v]
-                show
-                glide (1) secs to x: (mouse x) y: (mouse y)
-                hide" /></p></li>
+<p><img src="baef3f6bb4de1b73884a842c6d861f3551e9b82d.png" alt="when FLAG clicked
+    hide
+    forever
+        if &lt;mouse down?&gt; then
+            go to x: (mouse x) y: (-200)
+            play sound [bang v]
+            show
+            glide (1) secs to x: (mouse x) y: (mouse y)
+            hide" /></p></li>
 <li><p>Next, make the rocket broadcast a new message when it explodes. We’ll listen for this message later on.</p>
-<p><img src="400958b430b603ac37656313c7ccb4cc1b39ded8.png" alt="    when FLAG clicked
-        hide
-        forever
-            if &lt;mouse down?&gt; then
-                go to x: (mouse x) y: (-200)
-                play sound [bang v]
-                show
-                glide (1) secs to x: (mouse x) y: (mouse y)
-                hide
-                broadcast [explode v]" /></p></li>
+<p><img src="cfc2aeee0331a7441e7f3d8272da663380e5c6bb.png" alt="when FLAG clicked
+    hide
+    forever
+        if &lt;mouse down?&gt; then
+            go to x: (mouse x) y: (-200)
+            play sound [bang v]
+            show
+            glide (1) secs to x: (mouse x) y: (mouse y)
+            hide
+            broadcast [explode v]" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-3" class="level2 flag">
@@ -141,12 +140,12 @@ when [space v] key pressed
 <ul>
 <li>Create new sprite from File, <strong>Resources/firework1.png</strong><br /></li>
 <li><p>When it receives the explode message, it should hide itself and then move to the position of the rocket using the go to block, show itself, and then vanish again a second later.</p>
-<p><img src="b105f583c09fddcbb01901c336dac11df268937b.png" alt="    when I receive [explode v]
-        hide
-        go to [rocket v]
-        show
-        wait (1) secs
-        hide" /></p></li>
+<p><img src="5bddb9fd99cac7f201d32fde50e6bf4b325bd6a3.png" alt="when I receive [explode v]
+    hide
+    go to [rocket v]
+    show
+    wait (1) secs
+    hide" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-4" class="level2 flag">
@@ -165,13 +164,13 @@ when [space v] key pressed
 <h1>Step 3: Make each explosion unique</h1>
 <ul>
 <li><p>Now we can make each explosion even more unique by using the <code class="blockpurple">set color effect</code> block, and have it pick a random colour between <strong>1</strong> and <strong>200</strong> before showing it.</p>
-<p><img src="8ebc3ed60482921041afd988d06319143c52fbd8.png" alt="    when I receive [explode v]
-        hide
-        set [color v] effect to (pick random (1) to (200))
-        go to [rocket v]
-        show
-        wait (1) secs
-        hide" /></p></li>
+<p><img src="6c44fe703190d795e5a5963c584f1261d8d36e83.png" alt="when I receive [explode v]
+    hide
+    set [color v] effect to (pick random (1) to (200))
+    go to [rocket v]
+    show
+    wait (1) secs
+    hide" /></p></li>
 </ul>
 <section id="test-your-project-5" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -192,16 +191,16 @@ when [space v] key pressed
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Finally, Let's make the explosion get bigger after the rocket explodes! Instead of waiting a second, set the size of the sprite to <strong>5%</strong> before we show it, and then once it’s shown, increase the size by <strong>2 fifty times</strong>, using a <code class="blockorange">repeat</code> block.</p>
-<p><img src="478e025c8eec6498c2296b399ad7fac11d264d2e.png" alt="    when I receive [explode v]
-        hide
-        set [color v] effect to (pick random (1) to (200))
-        go to [rocket v]
-        show
-        set size to (5) %
-        repeat (50)
-            change size by (2)
-        end
-        hide" /></p></li>
+<p><img src="f13ee1c477243a64e17748847fc06277878656c7.png" alt="when I receive [explode v]
+    hide
+    set [color v] effect to (pick random (1) to (200))
+    go to [rocket v]
+    show
+    set size to (5) %
+    repeat (50)
+        change size by (2)
+    end
+    hide" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-7" class="level2 flag">
@@ -228,16 +227,16 @@ when [space v] key pressed
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>To fix this, we can replace the broadcast block with a broadcast and <code>wait</code> block. This way, the loop will not repeat until the explosion finishes exploding.</p>
-<p><img src="46d11a608545b326d4d5ba972295c02187d3b797.png" alt="    when FLAG clicked
-        hide
-        forever
-            if &lt;mouse down?&gt; then
-                go to x: (mouse x) y: (-200)
-                play sound [bang v]
-                show
-                glide (1) secs to x: (mouse x) y: (mouse y)
-                hide
-                broadcast [explode v] and wait" /></p></li>
+<p><img src="f01055ed19a183327e28bd5fbbe5ff49c3797548.png" alt="when FLAG clicked
+    hide
+    forever
+        if &lt;mouse down?&gt; then
+            go to x: (mouse x) y: (-200)
+            play sound [bang v]
+            show
+            glide (1) secs to x: (mouse x) y: (mouse y)
+            hide
+            broadcast [explode v] and wait" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-8" class="level2 flag">
@@ -259,8 +258,6 @@ when [space v] key pressed
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
-
-    <link rel="stylesheet" href="../../../js/prism.js">
 
     <!-- Google Analytics -->
     <script type="text/javascript">

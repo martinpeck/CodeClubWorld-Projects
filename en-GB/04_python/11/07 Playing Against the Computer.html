@@ -11,7 +11,6 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <link rel="stylesheet" href="../../../css/master.min.css">
-    <link rel="stylesheet" href="../../../css/prism.css">
   </head>
 
   <body class="index-template world">
@@ -122,13 +121,13 @@ mainloop()</code></pre></li>
 <ul>
 <li><p>At the top of the file, we will have to import the <code>random</code> library, so we can pick a move</p>
 <pre class="language-python"><code>from tkinter import *
-    import random</code></pre></li>
+import random</code></pre></li>
 </ul>
 <p>You hopefully remember using <code>random.choice</code> from the earlier lessons.</p>
 <ul>
 <li><p>In the same file we will introduce a new function, <code>free_squares</code>: Add this code below the function <code>winner</code>, and above the line <code>c.bind(...)</code>:</p>
 <pre class="language-python"><code>def free_squares():
-    output = []
+output = []
 
 for position, square in enumerate(grid):
     if square != &quot;X&quot; and square != &quot;O&quot;:
@@ -141,18 +140,18 @@ return output</code></pre></li>
 <ul>
 <li><p>Next we write a function <code>play_move()</code> which finds an empty square to play in. Add this function after <code>free_squares</code> and before the line <code>c.bind(...)</code></p>
 <pre class="language-python"><code>def play_move()
-    moves  = free_squares()
-    move   = random.choice(moves)
-    down   = move // 3
-    across = move % 3
+moves  = free_squares()
+move   = random.choice(moves)
+down   = move // 3
+across = move % 3
 
 grid[move] = &quot;X&quot;
 
 c.create_line(across * 200, down * 200, (across + 1) * 200, (down + 1) * 200)
 c.create_line(across * 200, (down + 1) * 200, (across + 1) * 200, down * 200)</code></pre></li>
 <li><p>First we get the list of empty squares, pick one, and convert the square number into across and down, using the <code>%</code> and <code>//</code> operators. Let's look at the numbered grid to see how this works:</p>
-<pre><code>     0 1 2
-     -----
+<pre><code> 0 1 2
+ -----
  0 | 0 1 2
  1 | 3 4 5
  2 | 6 7 8</code></pre></li>
@@ -163,7 +162,7 @@ c.create_line(across * 200, (down + 1) * 200, (across + 1) * 200, down * 200)</c
 <ul>
 <li><p>Now we will edit the click() function to use <code>play_move</code>, so after you click, the computer makes a move.</p>
 <pre class="language-python"><code>def click(event):
-    global shape, grid
+global shape, grid
 
 across = int(c.canvasx(event.x)/200)
 down   = int(c.canvasy(event.y)/200)
@@ -198,9 +197,9 @@ play_move()</code></pre></li>
 <ul>
 <li><p>Edit the <code>winner</code> function to take an argument <code>grid</code>:</p>
 <pre class="language-python"><code>def winner(grid):
-    for across in range(3):
-        row  = across * 3
-        line = grid[row] + grid[row + 1] + grid[row + 2]
+for across in range(3):
+    row  = across * 3
+    line = grid[row] + grid[row + 1] + grid[row + 2]
 
     if line == &quot;XXX&quot; or line == &quot;OOO&quot;:
         return True
@@ -225,9 +224,9 @@ if line == &quot;XXX&quot; or line == &quot;OOO&quot;:
 <ul>
 <li><p>Now we change <code>click</code> to pass in this grid.</p>
 <pre class="language-python"><code>def click(event):
-    global shape, grid
-    across = int(c.canvasx(event.x)/200)
-    down = int(c.canvasy(event.y)/200)
+global shape, grid
+across = int(c.canvasx(event.x)/200)
+down = int(c.canvasy(event.y)/200)
 
 square = across + (down*3)
 
@@ -253,8 +252,8 @@ play_move()</code></pre></li>
 <li>Run your code, it should work like before. It is important to make sure we haven't made any mistakes.<br /></li>
 <li><p>Let's change play_move to find a winning move!</p>
 <pre class="language-python"><code>def play_move():
-    move = -1
-    moves = free_squares()
+move = -1
+moves = free_squares()
 
 if not moves:
     return
@@ -303,8 +302,8 @@ c.create_line(
 <ul>
 <li><p>Edit <code>play_move</code> to find the players winning move, and block it!</p>
 <pre class="language-python"><code>def play_move():
-    move = -1
-    moves = free_squares()
+move = -1
+moves = free_squares()
 
 if not moves:
     return
@@ -482,8 +481,6 @@ c.create_line(
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
-
-    <link rel="stylesheet" href="../../../js/prism.js">
 
     <!-- Google Analytics -->
     <script type="text/javascript">

@@ -11,7 +11,6 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <link rel="stylesheet" href="../../../css/master.min.css">
-    <link rel="stylesheet" href="../../../css/prism.css">
   </head>
 
   <body class="index-template world">
@@ -43,9 +42,9 @@
 Al presionar BANDERA VERDE
 esconder" /></p></li>
 <li><p>Ahora queremos que el cohete se mueva hacia el ratón cuando se haga click. Añade un bloque de control <code>al presionar tecla espacio</code>, y dentro, haz que el cohete apareza y se deslice hacia la posición del ratón.</p>
-<p><img src="1fa6ad32a12d4ddd00013e7f070543a7acf81689.png" alt="    al presionar tecla [espacio v]
-        mostrar
-        deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)" /></p></li>
+<p><img src="90db14f7065afadc0f99f19de3386cdc6faa74c3.png" alt="al presionar tecla [espacio v]
+    mostrar
+    deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)" /></p></li>
 </ul>
 </section>
 <section id="prueba-tu-proyecto" class="level2 flag">
@@ -60,8 +59,8 @@ esconder" /></p></li>
 <h2>Progreso</h2>
 <ul>
 <li><p>Los fuegos artificiales normalmente no vuelan de un lado a otro: Suben en línea recta. Vamos a asegurarnos de que el cohete siempre vuela hacia el ratón desde la parte de abajo de la pantalla. Antes de mostrar el cohete, usa el bloque <code>ir a</code> para hacer que se mueva hasta la parte de abajo, pero se quede en la misma posición horizontal.</p>
-<p><img src="70def6a0c1f53a35c68de42ea9c9c555be72a7d4.png" alt="    Al presionar BANDERA VERDE
-        esconder
+<p><img src="bb5ff894a5973f035b7078513c88aae09549a0cf.png" alt="Al presionar BANDERA VERDE
+    esconder
 
 al presionar tecla [espacio v]
     ir a x: (posición x del ratón) y: (-200)
@@ -81,13 +80,13 @@ al presionar tecla [espacio v]
 <h2>Progreso</h2>
 <ul>
 <li><p>Ahora vamos a disparar los cohetes con el ratón, en vez de usando la tecla espacio. Para eso, podemos envolver nuestro programa en un bloque <code>por siempre si ratón presionado</code>. Después, cambia el bloque <code>al presionar tecla espacio</code> por un bloque <code>Al presionar BANDERA VERDE</code> . Por último, asegúrate de que el cohete se esconde cuando empieza el juego.</p>
-<p><img src="132bf1a51f5594b9790c9a4b84f6054ef8a84bf9.png" alt="    Al presionar BANDERA VERDE
-        esconder
-        por siempre 
-            si &lt;¿ratón presionado?&gt; entonces
-                ir a x: (posición x del ratón) y: (-200)
-                mostrar
-                deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)" /></p>
+<p><img src="6c25cff17b412f2bb5b1a8273cf867e5d6fbab4f.png" alt="Al presionar BANDERA VERDE
+    esconder
+    por siempre 
+        si &lt;¿ratón presionado?&gt; entonces
+            ir a x: (posición x del ratón) y: (-200)
+            mostrar
+            deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)" /></p>
 <h2>Prueba tu proyecto</h2></li>
 </ul>
 <p>Pulsa la bandera verde y haz click con el botón del ratón sobre el escenario. Haz click otra vez en otro sitio.</p>
@@ -109,26 +108,26 @@ al presionar tecla [espacio v]
 <h2>Progreso</h2>
 <ul>
 <li><p>El primer paso para hacer que el cohete explote es que reproduza el sonido 'bang' (<strong>Resources/bang.wav</strong>) antes de empezar a moverse. Después, tiene que desaparecer cuando llega a la posición del ratón. Para importar un sonido nuevo ve a la pestaña Sonidos y haz click en el botón <code class="blockgrey">Cargar sonido desde archivo</code>.</p>
-<p><img src="adbd068580d6c07e9fbed0fe54fddcb622b14cb0.png" alt="    Al presionar BANDERA VERDE
-        esconder
-        por siempre 
-            si &lt;¿ratón presionado?&gt; entonces
-                ir a x: (posición x del ratón) y: (-200)
-                tocar sonido [bang v]
-                mostrar
-                deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)
-                esconder" /></p></li>
+<p><img src="222ae7b33f47018e054584d3590ff9a4b53b4315.png" alt="Al presionar BANDERA VERDE
+    esconder
+    por siempre 
+        si &lt;¿ratón presionado?&gt; entonces
+            ir a x: (posición x del ratón) y: (-200)
+            tocar sonido [bang v]
+            mostrar
+            deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)
+            esconder" /></p></li>
 <li><p>Ahora, haz que el cohete envíe un mensaje cuando explota. Haremos algo con ese mensaje después (recibirlo)</p>
-<p><img src="af29311951af4c34590d06a974e43c481b69afbb.png" alt="    Al presionar BANDERA VERDE
-        esconder
-        por siempre 
-            si &lt;¿ratón presionado?&gt; entonces
-                ir a x: (posición x del ratón) y: (-200)
-                tocar sonido [bang v]
-                mostrar
-                deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)
-                esconder
-                enviar [explotar v]" /></p></li>
+<p><img src="04baf5270ccc140f3c52729dc269431291846f77.png" alt="Al presionar BANDERA VERDE
+    esconder
+    por siempre 
+        si &lt;¿ratón presionado?&gt; entonces
+            ir a x: (posición x del ratón) y: (-200)
+            tocar sonido [bang v]
+            mostrar
+            deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)
+            esconder
+            enviar [explotar v]" /></p></li>
 </ul>
 </section>
 <section id="prueba-tu-proyecto-3" class="level2 flag">
@@ -140,12 +139,12 @@ al presionar tecla [espacio v]
 <ul>
 <li>Crea un nuevo objeto desde un fichero, <strong>Recursos/firework1.png</strong><br /></li>
 <li><p>Cuando reciba el mensaje explotar, debería esconderse y moverse hacia la posición del cohete usando un bloque ir a, aparecer y desaparecer un segundo después.</p>
-<p><img src="9d0af93f30a9179ca1aff2d7a3b244cbb0731219.png" alt="    al recibir [explotar v]
-        esconder
-        ir a [cohete v]
-        mostrar
-        esperar (1) segs
-        esconder" /></p></li>
+<p><img src="909f3a61e38d01a1f299720c402e648af87a52bc.png" alt="al recibir [explotar v]
+    esconder
+    ir a [cohete v]
+    mostrar
+    esperar (1) segs
+    esconder" /></p></li>
 </ul>
 </section>
 <section id="prueba-tu-proyecto-4" class="level2 flag">
@@ -164,13 +163,13 @@ al presionar tecla [espacio v]
 <h1>PASO 3: Haz que cada explosión sea única</h1>
 <ul>
 <li><p>Ahora queremos que cada explosión sea única, usando el bloque <code class="blockpurple">establecer efecto color</code>, y haciendo que elija un color al azar entre <strong>1</strong> y <strong>200</strong> antes de mostrarse.</p>
-<p><img src="501b68c42c74053a09b038381d867b861ded8896.png" alt="    al recibir [explotar v]
-        esconder
-        establecer efecto [color v] a (número al azar entre (1) y (200))
-        ir a [cohete v]
-        mostrar
-        esperar (1) segs
-        esconder" /></p></li>
+<p><img src="af8f90a50121c28731bbc0b01d9b4196ab98a9ff.png" alt="al recibir [explotar v]
+    esconder
+    establecer efecto [color v] a (número al azar entre (1) y (200))
+    ir a [cohete v]
+    mostrar
+    esperar (1) segs
+    esconder" /></p></li>
 </ul>
 <section id="prueba-tu-proyecto-5" class="level2 flag">
 <h2>Prueba tu proyecto</h2>
@@ -191,16 +190,16 @@ al presionar tecla [espacio v]
 <h2>Progreso</h2>
 <ul>
 <li><p>Por último, vamos a a hacer que la explosión se haga más grande después de que el cohete explote! En vez de esperar un segundo, pon el tamaño del objeto a <strong>5%</strong> antes de mostrarlo y luego, cuando lo muestras, aumenta el tamaño por <strong>2 cincuenta veces</strong>, usando un bloque <code class="blockorange">repetir</code>.</p>
-<p><img src="bb10d0154e54fe0aea3bb07a2d1022cea09647c2.png" alt="    al recibir [explotar v]
-        esconder
-        establecer efecto [color v] a (número al azar entre (1) y (200))
-        ir a [cohete v]
-        mostrar
-        fijar tamaño a (5) %
-        repetir (50)
-            cambiar tamaño por (2)
-        fin
-        esconder" /></p></li>
+<p><img src="07ae72014da2a7676a0481729701b92823607521.png" alt="al recibir [explotar v]
+    esconder
+    establecer efecto [color v] a (número al azar entre (1) y (200))
+    ir a [cohete v]
+    mostrar
+    fijar tamaño a (5) %
+    repetir (50)
+        cambiar tamaño por (2)
+    fin
+    esconder" /></p></li>
 </ul>
 </section>
 <section id="prueba-tu-proyecto-7" class="level2 flag">
@@ -227,16 +226,16 @@ al presionar tecla [espacio v]
 <h2>Progreso</h2>
 <ul>
 <li><p>Para arreglarlo, podemos reemplazar el bloque enviar con un bloque enviar y <code>esperar</code>. Así, el bucle no se repetirá hasta que el objeto explosión termine de explotar.</p>
-<p><img src="aa3d8681eafb02b0a601b2f4980256e7253f6b76.png" alt="    Al presionar BANDERA VERDE
-        esconder
-        por siempre 
-            si &lt;¿ratón presionado?&gt; entonces
-                ir a x: (posición x del ratón) y: (-200)
-                tocar sonido [bang v]
-                mostrar
-                deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)
-                esconder
-                enviar [explotar v] y esperar" /></p>
+<p><img src="277dc16d5087636e8a25549519cbf3b7a6bdc892.png" alt="Al presionar BANDERA VERDE
+    esconder
+    por siempre 
+        si &lt;¿ratón presionado?&gt; entonces
+            ir a x: (posición x del ratón) y: (-200)
+            tocar sonido [bang v]
+            mostrar
+            deslizar en (1) segs a x: (posición x del ratón) y: (posición y del ratón)
+            esconder
+            enviar [explotar v] y esperar" /></p>
 <h2>Prueba tu proyecto</h2></li>
 </ul>
 <p>Pulsa la bandera verde y mueve el ratón por el escenario mientras mantienes apretado el botón.</p>
@@ -256,8 +255,6 @@ al presionar tecla [espacio v]
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
-
-    <link rel="stylesheet" href="../../../js/prism.js">
 
     <!-- Google Analytics -->
     <script type="text/javascript">

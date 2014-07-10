@@ -11,7 +11,6 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <link rel="stylesheet" href="../../../css/master.min.css">
-    <link rel="stylesheet" href="../../../css/prism.css">
   </head>
 
   <body class="index-template world">
@@ -57,10 +56,10 @@
 <li>Now click <code>Looks</code> and drag in a <code class="blockpurple">next costume</code><br /></li>
 <li>How do we slow it down so it isn’t changing so quickly? Click the <code>Control</code> tab and drag in a <code class="blockyellow">wait 1 secs</code><br /></li>
 <li><p>Adjust the time until it’s repeating at a faster pace (a time of 0.5s looks good). What would happen if we didn’t have the <code class="blockyellow">wait 1 secs</code> block?</p>
-<p><img src="8d7d7a1bd57543d08219226e8d4ba0def3384516.png" alt="    when FLAG clicked
-    forever
-        next costume
-        wait (0.5) secs" /></p></li>
+<p><img src="db64568e84ad263106675333244837dfeff36050.png" alt="when FLAG clicked
+forever
+    next costume
+    wait (0.5) secs" /></p></li>
 </ul>
 </section>
 <section id="test-your-project" class="level2 flag">
@@ -88,21 +87,21 @@
 <ul>
 <li>Create a new variable by clicking <code>Data</code> and <code>Make a variable</code>. Call it <code class="blockorange">stopped</code> and make it for only this sprite, then uncheck the box next to it so it doesn’t display on the stage.<br /></li>
 <li><p>At the start of the game, the sprite won't have been clicked so we'll set the variable to be equal to <strong>&quot;NO&quot;</strong>.</p>
-<p><img src="58782d563b0fa7c5b39a0339bf66cce23eda4795.png" alt="    when FLAG clicked
+<p><img src="eb5ed5e768363f316901751fc7d20f5403f1a10a.png" alt="when FLAG clicked
+set [stopped v] to [NO]
+forever
+    next costume
+    wait (0.1) secs" /></p></li>
+<li><p>Now we'll set the variable <code class="blockorange">stopped</code> to <strong>&quot;YES&quot;</strong> when someone clicks on the sprite.</p>
+<p><img src="dfd16ffa14360a66dfcb81d2d28059b77d579f29.png" alt="when this sprite clicked
+    set [stopped v] to [YES]" /></p></li>
+<li><p>Finally we need to make the sprite stop changing costume when the variable <code class="blockorange">stopped</code> changes to &quot;YES&quot;. Add an <code class="blockyellow">if...then</code> loop and use a new <strong>equals</strong> <code class="blockgreen">[] = []</code> operator block (found under the <em>Operators</em> tab) to check if <code class="blockorange">stopped</code> is still &quot;NO&quot;.</p>
+<p><img src="0b39d1bb3d0135dfb3bbe7dae9693c370f89e42b.png" alt="when FLAG clicked
     set [stopped v] to [NO]
     forever
-        next costume
-        wait (0.1) secs" /></p></li>
-<li><p>Now we'll set the variable <code class="blockorange">stopped</code> to <strong>&quot;YES&quot;</strong> when someone clicks on the sprite.</p>
-<p><img src="2be38add38f125213667c00a6f5b8e92bd639b96.png" alt="    when this sprite clicked
-        set [stopped v] to [YES]" /></p></li>
-<li><p>Finally we need to make the sprite stop changing costume when the variable <code class="blockorange">stopped</code> changes to &quot;YES&quot;. Add an <code class="blockyellow">if...then</code> loop and use a new <strong>equals</strong> <code class="blockgreen">[] = []</code> operator block (found under the <em>Operators</em> tab) to check if <code class="blockorange">stopped</code> is still &quot;NO&quot;.</p>
-<p><img src="8b9ee85f64ae6b21a7dadc36169f46d574366cf5.png" alt="    when FLAG clicked
-        set [stopped v] to [NO]
-        forever
-            if &lt;(stopped) = [NO]&gt; then
-                next costume
-                wait (0.5) secs" /></p></li>
+        if &lt;(stopped) = [NO]&gt; then
+            next costume
+            wait (0.5) secs" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-1" class="level2 flag">
@@ -148,13 +147,13 @@
 <li>If you look under the <code>costumes</code> tab for a sprite then you'll see that each costume has a number. You can specify which costume a sprite is wearing using either its name or its number.<br /></li>
 <li>To make the sprite start with a random costume, let's add a <code class="blockpurple">switch costume to</code> block with <code class="blockgreen">pick random (1) to (3)</code> to choose the costume number.<br /></li>
 <li><p>We can also use exactly the same block in the <code class="blockyellow">forever</code> loop so that the sprite switches to a different costume each time it changes during the game.</p>
-<p><img src="3a624f949d9914e259b126c0634fd8255b32bedd.png" alt="    when FLAG clicked
-        set [stopped v] to [NO]
-        switch costume to &lt;pick random (1) to (3)&gt;
-        forever
-            if &lt;(stopped) = [NO]&gt; then
-                switch costume to &lt;pick random (1) to (3)&gt;
-                    wait (0.5) secs" /></p></li>
+<p><img src="823ca4c7ebc8c51638d1cfc9a9383a2b469d95ef.png" alt="when FLAG clicked
+    set [stopped v] to [NO]
+    switch costume to &lt;pick random (1) to (3)&gt;
+    forever
+        if &lt;(stopped) = [NO]&gt; then
+            switch costume to &lt;pick random (1) to (3)&gt;
+                wait (0.5) secs" /></p></li>
 <li><p>Do the same thing for each of your sprites.</p></li>
 </ul>
 </section>
@@ -192,11 +191,11 @@
 <li>Duplicate the backdrop and then add some text to the copy that says <strong>&quot;Game Over&quot;</strong>. You can change the size of the text by clicking on it and then dragging one of the corners. Rename this backdrop to be <strong>&quot;GameOver&quot;</strong>.<br /></li>
 <li>Click on the <code>Scripts</code> tab for the stage and set the &quot;GameOn&quot; backdrop to be the one displayed when the game is started.<br /></li>
 <li><p>How can we detect when all the sprites have stopped? Remember we use the <code class="blockorange">stopped</code> variable to record whether each sprite has been clicked? Let's check the <code class="blockorange">stopped</code> variable for the <strong>Fruit3</strong> sprite to see if the game is over. Select the Fruit3 sprite and then can use a <code class="blockblue">x position of Fruit3</code> block from the <code class="blocklightgrey">Sensing</code> tab, but change <strong>x position</strong> to <code class="blockorange">stopped</code>.</p>
-<p><img src="a52afa397a8154d893cf608dfb98ee68295346fc.png" alt="    when FLAG clicked
-        switch backdrop to [GameOn v]
-        forever
-            if &lt;([stopped v] of [Fruit3 v]) = [YES]&gt; then
-                switch backdrop to [GameOver v]" /></p></li>
+<p><img src="69b7e087735f36a75716c1d529968f9bc65d71f5.png" alt="when FLAG clicked
+    switch backdrop to [GameOn v]
+    forever
+        if &lt;([stopped v] of [Fruit3 v]) = [YES]&gt; then
+            switch backdrop to [GameOver v]" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-4" class="level2 flag">
@@ -229,14 +228,14 @@ forever
 <li>We wrote the code to check that the game was over in <strong>step 6</strong>, so all we need to do now is check to see if the player has won. Go back to the backdrops and and add some more text to the GameOver backdrop so that also displays the word <strong>&quot;WIN&quot;</strong>. Then change its name to <strong>&quot;Win&quot;</strong>.<br /></li>
 <li>Copy the backdrop again to create one with a <strong>&quot;Lose&quot;</strong> message. Give it the name <strong>&quot;Lose&quot;</strong>.<br /></li>
 <li><p>Now we need some code to work out which backdrop to display once the game is over. We can use an <code class="blockyellow">if...then...else</code> block to see if the player has won or lost by comparing each <code class="blockpurple">costume #</code> (costume number) using a similar <code class="blockblue">x position of Sprite</code> block like we did before. This time, instead of looking at the <code class="blockorange">stopped</code> variable, we can check the<code class="blockpurple">costume #</code> and see if Fruit1 has the same costume as Fruit2, and if Fruit2 has the same costume as Fruit3.</p>
-<p><img src="4834b48ea241014b7a0efe3151eb38ab9639331b.png" alt="    when FLAG clicked
-        switch backdrop to [GameOn v]
-        forever
-            if &lt;&lt;&lt;([stopped v]  of [Fruit1 v]) = [YES]&gt; and &lt;([stopped v]  of [Fruit2 v]) = [YES]&gt;&gt; and &lt;([stopped v]  of [Fruit3 v]) = [YES]&gt;&gt; then
-                if &lt;&lt;([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit2 v])&gt; and &lt;([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])&gt;&gt; then
-                    switch backdrop to [Win v]
-                else
-                    switch backdrop to [Lose v]" /></p></li>
+<p><img src="4d42af062a8b3506d36315c6f8a2866dd905f987.png" alt="when FLAG clicked
+    switch backdrop to [GameOn v]
+    forever
+        if &lt;&lt;&lt;([stopped v]  of [Fruit1 v]) = [YES]&gt; and &lt;([stopped v]  of [Fruit2 v]) = [YES]&gt;&gt; and &lt;([stopped v]  of [Fruit3 v]) = [YES]&gt;&gt; then
+            if &lt;&lt;([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit2 v])&gt; and &lt;([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])&gt;&gt; then
+                switch backdrop to [Win v]
+            else
+                switch backdrop to [Lose v]" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-6" class="level2 flag">
@@ -265,8 +264,6 @@ forever
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
-
-    <link rel="stylesheet" href="../../../js/prism.js">
 
     <!-- Google Analytics -->
     <script type="text/javascript">

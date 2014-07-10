@@ -11,7 +11,6 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <link rel="stylesheet" href="../../../css/master.min.css">
-    <link rel="stylesheet" href="../../../css/prism.css">
   </head>
 
   <body class="index-template world">
@@ -21,13 +20,13 @@
       <span class="level-indicator">Poziom 3</span>
     </header>
 
-    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Polski</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch</a></li><li class="breadcrumbs-item current">Co to jest</li></ul></nav>
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Polski</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch dla początkujących</a></li><li class="breadcrumbs-item current">Co to jest</li></ul></nav>
 
     <main class="main lesson-steps" role="main">
 <section id="wstep" class="level1 intro">
 <h1>Wstęp</h1>
 <p>Na tablicy znajduje się zniekształcony obrazek. Musisz odgadnąć, co to jest, klikając na odpowiednią miniaturkę. Im szybciej zgadniesz, tym więcej punktów otrzymasz!</p>
-<p><img src="cotojest.png" alt="screenshot" /></p>
+<p><img src="Co-to-jest.png" alt="screenshot" /></p>
 </section>
 <section id="krok-1-wyswietl-rozne-obrazki-na-tablicy" class="level1 activity">
 <h1>Krok 1: Wyświetl różne obrazki na tablicy</h1>
@@ -40,11 +39,11 @@
 <li>Zaimportuj nowego duszka i dodaj do niego kostium. Wybierz taki kostium, który Ci się podoba. Może znajdziesz coś ciekawego w katalogu 'Przedmioty'.<br /></li>
 <li>Umieść tego duszka na środku tablicy. Jeżeli trzeba, odpowiednio zwiększ lub zmniejsz jego rozmiar.<br /></li>
 <li><p>Kliknij na zakładkę Kostiumy i zaimportuj 4 dodatkowe kostiumy. Wybierz cokolwiek Ci się podoba!</p></li>
-<li><p>Wyświetlmy teraz jakiś przypadkowy obrazek. Stwórz poniższy skrypt:</p></li>
-</ul>
+<li><p>Wyświetlmy teraz jakiś przypadkowy obrazek. Stwórz poniższy skrypt:</p>
 <p><img src="1986e15b36b719aab75e455819a602f9688aa72c.png" alt="    kiedy kliknięto zieloną FLAGĘ
     powtórz (losuj od (1) do (5)) razy
-        następny kostium" /></p>
+        następny kostium" /></p></li>
+</ul>
 </section>
 <section id="przetestuj-swoj-projekt" class="level2 flag">
 <h2>Przetestuj swój projekt</h2>
@@ -65,8 +64,7 @@
 <h2>Zadania do wykonania</h2>
 <ul>
 <li>Kliknij paletę Dane i stwórz zmienną o nazwie 'Punkty'<br /></li>
-<li>Zmień skrypt, aby wyglądał tak jak ten poniżej:</li>
-</ul>
+<li><p>Zmień skrypt, aby wyglądał tak jak ten poniżej:</p>
 <p><img src="ed6e3f14c9b0cd3a884b51d6248f51c32074150f.png" alt="    kiedy kliknięto zieloną FLAGĘ
     ukryj
     powtórz (losuj od (1) do (5)) razy
@@ -79,7 +77,8 @@
         ustaw efekt [kolor v] na (Punkty)
         pokaż
         czekaj (1) s
-    koniec" /></p>
+    koniec" /></p></li>
+</ul>
 <p>Nie zapomnij dodać bloku 'ukryj' {.blockpurple} na początku skryptu, <code class="blockorange">ustawić Punkty na 110</code> oraz wszystkiego poniżej.</p>
 </section>
 <section id="przetestuj-swoj-projekt-1" class="level2 flag">
@@ -110,8 +109,7 @@
 <p>Najpierw musimy wiedzieć, która odpowiedź jest poprawna.</p>
 <ul>
 <li>Stwórz nową zmienną 'dla każdego duszka' i nazwij ją <strong>odpowiedź</strong>.<br /></li>
-<li>Zmień poprzedni skrypt i ustaw poprawną odpowiedź. Dodaj blok <code class="blockorange">ustaw [odpowiedź] na kostium #</code> zaraz za pierwszą pętlą 'powtórz':</li>
-</ul>
+<li><p>Zmień poprzedni skrypt i ustaw poprawną odpowiedź. Dodaj blok <code class="blockorange">ustaw [odpowiedź] na kostium #</code> zaraz za pierwszą pętlą 'powtórz':</p>
 <p><img src="3dc60b4ff4d6a2139e9ccacfb08caefbfdad1c86.png" alt="    kiedy kliknięto zieloną FLAGĘ
     ukryj
     powtórz (losuj od (1) do (5)) razy
@@ -125,7 +123,8 @@
         ustaw efekt [kolor v] na (Punkty)
         pokaż
         czekaj (1) s
-    koniec" /></p>
+    koniec" /></p></li>
+</ul>
 <p><strong>Teraz musimy dodać duszki, które gracz będzie mógł kliknąć.</strong></p>
 <ul>
 <li>Skopiuj głównego duszka (użyj opcji duplikuj) i umieść go pod tablicą po lewej stronie.<br /></li>
@@ -144,10 +143,10 @@
     w przeciwnym razie
         ukryj" /></p></li>
 <li>Przeciągnij ten skrypt na pozostałe duszki odpowiedzi. <strong>Dla każdego duszka, zmień 1 na 2, 3, itd.</strong><br /></li>
-<li><p>Teraz musimy dodać coś, co będzie reagować na naszą wiadomość 'wygrana'. Kliknij na głównego duszka, tego na tablicy i dodaj do niego ten dodatkowy skrypt:</p></li>
-</ul>
+<li><p>Teraz musimy dodać coś, co będzie reagować na naszą wiadomość 'wygrana'. Kliknij na głównego duszka, tego na tablicy i dodaj do niego ten dodatkowy skrypt:</p>
 <p><img src="22f81688659589a167a51f9cc7489461a7573f3f.png" alt="    kiedy otrzymam [wygrana v]
-    powiedz (połącz [Gratulacje! Twoje punkty: ] i (Punkty))" /></p>
+    powiedz (połącz [Gratulacje! Twoje punkty: ] i (Punkty))" /></p></li>
+</ul>
 <section id="przetestuj-swoj-projekt-2" class="level2 flag">
 <h2>Przetestuj swój projekt</h2>
 <p><strong>Kliknij zieloną flagę.</strong></p>
@@ -166,8 +165,7 @@
 <p>Aby naprawić drugi problem, trzeba zatrzymać pętlę 'powtórz' na duszku odpowiedzi po kliknięciu poprawnej odpowiedzi. Wymaga to nowej zmiennej. Ustaw ją na <strong>0</strong> po rozpoczęciu gry, a potem na <strong>1</strong> po wygraniu gry.</p>
 <ul>
 <li>Stwórz nową zmienną i nazwij ją 'wygrano?'<br /></li>
-<li>Zmień istniejące skrypty, aby wyglądały tak jak poniżej:</li>
-</ul>
+<li><p>Zmień istniejące skrypty, aby wyglądały tak jak poniżej:</p>
 <p><img src="af4fbd099233760a039755323a956d9e671d7840.png" alt="    kiedy kliknięto zieloną FLAGĘ
     ukryj
     powtórz (losuj od (1) do (5)) razy
@@ -187,7 +185,8 @@
     kiedy otrzymam [wygrana v]
     ustaw [wygrano? v] na (1)
     wyczyść efekty graficzne
-    powiedz (połącz [Gratulacje! Twoje punkty: ] i (Punkty))" /></p>
+    powiedz (połącz [Gratulacje! Twoje punkty: ] i (Punkty))" /></p></li>
+</ul>
 </section>
 <section id="zapisz-swoj-projekt.-2" class="level2 save">
 <h2>Zapisz swój projekt.</h2>
@@ -272,8 +271,6 @@
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
-
-    <link rel="stylesheet" href="../../../js/prism.js">
 
     <!-- Google Analytics -->
     <script type="text/javascript">

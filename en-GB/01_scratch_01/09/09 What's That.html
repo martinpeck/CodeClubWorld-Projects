@@ -11,7 +11,6 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <link rel="stylesheet" href="../../../css/master.min.css">
-    <link rel="stylesheet" href="../../../css/prism.css">
   </head>
 
   <body class="index-template world">
@@ -41,10 +40,10 @@
 <li>Position the new sprite in the middle of the blackboard. Make it bigger or smaller if you need to.<br /></li>
 <li>Click the Costumes tab and import four more things. They can be anything you want, yay!<br /></li>
 <li><p>Let’s now make a random picture appear. Create this script:</p>
-<p><img src="7631c2ebd447f595abcc2922f558ac935efa131d.png" alt="    when FLAG clicked
-    repeat (pick random (1) to (5)
-        next costume
-    end" /></p></li>
+<p><img src="d344ddb2f8f782eade01d2c1d999c8f535fb7320.png" alt="when FLAG clicked
+repeat (pick random (1) to (5)
+    next costume
+end" /></p></li>
 </ul>
 </section>
 <section id="test-your-project" class="level2 flag">
@@ -67,19 +66,19 @@
 <ul>
 <li>On the Data palette, create a variable called Score.<br /></li>
 <li><p>Change the script to look like this:</p>
-<p><img src="dec821934aa118a1f0327dd3e24617667aa88e12.png" alt="    when FLAG clicked
-    hide
-    repeat (pick random (1) to (5)
-        next costume
-    end
-    set [score v] to (110)
-    repeat until ((score) = (0)
-        change [score v] by [-10]
-        set [pixelate v] effect to (score)
-        set [colour v] effect to (score)
-        show
-        wait (1) secs
-    end" /></p></li>
+<p><img src="0bca4a357dba86f85a836e1b8501b81a819c856a.png" alt="when FLAG clicked
+hide
+repeat (pick random (1) to (5)
+    next costume
+end
+set [score v] to (110)
+repeat until ((score) = (0)
+    change [score v] by [-10]
+    set [pixelate v] effect to (score)
+    set [colour v] effect to (score)
+    show
+    wait (1) secs
+end" /></p></li>
 </ul>
 <p>You should add the <code class="blockpurple">hide</code> block at the top and the <code class="blockorange">set [score] to 110</code> block, and everything below it.</p>
 </section>
@@ -97,7 +96,7 @@
 <section id="save-your-project-1" class="level2 save">
 <h2>Save your project</h2>
 </section>
-<section id="things-to-try" class="level2 try activity">
+<section id="things-to-try" class="level2 try">
 <h2>Things to try</h2>
 <ul>
 <li><strong>Try changing the starting score and how much it changes each time around the loop.</strong> How does this change how the picture looks? Does it make it harder or easier to spot what the picture is?<br /></li>
@@ -112,20 +111,20 @@
 <ul>
 <li><strong>Create a new variable</strong> called <strong>right answer</strong>. Make sure it’s for all sprites.<br /></li>
 <li><p>Change the script you’ve written to record the right answer. Add the <code class="blockorange">set [right answer] to costume #</code> blocks just after the first repeat loop:</p>
-<p><img src="b3cff4c0bf4f2801181030cbdbe76e49821d7ee2.png" alt="    when FLAG clicked
-    hide
-    repeat (pick random (1) to (5)
-        next costume
-    end
-    set [right answer v] to (costume #)
-    set [score v] to (110)
-    repeat until ((score) = (0))
-        change [score v] by (-10)
-        set [pixelate effect v] to (score)
-        set [colour effect v] to (score)
-        show
-        wait (1) secs
-    end" /></p></li>
+<p><img src="eac5e6022288c76207dbbd04d89d6284b0fe8675.png" alt="when FLAG clicked
+hide
+repeat (pick random (1) to (5)
+    next costume
+end
+set [right answer v] to (costume #)
+set [score v] to (110)
+repeat until ((score) = (0))
+    change [score v] by (-10)
+    set [pixelate effect v] to (score)
+    set [colour effect v] to (score)
+    show
+    wait (1) secs
+end" /></p></li>
 </ul>
 <p><strong>Now we need to add the sprites that the player can click on.</strong></p>
 <ul>
@@ -138,15 +137,15 @@
 <p>Now we want to have each sprite respond to being clicked and do something depending on whether its the right answer or not.</p>
 <ul>
 <li><p>Add this script to the answer1 sprite:</p>
-<p><img src="7617657d5afe535e81c3f85447ed8b6df70fcd62.png" alt="    when this sprite clicked
-        if ((right answer) = (1))
-            broadcast [won v]
-        else
-            hide" /></p></li>
+<p><img src="710997b8b099112e51e3f6a0a1ec2d456ac563f1.png" alt="when this sprite clicked
+    if ((right answer) = (1))
+        broadcast [won v]
+    else
+        hide" /></p></li>
 <li>Drag this script into each of the other answer sprites. <strong>In each sprite, change the 1 to 2, 3, and so on.</strong><br /></li>
 <li><p>We now have to add something that responds to the won message. Go back to sprite1, the one on the blackboard. Add this extra script:</p>
-<p><img src="d3303e7cde5b526eee08f89185721a455cfa2727.png" alt="    when I receive [won v]
-        say (join [Congratulations! You scored] (score))" /></p></li>
+<p><img src="65db3fe2f28da92594e8e539b9e9488a5eeeafa6.png" alt="when I receive [won v]
+    say (join [Congratulations! You scored] (score))" /></p></li>
 </ul>
 <section id="test-your-project-2" class="level2 flag">
 <h2>Test Your Project</h2>
@@ -160,28 +159,28 @@
 <p>The test shows up two problems. First, wrong guesses don’t reappear when the next game starts. Second, the score doesn’t stop going down when we get the right answer.</p>
 <ul>
 <li><p>To fix the first problem, add this script to each of the five answer sprites:</p>
-<p><img src="af8d4416dc5a6ae27af64840c9e05d8043ae3bc2.png" alt="    when FLAG clicked
-        show" /></p></li>
+<p><img src="0708999fbdf5f8c0c922bb17bc6561065d719f78.png" alt="when FLAG clicked
+    show" /></p></li>
 </ul>
 <p>To fix the second problem, we need to stop the <strong>question sprite</strong>’s repeat until loop when the player clicks on the right answer. We’ll use a new variable to do that. We’ll set it to <strong>zero</strong> when the game starts and set it to <strong>one</strong> when the game is won. We’ll make the repeat until loop stop when either the score reaches <strong>zero</strong> OR the <strong>game-winning flag</strong> is set to <strong>one.</strong></p>
 <ul>
 <li>Create a new variable called won?<br /></li>
 <li><p>Change the scripts so they look like this:</p>
-<p><img src="a5175fe0ac6963a3f6b2b403b3c2f6b4c2b97963.png" alt="    when FLAG clicked
-        hide
-        repeat (pick random (1) to (5)
-            next costume
-        end
-        set [right answer v] to (costume)
-        set [score v] to (110)
-        set [won v] to (0)
-        repeat until &lt;&lt;(score) = (0)&gt; or &lt;(won) = (1)&gt;&gt;
-            change [score v] by (-10)
-            set [pixelate effect v] to (score)
-            set [colour effect v] to (score)
-            show
-            wait (1) secs
-        end
+<p><img src="aee48a5f23c0c8cd524fc45a53bec96b11d9114a.png" alt="when FLAG clicked
+    hide
+    repeat (pick random (1) to (5)
+        next costume
+    end
+    set [right answer v] to (costume)
+    set [score v] to (110)
+    set [won v] to (0)
+    repeat until &lt;&lt;(score) = (0)&gt; or &lt;(won) = (1)&gt;&gt;
+        change [score v] by (-10)
+        set [pixelate effect v] to (score)
+        set [colour effect v] to (score)
+        show
+        wait (1) secs
+    end
 
 when I receive [won v]
     set [won v] to (1)
@@ -273,8 +272,6 @@ when I receive [won v]
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
-
-    <link rel="stylesheet" href="../../../js/prism.js">
 
     <!-- Google Analytics -->
     <script type="text/javascript">

@@ -11,7 +11,6 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <link rel="stylesheet" href="../../../css/master.min.css">
-    <link rel="stylesheet" href="../../../css/prism.css">
   </head>
 
   <body class="index-template world">
@@ -28,19 +27,19 @@
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>To make your monster talk, you can just use the <code class="blockpurple">Say</code> sprite.</p>
-<p><img src="1e639f49cb7b3b8bfb3919159c6fda09f0ea4b0a.png" alt="    when [space v] key pressed
-        say [Hello!] for (2) secs" /></p></li>
+<p><img src="a6c527dcfcfd6660ee436f754fa49b24ec6c02da.png" alt="when [space v] key pressed
+    say [Hello!] for (2) secs" /></p></li>
 <li><p>To make it a bit more impressive, you could make the monsters <strong>mouth open</strong> and <strong>close</strong> whilst it is talking. To do this, edit the sprite that contains the mouth - create a new <code class="blockpurple">costume</code> that has a closed mouth. By switching between the two, you can animate the mouth opening and closing.</p>
-<p><img src="4366f96aa785ea610f1dc2054cf4649c577234fd.png" alt="    repeat (8)
-        wait (0.1) secs
-        switch to costume [mouthClosed v]
-        wait (0.1) secs
-        switch to costume [mouthOpen v]
-    end" /></p></li>
+<p><img src="33feb6a87f20c98539dbcd1dceb8a3ab7d46db26.png" alt="repeat (8)
+    wait (0.1) secs
+    switch to costume [mouthClosed v]
+    wait (0.1) secs
+    switch to costume [mouthOpen v]
+end" /></p></li>
 <li><p>To hook the two up, have the block that does the <code class="blockpurple">say</code> broadcast a message that the other block can react to.</p>
-<p><img src="ac7d757d3e28c47b6605ae9ca5ba204bc2b40077.png" alt="    when [space v] key pressed
-        broadcast [talk v]
-        say [Hello!] for (2) secs
+<p><img src="528e33a7371f994c23a404e2496945585e4d1cc5.png" alt="when [space v] key pressed
+    broadcast [talk v]
+    say [Hello!] for (2) secs
 
 when I receive [talk v]
     repeat (8)
@@ -50,10 +49,10 @@ when I receive [talk v]
         switch to costume [mouthOpen v]
     end" /></p></li>
 <li><p>To make this a bit more flexible, use a variable to control the <code class="blockorange">talkTime</code> the monster says something for, and also to control how many times the animation loop is repeated.</p>
-<p><img src="c093d5d12355b6b2da65d0f392a60f3a191f1375.png" alt="    when [space v] key pressed
-        set [talkTime v] to (2)
-        broadcast [talk v ]
-        say [Hello!] for (talkTime) secs
+<p><img src="72247feb22551835387cdb221a4b62b0536470b4.png" alt="when [space v] key pressed
+    set [talkTime v] to (2)
+    broadcast [talk v ]
+    say [Hello!] for (talkTime) secs
 
 when [a v] key pressed
     set [talkTime v] to (4)
@@ -71,8 +70,8 @@ when I receive [talk v]
 <p><strong>(Notice how we multiply <code>talkTime</code> by 4 to make sure the loop repeats enough times?)</strong></p>
 <ul>
 <li><p>You can also make your monster speak using sound by using one of the sound blocks. Just be sure to import the sounds first in the sounds tab.</p>
-<p><img src="657e4f5a6f19cd0c3376545cf10e122fa3f7cef2.png" alt="    when I receive [talking v]
-        play sound [Screech v]" /></p></li>
+<p><img src="22fede61f0444e7056399a43b9be67e4d363f51f.png" alt="when I receive [talking v]
+    play sound [Screech v]" /></p></li>
 </ul>
 <p>Why not try adding sounds to other events, you could use a spooky hovering sound for a ghost drifting around the screen!</p>
 <p>If you have a microphone on your computer you can even record your own sounds, surprise your classmates by recording a loud monster ROOOAAAAARRRRR!!!</p>
@@ -83,8 +82,6 @@ when I receive [talk v]
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
-
-    <link rel="stylesheet" href="../../../js/prism.js">
 
     <!-- Google Analytics -->
     <script type="text/javascript">

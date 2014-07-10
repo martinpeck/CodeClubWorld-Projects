@@ -11,7 +11,6 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <link rel="stylesheet" href="../../../css/master.min.css">
-    <link rel="stylesheet" href="../../../css/prism.css">
   </head>
 
   <body class="index-template world">
@@ -40,23 +39,23 @@
 <li>Upload a new sprite called <strong>green-pencil</strong>, using <strong>resources\green-pencil.png</strong><br /></li>
 <li>Switch to the <strong>costumes</strong> tab and click edit from the <strong>Paint Editor</strong>, change the center of the image to be at the tip of the pen. To do this, click the <strong>Set costume center</strong> button and drag the lines until they are at the tip.<br /></li>
 <li><p>Make the pencil follow the mouse around the stage using the <code class="blockyellow">forever</code> and <code class="blockblue">go to</code> mouse-pointer blocks.</p>
-<p><img src="48e77165d0837f12c6b37dbb8f53bf26ae2317ab.png" alt="    when FLAG clicked
-        forever
-            go to [mouse-pointer v]
-        end" /></p></li>
+<p><img src="2998e926c32a1cf89954e93ce60bb18a0e038a11.png" alt="when FLAG clicked
+    forever
+        go to [mouse-pointer v]
+    end" /></p></li>
 </ul>
 <p>Now we want to use this pen sprite as an actual pen.__ If you look under the pen section you’ll see all sorts of drawing related blocks. The ones we’re initially interested in are <code class="blockgreen">pen down</code> and <code class="blockgreen">pen up</code>.</p>
 <ul>
 <li><p>We want to use the mouse button to control the pen – whenever the mouse button is down the pen should be down, and when it is up the pen should be up. We can do this using an <code class="blockyellow">if... else</code> and <code class="blocklightblue">mouse down?</code> blocks.</p>
-<p><img src="5d26bd3f255a02b05ed0590aed2f501714e3d3c8.png" alt="    when FLAG clicked
-        forever
-            go to [mouse-pointer v]
-            if (mouse down?)
-            pen down
-            else
-            pen up
-            end
-        end" /></p></li>
+<p><img src="976bf30ec9034e38f924b866a89c751214ab520b.png" alt="when FLAG clicked
+    forever
+        go to [mouse-pointer v]
+        if (mouse down?)
+        pen down
+        else
+        pen up
+        end
+    end" /></p></li>
 </ul>
 </section>
 <section id="test-your-project" class="level2 flag">
@@ -65,16 +64,16 @@
 <p>Does the pen follow the mouse around? What happens if you hold the mouse button down and move the mouse? Don’t worry about the pen colour for now.</p>
 <ul>
 <li><p>Eventually the screen is going to get pretty filled with scribbles. The clear block can be used to clear the screen.</p>
-<p><img src="c02596f7ab1ff9e676186b52e4455fcf6550fd90.png" alt="    when FLAG clicked
-        clear
-        forever
-            go to [mouse-pointer v]
-            if (mouse down?)
-            pen down
-            else
-            pen up
-            end
-        end" /></p></li>
+<p><img src="a599c686e614aa090aceffee74111bc2bf4da736.png" alt="when FLAG clicked
+    clear
+    forever
+        go to [mouse-pointer v]
+        if (mouse down?)
+        pen down
+        else
+        pen up
+        end
+    end" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-1" class="level2 flag">
@@ -96,8 +95,8 @@
 <li>Change the sprite’s name to <strong>clear</strong>.<br /></li>
 <li>Position the sprite near the bottom-left corner of the stage.<br /></li>
 <li><p>Give the clear sprite this simple script:</p>
-<p><img src="c6f256ef7232019b026cf5740999fac0c87b4f75.png" alt="    when this sprite clicked
-        clear" /></p></li>
+<p><img src="a1c7aeeafe69c5aae19407b6e6b9bdf9b66689c0.png" alt="when this sprite clicked
+    clear" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-2" class="level2 flag">
@@ -118,16 +117,16 @@
 <li>Add a new sprite, called <strong>red</strong>, using the <strong>resources/red-selector.png</strong> costume.<br /></li>
 <li>Place it somewhere along the bottom of the frame, near the <strong>clear button</strong>.<br /></li>
 <li><p>When the red sprite is clicked, it should broadcast the message <strong>red</strong>.</p>
-<p><img src="ecfc532a2c3fc9ea962707e8527836beec4526d2.png" alt="    when this sprite clicked
-        broadcast [red v]" /></p></li>
+<p><img src="f9b8de5884303d06a5feabe82f492e6d2912678e.png" alt="when this sprite clicked
+    broadcast [red v]" /></p></li>
 </ul>
 <p><strong>Yes, that’s all it does. The hard work is done by the pencil.</strong></p>
 <p>In the pencil, upload a new costume, <strong>resources/red-pencil.png</strong>. Set the costume centre to be the tip of the pencil as you did for the original costume.</p>
 <ul>
 <li><p>Add a new script to the pencil. When the pencil receives the message <strong>red</strong>, it should change to the red pencil costume and change the pen colour to red (using the <code class="blockgreen">set pen color to</code> block). <strong>Hint:</strong> if you click on the coloured square in the <code class="blockgreen">set pen color to</code> block, you can click the red button sprite to make sure it’s the same colour.</p>
-<p><img src="dec684ffa3b5a591ec65660d2fd63324c1dea719.png" alt="    when I receive [red v]
-        switch to costume [red-pencil v]
-        set pen color to [#FF0000]" /></p></li>
+<p><img src="ae116b4d236b8dd824469a86e4ae4857d5a091aa.png" alt="when I receive [red v]
+    switch to costume [red-pencil v]
+    set pen color to [#FF0000]" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-3" class="level2 flag">
@@ -304,8 +303,6 @@
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
-
-    <link rel="stylesheet" href="../../../js/prism.js">
 
     <!-- Google Analytics -->
     <script type="text/javascript">

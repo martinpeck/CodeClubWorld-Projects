@@ -11,7 +11,6 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <link rel="stylesheet" href="../../../css/master.min.css">
-    <link rel="stylesheet" href="../../../css/prism.css">
   </head>
 
   <body class="index-template world">
@@ -43,14 +42,14 @@
 <li>Create four new sprites from the images <strong>frantic-felix/top</strong>, <strong>frantic-felix/bottom</strong>, <strong>frantic-felix/left</strong>, and <strong>frantic-felix/right</strong>. These sprites are the collision detectors. Call the new sprites <strong>Top</strong>, <strong>Bottom</strong>, <strong>Left</strong>, and <strong>Right</strong>. Make sure that their costumes can't rotate or flip.<br /></li>
 <li>Create four <code>variables</code> (for all sprites): <strong>blocked top</strong>, <strong>blocked bottom</strong>, <strong>blocked right</strong>, and <strong>blocked left</strong>.<br /></li>
 <li><p>Give each of the detector sprites this script:</p>
-<p><img src="a7ead5195b1b94b19c8bbca94b8ecc7aa0d24fcf.png" alt="    when FLAG clicked
-        forever
-            go to [Felix v]
-            if &lt;color [] is touching [] ?&gt;
-                set [blocked right v] to (1)
-            else
-                set [blocked right v] to (0)
-            end" /></p></li>
+<p><img src="9fbbfa8bd8a092683c207e45f878c23f8ad5dada.png" alt="when FLAG clicked
+    forever
+        go to [Felix v]
+        if &lt;color [] is touching [] ?&gt;
+            set [blocked right v] to (1)
+        else
+            set [blocked right v] to (0)
+        end" /></p></li>
 <li><p>Change the variables for each detector. The bottom detector needs an <strong>or</strong> block so that it sets blocked bottom if it’s touching either green or black. <strong>Hint</strong>: It’s easier to pick the colours in one sprite, then drag the script to the other sprites and change the variables being set. It saves having to find the right colours four times. At the moment, Felix just needs a script to follow the mouse pointer forever.</p></li>
 </ul>
 </section>
@@ -70,12 +69,12 @@
 <li>We could use the <code>&lt;when [key] pressed&gt;</code> hats to make Felix move, but that gives a jerky motion. Things move more smoothly if you put <code>&lt;if key [left arrow] pressed?&gt;</code> blocks in <code>forever</code> loops. Collision detection means we need to include the test of the <strong>blocked left</strong> variable in the <code>if</code>, using an and block so that Felix only moves left if the key is pressed and left blocked is zero. We need to do the same for moving right.<br /></li>
 <li>We could animate Felix’s legs in the same block, but they end up moving too fast. Do the animation in a separate <code>forever</code> block under another when <strong>green flag clicked</strong> hat.<br /></li>
 <li><p>The final thing to do is <strong>falling</strong>. If there’s no solid ground under Felix, we want him to fall. That’s another <code>forever loop</code> under another <strong>green flag</strong> hat.</p>
-<p><img src="9f75b1885e641dbeed02786a1a65785d309fbdaa.png" alt="    when FLAG clicked //handle moving
-        forever
-            if &lt;&lt;key [left arrow v] pressed?&gt; and &lt;(blocked left)=(0)&gt;
-                point in direction (-90 v)
-                move (2) steps
-            end
+<p><img src="3b59a96bdb75ecffdbf379ad210c43f4115da3ab.png" alt="when FLAG clicked //handle moving
+    forever
+        if &lt;&lt;key [left arrow v] pressed?&gt; and &lt;(blocked left)=(0)&gt;
+            point in direction (-90 v)
+            move (2) steps
+        end
 
 
         if &lt;&lt;key [right arrow v] pressed?&gt; and &lt;(blocked left)=(0)&gt;
@@ -124,21 +123,21 @@ when FLAG clicked //handle falling
 <li>We want to change the falling script. Inside the <code>forever</code>, we want an <code>if-else</code> block that detects if Felix is jumping up or not. The condition for this <code>if-else</code> block is whether <strong>height to jump</strong> is <strong>greater than zero</strong>. The existing falling <code>if</code> block goes in the else part of the new <code>if-else</code> block.<br /></li>
 <li>When we know Felix is jumping up, we need to check if he’s bumped his head against something. If <strong>blocked top</strong> is <strong>1</strong>, set <strong>height to jump</strong> to <strong>zero</strong>. (This stops Felix jumping up into obstacles). <strong>Otherwise, move Felix up by ten and reduce height to jump by ten.</strong><br /></li>
 <li><p>You should end up with this:</p>
-<p><img src="c4108f1318b0cd4a7c5c0ad77307883b3507263b.png" alt="    when FLAG clicked //handle falling
-        forever
-            if &lt;(height to jump)&gt;(0)&gt;
-                if &lt;(blocked top)=(1)&gt;
-                    set [height to jump v] to (0)
-                else
-                    change y by (10)
-                    change [height to jump v] by (-10)
-                end
+<p><img src="1da9599c8209b7964a33037584bac35465cbf75c.png" alt="when FLAG clicked //handle falling
+    forever
+        if &lt;(height to jump)&gt;(0)&gt;
+            if &lt;(blocked top)=(1)&gt;
+                set [height to jump v] to (0)
             else
-                if &lt;(blocked bottom)=(0)&gt;
-                    change y by (-2)
-                end
+                change y by (10)
+                change [height to jump v] by (-10)
             end
-        end" /></p></li>
+        else
+            if &lt;(blocked bottom)=(0)&gt;
+                change y by (-2)
+            end
+        end
+    end" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-2" class="level2 flag">
@@ -156,15 +155,15 @@ when FLAG clicked //handle falling
 <li>The keys and the escape pod will each be sprites. (Use <strong>frantic-felix/key</strong> for the keys and <strong>frantic-felix/escape-pod</strong> for the pod.)<br /></li>
 <li>Each key needs <strong>two scripts</strong>: one places the key in the right position, with the size and angle, then has a <code>forever</code> loop to change the colour (that just makes it easy to see on the screen). The other script is a <code>forever if</code> loop that waits until Felix touches the key. As soon as that happens, the script hides the key and decrements keys to get.<br /></li>
 <li><p>The escape pod has a slightly more complex script. It uses a <code>forever if</code> block to wait for <strong>keys to get</strong> to become <strong>zero</strong>. As soon as that happens, the pod starts flashing (to show the player that they can escape). Then we can use another <code>if</code> to detect when Felix touches the flashing escape pod. As soon as he does, the pod <code>broadcasts</code> a win message and says “You win!”. Felix responds to the win message by hiding.</p>
-<p><img src="58ca5e81c37646208f176034326aa3f6665ec35b.png" alt="    when FLAG clicked
-        go to x:(220) y:(-125)
-        forever if &lt;(key to get) = (0)&gt;
-            change [color v] effect by (25)
-            if &lt;touching [Felix v]?&gt;
-                broadcast [win v]
-                say [You win!]
-            end
-        end" /></p></li>
+<p><img src="8e12dca9cbe4d9dccf8d15698c3c163d33ebb3de.png" alt="when FLAG clicked
+    go to x:(220) y:(-125)
+    forever if &lt;(key to get) = (0)&gt;
+        change [color v] effect by (25)
+        if &lt;touching [Felix v]?&gt;
+            broadcast [win v]
+            say [You win!]
+        end
+    end" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-3" class="level2 flag">
@@ -185,21 +184,21 @@ when FLAG clicked //handle falling
 <ul>
 <li><strong>Create a new sprite</strong>, using whatever costume you like. Make sure it’s about the same size as Felix (We used the <strong>things/flower-vase</strong> costume, edited to be made smaller by four steps). The baddie needs just a single script that both moves it and detects when it’s touching Felix.<br /></li>
 <li><p>Put three <code>if</code> statements inside a forever loop. The first if checks whether the baddie is touching Felix; if it is, it <code>broadcasts</code> the <strong>lose</strong> message. The other two <code>if</code>’s check whether the baddie has reached the end of its path; if it has, the baddie turns round. Finally, the baddie takes two steps. (Using <strong>move</strong> instead of <strong>glide</strong> blocks makes it easier to control how fast the baddie goes.) <strong>We don’t need to use the collision detector sprites here, as we don’t care which side of Felix touches the baddie.</strong></p>
-<p><img src="0a7040bb417cdc923b2c87c07080c709f88b1dc2.png" alt="    when FLAG clicked
-        go to x:(-50) y:(47)
-        point in direction (-90 v)
-        forever
-            if &lt;touching [Felix v]?&gt;
-                broadcast [lose v]
-            end
-            if &lt;(x position) &gt; (-200)&gt;
-                point in direction (90 v)
-            end
-            if &lt;(x position) &gt; (-50)&gt;
-                point in direction (-90 v)
-            end
-            move (2) steps
-        end" /></p></li>
+<p><img src="ebd5f33af733583f1918a17f39d9658fe5de4d4a.png" alt="when FLAG clicked
+    go to x:(-50) y:(47)
+    point in direction (-90 v)
+    forever
+        if &lt;touching [Felix v]?&gt;
+            broadcast [lose v]
+        end
+        if &lt;(x position) &gt; (-200)&gt;
+            point in direction (90 v)
+        end
+        if &lt;(x position) &gt; (-50)&gt;
+            point in direction (-90 v)
+        end
+        move (2) steps
+    end" /></p></li>
 <li><p>Add scripts to both Felix and the escape pod to respond to the lose message. Felix should just hide in response. The pod should say [You lose!].</p></li>
 </ul>
 </section>
@@ -342,8 +341,6 @@ when FLAG clicked //handle falling
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
-
-    <link rel="stylesheet" href="../../../js/prism.js">
 
     <!-- Google Analytics -->
     <script type="text/javascript">

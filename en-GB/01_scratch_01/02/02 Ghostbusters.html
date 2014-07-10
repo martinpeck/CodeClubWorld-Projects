@@ -11,7 +11,6 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <link rel="stylesheet" href="../../../css/master.min.css">
-    <link rel="stylesheet" href="../../../css/prism.css">
   </head>
 
   <body class="index-template world">
@@ -40,10 +39,10 @@
 <li>Now we want to make our ghost move. Add a <code>Variable</code> for this sprite only called <code class="blockorange">speed</code>.<br /></li>
 <li>On the <strong>Stage</strong>, the stage monitor for this variable should say “<strong>Ghost1 speed</strong>”. If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the <strong>Data palette</strong> so it does not show on the Stage. The speed variable will control how fast the ghost moves. We use a variable so that we can change how fast the ghost moves as the game progresses.<br /></li>
 <li><p>We want the ghost to start moving when the game starts, <strong>so make a script like this</strong>:</p>
-<p><img src="bd745962235270f13096288022499dea61ccd2d7.png" alt="    when FLAG clicked
-        set [speed v] to [5]
-        forever
-            move (speed) steps" /></p></li>
+<p><img src="562a32ae2ec1d12e9a0e1eecb22272207b1fb094.png" alt="when FLAG clicked
+    set [speed v] to [5]
+    forever
+        move (speed) steps" /></p></li>
 </ul>
 </section>
 <section id="test-your-project" class="level2 flag">
@@ -58,11 +57,11 @@
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>To stop the ghost getting stuck we need to make her go back the other way when she touches the edge of the screen. Edit your existing script by adding an <code class="blockblue">if on edge, bounce</code> block below your <code class="blockblue">move</code><code class="blockorange">speed</code><code class="blockblue">steps</code> block.</p>
-<p><img src="e6134ecd0ece3f0c970ac495da7c90369af15334.png" alt="    when FLAG clicked
-        set [speed v] to [5]
-        forever
-            move (speed) steps
-            if on edge, bounce" /></p></li>
+<p><img src="f34ae5b0a473d80991c8cecddc89df50e7dd0b69.png" alt="when FLAG clicked
+    set [speed v] to [5]
+    forever
+        move (speed) steps
+        if on edge, bounce" /></p></li>
 <li><p>To stop the ghost flipping upside down, click on the <code>rotation style: left-right</code> button in the Sprite Summary area.</p></li>
 </ul>
 </section>
@@ -91,12 +90,12 @@
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Create this script for the ghost:</p>
-<p><img src="bcc4f111cbfa9460b7b0f63a741e60721b92f315.png" alt="    when FLAG clicked
-    forever
-        hide
-        wait (pick random (2) to (5)) secs
-        show
-        wait (pick random (3) to (5)) secs" /></p></li>
+<p><img src="547276fd8aaedac01f3fe0a2c94df8201a8532a8.png" alt="when FLAG clicked
+forever
+    hide
+    wait (pick random (2) to (5)) secs
+    show
+    wait (pick random (3) to (5)) secs" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-2" class="level2 flag">
@@ -124,9 +123,9 @@
 <ul>
 <li>In the <strong>Sounds</strong> tab, add a new sound <strong>Electronic/fairydust</strong>, using the <code>Choose sound from library</code> button.<br /></li>
 <li><p>Add this script to the ghost:</p>
-<p><img src="31d300d020e751f8b946c0416d5ffe06a603b026.png" alt="    when this sprite clicked
-        hide
-        play sound [Fairydust v]" /></p></li>
+<p><img src="3981a0fd7b2e58d601f84f6fa6847da6f56a636b.png" alt="when this sprite clicked
+    hide
+    play sound [Fairydust v]" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-3" class="level2 flag">
@@ -153,20 +152,20 @@
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Create a new <code>Variable</code> for all sprites called <strong>score</strong>, and alter the script for the ghost to increase this variable by one when it is clicked.</p>
-<p><img src="720059222f0c5b1a065f711a5b1c73f9013853fc.png" alt="    when this sprite clicked
-        hide
-       play sound [Fairydust v]
-       change [score v] by (1)" /></p></li>
+<p><img src="ff777bc5a247a526128b3c675887644735bb4693.png" alt="when this sprite clicked
+    hide
+   play sound [Fairydust v]
+   change [score v] by (1)" /></p></li>
 <li>Switch to the <strong>Stage</strong> and create a <strong>new variable</strong> called <strong>time_left</strong>.<br /></li>
 <li><p>Add a new script that occurs when the green flag is clicked to set <code class="blockorange">time_left</code> to <strong>30</strong> and reset the score to <strong>0</strong>. Then use a <code class="blockyellow">repeat until</code> block to wait a second and then reduce <code class="blockorange">time_left</code> by one. This should repeat until <code>time_left</code> is 0, at which point use <code class="blockyellow">stop all</code> to stop the game.</p>
-<p><img src="0847d982950732541a79ca0d75cff76dc1eab433.png" alt="    when FLAG clicked
-        set [time_left v] to (30)
-        set [score v] to (0)
-        repeat until &lt;(time_left) = [0]&gt;
-            wait (1) secs
-            change [time_left v] by (-1)
-        end
-        stop [all v]" /></p></li>
+<p><img src="9d59a787233b8fa2044dbae2bf795afe604181b3.png" alt="when FLAG clicked
+    set [time_left v] to (30)
+    set [score v] to (0)
+    repeat until &lt;(time_left) = [0]&gt;
+        wait (1) secs
+        change [time_left v] by (-1)
+    end
+    stop [all v]" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-4" class="level2 flag">
@@ -221,8 +220,6 @@
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
-
-    <link rel="stylesheet" href="../../../js/prism.js">
 
     <!-- Google Analytics -->
     <script type="text/javascript">

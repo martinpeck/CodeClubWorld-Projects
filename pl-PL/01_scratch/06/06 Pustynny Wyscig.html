@@ -11,7 +11,6 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <link rel="stylesheet" href="../../../css/master.min.css">
-    <link rel="stylesheet" href="../../../css/prism.css">
   </head>
 
   <body class="index-template world">
@@ -21,7 +20,7 @@
       <span class="level-indicator">Poziom 2</span>
     </header>
 
-    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Polski</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch</a></li><li class="breadcrumbs-item current">Pustynny wyścig</li></ul></nav>
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Polski</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch dla początkujących</a></li><li class="breadcrumbs-item current">Pustynny wyścig</li></ul></nav>
 
     <main class="main lesson-steps" role="main">
 <section id="wstep" class="level1 intro">
@@ -46,15 +45,13 @@
 <section id="zadania-do-wykonania-1" class="level2 check">
 <h2>Zadania do wykonania</h2>
 <ul>
-<li>Na początek wybierzmy lwa i ustawmy, aby poruszał się o 4 kroki po wciśnięciu klawisza <strong>'L'</strong></li>
-</ul>
+<li><p>Na początek wybierzmy lwa i ustawmy, aby poruszał się o 4 kroki po wciśnięciu klawisza <strong>'L'</strong></p>
 <p><img src="f3784ed43d90ac21709c394a29c48748a8340214.png" alt="    kiedy klawisz [l v] naciśnięty
-    przesuń o (4) kroków" /></p>
-<ul>
-<li>Teraz pora na papugę. Ustawmy, aby przesuwała się o 4 kroki po wciśnięciu klawisza 'A'.</li>
-</ul>
+    przesuń o (4) kroków" /></p></li>
+<li><p>Teraz pora na papugę. Ustawmy, aby przesuwała się o 4 kroki po wciśnięciu klawisza 'A'.</p>
 <p><img src="4cb7e989fa61dbab608d8e9e0035640528abf989.png" alt="    kiedy klawisz [a v] naciśnięty
-    przesuń o (4) kroków" /></p>
+    przesuń o (4) kroków" /></p></li>
+</ul>
 </section>
 <section id="przetestuj-swoj-projekt" class="level2 flag">
 <h2>Przetestuj swój projekt</h2>
@@ -72,19 +69,17 @@
 <ul>
 <li>Dodaj nowego duszka z pliku. Wybierz przycisk z katalogu &quot;things&quot;.<br /></li>
 <li>Przejdź do edycji kostiumu, napisz na nim 'Start' i wciśnij OK. Przesuń duszka na środek sceny.<br /></li>
-<li>Dodaj do niego skrypt, który pokazuje przycisk, kiedy gra jest uruchomiona:</li>
-</ul>
+<li><p>Dodaj do niego skrypt, który pokazuje przycisk, kiedy gra jest uruchomiona:</p>
 <p><img src="d0b4fbcc9d573b5490dd9ffc86b90c4d76ed80bd.png" alt="    kiedy kliknięto zieloną flagę
-    pokaż" /></p>
-<ul>
-<li>Teraz chcemy, aby przycisk odliczał od 3 w dół i ogłaszał start wyścigu, a następnie się chował. Dodaj poniższy skrypt:</li>
-</ul>
+    pokaż" /></p></li>
+<li><p>Teraz chcemy, aby przycisk odliczał od 3 w dół i ogłaszał start wyścigu, a następnie się chował. Dodaj poniższy skrypt:</p>
 <p><img src="616811ac254475123f7e8db750344c22a9c9055a.png" alt="    kiedy duszek kliknięty
     powiedz [3] przez (1) s
     powiedz [2] przez (1) s
     powiedz [1] przez (1) s
     powiedz [Start!] przez (1) s
-    ukryj" /></p>
+    ukryj" /></p></li>
+</ul>
 </section>
 <section id="przetestuj-swoj-projekt-1" class="level2 flag">
 <h2>Przetestuj swój projekt</h2>
@@ -96,20 +91,16 @@
 <p>Chcemy, aby ścigający poruszali się tylko po rozpoczęciu wyścigu. Chcemy też wiedzieć, kiedy wyścig się zakończył. Będziemy potrzebować zmiennej do przechowywania tej informacji.</p>
 <ul>
 <li>Dodaj zmienną do wszystkich duszków i nazwij ją <code class="blockorange">wyścig</code>. Odznacz pole przy niej, aby nie było jej widać na scenie.<br /></li>
-<li>Teraz ustaw <strong>wyścig</strong> na <strong>0</strong>, kiedy gra się rozpocznie. Dodaj ten krok do skryptu przycisku:</li>
-</ul>
+<li><p>Teraz ustaw <strong>wyścig</strong> na <strong>0</strong>, kiedy gra się rozpocznie. Dodaj ten krok do skryptu przycisku:</p>
 <p><img src="09c8c850264c717cd1c7135449d27a3861062f31.png" alt="    kiedy kliknięto zieloną flagę
     pokaż
-    ustaw [wyścig v] na (0)" /></p>
-<ul>
+    ustaw [wyścig v] na (0)" /></p></li>
 <li>Następnie ustaw zmienną <strong>wyścig</strong> zmieniała się na 1 po skończeniu odliczania.<br /></li>
-<li>Teraz musimy się upewnić, że lew i papuga mogą się ruszać tylko wtedy, kiedy zmienna wyścig jest ustawiona na 1. Kliknij na duszka z papugą. <strong>Dodaj blok kontroli do skryptu</strong>, który pozwala papudze ruszać się tylko wtedy, gdy zmienna <strong>wyścig = 1</strong>.</li>
-</ul>
+<li><p>Teraz musimy się upewnić, że lew i papuga mogą się ruszać tylko wtedy, kiedy zmienna wyścig jest ustawiona na 1. Kliknij na duszka z papugą. <strong>Dodaj blok kontroli do skryptu</strong>, który pozwala papudze ruszać się tylko wtedy, gdy zmienna <strong>wyścig = 1</strong>.</p>
 <p><img src="ffdd9f220e4f478f06b256dcacebb10f8dac67d2.png" alt="    kiedy klawisz [a v] naciśnięty
     jeżeli &lt;(wyścig) = [1]&gt; to
-        przesuń o (4) kroków" /></p>
-<ul>
-<li>Zrób to samo dla lwa.</li>
+        przesuń o (4) kroków" /></p></li>
+<li><p>Zrób to samo dla lwa.</p></li>
 </ul>
 </section>
 <section id="przetestuj-swoj-projekt-2" class="level2 flag">
@@ -127,26 +118,22 @@
 <section id="zadania-do-wykonania-3" class="level2 check">
 <h2>Zadania do wykonania</h2>
 <ul>
-<li>Dodaj blok do skryptu papugi, który ustawia zmienną <strong>wyścig</strong> na 0, kiedy papuga dotknie brzegu ekranu.</li>
-</ul>
+<li><p>Dodaj blok do skryptu papugi, który ustawia zmienną <strong>wyścig</strong> na 0, kiedy papuga dotknie brzegu ekranu.</p>
 <p><img src="6da275b14a428684da27ae362840b944238eb12c.png" alt="    kiedy klawisz [a v] naciśnięty
     jeżeli &lt;(wyścig) = [1]&gt; to
         przesuń o (4) kroków
         jeżeli &lt;dotyka [krawędź v]?&gt; to
-            ustaw [wyścig v] na (0)" /></p>
-<ul>
+            ustaw [wyścig v] na (0)" /></p></li>
 <li><p>Teraz chcemy, aby papuga dała nam znać, czy wygrała. Nagraj nowy dźwięk dla papugi, który będzie odegrany, jeżeli papuga wygra. Przejdź na kartę <code class="blocklightgrey">dźwięki</code> duszka i nagraj odgłos zwycięstwa!</p></li>
-<li><p>Dodaj do skryptu komendę, która <code class="blockpurple">zagra</code> to nagranie po wygranej:</p></li>
-</ul>
+<li><p>Dodaj do skryptu komendę, która <code class="blockpurple">zagra</code> to nagranie po wygranej:</p>
 <p><img src="894c7acd1047fb9ed2c3622dc6294aface6c3a2e.png" alt="    kiedy klawisz [a v] naciśnięty
     jeżeli &lt;(wyścig) = [1]&gt; to
         przesuń o (4) kroków
         jeżeli &lt;dotyka [krawędź v]?&gt; to
             ustaw [wyścig v] na (0)
             zagraj dźwięk [nagranie1 v]
-            powiedz [Papuga wygrała!] przez (3) s" /></p>
-<ul>
-<li>Powtórz to samo dla lwa.</li>
+            powiedz [Papuga wygrała!] przez (3) s" /></p></li>
+<li><p>Powtórz to samo dla lwa.</p></li>
 </ul>
 </section>
 <section id="przetestuj-swoj-projekt-3" class="level2 flag">
@@ -165,8 +152,7 @@
 <section id="zadania-do-wykonania-4" class="level2 check">
 <h2>Zadania do wykonania</h2>
 <ul>
-<li>Kliknij na papugę i dodaj do skryptu ogłaszanie końca wyścigu po wygranej.</li>
-</ul>
+<li><p>Kliknij na papugę i dodaj do skryptu ogłaszanie końca wyścigu po wygranej.</p>
 <p><img src="0a5b9d8f70f1dff0a88411e8a920c28cfc9a65fd.png" alt="    kiedy klawisz [a v] naciśnięty
     jeżeli &lt;(wyścig) = [1]&gt; to
         przesuń o (4) kroków
@@ -174,20 +160,15 @@
             ustaw [wyścig v] na (0)
             zagraj dźwięk [nagranie1 v]
             powiedz [Papuga wygrała!] przez (3) s
-            nadaj [koniec v]" /></p>
-<ul>
-<li>Teraz musimy dodać nowy skrypt, który nasłuchuje, czy wyścig został zakończony i jeżeli tak, to przesuwa papugę na linię startu.</li>
-</ul>
+            nadaj [koniec v]" /></p></li>
+<li><p>Teraz musimy dodać nowy skrypt, który nasłuchuje, czy wyścig został zakończony i jeżeli tak, to przesuwa papugę na linię startu.</p>
 <p><img src="7f5248db4bb0868cba2ea589c6ad5a5a2d668da8.png" alt="    kiedy otrzymam [koniec v]
-    ustaw x na (-170)" /></p>
-<ul>
+    ustaw x na (-170)" /></p></li>
 <li>Dodaj takie same skrypty dla lwa. W przypadku tego drugiego przetestuj inne wartości dla <strong>x</strong>, aby lew i papuga byli równo ustawieni na starcie.<br /></li>
-<li>Chcemy też, aby lew i papuga byli równo ustawieni po rozpoczęciu wyścigu, więc dodaj do obu duszków poniższy skrypt, który ustawia je równo po wciśnięciu flagi:</li>
-</ul>
+<li><p>Chcemy też, aby lew i papuga byli równo ustawieni po rozpoczęciu wyścigu, więc dodaj do obu duszków poniższy skrypt, który ustawia je równo po wciśnięciu flagi:</p>
 <p><img src="05032d344520294990a0e48415014d58e9068aa4.png" alt="    kiedy kliknięto zieloną flagę
-    ustaw x na (-170)" /></p>
-<ul>
-<li>Przejdź do duszka przycisku i dodaj skrypt, który go pokazuje po otrzymaniu komunikatu, że wyścig się zakończył.</li>
+    ustaw x na (-170)" /></p></li>
+<li><p>Przejdź do duszka przycisku i dodaj skrypt, który go pokazuje po otrzymaniu komunikatu, że wyścig się zakończył.</p></li>
 </ul>
 </section>
 <section id="przetestuj-swoj-projekt-4" class="level2 flag">
@@ -231,19 +212,19 @@
 <li>Nadaj nowemu blokowi nazwę wpisując <strong>&quot;zakończony&quot;</strong> w różowe pole. Następnie kliknij OK.<br /></li>
 <li>Zauważ, że blok <code class="blockpurple">definiuj zakończony</code> pojawił się w oknie ze skryptami. Przeciągnij go na puste miejsce tak, aby nie zasłaniał innych skryptów.<br /></li>
 <li><p>Odłącz blok <code class="blockyellow">jeżeli</code><code class="blocklightblue">dotyka krawędź?</code><code class="blockyellow">to</code> i przeciągnij go podłączając pod blok <code class="blockputple">definiuj zakończony</code>.</p>
-<p><img src="4eacb9340086482e12a21304f6b123284f48cced.png" alt="    definiuj zakończony
+<p><img src="d9391846d4e71cab18104e12c6312b83403d3559.png" alt="    definiuj zakończony
         jeżeli &lt;dotyka [krawędź v]?&gt; to
             ustaw (wyścig) na [0]
             zagraj dźwięk [nagranie1 v]
             powiedz [Papuga wygrała!] przez (3) s
             nadaj [koniec v]
 
-kiedy klawisz [p v] naciśnięty
-    jeżeli &lt;&lt;(wyścig) = [1]&gt; and &lt;(dopalacz) = [0]&gt;&gt; to
-        zmień kostium na [parrot-dopalacz v]
-        ustaw [dopalacz v] na [1]
-        przesuń o (4) kroków
-        zakończony" /></p></li>
+    kiedy klawisz [p v] naciśnięty
+        jeżeli &lt;&lt;(wyścig) = [1]&gt; and &lt;(dopalacz) = [0]&gt;&gt; to
+            zmień kostium na [parrot-dopalacz v]
+            ustaw [dopalacz v] na [1]
+            przesuń o (4) kroków
+            zakończony" /></p></li>
 </ul>
 <p>Czy możesz przeciągnąć blok <code class="blockpurple">zakończony</code> z palety i użyć go jak każdego innego bloku?</p>
 <p>Usuń pozostałe bloki <code class="blockyellow">jeżeli</code><code class="blocklightblue">dotyka krawędź?</code><code class="blockyellow">to</code> z twojego skryptu i wstaw w ich miejsce twój blok <code class="blockputple">zakończony</code>.</p>
@@ -263,8 +244,6 @@ kiedy klawisz [p v] naciśnięty
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
-
-    <link rel="stylesheet" href="../../../js/prism.js">
 
     <!-- Google Analytics -->
     <script type="text/javascript">

@@ -11,7 +11,6 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     <link rel="stylesheet" href="../../../css/master.min.css">
-    <link rel="stylesheet" href="../../../css/prism.css">
   </head>
 
   <body class="index-template world">
@@ -39,13 +38,13 @@
 <li>Click on the sprite, and then click on the <code>i</code> button to the top left of the Sprite. Change the name of the sprite to <strong>Felix</strong>.<br /></li>
 <li>Make sure Felix only points left-right by clicking this button: <img alt="" class="inline" src="flip_arrows.png"><br /></li>
 <li><p>Create this script:</p>
-<p><img src="fdeeafd344e1c6ce5654dbc1473fbaf73d4009f7.png" alt="    when FLAG clicked
-    forever
-        point towards [mouse-pointer v]
-        move (10) steps
-        next costume
-        play drum (3 v) for (0.3) beats
-    end" /></p></li>
+<p><img src="e319fb9b43a894fcb08af07e78e91b95b5397c87.png" alt="when FLAG clicked
+forever
+    point towards [mouse-pointer v]
+    move (10) steps
+    next costume
+    play drum (3 v) for (0.3) beats
+end" /></p></li>
 </ul>
 </section>
 <section id="test-your-project" class="level2 flag">
@@ -72,11 +71,11 @@
 <li>Switch to the <strong>Costumes</strong> tab, then click on the costume in the Paint Editor. A box will appear around the costume. Drag a corner of the box to make Herbert smaller than Felix.<br /></li>
 <li>Make sure Herbert only points left-right by clicking this button:<br />!(flip_arrows.png)<br /></li>
 <li><p><strong>Give Herbert this script:</strong></p>
-<p><img src="7472f0629ea5fa55166d6f23c703df7caa064d36.png" alt="    when FLAG clicked
-    forever
-        go to [mouse-pointer v]
-        point towards [Felix v]
-    end" /></p></li>
+<p><img src="1af06af900414a111b92ace85ff23a26673e6350.png" alt="when FLAG clicked
+forever
+    go to [mouse-pointer v]
+    point towards [Felix v]
+end" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-1" class="level2 flag">
@@ -98,16 +97,16 @@
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Change Felix’s script to be this:</p>
-<p><img src="db07646b8f1c5cdb2d55592395f08deb13fba6a0.png" alt="    when FLAG clicked
-    forever
-        point towards [mouse-pointer v]
-        move (10) steps
-        next costume
-        play drum (3 v) for (0.3) beats
-        if &lt;touching [herbert v]?&gt;
-            say [Caught you!] for (1) secs
-        end
-    end" /></p></li>
+<p><img src="356746b886c2847a3a7d864d303d8b5cdfa3009f.png" alt="when FLAG clicked
+forever
+    point towards [mouse-pointer v]
+    move (10) steps
+    next costume
+    play drum (3 v) for (0.3) beats
+    if &lt;touching [herbert v]?&gt;
+        say [Caught you!] for (1) secs
+    end
+end" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-2" class="level2 flag">
@@ -128,27 +127,27 @@
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Change Felix’s script to send this message when he catches Herbert:</p>
-<p><img src="ce962457e1a9f0da3419d5bf1d443a0394cf7d14.png" alt="    when FLAG clicked
-    forever
-        point towards [mouse-pointer v]
-        move (10) steps
-        move (20) steps
-        next costume
-        play drum [3 v] for (0.3) beats
-        if &lt;touching [herbert v]?&gt;
-            broadcast [caught v]
-            play drum [17 v] for (0.2) beats
-            wait (1) secs
-        end
-    end" /></p></li>
+<p><img src="33fe802418bea17ee5810b9cbadd0058c6613627.png" alt="when FLAG clicked
+forever
+    point towards [mouse-pointer v]
+    move (10) steps
+    move (20) steps
+    next costume
+    play drum [3 v] for (0.3) beats
+    if &lt;touching [herbert v]?&gt;
+        broadcast [caught v]
+        play drum [17 v] for (0.2) beats
+        wait (1) secs
+    end
+end" /></p></li>
 <li>Add a new costume into Herbert by selecting Herbert, going into the Costumes section, and clicking the <code class="blocklightgrey">Choose costume from Library button</code>. Select the <strong>fantasy/ghost2-a</strong> costume.<br /></li>
 <li>Make the costume smaller by clicking on it in the Paint Editor, and dragging the box that appears, to resize it.<br /></li>
 <li>Change the names of Herbert’s costumes so the mouse costume is called ‘alive’ and the ghost costume is called ‘dead’.<br /></li>
 <li><p>Create a new script for Herbert to turn him into a ghost:</p>
-<p><img src="b12d9cd462ebe9d58f09bf283725bd57a626aae1.png" alt="    when I receive [caught v]
-        switch costume to [dead v]
-        wait (1) secs
-        switch costume to [alive v]" /></p></li>
+<p><img src="57d514d13ab4458c22ce5ebe36f6c6baccf2c6e7.png" alt="when I receive [caught v]
+    switch costume to [dead v]
+    wait (1) secs
+    switch costume to [alive v]" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-3" class="level2 flag">
@@ -173,12 +172,12 @@
 <ul>
 <li>Make a variable, for all sprites, called Score. Click on <code class="blockorange">Data</code> in the top menu, make a variable and name it <code class="blockorange">score</code>, ensuring that &quot;For all sprites&quot; is selected.<br /></li>
 <li><p>On the stage, create these two scripts:</p>
-<p><img src="3c3768e9975fd634705c985472569d60fbd38f0a.png" alt="    when gf clicked
-        set [score v] to [0]
-        forever
-            change [score v] by (1)
-            wait (1) secs
-        end
+<p><img src="9a999bc0001933acd2890f8b6485fd3397d6df76.png" alt="when gf clicked
+    set [score v] to [0]
+    forever
+        change [score v] by (1)
+        wait (1) secs
+    end
 
 when I receive [caught v]
     change [score v] by (-100)" /></p></li>
@@ -205,8 +204,6 @@ when I receive [caught v]
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
       <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
-
-    <link rel="stylesheet" href="../../../js/prism.js">
 
     <!-- Google Analytics -->
     <script type="text/javascript">

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="world"  lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Pogromcy duchów — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Pogromcy duchów</h1>
+      <span class="level-indicator">Poziom 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Polski</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch dla początkujących</a></li><li class="breadcrumbs-item current">Pogromcy duchów</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="wstep" class="level1 intro">
+<h1>Wstęp</h1>
+<p>Ten projekt bazuje na popularnej angielskiej grze zwanej Whack-A-Mole: zdobywasz punkty klikając w duchy, które pojawiają się na ekranie. Celem gry jest zdobycie jak największej liczby punktów w ciągu 30 sekund.</p>
+<p><img src="Pogromcy-duchow.png" alt="screenshot" /></p>
+</section>
+<section id="krok-1-stworz-latajacego-ducha" class="level1 activity">
+<h1>Krok 1: Stwórz latającego ducha</h1>
+<section id="zadania-do-wykonania" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><strong>Stwórz nowy projekt.</strong><br /></li>
+<li><strong>Usuń duszka kota</strong> i zastąp tło lasem (woods) z katalogu <strong>Natura</strong>.<br /></li>
+<li>Kliknij przycisk <code class="blockgrey">Wybierz nowego duszka z biblioteki</code> i dodaj ducha do projektu (znajdź kostium <strong>Fikcja/ghost2-b</strong>).</li>
+</ul>
+<p><strong>Teraz sprawmy, aby duch zaczął latać</strong></p>
+<ul>
+<li>Dodaj <code class="blocklightgrey">zmienną</code> tylko dla tego duszka i nazwij ją <code class="blockorange">prędkość</code>.<br />Nowa zmienna powinna pojawić się na <strong>Scenie</strong> jako <strong>&quot;Ghost2: prędkość&quot;</strong>.<br />Jeżeli widzisz tam tylko &quot;prędkość&quot;, usuń zmienną i stwórz ją na nowo, tylko tym razem wybierz opcję &quot;Tylko dla tego duszka&quot;.<br />Odznacz &quot;prędkość&quot; w <strong>panelu Dane</strong>, aby nie było jej widać na Scenie. Ta zmienna będzie kontrolować prędkość lotu naszego ducha. Korzystamy ze zmiennej, aby móc później zmieniać prędkość lotu ducha.<br /></li>
+<li><p>Chcemy, aby duch zaczął latać zaraz po rozpoczęciu gry. <strong>Stwórz dla niego poniższy skrypt</strong>:</p>
+<p><img src="82ce84d712922b563bbafaf0ae71a70305f12d6a.png" alt="    kiedy kliknięto zieloną flagę
+    ustaw [prędkość v] na [5]
+    zawsze
+        przesuń o (prędkość) kroków" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę</strong> i zobacz, co robi duch. Dlaczego utknął na brzegu ekranu?</p>
+</section>
+<section id="zadania-do-wykonania-1" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Aby duch nie zatrzymywał się na brzegu ekranu, musimy sprawić, aby zawracał za każdym razem, gdy doleci do brzegu ekranu. Dodajmy blok <code class="blockblue">jeżeli na brzegu, odbij się</code> poniżej bloku<br /><code class="blockblue">przesuń o</code><code class="blockorange">prędkość</code><code class="blockblue">kroków</code> w skrypcie ducha.</p>
+<p><img src="bee62802afe1e112ae90757c8d0de655eabf7002.png" alt="    kiedy kliknięto zieloną flagę
+    ustaw [prędkość v] na [5]
+    zawsze
+        przesuń o (prędkość) kroków
+        jeżeli na brzegu, odbij się" /></p></li>
+<li><p>Aby duch nie obracał się do góry nogami, wybierz opcję <code class="blockgrey">Styl obrotów: prawo-lewo</code> w ustawieniach tego duszka.</p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-1" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong><br />Czy duch lata od brzegu do brzegu ekranu?</p>
+</section>
+<section id="zapisz-swoj-projekt." class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="rzeczy-do-sprobowania" class="level2 try">
+<h2>Rzeczy do spróbowania</h2>
+<ul>
+<li><strong>Spróbuj zmienić wartość zmiennej prędkość, aby sprawić, żeby duch latał szybciej lub wolniej.</strong><br /></li>
+<li><strong>Co zrobić, aby duch leciał coraz szybciej w trakcie gry?</strong><br />(Jest to troszkę skomplikowane, więc nie przejmuj się, jeżeli jeszcze nie wiesz jak to zrobić. Podpowiemy Ci troszkę później jak to zrobić.)</li>
+</ul>
+</section>
+</section>
+<section id="krok-2-spraw-aby-duch-losowo-pojawia-sie-i-znika" class="level1 activity">
+<h1>Krok 2: Spraw, aby duch losowo pojawiał się i znikał</h1>
+<p>Aby gra była ciekawsza, spróbujemy sprawić, aby duch losowo pojawiał się i znikał. Będzie nam do tego potrzebny kolejny skrypt, który działa w tym samym czasie co ten odpowiedzialny za poruszanie duchem. Nowy skrypt powinien niespodziewanie ukryć ducha i po jakimiś czasie znowu pokazać go na ekranie (i robić to cały czas w trakcie gry).</p>
+<section id="zadania-do-wykonania-2" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<p><strong>Dodajmy duchowi poniższy skrypt:</strong></p>
+<p><img src="60e006490059557e33722ddb30e4c5aaf4320ae3.png" alt="    kiedy kliknięto zieloną flagę
+    zawsze
+        ukryj
+        czekaj (losuj od (2) do (5)) s
+        pokaż
+        czekaj (losuj od (3) do (5)) s" /></p>
+</section>
+<section id="przetestuj-swoj-projekt-2" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Czy duch lata od brzegu do brzegu ekranu oraz losowo pojawia się i znika?</p>
+</section>
+<section id="zapisz-swoj-projekt.-1" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="rzeczy-do-sprobowania-1" class="level2 try">
+<h2>Rzeczy do spróbowania</h2>
+<ul>
+<li><strong>Spróbuj zmienić wartość liczb, które użyliśmy do ukrywania i pojawiania się ducha. Co się stanie, jeżeli wybierzemy bardzo duże albo bardzo małe liczby?</strong><br />(Czy pomoże Ci to sprawić, aby duch latał coraz szybciej?)</li>
+</ul>
+</section>
+</section>
+<section id="krok-3-spraw-aby-duch-znika-gdy-na-niego-klikniesz" class="level1 activity">
+<h1>Krok 3: Spraw, aby duch znikał, gdy na niego klikniesz</h1>
+<p>Aby zamienić ten projekt w grę, musimy dać graczom coś do zrobienia. Niech klikają w ducha, aby zniknął. Chcemy, aby po kliknięciu w ducha było słychać jakiś dźwięk, a sam duch znikał z ekranu.</p>
+<section id="zadania-do-wykonania-3" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>W zakładce <strong>Dźwięki</strong> zaimportuj z biblioteki dźwięk <strong>fairydust</strong> z katalogu <strong>Elektroniczne</strong>.</p></li>
+<li><p><strong>Dodajmy duchowi poniższy skrypt</strong>:</p>
+<p><img src="ae34238b81b5edfa0cda6cc9719bc40a1157ef2a.png" alt="    kiedy duszek kliknięty
+    ukryj
+    zagraj dźwięk [fairydust v]" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-3" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Czy ducha znika i wydaje dźwięk, gdy go klikniesz?</p>
+</section>
+<section id="zapisz-swoj-projekt.-2" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="rzeczy-do-sprobowania-2" class="level2 try">
+<h2>Rzeczy do spróbowania</h2>
+<ul>
+<li><strong>Zapytaj osoby prowadzącej zajęcia, czy możesz spróbować nagrywać własny dźwięk i użyć go w swoim projekcie.</strong></li>
+</ul>
+</section>
+</section>
+<section id="krok-4-dodaj-punkty-i-zegar" class="level1 activity">
+<h1>Krok 4: Dodaj punkty i zegar</h1>
+<p>Mamy już ducha, więc wykorzystamy go do stworzenia własnej gry! Zaczniemy liczyć punkty za każde kliknięcie na ducha. Dodamy też do gry limit czasu. W tym celu użyjemy dwóch nowych zmiennych.</p>
+<section id="zadania-do-wykonania-4" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Stwórz nową <code class="blockgrey">zmienną</code> dla każdego duszka i nazwij ją <strong>wynik</strong>. Zmieńmy skypt ducha tak, aby przy każdym kliknięciu wartość tej zmiennej zwiększała się o jeden punkt.</p>
+<p><img src="d8c1b1fa2eef747ec3a3d5fe05d40f7015c2525b.png" alt="    kiedy duszek kliknięty
+    ukryj
+    zagraj dźwięk [Fairydust v]
+    zmień [wynik v] o (1)" /></p></li>
+<li><p>Kliknij na <strong>Scenę</strong>, stwórz <strong>nową zmienną</strong> i nazwij ją <strong>czas</strong>. Dodaj nowy skrypt uruchamiany kliknięciem flagi, który ustawia <code class="blockorange">czas</code> na <strong>30</strong> oraz wynik na <strong>0</strong>. Skorzystaj z bloku <code class="blockyellow">powtarzaj aż</code>, aby odczekać sekundę i zmniejszyć wartość <code class="blockorange">czasu</code> o jeden. Akcja powinna powtarzać się dopóki licznik czasu nie dojdzie do zera. Wtedy to zakończymy grę używając bloku <code class="blockyellow">zatrzymaj wszystko</code>.</p>
+<p><img src="faa9d7aeb79ccee30ae56276731054bc33d3e0b1.png" alt="    kiedy kliknięto zieloną flagę
+    ustaw [czas v] na (30)
+    ustaw [wynik v] na (0)
+    powtarzaj aż &lt;(czas) = [0]&gt;
+        czekaj (1) s
+        zmień [czas v] o (-1)
+    koniec
+    zatrzymaj [wszystko v]" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-4" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+</section>
+<section id="zapisz-swoj-projekt.-3" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="rzeczy-do-sprobowania-3" class="level2 try">
+<h2>Rzeczy do spróbowania</h2>
+<ul>
+<li><strong>Jak można sprawić, aby duch latał coraz szybciej?</strong></li>
+</ul>
+<p><strong>Udało ci się skończyć podstawową wersję gry, ale ciągle są rzeczy, które możesz zmienić w grze. Mamy dla Ciebie wyzwanie!</strong></p>
+</section>
+<section id="wyzwanie-dodaj-wiecej-duchow" class="level2 challenge">
+<h2>Wyzwanie: Dodaj więcej duchów</h2>
+<p>Gra z jednym duchem jest super, ale co jeżeli dodamy ich więcej. Na pewno gra będzie jeszcze lepsza! <strong>Dodajmy kolejne latające duchy do naszej gry.</strong></p>
+<ul>
+<li>Zduplikuj ducha klikając na niego <strong>prawym przyciskiem myszy</strong> na liście duszków.<br /></li>
+<li><strong>Zmień rozmiar każdego ducha</strong>, aby każdy z nich był innej wielkości.<br /></li>
+<li>Zmień <strong>zmienną &quot;prędkość&quot;</strong> każdego ducha, aby każdy z nich latał z inną prędkością.<br /></li>
+<li>Poprzesuwaj duchy po ekranie, aby nie latały wszystkie obok siebie.</li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-5" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Czy masz na ekranie kilka duchów, latających od brzegu do brzegu ekranu, które niespodziewanie pojawiają się i znikają? Czy duchy znikają po kliknięciu na nie?</p>
+</section>
+<section id="zapisz-swoj-projekt.-4" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="rzeczy-do-sprobowania-4" class="level2 try">
+<h2>Rzeczy do spróbowania</h2>
+<ul>
+<li><strong>Jaka liczba duchów będzie najlepsza dla naszej gry?</strong><br /></li>
+<li><strong>Czy możesz sprawić, aby duchy wyglądały inaczej? Możesz zmienić ich kostium albo wybrać zupełnie inny wygląd?</strong><br /></li>
+<li><strong>Czy możesz zmienić liczbę punktów, które dostaje się za różne duchy? Na przykład najszybszy (i najmniejszy) duch mógłby być wart 10 punktów.</strong></li>
+</ul>
+<p><strong>Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!</strong></p>
+<p>Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu <strong>Udostępnij</strong>.</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

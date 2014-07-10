@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html class="world"  lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Kolorowe kredki — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Kolorowe kredki</h1>
+      <span class="level-indicator">Poziom 3</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Polski</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch dla początkujących</a></li><li class="breadcrumbs-item current">Kolorowe kredki</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="wstep" class="level1 intro">
+<h1>Wstęp</h1>
+<p>Podczas tego projektu stworzymy podstawowe narzędzia do rysowania. Będzie można rysować po ekranie kursorem myszy, zmieniać kolor linii, czyścić ekran czy robić pieczątki!</p>
+<p><img src="Kolorowe-kredki.png" alt="screenshot" /></p>
+</section>
+<section id="krok-1-rysowanie-kursorem-myszy" class="level1 activity">
+<h1>Krok 1: Rysowanie kursorem myszy</h1>
+<p>Zaczniemy od stworzenia kredki, która rysuje po scenie.</p>
+<section id="zadania-do-wykonania" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Rozpocznij nowy projekt w Scratchu. Skasuj kota, klikając na nim prawym przyciskiem myszy i wybierając <strong>usuń</strong>.<br /></li>
+<li>Kliknij na <strong>Scenę</strong> i przejdź do karty <strong>Tła</strong>. Dodaj tło z pliku <strong>Zasoby\tablica</strong>.<br /></li>
+<li>Stwórz nowego duszka o nazwie <strong>zielona-kredka</strong>, wybierając plik <strong>Zasoby\zielona-kredka</strong>.<br /></li>
+<li>Przejdź na kartę z <strong>kostiumami</strong> i kliknij na edycję kostiumu. W edytorze obrazów zmień centrum kostiumu na rysik kredki. Aby to zrobić, kliknij <strong>Ustaw środek kostiumu</strong> i przesuń punkt przecięcia linii na ekranie, aby był na końcu rysika.<br /></li>
+<li><p>Spraw, aby kredka podążała za kursorem myszy. Skorzystaj z bloków <code class="blockyellow">zawsze</code> oraz <code class="blockblue">idź do</code>.</p>
+<p><img src="25d6244085d45fd7852449bdbc05367ea04c52df.png" alt="    kiedy kliknięto zieloną FLAGĘ
+    zawsze
+        idź do [wskaźnik myszy v]
+    koniec" /></p></li>
+</ul>
+<p><strong>Teraz chcemy używać tego duszka jak prawdziwej kredki.</strong> Jeżeli zajrzysz do panelu Pisak, znajdziesz tam bloki związane z rysowaniem. Na razie interesują nas bloki <code class="blockgreen">przyłóż pisak</code> i <code class="blockgreen">podnieś pisak</code>.</p>
+<ul>
+<li><p>Chcemy kontrolować kredkę przyciskiem myszy: jeżeli przycisk jest wciśnięty, kredka dotyka tablicy, a kiedy nie jest wciśnięty, kredka nie dotyka tablicy. Możemy to kontrolować korzystając z bloku <code class="blockyellow">jeżeli... w przeciwnym razie</code> i <code class="blocklightblue">wciśnięty klawisz myszy?</code>.</p>
+<p><img src="89f3d66e15e806f58e7446960e38ef47afc3b0b1.png" alt="    kiedy kliknięto zieloną FLAGĘ
+    zawsze
+        idź do [wskaźnik myszy v]
+        jeżeli (wciśnięty klawisz myszy?) to
+            przyłóż pisak
+        w przeciwnym razie
+            podnieś pisak
+        koniec
+    koniec" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Czy kredka podąża za kursorem myszy? Co się dzieje, kiedy wciśniesz przycisk myszy i ją przesuniesz? Nie przejmuj się na razie kolorem linii.</p>
+</section>
+<section id="zadania-do-wykonania-1" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Prędzej czy później ekran zapełni się rysunkami. Użyj bloku wyczyść do czyszczenia ekranu.</p>
+<p><img src="8dc85287d91ea849aca7a015a3d0f4bb4fb78ee8.png" alt="    kiedy kliknięto zieloną FLAGĘ
+    wyczyść
+    zawsze
+        idź do [wskaźnik myszy v]
+        jeżeli (wciśnięty klawisz myszy?) to
+            przyłóż pisak
+        w przeciwnym razie
+            podnieś pisak
+        koniec
+    koniec" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-1" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Czy rysunek znika po wciśnięciu flagi?</p>
+</section>
+<section id="zapisz-swoj-projekt." class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+</section>
+<section id="krok-2-czyszczenie-ekranu" class="level1 activity">
+<h1>Krok 2: Czyszczenie ekranu</h1>
+<p>Zamiast uruchamiać cały projekt ponownie, aby wyczyścić ekran, dodajmy przycisk czyszczący. Możemy do tego także wykorzystać blok wyczyść.</p>
+<section id="zadania-do-wykonania-2" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Stwórz nowego duszka korzystając z kostiumu z pliku <strong>Zasoby/przycisk-wyczysc</strong>.<br /></li>
+<li>Zmień nazwę duszka na <strong>wyczyść</strong>.<br /></li>
+<li>Przesuń duszka do dolnego lewego rogu sceny.<br /></li>
+<li><p>Dodaj poniższy skrypt:</p>
+<p><img src="cbaa9a5f92f8b5e8979532bb03fab6ce3f699766.png" alt="    kiedy duszek kliknięty
+    wyczyść" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-2" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Czy przycisk czyści ekran z rysunków?</p>
+</section>
+<section id="zapisz-swoj-projekt.-1" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+</section>
+<section id="krok-3-zmienianie-kolorow" class="level1 activity">
+<h1>Krok 3: Zmienianie kolorów</h1>
+<p>Do tej pory mogliśmy rysować tylko niebieskie linie. Pora zacząć zmieniać kolory! Dodamy kilka duszków na dole ekranu, które wyglądają jak kolorowe przyciski i klikając na nie, będziemy zmieniać kolor linii oraz kolor duszka-kredki.</p>
+<section id="zadania-do-wykonania-3" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Dodaj nowego duszka i nazwij go <strong>czerwony</strong>. Użyj kostiumu z pliku <strong>Zasoby/czerwony-kolor</strong>.<br /></li>
+<li>Ustaw go na dole ekranu obok przycisku <strong>wyczyść</strong>.<br /></li>
+<li><p>Po wciśnięciu, duszek czerwony powinien nadawać wiadomość <strong>czerwony</strong>.</p>
+<p><img src="f9efde99599165dad06b0c67c0bb2a1cb07979c1.png" alt="    kiedy duszek kliknięty
+    nadaj [czerwony v]" /></p></li>
+</ul>
+<p><strong>Tak, to wszystko, co ma robić ten duszek. Całą trudną robotą zajmuje się kredka.</strong></p>
+<p>Przejdź do duszka-kredki i zaimportuj kostium z pliku <strong>Zasoby/czerwona-kredka</strong>. Ustaw środek kostiumu na końcu rysika tak jak dla oryginalnego kostiumu.</p>
+<ul>
+<li><p>Dodaj nowy skrypt do kredki. Kiedy kredka otrzyma wiadomość <strong>czerwony</strong>, powinna zmienić swój kostium oraz zmienić kolor linii. <strong>Wskazówka:</strong> jeżeli klikniesz na kolorowy kwadrat bloku <code class="blockgreen">ustaw kolor pisaka na</code>, kursor zmieni się w pipetę – możesz nią kliknąć na czerwonym duszku, aby upewnić się, że używasz tego samego odcienia czerwonego.</p>
+<p><img src="f922c2c0bc81206f53c5b730fa1566c1afb04f5f.png" alt="    kiedy otrzymam [czerwony v]
+    zmień kostium na [czerwona-kredka v]
+    ustaw kolor pisaka na [#FF0000]" /></p></li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-3" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Narysuj linię, a następnie kliknij na przycisk zmiany koloru na czerwony i narysuj coś jeszcze. Czy kredka zmieniła kostium? Czy rysuje teraz na czerwono? Czy rysuje końcem rysika?</p>
+</section>
+<section id="zapisz-swoj-projekt.-2" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="zadania-do-wykonania-4" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Powtórz powyższe kroki dodając duszki wyboru niebieskiego, żółtego i zielonego koloru.</li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-4" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Czy wszystkie przyciski wyboru koloru działają? Czy wszystkie zmieniają kostium na odpowiedni kolor? Czy po zmianie wszystkie linie są w odpowiednim kolorze? Czy wszystkie kredki rysują czubkiem rysika?</p>
+</section>
+<section id="zapisz-swoj-projekt.-3" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+</section>
+<section id="krok-4-rysowanie-tylko-wewnatrz-danego-obszaru" class="level1 activity">
+<h1>Krok 4: Rysowanie tylko wewnątrz danego obszaru</h1>
+<p>Teraz możemy rysować po całej scenie, nie tylko po tablicy. Trzeba to naprawić. Chcemy, aby można było rysować tylko po tablicy, trzeba więc będzie pilnować, aby kredka nie wyszła poza dozwolony obszar (czyli tablicę).</p>
+<p>Pamiętaj, że Scratch określa punkty korzystając ze współrzędnych na osiach x i y. Tablica, po której chcemy rysować, znajduje się pomiędzy punktem -230 a 230 na osi x i pomiędzy -120 a 170 na osi y. Możemy użyć te wartości w bloku <strong>jeżeli</strong>, aby sprawdzać, czy kursor myszy znajduje się w tym obszarze, zanim przesuniemy ołówek w jego kierunku.</p>
+<p>Aby to zrobić, owiń istniejące bloki <code class="blockblue">idź do...</code> <code class="blockyellow">jeżeli</code> w kolejny blok <code class="blockyellow">jeżeli</code>, który będzie sprawdzał położenie kursora myszy. Współrzędne kursora na osi x powinny być większe -230 i mniejsze niż 230, a współrzędne na osi y powinny być większe niż -120 i mniejsze od 170.</p>
+<p><strong>Uwaga</strong>. Aby to zrobić, potrzebujesz użyć kilku bloków z operatorem <code class="blockgreen">i</code>: jeden dla obu warunków dla współrzędnych na osi x, jeden dla obu warunków dla współrzędnych na osi y oraz jeden do połączenia wszystkich warunków ze sobą.</p>
+<pre><code>```blocks
+    wyczyść
+    zawsze
+        jeżeli &lt;&lt;&lt;(x myszy) &gt; (-230)&gt; i &lt;(x myszy) &lt; (230)&gt;&gt; i &lt;&lt;(y myszy) &gt; (-120)&gt; i &lt;(y myszy) &lt; (170)&gt;&gt;&gt; to
+            idź do [wskaźnik myszy v]
+        koniec
+    koniec
+```</code></pre>
+<p>Skoro nie możemy rysować poza wyznaczonym obszarem, byłoby dobrze chować kredkę, kiedy wyjdziemy poza tablicę. Aby to zrobić, zamień blok <code class="blockyellow">jeżeli</code> na blok <code class="blockyellow">jeżeli... w przeciwnym razie</code>. Zostaw warunek, który masz w <code class="blockyellow">jeżeli</code> i <code class="blockblue">pokaż</code> kredkę, kiedy to prawda, w przeciwnym wypadku schowaj ją.</p>
+<pre><code>```blocks
+    kiedy kliknięto zieloną FLAGĘ
+    podnieś pisak
+    wyczyść
+    zawsze
+        jeżeli &lt;&lt;&lt;(x myszy) &gt; (-230)&gt; i &lt;(x myszy) &lt; (230)&gt;&gt; i &lt;&lt;(y myszy) &gt; (-120)&gt; i &lt;(y myszy) &lt; (170)&gt;&gt;&gt; to
+            idź do [wskaźnik myszy v]
+            pokaż
+            jeżeli (wciśnięty klawisz myszy?) to
+                przyłóż pisak
+            w przeciwnym razie
+                podnieś pisak
+            koniec
+        w przeciwnym razie
+            ukryj
+        koniec
+    koniec
+```</code></pre>
+<section id="przetestuj-swoj-projekt-5" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Czy możesz ciągle rysować po tablicy? Możesz rysować poza tym obszarem? Co się dzieje, kiedy wyjdziesz poza obszar, po którym można rysować, a potem do niego wrócisz?</p>
+</section>
+<section id="zapisz-swoj-projekt.-4" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+</section>
+<section id="krok-5-gumka" class="level1 activity">
+<h1>Krok 5: Gumka</h1>
+<p><strong>Super, że możemy już rysować, ale przydałoby się dodać gumkę do poprawiania drobnych błędów.</strong> Możemy to zrobić dodając nową kredkę, która rysuje na szaro (czyli w tym samym kolorze, co tło).</p>
+<p>Dodaj nowego duszka i wybierz dla niego kostium z pliku <strong>Zasoby/gumka</strong>. Zmniejsz go, aby zmieścił się na dole ekranu i pasował do pozostałych przycisków. Nowy przycisk powinien działać tak samo, jak poprzednie i nadawać informacje, że jest gumką.</p>
+<p>Duszek-kredka powinien reagować na wiadomość gumki i zmieniać kolor na szary (pamiętaj, że możesz użyć pipetę, aby wybrać odpowiedni kolor z tła). Duszek potrzebuje też nowy kostium – użyj tej samej gumki, co do przycisku wcześniej. <strong>Pamiętaj, aby ustawić środek duszka na jego końcu</strong>.</p>
+<section id="przetestuj-swoj-projekt-6" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Czy gumka działa? Czy działa przy samych brzegach ekranu? Możesz przełączać się między gumką a kredkami?</p>
+</section>
+<section id="zapisz-swoj-projekt.-5" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+</section>
+<section id="krok-6-pieczatka" class="level1 activity">
+<h1>Krok 6: Pieczątka</h1>
+<p>Następną rzeczą, którą możemy dodać, jest pieczątka, przy pomocy której będziemy dodawać małe obrazki na tablicę.</p>
+<section id="zadania-do-wykonania-5" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li>Dodaj nowego duszka i wybierz mu taki kostium, jaki tylko chcesz. Zmniejsz go i ustaw na liście obok przycisków wyboru koloru. Po kliknięciu, duszek powinien nadawać wiadomość <strong>pieczątka</strong>.<br /></li>
+<li>Dodaj wybranego duszka jako nowy kostium dla kredki.<br /></li>
+<li>Zaznacz duszka-kredkę i dodaj do niej <code class="blocklightgrey">zmienną</code> <code class="blockorange">rysowanie</code>. Zmienna powinna być dostępna tylko dla tego duszka. Będziemy jej używać do sprawdzania, czy rysujemy, czy też stawiamy pieczątki.<br /></li>
+<li>Dodaj skrypt, który odbiera wiadomość nadaną przez pieczątkę. Skrypt powinien zmieniać kostium kredki oraz ustawiać zmienną <code class="blockorange">rysowanie</code> na <strong>fałsz</strong>.<br /></li>
+<li>Zmień pozostałe skrypty kredki, które reagują na wiadomości nadawane przez przyciski z tablicy, aby ustawiały zmienną <code class="blockorange">rysowanie</code> na <strong>prawda</strong>.<br /></li>
+<li>Na koniec, sprawdzajmy tą zmienną <strong>kiedy wciśnięty jest przycisk myszy</strong>, aby się upewnić, czy powinniśmy rysować, czy stawiać pieczątki. Jeżeli <code class="blockorange">rysowanie</code> = prawda, powinniśmy używać bloku <code class="blockgreen">przyłóż pisak</code>. Jeżeli nie, powinniśmy użyć bloku <code class="blockgreen">stempluj</code>.</li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-7" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Czy pieczątka działa jak trzeba?</p>
+<p>Co się dzieje, jeżeli przełączysz z powrotem na zwykłą kredkę?</p>
+</section>
+<section id="zapisz-swoj-projekt.-6" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+<p><strong>Brawo! Udało Ci się zakończyć podstawowe elementy tego projektu. Teraz spróbuj zmierzyć się z poniższymi wyzwaniami!</strong></p>
+</section>
+<section id="wyzwanie-1-teczowa-kredka" class="level2 challenge">
+<h2>Wyzwanie 1: Tęczowa kredka</h2>
+<p><strong>Dodajmy specjalną kredkę, który rysuje we wszystkich kolorach tęczy.</strong> Zwykłe kredki tego nie potrafią, więc masz teraz okazję pokazać, że rysowanie na komputerze pozwala robić rzeczy, które nie są normalnie możliwe. Aby to zrobić, musisz często zmieniać kolor kredki.</p>
+<p><strong>Na początek dodaj jednak przycisk wyboru tęczowego koloru i tęczowy kostium dla duszka-kredki:</strong></p>
+<ul>
+<li><strong>Dodaj nowego duszka z wyborem koloru</strong> na dole tablicy, tuż obok innych przycisków. Skorzystaj z kostiumu z pliku 'Zasoby/teczowy-kolor' i każ mu nadawać wiadomość <strong>tęcza</strong> po kliknięciu.<br /></li>
+<li>Dodaj kostium z pliku 'Zasoby/teczowa-kredka' do duszka-kredki.</li>
+</ul>
+<p>Potrzebujesz zbudować skrypt, który będzie zmieniał kolor kredki wiele razy w ciągu sekundy, aby oddać efekt tęczy. Zmienianie koloru o 5 co 0,05 sekundy działa całkiem dobrze, ale przetestuj inne wartości. Skorzystaj z bloku <code class="blockgreen">zmień kolor pisaka o 5</code>.</p>
+<p>Musisz też pilnować, aby ta pętla zmieniała kolory tylko wtedy, kiedy jest wybrana tęczowa kredka – w przeciwnym razie wszystkie kredki będą rysować na tęczowo! Możesz to zrobić w sposób podobny do tego, w który kontrolujesz, czy rysujesz, czy stawiasz pieczątki. Musisz stworzyć <code class="blocklightgrey">zmienną</code> <code class="blockorange">pokażTęczę</code>, która ma wartość <strong>prawda</strong> jeżeli chcesz rysować tęczę i wartość <strong>fałsz</strong>, jeżeli nie chcesz. Za każdym razem, gdy kredka reaguje na wiadomość odebraną od przycisku na dole tablicy, powinna ustawiać odpowiednią wartość dla zmiennej <code class="blockorange">pokażTęczę</code>.</p>
+<p><strong>Użyj przykładu z pieczątkami, aby nauczyć się kontrolować tęczę</strong>. Każdy skrypt, który reaguje na wiadomości nadawane przez przyciski wyboru na tablicy, będzie musiał ustawiać wartość dwóch <strong>zmiennych</strong>: <code class="blockorange">rysowanie</code> i <code class="blockorange">pokażTęczę</code>.</p>
+</section>
+<section id="przetestuj-swoj-projekt-8" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Czy rysowanie na tęczowo działa jak należy?</p>
+<p>Co się dzieje, kiedy przełączasz się między tęczową kredką a pozostałymi narzędziami?</p>
+</section>
+<section id="zapisz-swoj-projekt.-7" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="wyzwanie-2-skroty-klawiszowe" class="level2 challenge">
+<h2>Wyzwanie 2: Skróty klawiszowe</h2>
+<p>Zamiast klikać na przyciski na dole tablicy, możesz używać klawiatury, aby przełączać się pomiędzy różnymi narzędziami. Możesz skorzystać z bloku <code class="blockyellow">jeżeli</code><code class="blocklightblue">klawisz [] naciśnięty</code>, aby reagować na komendy klawiatury. Dla każdego skrótu, którego chcesz użyć, potrzebujesz ustawić osobny blok <code class="blockyellow">jeżeli</code><code class="blocklightblue">klawisz [] naciśnięty</code>, który prześle tą samą wiadomość, którą nadałby kliknięty odpowiedni przycisk. Dodaj te skrypty do sceny.</p>
+<p>My skorzystaliśmy z tych skrótów:</p>
+<ul>
+<li>Wyczyść wszystko - w<br /></li>
+<li>Gumka - g<br /></li>
+<li>Czerwony ołówek - c<br /></li>
+<li>Niebieski ołówek - n<br /></li>
+<li>Żółty ołówek - x<br /></li>
+<li>Zielony ołówek - z<br /></li>
+<li>Tęczowy ołówek - t<br /></li>
+<li>Pieczątka - p</li>
+</ul>
+</section>
+<section id="przetestuj-swoj-projekt-9" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Czy wszystkie skróty klawiszowe działają? Czy możesz wybierać wszystkie narzędzia przy pomocy klawiatury? Czy klikanie na przyciski na tablicy dalej działa?</p>
+</section>
+<section id="zapisz-swoj-projekt.-8" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+</section>
+<section id="wyzwanie-3-rozne-rozmiary-linii" class="level2 challenge">
+<h2>Wyzwanie 3: Różne rozmiary linii</h2>
+<p><strong>Następną opcją, która jest dostępna w programach graficznych, jest możliwość zmieniania rozmiaru linii. Dodajmy to do naszego projektu.</strong></p>
+<p>Mamy jeden problem, z którym trzeba będzie się zmierzyć: zmiana rozmiaru czasami musi zmienić rozmiar kredki, a czasami rozmiar kostiumu duszka. Wszystko zależy od tego, czy rysujemy, czy też stawiamy pieczątki.</p>
+<p><strong>Stwórz dwa nowe duszki-przyciski</strong> na tablicy i nazwij je <strong>powiększ</strong> i <strong>pomniejsz</strong>. Dodaj do nich odpowiednie kostiumy z katalogu Zasoby. Oba duszki powinny też nadawać odpowiednie wiadomości (powiększ i pomniejsz) po kliknięciu.</p>
+<p>Duszek-kredka może reagować na te wiadomości na dwa sposoby: albo zmieniając rozmiar pisaka o 1, albo rozmiar kostiumu o 10, w zależności od wartości zmiennej <strong>rysowanie</strong>. Skorzystaj z bloku <code class="blockyellow">jeżeli ... w przeciwnym razie</code>, aby to kontrolować – podobnie jak w przypadku wybierania między przyłożeniem pisaka a stawianiem pieczątek.</p>
+<p>Nie zapomnij dodać skrótów klawiszowych dla nowego narzędzia (my dodaliśmy strzałkę w górę i dół).</p>
+</section>
+<section id="zapisz-swoj-projekt.-9" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+<p>Pewnie udało Ci się zauważyć, że zmiana rozmiaru pieczątki zmienia też rozmiar duszka na ekranie, łączenie z kredkami. Aby tego uniknąć, musisz ustawiać rozmiar kostiumu na 100% za każdym razem, kiedy przełączasz się na kredkę. Pomoże to zachować odpowiedni rozmiar kredek.</p>
+<p>Możesz jeszcze bardziej ulepszyć swoje narzędzia, każąc pieczątce zapamiętać swój rozmiar, tak aby po przełączeniu się na kredkę czy gumkę można było wrócić do starego rozmiaru pieczątki. Najłatwiejszym rozwiązaniem jest dodanie <code class="blocklightgrey">zmiennej</code> <code class="blockorange">rozmiarPieczątki</code>, która zapisuje obecny rozmiar pieczątki po każdej jego zmianie. Po ponownym wybraniu pieczątki, powinna ona odczytać tę zmienną i wybrać odpowiedni rozmiar.</p>
+</section>
+<section id="przetestuj-swoj-projekt-10" class="level2 flag">
+<h2>Przetestuj swój projekt</h2>
+<p><strong>Kliknij zieloną flagę.</strong></p>
+<p>Czy przyciski zmiany rozmiaru działają dla kredek?</p>
+<p>Co się dzieje, kiedy przełączasz się na pieczątkę, zmieniasz jej rozmiar i przełączasz się na kredkę?</p>
+</section>
+<section id="zapisz-swoj-projekt.-10" class="level2 save">
+<h2>Zapisz swój projekt.</h2>
+<p><strong>Brawo! To by było na tyle, teraz możesz się cieszyć swoją grą!</strong></p>
+<p>Nie zapomnij, że możesz podzielić się swoją grą ze swoimi przyjaciółmi i rodziną. Żeby to zrobić, kliknij menu <strong>Udostępnij</strong>.</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
