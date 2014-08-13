@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="world"  lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>(Beta) Compliment Generator — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">(Beta) Compliment Generator</h1>
+      <span class="level-indicator">Level 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Python</a></li><li class="breadcrumbs-item current">(Beta) Compliment Generator</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="heads-up" class="level1 beta">
+<h1>Head's up!</h1>
+<p>This project is in Beta. That means we're still testing it, and there's a small chance there could be some bugs or typos. If you're a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/1eMCfpYe3v7eYu5M8rSqLKlmq7cczLCLHx66csgyUyVU/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email <script type="text/javascript">
+<!--
+h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
+</section>
+<section id="introduction" class="level1 intro">
+<h1>Introduction:</h1>
+<p>Learn how to use lists, to store lots of data in 1 variable.</p>
+</section>
+<section id="step-1-its-nice-to-be-nice" class="level1 activity">
+<h1>Step 1: It's nice to be nice</h1>
+<p>In this project, you'll make a program to give the user a randomly generated compliment!</p>
+<section id="activity-checklist" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>In your projects so far, you've used a variable to store a single piece of data, such as a name or a score. But what if you want to store lots of data? In Python, you can use a <em>list</em> to store lots of data in 1 variable:</li>
+</ul>
+<pre class="language-python"><code>bigPlanets = [ &quot;jupiter&quot; , &quot;saturn&quot; , &quot;uranus&quot; , &quot;neptune&quot;]</code></pre>
+<p>This list of text is also known as an <em>array</em> of text. To access items in the list, you just need to know the position of the item. Run this program to give yourself a better idea of how lists work:</p>
+<pre class="language-python"><code>bigPlanets = [ &quot;jupiter&quot; , &quot;saturn&quot; , &quot;uranus&quot; , &quot;neptune&quot;]
+print( bigPlanets )
+print( bigPlanets[0] )
+print( bigPlanets[1] )
+print( bigPlanets[2] )
+print( bigPlanets[3] )</code></pre>
+<p><img src="compliment-planets.png" alt="screenshot" /></p>
+<p>As you can see, positions start at 0 and not 1, so <code>bigPlanets[1]</code> is &quot;saturn&quot; (the second item) and not &quot;jupiter&quot;.</p>
+<ul>
+<li>You can use a list called <code>compliments</code> to store all of the possible compliments for your compliment generator program, and then use <code>random.choice(compliments)</code> to choose a random compliment for the user:</li>
+</ul>
+<pre class="language-python"><code>import random
+
+print(&quot;Compliment Generator&quot;)
+print(&quot;--------------------&quot;)
+
+compliments = [ &quot;Great job on that thing you did. Really super.&quot; ,
+                &quot;You have really really nice programming skills.&quot; ,
+                &quot;You make an excellent human.&quot;
+              ]
+
+#print a random item in the &#39;compliments&#39; list
+print(random.choice(compliments))
+print(&quot;You&#39;re welcome!&quot;)</code></pre>
+<p><img src="compliment-list.png" alt="screenshot" /></p>
+<ul>
+<li>You could make your compliments a little more interesting, by combining random items from 2 different lists:</li>
+</ul>
+<pre class="language-python"><code>import random
+
+print(&quot;Compliment Generator&quot;)
+print(&quot;--------------------&quot;)
+
+adjectives = [ &quot;amazing&quot; , &quot;above-average&quot; , &quot;excellent&quot; ]
+hobbies = [ &quot;riding a bike&quot; , &quot;programming&quot; , &quot;making a cup of tea&quot; ]
+
+name = input(&quot;What is your name?: &quot;)
+print( &quot;Here is your compliment&quot; , name , &quot;:&quot; )
+
+#get a random item from both lists, and add them to the compliment
+print( name , &quot;you are&quot; , random.choice(adjectives) , &quot;at&quot; , random.choice(hobbies) )
+print( &quot;You&#39;re welcome!&quot; )</code></pre>
+<p><img src="compliment-2lists.png" alt="screenshot" /></p>
+</section>
+<section id="challenge-adding-more-compliments" class="level2 challenge">
+<h2>Challenge: Adding more compliments</h2>
+<p>Try to think of some more compliments, and add them to your program! Remember that you need to add a comma (<code>,</code>) between the items in your lists.</p>
+</section>
+</section>
+<section id="step-2-endless-compliments" class="level1 activity">
+<h1>Step 2: Endless compliments</h1>
+<section id="activity-checklist-1" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>Using what you know about <code>while</code> loops and <code>if</code> statements, you could modify your program to keep giving out compliments until the user decides to quit:</li>
+</ul>
+<pre class="language-python"><code>import random
+
+#the program loops as long as this variable is &#39;True&#39;
+running = True
+
+adjectives = [ &quot;amazing&quot; , &quot;above-average&quot; , &quot;excellent&quot; ]
+hobbies = [ &quot;riding a bike&quot; , &quot;programming&quot; , &quot;making a cup of tea&quot; ]
+
+print(&quot;Compliment Generator&quot;)
+print(&quot;--------------------&quot;)
+
+name = input(&quot;What is your name?: &quot;)
+
+print(&#39;&#39;&#39;
+Menu
+  c = get compliment
+  q = quit
+&#39;&#39;&#39;)
+
+while running == True:
+
+    choice = input(&quot;\n&gt;_&quot;).lower()
+
+    #&#39;c&#39; for a compliment
+    if choice == &#39;c&#39;:
+
+        print( &quot;Here is your compliment&quot; , name , &quot;:&quot; )
+
+        #get a random item from both lists, and add them to the compliment
+        print( name , &quot;you are&quot; , random.choice(adjectives) , &quot;at&quot; , random.choice(hobbies) )
+        print( &quot;You&#39;re welcome!&quot; )
+
+    #&#39;q&#39; to quit
+    elif choice == &#39;q&#39;:
+
+        running = False
+        
+    else:
+
+        print(&quot;Please choose a valid option!&quot;)</code></pre>
+<p><img src="compliment-loop.png" alt="screenshot" /></p>
+<p>Remember that the the <code>while</code> loop continues to run as long as the variable <code>running</code> is set to <code>True</code>. If the user inputs <code>q</code> to quit, <code>running</code> is set to <code>False</code>.</p>
+</section>
+</section>
+<section id="step-3-personalising-compliments" class="level1 activity">
+<h1>Step 3: Personalising compliments</h1>
+<section id="activity-checklist-2" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>Your compliment generator is starting to take shape, but it has a problem: what if your user can't ride a bike or make a cup of tea? In that case, your compliments won't be true, and won't cheer them up!</li>
+</ul>
+<p>Let's modify your program, so that the user can choose to add or remove items from the <code>hobbies</code> list, to allow them to personalise the compliments they receive:</p>
+<pre class="language-python"><code>import random
+
+running = True
+adjectives = [ &quot;amazing&quot; , &quot;above-average&quot; , &quot;excellent&quot; ]
+hobbies = [ &quot;riding a bike&quot; , &quot;programming&quot; , &quot;making a cup of tea&quot; ]
+
+print(&quot;Compliment Generator&quot;)
+print(&quot;--------------------&quot;)
+
+name = input(&quot;What is your name?: &quot;)
+
+print(&#39;&#39;&#39;
+Menu
+  c = get compliment
+  a = add hobby to list
+  d = delete hobby from list
+  p = print hobbies
+  q = quit
+&#39;&#39;&#39;)
+
+while running == True:
+
+    choice = input(&quot;\n&gt;_&quot;).lower()
+
+    #&#39;c&#39; for a compliment
+    if choice == &#39;c&#39;:
+
+        print( &quot;Here is your compliment&quot; , name , &quot;:&quot; )
+
+        #get a random item from both lists, and add them to the compliment
+        print( name , &quot;you are&quot; , random.choice(adjectives) , &quot;at&quot; , random.choice(hobbies) )
+        print( &quot;You&#39;re welcome!&quot; )
+
+    #&#39;a&#39; to add a hobby
+    elif choice == &#39;a&#39;:
+
+        itemToAdd = input(&quot;Please enter the hobby to add: &quot;)
+        hobbies.append(itemToAdd)
+
+    #&#39;d&#39; to delete a hobby
+    elif choice == &#39;d&#39;:
+
+        itemToDelete = input(&quot;Please enter the hobby to remove: &quot;)
+        hobbies.remove(itemToDelete)
+
+    #&#39;p&#39; to print the hobbies list
+    elif choice == &#39;p&#39;:
+        print(hobbies)
+
+    #&#39;q&#39; to quit
+    elif choice == &#39;q&#39;:
+
+        running = False
+        
+    else:
+        
+        print(&quot;Please choose a valid option!&quot;)</code></pre>
+<p>As you can see, you can use <code>append()</code> to add to a list, and <code>remove()</code> to remove an item. Run this program, and personalise the hobbies in the list to suit you. Ask the program for compliments until you're in a good mood!</p>
+<ul>
+<li>When testing the program above, did you run into any problems? At the moment, your compliment generator crashes if you try and remove a compliment that isn't in the list:</li>
+</ul>
+<p><img src="compliment-error.png" alt="screenshot" /></p>
+<p>You can fix this problem, by first checking that the item to remove exists in the list. Replace your code to remove a hobby with this code:</p>
+<pre class="language-python"><code>    #&#39;d&#39; to delete a hobby
+    elif choice == &#39;d&#39;:
+
+        itemToDelete = input(&quot;Please enter the hobby to remove: &quot;)
+        #only remove an item if it&#39;s in the list
+        if itemToDelete in hobbies:
+            hobbies.remove(itemToDelete)
+        else:
+            print(&quot;Hobby not in list!&quot;)</code></pre>
+<p>Now run the program and try to delete a hobby that isn't in the list:</p>
+<p><img src="compliment-errorfix.png" alt="screenshot" /></p>
+</section>
+<section id="challenge-duplicate-hobbies" class="level2 challenge">
+<h2>Challenge: Duplicate hobbies</h2>
+<p>Another problem with the program is that it is possible to add the same hobby more than once:</p>
+<p><img src="compliment-hobbiesx2.png" alt="screenshot" /></p>
+<p>Can you fix this problem, so that a hobby can only be added if it isn't already in the list:</p>
+<pre class="language-python"><code>if itemToAdd not in hobbies:
+    #add code here...</code></pre>
+</section>
+<section id="challenge-pet-naming-service" class="level2 challenge">
+<h2>Challenge: Pet naming service</h2>
+<p>Write a program to help a new pet owner to name their pet:</p>
+<p><img src="compliment-pet.png" alt="screenshot" /></p>
+<p>Your program could:</p>
+<ul>
+<li>allow the user to add and remove names from the list;<br /></li>
+<li>give different names for male and female pets, or different types of animal;<br /></li>
+<li>ask the user how many names they need, in case they have more than 1 pet to name.</li>
+</ul>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub (<a href="https://github.com/CodeClub/">https://github.com/CodeClub</a>), come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
