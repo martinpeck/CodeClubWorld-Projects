@@ -56,16 +56,16 @@
 <li>Change <code>&lt;d1&gt;</code> back to <code>&lt;h1&gt;</code> and save again.<br /></li>
 <li>Find one of the <code>&lt;img&gt;</code> tags. We've just tried misspelling the tag name and the browser wasn't sure what to do with it. But what if we misspell the attribute?</li>
 </ul>
-<p>Inside <code>&lt;img&gt;</code> tag we have the <code>href</code> and <code>alt</code> attributes:</p>
-<pre class="language-markup"><code>&lt;img href=&quot;kitten.jpg&quot; alt=&quot;This is a kitten.&quot; /&gt;</code></pre>
+<p>Inside <code>&lt;img&gt;</code> tag we have the <code>src</code> and <code>alt</code> attributes:</p>
+<pre class="language-markup"><code>&lt;img src=&quot;kitten.jpg&quot; alt=&quot;This is a kitten.&quot; /&gt;</code></pre>
 <ul>
-<li>Try changing <code>href</code> to something else. Save the document and refresh in the browser.</li>
+<li>Try changing <code>src</code> to something else. Save the document and refresh in the browser.</li>
 </ul>
-<p>Oh no! The kitten is gone! Suddenly, the browser no longer knows where to look for the picture to display - it is looking for the file name inside the <code>href</code> attribute, which is no longer there.</p>
+<p>Oh no! The kitten is gone! Suddenly, the browser no longer knows where to look for the picture to display - it is looking for the file name inside the <code>src</code> attribute, which is no longer there.</p>
 <ul>
-<li>Change it back to <code>href</code> so we can keep looking at the kitten.<br /></li>
-<li><p>Now remove the second quote (<code>&quot;</code>) from <code>alt</code> attribute of this image: the one after the text, so you end up with this:</p>
-<pre class="language-markup"><code>&lt;img href=&quot;kitten.jpg&quot; alt=&quot;This is a kitten.&quot; /&gt;</code></pre></li>
+<li>Change it back to <code>src</code> so we can keep looking at the kitten.<br /></li>
+<li><p>Now remove the second quote (<code>&quot;</code>) from the <code>alt</code> attribute of this image: the one after the text, so you end up with this:</p>
+<pre class="language-markup"><code>&lt;img src=&quot;kitten.jpg&quot; alt=&quot;This is a kitten. /&gt;</code></pre></li>
 <li><p>Save it and refresh in the browser.</p></li>
 </ul>
 <p>The next tag disappeared. Why? The browser will think that everything after <code>alt=&quot;</code> and before the next quote (<code>&quot;</code>) is the additional text for this image, including the end of the image tag and the next opening tag.</p>
