@@ -55,9 +55,9 @@ print( bigPlanets[3] )</code></pre>
 <p><img src="compliment-planets.png" alt="screenshot" /></p>
 <p>As you can see, positions start at 0 and not 1, so <code>bigPlanets[1]</code> is &quot;saturn&quot; (the second item) and not &quot;jupiter&quot;.</p>
 <ul>
-<li>You can use a list called <code>compliments</code> to store all of the possible compliments for your compliment generator program, and then use <code>random.choice(compliments)</code> to choose a random compliment for the user:</li>
+<li>You can use a list called <code>compliments</code> to store all of the possible compliments for your compliment generator program, and then use <code>choice(compliments)</code> to choose a random compliment for the user:</li>
 </ul>
-<pre class="language-python"><code>import random
+<pre class="language-python"><code>from random import *
 
 print(&quot;Compliment Generator&quot;)
 print(&quot;--------------------&quot;)
@@ -68,13 +68,13 @@ compliments = [ &quot;Great job on that thing you did. Really super.&quot; ,
               ]
 
 #print a random item in the &#39;compliments&#39; list
-print(random.choice(compliments))
+print(choice(compliments))
 print(&quot;You&#39;re welcome!&quot;)</code></pre>
 <p><img src="compliment-list.png" alt="screenshot" /></p>
 <ul>
 <li>You could make your compliments a little more interesting, by combining random items from 2 different lists:</li>
 </ul>
-<pre class="language-python"><code>import random
+<pre class="language-python"><code>from random import *
 
 print(&quot;Compliment Generator&quot;)
 print(&quot;--------------------&quot;)
@@ -86,7 +86,7 @@ name = input(&quot;What is your name?: &quot;)
 print( &quot;Here is your compliment&quot; , name , &quot;:&quot; )
 
 #get a random item from both lists, and add them to the compliment
-print( name , &quot;you are&quot; , random.choice(adjectives) , &quot;at&quot; , random.choice(hobbies) )
+print( name , &quot;you are&quot; , choice(adjectives) , &quot;at&quot; , choice(hobbies) )
 print( &quot;You&#39;re welcome!&quot; )</code></pre>
 <p><img src="compliment-2lists.png" alt="screenshot" /></p>
 </section>
@@ -102,7 +102,7 @@ print( &quot;You&#39;re welcome!&quot; )</code></pre>
 <ul>
 <li>Using what you know about <code>while</code> loops and <code>if</code> statements, you could modify your program to keep giving out compliments until the user decides to quit:</li>
 </ul>
-<pre class="language-python"><code>import random
+<pre class="language-python"><code>from random import *
 
 #the program loops as long as this variable is &#39;True&#39;
 running = True
@@ -123,19 +123,19 @@ Menu
 
 while running == True:
 
-    choice = input(&quot;\n&gt;_&quot;).lower()
+    menuChoice = input(&quot;\n&gt;_&quot;).lower()
 
     #&#39;c&#39; for a compliment
-    if choice == &#39;c&#39;:
+    if menuChoice == &#39;c&#39;:
 
         print( &quot;Here is your compliment&quot; , name , &quot;:&quot; )
 
         #get a random item from both lists, and add them to the compliment
-        print( name , &quot;you are&quot; , random.choice(adjectives) , &quot;at&quot; , random.choice(hobbies) )
+        print( name , &quot;you are&quot; , choice(adjectives) , &quot;at&quot; , choice(hobbies) )
         print( &quot;You&#39;re welcome!&quot; )
 
     #&#39;q&#39; to quit
-    elif choice == &#39;q&#39;:
+    elif menuChoice == &#39;q&#39;:
 
         running = False
         
@@ -154,7 +154,7 @@ while running == True:
 <li>Your compliment generator is starting to take shape, but it has a problem: what if your user can't ride a bike or make a cup of tea? In that case, your compliments won't be true, and won't cheer them up!</li>
 </ul>
 <p>Let's modify your program, so that the user can choose to add or remove items from the <code>hobbies</code> list, to allow them to personalise the compliments they receive:</p>
-<pre class="language-python"><code>import random
+<pre class="language-python"><code>from random import *
 
 running = True
 adjectives = [ &quot;amazing&quot; , &quot;above-average&quot; , &quot;excellent&quot; ]
@@ -176,35 +176,35 @@ Menu
 
 while running == True:
 
-    choice = input(&quot;\n&gt;_&quot;).lower()
+    menuChoice = input(&quot;\n&gt;_&quot;).lower()
 
     #&#39;c&#39; for a compliment
-    if choice == &#39;c&#39;:
+    if menuChoice == &#39;c&#39;:
 
         print( &quot;Here is your compliment&quot; , name , &quot;:&quot; )
 
         #get a random item from both lists, and add them to the compliment
-        print( name , &quot;you are&quot; , random.choice(adjectives) , &quot;at&quot; , random.choice(hobbies) )
+        print( name , &quot;you are&quot; , choice(adjectives) , &quot;at&quot; , choice(hobbies) )
         print( &quot;You&#39;re welcome!&quot; )
 
     #&#39;a&#39; to add a hobby
-    elif choice == &#39;a&#39;:
+    elif menuChoice == &#39;a&#39;:
 
         itemToAdd = input(&quot;Please enter the hobby to add: &quot;)
         hobbies.append(itemToAdd)
 
     #&#39;d&#39; to delete a hobby
-    elif choice == &#39;d&#39;:
+    elif menuChoice == &#39;d&#39;:
 
         itemToDelete = input(&quot;Please enter the hobby to remove: &quot;)
         hobbies.remove(itemToDelete)
 
     #&#39;p&#39; to print the hobbies list
-    elif choice == &#39;p&#39;:
+    elif menuChoice == &#39;p&#39;:
         print(hobbies)
 
     #&#39;q&#39; to quit
-    elif choice == &#39;q&#39;:
+    elif menuChoice == &#39;q&#39;:
 
         running = False
         
@@ -218,7 +218,7 @@ while running == True:
 <p><img src="compliment-error.png" alt="screenshot" /></p>
 <p>You can fix this problem, by first checking that the item to remove exists in the list. Replace your code to remove a hobby with this code:</p>
 <pre class="language-python"><code>    #&#39;d&#39; to delete a hobby
-    elif choice == &#39;d&#39;:
+    elif menuChoice == &#39;d&#39;:
 
         itemToDelete = input(&quot;Please enter the hobby to remove: &quot;)
         #only remove an item if it&#39;s in the list
