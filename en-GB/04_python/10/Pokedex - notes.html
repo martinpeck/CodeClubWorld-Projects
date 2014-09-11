@@ -6,7 +6,7 @@
 
     <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
 
-    <title>(Beta) RPG — Notes for Club Leaders — Code Club World Projects</title>
+    <title>(Beta) Pokedex — Notes for Club Leaders — Code Club World Projects</title>
 
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
@@ -16,7 +16,7 @@
   <body class="index-template world">
     <header class="header" role="banner">
       <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
-      <h1 class="title">(Beta) RPG — Notes for Club Leaders</h1>
+      <h1 class="title">(Beta) Pokedex — Notes for Club Leaders</h1>
       
     </header>
 
@@ -25,45 +25,51 @@
     <main class="main lesson-steps" role="main">
 <section id="introduction" class="level1">
 <h1>Introduction:</h1>
-<p>This project teaches game design through the development of an RPG maze game. In this game, the player has to pick up objects within a house and get to a specific room, while avoiding monsters lurking in some of the rooms. This game will be achieved by manipulating dictionaries and lists.</p>
+<p>This project teaches students how to make a graphical user interface (GUI), by making a Pokedex for displaying information on Pokemon. This project accesses the <a href="http://pokeapi.co/">pokeAPI</a>, developed by <a href="http://phalt.co/?ref=pokeapi">Paul Hallett</a>.</p>
 </section>
 <section id="resources" class="level1">
 <h1>Resources</h1>
 <p>For this project, Python will need to be installed. It is recommended that version 3.2 of Python is installed.</p>
 <p>Students can also make use of the materials which accompany these challenges. Files included in this project's Resources folder (found under the 'Download Project Materials' link):</p>
 <ul>
-<li>RPG.py</li>
+<li>GUI.py (short example program)<br /></li>
+<li>pokeapi.py (module used for retrieving data)<br /></li>
+<li><p>Club Leader Resources (for demonstration purposes)</p>
+<ul>
+<li>pokedex-finished.py<br /></li>
+<li>pokedex-finished-with-images.py<br /></li>
+<li>pokeapi.py (module used for retrieving data)</li>
+</ul></li>
 </ul>
 <p>Make sure that each student has read and write access to their own copy of these resources.</p>
 </section>
 <section id="learning-objectives" class="level1">
 <h1>Learning Objectives</h1>
 <ul>
-<li>Game design;<br /></li>
-<li><p>Editing:</p>
+<li><p>Graphical User Interface elements (widgets):</p>
 <ul>
-<li>Lists;<br /></li>
-<li>Dictionaries.<br /></li>
+<li>Text boxes;<br /></li>
+<li>Labels;<br /></li>
+<li>Buttons.<br /></li>
 </ul></li>
-<li>‘if’ statements;<br /></li>
-<li><p>Boolean expressions.</p></li>
+<li>Customising widgets with the <code>.config()</code> method;<br /></li>
+<li><p>Using buttons to execute functions and update widgets.</p></li>
 </ul>
 </section>
 <section id="challenges" class="level1">
 <h1>Challenges</h1>
 <ul>
-<li>Adding new rooms;<br /></li>
-<li>Adding items to collect;<br /></li>
-<li>Adding enemies to avoid;<br /></li>
-<li>Develop your own game.</li>
+<li>More widgets - adding widgets to a GUI window;<br /></li>
+<li>Making widgets look nice - changing widget look and feel, using the <code>.config()</code> method;<br /></li>
+<li>Finishing your Pokedex - dynamically changing label values within the program.</li>
 </ul>
 </section>
-<section id="frequently-asked-questions" class="level1">
-<h1>Frequently Asked Questions</h1>
+<section id="potential-problems" class="level1">
+<h1>Potential Problems</h1>
 <ul>
-<li>Students may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding a new room to the 'rooms' dictionary, a comma needs to be added between the new room being added and the previous room.<br /></li>
-<li>When adding a new room, students may forget to add a link to an existing room to the newly created room. This will mean that students can leave a room, but not enter it!<br /></li>
-<li>The code for checking whether the player has won or lost the game needs to be indented, to ensure that this check is performed upon entering each new room. If the code isn't indented, then it sits outside of the main game loop and is never run.</li>
+<li>Make sure that children have a copy of the <code>pokeapi.py</code> file, and that it's saved in the same place as the program they are writing!<br /></li>
+<li>When the GUI program is run, the GUI window may be hidden behind the Python shell window. Minimising the shell should reveal the window!<br /></li>
+<li>Only .gif images can be displayed in a GUI window. For the optional 'Adding an image' section of the Pokedex, the <a href="https://pypi.python.org/pypi/Pillow/2.2.1#downloads">'pillow' module</a> will need to be installed. You can test whether you have pillow installed, by simply running <code>from PIL import Image</code>. If no errors are returned, then it should work!</li>
 </ul>
 </section>
     </main>
