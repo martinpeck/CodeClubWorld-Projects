@@ -20,7 +20,7 @@
       <span class="level-indicator">Term 1</span>
     </header>
 
-    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Python</a></li><li class="breadcrumbs-item current">(Beta) Turtle Power</li></ul></nav>
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Python Term 1</a></li><li class="breadcrumbs-item current">(Beta) Turtle Power</li></ul></nav>
 
     <main class="main lesson-steps" role="main">
 <section id="heads-up" class="level1 beta">
@@ -42,8 +42,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Let's make a turtle move around the screen, by running this short Python program:</li>
-</ul>
+<li><p>Let's make a turtle move around the screen, by running this short Python program:</p>
 <pre class="language-python"><code>from turtle import *
 shape(&quot;turtle&quot;)
 speed(5)
@@ -53,22 +52,18 @@ right(90)
 forward(100)
 
 done()</code></pre>
-<p><img src="turtle.png" alt="screenshot" /></p>
-<ul>
+<p><img src="turtle.png" alt="screenshot" /></p></li>
 <li><p>The turtle has a pen attached, and draws a line as it moves around the screen. Here's what the program does:</p>
 <ul>
 <li><p><code>from turtle import *</code> tells Python that you want to use the turtle library, a collection of code you can use to draw on the screen. The <code>*</code> means 'import everything'.</p></li>
 <li><p><code>shape(&quot;turtle&quot;)</code> makes the drawing robot look like a turtle. As well as turtle, you can also use &quot;arrow&quot;, &quot;circle&quot;, &quot;square&quot;, &quot;triangle&quot; or &quot;classic&quot;.</p></li>
 <li><p><code>speed(5)</code> tells the turtle how fast to draw. You can use a number between 1 and 11. 11 is the fastest, 1 is the slowest.</p></li>
 <li><p><code>forward(100)</code> and <code>backward(100)</code> tells the turtle to move forward or backward 100 pixels.</p></li>
-<li><p><code>left(45)</code> and <code>right(90)</code> turn the turtle left or right by a number of degrees. Here are some examples:</p></li>
-</ul>
-<p><img src="turtle_degrees.png" alt="screenshot" /></p>
-<ul>
-<li><code>done()</code> tells Python that we've finished programming the turtle.</li>
+<li><p><code>left(45)</code> and <code>right(90)</code> turn the turtle left or right by a number of degrees. Here are some examples:</p>
+<p><img src="turtle_degrees.png" alt="screenshot" /></p></li>
+<li><p><code>done()</code> tells Python that we've finished programming the turtle.</p></li>
 </ul></li>
-<li><p>What's your favourite colour? To make your drawings more interesting, you can also change the colour and the size of the pen drawing the line. Here's a simple example to try:</p></li>
-</ul>
+<li><p>What's your favourite colour? To make your drawings more interesting, you can also change the colour and the size of the pen drawing the line. Here's a simple example to try:</p>
 <pre class="language-python"><code>from turtle import *
 shape(&quot;turtle&quot;)
 speed(8)
@@ -88,8 +83,7 @@ pendown()
 forward(50)
 
 done()</code></pre>
-<p><img src="turtle_colour.png" alt="screenshot" /></p>
-<ul>
+<p><img src="turtle_colour.png" alt="screenshot" /></p></li>
 <li><p>The code above contains a couple of new commands:</p>
 <ul>
 <li><p><code>color(&quot;Purple&quot;)</code> turns the turtle and the line purple. Notice the American spelling of the word colour, which doesn't have a 'u' in it. You can also specify colours in <em>hex</em>, like you did in CSS. Instead of using <code>pencolor(&quot;Red&quot;)</code> you could use <code>pencolor(&quot;#FF0000&quot;)</code>.</p></li>
@@ -115,8 +109,7 @@ done()</code></pre>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Open up a new file, and run the following program:</li>
-</ul>
+<li><p>Open up a new file, and run the following program:</p>
 <pre class="language-python"><code>from turtle import *
 
 speed(11)
@@ -128,10 +121,8 @@ for count in range(4):
 
 done()</code></pre>
 <p>This program uses a <code>for</code> loop. You can use a <code>for</code> loop in Python whenever you want to repeat some code a set number of times.</p>
-<p>In the program above, the commands <code>forward(100)</code> and <code>right(90)</code> are repeated 4 times, drawing a square. Turning 90 degrees for each corner means we turn 360 degrees in total.</p>
-<ul>
-<li>Just like with an <code>if</code> statement, you should use the Tab key to indent the code that you want to repeat. Try changing the code, so that the line <code>forward(100)</code> is indented but the line <code>right(50)</code> isn't, like this:</li>
-</ul>
+<p>In the program above, the commands <code>forward(100)</code> and <code>right(90)</code> are repeated 4 times, drawing a square. Turning 90 degrees for each corner means we turn 360 degrees in total.</p></li>
+<li><p>Just like with an <code>if</code> statement, you should use the Tab key to indent the code that you want to repeat. Try changing the code, so that the line <code>forward(100)</code> is indented but the line <code>right(50)</code> isn't, like this:</p>
 <pre class="language-python"><code>from turtle import *
 
 speed(11)
@@ -142,10 +133,8 @@ for count in range(4):
 right(90)
 
 done()</code></pre>
-<p>What happens when you run this program? Did you get a straight line? In this program, Python will repeat <code>forward(100)</code> four times, and <em>then</em> turn <code>right(90)</code>.</p>
-<ul>
-<li>Now that you know how to repeat commands, you can create complicated shapes and patterns really easily. Run this program:</li>
-</ul>
+<p>What happens when you run this program? Did you get a straight line? In this program, Python will repeat <code>forward(100)</code> four times, and <em>then</em> turn <code>right(90)</code>.</p></li>
+<li><p>Now that you know how to repeat commands, you can create complicated shapes and patterns really easily. Run this program:</p>
 <pre class="language-python"><code>from turtle import *
 
 speed(11)
@@ -157,10 +146,8 @@ for count in range(8):
 
 done()</code></pre>
 <p><img src="turtle_octagon.png" alt="screenshot" /></p>
-<p>This program works in the same way as the square drawing program, except that it repeats 8 times, and only turns 45 degrees for each corner. This means that the code draws an 8-sided shape (an octagon), as the corners for each of the 8 sides add up to 360 degrees (360 divided by 8 is 45).</p>
-<ul>
-<li>Here's another example of what can be created using a <code>for</code> loop. What does this program draw?</li>
-</ul>
+<p>This program works in the same way as the square drawing program, except that it repeats 8 times, and only turns 45 degrees for each corner. This means that the code draws an 8-sided shape (an octagon), as the corners for each of the 8 sides add up to 360 degrees (360 divided by 8 is 45).</p></li>
+<li><p>Here's another example of what can be created using a <code>for</code> loop. What does this program draw?</p>
 <pre class="language-python"><code>from turtle import *
 
 speed(11)
@@ -172,7 +159,8 @@ for count in range(30):
     forward(5)
     pendown()
 
-done()</code></pre>
+done()</code></pre></li>
+</ul>
 </section>
 <section id="challenge-loopy-shapes" class="level2 challenge">
 <h2>Challenge: Loopy shapes</h2>

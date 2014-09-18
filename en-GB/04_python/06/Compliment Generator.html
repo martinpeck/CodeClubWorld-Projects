@@ -20,7 +20,7 @@
       <span class="level-indicator">Term 1</span>
     </header>
 
-    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Python</a></li><li class="breadcrumbs-item current">(Beta) Compliment Generator</li></ul></nav>
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Python Term 1</a></li><li class="breadcrumbs-item current">(Beta) Compliment Generator</li></ul></nav>
 
     <main class="main lesson-steps" role="main">
 <section id="heads-up" class="level1 beta">
@@ -42,8 +42,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>In your projects so far, you've used a variable to store a single piece of data, such as a name or a score. But what if you want to store lots of data? In Python, you can use a <em>list</em> to store lots of data in 1 variable:</li>
-</ul>
+<li><p>In your projects so far, you've used a variable to store a single piece of data, such as a name or a score. But what if you want to store lots of data? In Python, you can use a <em>list</em> to store lots of data in 1 variable:</p>
 <pre class="language-python"><code>bigPlanets = [ &quot;jupiter&quot; , &quot;saturn&quot; , &quot;uranus&quot; , &quot;neptune&quot;]</code></pre>
 <p>This list of text is also known as an <em>array</em> of text. To access items in the list, you just need to know the position of the item. Run this program to give yourself a better idea of how lists work:</p>
 <pre class="language-python"><code>bigPlanets = [ &quot;jupiter&quot; , &quot;saturn&quot; , &quot;uranus&quot; , &quot;neptune&quot;]
@@ -53,10 +52,8 @@ print( bigPlanets[1] )
 print( bigPlanets[2] )
 print( bigPlanets[3] )</code></pre>
 <p><img src="compliment-planets.png" alt="screenshot" /></p>
-<p>As you can see, positions start at 0 and not 1, so <code>bigPlanets[1]</code> is &quot;saturn&quot; (the second item) and not &quot;jupiter&quot;.</p>
-<ul>
-<li>You can use a list called <code>compliments</code> to store all of the possible compliments for your compliment generator program, and then use <code>choice(compliments)</code> to choose a random compliment for the user:</li>
-</ul>
+<p>As you can see, positions start at 0 and not 1, so <code>bigPlanets[1]</code> is &quot;saturn&quot; (the second item) and not &quot;jupiter&quot;.</p></li>
+<li><p>You can use a list called <code>compliments</code> to store all of the possible compliments for your compliment generator program, and then use <code>choice(compliments)</code> to choose a random compliment for the user:</p>
 <pre class="language-python"><code>from random import *
 
 print(&quot;Compliment Generator&quot;)
@@ -70,10 +67,8 @@ compliments = [ &quot;Great job on that thing you did. Really super.&quot; ,
 #print a random item in the &#39;compliments&#39; list
 print(choice(compliments))
 print(&quot;You&#39;re welcome!&quot;)</code></pre>
-<p><img src="compliment-list.png" alt="screenshot" /></p>
-<ul>
-<li>You could make your compliments a little more interesting, by combining random items from 2 different lists:</li>
-</ul>
+<p><img src="compliment-list.png" alt="screenshot" /></p></li>
+<li><p>You could make your compliments a little more interesting, by combining random items from 2 different lists:</p>
 <pre class="language-python"><code>from random import *
 
 print(&quot;Compliment Generator&quot;)
@@ -88,7 +83,8 @@ print( &quot;Here is your compliment&quot; , name , &quot;:&quot; )
 #get a random item from both lists, and add them to the compliment
 print( name , &quot;you are&quot; , choice(adjectives) , &quot;at&quot; , choice(hobbies) )
 print( &quot;You&#39;re welcome!&quot; )</code></pre>
-<p><img src="compliment-2lists.png" alt="screenshot" /></p>
+<p><img src="compliment-2lists.png" alt="screenshot" /></p></li>
+</ul>
 </section>
 <section id="challenge-adding-more-compliments" class="level2 challenge">
 <h2>Challenge: Adding more compliments</h2>
@@ -100,8 +96,7 @@ print( &quot;You&#39;re welcome!&quot; )</code></pre>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Using what you know about <code>while</code> loops and <code>if</code> statements, you could modify your program to keep giving out compliments until the user decides to quit:</li>
-</ul>
+<li><p>Using what you know about <code>while</code> loops and <code>if</code> statements, you could modify your program to keep giving out compliments until the user decides to quit:</p>
 <pre class="language-python"><code>from random import *
 
 #the program loops as long as this variable is &#39;True&#39;
@@ -138,12 +133,13 @@ while running == True:
     elif menuChoice == &#39;q&#39;:
 
         running = False
-        
+
     else:
 
         print(&quot;Please choose a valid option!&quot;)</code></pre>
 <p><img src="compliment-loop.png" alt="screenshot" /></p>
-<p>Remember that the the <code>while</code> loop continues to run as long as the variable <code>running</code> is set to <code>True</code>. If the user inputs <code>q</code> to quit, <code>running</code> is set to <code>False</code>.</p>
+<p>Remember that the the <code>while</code> loop continues to run as long as the variable <code>running</code> is set to <code>True</code>. If the user inputs <code>q</code> to quit, <code>running</code> is set to <code>False</code>.</p></li>
+</ul>
 </section>
 </section>
 <section id="step-3-personalising-compliments" class="level1 activity">
@@ -151,8 +147,7 @@ while running == True:
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Your compliment generator is starting to take shape, but it has a problem: what if your user can't ride a bike or make a cup of tea? In that case, your compliments won't be true, and won't cheer them up!</li>
-</ul>
+<li><p>Your compliment generator is starting to take shape, but it has a problem: what if your user can't ride a bike or make a cup of tea? In that case, your compliments won't be true, and won't cheer them up!</p>
 <p>Let's modify your program, so that the user can choose to add or remove items from the <code>hobbies</code> list, to allow them to personalise the compliments they receive:</p>
 <pre class="language-python"><code>from random import *
 
@@ -207,14 +202,12 @@ while running == True:
     elif menuChoice == &#39;q&#39;:
 
         running = False
-        
+
     else:
-        
+
         print(&quot;Please choose a valid option!&quot;)</code></pre>
-<p>As you can see, you can use <code>append()</code> to add to a list, and <code>remove()</code> to remove an item. Run this program, and personalise the hobbies in the list to suit you. Ask the program for compliments until you're in a good mood!</p>
-<ul>
-<li>When testing the program above, did you run into any problems? At the moment, your compliment generator crashes if you try and remove a compliment that isn't in the list:</li>
-</ul>
+<p>As you can see, you can use <code>append()</code> to add to a list, and <code>remove()</code> to remove an item. Run this program, and personalise the hobbies in the list to suit you. Ask the program for compliments until you're in a good mood!</p></li>
+<li><p>When testing the program above, did you run into any problems? At the moment, your compliment generator crashes if you try and remove a compliment that isn't in the list:</p>
 <p><img src="compliment-error.png" alt="screenshot" /></p>
 <p>You can fix this problem, by first checking that the item to remove exists in the list. Replace your code to remove a hobby with this code:</p>
 <pre class="language-python"><code>    #&#39;d&#39; to delete a hobby
@@ -227,7 +220,8 @@ while running == True:
         else:
             print(&quot;Hobby not in list!&quot;)</code></pre>
 <p>Now run the program and try to delete a hobby that isn't in the list:</p>
-<p><img src="compliment-errorfix.png" alt="screenshot" /></p>
+<p><img src="compliment-errorfix.png" alt="screenshot" /></p></li>
+</ul>
 </section>
 <section id="challenge-duplicate-hobbies" class="level2 challenge">
 <h2>Challenge: Duplicate hobbies</h2>

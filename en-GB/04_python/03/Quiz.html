@@ -20,7 +20,7 @@
       <span class="level-indicator">Term 1</span>
     </header>
 
-    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Python</a></li><li class="breadcrumbs-item current">(Beta) Quiz</li></ul></nav>
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Python Term 1</a></li><li class="breadcrumbs-item current">(Beta) Quiz</li></ul></nav>
 
     <main class="main lesson-steps" role="main">
 <section id="heads-up" class="level1 beta">
@@ -41,8 +41,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Let's start by writing a very simple quiz program, which asks the player a question, and shows them a smiley face if they input the correct answer.</li>
-</ul>
+<li><p>Let's start by writing a very simple quiz program, which asks the player a question, and shows them a smiley face if they input the correct answer.</p>
 <pre class="language-python"><code>print(&quot;In Python, what do you call a &#39;box&#39; used to store data?&quot;)
 answer = input()
 
@@ -50,16 +49,12 @@ if answer == &quot;variable&quot;:
     print(&quot; :) &quot;)
 
 print(&quot;Thank you for playing!&quot;)</code></pre>
-<p>When writing this program, you'll need to add a colon (<code>:</code>) to the end of the line <code>if answer == &quot;variable&quot;:</code>, and indent the line below it (move it to the right), by pressing the Tab key (to the left of the 'Q' key on the keyboard).</p>
-<ul>
-<li>Once you've written the program above, try it out twice - once getting the question right, and once getting it wrong. Notice that you don't see a smiley face unless you get the answer right.</li>
-</ul>
+<p>When writing this program, you'll need to add a colon (<code>:</code>) to the end of the line <code>if answer == &quot;variable&quot;:</code>, and indent the line below it (move it to the right), by pressing the Tab key (to the left of the 'Q' key on the keyboard).</p></li>
+<li><p>Once you've written the program above, try it out twice - once getting the question right, and once getting it wrong. Notice that you don't see a smiley face unless you get the answer right.</p>
 <p><img src="quiz-if.png" alt="screenshot" /></p>
 <p>This program only runs the indented code (the code that prints the smiley face) <em>if</em> the answer is correct. Notice that the text &quot;Thank you for playing!&quot; isn't indented, and so is printed every time, whether the answer is right or wrong.</p>
-<p>Python uses 2 equals signs <code>==</code> to check if 2 things are the same. This is because one equals sign <code>=</code> is used to store something in a variable (for example <code>answer = input()</code>).</p>
-<ul>
-<li>The program above prints a smiley face if the player gets the question right, but doesn't print anything to tell them they got the answer wrong. You can use an <code>else</code> statement to print a sad face if the user inputs anything other than the correct answer.</li>
-</ul>
+<p>Python uses 2 equals signs <code>==</code> to check if 2 things are the same. This is because one equals sign <code>=</code> is used to store something in a variable (for example <code>answer = input()</code>).</p></li>
+<li><p>The program above prints a smiley face if the player gets the question right, but doesn't print anything to tell them they got the answer wrong. You can use an <code>else</code> statement to print a sad face if the user inputs anything other than the correct answer.</p>
 <pre class="language-python"><code>print(&quot;In Python, what do you call a &#39;box&#39; used to store data?&quot;)
 answer = input()
 
@@ -70,7 +65,8 @@ else:
 
 print(&quot;Thank you for playing!&quot;)</code></pre>
 <p>Try out this new program, and you can see that unless you enter the correct answer, a sad face is printed.</p>
-<p><img src="quiz-if-else.png" alt="screenshot" /></p>
+<p><img src="quiz-if-else.png" alt="screenshot" /></p></li>
+</ul>
 </section>
 <section id="challenge-question-time" class="level2 challenge">
 <h2>Challenge: Question time</h2>
@@ -83,19 +79,15 @@ print(&quot;Thank you for playing!&quot;)</code></pre>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>If you've tested your quiz, you may have you noticed that it's possible to get a sad face even when you input a correct answer! Like in this example, where the player has accidently presSED CAPS LOCK!</li>
-</ul>
+<li><p>If you've tested your quiz, you may have you noticed that it's possible to get a sad face even when you input a correct answer! Like in this example, where the player has accidently presSED CAPS LOCK!</p>
 <p><img src="quiz-test.png" alt="screenshot" /></p>
 <p>This happens because Python is very strict when it compares the player's answer to the correct answer. To Python, &quot;V&quot; isn't the same as &quot;v&quot;, and so if your player uses any capital letters in your answer, Python thinks the answer's wrong!</p>
-<p>Test this out in your game, to see if the same thing happens.</p>
-<ul>
-<li>To fix this problem, all you need to do is convert whatever the player inputs into lower case, so that there are no capital letters in the player's answer. Make this change to the line where the player inputs their answer:</li>
+<p>Test this out in your game, to see if the same thing happens.</p></li>
+<li><p>To fix this problem, all you need to do is convert whatever the player inputs into lower case, so that there are no capital letters in the player's answer. Make this change to the line where the player inputs their answer:</p>
+<pre class="language-python"><code>answer = input().lower()</code></pre></li>
+<li><p>Now test your quiz again. Have you fixed the problem?</p>
+<p><img src="quiz-test-lower.png" alt="screenshot" /></p></li>
 </ul>
-<pre class="language-python"><code>answer = input().lower()</code></pre>
-<ul>
-<li>Now test your quiz again. Have you fixed the problem?</li>
-</ul>
-<p><img src="quiz-test-lower.png" alt="screenshot" /></p>
 </section>
 <section id="challenge-fixing-your-quiz" class="level2 challenge">
 <h2>Challenge: Fixing your quiz</h2>
@@ -107,8 +99,7 @@ print(&quot;Thank you for playing!&quot;)</code></pre>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>So far you've used <code>if</code> and <code>else</code> to let the player know if they got the answer right or wrong. But what if you wanted a multiple choice question, where the user could see one of 4 messages? You can use an <code>elif</code> statement to do this.</li>
-</ul>
+<li><p>So far you've used <code>if</code> and <code>else</code> to let the player know if they got the answer right or wrong. But what if you wanted a multiple choice question, where the user could see one of 4 messages? You can use an <code>elif</code> statement to do this.</p>
 <pre class="language-python"><code>print(&#39;&#39;&#39;
 Q1 - In Python, what do you call a &#39;box&#39; used to store data?
 a - text
@@ -125,12 +116,11 @@ elif answer == &quot;c&quot;:
     print(&quot; Don&#39;t be silly! :( &quot;)
 else:
     print(&quot; You didn&#39;t choose a, b or c :( &quot;)</code></pre>
-<p><code>elif</code> is short for &quot;else if&quot;. So in the program above, the player sees one of 4 messages, depending on what they entered for their answer.</p>
-<ul>
+<p><code>elif</code> is short for &quot;else if&quot;. So in the program above, the player sees one of 4 messages, depending on what they entered for their answer.</p></li>
 <li><p>Add the code above to your quiz, so that you have a multiple choice question.</p></li>
-<li><p>Test this new question 4 times, so that you see each of the 4 messages.</p></li>
+<li><p>Test this new question 4 times, so that you see each of the 4 messages.</p>
+<p><img src="quiz-elif.png" alt="screenshot" /></p></li>
 </ul>
-<p><img src="quiz-elif.png" alt="screenshot" /></p>
 </section>
 <section id="challenge-multiple-choice-quiz" class="level2 challenge">
 <h2>Challenge: Multiple choice quiz</h2>
