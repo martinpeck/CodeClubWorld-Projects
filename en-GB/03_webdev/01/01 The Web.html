@@ -40,7 +40,7 @@
 <li>Change the extension (the bit after the dot) to <code>.html</code>, so now the file is called <code>hello.html</code>.<br /></li>
 <li>Open the file again.</li>
 </ul>
-<p>What program was used to open the file this time? The web browser is a special program that knows how to interpret text files written using <strong>HTML language</strong>. We haven't added any <strong>HTML</strong> yet, we simply put in some text, but the browser doesn't care! As long as you give it an <code>.html</code> file, it will do its best to show you the file as best as it can understand it.</p>
+<p>What program was used to open the file this time? The web browser is a special program that knows how to interpret text files written using <strong>HTML language</strong>. We haven’t added any <strong>HTML</strong> yet, we simply put in some text, but the browser doesn’t care! As long as you give it an <code>.html</code> file, it will do its best to show you the file as best as it can understand it.</p>
 <p>This is very useful: even when a website contains errors, the browser will try to figure out how to show it to you anyway.</p>
 <p><strong>How can we view these files?</strong></p>
 <p>When you type in the address in your browser, your request gets passed along to a computer which is always turned on and configured to allow you to see the pages that live inside it. This computer is called a server. When it receives a request from your computer, it looks for all the necessary files: the <code>.html</code> file and sends you that with anything else that the page needs, like images and videos.</p>
@@ -58,7 +58,7 @@
 <p>Tags look like this: <code>&lt;p&gt;This is some text.&lt;/p&gt;</code></p>
 <p><code>&lt;p&gt;</code> is short for <strong>paragraph</strong>.</p>
 <p>There is an opening tag which is this: <code>&lt;p&gt;</code> and a matching closing one with a forward slash: <code>&lt;/p&gt;</code>. The browser knows that anything in between the two tags is a paragraph of text.</p>
-<p>Tags can have attributes, which are bits of useful information about the element. Let's have a look at the link tag:</p>
+<p>Tags can have attributes, which are bits of useful information about the element. Let’s have a look at the link tag:</p>
 <p><code>&lt;a href=&quot;http://codeclub.org.uk&quot;&gt;Visit CodeClub website&lt;/a&gt;</code></p>
 <p><code>&lt;a&gt;</code> stands for <strong>anchor</strong>, which is what links used to be called.</p>
 <p>It also has the opening tag: <code>&lt;a&gt;</code> and the closing tag: <code>&lt;/a&gt;</code> but we added an attribute to the opening one: <code>&lt;a href=&quot;http://codeclub.org.uk&quot;&gt;</code></p>
@@ -79,23 +79,23 @@
 <section id="if-you-are-using-developer-tools" class="level3">
 <h3>If you are using developer tools:</h3>
 <ul>
-<li>Move around the page. Right click anything interesting, and then click <code>Inspect element</code>. A panel will open up which will show you the page's code as the same time as the page.<br /></li>
+<li>Move around the page. Right click anything interesting, and then click <code>Inspect element</code>. A panel will open up which will show you the page’s code as the same time as the page.<br /></li>
 <li>Move your mouse over different pieces of code. The corresponding things on the page will be highlighted, so you can see which bit does what.<br /></li>
 <li>Try to inspect all parts of the page. Can you figure out what the different tag names stand for?</li>
 </ul>
 <p>We already know <code>&lt;p&gt;</code> and <code>&lt;a&gt;</code>.</p>
-<p><code>&lt;ol&gt;</code> - ordered list<br /><code>&lt;ul&gt;</code> - unordered list<br /><code>&lt;li&gt;</code> - list item<br /><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code> - headings<br /><code>&lt;hr&gt;</code> - horizontal rule<br /><code>&lt;div&gt;</code> - a box for grouping things<br /><code>&lt;img&gt;</code> - a special element, which unlike others doesn't have a closing tag. We use it for putting the images in.</p>
+<p><code>&lt;ol&gt;</code> - ordered list<br /><code>&lt;ul&gt;</code> - unordered list<br /><code>&lt;li&gt;</code> - list item<br /><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code> - headings<br /><code>&lt;hr&gt;</code> - horizontal rule<br /><code>&lt;div&gt;</code> - a box for grouping things<br /><code>&lt;img&gt;</code> - a special element, which unlike others doesn’t have a closing tag. We use it for putting the images in.</p>
 <p>There are also some tags that we will always use in HTML documents, and they are:</p>
-<p><code>&lt;html&gt;</code> - tells the browser where we put out code<br /><code>&lt;head&gt;</code> - inside <code>&lt;head&gt;</code> we put things which may be useful to the browser, but which don't appear as text on the page. In this example we put a <code>&lt;title&gt;</code> there, which then shows up at the top of the browser window.<br /><code>&lt;body&gt;</code> - that's where we put the things we want to appear on the page</p>
+<p><code>&lt;html&gt;</code> - tells the browser where we put out code<br /><code>&lt;head&gt;</code> - inside <code>&lt;head&gt;</code> we put things which may be useful to the browser, but which don’t appear as text on the page. In this example we put a <code>&lt;title&gt;</code> there, which then shows up at the top of the browser window.<br /><code>&lt;body&gt;</code> - that’s where we put the things we want to appear on the page</p>
 </section>
 </section>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Notice how tags can <strong>nest</strong> within one another. We have the <code>&lt;a&gt;</code> tag, which is inside a <code>&lt;p&gt;</code> tag, which in turn is inside <code>&lt;div&gt;</code>, which is placed inside <code>&lt;body&gt;</code>. Whenever this happens, we say that the tag that is being wrapped is the <em>child</em> and the tag that does the wrapping is the <strong>parent</strong> element. It's a little bit like a family tree!<br /></li>
+<li>Notice how tags can <strong>nest</strong> within one another. We have the <code>&lt;a&gt;</code> tag, which is inside a <code>&lt;p&gt;</code> tag, which in turn is inside <code>&lt;div&gt;</code>, which is placed inside <code>&lt;body&gt;</code>. Whenever this happens, we say that the tag that is being wrapped is the <em>child</em> and the tag that does the wrapping is the <strong>parent</strong> element. It’s a little bit like a family tree!<br /></li>
 <li>To the browser all tags of the same kind are the same, but you can mark them out using classes and Ids (pronounced aye-dees). For example, some of your paragraphs might be introductions, so you could give them a class <code>introduction</code>. See if you can spot some classes inside <code>page.html</code> .<br /></li>
 <li>Ids are used to mark unique items on your page. See if you can spot the <code>div</code> tag with an <code>id</code> of <code>kitten</code> in the page.<br /></li>
-<li>What will happen if you move things around? Let's go back to the code editor. Find an <code>&lt;ol&gt;</code> tag in the code and select it with all its got inside, like so:</li>
+<li>What will happen if you move things around? Let’s go back to the code editor. Find an <code>&lt;ol&gt;</code> tag in the code and select it with all its got inside, like so:</li>
 </ul>
 <pre class="language-markup"><code>&lt;ol&gt;
     &lt;li&gt;Kittens&lt;/li&gt;
@@ -112,7 +112,7 @@
 <li>Make a link that points to another part of page (hint: it is something to do with id - look out for a link that takes you to the kitten).<br /></li>
 <li>Add your own headings where you think they might be useful. What happens if you change the heading numbers, for example from <code>&lt;h3&gt;</code> to <code>&lt;h4&gt;</code>?<br /></li>
 <li>What would you have to do to link to a different page?<br /></li>
-<li>If you are using developer tools, once you bring up the panel with the code try double-clicking on the code that looks interesting. See if you can change it. Now you get a live preview without having to move between the browser and the code editor. Cool, huh? Now refresh the page. What happened? When you edit code like this it doesn't get saved, so you can preview what would happen if you did, but don't mess up your file, so you can experiment lots and always go back.</li>
+<li>If you are using developer tools, once you bring up the panel with the code try double-clicking on the code that looks interesting. See if you can change it. Now you get a live preview without having to move between the browser and the code editor. Cool, huh? Now refresh the page. What happened? When you edit code like this it doesn’t get saved, so you can preview what would happen if you did, but don’t mess up your file, so you can experiment lots and always go back.</li>
 </ul>
 </section>
 </section>
@@ -126,17 +126,17 @@
     <div id="legend">
       <table>
         <tr>
-          <td><img src="../../../img/check.png" alt="Instruction" /></td>
+          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
           <td><span class="check_text">Activity Checklist</span></td>
           <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
         </tr>
         <tr>
-          <td><img src="../../../img/flag.png" alt="Test" /></td>
+          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
           <td><span class="flag_text">Test your Project</span></td>
           <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
         </tr>
         <tr>
-          <td><img src="../../../img/save.png" alt="Save" /></td>
+          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
           <td><span class="save_text">Save your Project</span></td>
           <td>Make sure to <span class="save_text upper">save</span> your work now</td>
         </tr>

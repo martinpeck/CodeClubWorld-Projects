@@ -33,11 +33,11 @@
 <pre><code>_|_|_
 _|_|_
  | |</code></pre>
-<p>We could use the turtle commands to draw it, but today we're going to learn about the Tk Canvas.</p>
+<p>We could use the turtle commands to draw it, but today we’re going to learn about the Tk Canvas.</p>
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Open up IDLE, create a New File, and save it as 'xox.py'</li>
+<li>Open up IDLE, create a New File, and save it as ‘xox.py’</li>
 </ul>
 <p>Write the following code:</p>
 <pre class="language-python"><code>
@@ -112,7 +112,7 @@ c.create_line(400, 0, 400, 600) # B to D
 c.create_line(0, 200, 600, 200) # M to O
 c.create_line(0, 400, 600, 400) # N to P
 </code></pre>
-<p>In code, across is often called <code>x</code>, and down is often called <code>y</code>. This grid system is quite like the co-ordinates you've learned in mathematics, but we start from the top-left hand side.</p>
+<p>In code, across is often called <code>x</code>, and down is often called <code>y</code>. This grid system is quite like the co-ordinates you’ve learned in mathematics, but we start from the top-left hand side.</p>
 </section>
 </section>
 </section>
@@ -121,7 +121,7 @@ c.create_line(0, 400, 600, 400) # N to P
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>In the same file, let's add a new function to draw when you click the mouse!</li>
+<li>In the same file, let’s add a new function to draw when you click the mouse!</li>
 </ul>
 <pre class="language-python"><code>
 from tkinter import *
@@ -146,7 +146,7 @@ mainloop()
 </code></pre>
 <ul>
 <li>Run your code, and click on the grid, what happens? You should see a circle in the centre of the grid.<br /></li>
-<li>Let's edit the code, so it will draw where you click. For this we'll need to take the mouse position, and work out which grid square it is in, and change the <code>click</code> function</li>
+<li>Let’s edit the code, so it will draw where you click. For this we’ll need to take the mouse position, and work out which grid square it is in, and change the <code>click</code> function</li>
 </ul>
 <pre class="language-python"><code>
 from tkinter import *
@@ -177,7 +177,7 @@ mainloop()
 </code></pre>
 <p><code>int(c.canvasx(event.x)/200)</code> takes the mouse position, <code>event.x</code> turns it into the canvas position, <code>c.canvas(event.x)</code> and then divides it by 200, and rounds it down, so we get a number 0, 1 or 2 to tell us how far across the mouse is.</p>
 <ul>
-<li>Run the code, click in the grid squares, each one should fill in with a circle! The code <code>c.create_oval(across*200,down*200,(across+1)*200,(down+1)*200)</code> turns 'Along 1, Down 2' into positions on the grid, like Along 200, Down 400.</li>
+<li>Run the code, click in the grid squares, each one should fill in with a circle! The code <code>c.create_oval(across*200,down*200,(across+1)*200,(down+1)*200)</code> turns ‘Along 1, Down 2’ into positions on the grid, like Along 200, Down 400.</li>
 </ul>
 </section>
 </section>
@@ -186,7 +186,7 @@ mainloop()
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>In the same file, let's add some code to draw an X, then an O, then an X, ...</li>
+<li>In the same file, let’s add some code to draw an X, then an O, then an X, …</li>
 </ul>
 <pre class="language-python"><code>
 from tkinter import *
@@ -231,8 +231,8 @@ c.bind(&quot;&lt;Button-1&gt;&quot;, click)
 mainloop()
 </code></pre>
 <ul>
-<li>Run your program, try click on a grid, it should draw a O, click elsewhere it should draw an X We've used a new feature of python, <code>global</code> to let us change the variable <code>shape</code> in the function <code>click</code>. If you change variables defined outside of a function, then you have to use <code>global</code>.<br /></li>
-<li>What happens if you click on the same square twice? This is because our code doesn't keep track of what has been drawn, or where players have moved. We will have write some more code to fix this.</li>
+<li>Run your program, try click on a grid, it should draw a O, click elsewhere it should draw an X We’ve used a new feature of python, <code>global</code> to let us change the variable <code>shape</code> in the function <code>click</code>. If you change variables defined outside of a function, then you have to use <code>global</code>.<br /></li>
+<li>What happens if you click on the same square twice? This is because our code doesn’t keep track of what has been drawn, or where players have moved. We will have write some more code to fix this.</li>
 </ul>
 </section>
 </section>
@@ -240,7 +240,7 @@ mainloop()
 <h1>Step 4: Keeping track</h1>
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
-<p>To stop players playing the same move twice, we'll have to keep track of the moves they make. To do this we'll introduce a list called <code>grid</code></p>
+<p>To stop players playing the same move twice, we’ll have to keep track of the moves they make. To do this we’ll introduce a list called <code>grid</code></p>
 <ul>
 <li>In the same file,</li>
 </ul>
@@ -309,7 +309,7 @@ mainloop()
 <section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>In the same file, we're going to introduce a new function <code>winner</code>, and call it to check if the game has been won The completed code looks like this!</li>
+<li>In the same file, we’re going to introduce a new function <code>winner</code>, and call it to check if the game has been won The completed code looks like this!</li>
 </ul>
 <pre class="language-python"><code>
 from tkinter import *
@@ -395,8 +395,8 @@ mainloop()
 <ul>
 <li><p>Try playing the game and winning, can you make any more moves? We have four checks in <code>winner</code></p>
 <ul>
-<li>Check each row for three X's or O's<br /></li>
-<li>Check each column for three X's or O's<br /></li>
+<li>Check each row for three X’s or O’s<br /></li>
+<li>Check each column for three X’s or O’s<br /></li>
 <li>Check the diagonal from left to right<br /></li>
 <li>Check the diagonal from right to left.</li>
 </ul></li>
@@ -404,7 +404,7 @@ mainloop()
 </section>
 <section id="try" class="level2 try">
 <h2>Try</h2>
-<p>You're all done! Why not change the code to draw different shapes!</p>
+<p>You’re all done! Why not change the code to draw different shapes!</p>
 </section>
 </section>
     </main>
@@ -417,17 +417,17 @@ mainloop()
     <div id="legend">
       <table>
         <tr>
-          <td><img src="../../../img/check.png" alt="Instruction" /></td>
+          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
           <td><span class="check_text">Activity Checklist</span></td>
           <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
         </tr>
         <tr>
-          <td><img src="../../../img/flag.png" alt="Test" /></td>
+          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
           <td><span class="flag_text">Test your Project</span></td>
           <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
         </tr>
         <tr>
-          <td><img src="../../../img/save.png" alt="Save" /></td>
+          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
           <td><span class="save_text">Save your Project</span></td>
           <td>Make sure to <span class="save_text upper">save</span> your work now</td>
         </tr>

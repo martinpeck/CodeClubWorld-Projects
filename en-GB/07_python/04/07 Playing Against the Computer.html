@@ -25,15 +25,15 @@
     <main class="main lesson-steps" role="main">
 <section id="introduction" class="level1 intro">
 <h1>Introduction</h1>
-<p>Today we're going to try and write some code so that the computer can play noughts and crosses. It won't play well at first, but soon it might even win against you!</p>
+<p>Today we’re going to try and write some code so that the computer can play noughts and crosses. It won’t play well at first, but soon it might even win against you!</p>
 </section>
 <section id="step-1-start-with-what-we-have-from-last-week" class="level1 activity">
 <h1>Step 1: Start with what we have from last week</h1>
-<p>In Lesson 6, we wrote a two player noughts and crosses game, using the &quot;Tk Canvas&quot; to draw on the screen, before we start writing new code, we're going to need the basic part of the game.</p>
+<p>In Lesson 6, we wrote a two player noughts and crosses game, using the “Tk Canvas” to draw on the screen, before we start writing new code, we’re going to need the basic part of the game.</p>
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>Open IDLE, and either open your file from last week and save it as a new file, or if you can't find it, copy the following in:</p>
+<li><p>Open IDLE, and either open your file from last week and save it as a new file, or if you can’t find it, copy the following in:</p>
 <pre class="language-python"><code>from tkinter import *
 
 main = Tk()
@@ -115,7 +115,7 @@ mainloop()</code></pre></li>
 <section id="step-2-play-anywhere" class="level1 activity">
 <h1>Step 2: Play anywhere</h1>
 <p>Before we can teach the computer how to make a good move, we should teach it to make any move. We will get the computer to pick any free square and play there.</p>
-<p>Remember that we use the variable <code>grid</code> to store how the board looks. It's a list that starts off [&quot;0&quot;, &quot;1&quot;, &quot;2&quot;, ... ], and we replace elements with &quot;X&quot; or &quot;O&quot; as the game progresses. We will have to find a free spot, then play it.</p>
+<p>Remember that we use the variable <code>grid</code> to store how the board looks. It’s a list that starts off [“0”, “1”, “2”, … ], and we replace elements with “X” or “O” as the game progresses. We will have to find a free spot, then play it.</p>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
@@ -136,7 +136,7 @@ for position, square in enumerate(grid):
 return output</code></pre></li>
 </ul>
 <p>This function creates an empty list, and then for each square in the grid, checks if it is empty.</p>
-<p>We use a function <code>enumerate</code> to tell us the positions of each item in the list. <code>enumerate</code> turns a list of ['A','B','C'] into pairs of (0, 'A'), (1,'B') and so on, so we don't have to count them</p>
+<p>We use a function <code>enumerate</code> to tell us the positions of each item in the list. <code>enumerate</code> turns a list of [‘A’,‘B’,‘C’] into pairs of (0, ‘A’), (1,‘B’) and so on, so we don’t have to count them</p>
 <ul>
 <li><p>Next we write a function <code>play_move()</code> which finds an empty square to play in. Add this function after <code>free_squares</code> and before the line <code>c.bind(...)</code></p>
 <pre class="language-python"><code>def play_move()
@@ -149,7 +149,7 @@ grid[move] = &quot;X&quot;
 
 c.create_line(across * 200, down * 200, (across + 1) * 200, (down + 1) * 200)
 c.create_line(across * 200, (down + 1) * 200, (across + 1) * 200, down * 200)</code></pre></li>
-<li><p>First we get the list of empty squares, pick one, and convert the square number into across and down, using the <code>%</code> and <code>//</code> operators. Let's look at the numbered grid to see how this works:</p>
+<li><p>First we get the list of empty squares, pick one, and convert the square number into across and down, using the <code>%</code> and <code>//</code> operators. Let’s look at the numbered grid to see how this works:</p>
 <pre><code> 0 1 2
  -----
  0 | 0 1 2
@@ -191,7 +191,7 @@ play_move()</code></pre></li>
 </section>
 <section id="step-3-pick-a-move-that-wins" class="level1 activity">
 <h1>Step 3: Pick a move that wins</h1>
-<p>The computer can play noughts and crosses, but badly. Let's help it a little. Instead of picking a random move, let's make it pick a move that wins, if it sees one. The idea is that we can try each move in turn and see if it wins, and then play it.</p>
+<p>The computer can play noughts and crosses, but badly. Let’s help it a little. Instead of picking a random move, let’s make it pick a move that wins, if it sees one. The idea is that we can try each move in turn and see if it wins, and then play it.</p>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
@@ -249,8 +249,8 @@ play_move()</code></pre></li>
 </ul>
 <p>Every time you see <code>winner()</code>, you replace it with <code>winner(grid)</code>.</p>
 <ul>
-<li>Run your code, it should work like before. It is important to make sure we haven't made any mistakes.<br /></li>
-<li><p>Let's change play_move to find a winning move!</p>
+<li>Run your code, it should work like before. It is important to make sure we haven’t made any mistakes.<br /></li>
+<li><p>Let’s change play_move to find a winning move!</p>
 <pre class="language-python"><code>def play_move():
 move = -1
 moves = free_squares()
@@ -472,7 +472,7 @@ c.create_line(
     mainloop()</code></pre>
 <section id="challenge" class="level2 challenge">
 <h2>Challenge</h2>
-<p>It's still possible to win against the program, but can you change the code to make the computer play perfectly?</p>
+<p>It’s still possible to win against the program, but can you change the code to make the computer play perfectly?</p>
 </section>
 </section>
     </main>
@@ -485,17 +485,17 @@ c.create_line(
     <div id="legend">
       <table>
         <tr>
-          <td><img src="../../../img/check.png" alt="Instruction" /></td>
+          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
           <td><span class="check_text">Activity Checklist</span></td>
           <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
         </tr>
         <tr>
-          <td><img src="../../../img/flag.png" alt="Test" /></td>
+          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
           <td><span class="flag_text">Test your Project</span></td>
           <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
         </tr>
         <tr>
-          <td><img src="../../../img/save.png" alt="Save" /></td>
+          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
           <td><span class="save_text">Save your Project</span></td>
           <td>Make sure to <span class="save_text upper">save</span> your work now</td>
         </tr>

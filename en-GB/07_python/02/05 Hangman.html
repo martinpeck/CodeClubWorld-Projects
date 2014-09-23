@@ -25,11 +25,11 @@
     <main class="main lesson-steps" role="main">
 <section id="introduction" class="level1 intro">
 <h1>Introduction</h1>
-<p>Let's build a game: Hangman! The computer will pick a word, and the player can guess it letter-by-letter, but if they make too many wrong guesses, they'll lose.</p>
+<p>Let’s build a game: Hangman! The computer will pick a word, and the player can guess it letter-by-letter, but if they make too many wrong guesses, they’ll lose.</p>
 </section>
 <section id="step-1-pick-a-word" class="level1 activity">
 <h1>Step 1: Pick a word</h1>
-<p>We start by picking a random word, so let's begin</p>
+<p>We start by picking a random word, so let’s begin</p>
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
@@ -48,7 +48,7 @@ print(word)</code></pre></li>
 </section>
 <section id="step-2-guess-a-letter" class="level1 activity">
 <h1>Step 2: Guess a letter</h1>
-<p>Now we've picked a word, let's find out how to guess a letter.</p>
+<p>Now we’ve picked a word, let’s find out how to guess a letter.</p>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
@@ -64,8 +64,8 @@ for letter in word:
 
 print(&quot;Guess a letter in the word:&quot;, out)</code></pre></li>
 <li>Save and run the program.<br /></li>
-<li>You should see &quot;Guess a letter in the word: ____&quot;, in the output window (the other window, not the one you've written your program in.) We use a for loop to build up some text with an underscore <code>_</code> for each letter in the word. The word &quot;code&quot; put in, will write out <code>____</code> to the screen.<br /></li>
-<li><p>Let's guess a letter! Change the code to look like this:</p>
+<li>You should see “Guess a letter in the word: ____”, in the output window (the other window, not the one you’ve written your program in.) We use a for loop to build up some text with an underscore <code>_</code> for each letter in the word. The word “code” put in, will write out <code>____</code> to the screen.<br /></li>
+<li><p>Let’s guess a letter! Change the code to look like this:</p>
 <pre class="language-python"><code>from random import choice
 
 word = choice([&quot;code&quot;, &quot;club&quot;])
@@ -84,13 +84,13 @@ if guess in word:
 else:
     print(&quot;Nope&quot;)</code></pre></li>
 </ul>
-<p>We use a new function <code>input()</code> to find out what the player typed. We use <code>if</code> to find out if the letter was in the word. We've got the essentials down, so let's continue onward.</p>
-<p>(Python 2 Note: Use <code>raw_input</code> if you're on an old version of python)</p>
+<p>We use a new function <code>input()</code> to find out what the player typed. We use <code>if</code> to find out if the letter was in the word. We’ve got the essentials down, so let’s continue onward.</p>
+<p>(Python 2 Note: Use <code>raw_input</code> if you’re on an old version of python)</p>
 </section>
 </section>
 <section id="step-3-track-the-guesses" class="level1 activity">
 <h1>Step 3: Track the guesses</h1>
-<p>Now we're going to use two features of python, lists and the <code>while</code> loop.</p>
+<p>Now we’re going to use two features of python, lists and the <code>while</code> loop.</p>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
@@ -127,7 +127,7 @@ while True:
         print(&quot;Nope&quot;)
 
     print()</code></pre></li>
-<li><p>Run the code, try guessing the letters. What we've done is put a loop, like <code>forever</code> in scratch, that will keep asking for letters from the player, until they guess the word. We also use a list, <code>guessed</code>, which we add the letters to when they're right. This program will loop forever until all the letters are guessed.</p></li>
+<li><p>Run the code, try guessing the letters. What we’ve done is put a loop, like <code>forever</code> in scratch, that will keep asking for letters from the player, until they guess the word. We also use a list, <code>guessed</code>, which we add the letters to when they’re right. This program will loop forever until all the letters are guessed.</p></li>
 </ul>
 </section>
 </section>
@@ -138,7 +138,7 @@ while True:
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Edit the existing file, and change it to look like the following:<br />```{.language-python}<br />from random import choice</p>
-<p>word = choice([&quot;code&quot;, &quot;club&quot;])</p>
+<p>word = choice([“code”, “club”])</p>
 <p>guessed = []<br />wrong = []</p>
 <p>while True:</p>
 <pre><code>out = &quot;&quot;
@@ -168,7 +168,7 @@ else:
 print()</code></pre></li>
 </ul>
 <p>```</p>
-<p>We're using a new list, <code>wrong</code>, to store all the guesses that weren't right</p>
+<p>We’re using a new list, <code>wrong</code>, to store all the guesses that weren’t right</p>
 <p>Only one last thing before the game is complete, which is to only have a few chances to guess.</p>
 </section>
 </section>
@@ -247,17 +247,17 @@ else:
     <div id="legend">
       <table>
         <tr>
-          <td><img src="../../../img/check.png" alt="Instruction" /></td>
+          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
           <td><span class="check_text">Activity Checklist</span></td>
           <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
         </tr>
         <tr>
-          <td><img src="../../../img/flag.png" alt="Test" /></td>
+          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
           <td><span class="flag_text">Test your Project</span></td>
           <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
         </tr>
         <tr>
-          <td><img src="../../../img/save.png" alt="Save" /></td>
+          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
           <td><span class="save_text">Save your Project</span></td>
           <td>Make sure to <span class="save_text upper">save</span> your work now</td>
         </tr>

@@ -25,7 +25,7 @@
     <main class="main lesson-steps" role="main">
 <section id="step-1-drawing-a-mountain" class="level1 activity">
 <h1>Step 1: Drawing a Mountain</h1>
-<p>Pick up your turtles, open IDLE, it's time to draw again. But first, look at the following three shapes: How would we draw them in python?</p>
+<p>Pick up your turtles, open IDLE, it’s time to draw again. But first, look at the following three shapes: How would we draw them in python?</p>
 <pre><code>_________________________
 
             /\
@@ -49,7 +49,7 @@ ____/\___/      \___/\___
         forward(30)
 
     first()</code></pre>
-<p>We're going to put all the shapes in functions. The second one looks easy too, let's add it to the file we're writing.</p>
+<p>We’re going to put all the shapes in functions. The second one looks easy too, let’s add it to the file we’re writing.</p>
 <ul>
 <li>Edit your code so it looks like the following:</li>
 </ul>
@@ -79,7 +79,7 @@ _________/      \________</code></pre></li>
 </section>
 <section id="step-2-a-mountain-from-mountains" class="level1 activity">
 <h1>Step 2: A mountain from mountains</h1>
-<p>But how about the third shape? Although it's rather involved if we wrote out all the steps, it's actually drawing the second mountain, four times.</p>
+<p>But how about the third shape? Although it’s rather involved if we wrote out all the steps, it’s actually drawing the second mountain, four times.</p>
 <pre><code>            /\
          __/  \__
          \      /
@@ -89,7 +89,7 @@ ____/\___/      \___/\___
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>Instead of writing all of the smaller movements, let's draw it by calling <code>second</code></p>
+<li><p>Instead of writing all of the smaller movements, let’s draw it by calling <code>second</code></p>
 <pre><code>from turtle import *
 
 def second():
@@ -112,13 +112,13 @@ def third():
 
 third()</code></pre></li>
 </ul>
-<p><code>third</code> looks very much like <code>second</code>, but instead of calling <code>forward</code>, we're calling <code>second</code>. If we wanted to, we could even write the fourth one, and call <code>third</code> instead. This seems like an awful lot of work still, surely we can get the computer to understand what we're doing.</p>
+<p><code>third</code> looks very much like <code>second</code>, but instead of calling <code>forward</code>, we’re calling <code>second</code>. If we wanted to, we could even write the fourth one, and call <code>third</code> instead. This seems like an awful lot of work still, surely we can get the computer to understand what we’re doing.</p>
 <p>This shape is a special shape, which you draw by drawing it over and over: The third is made up of the second, the second is made up of the first. What we really want to do is tell the computer to keep drawing it over and over again until it is done.</p>
 </section>
 </section>
 <section id="step-3-over-and-over" class="level1 activity">
 <h1>Step 3: Over and over</h1>
-<p>We do this by splitting up the problem into two: The simple case, and the special case. The simple case is easy: it's just <code>forward(100)</code>. The special case is a little harder, it needs to say 'Do the special case, but one less, until you get to the simple case'. It's easier to look at the code.</p>
+<p>We do this by splitting up the problem into two: The simple case, and the special case. The simple case is easy: it’s just <code>forward(100)</code>. The special case is a little harder, it needs to say ‘Do the special case, but one less, until you get to the simple case’. It’s easier to look at the code.</p>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
@@ -140,7 +140,7 @@ def mountain(depth):
 
 mountain(3)</code></pre></li>
 </ul>
-<p>We can see that we've used code very similar to <code>first</code>, <code>second</code> and <code>third</code>. We use an <code>if</code> to work out if we should draw the simple case, or the special one. In the special case, we ask to draw a mountain, like how <code>third</code> called <code>second</code>, but we ask it to draw a simpler one each time, at a new depth, one less than what we started with.</p>
+<p>We can see that we’ve used code very similar to <code>first</code>, <code>second</code> and <code>third</code>. We use an <code>if</code> to work out if we should draw the simple case, or the special one. In the special case, we ask to draw a mountain, like how <code>third</code> called <code>second</code>, but we ask it to draw a simpler one each time, at a new depth, one less than what we started with.</p>
 <ul>
 <li>Run it and see what happens. What happens if you try <code>mountain(1)</code>, <code>mountain(2)</code>, or <code>mountain(4)</code>?</li>
 </ul>
@@ -151,7 +151,7 @@ mountain(3)</code></pre></li>
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>Let's just add one last thing to the mountain file, change it to look like the following, adding a new function <code>snowflake</code>:</p>
+<li><p>Let’s just add one last thing to the mountain file, change it to look like the following, adding a new function <code>snowflake</code>:</p>
 <pre class="language-python"><code>
 from turtle import *
 
@@ -187,7 +187,7 @@ snowflake(4,5)</code></pre></li>
 </section>
 <section id="step-5-boxes-more-boxes-even-more-boxes" class="level1 activity">
 <h1>Step 5: Boxes, More Boxes, Even More Boxes</h1>
-<p>Let's look at another shape, that is very much like the snowflake, but with boxes instead of mountains.</p>
+<p>Let’s look at another shape, that is very much like the snowflake, but with boxes instead of mountains.</p>
 <pre><code>
 
 ___________________________
@@ -212,7 +212,7 @@ ___| |__|         |__| |___
 <section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>Let's open a new file and try to draw the second picture, which is what we'll be repeating:</p>
+<li><p>Let’s open a new file and try to draw the second picture, which is what we’ll be repeating:</p>
 <pre class="language-python"><code>from turtle import *
 
 forward(30)
@@ -233,7 +233,7 @@ forward(30)</code></pre></li>
         |         |
 ________|         |________</code></pre></li>
 </ul>
-<p>We have the simple case <code>forward(100)</code>, and we know how to draw the bumpy line, so let's skip straight to the drawing!</p>
+<p>We have the simple case <code>forward(100)</code>, and we know how to draw the bumpy line, so let’s skip straight to the drawing!</p>
 </section>
 </section>
 <section id="step-6-bumpy-boxes" class="level1 activity">
@@ -266,13 +266,13 @@ def xcurve(depth, length):
     left(90)
 
 xcurve(4,5)</code></pre></li>
-<li><p>We've left the special case out for you to fill in; it should be trying to draw the bumpy line, but calling <code>box(newdepth, length)</code> to do it. Your code should look very much like the mountain and snowflake.</p></li>
+<li><p>We’ve left the special case out for you to fill in; it should be trying to draw the bumpy line, but calling <code>box(newdepth, length)</code> to do it. Your code should look very much like the mountain and snowflake.</p></li>
 </ul>
 </section>
 </section>
 <section id="step-7-a-sacred-relic" class="level1 activity">
 <h1>Step 7: A sacred relic</h1>
-<p>Let's draw one last fractal, and like before we have a simple case and a special case. The first three versions look like this. We Draw a triangle, then draw it as three triangles together.</p>
+<p>Let’s draw one last fractal, and like before we have a simple case and a special case. The first three versions look like this. We Draw a triangle, then draw it as three triangles together.</p>
 <pre><code>       /\
       /  \
      /    \
@@ -303,7 +303,7 @@ xcurve(4,5)</code></pre></li>
 <section id="activity-checklist-6" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>Let's open a new file and try it out.</p>
+<li><p>Let’s open a new file and try it out.</p>
 <pre class="language-python"><code>from turtle import *
 
 def triforce(depth, length):
@@ -341,7 +341,7 @@ penup()
 setpos(-255,-255)
 triforce(7, 512)</code></pre></li>
 </ul>
-<p>You might have noticed, we're using a new command <code>setpos</code> to move the turtle robot to the corner of the screen.</p>
+<p>You might have noticed, we’re using a new command <code>setpos</code> to move the turtle robot to the corner of the screen.</p>
 <ul>
 <li>Run it and see what happens. We can see the simple case is just drawing a triangle, but the special case is drawing three little triangles.</li>
 </ul>
@@ -383,8 +383,8 @@ speed(11)
 penup()
 setpos(-255,-255)
 bubble(6, 512)</code></pre></li>
-<li>What happens? What does it look like? We've used the <code>circle</code> command to draw a circle on the screen, which takes a radius.<br /></li>
-<li><p>Try changing the circle's radius, replace <code>circle(length/2)</code> with <code>circle(length)</code>, this will draw a bigger circle instead.</p></li>
+<li>What happens? What does it look like? We’ve used the <code>circle</code> command to draw a circle on the screen, which takes a radius.<br /></li>
+<li><p>Try changing the circle’s radius, replace <code>circle(length/2)</code> with <code>circle(length)</code>, this will draw a bigger circle instead.</p></li>
 </ul>
 </section>
 </section>
@@ -398,17 +398,17 @@ bubble(6, 512)</code></pre></li>
     <div id="legend">
       <table>
         <tr>
-          <td><img src="../../../img/check.png" alt="Instruction" /></td>
+          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
           <td><span class="check_text">Activity Checklist</span></td>
           <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
         </tr>
         <tr>
-          <td><img src="../../../img/flag.png" alt="Test" /></td>
+          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
           <td><span class="flag_text">Test your Project</span></td>
           <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
         </tr>
         <tr>
-          <td><img src="../../../img/save.png" alt="Save" /></td>
+          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
           <td><span class="save_text">Save your Project</span></td>
           <td>Make sure to <span class="save_text upper">save</span> your work now</td>
         </tr>

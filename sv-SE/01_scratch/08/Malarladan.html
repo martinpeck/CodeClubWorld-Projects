@@ -45,7 +45,7 @@ för alltid
 (slut på för alltid)" /></p>
 <p><strong>Nu vill vi använda den här pennspriten som en riktig penna.</strong> Om du tittar under avdelningen Penna hittar du alla möjliga block som har att göra med att rita. De som vi ska börja med är <strong>penna ned</strong> och <strong>penna upp.</strong></p>
 <ol>
-<li>Vi vill använda musknappen för att kontrollera pennan - alltid när musknappen är nere ska pennan vara nere, och när den är uppe ska pennan vara uppe. Vi kan göra det här genom att använda blocken om... annars och musknappen?</li>
+<li>Vi vill använda musknappen för att kontrollera pennan - alltid när musknappen är nere ska pennan vara nere, och när den är uppe ska pennan vara uppe. Vi kan göra det här genom att använda blocken om… annars och musknappen?</li>
 </ol>
 <p><img src="c683bbb4b03c792c30f84dcd8f6d3d7fc9dadf82.png" alt="när FLAGGA klickas på
 för alltid
@@ -151,7 +151,7 @@ sätt pennans färg till (röd)" /></p>
 <h2>STEG 4: Rita bara inom ramarna</h2>
 <p>Du har säkert märkt att du kan måla överallt på skärmen, till och med på kanten. Så vill vi inte ha det. Vi vill ha målningen i mitten av Scenen. Vi kan lösa det genom att se till att pennan inte kan lämna ritytan - den ljusgrå delen av Scenen.</p>
 <p>Kom ihåg att Scratch pratar om punkter på skärmen med en x- och en y-axel. Vår rityta finns mellan 230 och -230 på x-axeln och 170 och -120 på y-axeln. Vi kan vända de här värdena i ett <strong>om</strong>-block, då ser vi till att muspekaren är inom den här ytan innan pennan börjar rita där.</p>
-<p>För att göra det här kan vi göra ett nytt block runt omkring ditt nuvarande <strong>gå till... om</strong>-block, och inuti det nya om-blocket kolla efter följande:</p>
+<p>För att göra det här kan vi göra ett nytt block runt omkring ditt nuvarande <strong>gå till… om</strong>-block, och inuti det nya om-blocket kolla efter följande:</p>
 <p>mus y är större än -120 och mus y är mindre än 170<br />och mus x är större än -230 och mus x är mindre än 230</p>
 <p><strong>Obs!</strong> för att göra det här kommer du behöva använda flera stycken <strong>och</strong>-operatorblock, ett för de två villkoren för mus x, ett för de två villkoren för mux y, och så ytterligare ett för att sätta ihop alla:</p>
 <p><img src="7e6c699bc37bcf3ccbb8f0de0724e99c29e635a0.png" alt="radera
@@ -232,7 +232,7 @@ för alltid
 <li>Skapa en ny verktygsväljarsprite och placera den längst ner på scenen, bredvid alla de andra pennfärgspritearna. Använd klädseln resources/rainbow-selector och låt den sända ut meddelandet regnbåge när den klickas på.<br /></li>
 <li>Lägg till klädseln resources/rainbow-pencil till pennspriten.</li>
 </ol>
-<p>Du behöver skapa ett script som byter pennfärg många gånger varje sekund för att skapa regnbågseffekten (Att ändra siffran med 5 var 0,05:e sekund funkar bra, men testa med olika värden). Scratchkortet om timers förklarar hur du kan få något att hända med jämna mellanrum. Använd blocket &quot;ändra pennans färg med 5&quot; istället för blocket &quot;ändra timer med -1&quot; inuti loopen.</p>
+<p>Du behöver skapa ett script som byter pennfärg många gånger varje sekund för att skapa regnbågseffekten (Att ändra siffran med 5 var 0,05:e sekund funkar bra, men testa med olika värden). Scratchkortet om timers förklarar hur du kan få något att hända med jämna mellanrum. Använd blocket “ändra pennans färg med 5” istället för blocket “ändra timer med -1” inuti loopen.</p>
 <p>Du behöver också kontrollera den loopen så att den bara ändrar pennfärgen när du har valt regnbågspennan, annars kommer alla pennor rita regnbågsfärger! Du kan åstadkomma det här på ett sätt som är väldigt likt hur pennspriten byter mellan penn- och stämpelläge. Du behöver skapa en variabel som heter regnbågsbyte och som har värdet sant när du vill ha regnbågseffekt och falskt när du inte vill det. Varje gång pennan svarar på ett verktygsbytesmeddelande ska den sätta värdet på regnbågsbyte därefter.</p>
 <p>Använd det du lärt dig från stämpelsteget ovan för att kontrollera regnbågseffekten. Scriptet som svarar på verktygsväljarmeddelanden kommer sätta två variabler var: pennläge och regnbågsbyte.</p>
 </section>
@@ -261,13 +261,13 @@ för alltid
 <section id="utmaning-3-stor-och-liten" class="level2 challenge">
 <h2>Utmaning 3: Stor och liten</h2>
 <p>En annan funktion som de flesta ritprogram har är att kunna byta storlek på pennan. Vi lägger till det.<br />Det finns en svårighet dock, nämligen att ibland behöver vi ändra storlek på pennan och ibland behöver vi ändra storlek på pennspritens klädsel. Det beror på om vi använder en penna eller en stämpel.</p>
-<p>Skapa två nya verktygsväljarsprites, som du kallar större och mindre. Den ska ha klädslarna resources/bigger-selector och resources/smaller-selector, och ska skicka meddelandena &quot;större&quot; och &quot;mindre&quot;.</p>
+<p>Skapa två nya verktygsväljarsprites, som du kallar större och mindre. Den ska ha klädslarna resources/bigger-selector och resources/smaller-selector, och ska skicka meddelandena “större” och “mindre”.</p>
 <p>Pennspriten kan svara på meddelandena genom att ändra antingen pennstorlek med 1 eller klädselstorlek med 10, beroende på värdet hos variabeln pennläge (använd ett om-annars-block, ungefär på samma sätt som spriten väljer mellan att rita eller stämpla).<br />Glöm inte att skapa kortkommandon för förstoringen och förminskningen. T.ex. upp- och nertangenterna.</p>
 </section>
 <section id="spara-ditt-projekt-9" class="level2 save">
 <h2>Spara ditt projekt</h2>
 <p>Du kanske har lagt märke till att varje gång du ändrar storlek på stämpeln ändras också storleken på pennan när du byter till den.<br />För att förhindra att det händer behöver du sätta storleken till 100% varje gång du byter till ett pennverktyg. Då får verktyget rätt storlek.</p>
-<p>För att göra allt ännu bättre, låt stämpeln komma ihåg vilken storlek den hade innan du valde pennverktyget och gå tillbaka till den storleken när du väljer stämpelverktyget igen. Det lättaste sättet att göra det här är att skapa en ny variabel som heter &quot;stämpelstorlek&quot;, som uppdateras med den nuvarande storleken varje gång stämpelns storlek ändras. När stämpelverktyget sen väljs kan den hämta sin storlek från den här variabeln.</p>
+<p>För att göra allt ännu bättre, låt stämpeln komma ihåg vilken storlek den hade innan du valde pennverktyget och gå tillbaka till den storleken när du väljer stämpelverktyget igen. Det lättaste sättet att göra det här är att skapa en ny variabel som heter “stämpelstorlek”, som uppdateras med den nuvarande storleken varje gång stämpelns storlek ändras. När stämpelverktyget sen väljs kan den hämta sin storlek från den här variabeln.</p>
 </section>
 <section id="testa-ditt-projekt-10" class="level2 flag">
 <h2>Testa ditt projekt</h2>
@@ -291,17 +291,17 @@ för alltid
     <div id="legend">
       <table>
         <tr>
-          <td><img src="../../../img/check.png" alt="Instruction" /></td>
+          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
           <td><span class="check_text">Activity Checklist</span></td>
           <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
         </tr>
         <tr>
-          <td><img src="../../../img/flag.png" alt="Test" /></td>
+          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
           <td><span class="flag_text">Test your Project</span></td>
           <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
         </tr>
         <tr>
-          <td><img src="../../../img/save.png" alt="Save" /></td>
+          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
           <td><span class="save_text">Save your Project</span></td>
           <td>Make sure to <span class="save_text upper">save</span> your work now</td>
         </tr>

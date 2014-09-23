@@ -35,8 +35,8 @@
 <h2>Zadania do wykonania</h2>
 <ul>
 <li>Stwórz nowy projekt Scratch i usuń duszka kota.<br /></li>
-<li>Kliknij na Scenę, a następnie na zakładkę Tła. Zaimportuj tło 'W pomieszczeniu/chalkboard'.<br /></li>
-<li>Zaimportuj nowego duszka i dodaj do niego kostium. Wybierz taki kostium, który Ci się podoba. Może znajdziesz coś ciekawego w katalogu 'Przedmioty'.<br /></li>
+<li>Kliknij na Scenę, a następnie na zakładkę Tła. Zaimportuj tło ‘W pomieszczeniu/chalkboard’.<br /></li>
+<li>Zaimportuj nowego duszka i dodaj do niego kostium. Wybierz taki kostium, który Ci się podoba. Może znajdziesz coś ciekawego w katalogu ‘Przedmioty’.<br /></li>
 <li>Umieść tego duszka na środku tablicy. Jeżeli trzeba, odpowiednio zwiększ lub zmniejsz jego rozmiar.<br /></li>
 <li><p>Kliknij na zakładkę Kostiumy i zaimportuj 4 dodatkowe kostiumy. Wybierz cokolwiek Ci się podoba!</p></li>
 <li><p>Wyświetlmy teraz jakiś przypadkowy obrazek. Stwórz poniższy skrypt:</p>
@@ -63,7 +63,7 @@
 <section id="zadania-do-wykonania-1" class="level2 check">
 <h2>Zadania do wykonania</h2>
 <ul>
-<li>Kliknij paletę Dane i stwórz zmienną o nazwie 'Punkty'<br /></li>
+<li>Kliknij paletę Dane i stwórz zmienną o nazwie ‘Punkty’<br /></li>
 <li><p>Zmień skrypt, aby wyglądał tak jak ten poniżej:</p>
 <p><img src="ed6e3f14c9b0cd3a884b51d6248f51c32074150f.png" alt="    kiedy kliknięto zieloną FLAGĘ
     ukryj
@@ -79,7 +79,7 @@
         czekaj (1) s
     koniec" /></p></li>
 </ul>
-<p>Nie zapomnij dodać bloku 'ukryj' {.blockpurple} na początku skryptu, <code class="blockorange">ustawić Punkty na 110</code> oraz wszystkiego poniżej.</p>
+<p>Nie zapomnij dodać bloku ‘ukryj’ {.blockpurple} na początku skryptu, <code class="blockorange">ustawić Punkty na 110</code> oraz wszystkiego poniżej.</p>
 </section>
 <section id="przetestuj-swoj-projekt-1" class="level2 flag">
 <h2>Przetestuj swój projekt</h2>
@@ -108,8 +108,8 @@
 <p>Póki co, nasz przypadkowy obrazek powoli pojawia się na tablicy, a liczba punktów maleje w miarę upływu czasu. Ale jak mamy tę grę wygrać? Najpierw dodamy kilka dodatkowych duszków pod tablicą, które możesz kliknąć. Jeżeli klikniesz odpowiednią miniaturkę, wygrasz grę. Jeżeli klikniesz na zły obrazek, ten duszek zniknie i musisz spróbować zgadnąć jeszcze raz.</p>
 <p>Najpierw musimy wiedzieć, która odpowiedź jest poprawna.</p>
 <ul>
-<li>Stwórz nową zmienną 'dla każdego duszka' i nazwij ją <strong>odpowiedź</strong>.<br /></li>
-<li><p>Zmień poprzedni skrypt i ustaw poprawną odpowiedź. Dodaj blok <code class="blockorange">ustaw [odpowiedź] na kostium #</code> zaraz za pierwszą pętlą 'powtórz':</p>
+<li>Stwórz nową zmienną ‘dla każdego duszka’ i nazwij ją <strong>odpowiedź</strong>.<br /></li>
+<li><p>Zmień poprzedni skrypt i ustaw poprawną odpowiedź. Dodaj blok <code class="blockorange">ustaw [odpowiedź] na kostium #</code> zaraz za pierwszą pętlą ‘powtórz’:</p>
 <p><img src="3dc60b4ff4d6a2139e9ccacfb08caefbfdad1c86.png" alt="    kiedy kliknięto zieloną FLAGĘ
     ukryj
     powtórz (losuj od (1) do (5)) razy
@@ -133,17 +133,17 @@
 <li>Powtórz trzy powyższe polecenia, tylko tym razem nazwij duszka <strong>odpowiedź2</strong> i usuń wszystkie kostiumy oprócz drugiego.<br /></li>
 <li>W podobny sposób stwórz duszki <strong>odpowiedź3</strong>, <strong>odpowiedź4</strong> i <strong>odpowiedź5</strong>.</li>
 </ul>
-<p>Powinniśmy teraz mieć pięć duszków w rzędzie pod tablicą, każdy z innym kostiumem, który może być wyświetlony na głównym duszku na tablicy. <strong>Upewnij się, że duszki 'odpowiedzi' nie posiadają żadnych skryptów</strong>.</p>
+<p>Powinniśmy teraz mieć pięć duszków w rzędzie pod tablicą, każdy z innym kostiumem, który może być wyświetlony na głównym duszku na tablicy. <strong>Upewnij się, że duszki ‘odpowiedzi’ nie posiadają żadnych skryptów</strong>.</p>
 <p>Teraz zmienimy sposób, w jaki duszki będą reagować na kliknięcia myszką. Dalsze akcje będą zależeć od tego, czy odpowiedź jest poprawna.</p>
 <ul>
-<li><p>Dodaj poniższy skrypt do duszka 'odpowiedź1':</p>
+<li><p>Dodaj poniższy skrypt do duszka ‘odpowiedź1’:</p>
 <p><img src="7163b7be99fa5d573856ca2da7c96c26345cd23b.png" alt="    kiedy duszek kliknięty
     jeżeli ((odpowiedź) = (1)) to
         nadaj [wygrana v]
     w przeciwnym razie
         ukryj" /></p></li>
 <li>Przeciągnij ten skrypt na pozostałe duszki odpowiedzi. <strong>Dla każdego duszka, zmień 1 na 2, 3, itd.</strong><br /></li>
-<li><p>Teraz musimy dodać coś, co będzie reagować na naszą wiadomość 'wygrana'. Kliknij na głównego duszka, tego na tablicy i dodaj do niego ten dodatkowy skrypt:</p>
+<li><p>Teraz musimy dodać coś, co będzie reagować na naszą wiadomość ‘wygrana’. Kliknij na głównego duszka, tego na tablicy i dodaj do niego ten dodatkowy skrypt:</p>
 <p><img src="22f81688659589a167a51f9cc7489461a7573f3f.png" alt="    kiedy otrzymam [wygrana v]
     powiedz (połącz [Gratulacje! Twoje punkty: ] i (Punkty))" /></p></li>
 </ul>
@@ -162,9 +162,9 @@
 <p><img src="dde59853a36d5606c0dfad384ec191511656a39d.png" alt="    kiedy kliknięto zieloną FLAGĘ
     pokaż" /></p></li>
 </ul>
-<p>Aby naprawić drugi problem, trzeba zatrzymać pętlę 'powtórz' na duszku odpowiedzi po kliknięciu poprawnej odpowiedzi. Wymaga to nowej zmiennej. Ustaw ją na <strong>0</strong> po rozpoczęciu gry, a potem na <strong>1</strong> po wygraniu gry.</p>
+<p>Aby naprawić drugi problem, trzeba zatrzymać pętlę ‘powtórz’ na duszku odpowiedzi po kliknięciu poprawnej odpowiedzi. Wymaga to nowej zmiennej. Ustaw ją na <strong>0</strong> po rozpoczęciu gry, a potem na <strong>1</strong> po wygraniu gry.</p>
 <ul>
-<li>Stwórz nową zmienną i nazwij ją 'wygrano?'<br /></li>
+<li>Stwórz nową zmienną i nazwij ją ‘wygrano?’<br /></li>
 <li><p>Zmień istniejące skrypty, aby wyglądały tak jak poniżej:</p>
 <p><img src="af4fbd099233760a039755323a956d9e671d7840.png" alt="    kiedy kliknięto zieloną FLAGĘ
     ukryj
@@ -210,7 +210,7 @@
 <p>Teraz, za każdym razem, gdy zaczynasz grę, obrazki są zniekształcone w ten sam sposób. W drugim kroku próbowaliśmy kombinacji różnych zniekształceń, które działały równie dobrze jak zmiana koloru i pikselizacja.</p>
 <p>Spróbuj użyć innych kombinacji zniekształceń, które działałyby równie dobrze.</p>
 <p>Zmień grę w taki sposób, że za każdym razem obrazki zniekształcane są w inny sposób.</p>
-<p><strong>Podpowiedź:</strong> Stwórz nową zmienną i nazwij ją 'zniekształcenie'. Przypisz jej przypadkową wartość zaraz na początku gry. Użyj bloku jeżeli w pętli 'powtarzaj aż', aby użyć odpowiedniego zniekształcenia.</p>
+<p><strong>Podpowiedź:</strong> Stwórz nową zmienną i nazwij ją ‘zniekształcenie’. Przypisz jej przypadkową wartość zaraz na początku gry. Użyj bloku jeżeli w pętli ‘powtarzaj aż’, aby użyć odpowiedniego zniekształcenia.</p>
 </section>
 <section id="zapisz-swoj-projekt.-4" class="level2 save">
 <h2>Zapisz swój projekt.</h2>
@@ -275,17 +275,17 @@
     <div id="legend">
       <table>
         <tr>
-          <td><img src="../../../img/check.png" alt="Instruction" /></td>
+          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
           <td><span class="check_text">Activity Checklist</span></td>
           <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
         </tr>
         <tr>
-          <td><img src="../../../img/flag.png" alt="Test" /></td>
+          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
           <td><span class="flag_text">Test your Project</span></td>
           <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
         </tr>
         <tr>
-          <td><img src="../../../img/save.png" alt="Save" /></td>
+          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
           <td><span class="save_text">Save your Project</span></td>
           <td>Make sure to <span class="save_text upper">save</span> your work now</td>
         </tr>

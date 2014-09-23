@@ -25,7 +25,7 @@
     <main class="main lesson-steps" role="main">
 <section id="introduction" class="level2 intro">
 <h2>Introduction</h2>
-<p>You know a few <strong>HTML</strong> tags, so it's time to make your first page! Let's get started right away.</p>
+<p>You know a few <strong>HTML</strong> tags, so it’s time to make your first page! Let’s get started right away.</p>
 </section>
 <section id="step-1-open-the-starting-document" class="level1 activity">
 <h1>Step 1: Open the starting document</h1>
@@ -40,21 +40,21 @@
 <section id="step-2-make-a-page-about-yourself" class="level1 activity">
 <h1>Step 2: Make a page about yourself</h1>
 <p><strong>About mistakes</strong></p>
-<p>Mistakes often happen. It's very easy to make them in HTML because you have to remember to close each tag, and the opening and closing tag are slightly different. Let's try making some mistakes to see how browser tries to make sense of our code even if we haven't written it perfectly.</p>
+<p>Mistakes often happen. It’s very easy to make them in HTML because you have to remember to close each tag, and the opening and closing tag are slightly different. Let’s try making some mistakes to see how browser tries to make sense of our code even if we haven’t written it perfectly.</p>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Let's pick the list of things we like as an example. One of the mistakes that happen often is forgetting the <strong>closing tag</strong>, so let's remove the <code>&lt;/ul&gt;</code> to see how it affects the page. Save the file and refresh it in the browser.</li>
+<li>Let’s pick the list of things we like as an example. One of the mistakes that happen often is forgetting the <strong>closing tag</strong>, so let’s remove the <code>&lt;/ul&gt;</code> to see how it affects the page. Save the file and refresh it in the browser.</li>
 </ul>
-<p>What happened? Some things below the list moved a little bit to the right. If you inspect the page with X-Ray Goggles you can see that things which followed the list now nest inside it, which is why they have moved to the right. After we removed the closing tag the browser simply doesn't know the list of items has ended.</p>
+<p>What happened? Some things below the list moved a little bit to the right. If you inspect the page with X-Ray Goggles you can see that things which followed the list now nest inside it, which is why they have moved to the right. After we removed the closing tag the browser simply doesn’t know the list of items has ended.</p>
 <ul>
-<li>Add the closing <code>&lt;/ul&gt;</code> tag back in and save it. Now when you refresh the page the rest of tags aren't inside <code>&lt;ul&gt;</code> anymore.<br /></li>
-<li>Tags need to be spelt correctly for browser to understand them. What would happen if we misspelt something?<br />+Find the <code>&lt;h1&gt;</code> tag. Let's change it to <code>&lt;d1&gt;</code>. Save the document and refresh it in the browser.</li>
+<li>Add the closing <code>&lt;/ul&gt;</code> tag back in and save it. Now when you refresh the page the rest of tags aren’t inside <code>&lt;ul&gt;</code> anymore.<br /></li>
+<li>Tags need to be spelt correctly for browser to understand them. What would happen if we misspelt something?<br />+Find the <code>&lt;h1&gt;</code> tag. Let’s change it to <code>&lt;d1&gt;</code>. Save the document and refresh it in the browser.</li>
 </ul>
-<p>What happened? Since the browser doesn't know what you mean by this tag it can no longer tell that it's a heading and so it doesn't use a larger text to show how important this piece of text is.</p>
+<p>What happened? Since the browser doesn’t know what you mean by this tag it can no longer tell that it’s a heading and so it doesn’t use a larger text to show how important this piece of text is.</p>
 <ul>
 <li>Change <code>&lt;d1&gt;</code> back to <code>&lt;h1&gt;</code> and save again.<br /></li>
-<li>Find one of the <code>&lt;img&gt;</code> tags. We've just tried misspelling the tag name and the browser wasn't sure what to do with it. But what if we misspell the attribute?</li>
+<li>Find one of the <code>&lt;img&gt;</code> tags. We’ve just tried misspelling the tag name and the browser wasn’t sure what to do with it. But what if we misspell the attribute?</li>
 </ul>
 <p>Inside <code>&lt;img&gt;</code> tag we have the <code>src</code> and <code>alt</code> attributes:</p>
 <pre class="language-markup"><code>&lt;img src=&quot;kitten.jpg&quot; alt=&quot;This is a kitten.&quot; /&gt;</code></pre>
@@ -72,13 +72,13 @@
 <ul>
 <li>Fix it again by adding a quote after the <code>alt</code> text.</li>
 </ul>
-<p>We've made some common mistakes together, and sometimes a simple error might make the browser struggle to understand what we mean. But most of the time it will try to show us something anyway, so when we've changed the header tag to something else it didn't understand this piece of text was a heading, but it still showed us the text. So it's a little bit understanding, but some mistakes can make it very confused.</p>
+<p>We’ve made some common mistakes together, and sometimes a simple error might make the browser struggle to understand what we mean. But most of the time it will try to show us something anyway, so when we’ve changed the header tag to something else it didn’t understand this piece of text was a heading, but it still showed us the text. So it’s a little bit understanding, but some mistakes can make it very confused.</p>
 </section>
 </section>
 <section id="step-3-create-another-page-and-link-to-it" class="level1 activity">
 <h1>Step 3: Create another page and link to it</h1>
 <ul>
-<li>Let's create another page. Open <code>about_me_page_2.html</code>. It has a little bit less code than the last page you were working with, but I'm sure you can figure out how to add new tags by now.</li>
+<li>Let’s create another page. Open <code>about_me_page_2.html</code>. It has a little bit less code than the last page you were working with, but I’m sure you can figure out how to add new tags by now.</li>
 </ul>
 <p><strong>Some hints and ideas:</strong></p>
 <ul>
@@ -86,14 +86,14 @@
 <li>You could make this page about your pet, your favourite hobby or your friends and their hobbies.<br /></li>
 <li>Add a list of things your pet likes, if your page is about the pet.</li>
 </ul>
-<p><strong>Are you done? Great! Let's now link the two pages you have created together.</strong></p>
-<p>When we've been linking to parts of the same page, we could just point links to a specific id within a page, like this:</p>
+<p><strong>Are you done? Great! Let’s now link the two pages you have created together.</strong></p>
+<p>When we’ve been linking to parts of the same page, we could just point links to a specific id within a page, like this:</p>
 <pre class="language-markup"><code>&lt;a href=&quot;#kitten&quot;&gt;Click to see a kitten&lt;/a&gt;</code></pre>
 <p>Which then took you to something like this:</p>
 <pre class="language-markup"><code>&lt;div id=&quot;kitten&quot;&gt;
     &lt;img src=&quot;kitten.jpg&quot; alt=&quot;This is a kitten.&quot; /&gt;
 &lt;/div&gt;</code></pre>
-<p>To link to another page, we don't need to include the hash symbol (<code>#</code>), but instead we need to say which file we would like the link to take us to.</p>
+<p>To link to another page, we don’t need to include the hash symbol (<code>#</code>), but instead we need to say which file we would like the link to take us to.</p>
 <p>So to link from <code>about_me_page_2.html</code> to <code>about_me.html</code> write it like this:</p>
 <pre class="language-markup"><code>&lt;a href=&quot;about_me.html&quot;&gt;Go to About Me page&lt;/a&gt;</code></pre>
 <p>You can change the link text to something else, like the page title if you have changed it.</p>
@@ -104,13 +104,13 @@
 <section id="putting-your-website-on-the-web-extra-activity" class="level1 activity">
 <h1>Putting your website on the web (extra activity)</h1>
 <p>Now you have made your own site, you want to show it off, am I right?</p>
-<p>If you simply copied the address of the web page from your browser and then sent it to someone, they wouldn't see it. That's because this address describes a place on your computer, and your friends don't have access to it. Even of they did, what if they wanted to look at it when your computer wasn't turned on?</p>
+<p>If you simply copied the address of the web page from your browser and then sent it to someone, they wouldn’t see it. That’s because this address describes a place on your computer, and your friends don’t have access to it. Even of they did, what if they wanted to look at it when your computer wasn’t turned on?</p>
 <p>Remember servers from the first session? Servers are computers that are always on and connected to the internet, and they are set up so people can visit websites that live on those computers.</p>
-<p>To do that we will use <strong>Cyberduck</strong> - it's a program for moving files from your computer to a server.</p>
+<p>To do that we will use <strong>Cyberduck</strong> - it’s a program for moving files from your computer to a server.</p>
 <ul>
 <li>Click <code>Open Connection</code>.<br /></li>
 <li>Add the server name, user name and password as instructed by the CodeClub volunteer.<br /></li>
-<li>Click <code>Connect</code>. You will then see all the folders and files on the server - most likely the server will be empty, as you haven't added your files yet.<br /></li>
+<li>Click <code>Connect</code>. You will then see all the folders and files on the server - most likely the server will be empty, as you haven’t added your files yet.<br /></li>
 <li>Drag your website files from your computer into your server window. The uploading will begin.<br /></li>
 <li>Once uploaded, you can visit your website at the address given to you by the CodeClub volunteer.</li>
 </ul>
@@ -132,17 +132,17 @@
     <div id="legend">
       <table>
         <tr>
-          <td><img src="../../../img/check.png" alt="Instruction" /></td>
+          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
           <td><span class="check_text">Activity Checklist</span></td>
           <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
         </tr>
         <tr>
-          <td><img src="../../../img/flag.png" alt="Test" /></td>
+          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
           <td><span class="flag_text">Test your Project</span></td>
           <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
         </tr>
         <tr>
-          <td><img src="../../../img/save.png" alt="Save" /></td>
+          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
           <td><span class="save_text">Save your Project</span></td>
           <td>Make sure to <span class="save_text upper">save</span> your work now</td>
         </tr>
