@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="world"  lang="sv-SE">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Göm ninjorna — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Göm ninjorna</h1>
+      <span class="level-indicator">Nivå 2</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Svenska</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">HTML &amp; CSS</a></li><li class="breadcrumbs-item current">Göm ninjorna</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="uppgiften" class="level2 intro">
+<h2>Uppgiften</h2>
+<p>Det här projektet kommer att bygga på din kunskap om CCS-kung fu.</p>
+<p>Fem ninjor har kommit till staden och behöver gömma sig innan någon ser dem. Använd din egna ninjaliknande CSS-kunskaper för att få dem till ett säkert ställe. Du kan flytta på ninjorna, och några av objekten på gatan också. Fort! Det är ont om tid!</p>
+<p><img src="ninjas.png" alt="screenshot" /></p>
+</section>
+<section id="steg-1-traffa-ninjorna" class="level1 activity">
+<h1>Steg 1: Träffa ninjorna</h1>
+<ul>
+<li>Öppna filen som heter <code>ninjas.html</code> i textredigeraren. Öppna den i webbläsaren också.<br /></li>
+<li>Läs igenom koden. Kan du gissa vilka delar som hör till vilka objekt på gatan? Notera att vi använder två språk: HTML för att lägga till alla element till sidan, och CSS placerad mellan <code>style</code>-taggarna.<br /></li>
+<li>Elementen som vi kommer att använda är bilderna (<code>&lt;img&gt;</code>-taggarna). Vi kan kontrollera deras position genom att använda CSS.</li>
+</ul>
+<p><strong>Låt oss flytta på en ninja</strong></p>
+<ul>
+<li>Varje ninja har namngetts genom att använda <code>id</code>-attributet. Låt oss flytta ninjan Alex först. Hitta CSS-regeln som hör till Alex.<br /></li>
+<li>Ändra värdet av <code>left</code>(vänster) till <code>100px</code> och <code>top</code>(övre) till <code>320px</code>. När <code>position</code>-egenskapen är satt till <code>absolute</code> betyder det att vi kommer att beskriva positionen i relation till ninjans förälderelement (parent element) - i det här fallet <code>&lt;div&gt;´ med</code>id<code>`street_corner</code>. <code>px</code>betyder <code>pixel</code>. <code>left</code> beskriver hur långt ninjan ska flyttas från vänster sida (hur många pixlar), och <code>top</code> säger till webläsaren hur långt den ska flyttas ner från den övre kanten.<br /></li>
+<li>Ändra <code>left</code>(vänster) till <code>right</code>(höger) och <code>top</code>(övre) till <code>bottom</code>(nedre). Nu säger koden till webbläsaren att sätta ninjan <code>100px</code> till vänster om den högra kanten, och <code>320px</code> upp från den nedre kanten.</li>
+</ul>
+<p>Pixlar beskriver den minsta fysiska punkt som skärmen kan visa. De används ofta för att beskriva skärmupplösning.</p>
+</section>
+<section id="steg-2-lat-oss-prova-att-beskriva-det-lite-annorlunda" class="level1 activity">
+<h1>Steg 2: Låt oss prova att beskriva det lite annorlunda</h1>
+<p>Nu vet du hur man använder pixelpositionering. Detta är inte det enda sättet vi kan beskriva positionerna på skärmen, så låt oss titta på några andra alternativ som vi har.</p>
+<ul>
+<li>Hitta <code>wheelie_bin</code>-elementet i CSS:en</li>
+</ul>
+<p>100% beskriver hela bredden av tillgänligt skärmutrymme. Eftersom vi positionerar ninjor och andra objekt i relation till <code>street_corner</code> (gathörn), som är 600 pixlar bred, i vårt fall kommer 100% att vara samma som <code>600px</code>. Om vi skulle rita ett större gathörn, till exempel <code>800px</code>bred, då skulle 100% betyda <code>800px</code>. Beroende på sammanhanget, har storlekar som beskrivs med procent olika betydelse.</p>
+</section>
+<section id="steg-3-annu-en-enhetstyp" class="level1 activity">
+<h1>Steg 3: Ännu en enhetstyp</h1>
+<p>Som om vi inte redan hade tillräckligt med enhetstyper, kommer vi nu att prova ännu en! Du vet hur man använder pixlar och procent, så låt oss nu prova <code>ems</code>.</p>
+<p><code>Em</code>är en mätningstyp som lånats från typografin, som handlar om utseendet på bokstäver och text. En em är lika med det nuvarande typsnittet. Notera att i början av CSS:en sätter vi <code>font-size</code> på <code>body</code>-elementet till 20px, så en <code>em</code> kommer att vara 20 pixlar.</p>
+<ul>
+<li>Hitta <code>bicycle</code> (cykeln) i CSS:en. Förutom `em´-biten så borde det se bekant ut. Se om du kan flytta cykeln för att gömma Ninjan Sam.<br /></li>
+<li>Vi har nämnt att storleken på <code>em</code>:en är baserad på typsnittsstorleken (font size). För att se det i praktiken, hitta <code>body</code> i CSS:en. Ändra <code>font-size</code>-värdet (typsnittvärdet) till 30px. Vad hände? Eftersom varje <code>em</code> är 30 pixlar bred och 30 pixlar hög kommer alla element som använder detta mätvärde att ha ändrat sin position!</li>
+</ul>
+</section>
+<section id="steg-4-fort-gom-ninjorna" class="level1 activity">
+<h1>Steg 4: Fort, göm ninjorna!</h1>
+<p>Nu när du vet hur man flyttar element på skärmen så är det dags att hjälpa ninjorna. Använd olika sätt att beskriva deras position. Kom ihåg, du kan även flytta på några av objekten. Vilken enhetstyp känner du dig mest bekväm med att använda? Hitta det bästa sättet att ordna bästa gömstället. Lycka till!</p>
+<section id="saker-att-prova" class="level2 try">
+<h2>Saker att prova</h2>
+<ul>
+<li>Kan du komma på hur man gör så att ninjorna syns framför några av gatuobjekten? Vad skulle hända om du kopierade <code>&lt;img&gt;</code>-taggen för ninjan efter `<img>´-taggen som visar objektet?<br /></li>
+<li>Kan du lägga till några fler objekt till scenen? Du kan lägga till bilder från din dator eller bilder som du hittar på internet.</li>
+</ul>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <div id="legend">
+      <table>
+        <tr>
+          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
+          <td><span class="check_text">Activity Checklist</span></td>
+          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
+          <td><span class="flag_text">Test your Project</span></td>
+          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
+          <td><span class="save_text">Save your Project</span></td>
+          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

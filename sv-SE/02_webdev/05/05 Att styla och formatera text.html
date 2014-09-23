@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class="world"  lang="sv-SE">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Styla och formatera text — Code Club World Projects</title>
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Styla och formatera text</h1>
+      <span class="level-indicator">Nivå 2</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Svenska</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">HTML &amp; CSS</a></li><li class="breadcrumbs-item current">Styla och formatera text</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+<section id="uppgiften" class="level2 intro">
+<h2><strong>Uppgiften:</strong></h2>
+<p>I den här lektionen ska vi lära oss hur man stylar text med olika typsnitt(fonts), färger och storlekar. Vi kommer också att lära oss hur man lägger till bakgrundsfärger och ramar. Vi kommer att använda samma projekt som du arbetade på sist, så se till att du öppnar index.html från Felix-mappen.</p>
+</section>
+<section id="steg-1-typsnitt" class="level1 activity">
+<h1>Steg 1: Typsnitt</h1>
+<p>Vi kan ändra utseendet på texten genom att ändra <strong>typsnittet</strong> (font). De vanligaste typsnitten heter</p>
+<ul>
+<li>Arial<br /></li>
+<li>Courier New, Courier<br /></li>
+<li>Garamond<br /></li>
+<li>Georgia<br /></li>
+<li>Lucida Sans, Lucida Grande, Lucida<br /></li>
+<li>Palatino Linotype<br /></li>
+<li>Tahoma<br /></li>
+<li>Times New Roman, Times<br /></li>
+<li>Trebuchet<br /></li>
+<li>Verdana</li>
+</ul>
+<p>Alla typsnitt finns inte på alla datorer, så vi måste även tillhandahålla <strong>reservtypsnitt</strong>. Dessa är väldigt allmänna som ‘sans serif’ och ‘serif’.</p>
+<p>Vi testar att ändra typsnitt på rubriken genom att använda `font-family´-egenskapen.</p>
+<pre class="language-css"><code>h1 {
+    color: red;
+    background-color: black;
+    font-family: impact, sans-serif;
+    font-size: 72px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}</code></pre>
+<p>Och typsnittet för styckena…</p>
+<pre class="language-css"><code>p {
+    font-family: Georgia, &#39;Times New Roman&#39;, serif;
+}</code></pre>
+<section id="spara-och-granska." class="level2 save">
+<h2><strong>Spara</strong> och <strong>granska</strong>.</h2>
+<p>Prova några av de olika typsnitten för att se vilka du gillar bäst. Notera hur vi separerar varje typsnitt med ett komma, och om typsnittet har ett namn med mer än ett ord måste vi sätta det inom citattecken.</p>
+<p>Vilket av typsnitten som vi nämnde tycker du ser bäst ut? Vilken tycker du är lättast att läsa?</p>
+<p>Har du några andra typsnitt på din dator än de som har nämnts här? (Det har du förmodligen). Försök att öppna ett program som t.ex. Word, alla typsnitt som är sparade på datorn kan vanligtvis hittas där.</p>
+<p><img src="fonts.png" alt="screenshot" /></p>
+<p>Hitta ett som du gillar och prova det på websidan!</p>
+<p>Du kan göra texten <strong>fet</strong>(bold), <em>kursiv</em> (italic) eller både och med font-style-egenskapen. Låt oss ändra emailtexten (kom ihåg att den är inom en <code>&lt;a&gt;</code>-tagg).</p>
+<pre class="language-css"><code>a {
+    font-style: bold;
+}</code></pre>
+</section>
+<section id="spara-och-granska.-1" class="level2 save">
+<h2><strong>Spara</strong> och <strong>granska</strong>.</h2>
+<p>Eller så kan vi göra den kursiv.</p>
+<pre class="language-css"><code>a {
+    font-style: italic;
+}</code></pre>
+</section>
+<section id="spara-och-granska.-2" class="level2 save">
+<h2><strong>Spara</strong> och <strong>granska</strong>.</h2>
+<p>Det finns även ett font-stylevärde som kallas <code>oblique</code>. Hur ser det ut?</p>
+<p>Vi kan även bestämma hur fet (bold) viss text ska vara genom att använda egenskapen <code>font-weight</code>. Den tar värdena <code>normal</code>, <code>bold</code>, <code>bolder</code>, <code>lighter</code>. Du kan även använda siffror, 100, 200, 300, 400, 500, 600, 700, 800, och 900, där 100 är den tunnaste texten och 900 är den tjockaste (fetaste texten). Normal text är samma som 400, bold(fet) är samma som 700. Hur som helst, alla typsnitt har inte alla dessa, så det är säkrare att bara använda normal och bold. Rubriker är vanligtvis bold (feta) som standard. Om vi vill att vår <code>h2</code> inte ska vara bold (fet), måste vi skriva:</p>
+<pre class="language-css"><code>h2 {
+    font-weight: normal;
+}</code></pre>
+<p>Prova!</p>
+</section>
+</section>
+<section id="steg-2-ramar" class="level1 activity">
+<h1>Steg 2: Ramar!</h1>
+<p>Vi lägger till en border (ram) runt bilden.</p>
+<pre class="language-css"><code>img {
+    border-color: green;
+    border-style: solid;
+    border-width: 5px;
+}</code></pre>
+<section id="spara-och-granska.-3" class="level2 save">
+<h2><strong>Spara</strong> och <strong>granska</strong>.</h2>
+<p>Prova att byta color (färg), width (bredd) och border-style (ramstil) tills du är nöjd. Vissa värden för border-style är <code>dashed</code>, <code>dotted</code>, <code>double</code>, <code>groove</code>, <code>ridge</code>, <code>inset</code>, <code>outset</code>.</p>
+<p>Du kan sätta ramar runt alla delar, varför inte prova några till?</p>
+</section>
+</section>
+<section id="steg-3-id-och-klasser" class="level1 activity">
+<h1>Steg 3: ID och klasser</h1>
+<p>Vi vill göra stycket med kontaktuppgifterna <strong>highlighted</strong> (markerad). Vi kan inte använda <code>&lt;p&gt;</code>-taggen eftersom det skulle ändra alla stycken. För att göra så att ett typsnitt bara gäller för en del, använder vi något som kallas ID. Vi behöver ändra i html:en så det blir såhär:</p>
+<pre class="language-markup"><code>&lt;p id =&quot;highlight&quot;&gt;Har du sett Felix? &lt;em&gt;Vänligen&lt;/em&gt; kontakta hans ägare på &lt;a href=&quot;mailto:felixowners@email.com&quot;&gt;felixowners@email.com&lt;/a&gt;&lt;/p&gt;</code></pre>
+<p>Sen kan vi styla ID:t såhär:</p>
+<pre class="language-css"><code>#highlight {
+    color: red;
+}</code></pre>
+<section id="spara-och-granska.-4" class="level2 save">
+<h2><strong>Spara</strong> och <strong>granska</strong>.</h2>
+<p>Ett ID är unikt och kan bara användas en gång per sida. Så om vi vill att två av styckena ska ha större font-size (typsnittsstorlek) kan vi göra det genom att använda klasser. Först behöver vi ge klassnamn till de stycken som vi vill ändra.</p>
+<pre class="language-markup"><code>&lt;p class=&quot;large&quot;&gt;Han försvann från trädgården igår.&lt;/p&gt;
+&lt;p class=&quot;large&quot;&gt;&lt;strong&gt;Tack!&lt;/strong&gt;&lt;p&gt;</code></pre>
+<p>vi stylar en klass såhär (med ett <code>.</code>istället för ett <code>#</code>):</p>
+<pre class="language-css"><code>.large {
+    font-size:24px;
+}</code></pre>
+</section>
+<section id="prova-ocksa" class="level2 try">
+<h2>Prova också:</h2>
+<ul>
+<li>Hur skulle du ändra en sida för att få den att se bättre ut? Varför inte försöka använda dina favorittypsnitt och favoritfärger?<br /></li>
+<li>Om du blir klar tidigt kan du gå tillbaka och styla html:en som vi gjorde i tidigare lektioner.<br /></li>
+<li>Förresten, visste du att background-egenskapen(bakgrund) inte bara tar värden som är färger, utan även bilder?</li>
+</ul>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">www.codeclub.org.uk</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
+      <p>&copy; 2014 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <div id="legend">
+      <table>
+        <tr>
+          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
+          <td><span class="check_text">Activity Checklist</span></td>
+          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
+          <td><span class="flag_text">Test your Project</span></td>
+          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
+        </tr>
+        <tr>
+          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
+          <td><span class="save_text">Save your Project</span></td>
+          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
