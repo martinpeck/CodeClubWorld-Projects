@@ -7,6 +7,7 @@
     <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
 
     <title>Desert Race — Code Club World Projects</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.ico">
 
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
@@ -67,7 +68,7 @@
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Add a new sprite from a file. Choose the <strong>button3</strong> sprite which is inside <strong>“Things”</strong>.<br /></li>
+<li>Add a new sprite from the library. Choose the <strong>button3</strong> sprite which is inside <strong>“Things”</strong>.<br /></li>
 <li>Edit the costume of the button sprite, add the text <strong>‘start’</strong> to it and click OK. Move the sprite to the middle of the stage.<br /></li>
 <li><p>Now add a script that shows the sprite when the project is run:</p>
 <p><img src="0708999fbdf5f8c0c922bb17bc6561065d719f78.png" alt="when FLAG clicked
@@ -185,11 +186,11 @@ if &lt;(racing) = [1]&gt;
 <li><strong>Try to add a booster</strong> that you can use once each race that moves the parrot or the lion <strong>30 steps in 1 go.</strong><br /></li>
 <li><strong>Add a new costume</strong> with fire coming out behind for each sprite and make it appear when the boost is pressed.<br /></li>
 <li><p><strong>Create another sound</strong> that the sprite will make when the boost is pressed.</p>
-<p><img src="dbda164ef9f8dcd4b9dd9164038d0b6f2ebb599b.png" alt="when [p v] key pressed
+<p><img src="256b5cb97fdc3a28e56d73a0234827c8e539be07.png" alt="when [p v] key pressed
 if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
     switch to costume [parrot-boost v]
     set [boosted v] to [1]
-    move (4) steps
+    move (30) steps
     if &lt;touching [edge v]?&gt;
          set (racing) to [0]
         play sound [recording1 v]
