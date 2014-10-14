@@ -29,7 +29,7 @@
 <p>This project is in Beta. That means we’re still testing it, and there’s a small chance there could be some bugs or typos. If you’re a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/1eMCfpYe3v7eYu5M8rSqLKlmq7cczLCLHx66csgyUyVU/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email <script type="text/javascript">
 <!--
 h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
 </section>
@@ -54,7 +54,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <ul>
 <li>If you edit the RPG.py file, you can see that the map is coded as a dictionary of rooms:</li>
 </ul>
-<pre class="language-python"><code>    #a dictionary linking a room to other room positions
+<pre class="{.language-python}"><code>    #a dictionary linking a room to other room positions
     rooms = {
 
                 1 : {  &quot;name&quot;  : &quot;Hall&quot; ,
@@ -72,7 +72,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 </ul>
 <p><img src="rpg-dining.png" alt="screenshot" /></p>
 <p>This new dining room is linked to the hall (to the west). Let’s add this new room into the code:</p>
-<pre class="language-python"><code>#a dictionary linking a room to other room positions
+<pre class="{.language-python}"><code>#a dictionary linking a room to other room positions
 rooms = {
 
             1 : {  &quot;name&quot;  : &quot;Hall&quot; ,
@@ -101,7 +101,7 @@ rooms = {
 <p>Add more rooms to your game. For example, you could create a living room to the south of the dining room. Remember to add a door to/from one of the other rooms!</p>
 </section>
 </section>
-<section id="step-2-adding-items-to-collect" class="level1 activity new-page">
+<section id="step-2-adding-items-to-collect" class="level1 activity">
 <h1>Step 2: Adding items to collect</h1>
 <p>Now that you have lots of rooms, let’s leave items in the rooms for the player to collect as they move through the maze.</p>
 <section id="activity-checklist-1" class="level2 check">
@@ -109,7 +109,7 @@ rooms = {
 <ul>
 <li>Adding an item into a room is easy. You can just add it to the dictionary of a room. For example, let’s put a key in the hall.</li>
 </ul>
-<pre class="language-python"><code>#a dictionary linking a room to other room positions
+<pre class="{.language-python}"><code>#a dictionary linking a room to other room positions
 rooms = {
 
             1 : {  &quot;name&quot;  : &quot;Hall&quot; ,
@@ -138,7 +138,7 @@ rooms = {
 <p>Add an item to some of the rooms in your game. You can add anything that you think would be helpful in trying to escape the house! For example, a shield or a magic potion.</p>
 </section>
 </section>
-<section id="step-3-adding-enemies" class="level1 activity new-page">
+<section id="step-3-adding-enemies" class="level1 activity">
 <h1>Step 3: Adding enemies</h1>
 <p>This game is too easy! Let’s add enemies to some rooms that the player must avoid.</p>
 <section id="activity-checklist-2" class="level2 check">
@@ -146,7 +146,7 @@ rooms = {
 <ul>
 <li>Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:</li>
 </ul>
-<pre class="language-python"><code>#a dictionary linking a room to other room positions
+<pre class="{.language-python}"><code>#a dictionary linking a room to other room positions
 rooms = {
 
             1 : {  &quot;name&quot;  : &quot;Hall&quot; ,
@@ -168,7 +168,7 @@ rooms = {
 <ul>
 <li>You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game.</li>
 </ul>
-<pre class="language-python"><code>    #player loses if they enter a room with a monster
+<pre class="{.language-python}"><code>    #player loses if they enter a room with a monster
     if &quot;item&quot; in rooms[currentRoom] and &quot;monster&quot; in rooms[currentRoom][&quot;item&quot;]:
         print(&quot;A monster has got you... GAME OVER!&quot;)
         print(&quot;Press any key to quit&quot;)
@@ -185,7 +185,7 @@ rooms = {
 <p>Add more monsters to your game, to make it harder to escape the house!</p>
 </section>
 </section>
-<section id="step-4-winning-the-game" class="level1 activity new-page">
+<section id="step-4-winning-the-game" class="level1 activity">
 <h1>Step 4: Winning the game</h1>
 <p>Let’s give your player a mission, which needs to completed to win the game.</p>
 <section id="activity-checklist-3" class="level2 check">
@@ -200,7 +200,7 @@ rooms = {
 <li><p>Use the guidance in step 2 above to add a potion to the dining room (or another room in your house).</p></li>
 <li><p>To allow the player to win the game when they get to the garden with the key and the potion, add this code to the end of your game:</p></li>
 </ul>
-<pre class="language-python"><code>    #player wins if they get to the garden with a key and a shield
+<pre class="{.language-python}"><code>    #player wins if they get to the garden with a key and a shield
     if currentRoom == 4 and &#39;key&#39; in inventory and &#39;potion&#39; in inventory:
         print(&quot;You escaped the house... YOU WIN!&quot;)
         print(&quot;Press any key to quit&quot;)
@@ -214,7 +214,7 @@ rooms = {
 <ul>
 <li>Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the <code>showInstructions()</code> function to include more information.</li>
 </ul>
-<pre class="language-python"><code>def showInstructions():
+<pre class="{.language-python}"><code>def showInstructions():
     #print a main menu, the commands and instructions
     print(&#39;&#39;&#39;
 RPG Game
@@ -243,23 +243,21 @@ Commands:
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

@@ -33,7 +33,7 @@
 <section id="checklista" class="level2 check">
 <h2>Checklista</h2>
 <ul>
-<li>Öppna en textredigerare.<br /></li>
+<li>Öppna en textredigerare.</li>
 <li>Öppna filen <code>about_me.html</code>. Filen innehåller bara en liten del HTML kod för att komma igång, men du kommer att skriva resten själv.</li>
 </ul>
 </section>
@@ -49,26 +49,26 @@
 </ul>
 <p>Vad hände? Vissa saker under listan har flyttats lite åt höger. Om du inspekterar webbsidan kan du se att det som följde på listan nu finns inuti listan, och därför har det flyttats till höger. När vi tog bort den avslutande taggen så vet inte webbläsaren att listan över objekt har upphört.</p>
 <ul>
-<li>Lägg tillbaka <code>&lt;/ul&gt;</code> taggen och spara. När du nu uppdaterar sidan så kommer resten av taggarna inte att finnas kvar inuti <code>&lt;ul&gt;</code> längre.<br /></li>
+<li>Lägg tillbaka <code>&lt;/ul&gt;</code> taggen och spara. När du nu uppdaterar sidan så kommer resten av taggarna inte att finnas kvar inuti <code>&lt;ul&gt;</code> längre.</li>
 <li>Taggarna behöver vara stavande korrekt för att webbläsaren ska förstå dem. Vad skulle hända om vi stavade fel på något?<br /></li>
 <li>Hitta <code>&lt;h1&gt;</code> taggen. Låt oss ändra den till <code>&lt;d1&gt;</code>. Spara dokumentet och uppdatera det i webbläsaren.</li>
 </ul>
 <p>Vad hände? Eftersom webbläsaren inte vet vad vi menar med denna tagg så kan den inte längre veta att det är en rubrik och då kommer den inte använda sig av en större text for att visa hur viktigt denna del av texten är.</p>
 <ul>
-<li>Ändra tillbaka <code>&lt;d1&gt;</code> till <code>&lt;h1&gt;</code> och spara igen.<br /></li>
+<li>Ändra tillbaka <code>&lt;d1&gt;</code> till <code>&lt;h1&gt;</code> och spara igen.</li>
 <li>Hitta en av <code>&lt;img&gt;</code> taggarna. Vi har precis provat att stava fel på taggnamnet och webbläsaren förstod inte vad den skulle göra. Men hur blir det om vi stavar fel på attributet?</li>
 </ul>
 <p>Inuti <code>&lt;img&gt;</code> -taggen har vi <code>href</code> och <code>alt</code> -attributen:</p>
-<pre class="language-markup"><code>&lt;img href=&quot;kitten.jpg&quot; alt=&quot;Det här är en kattunge.&quot; /&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;img href=&quot;kitten.jpg&quot; alt=&quot;Det här är en kattunge.&quot; /&gt;</code></pre>
 <ul>
 <li>Prova att ändra <code>href</code> till något annat. Spara dokumentet och uppdatera webbläsaren.</li>
 </ul>
 <p>Åh nej! Kattungen är borta! Plötsligt vet inte webbläsaren längre var den ska leta efter bilden som den ska visa – den letar efter filnamnet inuti ‘href’ attributet, men där finns det ju inte längre.</p>
 <ul>
-<li>Ändra tillbaka till <code>href</code> så att vi kan fortsätta titta på kattungen.<br /></li>
+<li>Ändra tillbaka till <code>href</code> så att vi kan fortsätta titta på kattungen.</li>
 <li>Ta nu bort det andra citatet (<code>&quot;</code>) från<code>alt</code>-attributet på denna bild: den efter texten, så att du ser följande:</li>
 </ul>
-<pre class="language-markup"><code>&lt;img href=&quot;kitten.jpg&quot; alt=&quot;Det här är en kattunge&quot; /&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;img href=&quot;kitten.jpg&quot; alt=&quot;Det här är en kattunge&quot; /&gt;</code></pre>
 <ul>
 <li>Spara och uppdatera webbläsaren.</li>
 </ul>
@@ -86,23 +86,23 @@
 </ul>
 <p><strong>Några tips och idéer:</strong></p>
 <ul>
-<li>Lägg till en rubrik som kommer att fungera som titeln på den här sidan.<br /></li>
-<li>Du kan låta den här sidan handla om ditt husdjur, din favorithobby eller dina vänner och deras fritidsintressen.<br /></li>
+<li>Lägg till en rubrik som kommer att fungera som titeln på den här sidan.</li>
+<li>Du kan låta den här sidan handla om ditt husdjur, din favorithobby eller dina vänner och deras fritidsintressen.</li>
 <li>Lägg till en lista över saker ditt husdjur tycker om, om din sida handlar om husdjur.</li>
 </ul>
 <p><strong>Är du klar? Toppen! Låt oss nu länka dessa två sidor som du har skapat.</strong></p>
 <p>När vi har att länkat till delar av samma sida, kan vi peka länkar till ett specifikt id på en sida, som det här:</p>
-<pre class="language-markup"><code>&lt;a href=&quot;#kitten&quot;&gt;Klicka för att se kattungen&lt;/a&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;a href=&quot;#kitten&quot;&gt;Klicka för att se kattungen&lt;/a&gt;</code></pre>
 <p>Som sedan visade något som det här:</p>
-<pre class="language-markup"><code>&lt;div id=&quot;kitten&quot;&gt;
+<pre class="{.language-markup}"><code>&lt;div id=&quot;kitten&quot;&gt;
     &lt;img src=&quot;kitten.jpg&quot; alt=&quot;Det här är en kattunge.&quot; /&gt;
 &lt;/div&gt;</code></pre>
 <p>För att länka till en annan sida behöver vi inte inkludera hash-symbolen (<code>#</code>), istället behöver vi beskriva vilken fil vi vill att länken ska ta oss till.</p>
 <p>Att länka från <code>about_me_page_2.html</code> till <code>about_me.html</code> skriv då följande:</p>
-<pre class="language-markup"><code>&lt;a href=&quot;about_me.html&quot;&gt;Gå till sidan om mig&lt;/a&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;a href=&quot;about_me.html&quot;&gt;Gå till sidan om mig&lt;/a&gt;</code></pre>
 <p>Du kan ändra texten till något annat, som till exempel titeln på sidan om du har ändrat den.</p>
 <p>För att länka tillbaka från <code>about_me.html</code> till <code>about_me_page_2.html</code> behöver du skriva följande:</p>
-<pre class="language-markup"><code>&lt;a href=&quot;about_me_page_2.html&quot;&gt;Gå till min andra sida&lt;/a&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;a href=&quot;about_me_page_2.html&quot;&gt;Gå till min andra sida&lt;/a&gt;</code></pre>
 <p>Grattis! Du har precis skapat din alldeles egna webbsida.</p>
 </section>
 <section id="att-lagga-din-websida-pa-webben-extra-aktivitet" class="level1 activity">
@@ -112,10 +112,10 @@
 <p>Kommer du ihåg servrar från den första lektionen? Servrar är datorer som alltid är på och anslutna till internet, och de konfigureras så att folk kan besöka webbplatser som lever på dessa datorer.</p>
 <p>För att göra det kommer vi att använda <strong>Cyberduck</strong> - det är ett program för att flytta filer från din dator till en server.</p>
 <ul>
-<li>Klicka på <code>Öppna Anslutning</code>.<br /></li>
-<li>Lägg till servernamn, användarnamn och lösenord enligt anvisningar från CodeClub-ledaren.<br /></li>
-<li>Klicka på <code>Anslut</code>. Du kommer då att se alla mappar och filer på servern - troligtvis kommer servern att vara tom, eftersom du inte har lagt till dina filer ännu.<br /></li>
-<li>Dra dina filer från din dator till server-fönstret. Uppladdningen kommer nu att börja.<br /></li>
+<li>Klicka på <code>Öppna Anslutning</code>.</li>
+<li>Lägg till servernamn, användarnamn och lösenord enligt anvisningar från CodeClub-ledaren.</li>
+<li>Klicka på <code>Anslut</code>. Du kommer då att se alla mappar och filer på servern - troligtvis kommer servern att vara tom, eftersom du inte har lagt till dina filer ännu.</li>
+<li>Dra dina filer från din dator till server-fönstret. Uppladdningen kommer nu att börja.</li>
 <li>När filerna har laddats upp, kan du besöka din webbsida på adressen som du får av CodeClub-ledaren.</li>
 </ul>
 <section id="saker-att-prova" class="level2 try">
@@ -134,23 +134,21 @@
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

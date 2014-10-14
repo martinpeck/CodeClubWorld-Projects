@@ -29,7 +29,7 @@
 <p>This project is in Beta. That means we’re still testing it, and there’s a small chance there could be some bugs or typos. If you’re a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/1eMCfpYe3v7eYu5M8rSqLKlmq7cczLCLHx66csgyUyVU/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email <script type="text/javascript">
 <!--
 h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
 </section>
@@ -44,13 +44,13 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>As you probably already know, a dictionary allows you to look up a word, and see it’s meaning. In Python, a dictionary is even more flexible that that - it allows you to map anything (called a <em>key</em>) to anything else! Here’s a dictionary that links text-speak words to their meaning:</p>
-<pre class="language-python"><code>textSpeakDictionary = {
+<pre class="{.language-python}"><code>textSpeakDictionary = {
     &quot;lol&quot;   : &quot;laugh out loud&quot; ,
     &quot;idk&quot;   : &quot;I don&#39;t know&quot;
 }</code></pre>
 <p>So, in the dictionary above, the key “lol” maps to the text “laugh out loud”, and the key “idk” maps to the text “I don’t know”. You should use a colon (<code>:</code>) to map the text-speak keys to their meanings, and put a comma between each dictionary entry.</p></li>
 <li><p>Getting information out of the dictionary is easy; you just need to add the key after the dictionary variable name, in square brackets. Here’s a short program that shows how this works:</p>
-<pre class="language-python"><code>textSpeakDictionary = {
+<pre class="{.language-python}"><code>textSpeakDictionary = {
     &quot;lol&quot;   : &quot;laugh out loud&quot; ,
     &quot;idk&quot;   : &quot;I don&#39;t know&quot;
 }
@@ -76,7 +76,7 @@ print( key , &quot;=&quot; , textSpeakDictionary[key] )</code></pre>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Run this program, which splits up a sentence into individual words, and then translates each word (if it exists in the dictionary):</p>
-<pre class="language-python"><code>textSpeakDictionary = {
+<pre class="{.language-python}"><code>textSpeakDictionary = {
     &quot;lol&quot;   : &quot;laugh out loud&quot; ,
     &quot;idk&quot;   : &quot;I don&#39;t know&quot;
 }
@@ -115,7 +115,7 @@ print(translatedSentence)</code></pre>
 <ul>
 <li><p>Add some more translations to the program above. For example:</p>
 <ul>
-<li>“jk” = “just kidding”<br /></li>
+<li>“jk” = “just kidding”</li>
 <li>“bc” = “because”</li>
 </ul></li>
 </ul>
@@ -135,7 +135,7 @@ print(translatedSentence)</code></pre>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Just like with your ‘compliment generator’ program, it would be nice to allow the user to add and remove words from the dictionary. You can do this, by creating a menu system:</p>
-<pre class="language-python"><code>def displayMenu():
+<pre class="{.language-python}"><code>def displayMenu():
     print(&quot;txt spk cnvtr&quot;)
     print(&quot;=&quot; * 13)
     print(&quot;Menu:&quot;)
@@ -228,12 +228,12 @@ while running == True:
         print(&quot;Invalid menu choice!&quot;)</code></pre>
 <p><img src="textspeak-menu.png" alt="screenshot" /></p>
 <p>Although this is a loooong program, you’ve seen most of this code before in other programs. The new bits are just the code to add an item to the dictionary:</p>
-<pre class="language-python"><code>txtToAdd = input(&quot;Enter the text-speak to add to the dictionary: &quot;)
+<pre class="{.language-python}"><code>txtToAdd = input(&quot;Enter the text-speak to add to the dictionary: &quot;)
 meaning = input(&quot;What does this mean?: &quot;)
 #add the new translation to the dictionary
 textSpeakDictionary[txtToAdd] = meaning</code></pre>
 <p>…and the code to remove an item:</p>
-<pre class="language-python"><code>txtToDelete = input(&quot;Enter the text-speak to delete from the dictionary: &quot;)
+<pre class="{.language-python}"><code>txtToDelete = input(&quot;Enter the text-speak to delete from the dictionary: &quot;)
 #delete the translation from the dictionary
 del textSpeakDictionary[txtToDelete]</code></pre>
 <p>The code for each of the menu options is also in it’s own function, to make the code much easier to read.</p></li>
@@ -245,12 +245,12 @@ del textSpeakDictionary[txtToDelete]</code></pre>
 <ul>
 <li>you can only add dictionary keys that don’t already exist?</li>
 </ul>
-<pre class="language-python"><code>if itemToAdd not in textSpeakDictionary:
+<pre class="{.language-python}"><code>if itemToAdd not in textSpeakDictionary:
     #Add your code here!</code></pre>
 <ul>
 <li>you can only delete keys if they already exist in the dictionary?</li>
 </ul>
-<pre class="language-python"><code>if itemToDelete not in textSpeakDictionary:
+<pre class="{.language-python}"><code>if itemToDelete not in textSpeakDictionary:
     #Add your code here!</code></pre>
 </section>
 </section>
@@ -263,9 +263,9 @@ del textSpeakDictionary[txtToDelete]</code></pre>
 <p><img src="textspeak-punctuation.png" alt="screenshot" /></p>
 <p>It doesn’t get translated properly. Try it out for yourself.</p></li>
 <li><p>Why doesn’t your program convert the ‘lol’ in this sentence? It’s because your program splits up the sentence into words, like this:</p>
-<pre class="language-python"><code>words = [ &quot;hello&quot; , &quot;lol!&quot; ]</code></pre>
+<pre class="{.language-python}"><code>words = [ &quot;hello&quot; , &quot;lol!&quot; ]</code></pre>
 <p>It then looks up the key <code>&quot;lol!&quot;</code> in your dictionary (with the exclaimation mark), and can’t find a translation for it, because <code>&quot;lol!&quot;</code> doesn’t exist! One simple way to avoid this problem is to remove some punctuation from the sentence before it is translated. Add this code to your <code>convertSentence()</code> function:</p>
-<pre class="language-python"><code>def convertSentence():
+<pre class="{.language-python}"><code>def convertSentence():
     sentence = input(&quot;Enter a sentence to translate: &quot;).lower()
     translatedSentence = &quot;&quot;
 
@@ -290,7 +290,7 @@ del textSpeakDictionary[txtToDelete]</code></pre>
 <p>Create a password-protection program, that asks the user for their name and password, and checks a dictionary to see if they’ve entered the correct details.</p>
 <p><img src="textspeak-password.png" alt="screenshot" /></p>
 <p>Your program will need to check that the user’s name exists in the dictionary, <em>and</em> that the correct password for that user has been entered. You can use this code to help you:</p>
-<pre class="language-python"><code>#check that the name exists, and that the password is correct
+<pre class="{.language-python}"><code>#check that the name exists, and that the password is correct
 if name in passwordDictionary and password == passwordDictionary[name]:
     #add code here!</code></pre>
 <p>Make sure that your program works, by testing what happens when the user enters valid and invalid names and passwords.</p>
@@ -299,7 +299,7 @@ if name in passwordDictionary and password == passwordDictionary[name]:
 <li><p>add this login code to one of the programs you’ve already created, so that the program can only be used by your friends.</p></li>
 <li><p>only allow the user 3 attempts to login…, adding 1 to <code>loginAttempts</code> whenever access is denied.</p></li>
 </ul>
-<pre class="language-python"><code>loginAttempts = 0
+<pre class="{.language-python}"><code>loginAttempts = 0
 while loginAttempts &lt; 3:
     #login code goes here!</code></pre>
 <ul>
@@ -315,23 +315,21 @@ while loginAttempts &lt; 3:
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

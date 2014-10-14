@@ -32,7 +32,7 @@
 <section id="steg-1" class="level1 activity">
 <h1>Steg 1:</h1>
 <p>Lag en ny mappe som du kaller Felix.<br />Lag et nytt dokument med navnet index.html og lagre det i mappen du kalte Felix.<br />Nå kan du sette opp dokumentet ditt slik som du lærte i forrige leksjon.</p>
-<pre class="language-markup"><code>&lt;!doctype html&gt;
+<pre class="{.language-markup}"><code>&lt;!doctype html&gt;
 &lt;html&gt;
     &lt;head&gt;
     &lt;/head&gt;
@@ -40,7 +40,7 @@
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 <p>Lag en tittel og en overskrift. Husk at tittelen skal plasseres i “head” og overskriften skal plasseres i “body”. Prøv å bruke “Katten Felix er forsvunnet” som tittel, og “Forsvunnet” som h1.<br />Rett under <code>&lt;h1&gt;</code> kan vi lage en <code>&lt;h2&gt;</code> hvor det står “Katten Felix”.</p>
-<pre class="language-markup"><code>&lt;!doctype html&gt;
+<pre class="{.language-markup}"><code>&lt;!doctype html&gt;
 &lt;html&gt;
     &lt;head&gt;
         &lt;title&gt; Katten Felix er forsvunnet &lt;/title&gt;
@@ -55,22 +55,22 @@
 <h1>Steg 2:</h1>
 <p>Vi trenger også et bilde av Felix, slik at folk vet hva de skal se etter. Vi har tidligere lært hvordan man legger til et bilde som er lagret et annet sted på Internett, men denne gangen skal vi bruke et bilde på vår egen datamaskin. Vi er nødt til å legge bildet <em>felix.jpg</em> i den samme mappen som <code>index.html</code> ligger i, mappen du kalte Felix.</p>
 <p>Nå kan du skrive <code>&lt;img&gt;</code> taggen som du vanligvis ville gjort, men i scr attributten, i stede for å skrive en URL skriver vi bare <code>felix.jpg</code>. Ikke glem å legge til en alt-attributt!</p>
-<pre class="language-markup"><code>&lt;img src=&quot;felix.jpg&quot; alt=&quot;bilde av Felix&quot;&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;img src=&quot;felix.jpg&quot; alt=&quot;bilde av Felix&quot;&gt;</code></pre>
 <section id="lagre-filen-din-og-vis-den-i-nettleseren." class="level2 save">
 <h2>Lagre filen din og vis den i nettleseren.</h2>
 <p>Bildet er ganske stort, så vi vil gjøre det litt mindre. Vi kan gjøre dette ved å bruke høyde eller bredde-attributter (eller begge). Vi spesifiserer ikke bredden i centimeter eller meter, tommer eller fot, men i noe som kalles <em>pixler</em>. Jeg velger å gå for 400 pixler for dette bildet.</p>
-<pre class="language-markup"><code>&lt;img src=&quot;felix.jpg&quot; alt=&quot;bilde av Felix&quot; width=&quot;400&quot;&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;img src=&quot;felix.jpg&quot; alt=&quot;bilde av Felix&quot; width=&quot;400&quot;&gt;</code></pre>
 </section>
 </section>
 <section id="steg-3" class="level1 activity">
 <h1>Steg 3:</h1>
 <p>Under bildet vil vi skrive en beskrivelse av Felix og gi noen detaljer om når og hvor han forsvant. For dette kan vi skrive noen paragrafer.</p>
-<pre class="language-markup"><code>&lt;p&gt;Felix er en veldig snill katt. Han liker å kose, sitte foran varmepumpa og lekemusa si. Pelsen hans er oransje. &lt;/p&gt;
+<pre class="{.language-markup}"><code>&lt;p&gt;Felix er en veldig snill katt. Han liker å kose, sitte foran varmepumpa og lekemusa si. Pelsen hans er oransje. &lt;/p&gt;
 &lt;p&gt;Han forvant fra hagen i går.&lt;/p&gt;</code></pre>
 <p>Vi trenger også informasjon om hvordan vi kan kontakte eieren hvis noen har sett eller funnet Felix.</p>
-<pre class="language-markup"><code>&lt;p&gt;Har du sett Felix? Vennligst kontakt eieren hans på eierentilfelix@email.com&lt;/p&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;p&gt;Har du sett Felix? Vennligst kontakt eieren hans på eierentilfelix@email.com&lt;/p&gt;</code></pre>
 <p>Dette er bare en leke-epostadresse, men la oss gjøre det sånn at når noen klikker på den, så åpnes epostprogrammet deres. Vi gjør dette på nesten samme måten som vi lager en lenke, men i stede for en <strong>url</strong> bruker vi <code>mailto</code> sånn som dette:</p>
-<pre class="language-markup"><code>&lt;p&gt;Har du sett Felix? Vennligst kontakt eieren hans på &lt;a href=&quot;mailto:eierentilfelix@email.com&quot;&gt;eierentilfelix@email.com&lt;/a&gt;&lt;/p&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;p&gt;Har du sett Felix? Vennligst kontakt eieren hans på &lt;a href=&quot;mailto:eierentilfelix@email.com&quot;&gt;eierentilfelix@email.com&lt;/a&gt;&lt;/p&gt;</code></pre>
 <section id="lagre-dokumentet-ditt-og-se-om-det-fungerer-i-nettleseren" class="level2 save">
 <h2>Lagre dokumentet ditt og se om det fungerer i nettleseren!</h2>
 </section>
@@ -78,9 +78,9 @@
 <section id="step-4-legge-til-fet-tekst-og-trykk" class="level1 activity">
 <h1>Step 4: Legge til fet tekst og trykk</h1>
 <p>Vi vil virkelig at folk skal finne Felix, så vi vil legge litt <em>trykk</em> på <code>vennligst</code>. Dette gjør vi ved å bruke em taggen.</p>
-<pre class="language-markup"><code>&lt;p&gt;Har du sett Felix? &lt;em&gt;Vennligst&lt;/em&gt; kontakt eieren hans på &lt;a href=&quot;mailto:eierentilfelix@email.com&quot;&gt;eierentilfelix@email.com&lt;/a&gt;&lt;/p&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;p&gt;Har du sett Felix? &lt;em&gt;Vennligst&lt;/em&gt; kontakt eieren hans på &lt;a href=&quot;mailto:eierentilfelix@email.com&quot;&gt;eierentilfelix@email.com&lt;/a&gt;&lt;/p&gt;</code></pre>
 <p>Vi vil også at ´Tusen takk´ skal vises skikkelig, noe vi oppnår ved å bruke strong taggen.</p>
-<pre class="language-markup"><code>&lt;p&gt;&lt;strong&gt;Tusen takk!&lt;/strong&gt;&lt;p&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;p&gt;&lt;strong&gt;Tusen takk!&lt;/strong&gt;&lt;p&gt;</code></pre>
 <section id="lagre-dokumentet-ditt-og-vis-det-i-nettleseren." class="level2 save">
 <h2>Lagre dokumentet ditt og vis det i nettleseren.</h2>
 <p>Ser du nå hvordan vennligst vises i <em>skrå</em> og Tusen takk i <strong>fet</strong>?</p>
@@ -89,24 +89,24 @@
 <section id="step-5-kommentarer" class="level1 activity">
 <h1>Step 5: Kommentarer</h1>
 <p>Noen ganger kan det lønne seg å skrive kommentarer i selve html-filen. Med kommentarer mener vi ting som mennesker skal kunne se og lese hvis de åpner filen, men som nettleseren ikke skal lese og vise. Vi gjør dette ved å bruke den spesielle koden:</p>
-<pre class="language-markup"><code>&lt;!-- skriv hva som helst her --&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;!-- skriv hva som helst her --&gt;</code></pre>
 <p>Alt som skrives mellom pilene er kommentaren.<br />La oss legge til en kommentar i filen som sier at dette er et Kodeklubb-prosjekt og at Felix ikke er ekte.</p>
-<pre class="language-markup"><code>&lt;!-- Dette er et Kodeklubb-prosjekt. Felix er ikke ekte og er egentlig ikke forsvunnet. --&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;!-- Dette er et Kodeklubb-prosjekt. Felix er ikke ekte og er egentlig ikke forsvunnet. --&gt;</code></pre>
 </section>
 <section id="steg-6-mer-metadata-det-er-bare-ting-som-legges-i-head" class="level1 activity">
 <h1>Steg 6: Mer metadata (Det er bare ting som legges i head)</h1>
 <p>La oss legge til hvem som har skrevet websiden til websiden, slik at de som ser filen vet at det er deg.</p>
-<pre class="language-markup"><code>&lt;meta name=&quot;author&quot; content=&quot;#&quot;&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;meta name=&quot;author&quot; content=&quot;#&quot;&gt;</code></pre>
 <p>Erstatt # med navnet ditt.</p>
 <p>Det er også vanlig å legge til hvilket språk websiden er på. Vi gjør dette ved å legge til en attributt til <code>&lt;html&gt;</code> taggen.</p>
-<pre class="language-markup"><code>&lt;html lang=&quot;no&quot;&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;html lang=&quot;no&quot;&gt;</code></pre>
 <p><em>no</em> står for norsk.</p>
 <p>Det er også god praksis å legge til tegnsettet (eller alfabetet) dokumentet er skrevet med. Vi bruker vanligvis <strong>UTF-8</strong>.</p>
-<pre class="language-markup"><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code></pre>
 <p>Vi kan også legge til en beskrivelse av websiden.</p>
-<pre class="language-markup"><code>    &lt;meta name=&quot;description&quot; content=&quot;En side laget for å finne katten Felix&quot;&gt;</code></pre>
+<pre class="{.language-markup}"><code>    &lt;meta name=&quot;description&quot; content=&quot;En side laget for å finne katten Felix&quot;&gt;</code></pre>
 <p>Og noen nøkkelord, separert med komma</p>
-<pre class="language-markup"><code>&lt;meta name=&quot;keywords&quot; content=&quot;Felix, katt, forsvunnet&quot;&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;meta name=&quot;keywords&quot; content=&quot;Felix, katt, forsvunnet&quot;&gt;</code></pre>
 <p><img src="screenshot_jsbin.png" alt="screenshot" /></p>
 <section id="hva-kan-du-gjre-videre" class="level2 try">
 <h2>Hva kan du gjøre videre?:</h2>
@@ -125,23 +125,21 @@
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

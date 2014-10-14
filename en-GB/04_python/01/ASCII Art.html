@@ -29,7 +29,7 @@
 <p>This project is in Beta. That means we’re still testing it, and there’s a small chance there could be some bugs or typos. If you’re a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/1eMCfpYe3v7eYu5M8rSqLKlmq7cczLCLHx66csgyUyVU/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email <script type="text/javascript">
 <!--
 h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
 </section>
@@ -44,12 +44,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <ul>
 <li><p>Let’s start by writing a very simple program, just so that you know how to get a Python program running. Open the IDLE program editor:</p>
 <ul>
-<li>On Windows, find IDLE in the start menu;<br /></li>
-<li>On Mac, open up Terminal.app and type <code>idle</code> and press enter;<br /></li>
+<li>On Windows, find IDLE in the start menu;</li>
+<li>On Mac, open up Terminal.app and type <code>idle</code> and press enter;</li>
 <li>On Linux, open up a Terminal, and type <code>idle</code> and press enter.</li>
 </ul></li>
 <li><p>Click <code>File → New Window</code>, and type the following into the window that appears:</p>
-<pre class="language-python"><code>print(&quot;Hello, how are you?&quot;)</code></pre>
+<pre class="{.language-python}"><code>print(&quot;Hello, how are you?&quot;)</code></pre>
 <p>This program will print some text to the screen. Notice that the text you want to print is surrounded by speech marks (<code>&quot;</code>). Here’s an image showing what you need to do:</p>
 <p><img src="ascii-hello.png" alt="screenshot" /></p></li>
 <li><p>Save the file, by clicking <code>File → Save</code>, and name the file <code>hello.py</code> or something similar. Don’t forget to type the <code>.py</code> bit at the end, which tells the computer that it’s a Python file. Without it, your program won’t be colour coded, which can be really helpful.</p>
@@ -75,11 +75,11 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <li><p>Let’s print something much more fun than text… ASCII art! ASCII art is creating pictures out of text. Here’s an example - it’s meant to be a dog!</p>
 <p><img src="ascii-dog.png" alt="screenshot" /></p>
 <p>To make this masterpiece, you can type the following into the IDLE editor and run the program:</p>
-<pre class="language-python"><code>print(&quot;A picture of a dog...&quot;)
+<pre class="{.language-python}"><code>print(&quot;A picture of a dog...&quot;)
 print(&quot; 0____  &quot;)
 print(&quot;  ||||  &quot;)</code></pre></li>
 <li><p>If you prefer, you can use 3 single quotes (<code>'''</code>) instead of speech marks, which allows you to print multiple lines of text with 1 print statement. Like this:</p>
-<pre class="language-python"><code>print(&#39;&#39;&#39;
+<pre class="{.language-python}"><code>print(&#39;&#39;&#39;
 A picture of a dog...
  0____
   ||||
@@ -99,17 +99,17 @@ A picture of a dog...
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Python can also do calculations using text! What do you get if you multiply <code>&quot;hello&quot;</code> by 5? Let’s ask Python, by running this program:</p>
-<pre class="language-python"><code>print(&quot;hello&quot; * 5)</code></pre>
+<pre class="{.language-python}"><code>print(&quot;hello&quot; * 5)</code></pre>
 <p>The star <code>*</code> in the program above is a multiply sign. Run the program above, and you should see the answer:</p>
 <p><img src="ascii-textcalc.png" alt="screenshot" /></p></li>
 <li><p>You can make the printed text above easier to read, by putting a space after the word <code>&quot;hello&quot;</code> in your program:</p>
-<pre class="language-python"><code>print(&quot;hello &quot; * 5)</code></pre>
+<pre class="{.language-python}"><code>print(&quot;hello &quot; * 5)</code></pre>
 <p>Run this program and you’ll see that the output is a little easier to read than before.</p></li>
 <li><p>If <code>&quot;hello &quot;</code> multiplied by 5 is <code>&quot;hello hello hello hello hello &quot;</code>, then what is <code>&quot;hello&quot; - 7</code>? Does this calculation even make sense?</p>
 <p><img src="ascii-minus.png" alt="screenshot" /></p>
 <p>Oops, you’ve broken it! Instead of an answer, we get an error message. It looks like that calculation doesn’t make sense in Python!</p></li>
 <li><p>How about addition? What answer do you think <code>&quot;hello &quot; +  &quot;world</code>&quot; would give? Try it out, by running the following program:</p>
-<pre class="language-python"><code>print(&quot;hello &quot; + &quot;world&quot;)</code></pre>
+<pre class="{.language-python}"><code>print(&quot;hello &quot; + &quot;world&quot;)</code></pre>
 <p><img src="ascii-textadd.png" alt="screenshot" /></p>
 <p>Does it give you the answer you expected?</p></li>
 </ul>
@@ -117,7 +117,7 @@ A picture of a dog...
 <section id="challenge-words-and-numbers" class="level2 challenge">
 <h2>Challenge: Words and numbers</h2>
 <p>What does the following program print to the screen? See if you can guess correctly before running the program.</p>
-<pre class="language-python"><code>print(&quot;ha &quot;*4)
+<pre class="{.language-python}"><code>print(&quot;ha &quot;*4)
 print(&quot;ba&quot; + &quot;na&quot;*2)
 print(&quot;He&quot; + &quot;l&quot;*2 + &quot;o&quot; + &quot;!&quot;*10)</code></pre>
 <p>Can you make up any words of your own?</p>
@@ -129,17 +129,17 @@ print(&quot;He&quot; + &quot;l&quot;*2 + &quot;o&quot; + &quot;!&quot;*10)</code
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Now that you know how to do calculations on text, now what? Why is it useful? Well, let’s say you wanted to draw an ASCII art rectangle that is 30 characters long and 3 characters high. You could either draw it the hard way, like this:</p>
-<pre class="language-python"><code>print(&quot;##############################&quot;)
+<pre class="{.language-python}"><code>print(&quot;##############################&quot;)
 print(&quot;##############################&quot;)
 print(&quot;##############################&quot;)</code></pre>
 <p>Or you could save time and draw it the easy way, like this:</p>
-<pre class="language-python"><code>print(&quot;#&quot; * 30)
+<pre class="{.language-python}"><code>print(&quot;#&quot; * 30)
 print(&quot;#&quot; * 30)
 print(&quot;#&quot; * 30)</code></pre>
 <p>Both give you exactly the same rectangle printed to the screen:</p>
 <p><img src="ascii-rect.png" alt="screenshot" /></p></li>
 <li><p>You could even use calculations to make interesting patterns, like this wave:</p>
-<pre class="language-python"><code>print(&quot;/\  &quot;*10)
+<pre class="{.language-python}"><code>print(&quot;/\  &quot;*10)
 print(&quot;  \/&quot;*10)</code></pre>
 <p><img src="ascii-wave.png" alt="screenshot" /></p></li>
 </ul>
@@ -159,23 +159,21 @@ print(&quot;  \/&quot;*10)</code></pre>
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

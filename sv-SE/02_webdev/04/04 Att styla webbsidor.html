@@ -35,17 +35,17 @@
 <section id="checklista-for-aktiviteten" class="level2 check">
 <h2>Checklista för aktiviteten</h2>
 <ul>
-<li>Öppna index.html från Felix-mappen som vi gjorde förra lektionen.<br /></li>
+<li>Öppna index.html från Felix-mappen som vi gjorde förra lektionen.</li>
 <li><p>I head-taggen behöver vi ha en <strong>style-tagg</strong>.</p>
-<pre class="language-markup"><code>&lt;style&gt;
+<pre class="{.language-markup}"><code>&lt;style&gt;
 &lt;/style&gt;</code></pre>
 <p>Alla våra stylingar kommer att ligga mellan dessa två delar. Enkelt. Generellt så ser css-kod ut så här:</p></li>
 </ul>
-<pre class="language-css"><code>selector {
+<pre class="{.language-css}"><code>selector {
     property: value;
 }</code></pre>
 <ul>
-<li>Kan du hitta ‘{‘ och ‘}’ tangenterna på ditt tangentbord?<br /></li>
+<li>Kan du hitta ‘{‘ och ‘}’ tangenterna på ditt tangentbord?</li>
 <li>Kan du hitta ‘:’ och ‘;’ då?</li>
 </ul>
 <p>Selectors kan vara HTML-element så som <code>h1</code>, <code>p</code>, <code>img</code>, <code>a</code>. Men det kan också vara andra saker som vi ska lära oss senare.</p>
@@ -55,15 +55,15 @@
 <h1>Steg 2: Att lägga till färger</h1>
 <p>Nu lägger vi till lite färg med hjälp av färgpaletten! På engelska heter färgpaletten color property. Color utan ett u, det är lite förvirrande eftersom att det är den amerikanska stavningen, även om CSS faktiskt uppfanns av en norsk snubbe. Men du kommer att vänja dig, glöm bara inte u:et på engelskalektionen!</p>
 <p>Låt oss göra så att<code>h1</code> blir röd istället för svart.</p>
-<pre class="language-css"><code>h1 {
+<pre class="{.language-css}"><code>h1 {
     color: red;
 }</code></pre>
 <section id="spara-din-fil-och-oppna-den-i-din-webblasare" class="level2 save">
 <h2><strong>SPARA</strong> din fil och <strong>ÖPPNA</strong> den i din webbläsare</h2>
 <p>Nu är texten röd, w00t! Det finns olika sätt att berätta värdet på färgen. Det finns 16 grundläggande namn på färger, de är aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, och yellow.</p>
 <ul>
-<li><p>Försök att ändra färgen till något annat!<br />De flesta webbläsare stödjer ytterligare 130 färger, hela listan i alfabetisk ordning hittar du här <a href="http://www.w3.org/TR/css3-color/#svg-color"><a href="http://www.w3.org/TR/css3-color/#svg-color">http://www.w3.org/TR/css3-color/#svg-color</a></a> - finns din favoritfärg med i listan?</p></li>
-<li>Man vi kan använda ännu fler färger genom att använda <strong>hexkoder</strong> istället för färgnamnet. En hexkod är en # följt av 6 siffror, siffrorna kan vara mellan 0-9 eller bokstäverna A, B, C, D, E, F. Genom att använda hexkod kan vi få fram mer är 16 miljoner färger!<br /></li>
+<li><p>Försök att ändra färgen till något annat!<br />De flesta webbläsare stödjer ytterligare 130 färger, hela listan i alfabetisk ordning hittar du här <a href="http://www.w3.org/TR/css3-color/#svg-color"><a href="http://www.w3.org/TR/css3-color/#svg-color" class="uri">http://www.w3.org/TR/css3-color/#svg-color</a></a> - finns din favoritfärg med i listan?</p></li>
+<li>Man vi kan använda ännu fler färger genom att använda <strong>hexkoder</strong> istället för färgnamnet. En hexkod är en # följt av 6 siffror, siffrorna kan vara mellan 0-9 eller bokstäverna A, B, C, D, E, F. Genom att använda hexkod kan vi få fram mer är 16 miljoner färger!</li>
 <li><p>På Code Club är vår favoritfärg <code>#58AB57</code>. Kan du gissa vilken färg det är? Försök ändra en bit av texten till den färgen och granska det i webbläsaren för att se.</p></li>
 </ul>
 </section>
@@ -77,44 +77,44 @@
 <p>Ett sätt att göra det är att sätta <code>&lt;span&gt;</code> taggar på båda sidor om ordet, så här:</p>
 <p><code>&lt;span&gt;orange&lt;/span&gt;</code></p>
 <p>Sedan kan vi styla span-taggen i head-taggen.</p>
-<pre class="language-css"><code>span {
+<pre class="{.language-css}"><code>span {
     color: orange;
 }</code></pre>
-<section id="savedin-fil-och-view-den-i-din-webblasare" class="level2 save">
-<h2><strong>SAVE</strong>din fil och <strong>VIEW</strong> den i din webbläsare</h2>
+<section id="save__din-fil-och-view-den-i-din-webblasare-.save" class="level2">
+<h2>__SAVE__din fil och <strong>VIEW</strong> den i din webbläsare { .save}</h2>
 </section>
 </section>
 <section id="steg-4-bakgrund" class="level1 activity">
 <h1>Steg 4: Bakgrund</h1>
 <p>Vi kan lägga till färger till bakgrunden också, inte bara till texten. Till exempel:</p>
-<pre class="language-css"><code>body {
+<pre class="{.language-css}"><code>body {
     background-color: #D2FAFC;
 }</code></pre>
 <p>Det här gör hela bakgrunden ljusblå. Du kan välja vilken färg du vill från listan på <a href="http://www.colourpicker.com">www.colourpicker.com</a> som genererar de nummer du behöver, detta nummer kan du sedan kopiera och klistra in i din kod.</p>
 <p>Försök med:</p>
-<pre class="language-css"><code>h1 {
+<pre class="{.language-css}"><code>h1 {
     background-color: black;
 }</code></pre>
 <p>Eftersom att vi redan definierat, eller förklarat, <code>h1</code> kan vi bara skriva in färgen tillsammans med background-color, vi behöver alltså inte skriva ut allt igen.</p>
-<pre class="language-css"><code>h1 {
+<pre class="{.language-css}"><code>h1 {
     background-color: black;
     color: red;
 }</code></pre>
-<section id="sparadin-fil-och-oppna-den-i-din-webblasare" class="level2 save">
-<h2><strong>SPARA</strong>din fil och <strong>ÖPPNA</strong> den i din webbläsare</h2>
+<section id="spara__din-fil-och-oppna-den-i-din-webblasare-.save" class="level2">
+<h2>__SPARA__din fil och <strong>ÖPPNA</strong> den i din webbläsare { .save}</h2>
 </section>
 <section id="kul-med-text" class="level2">
 <h2>Kul med text</h2>
 <p>Kanske ska den ‘försvunna’ rubriken vara <strong>större</strong> och alla ord inledas med stora bokstäver? Vi kan bestämma storleken på texten genom att använda <code>font-size</code>. Värdena kan variera men de vanligaste är 12, 14, 16, 32, 48 och 72 pixlar. Just nu kan vi prova 72px. (px betyder pixel).</p>
-<pre class="language-css"><code>h1 {
+<pre class="{.language-css}"><code>h1 {
     background-color: black;
     color: red;
     font-size: 72px;
 }</code></pre>
 <p>Försök nu att göra rubrikens inledande bokstäver stora bara genom att använda <code>text-transform:uppercase;</code> Vi kan också göra den understruken genom att använda <code>text-decoration:underline;</code></p>
 </section>
-<section id="sparadin-fil-och-oppna-den-i-din-webblasare-1" class="level2 save">
-<h2><strong>SPARA</strong>din fil och <strong>ÖPPNA</strong> den i din webbläsare</h2>
+<section id="spara__din-fil-och-oppna-den-i-din-webblasare-.save-1" class="level2">
+<h2>__SPARA__din fil och <strong>ÖPPNA</strong> den i din webbläsare { .save}</h2>
 <p>Nu syns den väl mycket mer, eller hur?</p>
 <section id="endast-om-du-har-en-firefox-eller-chrome-som-webblasare." class="level3">
 <h3>Endast om du har en Firefox eller Chrome som webbläsare.</h3>
@@ -128,20 +128,20 @@
 <ul>
 <li>Vi vill att all vår text på just den här webbsidan ska vara centrerad, därför skriver vi som i rutan här nedanför. Lägg dock märke till att vi använder den amerikanska stavningen för ordet center.</li>
 </ul>
-<pre class="language-css"><code>body {
+<pre class="{.language-css}"><code>body {
     background-color: #F8FAF4;
     text-align: center;
 }</code></pre>
 <p>Lade du märke till att allt på sidan flyttade sig åt mitten när du skrev ‘text-align: center’ i body-sektionen? Anledningen är att allt inne i body-sektionen får samma stil. Det här händer när ett element ligger inuti ett annat, som i det här exemplet:</p>
-<pre class="language-markup"><code>&lt;p&gt;Har du sett Felix? &lt;em&gt;snälla&lt;/em&gt; kontakta hans ägare&lt;/p&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;p&gt;Har du sett Felix? &lt;em&gt;snälla&lt;/em&gt; kontakta hans ägare&lt;/p&gt;</code></pre>
 <p>Ordet ‘snälla’ kommer ha stilen som de får av <code>&lt;p&gt;</code> elementet tillsammans med stilen som det får från <code>&lt;em&gt;</code> elementet. Element kan nämligen liksom “ärva” stilar som deras föräldrar har. Men var försiktig, en del stilar är inte ärftliga. Vi kommer lära oss om dessa senare.</p>
-<section id="sparadin-fil-och-oppna-den-i-din-webblasare-2" class="level2 save">
-<h2><strong>SPARA</strong>din fil och <strong>ÖPPNA</strong> den i din webbläsare</h2>
+<section id="spara__din-fil-och-oppna-den-i-din-webblasare-.save-2" class="level2">
+<h2>__SPARA__din fil och <strong>ÖPPNA</strong> den i din webbläsare { .save}</h2>
 </section>
 <section id="prova-ocksa" class="level2 try">
 <h2>Pröva också</h2>
 <ul>
-<li>Hur skulle du ändra sidan för att göra den snyggare? Varför inte försöka med att använda alla dina favoritfärger? Har de egna namn eller måste du använda en hexkod?<br /></li>
+<li>Hur skulle du ändra sidan för att göra den snyggare? Varför inte försöka med att använda alla dina favoritfärger? Har de egna namn eller måste du använda en hexkod?</li>
 <li>Om du blir klar tidigare kan du gå tillbaka och lägga till stilar till den HTML-koden som vi gjort under de tidigare lektionerna.</li>
 </ul>
 </section>
@@ -154,23 +154,21 @@
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

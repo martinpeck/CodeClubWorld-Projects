@@ -32,11 +32,11 @@
 <h1>Étape 0 : Ouvre l’éditeur de code Python</h1>
 <p>Si Python est déjà installé sur ton ordinateur, il est temps de commencer.</p>
 <ul>
-<li>Sous Windows, cherche IDLE dans le menu Démarrer.<br /></li>
-<li>Sous Mac OS X, ouvre Terminal.app et tape <code>idle</code> et appuie sur la touche Entrée.<br /></li>
+<li>Sous Windows, cherche IDLE dans le menu Démarrer.</li>
+<li>Sous Mac OS X, ouvre Terminal.app et tape <code>idle</code> et appuie sur la touche Entrée.</li>
 <li>Sous Linux, ouvre un Terminal, tape <code>idle</code> et appuie sur la touche Entrée.</li>
 </ul>
-<p>Si tu n’as pas Python sur ton ordinateur, pas de panique ! Tu peux télécharger la dernière version de Python sur <a href="http://www.python.org/getit/"><a href="http://www.python.org/">http://www.python.org/</a></a>. La version exacte n’est pas importante, mais nous utilisons Python 3, donc tu devrais commencer avec la version 3 (pas la version 2).</p>
+<p>Si tu n’as pas Python sur ton ordinateur, pas de panique ! Tu peux télécharger la dernière version de Python sur <a href="http://www.python.org/getit/"><a href="http://www.python.org/" class="uri">http://www.python.org/</a></a>. La version exacte n’est pas importante, mais nous utilisons Python 3, donc tu devrais commencer avec la version 3 (pas la version 2).</p>
 <p>Quand IDLE démarre, tu verras une fenêtre qui s’appelle <code>Python Shell</code>. C’est dans cette fenêtre que le code s’exécute. Nous allons ouvrir une nouvelle fenêtre pour y écrire notre code. Clique sur <code>File -&gt; New Window</code> pour être prêt pour l’étape 1. Assure toi d’avoir les deux fenêtres bien visibles.</p>
 </section>
 <section id="etape-1-bonjour-tout-le-monde" class="level1 activity">
@@ -47,7 +47,7 @@
 <li><p>Ouvre IDLE, l’éditeur fourni avec Python. Tout notre code sera écrit dans cet éditeur. Quand tu ouvres l’éditeur, tu verras une fenêtre <code>Python Shell</code>, où les résultats et les erreurs de ton programme s’afficheront.</p></li>
 <li><p>Si tu ne l’as pas encore fait, clique sur <code>File -&gt; New Window</code>. Une nouvelle fenêtre vide s’affichera, avec ‘<em>Untitled</em>’ dans la barre de titre.<br />Tu devrais avoir deux fenêtres ouvertes maintenant, une pour écrire ton programme, et l’autre pour afficher la sortie de ton programme. Sois sûr d’écrire dans la bonne !</p></li>
 <li><p>Tape le code suivant dans la nouvelle fenêtre :</p>
-<pre class="language-python"><code>print(&quot;Bonjour tout le monde !&quot;)</code></pre></li>
+<pre class="{.language-python}"><code>print(&quot;Bonjour tout le monde !&quot;)</code></pre></li>
 <li><p>Vérifie que tu ne sois pas dans la fenêtre appelée <code>Python Shell</code>, et enregistre ton code.</p></li>
 </ol>
 <p>Pour enregistrer ton code, clique sur <code>File -&gt; Save</code>. Quand l’éditeur te demande un nom de fichier, tape <code>hello.py</code>, et enregistre le fichier sur ton Bureau. Clique ensuite sur <code>Run -&gt; Run Module</code> pour lancer ton programme.</p>
@@ -55,7 +55,7 @@
 <section id="protip" class="level3 protip">
 <h3><strong>ProTip</strong> :</h3>
 <ul>
-<li>Sous <strong>Windows</strong> et <strong>Ubuntu</strong>, tu peux utiliser le raccourci Ctrl-N pour ouvrir une nouvelle fenêtre, et ctrl-S pour enregistrer ton fichier après avoir fini de l’éditer, et tu peux utiliser F5 pour lancer ton programme. Sur certains ordinateurs, tu devras peut-être appuyer sur la touche Fn en même temps.<br /></li>
+<li>Sous <strong>Windows</strong> et <strong>Ubuntu</strong>, tu peux utiliser le raccourci Ctrl-N pour ouvrir une nouvelle fenêtre, et ctrl-S pour enregistrer ton fichier après avoir fini de l’éditer, et tu peux utiliser F5 pour lancer ton programme. Sur certains ordinateurs, tu devras peut-être appuyer sur la touche Fn en même temps.</li>
 <li>Sous <strong>Mac OS X</strong>, cmd-N pour créer une nouvelle fenêtre, Command-S pour enregistrer ton fichier, et appuie sur la touche fonction (fn) et F5 en même temps pour lancer ton programme.</li>
 </ul>
 </section>
@@ -68,14 +68,14 @@
 <h2>Check-list</h2>
 <ol>
 <li><p>Ouvre une nouvelle fenêtre de code, et écrit le code suivant :</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 forward(100)
 </code></pre></li>
 <li><p>Enregistre ton programme dans le fichier <code>myturtle.py</code> et clique sur <code>Run -&gt; Run Module</code>. Regarde la tortue, est-ce qu’elle a avancé de 100 pixels ? La tortue a un crayon attaché, et trace des lignes quand elle se déplace sur l’écran.</p>
 <p><strong>ProTip:</strong> Les fichiers contenant des programmes en Python doivent toujours avoir un nom qui termine par ‘.py’.</p></li>
 <li><p>Essayons de faire bouger la tortue sur notre canevas ! Essaye d’utiliser <code>backward(distance)</code>, et aussi de tourner la tortue en utilisant <code>right(angle)</code> et <code>left(angle)</code>. Par exemple, <code>backward(20)</code> dit à la tortue de reculer de 20 pixels, et <code>right(90)</code> dit à la tortue de tourner vers la droite de 90 degrés. Tu peux donner plus d’une instruction à la fois, elles seront exécutées dans l’ordre.</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -118,7 +118,7 @@ Ouest     |      Est
 <h3>À quoi sert le code au tout début de notre programme ?</h3>
 <ul>
 <li><p><code>from turtle import *</code> indique à Python que nous souhaitons utiliser la bibliothèque <code>turtle</code>, un ensemble de code que nous pouvons ensuite utiliser pour dessiner sur l’écran. Utiliser une bibliothèque nous permet de gagner du temps.</p></li>
-<li><code>speed()</code> change la vitesse à laquelle la tortue se déplace. Cette instruction prend une valeur entre 1 et 11. 11 est le plus rapide, 1 le plus lent.<br /></li>
+<li><code>speed()</code> change la vitesse à laquelle la tortue se déplace. Cette instruction prend une valeur entre 1 et 11. 11 est le plus rapide, 1 le plus lent.</li>
 <li><p><code>shape()</code> change la forme de la tortue. Nous utilisons la forme “turtle” pour dessiner une tortue, mais nous pourrions aussi utiliser les valeurs “arrow” (flèche), “circle” (cercle), “square” (carré), “triangle” (triangle) or “classic” (classique).</p></li>
 </ul>
 <p>Nous allons écrire ces instructions au début de tous nos programmes pour le reste de cette leçon. Si tu veux, tu peux essayer de changer la forme de ta tortue, ou la faire aller plus ou moins vite.</p>
@@ -132,7 +132,7 @@ Ouest     |      Est
 <h2>Check-list</h2>
 <ol>
 <li><p>Ouvre un nouveau fichier dans IDLE, et tape-y le code suivant:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -148,7 +148,7 @@ right(90)</code></pre>
 <p>Enregistre ton programme et clique sur <code>Run -&gt; Run Module</code>. Est-ce que tu peux voir un carré ? La tortue tourne de 90 degrés quatre fois, et termine dans la même direction qu’au début. En tournant 90 degrés, puis 90 degrés, puis 90 degrés, et encore 90 degrés, la tortue tourne de 360 degrés au total.</p>
 <p>Et si on essayait un triangle? Un triangle a trois angles, donc il faut faire tourner la tortue trois fois. Si l’on veut finir dans la même direction, nous allons devoir tourner un total de 360 degrés, comme pour le carré. Donc nous allons tourner de 120 degrés, puis encore de 120 degrés, et une fois de plus.</p></li>
 <li><p>Change ton code pour qu’il ressemble au suivant, pour dessiner un triangle:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -166,7 +166,7 @@ right(120)</code></pre></li>
 <p>Quelle est ta couleur préférée? Tu peux changer la couleur des lignes en utilisant la fonction <code>pencolor</code> (Python est écrit en anglais), et tu peux changer la taille du crayon en utilisant <code>pensize</code>:</p>
 <ol>
 <li><p>Change le code de l’exercice précédent pour qu’il soit identique au code suivant, en ajoutant ces nouvelles commandes:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -194,7 +194,7 @@ right(120)</code></pre></li>
 <h2>Check-list</h2>
 <ol>
 <li><p>Ouvre un nouveau fichier et tape le code suivant à l’intérieur:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -206,7 +206,7 @@ for count in range(4):
 <li><p>Enregistre ton programme et clique sur: <code>Run -&gt; Run module</code>.</p>
 <p>Remarque que le programme est <em>indenté</em>, ou décalé vers la droite sous la boucle <code>for</code>. Python se sert des espaces afin de savoir quelles commandes il doit répéter. Tu peux utiliser la touche Tabulation pour ajouter des tabulations, et le raccourci Majuscule-Tabulation pour en enlever.</p></li>
 <li><p>Essayons de voir ce qu’il se passe si l’on indente que <code>forward</code>, et change ton programme pour qu’il ressemble au suivant:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -218,7 +218,7 @@ right(90)</code></pre></li>
 <p>Est-ce que tu obtiens une ligne droite ? Python répète <code>forward</code> quatre fois, et seulement <em>ensuite</em> tourne vers la droite. Python se sert des espaces pour grouper des commandes ensemble, de la même manière que Scratch utilise des blocs. Python se plaint si le code n’est pas aligné correctement.</p></li>
 <li><p>Change le programme pour revenir a la version précédente, pour vérifier qu’il dessine un carré, mais au lieu d’utiliser des nombres dans le code, nous pouvons utiliser des noms. Cela rend le programme plus facile à comprendre, et cela permet aussi d’arrêter de répéter le même code..</p>
 <p>Change ton fichier pour qu’il ressemble à ceci:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -236,9 +236,9 @@ for count in range(sides):
 <h2>Défi: Dessiner les autres formes</h2>
 <p>Est-ce que tu peux dessiner les formes suivantes en changeant les valeurs de <code>length</code> et <code>angle</code> ?</p>
 <ul>
-<li>un triangle? (trois côtés)<br /></li>
-<li>un pentagone? (cinq côtés)<br /></li>
-<li>un hexagone? (six côtés)<br /></li>
+<li>un triangle? (trois côtés)</li>
+<li>un pentagone? (cinq côtés)</li>
+<li>un hexagone? (six côtés)</li>
 <li>un octogone? (huit côtés)</li>
 </ul>
 <p>Souviens-toi, un triangle à trois côtés, et tourne de 120 degrés. Tourner de 120 degrés pour chaque angle veut dire que nous tournons de 360 degrés au total. Pour un carré, nous tournons de 90 degrés pour quatre angles, ce qui nous donne aussi 360 degrés.</p>
@@ -254,7 +254,7 @@ for count in range(sides):
 <h2>Check-list</h2>
 <ol>
 <li><p>Modifie ton programme pour calculer l’angle de la manière suivante:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -276,7 +276,7 @@ for count in range(sides):
 <h2>Check-list</h2>
 <ol>
 <li><p>Nous pouvons demander à la tortue de remplir nos formes avec une couleur, en utilisant <code>begin_fill()</code> et <code>end_fill()</code>. Change ton code pour<br />ajouter ces commandes:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -294,7 +294,7 @@ for count in range(sides):
     right(angle)
 end_fill()</code></pre>
 <p>Comme avec <code>pencolor</code>, <code>fillcolor</code> change la couleur que la tortue utilise pour remplir les formes qu’elle dessine. Ce programme dessine un carré rouge avec une bordure rouge.</p>
-Il faut utiliser <code>begin_fill()</code> pour dire à la tortue que tu commences à dessiner une forme à remplir, et <code>end_fill()</code> pour lui dire quand tu as terminé.<br /></li>
+Il faut utiliser <code>begin_fill()</code> pour dire à la tortue que tu commences à dessiner une forme à remplir, et <code>end_fill()</code> pour lui dire quand tu as terminé.</li>
 <li><p>Essaye de changer les couleurs, le nombre de côtés, et la longueur des côtés pour voir quelles formes tu peux dessiner !</p></li>
 </ol>
 </section>
@@ -306,7 +306,7 @@ Il faut utiliser <code>begin_fill()</code> pour dire à la tortue que tu commenc
 <p>Si tu veux faire bouger la tortue sans laisser de marque derrière elle, tu peux utiliser <code>penup()</code> et <code>pendown()</code> pour activer ou désactiver le crayon.</p>
 <ol>
 <li><p>Dans un nouveau fichier, essaye le code suivant:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -339,23 +339,21 @@ for count in range(20):
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

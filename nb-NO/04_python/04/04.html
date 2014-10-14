@@ -41,7 +41,7 @@ ____/\___/      \___/\___
 </code></pre>
 <ol>
 <li><p>Å tegne den første er lett. Som alltid er den første linjen <code>from turtle import *</code> så Python vet at vi vil tegne. Dette programmet tegner linjen,<br />sjekk at du får det til</p>
-<pre class="language-python"><code>
+<pre class="{.language-python}"><code>
 from turtle import *
 
 def first():
@@ -50,7 +50,7 @@ def first():
 first()</code></pre>
 <p>Jeg har puttet det inn i en prosedyre fordi jeg liker prosedyrer. Vi<br />kommer til å lage prosedyrer for alle formene, så la oss legge dem til i<br />filen vi lager.</p></li>
 <li><p>Legg til litt kode så koden din blir slik som denne:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 def first():
     forward(30)
@@ -137,7 +137,7 @@ mountain(3)</code></pre>
 <h2>Steg 4: Tegn et snøflak av fjell</h2>
 <ol>
 <li><p>La oss bare legge til en siste ting til filen fra i sted, så den ser ut som under. Vi legger til en ny prosedyre <code>snowflake</code>:</p>
-<pre class="language-python"><code>
+<pre class="{.language-python}"><code>
 from turtle import *
 
 def mountain(depth, length):
@@ -193,7 +193,7 @@ ___| |__|         |__| |___
 <p>Akkurat som med fjellet er det et enkelt tilfelle: en rett linje, og et spesialtilfelle: Tegn en linje med en firkanthump på. Vi ser også at den tredje er akkurat som før, tegn den andre figuren noen ganger.</p>
 <ol>
 <li><p>La oss åpne en ny fil og forsøke å tegne det andre bildet, som er det vi skal gjenta:</p>
-<pre class="language-python"><code>
+<pre class="{.language-python}"><code>
 from turtle import *
 
 forward(30)
@@ -220,7 +220,7 @@ ________|         |________</code></pre></li>
 <h2>Steg 6: Klumpete firkanter</h2>
 <ol>
 <li><p>Åpne en ny fil i IDLE og skriv inn følgende:</p>
-<pre class="language-python"><code>
+<pre class="{.language-python}"><code>
 from turtle import *
 
 def box(depth, length):
@@ -282,7 +282,7 @@ xcurve(4,5)</code></pre></li>
 ----------------</code></pre>
 <ol>
 <li><p>Lag en ny fil og prøv det!</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 def triforce(depth, length):
 
@@ -327,7 +327,7 @@ triforce(7, 512)</code></pre>
 <h2>Steg 8: Bobler</h2>
 <ol>
 <li><p>Hvis du vil kan du tegne med sirkler istedenfor trekanter! Åpne en ny fil og skriv inn følgende kode:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 def bubble(depth, length):
     if depth == 0:
@@ -365,23 +365,21 @@ bubble(6, 512)</code></pre></li>
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

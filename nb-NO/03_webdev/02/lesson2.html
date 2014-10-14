@@ -33,7 +33,7 @@
 <section id="activitet" class="level2 check">
 <h2>Activitet</h2>
 <ol>
-<li>Åpne et <strong>tekstprogram</strong>.<br /></li>
+<li>Åpne et <strong>tekstprogram</strong>.</li>
 <li>Åpne filen som heter <code>om_meg.html</code>. Filen inneholder bittelitt HTMl kode for å hjelpe deg med å komme igang, men du må skrive resten selv.</li>
 </ol>
 </section>
@@ -57,7 +57,7 @@
 <li>Finn en av <code>&lt;img&gt;</code> taggene. Vi har akkurat prøvd å feilstave en tagg og nettleseren var ikke sikker på hva den skal gjøre med det. Men hva hvis vi feilstaver attributtet?</li>
 </ul>
 <p>Inne i <code>&lt;img&gt;</code> taggen har vi <code>href</code> og <code>alt</code> attributter:</p>
-<pre class="language-markup"><code>&lt;img href = &quot;kattunge.jpg&quot; alt = &quot;Dette er en kattunge.&quot; /&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;img href = &quot;kattunge.jpg&quot; alt = &quot;Dette er en kattunge.&quot; /&gt;</code></pre>
 <p>Prøv å endre <code>href</code> til noe annet. Lagre dokumentet og oppdater i nettleseren.</p>
 <p>Å nei! Kattungen er borte!</p>
 <p>Plutselig vet ikke nettleseren hvor den skal se etter bildet den skal vise - den ser etter filnavnet i <code>href</code> atributten som ikke lenger er der.</p>
@@ -65,7 +65,7 @@
 <ul>
 <li>Nå fjern det andre anførselstegnet (<code>&quot;</code>) fra <code>alt</code> attributtet av dette bildet: den etter teksten, slik at du ender opp med dette:</li>
 </ul>
-<pre class="language-markup"><code>&lt;img href=&quot;kattunge.jpg&quot; alt=&quot;Dette er en kattunge. /&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;img href=&quot;kattunge.jpg&quot; alt=&quot;Dette er en kattunge. /&gt;</code></pre>
 <p>Lagre og oppdater i nettleseren.</p>
 <p>Den neste taggen forsvant. Hvorfor? Nettleseren vil tro at alt etter <code>alt =&quot;</code>og før neste sitatmerke (<code>&quot;</code>) er ekstra tekst for dette bildet, inkludert slutten av bildekoden og neste åpnings-taggen.</p>
 <p>Fiks det igjen ved å legge til et anførselstegn etter <code>alt</code> teksten.</p>
@@ -77,23 +77,23 @@
 <p>La oss lage en ny side. Åpne <code>omg_meg_side_2.html</code>. Den har litt mindre kode en den andre siden du jobbet med, men jeg er sikker på at du kan legge til mer kode selv nå.</p>
 <p><strong>Noen tips og ideer:</strong></p>
 <ul>
-<li>Legg til en overskrift som vil fungere som tittelen på denne siden.<br /></li>
-<li>Denne siden kan handle om kjæledyret ditt, din favoritt hobby eller vennene dine og deres hobbyer.<br /></li>
+<li>Legg til en overskrift som vil fungere som tittelen på denne siden.</li>
+<li>Denne siden kan handle om kjæledyret ditt, din favoritt hobby eller vennene dine og deres hobbyer.</li>
 <li>Lag en liste over ting kjæledyret liker, hvis siden er om et kjæledyr.</li>
 </ul>
 <p><strong>Er du ferdig? Flott! La oss nå linke de to sidene du har laget sammen.</strong></p>
 <p>Når vi har linket til deler av den samme siden, kunne vi bare peke linken til en bestemt id på siden, som dette:</p>
-<pre class="language-markup"><code>&lt;a href=&quot;#kattunge&quot;&gt; Klikk for å se en kattunge &lt;/ a&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;a href=&quot;#kattunge&quot;&gt; Klikk for å se en kattunge &lt;/ a&gt;</code></pre>
 <p>Som da tok deg til noe sånt som dette:</p>
-<pre class="language-markup"><code>&lt;div id=&quot;kattunge&quot;&gt;
+<pre class="{.language-markup}"><code>&lt;div id=&quot;kattunge&quot;&gt;
 &lt;img src = &quot;kattunge.jpg&quot; alt = &quot;Dette er en kattunge.&quot; /&gt;
 &lt;/ div&gt;</code></pre>
 <p>Hvis du vil koble til en annen side, trenger vi ikke å inkludere hashsymbolet (<code>#</code>), men i stedet må vi si hvilken fil vi vil linken skal ta oss til.</p>
 <p>Så for å linke fra <code>om_meg_side_2.html</code> til <code>om_meg.html</code> skriver vi slik:</p>
-<pre class="language-markup"><code>&lt;a href=&quot;om_meg.html&quot;&gt; Gå til Om Meg siden &lt;/ a&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;a href=&quot;om_meg.html&quot;&gt; Gå til Om Meg siden &lt;/ a&gt;</code></pre>
 <p>Du kan endre anker teksten til noe annet, som tittelen på siden hvis du har endret det.</p>
 <p>For å linke tilbake fra <code>om_meg.html</code> til <code>om_meg_side_2.html</code> må du skrive det slik:</p>
-<pre class="language-markup"><code>&lt;a href=&quot;om_meg_side_2.html&quot;&gt; Gå til min andre side &lt;/ a&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;a href=&quot;om_meg_side_2.html&quot;&gt; Gå til min andre side &lt;/ a&gt;</code></pre>
 <p>Gratulerer! Du har laget ditt eget nettsted.</p>
 </section>
 <section id="publiser-nettsiden-din-pa-internett-ekstra-aktivitet" class="level1 activity">
@@ -103,16 +103,16 @@
 <p>Husker du servere fra den første økten? Servere er datamaskiner som alltid er på og koblet til Internett, og de er satt opp slik at folk kan besøke nettsteder som lever på disse datamaskinene.</p>
 <p>For å gjøre dette vil vi bruke <strong>Cyberduck</strong> - det er et program for å flytte filer fra din datamaskin til en server.</p>
 <ol>
-<li>Klikk <code>Åpne Tilkobling</code>.<br /></li>
-<li>Legg inn servernavn, brukernavn og passord som instruert av Kodeklubben-hjelperen.<br /></li>
-<li>Klikk <code>Tilkoble</code>. Du vil da se alle mappene og filene på serveren - mest sannsynlig vil serveren være tom, om du ikke har lagt filene dine ennå.<br /></li>
-<li>Dra nettsted-filene fra datamaskinen din til servervinduet. Opplastingen vil begynne.<br /></li>
+<li>Klikk <code>Åpne Tilkobling</code>.</li>
+<li>Legg inn servernavn, brukernavn og passord som instruert av Kodeklubben-hjelperen.</li>
+<li>Klikk <code>Tilkoble</code>. Du vil da se alle mappene og filene på serveren - mest sannsynlig vil serveren være tom, om du ikke har lagt filene dine ennå.</li>
+<li>Dra nettsted-filene fra datamaskinen din til servervinduet. Opplastingen vil begynne.</li>
 <li>Når det er lastet opp, kan du besøke nettstedet ditt på adressen gitt til deg av Kodeklubben-hjelperen.</li>
 </ol>
 <section id="ting-du-kan-prve" class="level2 try">
 <h2>Ting du kan prøve</h2>
 <ul>
-<li>Hvordan kan du linke til en annen side på nettet? (Hint: prøv å legge <code>http://</code> og deretter adressen til nettstedet du vil koble til)<br /></li>
+<li>Hvordan kan du linke til en annen side på nettet? (Hint: prøv å legge <code>http://</code> og deretter adressen til nettstedet du vil koble til)</li>
 <li>I likhet med forslaget ovenfor, hvordan ville du legge til et bilde fra et sted på nettet i stedet for fra datamaskinen? (Hint: igjen, prøve å legge <code>http://</code> og adressen til bildet)</li>
 </ul>
 </section>
@@ -125,23 +125,21 @@
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

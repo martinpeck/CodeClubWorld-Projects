@@ -33,14 +33,14 @@
 <section id="steg-1-traffa-ninjorna" class="level1 activity">
 <h1>Steg 1: Träffa ninjorna</h1>
 <ul>
-<li>Öppna filen som heter <code>ninjas.html</code> i textredigeraren. Öppna den i webbläsaren också.<br /></li>
-<li>Läs igenom koden. Kan du gissa vilka delar som hör till vilka objekt på gatan? Notera att vi använder två språk: HTML för att lägga till alla element till sidan, och CSS placerad mellan <code>style</code>-taggarna.<br /></li>
+<li>Öppna filen som heter <code>ninjas.html</code> i textredigeraren. Öppna den i webbläsaren också.</li>
+<li>Läs igenom koden. Kan du gissa vilka delar som hör till vilka objekt på gatan? Notera att vi använder två språk: HTML för att lägga till alla element till sidan, och CSS placerad mellan <code>style</code>-taggarna.</li>
 <li>Elementen som vi kommer att använda är bilderna (<code>&lt;img&gt;</code>-taggarna). Vi kan kontrollera deras position genom att använda CSS.</li>
 </ul>
 <p><strong>Låt oss flytta på en ninja</strong></p>
 <ul>
-<li>Varje ninja har namngetts genom att använda <code>id</code>-attributet. Låt oss flytta ninjan Alex först. Hitta CSS-regeln som hör till Alex.<br /></li>
-<li>Ändra värdet av <code>left</code>(vänster) till <code>100px</code> och <code>top</code>(övre) till <code>320px</code>. När <code>position</code>-egenskapen är satt till <code>absolute</code> betyder det att vi kommer att beskriva positionen i relation till ninjans förälderelement (parent element) - i det här fallet <code>&lt;div&gt;´ med</code>id<code>`street_corner</code>. <code>px</code>betyder <code>pixel</code>. <code>left</code> beskriver hur långt ninjan ska flyttas från vänster sida (hur många pixlar), och <code>top</code> säger till webläsaren hur långt den ska flyttas ner från den övre kanten.<br /></li>
+<li>Varje ninja har namngetts genom att använda <code>id</code>-attributet. Låt oss flytta ninjan Alex först. Hitta CSS-regeln som hör till Alex.</li>
+<li>Ändra värdet av <code>left</code>(vänster) till <code>100px</code> och <code>top</code>(övre) till <code>320px</code>. När <code>position</code>-egenskapen är satt till <code>absolute</code> betyder det att vi kommer att beskriva positionen i relation till ninjans förälderelement (parent element) - i det här fallet <code>&lt;div&gt;´ med</code>id<code>`street_corner</code>. <code>px</code>betyder <code>pixel</code>. <code>left</code> beskriver hur långt ninjan ska flyttas från vänster sida (hur många pixlar), och <code>top</code> säger till webläsaren hur långt den ska flyttas ner från den övre kanten.</li>
 <li>Ändra <code>left</code>(vänster) till <code>right</code>(höger) och <code>top</code>(övre) till <code>bottom</code>(nedre). Nu säger koden till webbläsaren att sätta ninjan <code>100px</code> till vänster om den högra kanten, och <code>320px</code> upp från den nedre kanten.</li>
 </ul>
 <p>Pixlar beskriver den minsta fysiska punkt som skärmen kan visa. De används ofta för att beskriva skärmupplösning.</p>
@@ -58,7 +58,7 @@
 <p>Som om vi inte redan hade tillräckligt med enhetstyper, kommer vi nu att prova ännu en! Du vet hur man använder pixlar och procent, så låt oss nu prova <code>ems</code>.</p>
 <p><code>Em</code>är en mätningstyp som lånats från typografin, som handlar om utseendet på bokstäver och text. En em är lika med det nuvarande typsnittet. Notera att i början av CSS:en sätter vi <code>font-size</code> på <code>body</code>-elementet till 20px, så en <code>em</code> kommer att vara 20 pixlar.</p>
 <ul>
-<li>Hitta <code>bicycle</code> (cykeln) i CSS:en. Förutom `em´-biten så borde det se bekant ut. Se om du kan flytta cykeln för att gömma Ninjan Sam.<br /></li>
+<li>Hitta <code>bicycle</code> (cykeln) i CSS:en. Förutom `em´-biten så borde det se bekant ut. Se om du kan flytta cykeln för att gömma Ninjan Sam.</li>
 <li>Vi har nämnt att storleken på <code>em</code>:en är baserad på typsnittsstorleken (font size). För att se det i praktiken, hitta <code>body</code> i CSS:en. Ändra <code>font-size</code>-värdet (typsnittvärdet) till 30px. Vad hände? Eftersom varje <code>em</code> är 30 pixlar bred och 30 pixlar hög kommer alla element som använder detta mätvärde att ha ändrat sin position!</li>
 </ul>
 </section>
@@ -68,7 +68,7 @@
 <section id="saker-att-prova" class="level2 try">
 <h2>Saker att prova</h2>
 <ul>
-<li>Kan du komma på hur man gör så att ninjorna syns framför några av gatuobjekten? Vad skulle hända om du kopierade <code>&lt;img&gt;</code>-taggen för ninjan efter `<img>´-taggen som visar objektet?<br /></li>
+<li>Kan du komma på hur man gör så att ninjorna syns framför några av gatuobjekten? Vad skulle hända om du kopierade <code>&lt;img&gt;</code>-taggen för ninjan efter `<img>´-taggen som visar objektet?</li>
 <li>Kan du lägga till några fler objekt till scenen? Du kan lägga till bilder från din dator eller bilder som du hittar på internet.</li>
 </ul>
 </section>
@@ -81,23 +81,21 @@
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>
