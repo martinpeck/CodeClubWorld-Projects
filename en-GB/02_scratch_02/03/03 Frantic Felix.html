@@ -38,10 +38,10 @@
 <section id="activity-checklist" class="level3">
 <h3>Activity Checklist</h3>
 <ul>
-<li><strong>Open a new project</strong>. Add the <strong>frantic-felix/testlevel</strong> background and delete the plain white <strong>background1</strong>.<br /></li>
-<li><strong>Rename Sprite1 as Felix</strong>. Make sure his costume can only flip left-right.<br /></li>
-<li>Create four new sprites from the images <strong>frantic-felix/top</strong>, <strong>frantic-felix/bottom</strong>, <strong>frantic-felix/left</strong>, and <strong>frantic-felix/right</strong>. These sprites are the collision detectors. Call the new sprites <strong>Top</strong>, <strong>Bottom</strong>, <strong>Left</strong>, and <strong>Right</strong>. Make sure that their costumes can’t rotate or flip.<br /></li>
-<li>Create four <code>variables</code> (for all sprites): <strong>blocked top</strong>, <strong>blocked bottom</strong>, <strong>blocked right</strong>, and <strong>blocked left</strong>.<br /></li>
+<li><strong>Open a new project</strong>. Add the <strong>frantic-felix/testlevel</strong> background and delete the plain white <strong>background1</strong>.</li>
+<li><strong>Rename Sprite1 as Felix</strong>. Make sure his costume can only flip left-right.</li>
+<li>Create four new sprites from the images <strong>frantic-felix/top</strong>, <strong>frantic-felix/bottom</strong>, <strong>frantic-felix/left</strong>, and <strong>frantic-felix/right</strong>. These sprites are the collision detectors. Call the new sprites <strong>Top</strong>, <strong>Bottom</strong>, <strong>Left</strong>, and <strong>Right</strong>. Make sure that their costumes can’t rotate or flip.</li>
+<li>Create four <code>variables</code> (for all sprites): <strong>blocked top</strong>, <strong>blocked bottom</strong>, <strong>blocked right</strong>, and <strong>blocked left</strong>.</li>
 <li><p>Give each of the detector sprites this script:</p>
 <p><img src="9fbbfa8bd8a092683c207e45f878c23f8ad5dada.png" alt="when FLAG clicked
     forever
@@ -66,9 +66,9 @@
 <section id="task-2-walking-floors-and-falling" class="level2">
 <h2>Task 2: Walking, floors and falling</h2>
 <ul>
-<li>Next is to make Felix walk. We’ll use the <strong>left</strong> and <strong>right arrow</strong> keys to move him left and right. If he’s not supported by a floor, he’ll fall down. (We’ll do jumping next.) If the left arrow key is pressed, we want Felix to point left and move left a bit. But we also want him not to move left if there’s an obstacle there.<br /></li>
-<li>We could use the <code>&lt;when [key] pressed&gt;</code> hats to make Felix move, but that gives a jerky motion. Things move more smoothly if you put <code>&lt;if key [left arrow] pressed?&gt;</code> blocks in <code>forever</code> loops. Collision detection means we need to include the test of the <strong>blocked left</strong> variable in the <code>if</code>, using an and block so that Felix only moves left if the key is pressed and left blocked is zero. We need to do the same for moving right.<br /></li>
-<li>We could animate Felix’s legs in the same block, but they end up moving too fast. Do the animation in a separate <code>forever</code> block under another when <strong>green flag clicked</strong> hat.<br /></li>
+<li>Next is to make Felix walk. We’ll use the <strong>left</strong> and <strong>right arrow</strong> keys to move him left and right. If he’s not supported by a floor, he’ll fall down. (We’ll do jumping next.) If the left arrow key is pressed, we want Felix to point left and move left a bit. But we also want him not to move left if there’s an obstacle there.</li>
+<li>We could use the <code>&lt;when [key] pressed&gt;</code> hats to make Felix move, but that gives a jerky motion. Things move more smoothly if you put <code>&lt;if key [left arrow] pressed?&gt;</code> blocks in <code>forever</code> loops. Collision detection means we need to include the test of the <strong>blocked left</strong> variable in the <code>if</code>, using an and block so that Felix only moves left if the key is pressed and left blocked is zero. We need to do the same for moving right.</li>
+<li>We could animate Felix’s legs in the same block, but they end up moving too fast. Do the animation in a separate <code>forever</code> block under another when <strong>green flag clicked</strong> hat.</li>
 <li><p>The final thing to do is <strong>falling</strong>. If there’s no solid ground under Felix, we want him to fall. That’s another <code>forever loop</code> under another <strong>green flag</strong> hat.</p>
 <p><img src="3b59a96bdb75ecffdbf379ad210c43f4115da3ab.png" alt="when FLAG clicked //handle moving
     forever
@@ -112,17 +112,17 @@ when FLAG clicked //handle falling
 <h2>Task 3: Jumping</h2>
 <p>The final part of making Felix move is jumping. Let’s have the <strong>space key</strong> make Felix jump. There are a few wrinkles to jumping:</p>
 <ol>
-<li>We don’t want Felix to <strong>fall</strong> if he’s <strong>going up</strong>.<br /></li>
-<li>We don’t want Felix to be stopped by floors when he’s going up, but we still want him to be stopped by <strong>floors</strong> when he’s <strong>coming down</strong>.<br /></li>
-<li>We don’t want Felix to <strong>jump up</strong> into the underside of a <strong>green obstacle</strong>.<br /></li>
-<li>We want the jump to be animated, so we don’t want Felix to instantly move up a large distance.<br /></li>
+<li>We don’t want Felix to <strong>fall</strong> if he’s <strong>going up</strong>.</li>
+<li>We don’t want Felix to be stopped by floors when he’s going up, but we still want him to be stopped by <strong>floors</strong> when he’s <strong>coming down</strong>.</li>
+<li>We don’t want Felix to <strong>jump up</strong> into the underside of a <strong>green obstacle</strong>.</li>
+<li>We want the jump to be animated, so we don’t want Felix to instantly move up a large distance.</li>
 <li>Felix should only be able to jump if he’s <strong>standing on a floor</strong>. The game would be too easy if Felix could jump off thin air.</li>
 </ol>
 <ul>
-<li>We’ll control jumping with a new <code>variable</code>, <strong>height to jump</strong>. If this is greater than zero, Felix is going up. If it’s zero, Felix is falling (or has fallen), as per the previous stage.<br /></li>
-<li>We’ll make Felix jump up <strong>100 pixels</strong>, all things being equal. Add another if block inside the <code>forever</code> block that handles key presses. If we press the <strong>space key</strong> and Felix is standing on a floor (that is <strong>blocked below</strong> is set to 1), set <strong>height to jump to 100</strong>.<br /></li>
-<li>We want to change the falling script. Inside the <code>forever</code>, we want an <code>if-else</code> block that detects if Felix is jumping up or not. The condition for this <code>if-else</code> block is whether <strong>height to jump</strong> is <strong>greater than zero</strong>. The existing falling <code>if</code> block goes in the else part of the new <code>if-else</code> block.<br /></li>
-<li>When we know Felix is jumping up, we need to check if he’s bumped his head against something. If <strong>blocked top</strong> is <strong>1</strong>, set <strong>height to jump</strong> to <strong>zero</strong>. (This stops Felix jumping up into obstacles). <strong>Otherwise, move Felix up by ten and reduce height to jump by ten.</strong><br /></li>
+<li>We’ll control jumping with a new <code>variable</code>, <strong>height to jump</strong>. If this is greater than zero, Felix is going up. If it’s zero, Felix is falling (or has fallen), as per the previous stage.</li>
+<li>We’ll make Felix jump up <strong>100 pixels</strong>, all things being equal. Add another if block inside the <code>forever</code> block that handles key presses. If we press the <strong>space key</strong> and Felix is standing on a floor (that is <strong>blocked below</strong> is set to 1), set <strong>height to jump to 100</strong>.</li>
+<li>We want to change the falling script. Inside the <code>forever</code>, we want an <code>if-else</code> block that detects if Felix is jumping up or not. The condition for this <code>if-else</code> block is whether <strong>height to jump</strong> is <strong>greater than zero</strong>. The existing falling <code>if</code> block goes in the else part of the new <code>if-else</code> block.</li>
+<li>When we know Felix is jumping up, we need to check if he’s bumped his head against something. If <strong>blocked top</strong> is <strong>1</strong>, set <strong>height to jump</strong> to <strong>zero</strong>. (This stops Felix jumping up into obstacles). <strong>Otherwise, move Felix up by ten and reduce height to jump by ten.</strong></li>
 <li><p>You should end up with this:</p>
 <p><img src="1da9599c8209b7964a33037584bac35465cbf75c.png" alt="when FLAG clicked //handle falling
     forever
@@ -152,9 +152,9 @@ when FLAG clicked //handle falling
 <h2>Task 4: Keys and goals</h2>
 <p><strong>We’ve got Felix moving around the world. Now to make him finish a level</strong>.<br />We’ll put three keys around the cavern. Felix collects a key by touching it. When he’s collected all three, he’ll be able to climb into an escape pod and flee!</p>
 <ul>
-<li>We’ll have a new <code>variable</code>, <strong>keys to get</strong>, which tracks how many keys there are still to get. A new script on the <strong>stage</strong> should set this to <strong>3</strong> when the <strong>green flag</strong> is clicked.<br /></li>
-<li>The keys and the escape pod will each be sprites. (Use <strong>frantic-felix/key</strong> for the keys and <strong>frantic-felix/escape-pod</strong> for the pod.)<br /></li>
-<li>Each key needs <strong>two scripts</strong>: one places the key in the right position, with the size and angle, then has a <code>forever</code> loop to change the colour (that just makes it easy to see on the screen). The other script is a <code>forever if</code> loop that waits until Felix touches the key. As soon as that happens, the script hides the key and decrements keys to get.<br /></li>
+<li>We’ll have a new <code>variable</code>, <strong>keys to get</strong>, which tracks how many keys there are still to get. A new script on the <strong>stage</strong> should set this to <strong>3</strong> when the <strong>green flag</strong> is clicked.</li>
+<li>The keys and the escape pod will each be sprites. (Use <strong>frantic-felix/key</strong> for the keys and <strong>frantic-felix/escape-pod</strong> for the pod.)</li>
+<li>Each key needs <strong>two scripts</strong>: one places the key in the right position, with the size and angle, then has a <code>forever</code> loop to change the colour (that just makes it easy to see on the screen). The other script is a <code>forever if</code> loop that waits until Felix touches the key. As soon as that happens, the script hides the key and decrements keys to get.</li>
 <li><p>The escape pod has a slightly more complex script. It uses a <code>forever if</code> block to wait for <strong>keys to get</strong> to become <strong>zero</strong>. As soon as that happens, the pod starts flashing (to show the player that they can escape). Then we can use another <code>if</code> to detect when Felix touches the flashing escape pod. As soon as he does, the pod <code>broadcasts</code> a win message and says “You win!”. Felix responds to the win message by hiding.</p>
 <p><img src="8e12dca9cbe4d9dccf8d15698c3c163d33ebb3de.png" alt="when FLAG clicked
     go to x:(220) y:(-125)
@@ -183,7 +183,7 @@ when FLAG clicked //handle falling
 <section id="activity-checklist-1" class="level2">
 <h2>Activity Checklist</h2>
 <ul>
-<li><strong>Create a new sprite</strong>, using whatever costume you like. Make sure it’s about the same size as Felix (We used the <strong>things/flower-vase</strong> costume, edited to be made smaller by four steps). The baddie needs just a single script that both moves it and detects when it’s touching Felix.<br /></li>
+<li><strong>Create a new sprite</strong>, using whatever costume you like. Make sure it’s about the same size as Felix (We used the <strong>things/flower-vase</strong> costume, edited to be made smaller by four steps). The baddie needs just a single script that both moves it and detects when it’s touching Felix.</li>
 <li><p>Put three <code>if</code> statements inside a forever loop. The first if checks whether the baddie is touching Felix; if it is, it <code>broadcasts</code> the <strong>lose</strong> message. The other two <code>if</code>’s check whether the baddie has reached the end of its path; if it has, the baddie turns round. Finally, the baddie takes two steps. (Using <strong>move</strong> instead of <strong>glide</strong> blocks makes it easier to control how fast the baddie goes.) <strong>We don’t need to use the collision detector sprites here, as we don’t care which side of Felix touches the baddie.</strong></p>
 <p><img src="ebd5f33af733583f1918a17f39d9658fe5de4d4a.png" alt="when FLAG clicked
     go to x:(-50) y:(47)
@@ -230,13 +230,13 @@ when FLAG clicked //handle falling
 <p><strong>Last week, you built all the parts of a platform game. This week, you’ll use those pieces to make your own levels.</strong></p>
 <p>To recap, you made several things happen:</p>
 <ol>
-<li>Felix can walk left and right and jump.<br /></li>
-<li>Felix falls unless a black floor stops him.<br /></li>
-<li>Felix can’t move through green obstacles.<br /></li>
-<li>Blue bits of scenery and baddies kill Felix.<br /></li>
-<li>Baddies move around fixed patrol routes.<br /></li>
-<li>Baddies kill Felix if he touches them.<br /></li>
-<li>If Felix moves into a key, he collects it.<br /></li>
+<li>Felix can walk left and right and jump.</li>
+<li>Felix falls unless a black floor stops him.</li>
+<li>Felix can’t move through green obstacles.</li>
+<li>Blue bits of scenery and baddies kill Felix.</li>
+<li>Baddies move around fixed patrol routes.</li>
+<li>Baddies kill Felix if he touches them.</li>
+<li>If Felix moves into a key, he collects it.</li>
 <li>When Felix has all the keys, an escape pod lights up to take him to safety (or the next level).</li>
 </ol>
 <p>Treat these bits as a toolkit. <strong>Use them to build your own levels.</strong></p>
@@ -344,23 +344,21 @@ when FLAG clicked //handle falling
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

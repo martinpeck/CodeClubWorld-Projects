@@ -29,7 +29,7 @@
 <p>This project is in Beta. That means we’re still testing it, and there’s a small chance there could be some bugs or typos. If you’re a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/1eMCfpYe3v7eYu5M8rSqLKlmq7cczLCLHx66csgyUyVU/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email <script type="text/javascript">
 <!--
 h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
 </section>
@@ -44,9 +44,9 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>In your projects so far, you’ve used a variable to store a single piece of data, such as a name or a score. But what if you want to store lots of data? In Python, you can use a <em>list</em> to store lots of data in 1 variable:</p>
-<pre class="language-python"><code>bigPlanets = [ &quot;jupiter&quot; , &quot;saturn&quot; , &quot;uranus&quot; , &quot;neptune&quot;]</code></pre>
+<pre class="{.language-python}"><code>bigPlanets = [ &quot;jupiter&quot; , &quot;saturn&quot; , &quot;uranus&quot; , &quot;neptune&quot;]</code></pre>
 <p>This list of text is also known as an <em>array</em> of text. To access items in the list, you just need to know the position of the item. Run this program to give yourself a better idea of how lists work:</p>
-<pre class="language-python"><code>bigPlanets = [ &quot;jupiter&quot; , &quot;saturn&quot; , &quot;uranus&quot; , &quot;neptune&quot;]
+<pre class="{.language-python}"><code>bigPlanets = [ &quot;jupiter&quot; , &quot;saturn&quot; , &quot;uranus&quot; , &quot;neptune&quot;]
 print( bigPlanets )
 print( bigPlanets[0] )
 print( bigPlanets[1] )
@@ -55,7 +55,7 @@ print( bigPlanets[3] )</code></pre>
 <p><img src="compliment-planets.png" alt="screenshot" /></p>
 <p>As you can see, positions start at 0 and not 1, so <code>bigPlanets[1]</code> is “saturn” (the second item) and not “jupiter”.</p></li>
 <li><p>You can use a list called <code>compliments</code> to store all of the possible compliments for your compliment generator program, and then use <code>choice(compliments)</code> to choose a random compliment for the user:</p>
-<pre class="language-python"><code>from random import *
+<pre class="{.language-python}"><code>from random import *
 
 print(&quot;Compliment Generator&quot;)
 print(&quot;--------------------&quot;)
@@ -70,7 +70,7 @@ print(choice(compliments))
 print(&quot;You&#39;re welcome!&quot;)</code></pre>
 <p><img src="compliment-list.png" alt="screenshot" /></p></li>
 <li><p>You could make your compliments a little more interesting, by combining random items from 2 different lists:</p>
-<pre class="language-python"><code>from random import *
+<pre class="{.language-python}"><code>from random import *
 
 print(&quot;Compliment Generator&quot;)
 print(&quot;--------------------&quot;)
@@ -98,7 +98,7 @@ print( &quot;You&#39;re welcome!&quot; )</code></pre>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Using what you know about <code>while</code> loops and <code>if</code> statements, you could modify your program to keep giving out compliments until the user decides to quit:</p>
-<pre class="language-python"><code>from random import *
+<pre class="{.language-python}"><code>from random import *
 
 #the program loops as long as this variable is &#39;True&#39;
 running = True
@@ -150,7 +150,7 @@ while running == True:
 <ul>
 <li><p>Your compliment generator is starting to take shape, but it has a problem: what if your user can’t ride a bike or make a cup of tea? In that case, your compliments won’t be true, and won’t cheer them up!</p>
 <p>Let’s modify your program, so that the user can choose to add or remove items from the <code>hobbies</code> list, to allow them to personalise the compliments they receive:</p>
-<pre class="language-python"><code>from random import *
+<pre class="{.language-python}"><code>from random import *
 
 running = True
 adjectives = [ &quot;amazing&quot; , &quot;above-average&quot; , &quot;excellent&quot; ]
@@ -211,7 +211,7 @@ while running == True:
 <li><p>When testing the program above, did you run into any problems? At the moment, your compliment generator crashes if you try and remove a compliment that isn’t in the list:</p>
 <p><img src="compliment-error.png" alt="screenshot" /></p>
 <p>You can fix this problem, by first checking that the item to remove exists in the list. Replace your code to remove a hobby with this code:</p>
-<pre class="language-python"><code>    #&#39;d&#39; to delete a hobby
+<pre class="{.language-python}"><code>    #&#39;d&#39; to delete a hobby
     elif menuChoice == &#39;d&#39;:
 
         itemToDelete = input(&quot;Please enter the hobby to remove: &quot;)
@@ -229,7 +229,7 @@ while running == True:
 <p>Another problem with the program is that it is possible to add the same hobby more than once:</p>
 <p><img src="compliment-hobbiesx2.png" alt="screenshot" /></p>
 <p>Can you fix this problem, so that a hobby can only be added if it isn’t already in the list:</p>
-<pre class="language-python"><code>if itemToAdd not in hobbies:
+<pre class="{.language-python}"><code>if itemToAdd not in hobbies:
     #add code here...</code></pre>
 </section>
 <section id="challenge-pet-naming-service" class="level2 challenge">
@@ -238,8 +238,8 @@ while running == True:
 <p><img src="compliment-pet.png" alt="screenshot" /></p>
 <p>Your program could:</p>
 <ul>
-<li>allow the user to add and remove names from the list;<br /></li>
-<li>give different names for male and female pets, or different types of animal;<br /></li>
+<li>allow the user to add and remove names from the list;</li>
+<li>give different names for male and female pets, or different types of animal;</li>
 <li>ask the user how many names they need, in case they have more than 1 pet to name.</li>
 </ul>
 </section>
@@ -252,23 +252,21 @@ while running == True:
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

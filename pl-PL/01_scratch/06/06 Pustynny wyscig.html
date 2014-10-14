@@ -34,8 +34,8 @@
 <section id="zadania-do-wykonania" class="level2 check">
 <h2>Zadania do wykonania</h2>
 <ul>
-<li>Kliknij na scenę i dodaj tło z pustynią z katalogu <strong>Natura</strong>.<br /></li>
-<li>Dodaj nowego duszka i wybierz kostium lwa z katalogu ze zwierzętami.<br /></li>
+<li>Kliknij na scenę i dodaj tło z pustynią z katalogu <strong>Natura</strong>.</li>
+<li>Dodaj nowego duszka i wybierz kostium lwa z katalogu ze zwierzętami.</li>
 <li>Dodaj kolejnego duszka i wybierz kostium papugi. <code class="blocklightgrey">Zmniejsz</code> ją tak, aby była mniej więcej rozmiarów lwa.</li>
 </ul>
 </section>
@@ -68,8 +68,8 @@
 <section id="zadania-do-wykonania-2" class="level2 check">
 <h2>Zadania do wykonania</h2>
 <ul>
-<li>Dodaj nowego duszka z pliku. Wybierz przycisk z katalogu “things”.<br /></li>
-<li>Przejdź do edycji kostiumu, napisz na nim ‘Start’ i wciśnij OK. Przesuń duszka na środek sceny.<br /></li>
+<li>Dodaj nowego duszka z pliku. Wybierz przycisk z katalogu “things”.</li>
+<li>Przejdź do edycji kostiumu, napisz na nim ‘Start’ i wciśnij OK. Przesuń duszka na środek sceny.</li>
 <li><p>Dodaj do niego skrypt, który pokazuje przycisk, kiedy gra jest uruchomiona:</p>
 <p><img src="d0b4fbcc9d573b5490dd9ffc86b90c4d76ed80bd.png" alt="    kiedy kliknięto zieloną flagę
     pokaż" /></p></li>
@@ -91,12 +91,12 @@
 <h2>Zapisz swój projekt.</h2>
 <p>Chcemy, aby ścigający poruszali się tylko po rozpoczęciu wyścigu. Chcemy też wiedzieć, kiedy wyścig się zakończył. Będziemy potrzebować zmiennej do przechowywania tej informacji.</p>
 <ul>
-<li>Dodaj zmienną do wszystkich duszków i nazwij ją <code class="blockorange">wyścig</code>. Odznacz pole przy niej, aby nie było jej widać na scenie.<br /></li>
+<li>Dodaj zmienną do wszystkich duszków i nazwij ją <code class="blockorange">wyścig</code>. Odznacz pole przy niej, aby nie było jej widać na scenie.</li>
 <li><p>Teraz ustaw <strong>wyścig</strong> na <strong>0</strong>, kiedy gra się rozpocznie. Dodaj ten krok do skryptu przycisku:</p>
 <p><img src="09c8c850264c717cd1c7135449d27a3861062f31.png" alt="    kiedy kliknięto zieloną flagę
     pokaż
     ustaw [wyścig v] na (0)" /></p></li>
-<li>Następnie ustaw zmienną <strong>wyścig</strong> zmieniała się na 1 po skończeniu odliczania.<br /></li>
+<li>Następnie ustaw zmienną <strong>wyścig</strong> zmieniała się na 1 po skończeniu odliczania.</li>
 <li><p>Teraz musimy się upewnić, że lew i papuga mogą się ruszać tylko wtedy, kiedy zmienna wyścig jest ustawiona na 1. Kliknij na duszka z papugą. <strong>Dodaj blok kontroli do skryptu</strong>, który pozwala papudze ruszać się tylko wtedy, gdy zmienna <strong>wyścig = 1</strong>.</p>
 <p><img src="ffdd9f220e4f478f06b256dcacebb10f8dac67d2.png" alt="    kiedy klawisz [a v] naciśnięty
     jeżeli &lt;(wyścig) = [1]&gt; to
@@ -165,7 +165,7 @@
 <li><p>Teraz musimy dodać nowy skrypt, który nasłuchuje, czy wyścig został zakończony i jeżeli tak, to przesuwa papugę na linię startu.</p>
 <p><img src="7f5248db4bb0868cba2ea589c6ad5a5a2d668da8.png" alt="    kiedy otrzymam [koniec v]
     ustaw x na (-170)" /></p></li>
-<li>Dodaj takie same skrypty dla lwa. W przypadku tego drugiego przetestuj inne wartości dla <strong>x</strong>, aby lew i papuga byli równo ustawieni na starcie.<br /></li>
+<li>Dodaj takie same skrypty dla lwa. W przypadku tego drugiego przetestuj inne wartości dla <strong>x</strong>, aby lew i papuga byli równo ustawieni na starcie.</li>
 <li><p>Chcemy też, aby lew i papuga byli równo ustawieni po rozpoczęciu wyścigu, więc dodaj do obu duszków poniższy skrypt, który ustawia je równo po wciśnięciu flagi:</p>
 <p><img src="05032d344520294990a0e48415014d58e9068aa4.png" alt="    kiedy kliknięto zieloną flagę
     ustaw x na (-170)" /></p></li>
@@ -183,8 +183,8 @@
 <section id="wyzwanie-1-dodaj-dopalacz" class="level2 challenge">
 <h2>Wyzwanie 1: Dodaj dopalacz</h2>
 <ul>
-<li><strong>Spróbuj dodać dopalacz</strong>, który każdy duszek może użyć tylko raz podczas wyścigu. Dopalacz przesuwa postać w przód o <strong>30 kroków</strong>.<br /></li>
-<li><strong>Dodaj nowy kostium</strong> z płomieniem za każdym duszkiem i ustaw, aby się pokazywał, kiedy dopalacz zostanie użyty.<br /></li>
+<li><strong>Spróbuj dodać dopalacz</strong>, który każdy duszek może użyć tylko raz podczas wyścigu. Dopalacz przesuwa postać w przód o <strong>30 kroków</strong>.</li>
+<li><strong>Dodaj nowy kostium</strong> z płomieniem za każdym duszkiem i ustaw, aby się pokazywał, kiedy dopalacz zostanie użyty.</li>
 <li><p><strong>Nagraj następny dźwięk</strong>, który będzie odegrany po użyciu dopalacza.</p>
 <p><img src="55902527045cd01f461f71b3d081529ae5ff5514.png" alt="    kiedy klawisz [p v] naciśnięty
     jeżeli &lt;&lt;(wyścig) = [1]&gt; and &lt;(dopalacz) = [0]&gt;&gt; to
@@ -208,10 +208,10 @@
 <h2>Wyzwanie 2: Stwórz własne bloki, aby uprościć swój skrypt</h2>
 <p>Ten sam kod, który sprawdza, czy wyścig się skończył jest używany teraz w dwóch miejscach dla każdego duszka: kiedy duszek normalnie się porusza i kiedy rusza się z dopalaczem. Możemy uprościć nasz skrypt tworząc własny blok, w którym znajdą się bloki, które do tej pory powtarzały się w wielu miejscach.</p>
 <ul>
-<li>Pokaż skrypt papugi.<br /></li>
-<li>Wybierz paletę <code class="blocklightgrey">Więcej bloków</code> i kliknij na przycisk <code class="blocklightgrey">Stwórz blok</code>.<br /></li>
-<li>Nadaj nowemu blokowi nazwę wpisując <strong>“zakończony”</strong> w różowe pole. Następnie kliknij OK.<br /></li>
-<li>Zauważ, że blok <code class="blockpurple">definiuj zakończony</code> pojawił się w oknie ze skryptami. Przeciągnij go na puste miejsce tak, aby nie zasłaniał innych skryptów.<br /></li>
+<li>Pokaż skrypt papugi.</li>
+<li>Wybierz paletę <code class="blocklightgrey">Więcej bloków</code> i kliknij na przycisk <code class="blocklightgrey">Stwórz blok</code>.</li>
+<li>Nadaj nowemu blokowi nazwę wpisując <strong>“zakończony”</strong> w różowe pole. Następnie kliknij OK.</li>
+<li>Zauważ, że blok <code class="blockpurple">definiuj zakończony</code> pojawił się w oknie ze skryptami. Przeciągnij go na puste miejsce tak, aby nie zasłaniał innych skryptów.</li>
 <li><p>Odłącz blok <code class="blockyellow">jeżeli</code><code class="blocklightblue">dotyka krawędź?</code><code class="blockyellow">to</code> i przeciągnij go podłączając pod blok <code class="blockputple">definiuj zakończony</code>.</p>
 <p><img src="d9391846d4e71cab18104e12c6312b83403d3559.png" alt="    definiuj zakończony
         jeżeli &lt;dotyka [krawędź v]?&gt; to
@@ -247,23 +247,21 @@
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Zadania do wykonania" /></td>
-          <td><span class="check_text">Zadania do wykonania</span></td>
-          <td>Wykonaj te <span class="check_text upper">polecenia</span> krok po kroku</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Przetestuj swój projekt" /></td>
-          <td><span class="flag_text">Przetestuj swój projekt</span></td>
-          <td>Kliknij na zieloną flagę, aby <span class="flag_text upper">przetestować</span> swój kod</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Zapisz swój projekt" /></td>
-          <td><span class="save_text">Zapisz swój projekt</span></td>
-          <td>Teraz <span class="save_text upper">zapisz</span> swój projekt</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Zadania do wykonania" />
+            <div class="caption"><span class="check_text">Zadania do wykonania</span></div>
+            <div class="description">Wykonaj te <span class="check_text upper">polecenia</span> krok po kroku</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Przetestuj swój projekt" />
+          <div class="caption"><span class="flag_text">Przetestuj swój projekt</span></div>
+          <div class="description">Kliknij na zieloną flagę, aby <span class="flag_text upper">przetestować</span> swój kod</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Zapisz swój projekt" />
+          <div class="caption"><span class="save_text">Zapisz swój projekt</span></div>
+          <div class="description">Teraz <span class="save_text upper">zapisz</span> swój projekt</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

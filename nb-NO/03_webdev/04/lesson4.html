@@ -37,11 +37,11 @@
 <ul>
 <li><p>Åpne index.html i Felix mappen vi lagde i siste økt.</p></li>
 <li><p>I “hodet” (det vil si <code>head</code> delen) trenger vi en <strong>style tagg</strong>.</p>
-<pre class="language-css"><code>  &lt;style&gt;
+<pre class="{.language-css}"><code>  &lt;style&gt;
   &lt;/style&gt;</code></pre>
 <p>Alle stilene våre vil bli puttet mellom disse to elementene. Generelt ser CSS-kode ut som dette:</p></li>
 </ul>
-<pre class="language-css"><code>elementnavn {
+<pre class="{.language-css}"><code>elementnavn {
     egenskap: verdi;
 }</code></pre>
 <ul>
@@ -53,7 +53,7 @@
 <h1>Steg 2: Legge til farger</h1>
 <p>La oss legge til litt farge med color-egenskapen! Color er engelsk for farge. Det er stavet på den amerikanske måten. Forresten visste du at CSS ble funnet opp av en nordmann, Håkon Wium Lie?</p>
 <p>La oss endre <code>h1</code> til å være rød i stedet for svart.</p>
-<pre class="language-markup"><code>&lt;style&gt;
+<pre class="{.language-markup}"><code>&lt;style&gt;
     h1 {
         color:red;
     }
@@ -62,7 +62,7 @@
 <h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
 <p>Teksten er nå rød, jippi! Det er forskjellige måter å oppgi verdiene for farge på. Det er 16 grunnleggende fargenavn (på engelsk), de heter aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, og yellow.</p>
 <ul>
-<li><p>Prøv å endre fargen til noe annet!<br />De fleste nettlesere støtter ytterligere 130 fargenavn, en fullstendig alfabetisk liste finnes på<br />[<a href="http://www.w3.org/TR/css3-color/">http://www.w3.org/TR/css3-color/</a> # svg-color] (<a href="http://www.w3.org/TR/css3-color/">http://www.w3.org/TR/css3-color/</a> # svg-farge) Hva er din favorittfarge på listen?</p></li>
+<li><p>Prøv å endre fargen til noe annet!<br />De fleste nettlesere støtter ytterligere 130 fargenavn, en fullstendig alfabetisk liste finnes på<br />[<a href="http://www.w3.org/TR/css3-color/" class="uri">http://www.w3.org/TR/css3-color/</a> # svg-color] (<a href="http://www.w3.org/TR/css3-color/" class="uri">http://www.w3.org/TR/css3-color/</a> # svg-farge) Hva er din favorittfarge på listen?</p></li>
 <li><p>Men vi kan bruke enda flere farger ved hjelp av <strong>hexkode</strong> i stedet for fargenavn. En hexkode er en <code>#</code> fulgt av seks siffer, tallene 0-9 eller bokstavene A, B, C, D, E, F. Med hexcode kan vi bruke mer enn 16 millioner farger!</p></li>
 <li><p>I kodeklubben, er vår favorittfarge <code>#58AB57</code>. Kan du gjette hvilken farge det er? Hvorfor ikke prøve å endre litt tekst til den fargen og åpne den i en nettleser for å se.</p></li>
 </ul>
@@ -77,7 +77,7 @@
 <p>En måte å gjøre det på er å sette <code>&lt;span&gt;</code>-tagger rundt ordet, slik:</p>
 <p><code>&lt;span&gt; oransje &lt;/span&gt;</code></p>
 <p>Så kan vi style <code>span</code>-taggen i ‘hodet’ på dokumentet vårt.</p>
-<pre class="language-css"><code>span {
+<pre class="{.language-css}"><code>span {
     color:orange;
 }</code></pre>
 <section id="lagre-filen-og-se-pa-den-i-nettlerseren-2" class="level2 save">
@@ -87,16 +87,16 @@
 <section id="steg-4-bakgrunnsfarger" class="level1 activity">
 <h1>Steg 4: Bakgrunnsfarger</h1>
 <p>Vi kan legge til farger i bakgrunnen også, ikke bare i selve teksten. For eksempel:</p>
-<pre class="language-css"><code>body {
+<pre class="{.language-css}"><code>body {
     background-color:#D2FAFC;
 }</code></pre>
 <p>Dette gjør hele bakgrunnen lys blå. Du kan bruke hvilken som helst farge fra <a href="http://www.colourpicker.com">www.colourpicker.com</a> som genererer den hexkoden du trenger, som du kan klippe ut og lime inn der du trenger den.</p>
 <p>Nå prøv:</p>
-<pre class="language-css"><code>h1 {
+<pre class="{.language-css}"><code>h1 {
     background-color:black;
 }</code></pre>
 <p>Siden vi allerede hadde en <code>h1</code>-erklæring der, kunne vi bare legge til bakgrunnsfargen sammen med fargen, vi trenger ikke å skrive alt på nytt.</p>
-<pre class="language-css"><code>h1 {
+<pre class="{.language-css}"><code>h1 {
     color:red;
     background-color: black;
 }</code></pre>
@@ -107,7 +107,7 @@
 <section id="steg-5-moro-med-tekst" class="level1">
 <h1>Steg 5: Moro med tekst</h1>
 <p>Kanskje ‘mistet’ overskriften bør være <strong>større</strong> og også ha store bokstaver. Vi kan angi størrelsen på teksten ved hjelp av <code>font-size</code>. Verdiene kan være masse forskjellig, men de mest vanlige er 12, 14, 16, 32, 48 og 72 piksler.<br />For nå kan du prøve 72px. (px betyr piksel).</p>
-<pre class="language-css"><code>h1 {
+<pre class="{.language-css}"><code>h1 {
     color:red;
     background-color:black;
     font-size:72px;
@@ -128,12 +128,12 @@
 <ol>
 <li>Vi vil at all teksten skal være sentrert, så vi kan skrive:</li>
 </ol>
-<pre class="language-css"><code>body {
+<pre class="{.language-css}"><code>body {
     background-color: #F8FAF4;
     text-align: center;
 }</code></pre>
 <p>La du merke til at alt på siden ble plassert på midten når vi la til <code>text-align:center</code> på body-elementet? Det er fordi alt inne i body-elementet arver stilen. Dette skjer når et element ligger inni en annet element, slik som her:</p>
-<pre class="language-markup"><code>&lt;p&gt;Har du sett Felix? &lt;em&gt;Vennligst&lt;/em&gt; kontakt eieren hans&lt;/p&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;p&gt;Har du sett Felix? &lt;em&gt;Vennligst&lt;/em&gt; kontakt eieren hans&lt;/p&gt;</code></pre>
 <p>Ordet ‘Vennligst’ vil arve stilen til <code>&lt;p&gt;</code>-elementet og ha stilen til <code>&lt;em&gt;</code>-elementet i tillegg. Dette er grunnen til at stilene kalles <strong>cascading</strong> , cascading betyr <em>å fosse</em> på engelsk, slik som vannet i en elv. Det betyr at stilene flyter fra et element over til alle de andre elementene som er inni det. Vær forsiktig fordi noen stiler ikke blir <em>arvet</em> . Vi vil lære om disse senere.</p>
 <section id="lagre-filen-og-se-pa-den-i-nettlerseren-5" class="level2 save">
 <h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
@@ -141,7 +141,7 @@
 <section id="ting-du-kan-prve" class="level2 try">
 <h2>Ting du kan prøve</h2>
 <ul>
-<li>Hvordan ville du endret siden slik at den ser bedre ut? Hvorfor ikke prøve å bruke alle favorittfargene dine? Har de fargenavn eller trenger du å bruke hexkode?<br /></li>
+<li>Hvordan ville du endret siden slik at den ser bedre ut? Hvorfor ikke prøve å bruke alle favorittfargene dine? Har de fargenavn eller trenger du å bruke hexkode?</li>
 <li>Hvis du blir tidlig ferdig kan du gå tilbake og legge til stiler i HTML-filene vi har laget i tidligere leksjoner.</li>
 </ul>
 </section>
@@ -154,23 +154,21 @@
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

@@ -29,7 +29,7 @@
 <p>This project is in Beta. That means we’re still testing it, and there’s a small chance there could be some bugs or typos. If you’re a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/1eMCfpYe3v7eYu5M8rSqLKlmq7cczLCLHx66csgyUyVU/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email <script type="text/javascript">
 <!--
 h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
 </section>
@@ -61,7 +61,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <ul>
 <li>As you play, you’ll notice that you can only hold a maximum of 20 of each resource in your inventory. If you want to increase this, you can change the variable called <code>MAXTILES</code> in the variables.py file.</li>
 </ul>
-<pre class="language-python"><code>    #the maximum number of each resource that can be held
+<pre class="{.language-python}"><code>    #the maximum number of each resource that can be held
     #----------------------------------------------------
 
     MAXTILES  = 20</code></pre>
@@ -96,7 +96,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <section id="challenge-customising-the-game" class="level2 challenge">
 <h2>Challenge: Customising the game</h2>
 <p>Open the variables.py file and you’ll find some code for setting the image and caption for the game window:</p>
-<pre class="language-python"><code>    #the title bar text/image
+<pre class="{.language-python}"><code>    #the title bar text/image
     #------------------------
 
     pygame.display.set_caption(&#39;pygame window&#39;)
@@ -116,7 +116,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <ul>
 <li>Once you have your image for wood, you can then add the resource to your game. Open the variables.py file and add wood as a resource:</li>
 </ul>
-<pre class="language-python"><code>    #variables representing the different resources
+<pre class="{.language-python}"><code>    #variables representing the different resources
     #----------------------------------------------
 
     DIRT  = 0
@@ -127,14 +127,14 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <ul>
 <li>In the same file, there is also a list of all the resources. You should add wood to that list too:</li>
 </ul>
-<pre class="language-python"><code>    #a list of all game resources
+<pre class="{.language-python}"><code>    #a list of all game resources
     #----------------------------
 
     resources = [DIRT,GRASS,WATER,BRICK,WOOD]</code></pre>
 <ul>
 <li>You also need to set the image for the wood resource in the textures dictionary, so that the correct graphics will be shown:</li>
 </ul>
-<pre class="language-python"><code>    #a dictionary linking resources to textures
+<pre class="{.language-python}"><code>    #a dictionary linking resources to textures
     #------------------------------------------
 
     textures =   {
@@ -148,7 +148,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <ul>
 <li>You can also add wood to your inventory dictionary. You can choose how many you start with:</li>
 </ul>
-<pre class="language-python"><code>    #the number of each resource that we have to start with
+<pre class="{.language-python}"><code>    #the number of each resource that we have to start with
     #------------------------------------------------------
 
     inventory =   {
@@ -165,7 +165,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <ul>
 <li>To start the game with some wood resources dotted around, you need to edit the Minecraft2D.py file. Open the file and add the following lines:</li>
 </ul>
-<pre class="language-python"><code>            #pick a random number between 0 and 9
+<pre class="{.language-python}"><code>            #pick a random number between 0 and 9
             randomNumber = random.randint(0,10)
             #WATER if the random number is a 1 or a 2
             if randomNumber in [1,2]:
@@ -199,7 +199,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <ul>
 <li>To allow the player to craft planks of wood, you’ll need to add a crafting rule to your game. Open the variables.py file and add the following code to the crafting rules dictionary:</li>
 </ul>
-<pre class="language-python"><code>    #rules to make new objects
+<pre class="{.language-python}"><code>    #rules to make new objects
     #-------------------------
 
     craft = {
@@ -210,7 +210,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <ul>
 <li>You need to make sure that the player knows how to craft planks, by adding some more instructions to the list:</li>
 </ul>
-<pre class="language-python"><code>    #instructions list
+<pre class="{.language-python}"><code>    #instructions list
     #-----------------
 
     instructions =  [
@@ -243,23 +243,21 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

@@ -34,8 +34,8 @@
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Select the Stage, and add the <strong>Nature/desert</strong> backdrop.<br />ticking off the boxes below:<br /></li>
-<li>Add a new sprite, select the <strong>Lioness</strong> sprite that you will find in the <strong>Animals</strong> folder.<br /></li>
+<li>Select the Stage, and add the <strong>Nature/desert</strong> backdrop.<br />ticking off the boxes below:</li>
+<li>Add a new sprite, select the <strong>Lioness</strong> sprite that you will find in the <strong>Animals</strong> folder.</li>
 <li>Add another sprite, select the <strong>Parrot</strong> sprite that you will find in the <strong>Animals</strong> folder. <code class="blocklightgrey">Shrink</code> it so that it is roughly the same size as the lioness sprite.</li>
 </ul>
 </section>
@@ -68,8 +68,8 @@
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Add a new sprite from the library. Choose the <strong>button3</strong> sprite which is inside <strong>“Things”</strong>.<br /></li>
-<li>Edit the costume of the button sprite, add the text <strong>‘start’</strong> to it and click OK. Move the sprite to the middle of the stage.<br /></li>
+<li>Add a new sprite from the library. Choose the <strong>button3</strong> sprite which is inside <strong>“Things”</strong>.</li>
+<li>Edit the costume of the button sprite, add the text <strong>‘start’</strong> to it and click OK. Move the sprite to the middle of the stage.</li>
 <li><p>Now add a script that shows the sprite when the project is run:</p>
 <p><img src="0708999fbdf5f8c0c922bb17bc6561065d719f78.png" alt="when FLAG clicked
     show" /></p></li>
@@ -91,12 +91,12 @@
 <h2>Save your project</h2>
 <p>We only want the racers to move after the race has started and we want to know when the race has finished so we need a variable to hold that information.</p>
 <ul>
-<li>Add a variable for all sprites called <code class="blockorange">racing</code>. Untick the box next to it so it does not show on the stage.<br /></li>
+<li>Add a variable for all sprites called <code class="blockorange">racing</code>. Untick the box next to it so it does not show on the stage.</li>
 <li><p>Now set <strong>racing</strong> to be <strong>0</strong> when the project is first started. Change your <code class="blockyellow">when flag clicked</code> script from before to look like this:</p>
 <p><img src="c7fe261470330ace56dcaf22a99fadf7eb376875.png" alt="when FLAG clicked
     show
     set [racing v] to (0)" /></p></li>
-<li>Next, set the <strong>racing</strong> variable to be 1 when the starting countdown has finished.<br /></li>
+<li>Next, set the <strong>racing</strong> variable to be 1 when the starting countdown has finished.</li>
 <li><p>Now we need to stop the lion and the parrot from moving unless the racing variable is set to be + Click on the parrot sprite. <strong>Add a control block to the script</strong> that only allows the parrot to move if <strong>racing = 1</strong>.</p>
 <p><img src="5108349e307b6c8f25af8373a70317dcbdbc1409.png" alt="when [a v] key pressed
     if &lt;(racing) = [1]&gt;
@@ -125,7 +125,7 @@ if &lt;(racing) = [1]&gt;
     move (4) steps
     if &lt;touching [edge v]?&gt;
     set (racing) to [0]" /></p></li>
-<li>Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click <code class="blocklightgrey">sounds</code> and then record the sound of the parrot winning the race!<br /></li>
+<li>Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click <code class="blocklightgrey">sounds</code> and then record the sound of the parrot winning the race!</li>
 <li><p>Now add blocks that <code class="blockpurple">play</code> the sound you recorded and makes the parrot say it has won:</p>
 <p><img src="ee0ed1a6279eca51d407faa8dc30c37d58eab855.png" alt="    when [a v] key pressed
     if &lt;(racing) = [1]&gt;
@@ -165,7 +165,7 @@ if &lt;(racing) = [1]&gt;
 <li><p>Now we need to add a new script that listens for the finished broadcast and moves the parrot back to the start. What happens if you change the value that <strong>x</strong> is set to?</p>
 <p><img src="19dc6417503fa4c1f570030cdb637718b60594db.png" alt="when I receive [finished v]
     set x to (-170)" /></p></li>
-<li>Now add the same script for the lioness. Test different <strong>x</strong> values to make sure the lion and the parrot line up at the start.<br /></li>
+<li>Now add the same script for the lioness. Test different <strong>x</strong> values to make sure the lion and the parrot line up at the start.</li>
 <li><p>We also want to put the lion and the parrot in the same position when the project is run, so add another script to each that moves them to the start when we click the flag.</p>
 <p><img src="f0f83b812562c866b3473e28eac324c59c9c0b9c.png" alt="when FLAG clicked
     set x to (-170)" /></p></li>
@@ -183,8 +183,8 @@ if &lt;(racing) = [1]&gt;
 <section id="challenge-1-add-a-booster" class="level2 challenge">
 <h2>Challenge 1: Add a booster</h2>
 <ul>
-<li><strong>Try to add a booster</strong> that you can use once each race that moves the parrot or the lion <strong>30 steps in 1 go.</strong><br /></li>
-<li><strong>Add a new costume</strong> with fire coming out behind for each sprite and make it appear when the boost is pressed.<br /></li>
+<li><strong>Try to add a booster</strong> that you can use once each race that moves the parrot or the lion <strong>30 steps in 1 go.</strong></li>
+<li><strong>Add a new costume</strong> with fire coming out behind for each sprite and make it appear when the boost is pressed.</li>
 <li><p><strong>Create another sound</strong> that the sprite will make when the boost is pressed.</p>
 <p><img src="256b5cb97fdc3a28e56d73a0234827c8e539be07.png" alt="when [p v] key pressed
 if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
@@ -208,10 +208,10 @@ if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
 <h2>Challenge 2: Use custom blocks to simplify your script</h2>
 <p>The code to check if the race has finished is now used in two places for each sprite: when the sprite is moving normally and when it’s moving with the booster. We can simplify our script using a custom block which is a chunk of code that gets used in more than one place. It’s a bit like making up our own Scratch code block!</p>
 <ul>
-<li>Choose the Parrot’s script.<br /></li>
-<li>Select the <code class="blocklightgrey">More Blocks</code> palette and then click the <code class="blocklightgrey">Make a Block</code> button.<br /></li>
-<li>Give the custom block a name by typing <strong>“finished”</strong> into the pink box. Then click OK.<br /></li>
-<li>You’ll now see a <code class="blockpurple">define finished</code> block appear in the scripts window. Drag it to a clear area.<br /></li>
+<li>Choose the Parrot’s script.</li>
+<li>Select the <code class="blocklightgrey">More Blocks</code> palette and then click the <code class="blocklightgrey">Make a Block</code> button.</li>
+<li>Give the custom block a name by typing <strong>“finished”</strong> into the pink box. Then click OK.</li>
+<li>You’ll now see a <code class="blockpurple">define finished</code> block appear in the scripts window. Drag it to a clear area.</li>
 <li><p>Detach the <code class="blockyellow">if</code><code class="blocklightblue">touching edge?</code><code class="blockyellow">then</code> block and drag it to the <code class="blockpurple">define finished</code> block.</p>
 <p><img src="b196b7010a36fecd3cbab66b871d390f80197a46.png" alt="define finished
     if &lt;touching [edge v]?&gt;
@@ -249,23 +249,21 @@ finished" /></p></li>
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

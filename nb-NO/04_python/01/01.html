@@ -30,11 +30,11 @@
 <h2>Steg 0: Åpne Python-editoren</h2>
 <p>Hvis Python allerede er installert på maskinen din er det bare å begynne.</p>
 <ul>
-<li>På Windows, finn IDLE i start-menyen<br /></li>
-<li>På Mac OS X, åpne Terminal.app og skriv <code>idle</code> og trykk enter.<br /></li>
+<li>På Windows, finn IDLE i start-menyen</li>
+<li>På Mac OS X, åpne Terminal.app og skriv <code>idle</code> og trykk enter.</li>
 <li>På Linux, åpne opp en Terminal, skrive <code>idle</code> og trykk enter.</li>
 </ul>
-<p>Hvis du ikke har Python installert fra før - ikke få panikk! Du kan laste ned siste versjon av Python fra <a href="http://www.python.org/getit/"><a href="http://www.python.org/">http://www.python.org/</a></a>. Nøyaktig hvilken versjon det er spiller liten rolle, men vi bruker Python 3, så<br />versjonsnummeret bør begynne med 3 (og ikke 2).</p>
+<p>Hvis du ikke har Python installert fra før - ikke få panikk! Du kan laste ned siste versjon av Python fra <a href="http://www.python.org/getit/"><a href="http://www.python.org/" class="uri">http://www.python.org/</a></a>. Nøyaktig hvilken versjon det er spiller liten rolle, men vi bruker Python 3, så<br />versjonsnummeret bør begynne med 3 (og ikke 2).</p>
 <p>Når IDLE starter ser du et Output-vindu som heter <code>Python Shell</code>. Vi må åpne et nytt vindu for å skrive kode i. Trykk <code>File -&gt; New Window</code> så er du klar for steg 1. Pass på at du har begge vinduene synlige.</p>
 </section>
 <section id="steg-1-hello-world" class="level2 activity">
@@ -47,14 +47,14 @@
 <li><p>Åpne IDLE, editoren som følger med Python. Vi kommer til å skrive all koden vår i denne editoren. Når du åpner den ser du et Output-vindu. I dette vinduet kommer feilmeldinger og resultater til å dukke opp.</p></li>
 <li><p>Hvis du ikke har gjort det ennå, velg <code>File -&gt; New Window</code>. Et tomt vindu<br />dukker opp, med ‘<em>Untitled</em>’ i tittelfeltet.<br />Du skal ha to vinduer åpne nå, et for å skrive programmet ditt i, og et<br />annet for å vise resultater i. Pass på at du skriver i det riktige!</p></li>
 <li><p>Skrive følgende kode inn i det nye vinduet:</p>
-<pre class="language-python"><code>print(&quot;Hello, World!&quot;)</code></pre></li>
+<pre class="{.language-python}"><code>print(&quot;Hello, World!&quot;)</code></pre></li>
 <li><p>Dobbeltsjekk at du ikke er i Output-vinduet og lagre koden din.</p></li>
 </ol>
 <p>Du kan lagre ved å velge <code>File -&gt; Save</code>. Når du blir bedt om å skrive inn et<br />filnavn, skriv hello.py, og lagre filen på skrivebordet ditt. Så kan du<br />velge <code>Run -&gt; Run Module</code>.</p>
 <p>Gratulerer med ditt første Python-program :D (PS! Du kan be det skrive hva<br />du vil, kanskje kan du prøve å få det til å si hei til deg selv?)</p>
 <p><strong>ProTip</strong>:</p>
 <ul>
-<li>På <strong>Windows</strong> og <strong>Ubuntu</strong>, bruk Ctrl-N for å lage nye shell-vinduer, bruk ctrl+s for å lagre og bruk F5 for å kjøre programmet ditt. På noen maskiner må du kanskje trykke Fn-knappen også.<br /></li>
+<li>På <strong>Windows</strong> og <strong>Ubuntu</strong>, bruk Ctrl-N for å lage nye shell-vinduer, bruk ctrl+s for å lagre og bruk F5 for å kjøre programmet ditt. På noen maskiner må du kanskje trykke Fn-knappen også.</li>
 <li>På <strong>Mac OS X</strong>, cmd-N for å lage nye shell vinduer, Command-S for å lagre, og hold nede (fn) knappen og trykk F5 for å kjøre programmet ditt.</li>
 </ul>
 </section>
@@ -66,14 +66,14 @@
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Åpne et nytt kodevindu (Fra <code>File</code> menyen) og skriv dette:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 forward(100)
 </code></pre></li>
 <li><p>Lagre programmet ditt som myturtle.py og velg <code>Run -&gt; Run Module</code>. Ser du hvordan skilpadden beveget seg 100 punkter fremover på skjermen? Skilpadden har en penn festet til seg, så den tegner linjer når den beveger seg rundt.</p>
 <p><strong>ProTip:</strong> Python-filer skal alltid ha filnavn som slutter med <code>.py</code>.</p></li>
 <li><p>La oss få skilpadden til å bevege seg rundt på skjermen! Forsøk å bruke <code>backward(distance)</code> i tillegg til å snu den ved å bruke <code>right(angle)</code> og <code>left(angle)</code>. Instruksjonen <code>backward(20)</code> forteller for eksempel skilpadden at den skal bevege seg bakover 20 pixler, og <code>right(90)</code> forteller den at den skal snu seg 90 grader til høyre. Du kan gi den mer enn en instruksjon om gangen, de blir utført i rekkefølge.</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -115,8 +115,8 @@ Vest      |      Øst
 <section id="hva-gjr-koden-pa-starten-av-programmet-vart" class="level3">
 <h3>Hva gjør koden på starten av programmet vårt?</h3>
 <ul>
-<li><code>from turtle import *</code> forteller Python at vi vil bruke skilpadde-biblioteket (turtle), en samling av kode vi kan bruke for å tegne på skjermen. Å bruke et ferdig bibliotek gjør at vi kan spare tid og gjenbruke andres arbeid.<br /></li>
-<li><code>speed()</code> bestemmer farten til skilpadden. Vi må gi inn en verdi mellom 1 og 11, der 11 er det raskeste og 1 er det treigeste.<br /></li>
+<li><code>from turtle import *</code> forteller Python at vi vil bruke skilpadde-biblioteket (turtle), en samling av kode vi kan bruke for å tegne på skjermen. Å bruke et ferdig bibliotek gjør at vi kan spare tid og gjenbruke andres arbeid.</li>
+<li><code>speed()</code> bestemmer farten til skilpadden. Vi må gi inn en verdi mellom 1 og 11, der 11 er det raskeste og 1 er det treigeste.</li>
 <li><code>shape()</code> Vi bruker formen(shape) “turtle” (skilpadde), men vi kan også si at vi vil at figuren skal se ut som “arrow” (pil), “circle” (sirkel), “square” (kvadrat), “triangle” (trekant) eller “classic” (klassisk).</li>
 </ul>
 <p>Vi kommer til å bruke disse instruksjonene på toppen av alle programmene våre i denne leksjonen. Hvis du vil kan du forsøke å gi skilpadden en av de andre formene, som pil, og få den til å gå så fort eller sakte som du vil.</p>
@@ -130,7 +130,7 @@ Vest      |      Øst
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Åpne en ny fil i IDLE og skriv inn følgende kode:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -146,7 +146,7 @@ right(90)</code></pre>
 <p>Lagre programmet ditt og velg <code>Run -&gt; New Module</code>. Ser du en firkant? Skilpadden snur seg 90 grader fire ganger, og ender opp med å se den samme retningen som den starten. å snu 90, 90, 90 og så 90 grader igjen snur skilpadden totalt 360 grader.</p>
 <p>Hva med en trekant? En trekant har tre hjørner, så vi må snu tre ganger. Hvis vi vil ende opp i samme retning, må vi snu 360 grader, akkurat som med firkanten. Derfor snur vi 120 grader, deretter 120 grader og så en gang til.</p></li>
 <li><p>Endre koden din til å se ut som koden under for å få den til å tegne en<br />trekant:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -168,7 +168,7 @@ right(120)</code></pre></li>
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Endre koden fra eksemplet over til å se ut som det neste eksemplet, ved å legge til disse nye kommandoene:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -195,7 +195,7 @@ right(120)</code></pre></li>
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Åpne en ny fil go skriv inn følgende:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -207,7 +207,7 @@ for count in range(4):
 <li><p>Lagre programmet og velg: Run -&gt; Run module.</p>
 <p>Legg merke til at koden er skjøvet inn, <em>indentert</em>, eller dyttet til venstre under for-løkken. Python bruker mellomrom for å vite hvilke kommandoer som skal gjentas. Du kan bruke Tab-tasten for å få IDLE til å <em>indentere</em>, eller bruke Shift-Tab til å ta dem bort.</p></li>
 <li><p>La oss se hva som skjer hvis vi bare indenterer (skyver inn) <code>forward</code>. Gjør om programmet ditt så det ser ut som dette:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -219,7 +219,7 @@ right(90)</code></pre></li>
 <p>Fikk du en rett linje? Python vil gjenta <code>forward</code> fire ganger, og deretter snu til høyre. Python bruker mellomrom for å gruppere kommandoer sammen, akkurat som Scratch bruker blokker. Python klager til deg om du ikke har fått mellomrommene riktig.</p></li>
 <li><p>La oss endre programmet tilbake slik at det lager en firkant igjen, men istedenfor å bruke tall i koden skal vi gi tallene navn. Dette gjør det lettere å se hva programmet gjør, og gjør at vi slipper å gjenta oss selv.</p>
 <p>Endre filen så den ser slik ut:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -236,9 +236,9 @@ for count in range(sides):
 <h3>Oppgave: Tegn de andre formene</h3>
 <p>Kan du tegne noen av figurene under bare ved å endre verdiene?</p>
 <ul>
-<li>En trekant? (tre sider)<br /></li>
-<li>Et pentagram? (fem sider)<br /></li>
-<li>Et hexagram? (seks sider)<br /></li>
+<li>En trekant? (tre sider)</li>
+<li>Et pentagram? (fem sider)</li>
+<li>Et hexagram? (seks sider)</li>
 <li>Et oktagram? (åtte sider)</li>
 </ul>
 <p>Husk, en trekant har tre sider og vi må derfor snu 120 grader i hvert av de tre hjørnene for at det skal bli 360 grader tilsammen. For en firkant må vi snu 90<br />grader i hvert hjørne, som også blir 360 grader.</p>
@@ -253,7 +253,7 @@ for count in range(sides):
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Endre programmet ditt til å regne ut vinkelen.</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -275,7 +275,7 @@ for count in range(sides):
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Vi kan be skilpadden om å fylle figurene med en farge ved å bruke <code>begin_fill()</code> og <code>end_fill()</code>. Endre koden din til å bruke disse kommandoene:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -305,7 +305,7 @@ end_fill()</code></pre>
 <p>Hvis du vil flytte skilpadden uten at den skal sette spor etter seg, kan du<br />bruke <code>penup()</code> og <code>pendown()</code> for å slå av og på at skilpadden skal tegne.</p>
 <ol>
 <li><p>Forsøk dette i en ny fil:</p>
-<pre class="language-python"><code>from turtle import *
+<pre class="{.language-python}"><code>from turtle import *
 
 speed(11)
 shape(&quot;turtle&quot;)
@@ -337,23 +337,21 @@ for count in range(20):
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

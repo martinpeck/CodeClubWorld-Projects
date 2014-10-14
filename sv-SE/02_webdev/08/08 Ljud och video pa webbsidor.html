@@ -32,12 +32,12 @@
 <h1>Lägg till en film från YouTube</h1>
 <p>Att lägga till filmer från YouTube är jättelätt.</p>
 <ul>
-<li>Gå till filmsidan på YouTube.<br /></li>
-<li>Under filmen kan du hitta en knapp det står <code>Share</code> på. Klicka på den.<br /></li>
+<li>Gå till filmsidan på YouTube.</li>
+<li>Under filmen kan du hitta en knapp det står <code>Share</code> på. Klicka på den.</li>
 <li>För att få fram koden som du kan använda på din hemsida, klicka på <code>Embed</code>.</li>
 </ul>
 <p>Det kommer se ut ungefär såhär:</p>
-<pre class="langauge-markup"><code>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/FxhGIajRsq4&quot;
+<pre class="{.langauge-markup}"><code>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/FxhGIajRsq4&quot;
    frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
 <p>Just det här fragmentet med kod skulle lägga till en Code Club-film till din webbsida. Det är bara att kopiera och klistra in det på det stället på webbsidan där du vill att filmen ska ligga.</p>
 <p>Lägg märke till attributen <code>width</code> och <code>height</code>. De gör så att du kan bestämma hur stor del av sidan som filmrutan ska täcka, därför kan du ändra dem till de mått som du tycker passar.</p>
@@ -45,11 +45,11 @@
 <section id="lagg-till-en-film-fran-vimeo." class="level1 activity">
 <h1>Lägg till en film från Vimeo.</h1>
 <ul>
-<li>Gå till filmsidan på Vimeo.<br /></li>
-<li>Klicka på <code>Share</code>-knappen på filmspelaren.<br /></li>
+<li>Gå till filmsidan på Vimeo.</li>
+<li>Klicka på <code>Share</code>-knappen på filmspelaren.</li>
 <li>På höger sida finns en Embed-ruta. Klicka på den för att markera koden och kopiera den sedan. Det kommer se ut ungefär såhär:</li>
 </ul>
-<pre class="langauge-markup"><code>&lt;iframe src=&quot;http://player.vimeo.com/video/44738167&quot; width=&quot;600&quot; height=&quot;338&quot;
+<pre class="{.langauge-markup}"><code>&lt;iframe src=&quot;http://player.vimeo.com/video/44738167&quot; width=&quot;600&quot; height=&quot;338&quot;
    frameborder=&quot;0&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</code></pre>
 <ul>
 <li>Klistra in koden på det stället på webbsidan där du vill att filmen ska ligga. Lägg märke till <code>width</code> och <code>height</code> attributen. De gör så att du kan bestämma hur stor del av sidan som filmrutan ska täcka, därför kan du ändra dem till de mått som du tycker passar.</li>
@@ -61,39 +61,39 @@
 <ul>
 <li>För att lägga upp en film på din sida behöver du lägga till en <code>video</code>-tagg. Precis som <code>&lt;img&gt;</code>-taggen har den ett <code>src</code>-attribut som pekar mot filen:</li>
 </ul>
-<pre class="langauge-markup"><code>    &lt;video src=&quot;spaceship_landing.mp4&quot;&gt;
+<pre class="{.langauge-markup}"><code>    &lt;video src=&quot;spaceship_landing.mp4&quot;&gt;
     &lt;/video&gt;</code></pre>
 <p>Tyvärr är det irriterande med att lägga upp en film att inte alla webbläsare kan spela upp alla videoformat. Du behöver spara din egen film i formaten <code>.mp4</code> och <code>.ogv</code> minst, eftersom att de formaten i alla fall fungerar i de flesta webbläsare.</p>
 <p>För att se till att webbläsaren förstår att det finns mer än ett videoformat tillgängligt, skriv så här:</p>
-<pre class="langauge-markup"><code>    &lt;video&gt;
+<pre class="{.langauge-markup}"><code>    &lt;video&gt;
         &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
         &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
     &lt;/video&gt;</code></pre>
 <ul>
 <li>För att lägga till en bild som visas innan filmen spelas upp kan du använda dig av ett <code>poster</code>-attribut:</li>
 </ul>
-<pre class="langauge-markup"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot;&gt;
+<pre class="{.langauge-markup}"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot;&gt;
         &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
         &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
     &lt;/video&gt;</code></pre>
 <ul>
 <li>Om du vill att filmen spelas automatiskt kan du lägga till nyckelordet <code>autoplay</code>, såhär:</li>
 </ul>
-<pre class="langauge-markup"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot; autoplay&gt;
+<pre class="{.langauge-markup}"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot; autoplay&gt;
         &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
         &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
     &lt;/video&gt;</code></pre>
 <ul>
 <li>För att visa filmreglagen, som till exempel knapparna för play och volym kan du lägga till nyckelordet <code>controls</code>:</li>
 </ul>
-<pre class="langauge-markup"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot; controls&gt;
+<pre class="{.langauge-markup}"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot; controls&gt;
         &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
         &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
     &lt;/video&gt;</code></pre>
 <ul>
 <li>Du kan också bestämma storleken på filmen genom att använda <code>width</code> och <code>height</code> attributen. Skriv såhär:</li>
 </ul>
-<pre class="langauge-markup"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot; width=&quot;600&quot; height=&quot;400&quot;&gt;
+<pre class="{.langauge-markup}"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot; width=&quot;600&quot; height=&quot;400&quot;&gt;
         &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
         &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
     &lt;/video&gt;</code></pre>
@@ -104,25 +104,25 @@
 <ul>
 <li>För att lägga upp ljudet på en sida, skriv såhär:</li>
 </ul>
-<pre class="langauge-markup"><code>    &lt;audio src=&quot;spaceship.mp3&quot;&gt;
+<pre class="{.langauge-markup}"><code>    &lt;audio src=&quot;spaceship.mp3&quot;&gt;
     &lt;/audio&gt;</code></pre>
 <p>Lägg märke till <code>src</code>-attributet som pekar mot filen.</p>
 <p>Precis som med filmfiler så kan inte alla webbläsare spela upp alla typer av ljudfiler, så för att se till att så många som möjligt ska kunna höra ljudet måste du lägga upp ljudfilen i så många olika format som möjligt, du bör åtminstone lägga upp <code>.mp3</code> och <code>.oga</code>.</p>
-<pre class="langauge-markup"><code>    &lt;audio&gt;
+<pre class="{.langauge-markup}"><code>    &lt;audio&gt;
         &lt;source src=&quot;spaceship.mp3&quot; type=&#39;audio/mp3&#39;&gt;
         &lt;source src=&quot;spaceship.ogg&quot; type=&#39;audio/ogg; codecs=vorbis&#39;&gt;
     &lt;/audio&gt;</code></pre>
 <ul>
 <li>För att lägga till reglagen använd dig av nyckelordet <code>controls</code>:</li>
 </ul>
-<pre class="langauge-markup"><code>    &lt;audio controls&gt;
+<pre class="{.langauge-markup}"><code>    &lt;audio controls&gt;
         &lt;source src=&quot;spaceship.mp3&quot; type=&#39;audio/mp3&#39;&gt;
         &lt;source src=&quot;spaceship.ogg&quot; type=&#39;audio/ogg; codecs=vorbis&#39;&gt;
     &lt;/audio&gt;</code></pre>
 <ul>
 <li>Om du vill att ljudet ska spelas så fort webbsidan har laddat kan du använda nyckelordet <code>autoplay</code>, så här:</li>
 </ul>
-<pre class="langauge-markup"><code>    &lt;audio controls autoplay&gt;
+<pre class="{.langauge-markup}"><code>    &lt;audio controls autoplay&gt;
         &lt;source src=&quot;spaceship.mp3&quot; type=&#39;audio/mp3&#39;&gt;
         &lt;source src=&quot;spaceship.ogg&quot; type=&#39;audio/ogg; codecs=vorbis&#39;&gt;
     &lt;/audio&gt;</code></pre>
@@ -135,23 +135,21 @@
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

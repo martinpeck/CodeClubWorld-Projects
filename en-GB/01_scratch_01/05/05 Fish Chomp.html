@@ -35,11 +35,11 @@
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Start a new Scratch project.<br /></li>
-<li>Select the Stage, then select the Stage’s Backdrop tab. Import the background <strong>Nature/underwater3</strong> using <code>choose background from library</code>. Finally, remove <strong>backdrop1</strong>.<br /></li>
-<li>Change the name of Sprite1 to <strong>Hungry Fish</strong> by clicking on the blue <code>i</code> symbol.<br /></li>
-<li>Import Hungry Fish’s costume, <strong>resources/hungry-fish.png</strong> then remove its existing <strong>costume1</strong> and <strong>costume2</strong>.<br /></li>
-<li>Click on the blue ‘<strong>i</strong>’ symbol again, and make sure the sprite can only flip left-right.<br /></li>
+<li>Start a new Scratch project.</li>
+<li>Select the Stage, then select the Stage’s Backdrop tab. Import the background <strong>Nature/underwater3</strong> using <code>choose background from library</code>. Finally, remove <strong>backdrop1</strong>.</li>
+<li>Change the name of Sprite1 to <strong>Hungry Fish</strong> by clicking on the blue <code>i</code> symbol.</li>
+<li>Import Hungry Fish’s costume, <strong>resources/hungry-fish.png</strong> then remove its existing <strong>costume1</strong> and <strong>costume2</strong>.</li>
+<li>Click on the blue ‘<strong>i</strong>’ symbol again, and make sure the sprite can only flip left-right.</li>
 <li><p>Now create a script for Hungry Fish to follow the mouse around the sea like this:</p>
 <p><img src="7ae4ee384bc842ea8953a38175b746ed63ba9370.png" alt="when FLAG clicked
     forever
@@ -51,8 +51,8 @@
 <h2>Test Your Project</h2>
 <p>Click the green flag.</p>
 <ul>
-<li>Move the mouse pointer around the sea. Does the fish follow the pointer?<br /></li>
-<li>What happens if you don’t move the mouse pointer and the fish catches up with it? What does it look like? Why does it do this?<br /></li>
+<li>Move the mouse pointer around the sea. Does the fish follow the pointer?</li>
+<li>What happens if you don’t move the mouse pointer and the fish catches up with it? What does it look like? Why does it do this?</li>
 <li><p>You can stop the Hungry Fish flipping like crazy if you make it only move when it’s not too near the mouse pointer (The <code class="blocklightblue">distance to</code> block is in the <code>Sensing</code> palette).</p>
 <p><img src="38afe34463e0735a338409aedc5de7bdd918b8cb.png" alt="when FLAG clicked
     forever
@@ -67,8 +67,8 @@
 <section id="things-to-try" class="level2 try">
 <h2>Things to try</h2>
 <ul>
-<li>If you want, you can put different numbers in the script. How does that change how Hungry Fish moves?<br /></li>
-<li>Change the distance threshold to a large number (e.g. 100), or a small number (e.g. 1).<br /></li>
+<li>If you want, you can put different numbers in the script. How does that change how Hungry Fish moves?</li>
+<li>Change the distance threshold to a large number (e.g. 100), or a small number (e.g. 1).</li>
 <li>Change the amount the fish moves to a large number (e.g. 20) or a small number (e.g. 1 or even 0).</li>
 </ul>
 </section>
@@ -79,8 +79,8 @@
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Create a new sprite from the library, using <strong>Animals/starfish</strong>.<br /></li>
-<li>Use the <code>Shrink</code> sprite tool (above the Stage) to make the sprite smaller.<br /></li>
+<li>Create a new sprite from the library, using <strong>Animals/starfish</strong>.</li>
+<li>Use the <code>Shrink</code> sprite tool (above the Stage) to make the sprite smaller.</li>
 <li><p>Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again.</p>
 <p><img src="c4ff21b7f3d03305f9c3bde173faa8a13e042c5d.png" alt="when FLAG clicked
     forever
@@ -100,7 +100,7 @@
 <section id="things-to-try-1" class="level2 try">
 <h2>Things to try</h2>
 <ul>
-<li>Try changing the numbers in the <code class="blockgreen">pick random</code> and move blocks. How do they make the prey move differently?<br /></li>
+<li>Try changing the numbers in the <code class="blockgreen">pick random</code> and move blocks. How do they make the prey move differently?</li>
 <li>What does the <code class="blockblue">if on edge, bounce</code> block do? Take it out and see what happens.</li>
 </ul>
 </section>
@@ -109,7 +109,7 @@
 <h1>Step 3: Hungry Fish eats the prey</h1>
 <p>Now we want to make the Hungry Fish eat the prey! Once the Hungry Fish has caught the prey in its mouth, two things need to happen:</p>
 <ul>
-<li>The Hungry Fish needs to close its mouth and make a “chomp” sound.<br /></li>
+<li>The Hungry Fish needs to close its mouth and make a “chomp” sound.</li>
 <li>The prey needs to disappear, then reappear a short while later.</li>
 </ul>
 <section id="activity-checklist-2" class="level2 check">
@@ -130,7 +130,7 @@
 <h2>Test Your Project</h2>
 <p>Try out your game again – can you spot any problems? Notice that the prey disappears no matter where it touches the Hungry Fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!</p>
 <ul>
-<li>How could we make sure the prey only disappears if it is touching the Hungry Fish’s mouth? Well, we could use the <code class="blocklightblue">touching color</code> block, and see if it is touching the fish’s blue teeth. To do this, replace the <code class="blocklightblue">touching</code> block with a <code class="blocklightblue">touching color</code> block in your script, click on the color in the block and then click again on the fish’s teeth.<br /></li>
+<li>How could we make sure the prey only disappears if it is touching the Hungry Fish’s mouth? Well, we could use the <code class="blocklightblue">touching color</code> block, and see if it is touching the fish’s blue teeth. To do this, replace the <code class="blocklightblue">touching</code> block with a <code class="blocklightblue">touching color</code> block in your script, click on the color in the block and then click again on the fish’s teeth.</li>
 <li><p>Next we can make the prey move to a random point on the screen before reappearing using a <code class="blockblue">go to</code> block, and giving it a random value for <strong>x</strong> and <strong>y</strong>.</p>
 <p><img src="a4050324f8b10de22f716b94322b91dedfab26da.png" alt="when FLAG clicked
     forever
@@ -162,7 +162,7 @@
 " /></p>
 <p>Now we want the fish to respond to this message by making a “chomp” sound and snapping its jaws.</p>
 <ul>
-<li>Add the <strong>resources/mouth-closed.png</strong> costume and the <strong>resources/chomp.mp3</strong> sound to the Hungry Fish sprite.<br /></li>
+<li>Add the <strong>resources/mouth-closed.png</strong> costume and the <strong>resources/chomp.mp3</strong> sound to the Hungry Fish sprite.</li>
 <li><p>Then, add a new script to the Hungry Fish to respond to the message <code class="blockyellow">broadcast</code> by the prey. This script should make the fish play the <strong>‘chomp’</strong> sound and <code class="blockpurple">switch to</code> the mouth-closed costume, wait briefly and then switch back.</p>
 <p><img src="23d3179ded053b5ca7880f47a9fd94024446d453.png" alt="when I receive [got me v]
     play sound [chomp v]
@@ -274,23 +274,21 @@
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

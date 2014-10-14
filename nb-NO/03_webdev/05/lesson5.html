@@ -32,20 +32,20 @@
 <h1>Steg 1: Skrifttyper</h1>
 <p>Vi kan endre utseendet på teksten ved å endre <strong>skrifttypen</strong> (“font” på englesk). De mest vanlige skrifttypene heter:</p>
 <ul>
-<li>Arial<br /></li>
-<li>Courier New, Courier<br /></li>
-<li>Garamond<br /></li>
-<li>Georgia<br /></li>
-<li>Lucida Sans, Lucida Grande, Lucida<br /></li>
-<li>Palatino Linotype<br /></li>
-<li>Tahoma<br /></li>
-<li>Times New Roman, Times<br /></li>
-<li>Trebuchet<br /></li>
+<li>Arial</li>
+<li>Courier New, Courier</li>
+<li>Garamond</li>
+<li>Georgia</li>
+<li>Lucida Sans, Lucida Grande, Lucida</li>
+<li>Palatino Linotype</li>
+<li>Tahoma</li>
+<li>Times New Roman, Times</li>
+<li>Trebuchet</li>
 <li>Verdana</li>
 </ul>
 <p>Ikke alle skrifttyper finnes på alle datamaskiner, så vi trenger å oppgi en <strong>fall-back font</strong> (en skrifttype vi kan falle tilbake på om førstevalget vårt ikke finnes på datamaskinen) også. Disse er ganske generiske som “sans serif”, “serif”.</p>
 <p>La oss prøve å endre skrifttype på overskriften ved hjelp av <code>font-family</code>-egenskapen.</p>
-<pre class="language-css"><code>h1 {
+<pre class="{.language-css}"><code>h1 {
     color: red;
     background-color:black;
     font-size:72px;
@@ -55,7 +55,7 @@
     font-family:impact, sans-serif;
 }</code></pre>
 <p>Og skriften i avsnittene…</p>
-<pre class="language-css"><code>p {
+<pre class="{.language-css}"><code>p {
     font-family:georgia, &#39;times new roman&#39;, serif;
 }</code></pre>
 <section id="lagre-filen-og-se-pa-den-i-nettleseren" class="level2 save">
@@ -66,14 +66,14 @@
 <p><img src="fonts.png" alt="screenshot" /></p>
 <p>Finn en skrifttype du liker og prøv den på websiden!</p>
 <p>Du kan gjøre teksten <strong>fet</strong>, <em>kursiv</em> eller begge deler med <code>font-style</code>. La oss endre email teksten (husk den er inni en <code>&lt;a&gt;</code>-tag).</p>
-<pre class="language-css"><code>a {
+<pre class="{.language-css}"><code>a {
     font-style:bold;
 }</code></pre>
 </section>
 <section id="lagre-filen-og-se-pa-den-i-nettlerseren" class="level2 save">
 <h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
 <p>Teksten har blitt fet! La oss se hvordan den ser ut i kursiv. Kursiv på engelsk er <code>italic</code>.</p>
-<pre class="language-css"><code>a {
+<pre class="{.language-css}"><code>a {
     font-style:italic;
 }</code></pre>
 </section>
@@ -81,7 +81,7 @@
 <h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
 <p>Det finnes også en <code>font-style</code>-verdi som heter ‘oblique’. Hvordan ser den ut?</p>
 <p>Vi kan til og med si hvor fet en tekst skal være ved å bruke egenskapen <code>font-weight</code>. Den tar verdiene <code>normal</code>, <code>bold</code>, <code>bolder</code> og <code>lighter</code>. Du kan også bruke tall, 100, 200, 300, 400, 500, 600, 700, 800 og 900, hvor 100 er den tynneste teksten og 900 er den tykkeste. Normal tekst er det samme som 400 og “bold” er det samme som 700. Men ikke alle skrifttypene har alle disse, så det er tryggere å bare bruke normal og bold. Overskrifter er normalt bold som standard. Hvis vi ikke ønsker at <code>h2</code>-overskiften vår skal være fet, må vi skrive:</p>
-<pre class="language-css"><code>h2 {
+<pre class="{.language-css}"><code>h2 {
     font-weight:normal;
 }</code></pre>
 <p>Prøv da vel!</p>
@@ -90,7 +90,7 @@
 <section id="steg-2-pyntekanter" class="level1 activity">
 <h1>Steg 2: Pyntekanter!</h1>
 <p>La oss legge til en ramme rundt bildet:</p>
-<pre class="language-css"><code>img {
+<pre class="{.language-css}"><code>img {
     border-color:green;
     border-width:5px;
     border-style:solid;
@@ -104,26 +104,26 @@
 <section id="steg-3-ider-og-klasser" class="level1 activity">
 <h1>Steg 3: IDer og klasser</h1>
 <p>Vi ønsker å <strong>utheve</strong> kontakt-avsnittet. Vi kan ikke bruke <code>&lt;p&gt;</code>-taggen fordi det vil endre alle avsnittene. For å gjøre slik at en stil gjelder bare for ett element, bruker vi noe som kalles ID. Vi trenger å redigere HTML-filen slik:</p>
-<pre class="language-markup"><code>&lt;p id =&quot;uthevet&quot;&gt;Har du sett Felix? &lt;em&gt;Vennligst&lt;/em&gt; kontakt eieren hans på &lt;a href=&quot;mailto:eierentilfelix@email.com&quot;&gt;eierentilfelix@email.com&lt;/a&lt;/p&gt;</code></pre>
+<pre class="{.language-markup}"><code>&lt;p id =&quot;uthevet&quot;&gt;Har du sett Felix? &lt;em&gt;Vennligst&lt;/em&gt; kontakt eieren hans på &lt;a href=&quot;mailto:eierentilfelix@email.com&quot;&gt;eierentilfelix@email.com&lt;/a&lt;/p&gt;</code></pre>
 <p>så kan vi style den IDen som så:</p>
-<pre class="language-css"><code>#uthevet {
+<pre class="{.language-css}"><code>#uthevet {
     color:red;
 }</code></pre>
 <section id="lagre-filen-og-se-pa-den-i-nettlerseren-3" class="level2 save">
 <h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
 <p>En ID er unik og kan bare brukes én gang per side. Så hva hvis vi ønsket at to av avsnittene skal ha en større tekststørrelse? Vi kan gjøre det ved hjelp av klasser. Først må vi gi klassenavn til de avsnittene vi ønsker å endre.</p>
-<pre class="language-markup"><code>&lt;p class=&quot;stor&quot;&gt;Han forvant fra hagen i går.&lt;/p&gt;
+<pre class="{.language-markup}"><code>&lt;p class=&quot;stor&quot;&gt;Han forvant fra hagen i går.&lt;/p&gt;
 &lt;p class=&quot;stor&quot;&gt;&lt;strong&gt;Takk!&lt;/strong&gt;&lt;p&gt;</code></pre>
 <p>Vi styler en klasse sånn (med en <code>.</code> i stedet for <code>#</code>):</p>
-<pre class="language-css"><code>.stor {
+<pre class="{.language-css}"><code>.stor {
     font-size:24px;
 }</code></pre>
 </section>
 <section id="ting-du-kan-prve" class="level2 try">
 <h2>Ting du kan prøve</h2>
 <ul>
-<li>Hvordan ville du endret siden slik at den ser bedre ut? Hvorfor ikke prøve å bruke dine favorittfonter, farger osv.<br /></li>
-<li>Hvis du er tidlig ferdig kan du style sidene vi lagde i tidligere leksjoner.<br /></li>
+<li>Hvordan ville du endret siden slik at den ser bedre ut? Hvorfor ikke prøve å bruke dine favorittfonter, farger osv.</li>
+<li>Hvis du er tidlig ferdig kan du style sidene vi lagde i tidligere leksjoner.</li>
 <li>Forresten, visste du at <code>background</code>-egenskapen ikke bare tar verdier som er farger, men også bilder?</li>
 </ul>
 </section>
@@ -136,23 +136,21 @@
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

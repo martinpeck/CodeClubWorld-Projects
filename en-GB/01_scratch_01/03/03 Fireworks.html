@@ -35,9 +35,9 @@
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Start a new Scratch project. Delete the cat by right clicking it and clicking <strong>Delete</strong>.<br /></li>
-<li>Replace the backdrop with <strong>outdoor/city-with-water</strong>.<br /></li>
-<li>Use the <code>Upload sprite from file</code> button to add a Rocket sprite to the project (use the <strong>Resources/Rocket.png</strong> costume).<br /></li>
+<li>Start a new Scratch project. Delete the cat by right clicking it and clicking <strong>Delete</strong>.</li>
+<li>Replace the backdrop with <strong>outdoor/city-with-water</strong>.</li>
+<li>Use the <code>Upload sprite from file</code> button to add a Rocket sprite to the project (use the <strong>Resources/Rocket.png</strong> costume).</li>
 <li><p>Make the rocket hide when the green flag is clicked.</p>
 <p><img src="85722dd9b89c28c5ac7c73fa3817b5dce3b45d77.png" alt="when FLAG clicked
     hide" /></p></li>
@@ -51,7 +51,7 @@
 <h2>Test Your Project</h2>
 <p>Click the green flag, place your mouse over the stage and press the space bar.</p>
 <ul>
-<li>Does the rocket appear and move to the mouse?<br /></li>
+<li>Does the rocket appear and move to the mouse?</li>
 <li>What happens if you move the mouse and press space again?</li>
 </ul>
 </section>
@@ -72,7 +72,7 @@ when [space v] key pressed
 <h2>Test Your Project</h2>
 <p>Click the green flag, place your mouse over the stage and press the space bar.</p>
 <ul>
-<li>Does the rocket fly towards the mouse from the bottom of the screen?<br /></li>
+<li>Does the rocket fly towards the mouse from the bottom of the screen?</li>
 <li>What happens if you move the mouse and press space again?</li>
 </ul>
 </section>
@@ -96,8 +96,8 @@ when [space v] key pressed
 <section id="things-to-try" class="level2 try">
 <h2>Things to try</h2>
 <ul>
-<li>Try making some rockets a little slower or faster than others.<br /></li>
-<li>Try changing where the rocket moves to be fore gliding towards the mouse to make it arc a little.</li>
+<li>Try making some rockets a little slower or faster than others.</li>
+<li>Try changing where the rocket moves to before gliding towards the mouse to make it arc a little.</li>
 </ul>
 </section>
 <section id="save-your-project" class="level2 save">
@@ -139,7 +139,7 @@ when [space v] key pressed
 <section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Create new sprite from File, <strong>Resources/firework1.png</strong><br /></li>
+<li>Create new sprite from File, <strong>Resources/firework1.png</strong></li>
 <li><p>When it receives the explode message, it should hide itself and then move to the position of the rocket using the go to block, show itself, and then vanish again a second later.</p>
 <p><img src="5bddb9fd99cac7f201d32fde50e6bf4b325bd6a3.png" alt="when I receive [explode v]
     hide
@@ -153,7 +153,7 @@ when [space v] key pressed
 <h2>Test Your Project</h2>
 <p>Send another rocket flying.</p>
 <ul>
-<li>Does it get replaced with the explosion graphic when it explodes?<br /></li>
+<li>Does it get replaced with the explosion graphic when it explodes?</li>
 <li>What happens if you hold the mouse button down whilst moving the mouse? (Don’t worry, we’ll fix this later on).</li>
 </ul>
 </section>
@@ -180,7 +180,15 @@ when [space v] key pressed
 <section id="activity-checklist-5" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Lets add a number of different possible explosion graphics as costumes, using <strong>Resources/firework2.png</strong> and <strong>Resources/firework3.png</strong>, and switch between them for each rocket, again before showing it.</li>
+<li><p>Lets add a number of different possible explosion graphics as costumes, using <strong>Resources/firework2.png</strong> and <strong>Resources/firework3.png</strong>, and switch between them for each rocket, again before showing it.</p>
+<p><img src="dee5b6474135039278fdcd783f38d503c6a82cd9.png" alt="when I receive [explode v]
+    hide
+    switch costume to (pick random (1) to (3))
+    set [color v] effect to (pick random (1) to (200))
+    go to [rocket v]
+    show
+    wait (1) secs
+    hide" /></p></li>
 </ul>
 </section>
 <section id="test-your-project-6" class="level2 flag">
@@ -192,8 +200,9 @@ when [space v] key pressed
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Finally, Let’s make the explosion get bigger after the rocket explodes! Instead of waiting a second, set the size of the sprite to <strong>5%</strong> before we show it, and then once it’s shown, increase the size by <strong>2 fifty times</strong>, using a <code class="blockorange">repeat</code> block.</p>
-<p><img src="f13ee1c477243a64e17748847fc06277878656c7.png" alt="when I receive [explode v]
+<p><img src="4b769f8190d405fbad397d7d102dd099f7572892.png" alt="when I receive [explode v]
     hide
+    switch costume to (pick random (1) to (3))      
     set [color v] effect to (pick random (1) to (200))
     go to [rocket v]
     show
@@ -261,23 +270,21 @@ when [space v] key pressed
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

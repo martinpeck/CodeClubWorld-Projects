@@ -34,7 +34,7 @@
 <ol>
 <li><p>Åpne IDLE, og åpne et nytt vindu</p></li>
 <li><p>Skriv inn følgende kode:</p>
-<pre class="language-python"><code>from random import choice
+<pre class="{.language-python}"><code>from random import choice
 
 word = choice([&quot;kode&quot;, &quot;kurs&quot;])
 
@@ -49,7 +49,7 @@ print(word)</code></pre></li>
 <p>Nå har vi valgt et ord, la oss finne ut hvordan vi gjetter en bokstav.</p>
 <ol>
 <li><p>I den samme filen, endre koden så den ser ut som følger</p>
-<pre class="language-python"><code>from random import choice
+<pre class="{.language-python}"><code>from random import choice
 
 word = choice([&quot;kode&quot;, &quot;kurs&quot;])
 
@@ -63,7 +63,7 @@ print(&quot;Gjett en bokstav i ordet:&quot;, out)</code></pre></li>
 <li><p>Du burde se <code>Gjett en bokstav i ordet: ____</code>, i output-vinduet (det andre vinduet, ikke vinduet du har skrevet programmet ditt i).</p>
 <p>Vi bruker en <code>for</code>-løkke for å bygge en tekst hvor hver bokstav i ordet er byttet med en understrek <code>_</code>. Ordet <code>kode</code> vil da for eksempel skrives som <code>____</code> til skjermen.</p></li>
 <li><p>La oss gjette på en bokstav! Endre koden så den ser ut som dette</p>
-<pre class="language-python"><code>from random import choice
+<pre class="{.language-python}"><code>from random import choice
 
 word = choice([&quot;kode&quot;, &quot;kurs&quot;])
 
@@ -90,7 +90,7 @@ else:
 <p>Nå skal vi bruke to nye komponenter i python, lister og <code>while</code>-løkker.</p>
 <ol>
 <li><p>I den samme filen, endre koden så den ser slik ut:</p>
-<pre class="language-python"><code>from random import choice
+<pre class="{.language-python}"><code>from random import choice
 
 word = choice([&quot;kode&quot;, &quot;kurs&quot;])
 
@@ -132,7 +132,7 @@ while True:
 <p>For at Hangman skal holde oversikt over alle bokstavene som er gjettet på må vi også huske på når spilleren gjetter feil.</p>
 <ol>
 <li><p>Endre filen du jobber med slik at den blir seende ut som dette:</p>
-<pre class="language-python"><code>from random import choice
+<pre class="{.language-python}"><code>from random import choice
 
 word = choice([&quot;kode&quot;, &quot;kurs&quot;])
 
@@ -175,7 +175,7 @@ while True:
 <h2>Steg 5: Bare noen få forsøk</h2>
 <ol>
 <li><p>Endre filen for å legge til en ny variabel, <code>tries</code>:</p>
-<pre class="language-python"><code>from random import choice
+<pre class="{.language-python}"><code>from random import choice
 
 word = choice([&quot;kode&quot;, &quot;kurs&quot;])
 
@@ -225,9 +225,9 @@ else:
 <h2>Steg 6: Legg til nye ord</h2>
 <ol>
 <li><p>Finn linjen i programkoden som sier:</p>
-<pre class="language-python"><code>word = choice([&quot;kode&quot;, &quot;kurs&quot;])</code></pre></li>
+<pre class="{.language-python}"><code>word = choice([&quot;kode&quot;, &quot;kurs&quot;])</code></pre></li>
 <li><p>Vi kan endre denne linjen for å legge til flere ord i spillet. Prøv for eksempel</p>
-<pre class="language-python"><code>word = choice([&quot;kode&quot;, &quot;kurs&quot;, &quot;robot&quot;, &quot;klubb&quot;])</code></pre>
+<pre class="{.language-python}"><code>word = choice([&quot;kode&quot;, &quot;kurs&quot;, &quot;robot&quot;, &quot;klubb&quot;])</code></pre>
 <p>Husk at ordene må stå i anførselstegn og at det må være komma mellom ordene for å lage en liste. Legg til flere ord som du finner på selv.</p></li>
 </ol>
 </section>
@@ -239,23 +239,21 @@ else:
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

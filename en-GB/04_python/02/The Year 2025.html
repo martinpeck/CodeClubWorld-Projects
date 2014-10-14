@@ -29,7 +29,7 @@
 <p>This project is in Beta. That means we’re still testing it, and there’s a small chance there could be some bugs or typos. If you’re a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/1eMCfpYe3v7eYu5M8rSqLKlmq7cczLCLHx66csgyUyVU/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email <script type="text/javascript">
 <!--
 h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
 // -->
 </script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
 </section>
@@ -43,7 +43,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>It’s not just text that you can print in Python, you can also print numbers to the screen. For example, if 8 of your friends each gave you £2 for a sponsored silence, you can use this program to see how much money you raised:</p>
-<pre class="language-python"><code>print(8*2)</code></pre>
+<pre class="{.language-python}"><code>print(8*2)</code></pre>
 <p>The star <code>*</code> in the program above is a multiply sign, so the program should print the answer to 8 x 2.</p></li>
 <li><p>Run the program above, and you should see the answer:</p>
 <p><img src="2025-calc.png" alt="screenshot" /></p></li>
@@ -69,14 +69,14 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <p>Change your program to find out how old someone born in 1998 would be in the year 2025. How old will someone born this year be in the year 2050?</p>
 </section>
 </section>
-<section id="step-3-variables" class="level1 activity new-page">
+<section id="step-3-variables" class="level1 activity">
 <h1>Step 3: Variables</h1>
 <p>When completing the challenges above, you had to keep changing the numbers in the program for people of different ages, and for different years in the future. It would be much easier if you could ask someone what year they were born, and use the answer in your calculation. That’s what variables are for!</p>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Run this Python program:</p>
-<pre class="language-python"><code>print(&quot;What year were you born?&quot;)
+<pre class="{.language-python}"><code>print(&quot;What year were you born?&quot;)
 born = input()
 born = int(born)
 print( 2025 - born )</code></pre>
@@ -86,11 +86,11 @@ print( 2025 - born )</code></pre>
 <p><img src="2025-var.png" alt="screenshot" /></p>
 <p>Notice that the variable (the box) has been named “born”, as it helps you remember what you’re storing inside it!</p>
 <p>The line…</p>
-<pre class="language-python"><code>print( 2025 - born )</code></pre>
+<pre class="{.language-python}"><code>print( 2025 - born )</code></pre>
 <p>…takes whatever number has been stored in the <code>born</code> variable away from 2025.</p>
 <p>Anything that is typed in from the keyboard is always stored as text, so you also have to use the <code>int()</code> function to turn the user’s input into a whole number (which in programming is called an <em>integer</em>).</p></li>
 <li><p>You can make your program much easier to understand, by adding a helpful message for the user, so they know what you’re showing them. Change the last line of your program to:</p>
-<pre class="language-python"><code>print( &quot;In 2025 you will be&quot; , 2025 - born , &quot;years old!&quot; )</code></pre></li>
+<pre class="{.language-python}"><code>print( &quot;In 2025 you will be&quot; , 2025 - born , &quot;years old!&quot; )</code></pre></li>
 <li><p>Try running your program again, to see how this change looks.</p>
 <p><img src="2025-print.png" alt="screenshot" /></p></li>
 <li><p>But why stop there? You could also use another variable to store the answer before printing it for the user. Try this program out:</p>
@@ -116,23 +116,21 @@ print( 2025 - born )</code></pre>
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

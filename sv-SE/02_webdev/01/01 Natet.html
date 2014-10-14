@@ -33,12 +33,12 @@
 <section id="checklista" class="level2 check">
 <h2>Checklista</h2>
 <ul>
-<li>Öppna ett <strong>textredigeringsprogram</strong>.<br /></li>
-<li>Skapa ett nytt dokument.<br /></li>
-<li>Skriv något! Till exempel: “Hej! Jag är en webbsida.”<br /></li>
-<li>Spara filen. Kalla den “hej.txt”.<br /></li>
-<li>Leta upp filen och öppna upp den igen. Den öppnas i ett textredigeringsprogram, och det är ju inte så himla kul.<br /></li>
-<li>Byt ut filändelsen (delen efter punkten) till “.html” så att filen istället heter “hej.html”.<br /></li>
+<li>Öppna ett <strong>textredigeringsprogram</strong>.</li>
+<li>Skapa ett nytt dokument.</li>
+<li>Skriv något! Till exempel: “Hej! Jag är en webbsida.”</li>
+<li>Spara filen. Kalla den “hej.txt”.</li>
+<li>Leta upp filen och öppna upp den igen. Den öppnas i ett textredigeringsprogram, och det är ju inte så himla kul.</li>
+<li>Byt ut filändelsen (delen efter punkten) till “.html” så att filen istället heter “hej.html”.</li>
 <li>Öppna filen igen.</li>
 </ul>
 <p>Vilket program öppnades filen i nu? Webbläsaren är ett särskilt program som vet hur man läser textfiler skrivna med språket <strong>HTML</strong>. Vi har inte lagt till någon <strong>HTML</strong> än, vi la bara in lite text, men webbläsaren bryr sig inte om det! Så länge du ger den en fil som slutar på “.html” kommer den gära sitt bästa för att visa dig filen på ett snyggt och bra sätt.</p>
@@ -63,11 +63,11 @@
 <p><code>&lt;a href=&quot;http://codeclub.org.uk&quot;&gt;Besök CodeClubs webbsida&lt;/a&gt;</code></p>
 <p>“<a>” betyder <strong>anchor</strong>, eller “ankare” på svenska, och det kallade man länkar för länge sen.</p>
 <p>Ett länkelement har också öppningstaggen <code>&lt;a&gt;</code> och stängningstaggen <code>&lt;/a&gt;</code> men vi behöver även ett attribut till öppningstaggen: <code>&lt;a href=&quot;http://codeclub.org.uk&quot;&gt;</code></p>
-<p>“href” är attributet, och “<a href="http://codeclub.org.uk">http://codeclub.org.uk</a>” är dess värde.<br />“href” står för <em>hypertext reference</em>. En text som länkad till andra texter kallades en gång i tiden för hypertext, för att den kunde ha bilder och ljud och ta en vidare till andra sidor. Det gjorde den lite annorlunda än en vanlig text.<br />“href” berättar för webbläsaren vart länken ska leda, och texten inom de två taggarna kommer bli synlig på sidan som en länk.</p>
+<p>“href” är attributet, och “<a href="http://codeclub.org.uk" class="uri">http://codeclub.org.uk</a>” är dess värde.<br />“href” står för <em>hypertext reference</em>. En text som länkad till andra texter kallades en gång i tiden för hypertext, för att den kunde ha bilder och ljud och ta en vidare till andra sidor. Det gjorde den lite annorlunda än en vanlig text.<br />“href” berättar för webbläsaren vart länken ska leda, och texten inom de två taggarna kommer bli synlig på sidan som en länk.</p>
 <section id="checklista-1" class="level2 check">
 <h2>Checklista</h2>
 <ul>
-<li>Öppna filen “page.html”.<br /></li>
+<li>Öppna filen “page.html”.</li>
 <li>Fråga en ledare om hon eller han kan visa ett sätt att titta på koden i webbläsaren.</li>
 </ul>
 <section id="granska-en-webbsida" class="level3">
@@ -84,11 +84,11 @@
 <section id="checklista-2" class="level2 check">
 <h2>Checklista</h2>
 <ul>
-<li>Lägg märke till hur taggar kan <strong>nästlas</strong> inuti varandra. Vi har en <code>&lt;a&gt;</code>-tagg som står inuti en <code>&lt;p&gt;</code>-tagg, vilken i sin tur är inuti en <code>&lt;div&gt;</code>som är inuti en <code>&lt;body&gt;</code>. När det här händer säger vi att taggen som är inuti en annan tagg är ett <em>barn</em> och taggen som är runt omkring den är en <strong>förälder</strong>. Det är lite som ett familjeträd!<br /></li>
-<li>För webbläsaren är alla taggar av samma sort desamma, men du kan identifiera dem genom att använda klasser och ID:n. Till exempel kanske några av dina paragrafer är inledningar på texter, och då kan du ge dem klassen “inledning”. Kolla om du kan hitta några klasser inuti “page.html”.<br />+Id:n används för att markera unika element på din sida. Kolla om du kan hitta någon <div>-tagg med id:t “kitten” på sidan.<br /></li>
+<li>Lägg märke till hur taggar kan <strong>nästlas</strong> inuti varandra. Vi har en <code>&lt;a&gt;</code>-tagg som står inuti en <code>&lt;p&gt;</code>-tagg, vilken i sin tur är inuti en <code>&lt;div&gt;</code>som är inuti en <code>&lt;body&gt;</code>. När det här händer säger vi att taggen som är inuti en annan tagg är ett <em>barn</em> och taggen som är runt omkring den är en <strong>förälder</strong>. Det är lite som ett familjeträd!</li>
+<li>För webbläsaren är alla taggar av samma sort desamma, men du kan identifiera dem genom att använda klasser och ID:n. Till exempel kanske några av dina paragrafer är inledningar på texter, och då kan du ge dem klassen “inledning”. Kolla om du kan hitta några klasser inuti “page.html”.<br />+Id:n används för att markera unika element på din sida. Kolla om du kan hitta någon <div>-tagg med id:t “kitten” på sidan.</li>
 <li>Vad händer om du flyttar runt grejer? Vi går tillbaka till kodredigeraren. Leta upp en <code>&lt;ol&gt;</code>-tagg i koden och markera den med allt som finns inuti, såhär:</li>
 </ul>
-<pre class="language-markup"><code>&lt;ol&gt;
+<pre class="{.language-markup}"><code>&lt;ol&gt;
     &lt;li&gt;Kittens&lt;/li&gt;
     &lt;li&gt;Cake&lt;/li&gt;
     &lt;li&gt;Lie-ins&lt;/li&gt;
@@ -99,9 +99,9 @@
 <section id="prova-ocksa" class="level2 try">
 <h2>Pröva också</h2>
 <ul>
-<li>Skapa din egen textparagraf.<br /></li>
-<li>Skapa en länk som pekar ut en annan del av sidan (ledtråd: det har att göra med id - kolla efter en länk som tar dig till kattungen (“kitten” på engelska).<br /></li>
-<li>Lägg till dina egna rubriker där du tycker de kan passa in. Vad händer om du ändrar siffran i rubriktaggen, till exempel från <code>&lt;h3&gt;</code> till <code>&lt;h4&gt;</code>?<br /></li>
+<li>Skapa din egen textparagraf.</li>
+<li>Skapa en länk som pekar ut en annan del av sidan (ledtråd: det har att göra med id - kolla efter en länk som tar dig till kattungen (“kitten” på engelska).</li>
+<li>Lägg till dina egna rubriker där du tycker de kan passa in. Vad händer om du ändrar siffran i rubriktaggen, till exempel från <code>&lt;h3&gt;</code> till <code>&lt;h4&gt;</code>?</li>
 <li>Vad skulle du behöva göra för att länka till en helt annan sida?</li>
 </ul>
 </section>
@@ -114,23 +114,21 @@
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>

@@ -35,17 +35,17 @@
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Start a new Scratch project. Delete the cat by right clicking it and clicking <strong>delete</strong><br /></li>
-<li>Click <strong>Stage</strong> and then the <strong>Backdrops</strong> tab. Upload the <strong>resources\frame.png</strong> background.<br /></li>
-<li>Upload a new sprite called <strong>green-pencil</strong>, using <strong>resources\green-pencil.png</strong><br /></li>
-<li>Switch to the <strong>costumes</strong> tab and click edit from the <strong>Paint Editor</strong>, change the center of the image to be at the tip of the pen. To do this, click the <strong>Set costume center</strong> button and drag the lines until they are at the tip.<br /></li>
+<li>Start a new Scratch project. Delete the cat by right clicking it and clicking <strong>delete</strong></li>
+<li>Click <strong>Stage</strong> and then the <strong>Backdrops</strong> tab. Upload the <strong>resources\frame.png</strong> background.</li>
+<li>Upload a new sprite called <strong>green-pencil</strong>, using <strong>resources\green-pencil.png</strong></li>
+<li>Switch to the <strong>costumes</strong> tab and click edit from the <strong>Paint Editor</strong>, change the center of the image to be at the tip of the pen. To do this, click the <strong>Set costume center</strong> button and drag the lines until they are at the tip.</li>
 <li><p>Make the pencil follow the mouse around the stage using the <code class="blockyellow">forever</code> and <code class="blockblue">go to</code> mouse-pointer blocks.</p>
 <p><img src="2998e926c32a1cf89954e93ce60bb18a0e038a11.png" alt="when FLAG clicked
     forever
         go to [mouse-pointer v]
     end" /></p></li>
 </ul>
-<p>Now we want to use this pen sprite as an actual pen.__ If you look under the pen section you’ll see all sorts of drawing related blocks. The ones we’re initially interested in are <code class="blockgreen">pen down</code> and <code class="blockgreen">pen up</code>.</p>
+<p>Now we want to use this pen sprite as an actual pen. If you look under the pen section you’ll see all sorts of drawing related blocks. The ones we’re initially interested in are <code class="blockgreen">pen down</code> and <code class="blockgreen">pen up</code>.</p>
 <ul>
 <li><p>We want to use the mouse button to control the pen – whenever the mouse button is down the pen should be down, and when it is up the pen should be up. We can do this using an <code class="blockyellow">if... else</code> and <code class="blocklightblue">mouse down?</code> blocks.</p>
 <p><img src="976bf30ec9034e38f924b866a89c751214ab520b.png" alt="when FLAG clicked
@@ -92,9 +92,9 @@
 <h2>Activity Checklist</h2>
 <p>Rather than having to stop and start the whole project, let’s add a button that clears the drawing. It will do that using the clear block.</p>
 <ul>
-<li>Create a new sprite from the <strong>resources/cancel-button.png</strong> costume.<br /></li>
-<li>Change the sprite’s name to <strong>clear</strong>.<br /></li>
-<li>Position the sprite near the bottom-left corner of the stage.<br /></li>
+<li>Create a new sprite from the <strong>resources/cancel-button.png</strong> costume.</li>
+<li>Change the sprite’s name to <strong>clear</strong>.</li>
+<li>Position the sprite near the bottom-left corner of the stage.</li>
 <li><p>Give the clear sprite this simple script:</p>
 <p><img src="a1c7aeeafe69c5aae19407b6e6b9bdf9b66689c0.png" alt="when this sprite clicked
     clear" /></p></li>
@@ -115,8 +115,8 @@
 <h2>Activity Checklist</h2>
 <p>So far, we can only draw blue lines. Let’s draw with some different colours! We’ll add some sprites at the bottom of the frame. The sprites will look like coloured buttons. If we click on a button, it will change the colour of the line we draw. So we know what colour we’re using, the button will also change the colour of the pencil sprite.</p>
 <ul>
-<li>Add a new sprite, called <strong>red</strong>, using the <strong>resources/red-selector.png</strong> costume.<br /></li>
-<li>Place it somewhere along the bottom of the frame, near the <strong>clear button</strong>.<br /></li>
+<li>Add a new sprite, called <strong>red</strong>, using the <strong>resources/red-selector.png</strong> costume.</li>
+<li>Place it somewhere along the bottom of the frame, near the <strong>clear button</strong>.</li>
 <li><p>When the red sprite is clicked, it should broadcast the message <strong>red</strong>.</p>
 <p><img src="f9b8de5884303d06a5feabe82f492e6d2912678e.png" alt="when this sprite clicked
     broadcast [red v]" /></p></li>
@@ -208,11 +208,11 @@
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Add a new sprite, using whichever image or costume you want. Shrink the sprite down and place it at the bottom of the screen alongside the other tools. When this sprite is clicked, it should <code class="blockyellow">broadcast stamp</code><br /></li>
-<li>Add a new costume for this pencil sprite, the same as the one you chose for the <strong>stamp</strong> button.<br /></li>
-<li>Select the pencil sprite and create a new <code class="blocklightgrey">variable</code> <code class="blockorange">pencil mode</code> for this sprite only. We’ll use this variable to keep track of whether or not we are drawing or stamping.<br /></li>
-<li>Add a new script to respond to the stamp message. It needs to set the costume to the stamp and set the <code class="blockorange">pencil mode</code> variable to <strong>false</strong>.<br /></li>
-<li>Change the other scripts that respond to tool-selection messages (red, green, blue, and eraser) so that they each set the <code class="blockorange">pencil mode</code> to <strong>true</strong>.<br /></li>
+<li>Add a new sprite, using whichever image or costume you want. Shrink the sprite down and place it at the bottom of the screen alongside the other tools. When this sprite is clicked, it should <code class="blockyellow">broadcast stamp</code></li>
+<li>Add a new costume for this pencil sprite, the same as the one you chose for the <strong>stamp</strong> button.</li>
+<li>Select the pencil sprite and create a new <code class="blocklightgrey">variable</code> <code class="blockorange">pencil mode</code> for this sprite only. We’ll use this variable to keep track of whether or not we are drawing or stamping.</li>
+<li>Add a new script to respond to the stamp message. It needs to set the costume to the stamp and set the <code class="blockorange">pencil mode</code> variable to <strong>false</strong>.</li>
+<li>Change the other scripts that respond to tool-selection messages (red, green, blue, and eraser) so that they each set the <code class="blockorange">pencil mode</code> to <strong>true</strong>.</li>
 <li>Finally, lets check this variable <strong>when the mouse button is down</strong> to see if we should be drawing or stamping. If <code class="blockorange">pencil mode</code> = true we should use the existing <code class="blockgreen">pen down</code>, if not we should <code class="blockgreen">stamp</code> instead.</li>
 </ul>
 </section>
@@ -232,7 +232,7 @@
 <p><strong>Let’s add a special pencil that paints in rainbow colours.</strong> It’s something that you can’t do with ordinary pens and pencils, so it’s nice to show off how drawing on a computer allows you do to different things. The secret to making it work is the change pen colour by block.</p>
 <p><strong>First, add the rainbow tool selection sprite and the rainbow tool costume to the pencil sprite:</strong></p>
 <ul>
-<li><strong>Create a new tool selection sprite</strong> and place it at the bottom of the stage, alongside all the other pencil colour sprites. Use the <strong>resources/rainbow-selector.gif</strong> costume and have it <code class="blockyellow">broadcast rainbow</code> when clicked.<br /></li>
+<li><strong>Create a new tool selection sprite</strong> and place it at the bottom of the stage, alongside all the other pencil colour sprites. Use the <strong>resources/rainbow-selector.gif</strong> costume and have it <code class="blockyellow">broadcast rainbow</code> when clicked.</li>
 <li>Add the <strong>resources/rainbow-pencil.png</strong> costume to the <strong>pencil sprite</strong>.</li>
 </ul>
 <p>You need to build a script that will change the pen colour many times a second to give the rainbow effect (changing it by 5 every +05 seconds works well, but you should try out different values). The timer Scratch card shows how you can make something change every so often. Use a <code class="blockgreen">change pen colour by 5</code> block instead of a <code class="blockorange">change timer by -1</code> block inside the loop.</p>
@@ -254,13 +254,13 @@
 <p>You can use the <code class="blockyellow">if</code><code class="blocklightblue">key [] pressed</code> blocks to respond to the keyboard. For each key you want to use, you’ll need another <code class="blockyellow">if</code><code class="blocklightblue">key [] pressed</code>, which sends the same message as the respective tool-selection sprite does when its clicked. Add these scripts to the stage.</p>
 <p>I used these shortcuts:</p>
 <ul>
-<li>Clear all - a<br /></li>
-<li>Eraser - e<br /></li>
-<li>Red pencil -r<br /></li>
-<li>Blue pencil - b<br /></li>
-<li>Yellow pencil - y<br /></li>
-<li>Green pencil - g<br /></li>
-<li>Rainbow pencil - w<br /></li>
+<li>Clear all - a</li>
+<li>Eraser - e</li>
+<li>Red pencil -r</li>
+<li>Blue pencil - b</li>
+<li>Yellow pencil - y</li>
+<li>Green pencil - g</li>
+<li>Rainbow pencil - w</li>
 <li>Stamp - s</li>
 </ul>
 </section>
@@ -306,23 +306,21 @@
     </aside>
 
     <div id="legend">
-      <table>
-        <tr>
-          <td><img src="../../../img/check.png" alt="Activity Checklist" /></td>
-          <td><span class="check_text">Activity Checklist</span></td>
-          <td>Follow these <span class="check_text upper">instructions</span> one by one</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/flag.png" alt="Test your Project" /></td>
-          <td><span class="flag_text">Test your Project</span></td>
-          <td>Click on the green flag to <span class="flag_text upper">test</span> your code</td>
-        </tr>
-        <tr>
-          <td><img src="../../../img/save.png" alt="Save your Project" /></td>
-          <td><span class="save_text">Save your Project</span></td>
-          <td>Make sure to <span class="save_text upper">save</span> your work now</td>
-        </tr>
-      </table>
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
     </div>
 
     <script type="text/javascript" src="../../../js/lesson.js"></script>
