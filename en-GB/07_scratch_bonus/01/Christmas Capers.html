@@ -152,7 +152,7 @@
 <li><strong>Let’s change our script to keep track of a score within the game.</strong> We can then use this later to work out when the game over message should appear.</li>
 <li>Create a new variable. Call it <code class="blockorange">Score</code> and make it for all sprites. Leave this variable ticked so it appears on the screen.</li>
 <li><p>Change the script behind the <strong>Present</strong> sprite to look like this. Note we have both added sound effects with the <code class="blockpink">play drum</code> command and also <code class="blockorange">change [ score ] by 1</code> when Rudolph touches the present.</p>
-<p><img src="4a2197b99caf669337ebc7f99a115894e0eb333f.png" alt="when FLAG clicked
+<p><img src="9a6eb3cd0670c9aa3eedc6986444e55e2db99a83.png" alt="when FLAG clicked
     forever
         set [Finish v] to [0]
         go to x: &lt;pick random (-230) to (230)&gt; y: &lt;pick random (50) to (170)
@@ -161,11 +161,11 @@
         repeat until &lt;(Finish) = [1]&gt;
             change y  by (Speed)
             if &lt;(y position) &lt; [-160]&gt; then
-                play drum [57 v] for (+2) beats
+                play drum [57 v] for (0.25) beats
                 set (Finish) to [1]
             end
             if &lt;touching [Rudolph v]?&gt; then
-                play drum [39 v] for (+2) beats
+                play drum [39 v] for (0.25) beats
                 set (Finish) to [1]
                 change [Score v] by [1]" /></p></li>
 </ul>
