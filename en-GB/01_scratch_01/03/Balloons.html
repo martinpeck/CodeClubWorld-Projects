@@ -50,12 +50,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li><p>Add in a new balloon sprite, and a suitable stage backdrop.</p>
 <p><img src="balloons-balloon.png" alt="screenshot" /></p></li>
 <li><p>Add this code to your balloon, so that it bounces around the screen:</p>
-<p><img src="2d7c01d687d53d91f16f3179a7e84e58b032a54c.png" alt="    when flag clicked
+<p><img src="11143ad1069102077c5f2478f716b3871d8e34f7.png" alt="    when flag clicked
     go to x:(0) y:(0)
     point in direction (45 v)
     forever
         move (1) steps
-        if on edge bounce
+        if on edge, bounce
     end" /></p></li>
 <li><p>Test out your balloon. Does it move too slowly? Change the numbers in your code if you want to speed it up a bit.</p></li>
 <li><p>Did you also notice that your balloon flips as it moves around the screen?</p>
@@ -77,12 +77,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <ul>
 <li><p>With the code you have now, your balloon will always start in the same place and move in the same path. Click the flag a few times to start your program, and you’ll see it’s the same every time.</p></li>
 <li><p>Instead of using the same x and y position each time, you can let Scratch choose a random number instead. Change your balloon’s code, so that it looks like this:</p>
-<p><img src="057c9dc46756ff82f12fed3e7ff8acca4273b002.png" alt="    when flag clicked
+<p><img src="0b807027568351b5789828347c015bb73058a50c.png" alt="    when flag clicked
     go to x:(pick random (-150) to (150)) y:(pick random (-150) to (150))
     point in direction (45 v)
     forever
         move (1) steps
-        if on edge bounce
+        if on edge, bounce
     end" /></p></li>
 <li><p>If you click the green flag a few times, you should notice that your balloon starts in a different place each time.</p></li>
 <li><p>You could even use a random number to choose a random balloon colour each time:</p>
@@ -111,14 +111,14 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li><p>Click on your balloon sprite, and then click the ‘Costumes’ tab. You can delete all of the other costumes, just leaving 1 balloon costume. Add a new costume, by clicking ‘Paint new costume’ and create a new costume called ‘burst’.</p>
 <p><img src="balloons-costume.png" alt="screenshot" /></p></li>
 <li><p>Make sure that your balloon switches to the right costume when the game starts. Your code should now look like this:</p>
-<p><img src="0daadf727a41109779fbb27d97148ac60d9a9758.png" alt="    when flag clicked
+<p><img src="2f635c3a63b80037e0e8ed13fe782e067c464a06.png" alt="    when flag clicked
     switch costume to [balloon1-a v]
     point in direction (pick random (-90) to (180))
     go to x:(pick random (-150) to (150)) y:(pick random (-150) to (150))
     change [color v] effect by (pick random (0) to (200))
     forever
         move (1) steps
-        if on edge bounce
+        if on edge, bounce
     end" /></p></li>
 <li><p>To allow the player to burst a balloon, add this code:</p>
 <p><img src="b2b0c8ccad0f799890f8e54a7162a45ef8031aff.png" alt="    when this sprite clicked
@@ -131,7 +131,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
     wait (0.3) secs
     hide" /></p></li>
 <li><p>Now that you’re hiding the balloon when it’s clicked, you’ll also need to add a <code class="blocklooks">show</code> block to the start of the <code class="blockevents">when flag clicked</code> code.</p></li>
-<li><p>Try popping a balloon again, to check that it works properly.</p></li>
+<li><p>Try popping a balloon again, to check that it works properly. If you find it difficult to pop the balloon without dragging it around, you can play the game in fullscreen mode by clicking this button:</p>
+<p><img src="balloons-fullscreen.png" alt="screenshot" /></p></li>
 </ul>
 </section>
 <section id="save-your-project-3" class="level2 save">
@@ -179,7 +180,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <p>Another way of getting lots of balloons is to <em>clone</em> the balloon sprite.</p>
 <p>Drag your balloon <code class="blockevents">when flag clicked</code> code (except the <code class="blockdata">score</code> block) off of the event (don’t delete it), and instead add code to create 20 balloon clones:</p>
 <p><img src="balloons-clone-1.png" alt="screenshot" /></p></li>
-<li><p>You can now attach the code you’ve just removed to the <code class="blockevents">when I start as a clone</code> event (adding a <code class="blocklooks">show</code> block at the top), so that your balloon code now looks like this:</p>
+<li><p>You can now attach the code you’ve just removed to the <code class="blockevents">when I start as a clone</code> event, so that your balloon code now looks like this:</p>
 <p><img src="balloons-clone-2.png" alt="screenshot" /></p>
 <p>Now when the flag is clicked, your main balloon sprite will hide and then clone itself 20 times. When each of these 20 clones is started, they will each bounce around the screen randomly, just as they did before.</p></li>
 <li><p>Test your project to see if you can pop the 20 balloons!</p></li>
@@ -239,7 +240,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li>How many will there be?</li>
 <li>How big is it? How does it move?</li>
 <li>How many points will you score (or lose) for clicking it?</li>
-<li>Will it moves faster or slower than the balloons?</li>
+<li>Will it move faster or slower than the balloons?</li>
 <li>What will it look/sound like when it’s been clicked?</li>
 </ul>
 <p>If you need help adding another object, you can reuse the steps above!</p>
