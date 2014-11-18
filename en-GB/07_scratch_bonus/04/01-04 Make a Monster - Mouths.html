@@ -31,26 +31,26 @@
 <p><img src="a6c527dcfcfd6660ee436f754fa49b24ec6c02da.png" alt="when [space v] key pressed
     say [Hello!] for (2) secs" /></p></li>
 <li><p>To make it a bit more impressive, you could make the monsters <strong>mouth open</strong> and <strong>close</strong> whilst it is talking. To do this, edit the sprite that contains the mouth - create a new <code class="blockpurple">costume</code> that has a closed mouth. By switching between the two, you can animate the mouth opening and closing.</p>
-<p><img src="33feb6a87f20c98539dbcd1dceb8a3ab7d46db26.png" alt="repeat (8)
+<p><img src="342bfa69a8a0f739acccb728ba157d9e94a5df38.png" alt="repeat (8)
     wait (0.1) secs
-    switch to costume [mouthClosed v]
+    switch costume to [mouthClosed v]
     wait (0.1) secs
-    switch to costume [mouthOpen v]
+    switch costume to [mouthOpen v]
 end" /></p></li>
 <li><p>To hook the two up, have the block that does the <code class="blockpurple">say</code> broadcast a message that the other block can react to.</p>
-<p><img src="528e33a7371f994c23a404e2496945585e4d1cc5.png" alt="when [space v] key pressed
+<p><img src="061824abb7cdad4a5e62f3d470f992b0fac0cfa6.png" alt="when [space v] key pressed
     broadcast [talk v]
     say [Hello!] for (2) secs
 
 when I receive [talk v]
     repeat (8)
         wait (0.1) secs
-        switch to costume [mouthClosed v]
+        switch costume to [mouthClosed v]
         wait (0.1) secs
-        switch to costume [mouthOpen v]
+        switch costume to [mouthOpen v]
     end" /></p></li>
 <li><p>To make this a bit more flexible, use a variable to control the <code class="blockorange">talkTime</code> the monster says something for, and also to control how many times the animation loop is repeated.</p>
-<p><img src="72247feb22551835387cdb221a4b62b0536470b4.png" alt="when [space v] key pressed
+<p><img src="f7a6159a5ff4883238bb8961a23fe6fa12352281.png" alt="when [space v] key pressed
     set [talkTime v] to (2)
     broadcast [talk v ]
     say [Hello!] for (talkTime) secs
@@ -63,9 +63,9 @@ when [a v] key pressed
 when I receive [talk v]
     repeat ((talkTime) * (4))
         wait (0.1) secs
-        switch to costume [mouthClosed v]
+        switch costume to [mouthClosed v]
         wait (0.1) secs
-        switch to costume [mouthOpen v]
+        switch costume to [mouthOpen v]
     end" /></p></li>
 </ul>
 <p><strong>(Notice how we multiply <code>talkTime</code> by 4 to make sure the loop repeats enough times?)</strong></p>
