@@ -18,7 +18,7 @@
     <header class="header" role="banner">
       <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
       <h1 class="title">Scratch Table Football</h1>
-      <span class="level-indicator">Level 3</span>
+      <span class="level-indicator">Additional Projects</span>
     </header>
 
     <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Additional Scratch Projects</a></li><li class="breadcrumbs-item current">Scratch Table Football</li></ul></nav>
@@ -59,13 +59,13 @@
 <li>Click on <code>Upload sprite from file</code> and choose <strong>resources/goalie_blue.png</strong>. Rename the sprite <strong>blue goalie</strong>, and drag it near to the left goal.</li>
 <li>Click on the <code>grow sprite</code> button, and click on the <strong>blue goalie</strong> sprite 10 times to scale up the sprite.</li>
 <li><p>Click on the <code>Scripts</code> tab, and add:</p>
-<p><img src="dda3e586ed59f712c2d8e123702f113c55a4014d.png" alt="when FLAG clicked
+<p><img src="108d9ea62f38c76ac327d2aa6caa6da0264305fb.png" alt="when FLAG clicked
 go to x: (-190) y: (0)
 forever
-    if &lt;&lt;key [q v] pressed?&gt; and &lt;(y position) &lt; [80]&gt;&gt;
+    if &lt;&lt;key [q v] pressed?&gt; and &lt;(y position) &lt; [80]&gt;&gt; then
         change y by (5)
     end
-    if &lt;&lt;key [a v] pressed?&gt; and &lt;(y position) &gt; [-80]&gt;&gt;
+    if &lt;&lt;key [a v] pressed?&gt; and &lt;(y position) &gt; [-80]&gt;&gt; then
         change y by (-5)
     end
 end" /></p>
@@ -96,13 +96,13 @@ end" /></p>
 <li>Like before, grow the sprite 10 times so it is as big as the other goalie.</li>
 <li>Select the <strong>blue goalie</strong> sprite and drag the script to <strong>red goalie</strong> to duplicate it.</li>
 <li><p>Select <strong>red goalie</strong>, and modify the script so it looks like this:</p>
-<p><img src="4f2ff9b7b72dee3e86249c2a029e4d85fd8d2f01.png" alt="when FLAG clicked
+<p><img src="ad4304a089d5dfb7c95400fc4daa9b0cb11362b3.png" alt="when FLAG clicked
 go to x: (190) y: (0)
 forever
-    if &lt;&lt;key [p v] pressed?&gt; and &lt;(y position) &lt; [80]&gt;&gt;
+    if &lt;&lt;key [p v] pressed?&gt; and &lt;(y position) &lt; [80]&gt;&gt; then
         change y by (5)
     end
-    if &lt;&lt;key [l v] pressed?&gt; and &lt;(y position) &gt; [-80]&gt;&gt;
+    if &lt;&lt;key [l v] pressed?&gt; and &lt;(y position) &gt; [-80]&gt;&gt; then
         change y by (-5)
     end
 end" /></p>
@@ -130,13 +130,13 @@ end" /></p>
 <li>As before, grow the sprite 10 times, so the players are as big as the goalies.</li>
 <li>Move the sprite into the right-hand side of the pitch, so they are attacking the red team’s goal.</li>
 <li><p>Drag the script from <strong>blue goalie</strong> to <strong>blue attack</strong>, and modify it to match this:</p>
-<p><img src="a25df5487b0e0526d0781fa62f51fb1e88c2cadc.png" alt="when FLAG clicked
+<p><img src="96bd611abb854ae9a78b4e3f0119c2afdc09dbac.png" alt="when FLAG clicked
 go to x: (70) y: (0)
 forever
-    if &lt;&lt;key [w v] pressed?&gt; and &lt;(y position) &lt; [80]&gt;&gt;
+    if &lt;&lt;key [w v] pressed?&gt; and &lt;(y position) &lt; [80]&gt;&gt; then
         change y by (5)
     end
-    if &lt;&lt;key [s v] pressed?&gt; and &lt;(y position) &gt; [-80]&gt;&gt;
+    if &lt;&lt;key [s v] pressed?&gt; and &lt;(y position) &gt; [-80]&gt;&gt; then
         change y by (-5)
     end
 end" /></p>
@@ -145,13 +145,13 @@ You should only have to change three things: the <code class="blockblue">x posit
 <li>As before, grow the sprite 10 times, so all the players on the pitch are the same size.</li>
 <li>Move the sprite into the left-hand side of the pitch, so they are attacking the blue team’s goal.</li>
 <li><p>Drag the script from <strong>blue attack</strong> to <strong>red attack</strong>, and modify it to match this:</p>
-<p><img src="3955394fae7daabb6dcb4213f26976705e4d68db.png" alt="when FLAG clicked
+<p><img src="b98dbc096626d929520ce74a1b3b66577b2d84c2.png" alt="when FLAG clicked
 go to x: (-70) y: (0)
 forever
-    if &lt;&lt;key [o v] pressed?&gt; and &lt;(y position) &lt; [80]&gt;&gt;
+    if &lt;&lt;key [o v] pressed?&gt; and &lt;(y position) &lt; [80]&gt;&gt; then
         change y by (5)
     end
-    if &lt;&lt;key [k v] pressed?&gt; and &lt;(y position) &gt; [-80]&gt;&gt;
+    if &lt;&lt;key [k v] pressed?&gt; and &lt;(y position) &gt; [-80]&gt;&gt; then
         change y by (-5)
     end
 end" /></p>
@@ -212,11 +212,12 @@ This tells the ball to move to the middle of the pitch for kick-off, and then po
 <p>We need the ball to bounce off the players on the pitch.</p>
 <ul>
 <li><p>Modify the last code block you created (<strong>“bounce about”</strong>) to look like this:</p>
-<p><img src="50a025998bc4a5ee9e46469ba04081796b995a22.png" alt="when FLAG clicked // bounce about
+<p><img src="2ad1a5f29fdcdc56a35a53fe820f560053da06a5.png" alt="when FLAG clicked // bounce about
+broadcast [resetball v]
 forever
     move (10) steps
     if on edge, bounce
-    if &lt;&lt;touching color [#0A9AF7]?&gt; or &lt;touching color [#FF0D01]?&gt;&gt;
+    if &lt;&lt;touching color [#0A9AF7]?&gt; or &lt;touching color [#FF0D01]?&gt;&gt; then
         turn cw (pick random (140) to (220)) degrees
     end
 end" /></p>
@@ -239,9 +240,9 @@ end" /></p>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Select <strong>red goal</strong> and add the following script:</p>
-<p><img src="1076be62260af1d3fef83fb18a07d5248b21933b.png" alt="when FLAG clicked // goal line technology
+<p><img src="462db9bda2e404ac058e83e1b823dc8dd8252648.png" alt="when FLAG clicked // goal line technology
 forever
-    if &lt;touching [ball v]&gt;
+    if &lt;touching [ball v]&gt; then
         broadcast [goal v]
     end
 end" /></p>
