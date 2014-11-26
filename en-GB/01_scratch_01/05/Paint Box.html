@@ -62,11 +62,11 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
       go to [mouse pointer v]
     end" /></p></li>
 <li><p>Test out this code by clicking the flag and then moving the mouse around the stage. Does this work as you expected?</p></li>
-<li><p>Have you noticed that it’s the center of the pen, and not the tip, that follows the mouse pointer?</p>
+<li><p>Have you noticed that it’s the centre of the pen, and not the tip, that follows the mouse pointer?</p>
 <p><img src="paint-center.png" alt="screenshot" /></p>
 <p>To fix this, click on the ‘blue-pencil’ costume of your pen sprite, and click ‘Set costume center’.</p>
 <p><img src="paint-center-icon.png" alt="screenshot" /></p></li>
-<li><p>You should notice that a crosshair appears on the costume. You can now click just below the tip of the pen, to set this point as the costume center.</p>
+<li><p>You should notice that a crosshair appears on the costume. You can now click just below the tip of the pen, to set this point as the costume centre.</p>
 <p><img src="paint-pen-center.png" alt="screenshot" /></p></li>
 <li><p>Click the ‘Scripts’ tab, and then test out your pen again - does it work better than it did before?</p></li>
 <li><p>Next, let’s make your pen draw whenever the mouse has been clicked. Add this code to your pen sprite:</p>
@@ -108,7 +108,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>First, let’s add another green pen costume to your pen sprite. Click on your pen sprite, and click ‘Upload costume from file’ and select the ‘green-pencil.png’ image to add it to your sprite. Remember to set the center of your new costume.</p>
+<li><p>First, let’s add another green pen costume to your pen sprite. Click on your pen sprite, and click ‘Upload costume from file’ and select the ‘green-pencil.png’ image to add it to your sprite. Remember to set the centre of your new costume.</p>
 <p><img src="paint-green-costume.png" alt="screenshot" /></p></li>
 <li><p>You also need to add two sprites, that will be used to select the colour of the pen. Click ‘Upload sprite from file’ to add both the ‘blue-selector.png’ and ‘green-selector.png’ images as separate sprites.</p>
 <p>Your stage should now look like this:</p>
@@ -157,12 +157,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <p><img src="d5f078150baee1601793640783427b1f8eb0f105.png" alt="    when this sprite clicked
     clear" /></p>
 <p>Notice that you don’t need to send a message to clear the canvas, as any sprite can do it!</p></li>
-<li><p>You can also create an eraser. To do this, add the ‘eraser.png’ image as a new costume to your pen sprite (remember to set the costume center) <em>and</em> as a new selector sprite.</p>
+<li><p>You can also create an eraser. To do this, add the ‘eraser.png’ image as a new costume to your pen sprite (remember to set the costume centre) <em>and</em> as a new selector sprite.</p>
 <p><img src="paint-eraser.png" alt="screenshot" /></p></li>
 <li><p>You can then add code to the eraser selector sprite, to tell the pen to switch to an eraser.</p>
 <p><img src="9926fa93badc0f1029e281aa0cebf8659023e44e.png" alt="    when this sprite clicked
     broadcast [eraser v]" /></p></li>
-<li><p>When the pen recieves this message, you can create an eraser by switching the pen costume to the eraser, and switching the pen colour to the same colour as the canvas!</p>
+<li><p>When the pen receives this message, you can create an eraser by switching the pen costume to the eraser, and switching the pen colour to the same colour as the canvas!</p>
 <p><img src="5ae93d0c6062209c1bc02ff8435e9d08ea6558cf.png" alt="    when I receive [eraser v]
     switch costume to [eraser v]
     set pen color to [#8d8d8d]" /></p></li>
