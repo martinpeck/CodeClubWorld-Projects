@@ -104,7 +104,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
     end
     broadcast [throw v] and wait" /></p></li>
 <li><p>Add this script to your snowball, to move until it reaches the edge of the stage:</p>
-<p><img src="c3ee7fb3307802104aff0874694cb1ed9090350d.png" alt="    when I receive [throw v]
+<p><img src="38b38b0763dbc752e9efe8433271f7c8a0a58309.png" alt="    when I receive [throw v]
+    switch costume to [snowball v]
     repeat until &lt; touching [edge v]? &gt;
         move (power) steps
     end
@@ -126,9 +127,9 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <ul>
 <li><p>First, let’s set a maximum power level, so that the snowball can’t be thrown too hard.</p>
 <p>In your snowball’s <code class="blockevents">when flag clicked</code> code, we need to increase the power only if it’s less than 20. Change your code to:</p>
-<p><img src="4bbdcdad5bfbeb9e97d47596605216b84172f026.png" alt="    repeat until&lt; not &lt;key [space v] pressed?&gt; &gt;
+<p><img src="2c7874b0f40cb8ba553e48791fa37641a1478bd5.png" alt="    repeat until&lt; not &lt;key [space v] pressed?&gt; &gt;
         if &lt; (power) &lt; [20] &gt; then
-            move (power) steps
+            change [power v] by (1)
             wait (0.1) secs
         end
     end" /></p></li>

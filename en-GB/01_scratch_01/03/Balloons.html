@@ -124,13 +124,13 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <p><img src="b2b0c8ccad0f799890f8e54a7162a45ef8031aff.png" alt="    when this sprite clicked
     switch costume to [burst v]
     play sound [pop v]" /></p></li>
-<li><p>Test out your project. Can you pop the balloon? Does it work as you expected? You’ll need to improve this code, so that when the balloon is clicked, it shows the ‘burst’ costume for a short time, and then disappears. You can make all of this happen by changing your balloon <code class="blockevents">when sprite clicked</code> code to this:</p>
-<p><img src="f498a457d2413e65c16fa7a0db65e5f8a04d832f.png" alt="    when this sprite clicked
+<li><p>Test out your project. Can you pop the balloon? Does it work as you expected? You’ll need to improve this code, so that when the balloon is clicked, it shows the ‘burst’ costume for a short time, and is then deleted. You can make all of this happen by changing your balloon <code class="blockevents">when sprite clicked</code> code to this:</p>
+<p><img src="ca43544165d20196a6c859fc7edd73f6551ee0e5.png" alt="    when this sprite clicked
     switch costume to [burst v]
     play sound [pop v]
     wait (0.3) secs
-    hide" /></p></li>
-<li><p>Now that you’re hiding the balloon when it’s clicked, you’ll also need to add a <code class="blocklooks">show</code> block to the start of the <code class="blockevents">when flag clicked</code> code.</p></li>
+    delete this clone" /></p></li>
+<li><p>Now that you’re deleting the balloon when it’s clicked, you’ll also need to add a <code class="blocklooks">show</code> block to the start of the <code class="blockevents">when flag clicked</code> code.</p></li>
 <li><p>Try popping a balloon again, to check that it works properly. If you find it difficult to pop the balloon without dragging it around, you can play the game in fullscreen mode by clicking this button:</p>
 <p><img src="balloons-fullscreen.png" alt="screenshot" /></p></li>
 </ul>
@@ -155,12 +155,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li><p>When a new game is started (by clicking the flag), you want to set the player’s score to 0. Add this code to the top of the balloon’s <code class="blockevents">when flag clicked</code> code:</p>
 <p><img src="19ec795242f7c718fa32037e3e42beef34e17409.png" alt="set [score v] to [0]" /></p></li>
 <li><p>Whenever a balloon is popped, you need to add 1 to the score:</p>
-<p><img src="a7a53cbebb2e3dfd241ab8765c7e8e24af3c6c68.png" alt="    when this sprite clicked
+<p><img src="80f1025748f5e77e65f645682b523ec7ec99471e.png" alt="    when this sprite clicked
     switch costume to [burst v]
     play sound [pop v]
     wait (0.3) secs
-    hide
-    change [score v] by (1)" /></p></li>
+    change [score v] by (1)
+    delete this clone" /></p></li>
 <li><p>Run your program again and click the balloon. Does your score change?</p></li>
 </ul>
 </section>
