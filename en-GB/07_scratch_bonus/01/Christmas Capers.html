@@ -99,17 +99,17 @@
 <li><strong>Create another variable</strong> and call it <code class="blockorange">Speed</code> and make it for this sprite only, then uncheck the box next to it to remove it from the stage. This will be used to control the speed that the present falls down the screen.</li>
 <li>Add the following script to the <strong>Present</strong> sprite to allow it to fall from the sky. Note that we will use <code class="blockgreen">pick random</code> to make the present appear in a different place each time.</li>
 <li><p>By using the <code class="blocklightblue">touching [ Rudolph ]</code> block we can make the present disappear when touched, we can use this later to keep a score.</p>
-<p><img src="00552af7d62eeca67001d4e5a63c5237c2b9104f.png" alt="when FLAG clicked
+<p><img src="c41f2714f1370ac6e73a2fa47793102c6bc0c1f0.png" alt="when FLAG clicked
     forever
         set [Finish v] to [0]
         go to x: &lt;pick random (-230) to (230)&gt; y: &lt;pick random (50) to (170)&gt;
         set [Speed v] to [-1]
         repeat until &lt;(Finish) = [1]&gt;
             change y  by (Speed)
-            if &lt;(y position) &lt; [-160]&gt;
+            if &lt;(y position) &lt; [-160]&gt; then
                 set (Finish) to [1]
             end
-            if &lt;touching [Rudolph v]?&gt;
+            if &lt;touching [Rudolph v]?&gt; then
                 set (Finish) to [1]" /></p></li>
 </ul>
 </section>
@@ -172,12 +172,12 @@
 </ul>
 <p>Let’s add some music to the game:</p>
 <ul>
-<li><p>Import the sound file <strong>Jingle_Bells.mp3</strong> to the <strong>Stage</strong>.</p>
-<p><img src="59a8c219b6ff3494b705cb76e1a3dcc290e51570.png" alt="when FLAG clicked
+<li><p>Import the sound file <strong>Jingle_Bells.mp3</strong> to the <strong>Stage</strong>.</p></li>
+<li>Add the following script to the <strong>Stage</strong>, this will <code class="blockorange">set score to 0</code> when the game is started. It will also play Jingle Bells while the game is being played.</li>
+<li><p><img src="59a8c219b6ff3494b705cb76e1a3dcc290e51570.png" alt="when FLAG clicked
     set [ScrollX v] to [0]
     set [Score v] to [0]
     play sound [Jingle_Bells v]" /></p></li>
-<li><p>Add the following script to the <strong>Stage</strong>, this will <code class="blockorange">set score to 0</code> when the game is started. It will also play Jingle Bells while the game is being played.</p></li>
 </ul>
 <p>Note, if at first the music sounds ‘choppy’ save your project, close Scratch and then open your project again.</p>
 </section>
