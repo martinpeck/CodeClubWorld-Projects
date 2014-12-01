@@ -194,12 +194,12 @@
 <ul>
 <li><strong>Let’s change our script to keep track of a score within the game.</strong> We can then use this later to work out when the game over message should appear.</li>
 <li><p>Change the script on the <strong>Stage</strong> so when the <code class="blockorange">Score</code> reaches <strong>10</strong> we will <code class="blockyellow">broadcast</code> a <strong>GameOver</strong> message.</p>
-<p><img src="9229438f5c60deb71d34a49b4b7073f1a3cc12ff.png" alt="when FLAG clicked
+<p><img src="5f6ecd15b08d179c2d495da7e237286f2781f9c2.png" alt="when FLAG clicked
     set [ScrollX v] to [0]
     set [Score v] to [0]
     play sound [Jingle_Bells v]
     forever
-    if &lt;(score) = [10]&gt;
+    if &lt;(score) = [10]&gt; then
         broadcast [GameOver v] and wait" /></p></li>
 <li>We now need to add in our GameOver message. Add the <strong>GameOver</strong> sprite to the project (use the <strong>GameOver.png</strong> file).</li>
 <li><p><strong>Add the following script to the GameOver sprite.</strong> This will <code class="blockpurple">hide</code> the picture when the game starts and <code class="blockpurple">show</code> it when the GameOver message is received.</p>

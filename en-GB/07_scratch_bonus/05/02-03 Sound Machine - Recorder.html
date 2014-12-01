@@ -30,13 +30,13 @@
 <li>Create two new lists (for all sprites). Call one of them <code class="blockred">instrument</code> and the other <code class="blockred">timing</code>.</li>
 <li>Create a new variable (for all sprites) called <code class="blockorange">recording</code></li>
 <li><p>For each of your instruments (drum, piano, each sound sample etc.), you will need to add the following items to the <code class="blockbrown">when I receive</code> block.</p>
-<p><img src="3261b8e2acc5dec4215551e2af496febe4a0f864.png" alt="if &lt;(recording) = (1)&gt;
+<p><img src="eb614ca81c5fc7c20b7656ab5d3ec6544f1c1b94.png" alt="if &lt;(recording) = (1)&gt; then
     add (timer) to [timing v]
     add (cat) to [instrument v]" /></p></li>
 <li><p>Change the word “cat” in <code class="blockred">add [cat] to [instrument v]</code> to match the name of the message used to play this sound.</p>
-<p><img src="fa56bb9c5977bb003c03e87febdef45207f93ac5.png" alt="when I receive [drum v]
+<p><img src="8506db9b2091b5e88d57923ca09696456e26607c.png" alt="when I receive [drum v]
     play drum (48 v) for (0.2) beats
-    if &lt;(recording) = (1)&gt;
+    if &lt;(recording) = (1)&gt; then
         add (timer) to [timing v]
         add (cat) to [instrument v]
     end
@@ -54,15 +54,15 @@
 <li>Create another sprite and give it a costume in the shape of a green arrow. Call this “Play”. <img src="play-costume.png" alt="play costume" /></li>
 <li>Create a new variable called <code class="blockorange">index</code> for Play only.</li>
 <li><p>Now we need to make the playback actually do something. Add this script to “Play”</p>
-<p><img src="eae7a72ec7db913f5ba058285bbf7b0b176dd7f1.png" alt="when Play clicked
+<p><img src="45f72af84f0ce305663d54da75e22bc8e3a3a63f.png" alt="when Play clicked
     set [recording v] to (0)
     set [index v] to (1)
     reset timer
     forever
-        if &lt;(item (index) of [timing v]) &lt; (timer)&gt;
+        if &lt;(item (index) of [timing v]) &lt; (timer)&gt; then
             broadcast (item (index) of [instrument v])
             change [index v] by (1)
-            if &lt;(index) &gt; (length of [timing v])&gt;
+            if &lt;(index) &gt; (length of [timing v])&gt; then
                 stop script
             end
         end
