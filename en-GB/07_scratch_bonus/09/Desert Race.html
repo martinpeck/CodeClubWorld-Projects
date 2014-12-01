@@ -98,8 +98,8 @@
     set [racing v] to (0)" /></p></li>
 <li>Next, set the <strong>racing</strong> variable to be 1 when the starting countdown has finished.</li>
 <li><p>Now we need to stop the lion and the parrot from moving unless the racing variable is set to be + Click on the parrot sprite. <strong>Add a control block to the script</strong> that only allows the parrot to move if <strong>racing = 1</strong>.</p>
-<p><img src="5108349e307b6c8f25af8373a70317dcbdbc1409.png" alt="when [a v] key pressed
-    if &lt;(racing) = [1]&gt;
+<p><img src="a91e345e052722ec129f5693f83447e01f564b19.png" alt="when [a v] key pressed
+    if &lt;(racing) = [1]&gt; then
         move (4) steps" /></p></li>
 <li><p>Now do the same for the lion sprite.</p></li>
 </ul>
@@ -120,17 +120,17 @@
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Add a block to the parrot’s script that sets the <strong>racing</strong> variable to be 0 when the sprite touches the edge of the screen.</p>
-<p><img src="c8d847225cfeeba3c665c15a745a87a1f28d34a6.png" alt="when [a v] key pressed
-if &lt;(racing) = [1]&gt;
+<p><img src="91d973422f62e145e99d7b80673ad29e9c194939.png" alt="when [a v] key pressed
+if &lt;(racing) = [1]&gt; then
     move (4) steps
-    if &lt;touching [edge v]?&gt;
+    if &lt;touching [edge v]?&gt; then
     set (racing) to [0]" /></p></li>
 <li>Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click <code class="blocklightgrey">sounds</code> and then record the sound of the parrot winning the race!</li>
 <li><p>Now add blocks that <code class="blockpurple">play</code> the sound you recorded and makes the parrot say it has won:</p>
-<p><img src="ee0ed1a6279eca51d407faa8dc30c37d58eab855.png" alt="    when [a v] key pressed
-    if &lt;(racing) = [1]&gt;
+<p><img src="5a20dbe2db7af05c00310e3b177a5168757e7500.png" alt="    when [a v] key pressed
+    if &lt;(racing) = [1]&gt; then
         move (4) steps
-        if &lt;touching [edge v]?&gt;
+        if &lt;touching [edge v]?&gt; then
             set (racing) to [0]
             play sound [recording1 v]
             say [The Parrot Wins! v] for (3) secs" /></p></li>
@@ -154,10 +154,10 @@ if &lt;(racing) = [1]&gt;
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Click on the Parrot sprite.<br />Add a block that broadcasts a <strong>“finished”</strong> message after the sprite says it has won.</p>
-<p><img src="b150a0748e51f9be5048cbb4151773c839b0a902.png" alt="when [a v] key pressed
-if &lt;(racing) = [1]&gt;
+<p><img src="40d63f9949e736b50d08522613047e294523536a.png" alt="when [a v] key pressed
+if &lt;(racing) = [1]&gt; then
     move (4) steps
-    if &lt;touching [edge v]?&gt;
+    if &lt;touching [edge v]?&gt; then
         set (racing) to [0]
         play sound [recording1 v]
         say [The Parrot Wins! v] for (3) secs
@@ -186,12 +186,12 @@ if &lt;(racing) = [1]&gt;
 <li><strong>Try to add a booster</strong> that you can use once each race that moves the parrot or the lion <strong>30 steps in 1 go.</strong></li>
 <li><strong>Add a new costume</strong> with fire coming out behind for each sprite and make it appear when the boost is pressed.</li>
 <li><p><strong>Create another sound</strong> that the sprite will make when the boost is pressed.</p>
-<p><img src="d26f602d047e4fdcfe0a22ebdc1cfe13320f8576.png" alt="when [p v] key pressed
-if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
+<p><img src="4f7ab79a8f21550d984316075830a2d71b06ed11.png" alt="when [p v] key pressed
+if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt; then
     switch costume to [parrot-boost v]
     set [boosted v] to [1]
     move (30) steps
-    if &lt;touching [edge v]?&gt;
+    if &lt;touching [edge v]?&gt; then
          set (racing) to [0]
         play sound [recording1 v]
         say [The Parrot Wins! v] for (3) secs
@@ -213,15 +213,15 @@ if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
 <li>Give the custom block a name by typing <strong>“finished”</strong> into the pink box. Then click OK.</li>
 <li>You’ll now see a <code class="blockpurple">define finished</code> block appear in the scripts window. Drag it to a clear area.</li>
 <li><p>Detach the <code class="blockyellow">if</code><code class="blocklightblue">touching edge?</code><code class="blockyellow">then</code> block and drag it to the <code class="blockpurple">define finished</code> block.</p>
-<p><img src="2f779a9937cd3d329212b9b2ec6948fb64488150.png" alt="define finished
-    if &lt;touching [edge v]?&gt;
+<p><img src="d452864c5d0469513cc1f0f7ab608dc88008c877.png" alt="define finished
+    if &lt;touching [edge v]?&gt; then
         set (racing) to [0]
         play sound [recording1 v]
         say [The Parrot Wins! v] for (3) secs
         broadcast [finished v]
 
 when [q v] key pressed
-    if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
+    if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt; then
         switch costume to [parrot-boost v]
         set [boosted v] to [1]
         move (4) steps

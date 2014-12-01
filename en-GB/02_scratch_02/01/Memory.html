@@ -69,11 +69,11 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <p>You should now see your empty list in the top-left of your stage, as well as lots of new blocks for using lists.</p>
 <p><img src="colour-list-blocks.png" alt="screenshot" /></p></li>
 <li><p>Add this code to your character, to add a random number to your list (and show the correct costume) 5 times:</p>
-<p><img src="9048111390a82b3c81ddfb737b7fc0c0149371df.png" alt="    when flag clicked
+<p><img src="bd262fea7d16e709d1951f22e6c4a84a60ae7178.png" alt="    when flag clicked
     delete (all v) of [sequence v]
     repeat (5)
         add (pick random (1) to (4)) to [sequence v]
-        switch to costume (item (last v) of [sequence v]
+        switch costume to (item (last v) of [sequence v]
         wait (1) secs
     end" /></p>
 <p>Notice that you have also emptied the list to begin with.</p></li>
@@ -145,13 +145,13 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li><p>If the sequence is guessed correctly, you should add 1 to the score, to increase the length of the sequence.</p>
 <p><img src="612e2fdbe8c409902fd10547de48b17e5fa06020.png" alt="    change [score v] by (1)" /></p></li>
 <li><p>Finally, you need to add a <code class="blockcontrol">forever</code> loop around the code to generate the sequence, so that a new sequence is created for each level. This is how your character’s code should look:</p>
-<p><img src="20bda4e9da804383aeb49064b7872ff1cec5c24b.png" alt="    when flag clicked
+<p><img src="01623eb77143f84edab17cb6c002e9d425d3afb6.png" alt="    when flag clicked
     forever
         set [score v] to [3]
         delete (all v) of [sequence v]
         repeat (score)
             add (pick random (1) to (4)) to [sequence v]
-            switch to costume (item (last v) of [sequence v]
+            switch costume to (item (last v) of [sequence v]
             wait (1) secs
         end
         wait until &lt; (length of [sequence v]) = [0]&gt;
