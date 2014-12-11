@@ -38,7 +38,7 @@
 <li>Remove the cat sprite and replace the background with the <strong>nature/woods</strong> background.</li>
 <li>Use the <code>Choose sprite from library</code> button to add a new ghoul sprite to the project (use the <strong>fantasy/ghost1</strong> costume).</li>
 <li>Now we want to make our ghost move. Add a <code>Variable</code> for this sprite only called <code class="blockorange">speed</code>.</li>
-<li>On the <strong>Stage</strong>, the stage monitor for this variable should say “<strong>Ghost1 speed</strong>”. If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the <strong>Data palette</strong> so it does not show on the Stage. The speed variable will control how fast the ghost moves. We use a variable so that we can change how fast the ghost moves as the game progresses.</li>
+<li>On the <strong>Stage view</strong>, the stage monitor for this variable should say “<strong>Ghost1: speed</strong>”. If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the <strong>Data palette</strong> so it does not show on the Stage. The speed variable will control how fast this ghost moves. We use a variable so that we can change how fast the ghost moves as the game progresses.</li>
 <li><p>We want the ghost to start moving when the game starts, <strong>so make a script like this</strong>:</p>
 <p><img src="562a32ae2ec1d12e9a0e1eecb22272207b1fb094.png" alt="when FLAG clicked
     set [speed v] to [5]
@@ -63,7 +63,7 @@
     forever
         move (speed) steps
         if on edge, bounce" /></p></li>
-<li><p>To stop the ghost flipping upside down, click on the <code>rotation style: left-right</code> button in the Sprite Summary area.</p></li>
+<li><p>To stop the ghost flipping upside down, click on the <code>rotation style: left-right</code> button in the (i) section of the Sprite Summary area for the ghost sprite.</p></li>
 </ul>
 </section>
 <section id="test-your-project-1" class="level2 flag">
@@ -80,7 +80,7 @@
 <h2>Things to try</h2>
 <ul>
 <li>Try changing the value of the speed variable to make the ghost fly faster or slower.</li>
-<li>How would you make the ghost get faster the longer it flies? (This is a tricky one, so don’t worry if you can’t see how to do it. You’ll get more clues as you work through the project.)</li>
+<li>How would you make the ghost get faster the longer it’s flying? (This is a tricky one, so don’t worry if you can’t see how to do it. You’ll get more clues as you work through the project.)</li>
 </ul>
 </section>
 </section>
