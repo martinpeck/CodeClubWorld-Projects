@@ -47,7 +47,7 @@
 </section>
 <section id="test-your-project" class="level2 flag">
 <h2>Test Your Project</h2>
-<p><strong>Click the green flag and move the mouse</strong>, does Rudolph follow the mouse?</p>
+<p><strong>Click the green flag and move the mouse.</strong> Does Rudolph follow the mouse?</p>
 </section>
 <section id="save-your-project" class="level2 save">
 <h2>Save your project</h2>
@@ -67,14 +67,14 @@
 </section>
 <section id="test-your-project-1" class="level2 flag">
 <h2>Test Your Project</h2>
-<p><strong>Click the green flag</strong>, do the hills move? What happens as the hills move to the side of the screen?</p>
+<p><strong>Click the green flag.</strong> Do the hills move? What happens as the hills move to the side of the screen?</p>
 </section>
 <section id="save-your-project-1" class="level2 save">
 <h2>Save your project</h2>
 <ul>
-<li>Let’s fix the issue with the snowy hills flickering when they reach the right of the screen. Add more hills to the stage use the <strong>new sprite from file</strong> button to add the Snow sprite to the project again (use the <strong>SnowHills.png</strong> file).</li>
+<li>Let’s fix the issue with the snowy hills suddenly reappearing. Add a second set of hills to the stage. Use the <strong>new sprite from file</strong> button to add the Snow sprite to the project again (use the <strong>SnowHills.png</strong> file).</li>
 <li>Rename the sprite to <strong>Snow2</strong>.</li>
-<li><p>Add the following script to the Snow2 sprite to allow the 2nd set of hills to follow closely behind the first:</p>
+<li><p>Add the following script to the Snow2 sprite to allow the second set of hills to follow closely behind the first:</p>
 <p><img src="467637c7f3887453a5e7c5b924207efbed7ae781.png" alt="when FLAG clicked
     set y to (0)
     forever
@@ -83,7 +83,7 @@
 </section>
 <section id="test-your-project-2" class="level2 flag">
 <h2>Test Your Project</h2>
-<p><strong>Click the green flag</strong>, do the hills move? Has the issue with the flickering trees been fixed?</p>
+<p><strong>Click the green flag.</strong> Do the hills move? Has the issue with the reappearing trees been fixed?</p>
 </section>
 <section id="save-your-project-2" class="level2 save">
 <h2>Save your project</h2>
@@ -98,7 +98,7 @@
 <li><strong>Create a new variable</strong> by clicking the <code class="blocklightgrey">Data</code> tab and then <strong>make a variable</strong>. Call it <code class="blockorange">Finish</code> and make it for this sprite only, then uncheck the box next to it to remove it from the stage. This will be used to control when the present should be removed from the game.</li>
 <li><strong>Create another variable</strong> and call it <code class="blockorange">Speed</code> and make it for this sprite only, then uncheck the box next to it to remove it from the stage. This will be used to control the speed that the present falls down the screen.</li>
 <li>Add the following script to the <strong>Present</strong> sprite to allow it to fall from the sky. Note that we will use <code class="blockgreen">pick random</code> to make the present appear in a different place each time.</li>
-<li><p>By using the <code class="blocklightblue">touching [ Rudolph ]</code> block we can make the present disappear when touched, we can use this later to keep a score.</p>
+<li><p>By using the <code class="blocklightblue">touching [ Rudolph ]</code> block we can make the present disappear when touched. We can use this later to keep a score.</p>
 <p><img src="c41f2714f1370ac6e73a2fa47793102c6bc0c1f0.png" alt="when FLAG clicked
     forever
         set [Finish v] to [0]
@@ -115,13 +115,13 @@
 </section>
 <section id="test-your-project-3" class="level2 flag">
 <h2>Test Your Project</h2>
-<p><strong>Click the green flag,</strong> do the presents fall from the sky? Do they disappear when Rudolph touches them or they hit the ground?</p>
+<p><strong>Click the green flag.</strong> Do the presents fall from the sky? Do they disappear when Rudolph touches them or they hit the ground?</p>
 </section>
 <section id="save-your-project-3" class="level2 save">
 <h2>Save your project</h2>
 <ul>
 <li>Let’s make the game more interesting by changing the colour of the presents each time they fall. Do this by using the <code class="blockpurple">change colour</code> block.</li>
-<li><p>Change the speed of each present by replacing <code class="blockorange">set Speed to -1</code> with the <code class="blockgreen">pick random</code> block, try different values such as <strong>-10</strong> to <strong>-1</strong>. Your script should now look like this.</p>
+<li><p>Change the speed of each present by replacing <code class="blockorange">set Speed to -1</code> with the <code class="blockgreen">pick random</code> block. Try different values such as <strong>-10</strong> to <strong>-1</strong>. Your script should now look like this.</p>
 <p><img src="4f9d71ebac637289c3f08e64388c275ab38d87e3.png" alt="when FLAG clicked
     forever
         set [Finish v] to [0]
@@ -139,7 +139,7 @@
 </section>
 <section id="test-your-project-4" class="level2 flag">
 <h2>Test Your Project</h2>
-<p><strong>Click the green flag,</strong> do the presents fall at different speeds and colours?</p>
+<p><strong>Click the green flag.</strong> Do the presents fall at different speeds and colours?</p>
 </section>
 <section id="save-your-project-4" class="level2 save">
 <h2>Save your project</h2>
@@ -173,17 +173,17 @@
 <p>Let’s add some music to the game:</p>
 <ul>
 <li><p>Import the sound file <strong>Jingle_Bells.mp3</strong> to the <strong>Stage</strong>.</p></li>
-<li>Add the following script to the <strong>Stage</strong>, this will <code class="blockorange">set score to 0</code> when the game is started. It will also play Jingle Bells while the game is being played.</li>
-<li><p><img src="59a8c219b6ff3494b705cb76e1a3dcc290e51570.png" alt="when FLAG clicked
+<li><p>Add the following script to the <strong>Stage</strong>. This will <code class="blockorange">set score to 0</code> when the game is started. It will also play Jingle Bells while the game is being played.</p>
+<p><img src="59a8c219b6ff3494b705cb76e1a3dcc290e51570.png" alt="when FLAG clicked
     set [ScrollX v] to [0]
     set [Score v] to [0]
     play sound [Jingle_Bells v]" /></p></li>
 </ul>
-<p>Note, if at first the music sounds ‘choppy’ save your project, close Scratch and then open your project again.</p>
+<p>Note, if at first the music sounds ‘choppy’, save your project, close Scratch and then open your project again.</p>
 </section>
 <section id="test-your-project-5" class="level2 flag">
 <h2>Test Your Project</h2>
-<p><strong>Click the green flag,</strong> does the score change when Rudolph touches a present?</p>
+<p><strong>Click the green flag.</strong> Does the score change when Rudolph touches a present?</p>
 </section>
 <section id="save-your-project-5" class="level2 save">
 <h2>Save your project</h2>
@@ -192,7 +192,7 @@
 <section id="step-4-game-over" class="level1 activity">
 <h1>Step 4: Game over</h1>
 <ul>
-<li><strong>Let’s change our script to keep track of a score within the game.</strong> We can then use this later to work out when the game over message should appear.</li>
+<li>Let’s use our score to work out when the game over message should appear.</li>
 <li><p>Change the script on the <strong>Stage</strong> so when the <code class="blockorange">Score</code> reaches <strong>10</strong> we will <code class="blockyellow">broadcast</code> a <strong>GameOver</strong> message.</p>
 <p><img src="5f6ecd15b08d179c2d495da7e237286f2781f9c2.png" alt="when FLAG clicked
     set [ScrollX v] to [0]
@@ -213,7 +213,7 @@
 </ul>
 <section id="test-your-project-6" class="level2 flag">
 <h2>Test Your Project</h2>
-<p><strong>Click the green flag,</strong> does the score change when Rudolph touches a present?</p>
+<p><strong>Click the green flag.</strong> Does the score change when Rudolph touches a present?</p>
 </section>
 <section id="save-your-project-6" class="level2 save">
 <h2>Save your project</h2>
