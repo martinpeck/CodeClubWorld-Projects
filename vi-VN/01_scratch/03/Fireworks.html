@@ -45,11 +45,11 @@
 <ul>
 <li>Thêm một khối điểu khiển <code>when space key pressed</code> và ở đó làm cho tên lửa xuất hiện và lướt về phía con trỏ chuột.</li>
 </ul>
-<p><img src="259a2b754818d1824a4a90a632123ac2a7ddcaf1.png" alt="
+<p><img src="2be46551f003a8b35a8e5737e59f193b563fb8d8.png" alt="
     when FLAG clicked
     hide
 
-    when [space v] key pressed 
+    when [space v] key pressed
     show
     glide (1) secs to x: (mouse x) y: (mouse y)" /></p>
 </section>
@@ -63,11 +63,11 @@
 <ul>
 <li>Pháo hoa không bay từ bên này sang bên kia, do đó đảm bảo rằng nó luôn lướt về phía con trỏ chuột từ phía dưới màn hình. Trước khi chúng ta cho hiển thị tên lửa, dùng khối <code>go to block</code> để giúp nó di chuyển tới đáy màn hình nhưng giữ nguyên vị trí theo chiều dọc.</li>
 </ul>
-<p><img src="860f21a1a7af18f6a1bd8c93abd328e1c9609d04.png" alt="
+<p><img src="744d2b0d89aa84278a21f03d29b0e8b9781511ec.png" alt="
     when FLAG clicked
     hide
 
-    when [space v] key pressed 
+    when [space v] key pressed
     go to x: (mouse x) y: (-200)
     show
     glide (1) secs to x: (mouse x) y: (mouse y)" /></p>
@@ -81,10 +81,10 @@
 <ul>
 <li>Cuối cùng, hãy thực hiện công việc này bằng cách dùng chuột thay vì dấu cách. Để thực hiện nó, chúng ta có thể dùng lệnh trong một khối <strong>forever if mouse down</strong> (luôn luôn nếu dùng chuột).<br />Sau đó hoán đổi khối <strong>when space key pressed</strong> (khi ấn chuột) bằng khối <strong>when flag clicked</strong> (khi click vào lá cờ) và hãy chắc chắn rằng tên lửa được ẩn đi khi mọi thứ khởi động.</li>
 </ul>
-<p><img src="2385f76aa74b16d7b68a11021da88ff675c672a2.png" alt="
+<p><img src="6a4ea507c4a454f121741069df039b812f4eb644.png" alt="
     when FLAG clicked
     hide
-    forever 
+    forever
         if &lt;mouse down?&gt; then
             go to x: (mouse x) y: (-200)
             show
@@ -169,15 +169,15 @@
 <ul>
 <li>Bây giờ chúng ta làm cho mỗi vụ nộ trở nên độc đáo hơn bằng cách sử dụng lệnh <code class="blockpurple">set color effect</code>, và chọn một màu sắc bất kì trong khoảng từ <strong>1</strong> tới <strong>200</strong> trước khi hiển thị chúng.</li>
 </ul>
-<p><img src="ab4cca93ae691be97374355aefb7c04ae79f9eb6.png" alt="
+<p><img src="bc7aae3cc249bdacb7ac2db8c34e84a8e248a8a1.png" alt="
     when I receive [explode v]
     hide
     set [color v] effect to (pick random (1) to (200))
     go to [rocket v]
     show
     wait (1) secs
-    hide    
-    " /></p>
+    hide
+" /></p>
 <section id="chay-th-d-an-cua-ban-5" class="level2 flag">
 <h2>Chạy thử dự án của bạn</h2>
 <p><strong>Click vào lá cờ màu xanh.</strong></p>
@@ -199,7 +199,7 @@
 <ul>
 <li>Cuối cùng, hãy làm cho vụ nổ lớn hơn sau khi tên lửa phát nổ! Thay vì chờ trong một giây, đặt kích thước của sprite <strong>5%</strong> trước khi hiển thị nó, và sau khi nó đã được thể hiện, tăng kích thước <strong>2 fifty times</strong>, sử dụng lệnh <code class="blockorange">repeat</code>.</li>
 </ul>
-<p><img src="02b896c403dc388c4756a1b2b7a4b49452c2007f.png" alt="    
+<p><img src="ec6eb548fbb6bfac46b4bd5858471411c64f1853.png" alt="
     when I receive [explode v]
     hide
     set [color v] effect to (pick random (1) to (200))
@@ -210,7 +210,7 @@
         change size by (2)
     end
     hide
-    " /></p>
+" /></p>
 </section>
 <section id="chay-th-d-an-cua-ban-7" class="level2 flag">
 <h2>Chạy thử dự án của bạn</h2>
@@ -235,7 +235,7 @@
 <ul>
 <li>Để sửa lỗi này, chúng ta có thể thay thế các khối truyền phát bằng một khối truyền và chờ. Bằng cách này, vòng lặp sẽ không lặp lại tới khi vụ nổ kết thúc.</li>
 </ul>
-<p><img src="51d790b810c54f3bd5143fbe57929d98b79c1fe9.png" alt="    
+<p><img src="80ada47ddd30fbaa6170ca83711952f485d106a1.png" alt="
     when FLAG clicked
     hide
     forever
