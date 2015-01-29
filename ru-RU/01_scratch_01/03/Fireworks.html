@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html class="world"  lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Фейерверк — Code Club World Projects</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.ico">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Фейерверк</h1>
+      <span class="level-indicator">Уровень 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">русский язык</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch Term 1</a></li><li class="breadcrumbs-item current">Фейерверк</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+      
+<section class="level1 intro">
+<h1>Введение</h1>
+<p>В этом проекте мы создадим фейерверк над городом</p>
+<p><img src="fireworks_screenshot.png" alt="screenshot" /></p>
+</section>
+<section id="-1-------" class="level1 activity">
+<h1>ШАГ 1: Создать ракету, которая летит в направлении мыши</h1>
+<p><strong>Давайте импортируем разные картинки для игры</strong></p>
+<section id="--" class="level2 check">
+<h2>Список проверки действий</h2>
+<ul>
+<li>Создайте новый проект Скретча. Удалите кота, нажав на него правой кнопкой мыши и выбрав “Удалить”</li>
+<li>Замените фон, выбрав <strong>на открытом воздухе/city-with-water</strong></li>
+<li>Нажмите на кнопку <code class="blockgrey">Загрузить спрайт из файла</code>, чтобы добавить спрайт ракеты в проект (используйте картинку__Resources/Rocket.png__)..</li>
+<li>Сделайте, чтобы ракета скрывалась, когда нажат зеленый флаг.</li>
+</ul>
+<p>Теперь мы хотим, чтобы ракета двигалась к мышке, когда щелкнут кнопкой мышки.</p>
+<ul>
+<li>Добавьте блок “когда клавиша пробел нажата”, и под ним сделайте ракету появляющимся и летящей в сторону мыши</li>
+</ul>
+<p><img src="d2d6944a5eef99acbc559a349c3cdb0e58a676a2.png" alt="
+    когда щелкнут по ФЛАГУ
+    скрыть
+
+    когда клавиша [пробел] нажата 
+    показать
+    плыть (1) секунд в точку x: (мышка по x) y: (мышка по y)" /></p>
+</section>
+<section id="--" class="level2 flag">
+<h2>Проверьте свой проект</h2>
+<p><strong>Нажмите зеленый флаг, поместите мышку над сценой и нажмите пробел.</strong></p>
+<p>Ракета появляется и летит в сторону мышки?<br />Что происходит, если вы сдвинете мышку и нажмете пробел еще раз</p>
+</section>
+<section id="---1" class="level2 check">
+<h2>Список проверки действий</h2>
+<ul>
+<li>Фейерверк не должен летать от края экрана до края, так что давайте убедимся, что он всегда летит в сторону мышки от низа экрана. Прежде чем мы покажем ракету, используйте блок “перейти в”, укажите передвинуться ниже нижнего края экрана, но оставаться в том же месте по горизонтали.</li>
+</ul>
+<p><img src="0f349cf918542d1b19e15a539adbc4662c8be13f.png" alt="
+    когда щелкнут по ФЛАГУ
+    скрыть
+
+    когда клавиша [пробел] нажата 
+    перейти в x: (мышка по x) y: (-200)
+    показать
+    плыть (1) секунд в точку x: (мышка по x) y: (мышка по y)" /></p>
+</section>
+<section id="---1" class="level2 flag">
+<h2>Проверьте свой проект</h2>
+<p><strong>Нажмите зеленый флаг, поместите мышку над сценой и нажмите пробел.</strong><br />Ракета летит в сторону мышки от низа экрана? Что происходит, если вы сдвинете мышку и нажмете пробел еще раз</p>
+</section>
+<section id="---2" class="level2 check">
+<h2>Список проверки действий</h2>
+<ul>
+<li>Наконец, давайте сделаем эти действия, используя кнопку мыши вместо пробела. Чтобы сделать это, мы можем обернуть наш скрипт в <strong>всегда если мышка нажата</strong>.<br />Затем, замените блок <strong>когда клавиша пробел нажата</strong> для блока <strong>когда флаг нажат</strong>, и последнее, но не менее важное, убедитесь, что ракета скрыта, когда всё начинается.</li>
+</ul>
+<p><img src="8ad5b1db583504d4c18819aab5e157a51cc142da.png" alt="
+    когда щелкнут по ФЛАГУ
+    скрыть
+    всегда 
+        if &lt;мышка нажата?&gt; then
+            перейти в x: (мышка по x) y: (-200)
+            показать
+            плыть (1) секунд в точку x: (мышка по x) y: (мышка по y)" /></p>
+</section>
+<section id="---2" class="level2 flag">
+<h2>Проверьте свой проект</h2>
+<p><strong>Нажмите зеленый флаг, поместите мышку над сценой и нажмите кнопку мыши. Нажмите снова на соседней точке.</strong></p>
+</section>
+<section class="level2 try">
+<h2>Эксперементируйте</h2>
+<ol>
+<li>Попробуйте сделать некоторые ракеты медленнее или быстрее, чем остальные.</li>
+<li>Попробуйте изменить точку, где ракета начинает движение в сторону мышки, чтобы сделать небольшой угол</li>
+</ol>
+</section>
+<section id="--" class="level2 save">
+<h2>Сохраните свой проект</h2>
+</section>
+</section>
+<section id="-2---" class="level1 activity">
+<h1>ШАГ 2: Делаем ракету взрывающейся</h1>
+<section id="---3" class="level2 check">
+<h2>Список проверки действий</h2>
+<ul>
+<li>Первый шаг, чтобы сделать взрыв ракеты, это сделать ёё издающей звук взрыва <strong>Resources/bang.wav</strong>, прежде, чем она начнет двигаться, и затем скрывать себя, когда она дойдет до мышки Чтобы импортировать звук, перейдите на закладку “Звуки” и нажмите кнопку <code class="blockgrey">Загрузить звук из файла</code></li>
+</ul>
+<p><img src="15a7ad3796141d97675e2acea6f616f068a5fddc.png" alt="
+    когда щелкнут по ФЛАГУ
+    скрыть
+    всегда
+        if &lt;мышка нажата?&gt; then
+            перейти в x: (мышка по x) y: (-200)
+            играть звук [bang]
+            показать
+            плыть (1) секунд в точку x: (мышка по x) y: (мышка по y)
+            скрыть" /></p>
+<ul>
+<li>Затем, сделайте, чтобы ракета передавала новое сообщение, когда она взрывается Мы будем отслеживать это сообщение позже</li>
+</ul>
+<p><img src="a1ff6655ddb64547b982f357d33b15564408bcbe.png" alt="
+    когда щелкнут по ФЛАГУ
+    скрыть
+    всегда
+        if &lt;мышка нажата?&gt; then
+            перейти в x: (мышка по x) y: (-200)
+            играть звук [bang]
+            показать
+            плыть (1) секунд в точку x: (мышка по x) y: (мышка по y)
+            скрыть
+            передать [взрыв v]" /></p>
+</section>
+<section id="---3" class="level2 flag">
+<h2>Проверьте свой проект</h2>
+<p><strong>Нажмите зеленый флаг.</strong><br />Удостоверьтесь, что ракеты издает звук и скрывается, когда она достигает мышки</p>
+</section>
+<section id="---4" class="level2 check">
+<h2>Список проверки действий</h2>
+<ul>
+<li>Создайте новый скрипт из файла, <strong>Resources/firework1.png</strong></li>
+<li>Когда спрайт получает сообщение “взрыв”, он должен скрыть себя, и затем переместится на позицию ракеты, используя блок “перейти в”, показать себя, и затем исчезнуть секунду спустя.</li>
+</ul>
+<p><img src="85173466f8d7a6b2cae1ae0a2132516f7efbca16.png" alt="
+    когда я получу [взрыв]
+    скрыть
+    перейти в [rocket v]
+    показать
+    ждать (1) секунд
+    скрыть" /></p>
+</section>
+<section id="---4" class="level2 flag">
+<h2>Проверьте свой проект</h2>
+<p><strong>Запустите еще одну ракету в полет.</strong><br />Заменяет ли она графику взрыва, когда взрывается сама<br />Что случается, когда вы держите кнопку мыши нажатой и двигаете мышку? (Не волнуйтесь, мы поправим это потом).</p>
+</section>
+<section id="---1" class="level2 save">
+<h2>Сохраните свой проект</h2>
+</section>
+</section>
+<section id="-3----" class="level1 activity">
+<h1>Шаг 3: Сделать каждый взрыв уникальным</h1>
+<ul>
+<li>Теперь мы можем сделать каждый взрыв еще более уникальным, используя блок <code class="blockpurple">установить эффект</code>, и выбрав произвольный цвет между <strong>1</strong> и <strong>200</strong>, прежде чем показывать его.</li>
+</ul>
+<p><img src="466e35d52db6cc3726ef9da1c462d2a4a2b357c2.png" alt="
+    когда я получу [взрыв]
+    скрыть
+    установить эффект [цвет v] в значение (выдать случайное число от (1) до (200))
+    перейти в [rocket v]
+    показать
+    ждать (1) секунд
+    скрыть  
+    " /></p>
+<section id="---5" class="level2 flag">
+<h2>Проверьте свой проект</h2>
+<p><strong>Нажмите на зеленый флаг.</strong></p>
+<p>Имеет ли каждый взрыв различный цвет?</p>
+</section>
+<section id="---5" class="level2 check">
+<h2>Список проверки действий</h2>
+<ul>
+<li>Давайте добавим некоторое число различных видов взрывов, используя файлы <strong>Resources/firework2.png</strong> и <strong>Resources/firework3.png</strong>, и переключаясь между ними для каждой ракеты, прежде чем показывать взрыв..</li>
+</ul>
+</section>
+<section id="---6" class="level2 flag">
+<h2>Проверьте свой проект</h2>
+<p><strong>Нажмите на зеленый флаг.</strong></p>
+<p>Имеет ли каждая ракета различную графику взрывов?</p>
+</section>
+<section id="---6" class="level2 check">
+<h2>Список проверки действий</h2>
+<ul>
+<li>Наконец, давайте сделаем взрывы, увеличивающиеся после разрыва ракеты! Вместо того, чтобы ждать секунду, установите размер спрайта в <strong>5%</strong> прежде чем показывать его, и затем, как только он покажется, увеличивайте размер на <strong>2 каждые 50 раз</strong>, используя блок <code class="blockorange">повторить</code>.</li>
+</ul>
+<p><img src="66c7a8e292f8fb9d8046ff9c1d1c5f5c543f2cf7.png" alt="    
+    когда я получу [взрыв]
+    скрыть
+    установить эффект [цвет v] в значение (выдать случайное число от (1) до (200))
+    перейти в [rocket v]
+    показать
+     установить размер (5) %
+    повторять (50)
+        изменить размер на (2)
+    конец
+    скрыть
+    " /></p>
+</section>
+<section id="---7" class="level2 flag">
+<h2>Проверьте свой проект</h2>
+<p><strong>Нажмите на зеленый флаг.</strong></p>
+<p>Начинает ли графика взрыва распространятся от центра ракеты и медленно растет со временем?</p>
+</section>
+<section id="-1" class="level2 try">
+<h2>Эксперементируйте</h2>
+<ul>
+<li>Почему бы не попробовать сделать каждый взрыв еще более уникальным, изменяя размер и скорость роста взрыва?</li>
+</ul>
+</section>
+<section id="---2" class="level2 save">
+<h2>Сохраните свой проект</h2>
+</section>
+</section>
+<section id="-4------" class="level1 activity">
+<h1>Шаг 4: Исправить баг (ошибку) в передаче сообщения</h1>
+<p>Помните, ранее мы видели ошибку (баг), когда мы держали кнопку мыши нажатой?<br />Это происходит, так как когда ракета передает сообщение о взрыве, она немедленно повторяет цикл и перемещает ракету к низу сцены. Это случается прежде чем взрыв переместится на позицию ракеты.</p>
+<section id="---7" class="level2 check">
+<h2>Список проверки действий</h2>
+<ul>
+<li>Чтобы исправить это, мы можем заменить блок “передать” на блок “передать и ждать”. Таким образом, цикл не будет повторятся, пока взрыв не расширится до конца.</li>
+</ul>
+<p><img src="3df555560dc87c637d1f564f2f19fd325a87bf28.png" alt="    
+    когда щелкнут по ФЛАГУ
+    скрыть
+    всегда
+        if &lt;мышка нажата?&gt; then
+            перейти в x: (мышка по x) y: (-200)
+            играть звук [bang]
+            показать
+            плыть (1) секунд в точку x: (мышка по x) y: (мышка по y)
+            скрыть
+            передать [взрыв v] и ждать
+" /></p>
+</section>
+<section id="---8" class="level2 flag">
+<h2>Проверьте свой проект</h2>
+<p><strong>Нажмите зеленый флаг, удерживайте кнопку мыши нажатой и перемещайте мышку по сцене.</strong></p>
+<p>Появляется ли графика взрыва в нужном месте и в нужное время?</p>
+</section>
+<section id="---3" class="level2 save">
+<h2>Сохраните свой проект</h2>
+<p><strong>Отлично, вы закончили, теперь можете насладиться игрой!</strong><br />Не забудьте поделиться вашей игрой с друзьями и семьей, нажав кнопку <strong>Поделиться</strong> в верхнем правом углу!</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
+      <p>&copy; 2015 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <div id="legend">
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

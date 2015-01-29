@@ -27,7 +27,7 @@
       
 <section id="introduction" class="level1 intro">
 <h1>Introduction</h1>
-<p>Have you ever wondered how the worldwide web works? Of course you have! Today you will learn how to make web sites so you too can contribute to building it. Websites are written using <strong>HTML</strong>, which stands for <strong>HyperText Markup Language</strong>. You will find out more about it as you build your page.</p>
+<p>Have you ever wondered how the world wide web works? Of course you have! Today you will learn how to make websites so you too can contribute to building it. Websites are written using <strong>HTML</strong>, which stands for <strong>HyperText Markup Language</strong>. You will find out more about it as you build your page.</p>
 </section>
 <section id="step-1-what-are-web-pages" class="level1 activity">
 <h1>Step 1: What are web pages?</h1>
@@ -45,7 +45,7 @@
 <p>What program was used to open the file this time? The web browser is a special program that knows how to interpret text files written using <strong>HTML language</strong>. We haven’t added any <strong>HTML</strong> yet, we simply put in some text, but the browser doesn’t care! As long as you give it an <code>.html</code> file, it will do its best to show you the file as best as it can understand it.</p>
 <p>This is very useful: even when a website contains errors, the browser will try to figure out how to show it to you anyway.</p>
 <p><strong>How can we view these files?</strong></p>
-<p>When you type in the address in your browser, your request gets passed along to a computer which is always turned on and configured to allow you to see the pages that live inside it. This computer is called a server. When it receives a request from your computer, it looks for all the necessary files: the <code>.html</code> file and sends you that with anything else that the page needs, like images and videos.</p>
+<p>When you type in the address in your browser, your request gets passed along to a computer which is always turned on and configured to allow you to see the pages that live inside it. This computer is called a server. When it receives a request from your computer, it looks for all the necessary files, like the <code>.html</code> file, and sends you that with anything else that the page needs, like images and videos.</p>
 <section id="can-i-have-this-page-please" class="level3">
 <h3>Can I have this page please?</h3>
 <p><img src="diagram_screenshot.png" alt="screenshot" /><br />Here you go.</p>
@@ -56,10 +56,10 @@
 <h1>Step 2: What is HTML?</h1>
 <p>HTML is a <strong>markup</strong> language - it means that it is used to describe what things are.</p>
 <p>Even though the browser will try to display things as best as it can, it helps it to know what these things are.</p>
-<p>To tell browser that, we use <code>tags</code>.</p>
+<p>To tell the browser that, we use <code>tags</code>.</p>
 <p>Tags look like this: <code>&lt;p&gt;This is some text.&lt;/p&gt;</code></p>
 <p><code>&lt;p&gt;</code> is short for <strong>paragraph</strong>.</p>
-<p>There is an opening tag which is this: <code>&lt;p&gt;</code> and a matching closing one with a forward slash: <code>&lt;/p&gt;</code>. The browser knows that anything in between the two tags is a paragraph of text.</p>
+<p>There is an opening tag, like this: <code>&lt;p&gt;</code>, and a matching closing one with a forward slash: <code>&lt;/p&gt;</code>. The browser knows that anything in between the two tags is a paragraph of text.</p>
 <p>Tags can have attributes, which are bits of useful information about the element. Let’s have a look at the link tag:</p>
 <p><code>&lt;a href=&quot;http://codeclub.org.uk&quot;&gt;Visit CodeClub website&lt;/a&gt;</code></p>
 <p><code>&lt;a&gt;</code> stands for <strong>anchor</strong>, which is what links used to be called.</p>
@@ -69,7 +69,7 @@
 <h2>Activity Checklist</h2>
 <ul>
 <li>Open the <code>page.html</code> file.</li>
-<li>Ask the volunteer whether you can use X-Ray Goggles or developer tools to look at the code (developer is someone who makes things with code).</li>
+<li>Ask the volunteer whether you can use X-Ray Goggles or developer tools to look at the code (a developer is someone who makes things with code).</li>
 </ul>
 <section id="if-you-can-use-x-ray-goggles" class="level3">
 <h3>If you can use X-Ray Goggles:</h3>
@@ -81,14 +81,14 @@
 <section id="if-you-are-using-developer-tools" class="level3">
 <h3>If you are using developer tools:</h3>
 <ul>
-<li>Move around the page. Right click anything interesting, and then click <code>Inspect element</code>. A panel will open up which will show you the page’s code as the same time as the page.</li>
+<li>Move around the page. Right click anything interesting, and then click <code>Inspect element</code>. A panel will open up which will show you the page’s code at the same time as the page.</li>
 <li>Move your mouse over different pieces of code. The corresponding things on the page will be highlighted, so you can see which bit does what.</li>
 <li>Try to inspect all parts of the page. Can you figure out what the different tag names stand for?</li>
 </ul>
 <p>We already know <code>&lt;p&gt;</code> and <code>&lt;a&gt;</code>.</p>
 <p><code>&lt;ol&gt;</code> - ordered list<br /><code>&lt;ul&gt;</code> - unordered list<br /><code>&lt;li&gt;</code> - list item<br /><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code> - headings<br /><code>&lt;hr&gt;</code> - horizontal rule<br /><code>&lt;div&gt;</code> - a box for grouping things<br /><code>&lt;img&gt;</code> - a special element, which unlike others doesn’t have a closing tag. We use it for putting the images in.</p>
 <p>There are also some tags that we will always use in HTML documents, and they are:</p>
-<p><code>&lt;html&gt;</code> - tells the browser where we put out code<br /><code>&lt;head&gt;</code> - inside <code>&lt;head&gt;</code> we put things which may be useful to the browser, but which don’t appear as text on the page. In this example we put a <code>&lt;title&gt;</code> there, which then shows up at the top of the browser window.<br /><code>&lt;body&gt;</code> - that’s where we put the things we want to appear on the page</p>
+<p><code>&lt;html&gt;</code> - tells the browser where we put our code<br /><code>&lt;head&gt;</code> - inside <code>&lt;head&gt;</code> we put things which may be useful to the browser, but which don’t appear as text on the page. In this example we put a <code>&lt;title&gt;</code> there, which then shows up at the top of the browser window.<br /><code>&lt;body&gt;</code> - that’s where we put the things we want to appear on the page</p>
 </section>
 </section>
 <section id="activity-checklist-2" class="level2 check">
@@ -111,7 +111,7 @@
 <h2>Things to try</h2>
 <ul>
 <li>Create your own paragraph of text.</li>
-<li>Make a link that points to another part of page (hint: it is something to do with id - look out for a link that takes you to the kitten).</li>
+<li>Make a link that points to another part of the page (hint: it is something to do with id - look out for a link that takes you to the kitten).</li>
 <li>Add your own headings where you think they might be useful. What happens if you change the heading numbers, for example from <code>&lt;h3&gt;</code> to <code>&lt;h4&gt;</code>?</li>
 <li>What would you have to do to link to a different page?</li>
 <li>If you are using developer tools, once you bring up the panel with the code try double-clicking on the code that looks interesting. See if you can change it. Now you get a live preview without having to move between the browser and the code editor. Cool, huh? Now refresh the page. What happened? When you edit code like this it doesn’t get saved, so you can preview what would happen if you did, but don’t mess up your file, so you can experiment lots and always go back.</li>
