@@ -6,7 +6,7 @@
 
     <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
 
-    <title>(Beta) Balloons — Code Club World Projects</title>
+    <title>Balloons — Code Club World Projects</title>
     <link rel="shortcut icon" href="../../../img/ccw_favicon.ico">
 
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -17,22 +17,13 @@
   <body class="index-template world">
     <header class="header" role="banner">
       <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
-      <h1 class="title">(Beta) Balloons</h1>
+      <h1 class="title">Balloons</h1>
       <span class="level-indicator">Scratch 1</span>
     </header>
 
     <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch 1</a></li><li class="breadcrumbs-item current">Balloons</li></ul></nav>
 
     <main class="main lesson-steps" role="main">
-      <section id="heads-up" class="level1 beta">
-<h1>Heads Up!</h1>
-<p>This project is in Beta. That means we’re still testing it, and there’s a small chance there could be some bugs or typos. If you’re a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/15QLeJ_aDklioXl5cUyUK1KqZ7lUhCiewl3qiwXOg41M/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email <script type="text/javascript">
-<!--
-h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
-// -->
-</script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
-</section>
       
 <section id="introduction" class="level1 intro">
 <h1>Introduction</h1>
@@ -125,12 +116,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <p><img src="b2b0c8ccad0f799890f8e54a7162a45ef8031aff.png" alt="    when this sprite clicked
     switch costume to [burst v]
     play sound [pop v]" /></p></li>
-<li><p>Test out your project. Can you pop the balloon? Does it work as you expected? You’ll need to improve this code, so that when the balloon is clicked, it shows the ‘burst’ costume for a short time, and is then deleted. You can make all of this happen by changing your balloon <code class="blockevents">when sprite clicked</code> code to this:</p>
-<p><img src="ca43544165d20196a6c859fc7edd73f6551ee0e5.png" alt="    when this sprite clicked
+<li><p>Test out your project. Can you pop the balloon? Does it work as you expected? You’ll need to improve this code, so that when the balloon is clicked, it shows the ‘burst’ costume for a short time, and is then hidden. You can make all of this happen by changing your balloon <code class="blockevents">when sprite clicked</code> code to this:</p>
+<p><img src="f498a457d2413e65c16fa7a0db65e5f8a04d832f.png" alt="    when this sprite clicked
     switch costume to [burst v]
     play sound [pop v]
     wait (0.3) secs
-    delete this clone" /></p></li>
+    hide" /></p></li>
 <li><p>Now that you’re deleting the balloon when it’s clicked, you’ll also need to add a <code class="blocklooks">show</code> block to the start of the <code class="blockevents">when flag clicked</code> code.</p></li>
 <li><p>Try popping a balloon again, to check that it works properly. If you find it difficult to pop the balloon without dragging it around, you can play the game in fullscreen mode by clicking this button:</p>
 <p><img src="balloons-fullscreen.png" alt="screenshot" /></p></li>
@@ -156,12 +147,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li><p>When a new game is started (by clicking the flag), you want to set the player’s score to 0. Add this code to the top of the balloon’s <code class="blockevents">when flag clicked</code> code:</p>
 <p><img src="19ec795242f7c718fa32037e3e42beef34e17409.png" alt="set [score v] to [0]" /></p></li>
 <li><p>Whenever a balloon is popped, you need to add 1 to the score:</p>
-<p><img src="80f1025748f5e77e65f645682b523ec7ec99471e.png" alt="    when this sprite clicked
+<p><img src="c9fd080b39e706c163406fd779d1e8cde1695bb9.png" alt="    when this sprite clicked
     switch costume to [burst v]
     play sound [pop v]
     wait (0.3) secs
     change [score v] by (1)
-    delete this clone" /></p></li>
+    hide" /></p></li>
 <li><p>Run your program again and click the balloon. Does your score change?</p></li>
 </ul>
 </section>
@@ -181,7 +172,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <p>Another way of getting lots of balloons is to <em>clone</em> the balloon sprite.</p>
 <p>Drag your balloon <code class="blockevents">when flag clicked</code> code (except the <code class="blockdata">score</code> block) off of the event (don’t delete it), and instead add code to create 20 balloon clones:</p>
 <p><img src="balloons-clone-1.png" alt="screenshot" /></p></li>
-<li><p>You can now attach the code you’ve just removed to the <code class="blockevents">when I start as a clone</code> event, so that your balloon code now looks like this:</p>
+<li><p>You can now attach the code you’ve just removed to the <code class="blockevents">when I start as a clone</code> event. You should also replace the <code class="blocklooks">hide</code> block in the balloon-clicking script with a <code class="blockcontrol">delete this clone</code> block. Your balloon code should now look like this:</p>
 <p><img src="balloons-clone-2.png" alt="screenshot" /></p>
 <p>Now when the flag is clicked, your main balloon sprite will hide and then clone itself 20 times. When each of these 20 clones is started, they will each bounce around the screen randomly, just as they did before.</p></li>
 <li><p>Test your project to see if you can pop the 20 balloons!</p></li>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="world"  lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Охотники за привидениями — Code Club World Projects</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.ico">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Охотники за привидениями</h1>
+      <span class="level-indicator">Уровень 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">русский язык</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch Term 1</a></li><li class="breadcrumbs-item current">Охотники за привидениями</li></ul></nav>
+
+    <main class="main lesson-steps" role="main">
+      
+<section class="level1 intro">
+<h1>Введение</h1>
+<p>Этот проект похож на ярморочную игру “Ударь крота”. Вы получаете очки за попадание по привидениям, которые появляются на экране. Цель - получить как можно больше очков за 30 секунд.</p>
+<p><img src="ghostbsuters_screenshot.png" alt="screenshot" /></p>
+</section>
+<section id="-1---" class="level1 activity">
+<h1>ШАГ 1: Создать летающее привидение</h1>
+<section id="-" class="level2 check">
+<h2>Список действий</h2>
+<p>+. <strong>Создайте новый проект.</strong></p>
+<ul>
+<li><strong>Удалите спрайт кота</strong> замените фон сцены на <strong>природа/woods</strong>.</li>
+<li>Используйте кнопку <code>выбрать спрайт из библиотеки</code> чтобы добавить новый спрайт привидения в проект (используйте костюм <strong>фантастика/ghost1</strong> ).</li>
+</ul>
+<p><strong>Теперь мы хотим заставить наше привидение двигаться</strong></p>
+<ul>
+<li><p>Добавьте <code>переменную</code> только для этого спрайта, назовите её <code>скорость</code>.<br />На <strong>Сцене</strong>, монитор в верхнем левом углу для этой переменной должен говорить “<strong>Ghost1: скорость</strong>”.<br />Если он просто говорит “скорость”, удалите эту переменную и создайте её снова, только для этого спрайта. Уберите галочку рядом с названием переменной в <strong>блоке Данные</strong>, так, что она не будет отражаться на Сцене.<br />Переменная скорость будет контролировать, как быстро будет двигаться наше привидение. Мы используем переменную так, что мы можем контроллировать, как быстро движется привидение во время выполнения игры.</p></li>
+<li><p>Мы хотим, чтобы привидение начало двигаться, когда стартует игра, <strong>сделайте скрип, вроде этого</strong>:</p></li>
+</ul>
+<p><img src="074fad3ca80d4c93efb8c2edb6b476cf40e01730.png" alt="
+    когда щелкнут по флагу
+    задать [скорость] значение (5)
+    всегда
+        идти [скорость] шагов" /></p>
+</section>
+<section id="--" class="level2 flag">
+<h2>Проверьте ваш проект</h2>
+<p><strong>Щелкните на зеленый флаг</strong> и посмотрите, что делает ваш призрак. Почему он застревает на краю экрана?</p>
+</section>
+<section id="--1" class="level2 check">
+<h2>Список действий</h2>
+<ul>
+<li>Чтобы остановить застревание привидения, мы должны дать возможность идти другим путем, когда оно касается края экрана. Измените ваш существующий скрипт, добавив к нему блок “если на краю, оттолкнуться” (раздел - движение).<br /><code>move speed steps</code> block.</li>
+</ul>
+<p><img src="f16cae731eb935f4298087655caeea0221e1dbdf.png" alt="
+    когда щелкнут по флагу
+    задать [скорость] значение (5)
+    всегда
+        идти [скорость] шагов
+        если на краю, оттолкнуться" /></p>
+<ul>
+<li>Чтобы призрак не крутился с ног на голову, выберите стиль вращения “влево-вправо” в информации спрайта.</li>
+</ul>
+</section>
+<section id="---1" class="level2 flag">
+<h2>Проверьте ваш проект</h2>
+<p><strong>Щелкните на зеленый флаг.</strong><br />Движется ли призрак от края к краю экрана.</p>
+</section>
+<section id="--" class="level2 save">
+<h2>Сохраните ваш проект</h2>
+</section>
+<section class="level2 try">
+<h2>Эксперементируйте</h2>
+<ul>
+<li><strong>Попробуйте изменить переменную скорость и посмотрите, как движется привидение, быстро или медленно</strong></li>
+<li><strong>Как вы можете сделать привидение летящим всё быстрее, в зависимости от того, как долго оно летает.?</strong><br />(Это хитрая штука, так что не беспокойтесь, если вы не увидели, как это сделать. Вы получите больше подсказок, по мере работы над проектом.)</li>
+</ul>
+</section>
+</section>
+<section id="-2------" class="level1 activity">
+<h1>ШАГ 2: Сделать призрака появляющимся и пропадающим произвольно</h1>
+<p>Чтобы сделать игру более веселой, мы хотим, чтобы призрак появлялся и испарялся произвольно, случайно. Мы сделаем это с помощью другого скрипта, который выполняется одновременно с тем, который передвигает призрака. Этот новый скрипт должен спрятать привидение на случайное время, затем показать его на случайное время и повторят это вечно (или пока ишра не закончится)</p>
+<section id="--2" class="level2 check">
+<h2>Список действий</h2>
+<p><strong>Создайте дополнительный скрипт для призрака:</strong></p>
+<p><img src="d9747d79e7e95caedd5fc0f44267d23c09e9d012.png" alt="
+    когда щелкнут по флагу
+    всегда
+        скрыть
+        ждать (выдать случайное от (2) до (5))
+        показать
+        ждать (выдать случайное от (3) до (5))
+" /></p>
+</section>
+<section id="---2" class="level2 flag">
+<h2>Проверьте ваш проект</h2>
+<p><strong>Щелкните на зеленый флаг.</strong><br />Движется ли призрак по экрану и пропадает ли он и появляется ли снова случайно?</p>
+</section>
+<section id="---1" class="level2 save">
+<h2>Сохраните ваш проект</h2>
+</section>
+<section class="level2 try">
+<h2>Эксперементирйте</h2>
+<ul>
+<li><strong>Попробуйте поменять границы для выбора случайного числа. Что происходит, если вы берете слишком большие или слишком маленькие числа?</strong><br />(Дает ли это вам дополнительные посказки, как увеличивать скорость призрака, по ходу игры?)</li>
+</ul>
+</section>
+</section>
+<section id="-3--------" class="level1 activity">
+<h1>ШАГ 3: Сделать призрака пропадающим, при клике по нему мышкой</h1>
+<p>Чтобы превратить это в игру, мы должны дать игрокам сделать что-то. Они должны кликнуть по призраку, чтобы он исчез. Когда по привидению кликают, мы хотим, чтобы он исчез и издал звук.</p>
+<section id="--3" class="level2 check">
+<h2>Список действий</h2>
+<ul>
+<li><p>На закладке <strong>Звуки</strong> , импортируйте звук из библиотеки <strong>электроника/fairydust</strong>.</p></li>
+<li><p><strong>Добавьте этот скрипт к призраку</strong>:</p></li>
+</ul>
+<p><img src="bdf4f33a060f72856d207915a325bab45fa6b654.png" alt="
+    когда [спрайт] нажат
+    скрыть
+    играть звук [Fairydust]" /></p>
+</section>
+<section id="---3" class="level2 flag">
+<h2>Проверьте ваш проект</h2>
+<p><strong>Щелкните на зеленый флаг.</strong></p>
+<p>Исчезает ли призрак и издает ли он звук, когда по нему кликаешь?</p>
+</section>
+<section id="---2" class="level2 save">
+<h2>Сохраните ваш проект</h2>
+</section>
+<section id="-1" class="level2 try">
+<h2>Эксперементируйте</h2>
+<p><strong>Спросите учителя, можете ли вы записать собственный звук для проигрывания.</strong></p>
+</section>
+</section>
+<section id="-4----" class="level1 activity">
+<h1>ШАГ 4: Добавить счет и таймер</h1>
+<p>Мы имеем привидение, но теперь мы хотим сделать игру! Мы хотим получать очки каждый раз, когда мы кликаем на привидение, но так же мы хотим ограничить лимит времени на игру. Мы можем использовать переменные для счета и таймера.</p>
+<section id="--4" class="level2 check">
+<h2>Список действий</h2>
+<ul>
+<li>Создайте новую переменную для всех спрайтов, называемую <strong>счет</strong>, и затем скрипт для привидения, которые увеличивает эту переменную, когда по нему попадают.</li>
+</ul>
+<p><img src="a01757df95ca7b0516b2d2f5b7e17b134e9e01b5.png" alt="
+    когда [спрайт] нажат
+    скрыть
+    играть звук [Fairydust]
+    изменить счет на (1)" /></p>
+<ul>
+<li>Переключитесь на <strong>Сцену</strong> и создайте <strong>новую переменную</strong> (на этот раз только для сцены), с названием <strong>таймер</strong>. Добавьте новый скрипт, который при нажатии зеленого флага устанавливает “таймер” значением <strong>30</strong> и сбрасывает счет до <strong>0</strong>. Затем используйте блок “повторять пока не”, чтобы подождать секунду и затем уменьшить значение переменной <strong>таймер</strong> на 1. Это должно повторяться пока таймер не станет равным <strong>0</strong>, после чего мы используем блок “стоп всё”, чтобы остановить игру.</li>
+</ul>
+<p><img src="96a80131b3b5d6f02f804286be92943d4bc9d8e3.png" alt="
+    когда щелкнут по флагу
+    задать [таймер] значение (30)
+    задать [счет] значение (0)
+    повторять пока не &lt;[таймер] = 0&gt;
+        ждать (1) секунд
+        изменить [таймер] на (-1)
+    
+    стоп всё" /></p>
+</section>
+<section id="---4" class="level2 flag">
+<h2>Проверьте ваш проект</h2>
+<p><strong>Щелкните на зеленый флаг.</strong></p>
+</section>
+<section id="---3" class="level2 save">
+<h2>Сохраните ваш проект</h2>
+</section>
+<section id="-2" class="level2 try">
+<h2>Эксперементируйте</h2>
+<ol>
+<li><strong>Как увеличивать скорость призрака, с течением хода игры?</strong></li>
+<li><strong>Отличная работы, вы закончили базовую игру. Еще остается много вещей, которые можно сделать с игрой. Попробуйте сделать это, приняв вызов!</strong></li>
+</ol>
+</section>
+<section id="---" class="level2 challenge">
+<h2>Вызов: добавить больше призраков</h2>
+<p>Один призрак хорошо, а много - лучше! <strong>Давайте сделае три призрака, летающих вокруг.</strong></p>
+<ol>
+<li>Сдублируйте призрака в списке спрайтов, нажав на него правой кнопкой мыши.</li>
+<li>Для каждого призрака <strong>поправьте размер спрайта</strong>, чтобы призраки были разных размеров.</li>
+<li>Для каждого призрака измените переменную <strong>скорость</strong>, так, чтобы они летали с разными скоростями.</li>
+<li>Переместите призраков по сцене, чтобы они летали в разных местах</li>
+</ol>
+</section>
+<section id="---5" class="level2 flag">
+<h2>Проверьте ваш проект</h2>
+<p><strong>Щелкните на зеленый флаг.</strong></p>
+<p>Вы имеет трех призраков, которые движутся от края до края по экрану, произвольно исчезая и пропадая, и пропадая, когда вы кликаете по ним?</p>
+</section>
+<section id="---4" class="level2 save">
+<h2>Сохраните ваш проект</h2>
+</section>
+<section id="-3" class="level2 try">
+<h2>Эксперементируйте</h2>
+<ol>
+<li><strong>Какое количество призраков подходит для этой игры?</strong></li>
+<li><strong>Вы можете сделать призраков, которые выглядят по разному? Вы можете или отредактировать их костюмы, или использовать блоки из набора Внешность, чтобы изменить их.</strong></li>
+<li><strong>Вы изменить стоимость призраков, так, чтобы они приносили разные очки? Как насчет токо, чтобы сделать самого быстрого (и самого маленького) призрака стоимостью 10 очков?</strong></li>
+</ol>
+<p><strong>Отлично, вы закончили, теперь вы можете насладиться игрой!</strong><br />Не забудьте поделиться вашей игрой с друзьями и семьей, нажав кнопку <strong>Поделиться</strong> в верхнем правом углу!</p>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
+      <p>&copy; 2015 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <div id="legend">
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
