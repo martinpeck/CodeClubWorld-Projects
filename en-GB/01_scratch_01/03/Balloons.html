@@ -23,6 +23,10 @@
 
     <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch 1</a></li><li class="breadcrumbs-item current">Balloons</li></ul></nav>
 
+          <section class="registration-note">
+        <p>All Code Clubs <u>must be registered</u>. Registered clubs appear on the map at <a href="http://www.codeclubworld.org/">codeclubworld.org</a> - if your club is not on the map then visit <a href="http://jumpto.cc/18CpLPy">jumpto.cc/18CpLPy</a> to find out what to do.</p>
+      </section>
+    
     <main class="main lesson-steps" role="main">
       
 <section id="introduction" class="level1 intro">
@@ -140,7 +144,7 @@
 <li><p>To keep the player’s score, you need a place to put it. A <em>variable</em> is a place to store data that can change, like a score.</p>
 <p>To create a new variable, click on the ‘Scripts’ tab, select <code class="blockdata">Data</code> and then click ‘Make a Variable’.</p>
 <p><img src="balloons-score.png" alt="screenshot" /></p>
-<p>Type ‘score’ as the name of the variable, and click ‘OK’ to create it. You’ll then see lots of code blocks that can be used with your <code class="blockdata">score</code> variable.</p>
+<p>Type ‘score’ as the name of the variable, make sure that it is available for all sprites, and click ‘OK’ to create it. You’ll then see lots of code blocks that can be used with your <code class="blockdata">score</code> variable.</p>
 <p><img src="balloons-variable.png" alt="screenshot" /></p>
 <p>You’ll also see the score in the top-left of the stage.</p>
 <p><img src="balloons-stage-score.png" alt="screenshot" /></p></li>
@@ -165,17 +169,14 @@
 <p>Popping 1 balloon isn’t much of a game, so let’s add lots more!</p>
 <section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
+<p>One simple way to get lots of balloons is just to right-click on the balloon sprite and click ‘duplicate’. This is OK if you only want a few, but what if you need 20? or 100? or 1000? Are you really going to click ‘duplicate’ that many times?</p>
+<pre><code>A much better way of getting lots of balloons is to _clone_ the balloon sprite.</code></pre>
 <ul>
-<li><p>One simple way to get lots of balloons is just to right-click on the balloon sprite and click ‘duplicate’. If you keep doing that, you’ll have lots of balloons!</p>
-<p><img src="balloons-duplicate.png" alt="screenshot" /></p>
-<p>Duplicating your balloon sprite is OK if you only want a few, but what if you need 20? or 100? or 1000? Are you really going to click ‘duplicate’ that many times?</p>
-<p>Another way of getting lots of balloons is to <em>clone</em> the balloon sprite.</p>
-<p>Drag your balloon <code class="blockevents">when flag clicked</code> code (except the <code class="blockdata">score</code> block) off of the event (don’t delete it), and instead add code to create 20 balloon clones:</p>
-<p><img src="balloons-clone-1.png" alt="screenshot" /></p></li>
-<li><p>You can now attach the code you’ve just removed to the <code class="blockevents">when I start as a clone</code> event. You should also replace the <code class="blocklooks">hide</code> block in the balloon-clicking script with a <code class="blockcontrol">delete this clone</code> block. Your balloon code should now look like this:</p>
-<p><img src="balloons-clone-2.png" alt="screenshot" /></p>
-<p>Now when the flag is clicked, your main balloon sprite will hide and then clone itself 20 times. When each of these 20 clones is started, they will each bounce around the screen randomly, just as they did before.</p></li>
-<li><p>Test your project to see if you can pop the 20 balloons!</p></li>
+<li><p>Drag your balloon <code class="blockevents">when flag clicked</code> code (except the <code class="blockdata">score</code> block) off of the event (don’t delete it), and instead add code to create 20 balloon clones.</p>
+<p>You can now attach the code you’ve just removed to the <code class="blockevents">when I start as a clone</code> event. You should also replace the <code class="blocklooks">hide</code> block in the balloon-clicking script with a <code class="blockcontrol">delete this clone</code> block.</p>
+<p>Your balloon code should now look like this:</p>
+<p><img src="balloons-clone.png" alt="screenshot" /></p></li>
+<li><p>Test your project! Now when the flag is clicked, your main balloon sprite will hide and then clone itself 20 times. When each of these 20 clones is started, they will each bounce around the screen randomly, just as they did before. See if you can pop the 20 balloons!</p></li>
 </ul>
 </section>
 <section id="save-your-project-5" class="level2 save">
@@ -188,7 +189,7 @@
 <section id="activity-checklist-5" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>You can use another variable to store the remaining time left. Create a new variable called ‘time’:</p>
+<li><p>You can use another variable to store the remaining time left. Click on the stage, and create a new variable called ‘time’:</p>
 <p><img src="balloons-time.png" alt="screenshot" /></p></li>
 <li><p>This is how the timer should work:</p>
 <ul>
@@ -244,7 +245,7 @@
     </main>
 
     <aside class="legal-notice copyright">
-      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
+      <p>These projects are for use in Code Clubs within the UK. For clubs outside the UK, please visit <a href="http://projects.codeclubworld.org/">projects.codeclubworld.org</a>. Our curriculum is developed in the open on GitHub (<a href="http://github.com/CodeClub/">github.com/CodeClub</a>), and we encourage contributions from our community - come and join us!</p>
       <p>&copy; 2015 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
     </aside>
 
