@@ -23,7 +23,7 @@
 
     <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch 1</a></li><li class="breadcrumbs-item current">Balloons</li></ul></nav>
 
-          <section class="registration-note">
+          <section class="note registration-note">
         <p>All Code Clubs <u>must be registered</u>. Registered clubs appear on the map at <a href="http://www.codeclubworld.org/">codeclubworld.org</a> - if your club is not on the map then visit <a href="http://jumpto.cc/18CpLPy">jumpto.cc/18CpLPy</a> to find out what to do.</p>
       </section>
     
@@ -167,12 +167,12 @@
 <section id="step-5-lots-of-balloons" class="level1 activity">
 <h1>Step 5: Lots of balloons</h1>
 <p>Popping 1 balloon isn’t much of a game, so let’s add lots more!</p>
+<p>One simple way to get lots of balloons is just to right-click on the balloon sprite and click ‘duplicate’. This is OK if you only want a few, but what if you need 20? or 100? Are you really going to click ‘duplicate’ that many times?</p>
 <section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
-<p>One simple way to get lots of balloons is just to right-click on the balloon sprite and click ‘duplicate’. This is OK if you only want a few, but what if you need 20? or 100? or 1000? Are you really going to click ‘duplicate’ that many times?</p>
-<pre><code>A much better way of getting lots of balloons is to _clone_ the balloon sprite.</code></pre>
 <ul>
-<li><p>Drag your balloon <code class="blockevents">when flag clicked</code> code (except the <code class="blockdata">score</code> block) off of the event (don’t delete it), and instead add code to create 20 balloon clones.</p>
+<li><p>A much better way of getting lots of balloons is to <em>clone</em> the balloon sprite.</p>
+<p>Drag your balloon <code class="blockevents">when flag clicked</code> code (except the <code class="blockdata">score</code> block) off of the event (don’t delete it), and instead add code to create 20 balloon clones.</p>
 <p>You can now attach the code you’ve just removed to the <code class="blockevents">when I start as a clone</code> event. You should also replace the <code class="blocklooks">hide</code> block in the balloon-clicking script with a <code class="blockcontrol">delete this clone</code> block.</p>
 <p>Your balloon code should now look like this:</p>
 <p><img src="balloons-clone.png" alt="screenshot" /></p></li>
