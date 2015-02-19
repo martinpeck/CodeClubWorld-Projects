@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="world"  lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Memory — Code Club World Projects</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.ico">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Memory</h1>
+      <span class="level-indicator">Scratch 2</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Języki</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Polski</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch 2</a></li><li class="breadcrumbs-item current">Memory</li></ul></nav>
+
+          <section class="note registration-note">
+        <p>All Code Clubs <u>must be registered</u>. Registered clubs appear on the map at <a href="http://www.codeclubworld.org/">codeclubworld.org</a> - if your club is not on the map then visit <a href="http://jumpto.cc/18CpLPy">jumpto.cc/18CpLPy</a> to find out what to do.</p>
+      </section>
+    
+    <main class="main lesson-steps" role="main">
+      <section id="heads-up" class="note beta">
+<h1>Heads Up!</h1>
+<p>This project is new. That means we’re still testing it, and there’s a small chance there could be some bugs or typos. If you’re a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/15QLeJ_aDklioXl5cUyUK1KqZ7lUhCiewl3qiwXOg41M/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email <script type="text/javascript">
+<!--
+h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
+</section>
+      
+<section id="projekt-stworzony-przez-spoecznosc" class="level2 challenge pdf-hidden">
+<h2>Projekt stworzony przez społeczność</h2>
+<p>Ten projekt stworzył Erik wraz ze swoją córką Ruth. Jeśli też chcesz podzielić się swoim projektem <a href="https://github.com/CodeClub">odwiedź nas na GitHubie</a>.</p>
+</section>
+<section id="wstep" class="level1 intro">
+<h1>Wstęp</h1>
+<p>Ten projekt polega na stworzeniu gry pamięciowej. Będziesz musiał zapamiętać w jakiej kolejności pokazały się kolory, a następnie powtórzyć tę kolejność.</p>
+<div class="scratch-preview">
+    <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
+    <img src="colour-final.png">
+</div>
+</section>
+<section id="krok-1-losowe-kolory" class="level1 activity">
+<h1>Krok 1: Losowe kolory</h1>
+<p>Najpierw stwórzmy postać, która będzie losowo zmieniać kolor. Gracz będzie musiał zapamiętać kolejność tych kolorów.</p>
+<section id="zadania-do-wykonania" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Stwórz nowy projekt i usuń duszka-kota, aby projekt był pusty.</p></li>
+<li><p>Wybirz postać i tło gry. Postać nie musi być osobą, ale powinna wyglądać tak, by mogła zmieniać kolory.</p>
+<p><img src="colour-sprite.png" alt="screenshot" /></p></li>
+<li><p>W grze będziemy używać różnych liczb, które będą odpowiadać poszczególnym kolorom:</p>
+<ul>
+<li>1 = czerwony,</li>
+<li>2 = niebieski,</li>
+<li>3 = zielony,</li>
+<li>4 = żółty.</li>
+</ul>
+<p>Dodaj do twojej postaci kostiumy w taki sposób, by razem było ich 4 - jeden kostium dla każdego koloru. Upewnij się, że kostiumy są ustawione w odpowiedniej kolejności (takiej jak na liście kolorów).</p>
+<p><img src="colour-costume.png" alt="screenshot" /></p></li>
+<li><p>Aby kolejność kolorów była losowa trzeba stworzyć <em>listę</em>. Lista to po prostu zmienna, w której przechowywane są informacje <em>w odpowiedniej kolejności</em>. Stwórz nową listę i nazwij ją <code class="blockdata">sekwencja</code>. Tej listy będzie potrzebować tylko twoja postać, więc możesz też zaznaczyć ‘Tylko dla tego duszka’.</p>
+<p><img src="colour-list.png" alt="screenshot" /></p>
+<p>Teraz lista powinna się pojawić w lewym górnym rogu sceny. Powinny się też pojawić nowe bloki, które pozwolą ci użyć stworzonej właśnie listy.</p>
+<p><img src="colour-list-blocks.png" alt="screenshot" /></p></li>
+<li><p>Dodaj ten skrypt do twojej postaci, aby dodać losową liczbę do listy (i aby pokazać odpowiedni kostium) 5 razy:</p>
+<p><img src="df9079e3bb6778c7d794ecbf4e19c482e6575ecf.png" alt="    kiedy kliknięto zieloną flagę
+    usuń (wszystko v) z [sekwencja v]
+    powtórz (5) razy
+        dodaj (losuj od (1) do (4)) do [sekwencja v]
+        zmień kostium na (element (ostatni v) z [sekwencja v])
+        czekaj (1) s
+    koniec" /></p>
+<p>Zauważ, że na początku cała lista została wyczyszczona.</p></li>
+</ul>
+</section>
+<section id="wyzwanie-dodanie-dzwieku" class="level2 challenge">
+<h2>Wyzwanie: Dodanie dźwięku</h2>
+<p>Przetestuj kilka razy swój projekt. Pewnie zauważysz, że czasami losowany jest ten sam kolor dwa (albo więcej) razy pod rząd, przez co trudniej jest zapamiętać kolejność. Czy możesz sprawić, aby przy każdej zmianie kostiumu zagrał bęben?</p>
+<p>A może każdy kolor powinien mieć swój dźwięk? Będzie to <em>bardzo</em> podobne do bloku, który zmienia kostium twojej postaci.</p>
+</section>
+<section id="zapisz-swoj-projekt" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+</section>
+<section id="krok-2-powtarzanie-sekwencji" class="level1 activity">
+<h1>Krok 2: Powtarzanie sekwencji</h1>
+<p>Dodaj 4 przyciski, które będzie naciskał gracz powtarzając w ten sposób kolejność kolorów, którą zapamiętał.</p>
+<section id="zadania-do-wykonania-1" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Dodaj do projektu 4 duszki, które będą przyciskami. Zmień każdy z duszków w taki sposób, by każdy z nich odpowiadał jednemu z czterech kolorów.</p>
+<p><img src="colour-drums.png" alt="screenshot" /></p></li>
+<li><p>Kiedy zostanie kliknięty czerwony bęben musisz nadać wiadomość do twojej postaci, aby wiedziała, że czerwony przycisk został naciśnięty. Dodaj ten kod do czerwonego bębna:</p>
+<p><img src="f9efde99599165dad06b0c67c0bb2a1cb07979c1.png" alt="    kiedy duszek kliknięty
+    nadaj [czerwony v]" /></p></li>
+<li><p>Kiedy postać otrzyma wiadomość, powinna sprawdzić, czy liczba 1 jest pierwsza na liście (co znaczy, że czerwony to następny kolor w sekwencji). Jeśli tak, możesz usunąć tę liczbę z listy, ponieważ gracz zgadł poprawnie. W przeciwnym razie gra się kończy!</p>
+<p><img src="4088fdde6ca4ea6c99d3f3ff8900acd98c199e2d.png" alt="    kiedy otrzymam [czerwony v]
+    jeżeli &lt;(element (1 v) z [sekwencja v])=[1]&gt; to
+        usuń (1 v) z [sekwencja v]
+    w przeciwnym razie
+        powiedz [Koniec gry!] przez (1) s
+        zatrzymaj [wszystko v]
+    koniec" /></p></li>
+<li><p>Możesz także wyświetlić jakieś migające światła kiedy lista będzie pusta. Pusta lista oznacza, że gracz zapamiętał poprawnie całą sekwencję kolorów. Dodaj poniższy kod na końcu skryptu rozpoczynającego się od <code class="blockevents">kiedy kliknięto zieloną flagę</code>:</p>
+<p><img src="a1d440d8763dab0e8a025f4e33382ee980cc87ff.png" alt="    czekaj aż &lt; (długość [sekwencja v]) = [0]&gt;
+    nadaj [wygrana v] i czekaj" /></p></li>
+<li><p>Kliknij na scenę i dodaj poniższy kod, aby tło zmieniało kolor, kiedy gracz wygra grę:</p>
+<p><img src="b2e9ee340d76c094185439cd3c3bdf07a8573abe.png" alt="    kiedy otrzymam [wygrana v]
+    zagraj dźwięk [drum machine v]
+    powtórz (50) razy
+        zmień efekt [kolor v] o (25)
+        czekaj (0.1) s
+    koniec
+    wyczyść efekty graficzne" /></p></li>
+</ul>
+</section>
+<section id="wyzwanie-dodanie-4-przyciskow" class="level2 challenge">
+<h2>Wyzwanie: Dodanie 4 przycisków</h2>
+<p>Powtórz powyższe kroki dla niebieskiego, zielonego i żółtego przycisku. Które bloki pozostaną takie same, a które trzeba będzie zmienić dla każdego przycisku?</p>
+<p>Możesz też dodać dźwięk, który będzie zagrany po naciśnięciu każdego przycisku.</p>
+<p>Pamiętaj, aby przetestować kod, który właśnie dodałeś! Czy potrafisz zapamiętać sekwencję pięciu kolorów? Czy sekwencja jest inna za każdym razem?</p>
+</section>
+<section id="zapisz-swoj-projekt-1" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+</section>
+<section id="krok-3-wiele-poziomow" class="level1 activity new-page">
+<h1>Krok 3: Wiele poziomów</h1>
+<p>Na razie gracz musi tylko zapamiętać 5 kolorów. Ulepsz swoją grę w taki sposób, by długość sekwencji wzrastała.</p>
+<section id="zadania-do-wykonania-2" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Stwórz nową zmienną i nazwij ją <code class="blockdata">wynik</code>.</p>
+<p><img src="colour-score.png" alt="screenshot" /></p></li>
+<li><p><code class="blockdata">wynik</code> będzie używany, by zdecydować jakiej długości będzie sekwencja, którą musi zapamiętać gracz. Na początek ustawmy wynik (i długość sekwencji) na 3. Dodaj poniższy blok kodu na początek skryptu zaczynającego się od <code class="blockevents">kiedy kliknięto zieloną flagę</code>:</p>
+<p><img src="9ef2e8ead8b0c7e511daba704844309a997bbae2.png" alt="    ustaw [wynik v] na [3]" /></p></li>
+<li><p>Zamiast za każdym razem tworzyć sekwencję 5 kolorów, teraz chcemy by zmienna <code class="blockdata">wynik</code> wyznaczyła długość sekwencji. Zmień blok <code class="blockcontrol">powtórz</code> w twojej postaci (który tworzy sekwencję) na poniższy:</p>
+<p><img src="cda72c05dcf63ba754c70d1f6913ecc4b9da7b8a.png" alt="    powtórz (wynik) razy
+    koniec" /></p></li>
+<li><p>Jeśli sekwencja została poprawnie odgadnięta, powinieneś dodać 1 do wyniku, by zwiększyć długość sekwencji.</p>
+<p><img src="8afe4f7dee74a3f74387b5bc7a66c654ecf13c83.png" alt="    zmień [wynik v] o (1)" /></p></li>
+<li><p>Na koniec, musisz dodać pętlę <code class="blockcontrol">zawsze</code> wokół kodu, który generuje sekwencję. W ten sposób sekwencja będzie tworzona dla każdego poziomu. Tak powinien wyglądać kod twojej postaci:</p>
+<p><img src="2a57f3d965bc6e47c7ec4a0af0cdde7c76009f92.png" alt="    kiedy kliknięto zieloną flagę
+    ustaw [wynik v] na [3]
+    zawsze
+        usuń (wszystko v) z [sekwencja v]
+        powtórz (wynik) razy
+            dodaj (losuj od (1) do (4)) do [sekwencja v]
+            zmień kostium na (element (ostatni v) z [sekwencja v]
+            czekaj (1) s
+        koniec
+        czekaj aż &lt; (długość [sekwencja v]) = [0]&gt;
+        nadaj [wygrana v] i czekaj
+        zmień [wynik v] o (1)
+    koniec" /></p></li>
+<li><p>Daj swoim znajomym przetestować twoją grę. Pamiętaj by ukryć listę <code class="blockdata">sekwencja</code> zanim zaczną grać!</p></li>
+</ul>
+</section>
+<section id="zapisz-swoj-projekt-2" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+</section>
+<section id="krok-4-najlepszy-wynik" class="level1 activity">
+<h1>Krok 4: Najlepszy wynik</h1>
+<p>Zapiszmy najlepszy wynik, abyś mógł rywalizować z twoimi znajomymi.</p>
+<section id="zadania-do-wykonania-3" class="level2 check">
+<h2>Zadania do wykonania</h2>
+<ul>
+<li><p>Dodaj dwie nowe zmienne do projektu i nazwij je <code class="blockdata">najlepszy wynik</code> i <code class="blockdata">imię</code>.</p></li>
+<li><p>Kiedy gra się skończy (gdy gracz wybierze nieprawidłowy przycisk), musisz sprawdzić czy wynik grającego jest wyższy niż aktualny najwyższy wynik. Jeśli tak, musisz zapisać jego wynik jako najlepszy wynik i zachować imię gracza. Tak powinien powinien wyglądać skrypt czerwonego przycisku:</p>
+<p><img src="3f14bd8ad0e4b9e1a6d18ab995de4f5cfb53178d.png" alt="    kiedy otrzymam [czerwony v]
+    jeżeli &lt;(element (1 v) z [sekwencja v])=[1]&gt; to
+        usuń (1 v) z [sekwencja v]
+    w przeciwnym razie
+        powiedz [Koniec gry!] przez (1) s
+        jeżeli &lt; (wynik) &gt; (najlepszy wynik) &gt; to
+            ustaw [najlepszy wynik v] na [wynik v]
+            zapytaj [Najlepszy wynik! Jak masz na imię?] i czekaj
+            ustaw [imię v] na (odpowiedź)
+        koniec
+        zatrzymaj [wszystko v]
+    koniec" /></p></li>
+<li><p>Powinieneś dodać nowy kod także do trzech pozostałych przycisków! Czy zauważyłeś, że fragment kodu z blokiem “Koniec gry” w każdym z czterech przycisków jest identyczny?</p>
+<p><img src="colour-same.png" alt="screenshot" /></p></li>
+<li><p>Jeśli będziesz chciał zmienić ten fragment, np. dodając dźwięk albo zmieniająć tekst “Koniec gry!”, będziesz musiał zmienić to cztery razy! To na pewno uciążliwe, a poza tym to strata czasu.</p>
+<p>Zamiast tego, możesz zdefiniować własny blok i użyć go w swoim projekcie! Aby to zrobić kliknij na <code class="blockmoreblocks">Więcej bloków</code>, a następnie <code>Stwórz blok</code>. Nowy blok nazwij “Koniec gry”.</p>
+<p><img src="colour-more.png" alt="screenshot" /></p></li>
+<li><p>Do nowego bloku dodaj kod, który do tej pory był umieszczony pod blokiem <code class="blockcontrol">w przeciwnym razie</code>:</p>
+<p><img src="colour-make-block.png" alt="screenshot" /></p></li>
+<li><p>Właśnie stworzyłeś nową <em>funkcję</em>, która nazywa się <code class="blockmoreblocks">Koniec gry</code>. Możesz jej użyć gdzie tylko chcesz. Przeciągnij blok <code class="blockmoreblocks">Koniec gry</code> do czterech skryptów przycisków.</p>
+<p><img src="colour-use-block.png" alt="screenshot" /></p></li>
+<li><p>Teraz dodaj dźwięk, który usłyszy gracz po wciśnięciu złego przycisku. Musisz dodać ten kod tylko <em>raz</em> w bloku <code class="blockmoreblocks">Koniec gry</code>, a nie cztery razy w każdym z przycisków!</p>
+<p><img src="colour-cough.png" alt="screenshot" /></p></li>
+</ul>
+</section>
+<section id="wyzwanie-stworz-nowe-bloki" class="level2 challenge">
+<h2>Wyzwanie: Stwórz nowe bloki</h2>
+<p>Zauważyłeś inne fragmenty kodu, które powtarzają się w każdym z czterech przycisków?</p>
+<p><img src="colour-more-blocks.png" alt="screenshot" /></p>
+<p>Czy możesz stworzyć inny wspólny blok, który będzie używany przez wszystkie przyciski?</p>
+</section>
+<section id="zapisz-swoj-projekt-3" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+<section id="wyzwanie-koncowy-kostium" class="level2 challenge">
+<h2>Wyzwanie: Końcowy kostium</h2>
+<p>Czy zauważyłeś, że na początku gry postać ma jeden z czterech kolorów, a na koniec, gdy gracz powtarza sekwencję, zawsze ma ostatni kolor z sekwencji?</p>
+<p>Czy możesz dodać swojej postaci inny, biały kostium, który będzie wyświetlany na początku gry i wtedy, gdy gracz próbuje odgadnąć kolejność kolorów?</p>
+<p><img src="colour-white.png" alt="screenshot" /></p>
+</section>
+<section id="zapisz-swoj-projekt-4" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+<section id="wyzwanie-poziom-trudnosci" class="level2 challenge">
+<h2>Wyzwanie: Poziom trudności</h2>
+<p>Możesz udostępnić graczowi wybór jednego poziomu trudności: “prosty” (dostępne są tylko bębny czerwony i niebieski), “normalny” (wszystkie cztery bębny).</p>
+<p>Możesz nawet dodać poziom “trudny”, gdzie do dyspozycji będzie jeszcze piąty bęben!</p>
+</section>
+<section id="zapisz-swoj-projekt-5" class="level2 save">
+<h2>Zapisz swój projekt</h2>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use in Code Clubs within the UK. For clubs outside the UK, please visit <a href="http://projects.codeclubworld.org/">projects.codeclubworld.org</a>. Our curriculum is developed in the open on GitHub (<a href="http://github.com/CodeClub/">github.com/CodeClub</a>), and we encourage contributions from our community - come and join us!</p>
+      <p>&copy; 2015 Code Club. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">BY-NC-SA 4.0 International License</a>.</p>
+    </aside>
+
+    <div id="legend">
+        <div>
+            <img src="../../../img/check.png" alt="Zadania do wykonania" />
+            <div class="caption"><span class="check_text">Zadania do wykonania</span></div>
+            <div class="description">Wykonaj te <span class="check_text upper">polecenia</span> krok po kroku</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Przetestuj swój projekt" />
+          <div class="caption"><span class="flag_text">Przetestuj swój projekt</span></div>
+          <div class="description">Kliknij na zieloną flagę, aby <span class="flag_text upper">przetestować</span> swój kod</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Zapisz swój projekt" />
+          <div class="caption"><span class="save_text">Zapisz swój projekt</span></div>
+          <div class="description">Teraz <span class="save_text upper">zapisz</span> swój projekt</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

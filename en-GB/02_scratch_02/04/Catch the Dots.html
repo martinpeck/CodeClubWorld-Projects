@@ -52,7 +52,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>Start a new project, and delete the cat sprite, so that your project is empty.</p></li>
+<li><p>Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.</p></li>
 <li><p>For this project, you should have a ‘Project Resources’ folder, containing the controller image you can use. Make sure that you can find this folder, and ask your club leader if you can’t find it.</p>
 <p><img src="dots-resources.png" alt="screenshot" /></p></li>
 <li><p>From this ‘Project Resources’ folder, import ‘controller.png’ as a new sprite. If you don’t have this image you can draw it yourself! You should also make the stage black. Here’s how your stage should look:</p>
@@ -70,12 +70,12 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li><p>Test out your controller – it should spin left and right.</p></li>
 <li><p>Although this code works, it would be much better if the controller sped up and slowed down gradually. To do this, delete the code you just created for your controller, and create a new variable called <code class="blockdata">controller speed</code>.</p></li>
 <li><p>Add this code to your controller, to make it repeatedly use the <code class="blockdata">controller speed</code> to move:</p>
-<p><img src="ed20a9413e1611746e049c7c391bad3bf54b9a22.png" alt="    when flag clicked
+<p><img src="ebb62b44e1853e58f0a8f98569c2241fc36fdf44.png" alt="    when flag clicked
     set [controller speed v] to [0]
     forever
-        turn right (controlled speed) degrees
+        turn right (controller speed) degrees
     end" /></p></li>
-<li><p>At the moment, this code won’t move the controller, as the speed has been set to 0! Create a separate script in your controller, that increases the speed when the right arrow is pressed.</p>
+<li><p>At the moment, this code won’t move the controller, as the speed has been set to 0! Create a separate script in your controller that increases the speed when the right arrow is pressed.</p>
 <p><img src="2aa2e6605816d28c6a63e3eb1af6e869b6f3f027.png" alt="    when flag clicked
     forever
         if &lt;key [right arrow v] pressed?&gt; then
@@ -100,7 +100,7 @@ end" /></p>
 <section id="challenge-spinning-left" class="level2 challenge">
 <h2>Challenge: Spinning left</h2>
 <p>Duplicate the entire controller script for spinning to the right. Can you modify this duplicated code so that your controller spins to the left when the left arrow key is held down?</p>
-<p>You’ll need to change some of the numbers in the code! (hint: the controller will spin to the left if the <code class="blockdata">controller speed</code> variable has a negative value.)</p>
+<p>You’ll need to change some of the numbers in the code! (Hint: the controller will spin to the left if the <code class="blockdata">controller speed</code> variable has a negative value.)</p>
 </section>
 <section id="save-your-project-1" class="level2 save">
 <h2>Save your project</h2>
@@ -108,7 +108,7 @@ end" /></p>
 </section>
 <section id="step-2-collecting-dots" class="level1 activity">
 <h1>Step 2: Collecting dots</h1>
-<p>Let’s add dots to the game, that the player will collect with their controller.</p>
+<p>Let’s add dots to the game that the player will collect with their controller.</p>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
@@ -137,7 +137,7 @@ end" /></p>
 <li><p>Test your project. You should see lots of red dots appear in each corner of the screen, and move slowly towards the controller.</p>
 <p><img src="dots-red-test.png" alt="screenshot" /></p></li>
 <li><p>Create 2 new variables called <code class="blockdata">lives</code> and <code class="blockdata">score</code>.</p></li>
-<li><p>Add code to your stage, to set the <code class="blockdata">lives</code> to 3 and the <code class="blockdata">score</code> to 0 at the start of the game.</p></li>
+<li><p>Add code to your stage to set the <code class="blockdata">lives</code> to 3 and the <code class="blockdata">score</code> to 0 at the start of the game.</p></li>
 <li><p>You need to add code to the end of your red dot’s <code class="blockcontrol">when I start as a clone</code> code, so that either 1 is added to the player’s <code class="blockdata">score</code> if the colours match, or 1 is taken from the player’s <code class="blockdata">lives</code> if the colours don’t match.</p>
 <p><img src="cf270cc036bfabae58f057b9b2d40e17780ba042.png" alt="    move (5) steps
     if &lt;touching color [#FF0000]?&gt; then
@@ -215,7 +215,7 @@ end" /></p>
     if &lt;(score) &gt; (high score)&gt; then
         set [high score v] to (score)
     end" /></p></li>
-<li><p>Test the code you’ve added. Play your game to check whether the <code class="blockdata">high score</code> is updated correcly.</p></li>
+<li><p>Test the code you’ve added. Play your game to check whether the <code class="blockdata">high score</code> is updated correctly.</p></li>
 </ul>
 </section>
 <section id="save-your-project-6" class="level2 save">
