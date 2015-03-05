@@ -38,198 +38,198 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 </script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
 </section>
       
-<section id="introduction" class="level1 intro">
-<h1>Introduction</h1>
-<p>In this project you’ll learn how to create a times table quiz, in which you have to get as many answers correct as you can in 30 seconds.</p>
+<section id="wstep" class="level1 intro">
+<h1>Wstęp</h1>
+<p>Ten projekt nauczy cię, jak wykonać quiz z tabliczki mnożenia, w którym musisz poprawnie odpowiedzieć jak najwięcej razy w ciągu 30 sekund.</p>
 <div class="scratch-preview">
-    <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/42225768/?autostart=false" frameborder="0"></iframe>
+    <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/49781348/?autostart=false" frameborder="0"></iframe>
     <img src="brain-final.png">
 </div>
 </section>
-<section id="step-1-creating-questions" class="level1 activity">
-<h1>Step 1: Creating questions</h1>
-<p>Let’s start by creating random questions for the player to answer.</p>
-<section id="activity-checklist" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="krok-1-przygotowanie-pytan" class="level1 activity">
+<h1>Krok 1: Przygotowanie pytań</h1>
+<p>Zacznijmy od przygotowania losowych pytań, na które będzie odpowiadał gracz.</p>
+<section id="zadania-do-wykonania" class="level2 check">
+<h2>Zadania do wykonania</h2>
 <ul>
-<li><p>Start a new project, and delete the cat sprite, so that your project is empty.</p></li>
-<li><p>Choose a character and a backdrop for your game. You can choose any you like! Here’s an example:</p>
+<li><p>Stwórz nowy projekt i usuń duszka-kota, aby projekt był pusty.</p></li>
+<li><p>Wybierz postać i tło dla swojej gry. Możesz wybrać co tylko ci się podoba! Na przykład:</p>
 <p><img src="brain-setting.png" alt="screenshot" /></p></li>
-<li><p>Create 2 new variables called <code class="blockdata">number 1</code> and <code class="blockdata">number 2</code>. These variables will store the 2 numbers that will be multiplied together.</p>
+<li><p>Stwórz dwie nowe zmienne i nazwij je <code class="blockdata">liczba 1</code> i <code class="blockdata">liczba 2</code>. Zmienne te będą przechowywać dwie liczby, które będziemy przez siebie mnożyć.</p>
 <p><img src="brain-variables.png" alt="screenshot" /></p></li>
-<li><p>Add code to your character, to set both of these variables to a <code class="blockoperators">random</code> number between 2 and 12.</p>
-<p><img src="f0171d1f5854f12a47a8866cba1d0bebafc23f41.png" alt="    when flag clicked
-    set [number 1 v] to (pick random (2) to (12))
-    set [number 2 v] to (pick random (2) to (12))" /></p></li>
-<li><p>You can then ask the player for the answer, and let them know if they were right or wrong.</p>
-<p><img src="bd9f4ef1ae262d0b88b7af92999f927b826259b0.png" alt="    when flag clicked
-    set [number 1 v] to (pick random (2) to (12))
-    set [number 2 v] to (pick random (2) to (12))
-    ask (join (number 1)(join [ x ] (number 2))) and wait
-    if &lt;(answer) = ((number 1)*(number 2))&gt; then
-        say [yes! :)] for (2) secs
-    else
-        say [nope :(] for (2) secs
-    end" /></p></li>
-<li><p>Test your project fully, by answering one question correctly and one with the wrong answer.</p></li>
-<li><p>Add a <code class="blockcontrol">forever</code> loop around this code, so that the player is asked lots of questions.</p></li>
-<li><p>Create a countdown timer on the stage, using a variable called <code class="blockdata">time</code>. The ‘Balloons’ project has instructions for making a timer (in step 6) if you need help!</p></li>
-<li><p>Test your project again - you should be able to continue asking questions until the time runs out.</p></li>
+<li><p>Dodaj poniższy kod do swojej postaci, aby ustawić każdej zmiennej <code class="blockoperators">losową</code> liczbę od 2 do 12.</p>
+<p><img src="a8136aa88b156889e31e972f32507d5333c07878.png" alt="    kiedy kliknięto zieloną flagę
+    ustaw [liczba 1 v] na (losuj od (2) do (12))
+    ustaw [liczba 2 v] na (losuj od (2) do (12))" /></p></li>
+<li><p>Teraz możesz zapytać gracza i powiedzieć mu, czy udzielił poprawnej odpowiedzi.</p>
+<p><img src="c94ce3ce8bbfe1b4f8241e51f8a0c25ad64a24e8.png" alt="    kiedy kliknięto zieloną flagę
+    ustaw [liczba 1 v] na (losuj od (2) do (12))
+    ustaw [liczba 2 v] na (losuj od (2) do (12))
+    zapytaj (połącz (liczba 1) i (połącz [ x ] i (liczba 2))) i czekaj
+    jeżeli &lt;(odpowiedź) = ((liczba 1)*(liczba 2))&gt; to
+        powiedz [tak! :)] przez (2) s
+    w przeciwnym razie
+        powiedz [nie :(] przez (2) s
+    koniec" /></p></li>
+<li><p>Przetestuj całość odpowiadając na jedno pytanie poprawnie i na jedno niepoprawnie.</p></li>
+<li><p>Cały kod umieść w nowym bloku <code class="blockcontrol">zawsze</code> w taki sposób, by gracz odpowiadał w kółko na pytania.</p></li>
+<li><p>Dodaj na scenie stoper używając do tego nowej zmiennej <code class="blockdata">czas</code>. Jeśli potrzebujesz pomocy możesz zajrzeć do instrukcji z projektu “Balony” (krok 6), gdzie robiliśmy stoper.</p></li>
+<li><p>Przetestuj jeszcze raz swój projekt - twoja postać powinna przestać zadawać pytania, kiedy czas się skończy.</p></li>
 </ul>
 </section>
-<section id="save-your-project" class="level2 save">
-<h2>Save your project</h2>
+<section id="zapisz-swoj-projekt" class="level2 save">
+<h2>Zapisz swój projekt</h2>
 </section>
-<section id="challenge-changing-costumes" class="level2 challenge">
-<h2>Challenge: Changing costumes</h2>
-<p>Can you change your character’s costumes, so that they respond to the player’s answer?</p>
+<section id="wyzwanie-zmiana-kostiumow" class="level2 challenge">
+<h2>Wyzwanie: Zmiana kostiumów</h2>
+<p>Czy możesz zmienić kostium swojej postaci w taki sposób, by pasował do odpowiedzi gracza?</p>
 <p><img src="brain-costume.png" alt="screenshot" /></p>
 </section>
-<section id="challenge-adding-a-score" class="level2 challenge">
-<h2>Challenge: Adding a score</h2>
-<p>Can you add a score to your game? You can add a point for every correct answer. If you’re feeling mean, you could even reset the player’s score to 0 if they get a question wrong!</p>
+<section id="wyzwanie-dodanie-punktacji" class="level2 challenge">
+<h2>Wyzwanie: Dodanie punktacji</h2>
+<p>Czy możesz dodać punkty do swojej gry? Możesz dodawać jeden punkt za każdą poprawną odpowiedź. Jeśli chcesz być złośliwy, możesz nawet zerować punkty, jeśli gracz poda złą odpowiedź.</p>
 </section>
-<section id="save-your-project-1" class="level2 save">
-<h2>Save your project</h2>
+<section id="zapisz-swoj-projekt-1" class="level2 save">
+<h2>Zapisz swój projekt</h2>
 </section>
 </section>
-<section id="step-2-multiple-games" class="level1 activity new-page">
-<h1>Step 2: Multiple games</h1>
-<p>Let’s add a ‘play’ button to your game, so that you can play lots of times.</p>
-<section id="activity-checklist-1" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="krok-2-wiele-gier" class="level1 activity new-page">
+<h1>Krok 2: Wiele gier</h1>
+<p>Dodaj do swojej gry przycisk “Start”, abyś mógł uruchomić grę wiele razy.</p>
+<section id="zadania-do-wykonania-1" class="level2 check">
+<h2>Zadania do wykonania</h2>
 <ul>
-<li><p>Create a new ‘Play’ button sprite, which your player will click to start a new game. You can draw it yourself, or edit a sprite from the Scratch library.</p>
+<li><p>Dodaj duszka-przycisk “Start”, w który gracz będzie klikał, aby uruchomić nową grę. Przycisk możesz narysować sam lub zmienić jeden ze biblioteki Scratcha.</p>
 <p><img src="brain-play.png" alt="screenshot" /></p></li>
-<li><p>Add this code to your new button.</p>
-<p><img src="574099d3701a2e9cdda818d09bf8a35484612d9e.png" alt="    when flag clicked
-    show
+<li><p>Dodaj poniższy kod do przycisku:</p>
+<p><img src="f3af42213a42e43607e07a9976f799bb35f7dd7c.png" alt="    kiedy kliknięto zieloną flagę
+    pokaż
 
-    when this sprite clicked
-    hide
-    broadcast [start v]" /></p>
-<p>This code shows the play button when your project is started. When the button is clicked, it is hidden and then broadcasts a message that will start the game.</p></li>
-<li><p>You’ll need to edit your character’s code, so that the game starts when they receive the <code class="blockevents">start</code> message, and not when the flag is clicked.</p>
-<p>Replace the <code class="blockevents">when flag clicked</code> code with <code class="blockevents">when I receive start</code>.</p>
+    kiedy duszek kliknięty
+    ukryj
+    nadaj [start v]" /></p>
+<p>Ten kod pokazuje przycisk w momencie, gdy uruchomisz projekt. Kiedy gracz w niego kliknie przycisk jest ukrywany, a następnie nadawana jest wiadomość, by włączyć grę.</p></li>
+<li><p>Musisz teraz zmienić kod swojej postaci tak, by uruchamiała grę kiedy otrzyma wiadomość <code class="blockevents">start</code>, a nie kiedy kliknięto flagę.</p>
+<p>Zamień blok <code class="blockevents">kiedy kliknięto zieloną flagę</code> na <code class="blockevents">kiedy otrzymam start</code>.</p>
 <p><img src="brain-start.png" alt="screenshot" /></p></li>
-<li><p>Click the green flag and then click your new play button to test it. You should see that the game doesn’t start until the button is clicked.</p></li>
-<li><p>Did you notice that the timer starts when the green flag is clicked, and not when the game starts?</p>
+<li><p>Kliknij na zieloną flagę, a następnie na nowy przycisk “Start”, aby przetestować całość. Gra powinna się zacząć dopiero po kliknięciu na przycisk.</p></li>
+<li><p>Czy zauważyłeś, że stoper startuje kiedy klikniesz zieloną flagę, a nie w momencie, kiedy gra się zaczyna?</p>
 <p><img src="brain-timer-bug.png" alt="screenshot" /></p>
-<p>Can you fix this problem?</p></li>
-<li><p>Click on the stage, and replace the <code class="blockcontrol">stop all</code> block with an <code class="blockevents">end</code> message.</p>
+<p>Czy potrafisz naprawić ten błąd?</p></li>
+<li><p>Kliknij na scenę i zamień blok <code class="blockcontrol">zatrzymaj wszystko</code> na wysłanie wiadomości <code class="blockevents">koniec</code>.</p>
 <p><img src="brain-end.png" alt="screenshot" /></p></li>
-<li><p>You can now add code to your button, to show it again at the end of each game.</p>
-<p><img src="78d86c98e3705e8e8ffe482bae463c909b749b97.png" alt="    when I receive [end v]
-    show" /></p></li>
-<li><p>You’ll also need to stop your character asking questions at the end of each game:</p>
-<p><img src="b716ed44132da5bbcd1c73e2ba3f11dd19d21758.png" alt="    when I receive [end v]
-    stop [other scripts in sprite v]" /></p></li>
-<li><p>Test your play button by playing a couple of games. You should notice that the play button shows after each game. To make testing easier, you can shorten each game, so that it only lasts a few seconds.</p>
-<p><img src="29079a03ea0f851cb7c2f1009eb969fb43f9a147.png" alt="    set [time v] to [10]" /></p></li>
-<li><p>You can even change how the button looks when the mouse hovers over it.</p>
-<p><img src="abbbf7e82ff891623184ce79a8afd89f121052ea.png" alt="    when flag clicked
-    show
-    forever
-    if &lt;touching [mouse-pointer v]?&gt; then
-        set [fisheye v] effect to (30)
-    else
-        set [fisheye v] effect to (0)
-    end
-    end" /></p>
+<li><p>Teraz możesz dodać kod do przycisku, by ponownie pokazał się na koniec każdej gry.</p>
+<p><img src="7ed631968f46afdd5e6f8228773cb5a493a8f999.png" alt="    kiedy otrzymam [koniec v]
+    pokaż" /></p></li>
+<li><p>Twoja postać powinna także przestać zadawać pytania, kiedy gra się skończyła:</p>
+<p><img src="00c5c1b568a933053746796230f43f215f33fcac.png" alt="    kiedy otrzymam [koniec v]
+    zatrzymaj [inne skrypty duszka v]" /></p></li>
+<li><p>Przetestuj przycisk “Start” grając kilka razy. Przycisk powinien pokazać się po każdej grze. Aby ułatwić sobie testowanie możesz skrócić czas gry do kilku sekund.</p>
+<p><img src="2231b0349e1b3c092306055328afa7551d145bfb.png" alt="    ustaw [czas v] na [10]" /></p></li>
+<li><p>Możesz także zmienić wygląd przycisku, kiedy kursor myszy znajdzie się nad nim.</p>
+<p><img src="723f404c82b30af070be7b15c030936c209fa289.png" alt="    kiedy kliknięto zieloną flagę
+    pokaż
+    zawsze
+        jeżeli &lt;dotyka [wskaźnik myszy v]?&gt; to
+            ustaw efekt [rybie oko v] na (30)
+        w przeciwnym razie
+            ustaw efekt [rybie oko v] na (0)
+        koniec
+    koniec" /></p>
 <p><img src="brain-fisheye.png" alt="screenshot" /></p></li>
 </ul>
 </section>
-<section id="save-your-project-2" class="level2 save">
-<h2>Save your project</h2>
+<section id="zapisz-swoj-projekt-2" class="level2 save">
+<h2>Zapisz swój projekt</h2>
 </section>
-<section id="challenge-start-screen" class="level2 challenge">
-<h2>Challenge: Start screen</h2>
-<p>Can you add another backdrop to your stage, which will become your game’s start screen? You can use the <code class="blockevents">when I receive start</code> and <code class="blockevents">when I receive end</code> blocks to switch between backdrops.</p>
-<p>You can also show and hide your character, and even show and hide your timer by using these blocks:</p>
-<p><img src="16fa4926a67764bf768cc80865f3fc3d83ecfd4c.png" alt="show variable [time v]" /></p>
-<p><img src="fa7ebb28c10f73c4df20dd9b748f8ca5b58c79af.png" alt="hide variable [time v]" /></p>
+<section id="wyzwanie-ekran-poczatkowy" class="level2 challenge">
+<h2>Wyzwanie: Ekran początkowy</h2>
+<p>Możesz dodać inne tło do sceny, które będzie ekranem początkowym gry. Do przełączania pomiędzy tłami możesz użyć bloków <code class="blockevents">kiedy otrzymam start</code> i <code class="blockevents">kiedy otrzymam koniec</code>.</p>
+<p>Możesz także pokazywać i ukrywać swoją postać, a nawet pokazywać i ukrywać stoper używając poniższych bloków:</p>
+<p><img src="c8e179785aa02a065e195a59c489a1982f454c70.png" alt="pokaż zmienną [czas v]" /></p>
+<p><img src="adb5e88762c37efc754dfeefd8ded57577c481a5.png" alt="ukryj zmienną [czas v]" /></p>
 <p><img src="brain-startscreen.png" alt="screenshot" /></p>
 </section>
-<section id="save-your-project-3" class="level2 save">
-<h2>Save your project</h2>
+<section id="zapisz-swoj-projekt-3" class="level2 save">
+<h2>Zapisz swój projekt</h2>
 </section>
 </section>
-<section id="step-3-adding-graphics" class="level1 activity new-page">
-<h1>Step 3: Adding graphics</h1>
-<p>Instead of your character just saying <code>yes! :)</code> or <code>nope :(</code> to the player, let’s add some graphics that will let the player know how they are doing.</p>
+<section id="krok-3-dodawanie-elementow-graficznych" class="level1 activity new-page">
+<h1>Krok 3: Dodawanie elementów graficznych</h1>
+<p>Do tej pory postać w grze informowała gracza jak mu idzie mówiąc “tak! :)” lub “nie :(”. Zmieńmy to i dodajmy elementy graficzne, po których gracz będzie widział, czy udzielił poprawnej odpowiedzi.</p>
 <ul>
-<li><p>Create a new sprite called ‘Result’, containing both a ‘tick’ and a ‘cross’ costume.</p>
+<li><p>Dodaj nowego duszka i nazwij go “Wynik”. Duszek powinien mieć dwa kostiumy “ptaszek” i “krzyżyk”.</p>
 <p><img src="brain-result.png" alt="screenshot" /></p></li>
-<li><p>Change your character’s code, so that instead of telling the player how they did, it broadcasts <code class="blockevents">correct</code> and <code class="blockevents">wrong</code> messages instead.</p>
+<li><p>Zmień kod postaci tak, by zamiast mówić graczowi, jak mu poszło, nadawał zamiast tego wiadomość <code class="blockevents">dobrze</code> lub <code class="blockevents">źle</code>.</p>
 <p><img src="brain-broadcast-answer.png" alt="screenshot" /></p></li>
-<li><p>You can now use these messages to show the ‘tick’ or ‘cross’ costume. Add this code to your new ‘Result’ sprite:</p>
+<li><p>Możesz teraz wykorzystać te wiadomości do pokazywania odpowiedniego kostiumu - “ptaszka” lub “krzyżyka”. Dodaj ten kod do duszka “Wynik”:</p>
 <p><img src="brain-show-answer.png" alt="screenshot" /></p></li>
-<li><p>Test out your game again. You should see a tick whenever you get a question correct, and a cross whenever you get one wrong!</p>
+<li><p>Przetestuj grę jeszcze raz. Teraz kiedy odpowiesz poprawnie powinieneś zobaczyć ptaszka, a gdy odpowiesz źle - krzyżyk.</p>
 <p><img src="brain-test-answer.png" alt="screenshot" /></p></li>
-<li><p>Have you noticed that the code for <code class="blockevents">when I receive correct</code> and <code class="blockevents">when I receive wrong</code> is nearly identical? Let’s create a function to make it easier for you to make changes to your code.</p>
-<p>On your ‘Result’ sprite, click <code class="blockmoreblocks">More Blocks</code>, and then ‘Make a Block’. Create a new function called <code class="blockmoreblocks">animate</code>.</p>
+<li><p>Czy zauważyłeś, że kod w bloku <code class="blockevents">kiedy otrzymam dobrze</code> i <code class="blockevents">kiedy otrzymam źle</code> jest niemal identyczny? Utwórzmy funkcję, aby wprowadzanie zmian w tym kodzie było łatwiejsze.</p>
+<p>Będąc na duszku “Wynik” kliknij w <code class="blockmoreblocks">Więcej bloków</code>, a następnie “Stwórz blok”. Nową funkcję nazwij <code class="blockmoreblocks">animacja</code>.</p>
 <p><img src="brain-animate-function.png" alt="screenshot" /></p></li>
-<li><p>You can then add the animation code into your new animation function, and then just use the function twice:</p>
+<li><p>Teraz możesz dodać kod animacji do twojej nowej funkcji, a następnie użyć jej w dwóch miejscach:</p>
 <p><img src="brain-use-function.png" alt="screenshot" /></p></li>
-<li><p>Now, if you want to show the tick and the cross for a longer or shorter time, you only need to make one change to your code. Try it!</p></li>
-<li><p>Instead of just showing and hiding the tick and the cross, you could change your animation function, so that the graphics fade in.</p>
-<p><img src="a1f43285ea67940a244c3c3219acbd3f1211e680.png" alt="    define [animate]
-    set [ghost v] effect to (100)       
-    show
-    repeat (25)
-        change [ghost v] effect by (-4)
-    end
-    hide" /></p></li>
+<li><p>Od tej chwili, jeśli będziesz chciał pokazać znaczek ptaszka lub krzyżyk dłużej lub krócej wystarczy, że zmienisz jedno miejsce w swoim kodzie. Spróbuj!</p></li>
+<li><p>Możesz zmienić funkcję animacji w taki sposób, aby zamiast po prostu pokazywać znaczek ptaszka lub krzyżyk, obie grafiki płynnie pojawiały się.</p>
+<p><img src="816fba3eb9cda9753adab0a713d9f35ae1ff203d.png" alt="    definiuj [animacja]
+    ustaw efekt [duch v] na (100)       
+    pokaż
+    powtórz (25) razy
+        zmień efekt [duch v] o (-4)
+    koniec
+    ukryj" /></p></li>
 </ul>
-<section id="save-your-project-4" class="level2 save">
-<h2>Save your project</h2>
+<section id="zapisz-swoj-projekt-4" class="level2 save">
+<h2>Zapisz swój projekt</h2>
 </section>
-<section id="challenge-improved-animation" class="level2 challenge">
-<h2>Challenge: Improved animation</h2>
-<p>Can you improve the animation of your graphics? You could code the tick and cross so that they fade out as well as fade in. Or, you could use other cool effects:</p>
+<section id="wyzwanie-podrasowana-animacja" class="level2 challenge">
+<h2>Wyzwanie: Podrasowana animacja</h2>
+<p>Czy możesz sprawić, żeby animacja była jeszcze bardziej efektowna? Mógłbyś zmienić kod w taki sposób by poza pojawianiem się, znikanie także było płynne. Możesz wypróbować także inne fajne efekty:</p>
 <p><img src="brain-effects.png" alt="screenshot" /></p>
 </section>
-<section id="save-your-project-5" class="level2 save">
-<h2>Save your project</h2>
+<section id="zapisz-swoj-projekt-5" class="level2 save">
+<h2>Zapisz swój projekt</h2>
 </section>
-<section id="challenge-sound-and-music" class="level2 challenge">
-<h2>Challenge: Sound and music</h2>
-<p>Can you add sound effects and music to your game? For example:</p>
+<section id="wyzwanie-dzwiek-i-muzyka" class="level2 challenge">
+<h2>Wyzwanie: Dźwięk i muzyka</h2>
+<p>Czy możesz dodać efekty dzwiękowe i muzykę do swojej gry? Na przykład:</p>
 <ul>
-<li>Playing a sound when the player gets an answer right or wrong;</li>
-<li>Adding a ticking sound to your countdown timer;</li>
-<li><p>Playing a sound when the time is up;</p>
-<p><img src="3aaf3234833007cd2d717d169848e714b65ca70c.png" alt="    play drum (10 v) for (0.1) beats" /></p></li>
-<li><p>You could also constantly play music on a loop (if you’re not sure how to do this, step 4 of the ‘Rock Band’ project will help you).</p></li>
+<li>Zagrać dźwięk kiedy gracz wpisze poprawną lub błędną odpowiedź;</li>
+<li>Dodać dźwięk do zegara (tik-tak);</li>
+<li><p>Zagrać dźwięk kiedy skończy się czas;</p>
+<p><img src="37a2d87bc8cec5eab388aa9a2595df9bc45b0b03.png" alt="    zagraj bębenkiem (10 v) przez (0.1) taktów" /></p></li>
+<li><p>Mógłbyś także ciągle odtwarzać muzykę w pętli (jeśli nie jesteś pewien, jak to zrobić zajrzyj do kroku 4 projektu “Rock Band”).</p></li>
 </ul>
 </section>
-<section id="save-your-project-6" class="level2 save">
-<h2>Save your project</h2>
+<section id="zapisz-swoj-projekt-6" class="level2 save">
+<h2>Zapisz swój projekt</h2>
 </section>
-<section id="challenge-race-to-10-points" class="level2 challenge">
-<h2>Challenge: Race to 10 points</h2>
-<p>Can you change your game, so that instead of answering as many questions as they can in 30 seconds, the player has to see how quickly they can get 10 questions correct?</p>
-<p>To do this, you’ll only need to change your timer code. Can you see what needs to be changed?</p>
-<p><img src="752f254ab4f28b1c26366f4e62b2f06a10ef4ef5.png" alt="    when I receive [start v]
-    set [time v] to (30)
-    repeat until &lt;(time) = [0]&gt;
-        wait (1) secs
-        change [time v] by (-1)
-    end
-    broadcast [end v]" /></p>
+<section id="wyzwanie-zbierz-10-punktow" class="level2 challenge">
+<h2>Wyzwanie: Zbierz 10 punktów</h2>
+<p>Możesz zmienić swoją grę w taki sposób, by zamiast odpowiadzieć poprawnie na jak najwięcej pytań w 30 sekund, gracz musiał odpowiedzieć poprawnie na 10 pytań tak szybko, jak potrafi.</p>
+<p>Aby to zrobić wystarczy, że zmienisz kod stopera. Czy widzisz, co trzeba zmienić?</p>
+<p><img src="e336cafff086ee38720588a16e14e4ead1974ff8.png" alt="    kiedy otrzymam [start v]
+    ustaw [czas v] na (30)
+    powtarzaj aż &lt;(czas) = [0]&gt;
+        czekaj (1) s
+        zmień [czas v] o (-1)
+    koniec
+    nadaj [koniec v]" /></p>
 </section>
-<section id="save-your-project-7" class="level2 save">
-<h2>Save your project</h2>
+<section id="zapisz-swoj-projekt-7" class="level2 save">
+<h2>Zapisz swój projekt</h2>
 </section>
-<section id="challenge-instruction-screen" class="level2 challenge">
-<h2>Challenge: Instruction screen</h2>
-<p>Can you add an instructions screen to your game, telling your player how to play the game? You’ll need an ‘Instructions’ button, and another stage background.</p>
+<section id="wyzwanie-ekran-z-instrukcja" class="level2 challenge">
+<h2>Wyzwanie: Ekran z instrukcją</h2>
+<p>Czy możesz dodać ekran z instrukcją, na którym pokażesz graczowi, jak może grać? Będziesz potrzebować przycisku “Instrukcja” i kolejnego tła sceny.</p>
 <p><img src="brain-instructions.png" alt="screenshot" /></p>
-<p>You may also need a ‘Back’ button to take you to the main menu.</p>
-<p><img src="68aa76e66595f3a6ce7ee4c8986253ca42b0f3fc.png" alt="    broadcast [main menu v]" /></p>
+<p>Możesz też potrzebować przycisku “Wstecz”, aby wrócić z powrotem do głównego menu.</p>
+<p><img src="c423a22e1858248787c2933c08e03389b5c77e0e.png" alt="    nadaj [główne menu v]" /></p>
 </section>
-<section id="save-your-project-8" class="level2 save">
-<h2>Save your project</h2>
+<section id="zapisz-swoj-projekt-8" class="level2 save">
+<h2>Zapisz swój projekt</h2>
 </section>
 </section>
     </main>

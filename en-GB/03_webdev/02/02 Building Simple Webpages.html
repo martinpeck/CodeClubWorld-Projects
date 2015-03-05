@@ -46,23 +46,24 @@
 <section id="step-2-make-a-page-about-yourself" class="level1 activity">
 <h1>Step 2: Make a page about yourself</h1>
 <p><strong>About mistakes</strong></p>
-<p>Mistakes often happen. It’s very easy to make them in HTML because you have to remember to close each tag, and the opening and closing tag are slightly different. Let’s try making some mistakes to see how browser tries to make sense of our code even if we haven’t written it perfectly.</p>
+<p>Mistakes often happen. It’s very easy to make them in HTML because you have to remember to close each tag, and the opening and closing tag are slightly different. Let’s try making some mistakes to see how the browser tries to make sense of our code even if we haven’t written it perfectly.</p>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li>Let’s pick the list of things we like as an example. One of the mistakes that happen often is forgetting the <strong>closing tag</strong>, so let’s remove the <code>&lt;/ul&gt;</code> to see how it affects the page. Save the file and refresh it in the browser.</li>
+<li>Let’s pick the list of things we like as an example. One of the mistakes that happens often is forgetting the <strong>closing tag</strong>, so let’s remove the <code>&lt;/ul&gt;</code> to see how it affects the page. Save the file and refresh it in the browser.</li>
 </ul>
 <p>What happened? Some things below the list moved a little bit to the right. If you inspect the page with X-Ray Goggles you can see that things which followed the list now nest inside it, which is why they have moved to the right. After we removed the closing tag the browser simply doesn’t know the list of items has ended.</p>
 <ul>
-<li>Add the closing <code>&lt;/ul&gt;</code> tag back in and save it. Now when you refresh the page the rest of tags aren’t inside <code>&lt;ul&gt;</code> anymore.</li>
-<li>Tags need to be spelt correctly for browser to understand them. What would happen if we misspelt something?<br />+Find the <code>&lt;h1&gt;</code> tag. Let’s change it to <code>&lt;d1&gt;</code>. Save the document and refresh it in the browser.</li>
+<li>Add the closing <code>&lt;/ul&gt;</code> tag back in and save it. Now when you refresh the page the rest of the tags aren’t inside <code>&lt;ul&gt;</code> anymore.</li>
+<li>Tags need to be spelt correctly for the browser to understand them. What would happen if we misspelt something?</li>
+<li>Find the <code>&lt;h1&gt;</code> tag. Let’s change it to <code>&lt;d1&gt;</code>. Save the document and refresh it in the browser.</li>
 </ul>
-<p>What happened? Since the browser doesn’t know what you mean by this tag it can no longer tell that it’s a heading and so it doesn’t use a larger text to show how important this piece of text is.</p>
+<p>What happened? Since the browser doesn’t know what you mean by this tag it can no longer tell that it’s a heading and so it doesn’t use larger text to show how important this piece of text is.</p>
 <ul>
 <li>Change <code>&lt;d1&gt;</code> back to <code>&lt;h1&gt;</code> and save again.</li>
 <li>Find one of the <code>&lt;img&gt;</code> tags. We’ve just tried misspelling the tag name and the browser wasn’t sure what to do with it. But what if we misspell the attribute?</li>
 </ul>
-<p>Inside <code>&lt;img&gt;</code> tag we have the <code>src</code> and <code>alt</code> attributes:</p>
+<p>Inside the <code>&lt;img&gt;</code> tag we have the <code>src</code> and <code>alt</code> attributes:</p>
 <pre class="{.language-markup}"><code>&lt;img src=&quot;kitten.jpg&quot; alt=&quot;This is a kitten.&quot; /&gt;</code></pre>
 <ul>
 <li>Try changing <code>src</code> to something else. Save the document and refresh in the browser.</li>
@@ -70,7 +71,7 @@
 <p>Oh no! The kitten is gone! Suddenly, the browser no longer knows where to look for the picture to display - it is looking for the file name inside the <code>src</code> attribute, which is no longer there.</p>
 <ul>
 <li>Change it back to <code>src</code> so we can keep looking at the kitten.</li>
-<li><p>Now remove the second quote (<code>&quot;</code>) from the <code>alt</code> attribute of this image: the one after the text, so you end up with this:</p>
+<li><p>Now remove the second quote (<code>&quot;</code>) from the <code>alt</code> attribute of this image, the one after the text, so you end up with this:</p>
 <pre class="{.language-markup}"><code>&lt;img src=&quot;kitten.jpg&quot; alt=&quot;This is a kitten. /&gt;</code></pre></li>
 <li><p>Save it and refresh in the browser.</p></li>
 </ul>
@@ -78,7 +79,7 @@
 <ul>
 <li>Fix it again by adding a quote after the <code>alt</code> text.</li>
 </ul>
-<p>We’ve made some common mistakes together, and sometimes a simple error might make the browser struggle to understand what we mean. But most of the time it will try to show us something anyway, so when we’ve changed the header tag to something else it didn’t understand this piece of text was a heading, but it still showed us the text. So it’s a little bit understanding, but some mistakes can make it very confused.</p>
+<p>We’ve made some common mistakes together, and sometimes a simple error might make the browser struggle to understand what we mean. But most of the time it will try to show us something anyway, so when we changed the heading tag to something else it didn’t understand this piece of text was a heading, but it still showed us the text. So it’s a little bit understanding, but some mistakes can make it very confused.</p>
 </section>
 </section>
 <section id="step-3-create-another-page-and-link-to-it" class="level1 activity">
@@ -112,19 +113,19 @@
 <p>Now you have made your own site, you want to show it off, am I right?</p>
 <p>If you simply copied the address of the web page from your browser and then sent it to someone, they wouldn’t see it. That’s because this address describes a place on your computer, and your friends don’t have access to it. Even if they did, what if they wanted to look at it when your computer wasn’t turned on?</p>
 <p>Remember servers from the first session? Servers are computers that are always on and connected to the internet, and they are set up so people can visit websites that live on those computers.</p>
-<p>To do that we will use <strong>Cyberduck</strong> - it’s a program for moving files from your computer to a server.</p>
+<p>We will use <strong>Cyberduck</strong> - it’s a program for moving files from your computer to a server.</p>
 <ul>
 <li>Click <code>Open Connection</code>.</li>
-<li>Add the server name, user name and password as instructed by the CodeClub volunteer.</li>
+<li>Add the server name, user name and password as instructed by the Code Club volunteer.</li>
 <li>Click <code>Connect</code>. You will then see all the folders and files on the server - most likely the server will be empty, as you haven’t added your files yet.</li>
 <li>Drag your website files from your computer into your server window. The uploading will begin.</li>
-<li>Once uploaded, you can visit your website at the address given to you by the CodeClub volunteer.</li>
+<li>Once uploaded, you can visit your website at the address given to you by the Code Club volunteer.</li>
 </ul>
 <section id="things-to-try" class="level2 try">
 <h2>Things to try</h2>
 <ul>
-<li>How could you link to another page on the web? (Hint: try adding <code>http://</code> and then the address of the site you want to link to)</li>
-<li>Similar to suggestion above, how would you add a picture from somewhere on the web instead of from your computer? (Hint: again, try adding <code>http://</code> and the address of the picture)</li>
+<li>How could you link to another page on the web? (Hint: try adding <code>http://</code> and then the address of the site you want to link to.)</li>
+<li>Similar to the suggestion above, how would you add a picture from somewhere on the web instead of from your computer? (Hint: again, try adding <code>http://</code> and the address of the picture.)</li>
 </ul>
 </section>
 </section>
