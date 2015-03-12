@@ -24,7 +24,7 @@
     <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch 2</a></li><li class="breadcrumbs-item current">Memory</li></ul></nav>
 
           <section class="note registration-note">
-        <p>All Code Clubs <u>must be registered</u>. Registered clubs appear on the map at <a href="http://www.codeclubworld.org/">codeclubworld.org</a> - if your club is not on the map then visit <a href="http://jumpto.cc/18CpLPy">jumpto.cc/18CpLPy</a> to find out what to do.</p>
+        <p>All Code Clubs <u>must be registered</u>. Registered clubs appear on the map at <a href="http://www.codeclubworld.org/#map">codeclubworld.org</a> - if your club is not on the map then visit <a href="http://jumpto.cc/18CpLPy">jumpto.cc/18CpLPy</a> to find out what to do.</p>
       </section>
     
     <main class="main lesson-steps" role="main">
@@ -178,13 +178,13 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <ul>
 <li><p>Add 2 new variables to your project, called <code class="blockdata">high score</code> and <code class="blockdata">name</code>.</p></li>
 <li><p>If ever the game ends (by pressing the wrong button), you need to check whether the player’s score is higher than the current high score. If it is, you need to save the score as the high score, and store the name of the player. Here’s how your red button should look:</p>
-<p><img src="136f6a1d4c21c46f9064fcf4cde3c93e14dbc82c.png" alt="    when I receive [red v]
+<p><img src="731e7ce7039175582cdd9c44c959c5bb76b63036.png" alt="    when I receive [red v]
     if &lt;(item (1 v) of [sequence v])=[1]&gt; then
         delete (1 v) of [sequence v]
     else
         say [Game over!] for (1) secs
         if &lt; (score) &gt; (high score) &gt; then
-            set [high score v] to [score v]
+            set [high score v] to (score)
             ask [High score! What is your name?] and wait
             set [name v] to (answer)
         end
