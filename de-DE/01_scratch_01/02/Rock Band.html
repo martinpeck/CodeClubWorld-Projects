@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="world"  lang="de-DE">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Rock-Band — Code Club World Projects</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.ico">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Rock-Band</h1>
+      <span class="level-indicator">Scratch 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Deutsch</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch 1</a></li><li class="breadcrumbs-item current">Rock-Band</li></ul></nav>
+
+          <section class="note registration-note">
+        <p>All Code Clubs <u>must be registered</u>. Registered clubs appear on the map at <a href="http://www.codeclubworld.org/">codeclubworld.org</a> - if your club is not on the map then visit <a href="http://jumpto.cc/18CpLPy">jumpto.cc/18CpLPy</a> to find out what to do.</p>
+      </section>
+    
+    <main class="main lesson-steps" role="main">
+      
+<section id="einleitung" class="level1 intro">
+<h1>Einleitung</h1>
+<p>In diesem Projekt lernst du, wie du deine eigenen Musikinstrumente programmieren kannst!</p>
+<div class="scratch-preview">
+    <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26741186/?autostart=true" frameborder="0"></iframe>
+    <img src="band-final.png">
+</div>
+</section>
+<section id="schritt-1-eine-trommel-programmieren" class="level1 activity">
+<h1>Schritt 1: Eine Trommel programmieren</h1>
+<p>Lass uns zuerst eine Trommel entwickeln, die einen Klang von sich gibt, wenn du drauf schlägst.</p>
+<section id="arbeitsschritte" class="level2 check">
+<h2>Arbeitsschritte</h2>
+<ul>
+<li><p>Öffne ein neues Scratch-Projekt und lösche die Figur mit der Katze, so dass dein Projekt leer ist.</p></li>
+<li><p>Füge eine Trommel-Figur zu deinem leeren Projekt hinzu und suche ein Hintergrundbild für die Bühne, das zum Thema passt.</p>
+<p><img src="band-stage.png" alt="screenshot" /></p>
+<p>Wenn du dir nicht sicher bist, wie das gemacht wird, dann schau dir das vorherige Projekt (“Verloren im Weltall”) an!</p></li>
+<li><p>Lass uns die Trommel so programmieren, dass sie einen Klang abspielt, wenn man drauf klickt. Stelle sicher, dass die Trommel ausgewählt ist, und füge diesen Code hinzu:</p>
+<p><img src="b7e9f20070df8fa457d70a32916859fb80c29432.png" alt="    Wenn ich angeklickt werde
+    spiele Schlaginstrument (1 v) für (0.25) Schläge" /></p></li>
+<li><p>Klicke auf die Trommel, um dein neues Instrument zu testen!</p></li>
+<li><p>Du kannst auch ändern, wie die Trommel aussieht wenn man drauf klickt. Dazu braucht die Trommel ein zweites Kostüm. Klick zuerst auf ‘Kostüme’, um das aktuelle Bild der Trommel zu sehen.</p>
+<p><img src="band-drum-costume.png" alt="screenshot" /></p></li>
+<li><p>Klicke mit der rechten Maustaste auf das Kostüm und dann auf ‘Duplizieren’, um eine Kopie des Kostüms zu erstellen.</p>
+<p><img src="band-drum-duplicate.png" alt="screenshot" /></p></li>
+<li><p>Klicke auf das neue Kostüm (‘drum2’), wähle das Linien-Werkzeug aus, und zeichne dann ein paar Linien, damit es so aussieht als ob die Trommel einen Klang von sich gäbe.</p>
+<p><img src="band-drum-hit.png" alt="screenshot" /></p></li>
+<li><p>Die Namen der Kostüme sind derzeit nicht besonders hilfreich. Benenne die 2 Kostüme um in ‘nicht geschlagen’ und ‘geschlagen’ indem du die Namen in das Textfeld des jeweiligen Kostüms eingibst.</p>
+<p><img src="band-drum-name.png" alt="screenshot" /></p></li>
+<li><p>Weil es jetzt 2 unterschiedliche Kostüme für die Trommel gibt, kannst du nun auswählen welches Kostüm angezeigt wird! Füge diesen Code zu deiner Trommel hinzu:</p>
+<p><img src="6bf64ff3333e964f31335a93961f810548fb3aad.png" alt="    Wenn die grüne Flagge angeklickt
+    wechsle zu Kostüm [nicht geschlagen v]
+
+    Wenn ich angeklickt werde
+    wechsle zu Kostüm [geschlagen v]
+    spiele Schlaginstrument (1 v) für (0.25) Schläge
+    wechsle zu Kostüm [nicht geschlagen v]" /></p>
+<p>Den Code-Block zum Wechseln des Kostüms findest du im Bereich <code class="blocklooks">Aussehen</code>.</p></li>
+<li><p>Wenn die Trommel angeklickt wird sollte sie jetzt das Kostüm wechseln, damit man sieht dass sie einen Ton von sich gibt, und dann wieder zurückwechseln.</p></li>
+</ul>
+</section>
+<section id="speichere-dein-projekt" class="level2 save">
+<h2>Speichere dein Projekt</h2>
+</section>
+<section id="herausforderung-deine-trommel-verbessern" class="level2 challenge">
+<h2>Herausforderung: Deine Trommel verbessern</h2>
+<ul>
+<li>Kannst du den Klang ändern, den die Trommel von sich gibt, wenn sie angeklickt wird?</li>
+</ul>
+<p><img src="band-drum-sound.png" alt="screenshot" /></p>
+<ul>
+<li>Kannst du auch die Trommel dazu bringen, einen Klang von sich zu geben, wenn die Leertaste gedrückt wird? Dazu benötigst du diesen Block aus dem Bereich <code class="blockevents">Ereignisse</code>:</li>
+</ul>
+<p><img src="dbda1166a7cbdc38647836780d83a144d9df668f.png" alt="    Wenn Taste [Leertaste v] gedrückt" /></p>
+<p>Du kannst den existierenden Code kopieren, indem du mit der rechten Maustaste drauf klickst und ‘Duplizieren’ wählst.</p>
+<p><img src="band-duplicate-code.png" alt="screenshot" /></p>
+</section>
+<section id="speichere-dein-projekt-1" class="level2 save">
+<h2>Speichere dein Projekt</h2>
+</section>
+</section>
+<section id="schritt-2-eine-sangerin-programmieren" class="level1 activity new-page">
+<h1>Schritt 2: Eine Sängerin programmieren</h1>
+<p>Lass uns jetzt eine Sängerin zu unserer Band hinzufügen!</p>
+<section id="arbeitsschritte-1" class="level2 check">
+<h2>Arbeitsschritte</h2>
+<ul>
+<li><p>Füge 2 weitere Figuren zu deiner Bühne hinzu: eine Sängerin und ein Mikrofon.</p>
+<p><img src="band-singer-mic.png" alt="screenshot" /></p></li>
+<li><p>Bevor du deine Sängerin zum Singen bringen kannst, musst du einen Klang zu deiner Figur hinzufügen. Stelle sicher, dass du die Sängerin ausgewählt hast, und klicke auf ‘Klänge und dann auf ’Klang aus der Bibliothek wählen’:</p>
+<p><img src="band-import-sound.png" alt="screenshot" /></p></li>
+<li><p>Wenn du links auf ‘Gesang’ klickst, kannst du einen passenden Klang für deine Figur auswählen.</p>
+<p><img src="band-choose-sound.png" alt="screenshot" /></p></li>
+<li><p>Weil der Klang jetzt hinzugefügt wurde, kannst du diesen Code zu deiner Sängerin hinzufügen:</p>
+<p><img src="54ff86f2cc69b1b1b507aa58f1a71e1517171428.png" alt="    Wenn ich angeklickt werde
+    spiele Klang [singer1 v] ganz" /></p></li>
+<li><p>Klicke auf die Sängerin, um sicherzustellen, dass sie singt, wenn sie geklickt wird.</p></li>
+</ul>
+</section>
+<section id="speichere-dein-projekt-2" class="level2 save">
+<h2>Speichere dein Projekt</h2>
+</section>
+</section>
+<section id="section" class="level1 new-page">
+<h1></h1>
+<ul>
+<li><p>Du kannst auch das Kostüm der Sängerin wechseln, damit man bemerkt, wenn sie singt. Klicke mit der rechten Maustaste auf das Kostüm und wähle ‘Duplizieren’, damit du genau so wie bei der Trommel eine Kopie hast. Benenne die zwei Kostüme um in ‘singt nicht’ und ‘singt’.</p>
+<p><img src="band-singer-costume.png" alt="screenshot" /></p></li>
+<li><p>Zeichne ein paar Linien neben den Mund der Sängerin. Die Sängerin sollte ungefähr so aussehen:</p>
+<p><img src="band-singer-final.png" alt="screenshot" /></p></li>
+<li><p>Füge jetzt diesen Code zu deiner Sängerin hinzu, damit ihr Kostüm wechselt, wenn sie angeklickt wird:</p>
+<p><img src="0cad2c102578c565d5f014abf2b0e84af75124fc.png" alt="    Wenn die grüne Flagge angeklickt
+    wechsle zu Kostüm [singt nicht v]
+
+    Wenn ich angeklickt werde
+    wechsle zu Kostüm [singt v]
+    spiele Klang [singer1 v] ganz
+    wechsle zu Kostüm [singt nicht v]" /></p></li>
+<li><p>Klicke auf die Sängerin, um zu testen, ob dein neuer Code funktioniert.</p></li>
+</ul>
+<section id="speichere-dein-projekt-3" class="level2 save">
+<h2>Speichere dein Projekt</h2>
+</section>
+</section>
+<section id="schritt-3-ein-becken-programmieren" class="level1 activity new-page">
+<h1>Schritt 3: Ein Becken programmieren</h1>
+<p>Bisher haben wir für alle Instrumente fertige Bilder aus der Scratch-Bibliothek benutzt. Warum nicht eine eigene Figur zeichnen?</p>
+<section id="arbeitsschritte-2" class="level2 check">
+<h2>Arbeitsschritte</h2>
+<ul>
+<li><p>Um dein eigenes Bild für das Becken zu zeichnen, klicke auf das ‘Neue Figur zeichnen’ Symbol mit dem Pinsel.</p>
+<p><img src="band-draw.png" alt="screenshot" /></p></li>
+<li><p>Wie du siehst, hast du jetzt eine leere Figur namens ‘Figur1’. Zeichne das Becken in ‘Kostüm1’, indem du eine gelbe Ellipse und ein paar schwarze Linien zeichnest. Du solltest dieses Kostüm auch in ‘nicht geschlagen’ umbenennen, wie bei den anderen Figuren.</p>
+<p><img src="band-cymbal.png" alt="screenshot" /></p></li>
+<li><p>Dupliziere das Becken-Kostüm, um ein zweites Kostüm zu erstellen, und benenne es um in ‘geschlagen’.</p></li>
+<li><p>Damit das Becken so aussieht, als ob es geschlagen wurde, kannst du es drehen. Um das zu tun, klicke auf das ‘Auswählen’-Werkzeug und ziehe es, um das Becken zu markieren. Du kannst danach den runden ‘Dreh’-Griff ziehen, um das Becken zu drehen.</p>
+<p><img src="band-cymbal-rotate.png" alt="screenshot" /></p>
+<p>Die Becken-Kostüme sollten ungefähr so aussehen:</p>
+<p><img src="band-cymbal-hit.png" alt="screenshot" /></p></li>
+<li><p>Das Becken ist wahrscheinlich etwas zu groß. Klicke auf das ‘Verkleinern’-Symbol, woraufhin sich der Mauszeiger verändert. Klicke einige Mal auf das Becken, um es zu verkleinern. Du kannst das Becken auch verschieben, um ihm auf der Bühne einen besseren Platz zu geben.</p>
+<p><img src="band-shrink.png" alt="screenshot" /></p></li>
+<li><p>Als nächstes solltest du den Namen der Figur umändern, weil ‘Figur1’ kein besonders hilfreicher Name ist! Klicke auf das Symbol für die Becken-Figur und dann auf das blaue <code class="blockmotion">i</code> (Information) oben links.</p>
+<p><img src="band-info.png" alt="screenshot" /></p>
+<p>Du kannst jetzt den Namen der Figur in etwas Sinnvolles, wie ‘Becken’, umändern!</p></li>
+<li><p>Da die Bilder jetzt fertig sind, kannst du einen Klang zur Becken-Figur hinzufügen. Klicke auf ‘Klang aus der Bibliothek wählen’, dann auf ‘Schlagwerk’ und wähle den ‘cymbal crash’-Klang.</p>
+<p><img src="band-crash.png" alt="screenshot" /></p></li>
+<li><p>Füge diesen Code zum Becken hinzu, so dass es einen Klang von sich gibt und das Kostüm wechselt, wenn es angeklickt wird:</p>
+<p><img src="77bd8a0235aadbebd7dfb88de6f230aa08d636fe.png" alt="    Wenn die grüne Flagge angeklickt
+    wechsle zu Kostüm [not hit v]
+
+    Wenn ich angeklickt werde
+    wechsle zu Kostüm [hit v]
+    spiele Klang [cymbal crash v] ganz
+    wechsle zu Kostüm [not hit v]" /></p></li>
+<li><p>Teste das Becken, um zu sehen ob es funktioniert!</p></li>
+</ul>
+</section>
+<section id="speichere-dein-projekt-4" class="level2 save">
+<h2>Speichere dein Projekt</h2>
+</section>
+</section>
+<section id="schritt-4-hintergrundmusik" class="level1 activity new-page">
+<h1>Schritt 4: Hintergrundmusik</h1>
+<p>Du kannst Hintergrundmusik hinzufügen, die deine Band begleitet!</p>
+<section id="arbeitsschritte-3" class="level2 check">
+<h2>Arbeitsschritte</h2>
+<ul>
+<li><p>Klicke auf die Bühne, dann auf ‘Klänge’ und dann auf ‘Klang aus der Bibliothek wählen’, um Musik zu deiner Bühne hinzuzufügen. Die Musik findest du im Bereich ‘Musikschleifen’.</p></li>
+<li><p>Füge diesen Code zu deiner Bühne hinzu und denk daran, die Musik auszuwählen, die du ausgesucht hast:</p>
+<p><img src="c85f2ced75960408ab619cb8624c7f0f880b1ef4.png" alt="    Wenn die grüne Flagge angeklickt
+    wiederhole fortlaufend
+    spiele Klang [eggs v] ganz
+    Ende" /></p></li>
+<li><p>Dieser Code spielt die Musik, die du ausgewählt hast, in einer Schleife. Klick auf die Flagge, und probier es aus!</p></li>
+<li><p>Du kannst sogar diesen Code zu deiner Bühne hinzufügen, damit du die Hintergrundmusik stumm schalten oder wieder laut schalten kannst, indem du die Tasten ‘m’ und ‘u’ benutzt:</p>
+<p><img src="11ee925d21e16e7a521e31662fe1afe0200fee47.png" alt="    Wenn die grüne Flagge angeklickt
+    setze Lautstärke auf (100)%
+    wiederhole fortlaufend
+    spiele Klang [eggs v] ganz
+    Ende
+
+    Wenn Taste [m v] gedrückt
+    setze Lautstärke auf (0)%
+
+    Wenn Taste [u v] gedrückt
+    setze Lautstärke auf (100)%" /></p></li>
+</ul>
+</section>
+<section id="speichere-dein-projekt-5" class="level2 save">
+<h2>Speichere dein Projekt</h2>
+</section>
+<section id="herausforderung-erstelle-deine-eigene-band" class="level2 challenge">
+<h2>Herausforderung: Erstelle deine eigene Band</h2>
+<p>Benutze das, was du in diesem Projekt gelernt hast, um deine eigene Band zu erstellen! Du kannst alle Instrumente erstellen, die dir gefallen, aber schau dir zuerst die verfügbaren Töne und Instrumente an, um ein paar Ideen zu bekommen.</p>
+<p><img src="band-ideas.png" alt="screenshot" /></p>
+<p>Deine Instrumente müssen auch nicht unbedingt sinnvoll sein. Du kannst beispielsweise ein Klavier aus Muffins erstellen!</p>
+<p><img src="band-piano.png" alt="screenshot" /></p>
+<p>Kanns du dein eigenes Lied komponieren, oder mit Freunden eine Band zusammenstellen?</p>
+</section>
+<section id="speichere-dein-projekt-6" class="level2 save">
+<h2>Speichere dein Projekt</h2>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+    </aside>
+
+    <div id="legend">
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
