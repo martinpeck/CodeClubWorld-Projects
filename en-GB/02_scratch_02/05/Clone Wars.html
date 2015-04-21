@@ -44,7 +44,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 </section>
 <section id="introduction" class="level1 intro">
 <h1>Introduction</h1>
-<p>In this project you’ll learn how to create a game, in which you have to save the Earth from space-monsters.</p>
+<p>In this project you’ll learn how to create a game in which you have to save the Earth from space monsters.</p>
 <div class="scratch-preview">
     <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/46018140/?autostart=false" frameborder="0"></iframe>
     <img src="invaders-final.png">
@@ -52,15 +52,16 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 </section>
 <section id="step-1-making-a-spaceship" class="level1 activity">
 <h1>Step 1: Making a Spaceship</h1>
-<p>Let’s make a spaceship, that will defend the Earth!</p>
+<p>Let’s make a spaceship that will defend the Earth!</p>
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.</p></li>
-<li><p>Add the ‘stars’ backdrop and the ‘spaceship’ sprite to your project. Shrink the spaceship and move it near the bottom of the screen.</p>
+<li><p>Start a new Scratch project and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.</p></li>
+<li><p>Add the ‘stars’ backdrop and the ‘Spaceship’ sprite to your project. Shrink the spaceship and move it near the bottom of the screen.</p>
 <p><img src="invaders-sprites.png" alt="screenshot" /></p></li>
 <li><p>Add code to move your spaceship to the left when the left arrow key is pressed. You’ll need to use these blocks:</p>
-<p><img src="ef7832764e282f2e48716738668bd254c0800905.png" alt="    forever
+<p><img src="444557110fcfcc01549452b1faa837ab579a3f1e.png" alt="    when flag clicked
+    forever
         if &lt;key [left arrow v] pressed?&gt; then
             change x by (-4)
         end
@@ -84,7 +85,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <li><p>When the game is started, the lightning should be hidden until the spaceship fires its laser cannons.</p>
 <p><img src="e81969df934e49f42458554a0c3822875adf424c.png" alt="    when flag clicked
     hide" /></p></li>
-<li><p>Add the following code <strong>to the spaceship</strong> to create a new lightning bolt whenever the space key is pressed.</p>
+<li><p>Add the following code <strong>to the Spaceship</strong> to create a new lightning bolt whenever the space key is pressed.</p>
 <p><img src="f3826cfb5d17ab7d55aa2a9fe29dfe24dc6690f8.png" alt="    when flag clicked
     forever
         if &lt;key [space v] pressed?&gt; then
@@ -155,7 +156,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <p><img src="invaders-spaceship-costumes.png" alt="screenshot" /></p>
 <p>The spaceship’s ‘hit’ costume can be made by importing the ‘Sun’ image from the Scratch library, and using the ‘Color a shape’ tool to change its colour.</p>
 <p><img src="invaders-sun.png" alt="screenshot" /></p></li>
-<li><p>Add this code to your spaceship, so that it switches costume whenever it collides with a flying hippo:</p>
+<li><p>Add this code to your spaceship so that it switches costume whenever it collides with a flying hippo:</p>
 <p><img src="586cc674f7b80d8d534117f6859a8eaa0f43bf5c.png" alt="    when flag clicked
     forever
         switch costume to [normal v]
@@ -185,7 +186,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 </section>
 <section id="step-4-fruit-bats" class="level1 activity">
 <h1>Step 4: Fruit Bats!</h1>
-<p>Let’s make a fruit bat, that throws oranges at your spaceship.</p>
+<p>Let’s make a fruit bat that throws oranges at your spaceship.</p>
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
@@ -202,7 +203,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
         wait (pick random (5) to (10)) secs
         create clone of [Orange v]
     end" /></p></li>
-<li><p>Click on your orange sprite, and add this code to make each orange clone drop down the stage from the bat towards the spaceship:</p>
+<li><p>Click on your orange sprite and add this code to make each orange clone drop down the stage from the bat towards the spaceship:</p>
 <p><img src="03bfc70ff6df53f63c859e528a9824b42a4f4857.png" alt="    when flag clicked
     hide
 
@@ -231,7 +232,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>If you haven’t already, create a new variable called <code class="blockdata">lives</code>. Your spaceship should start with 3 lives, and lose a life whenever it collides with an enemy. Your game should also stop when you run out of lives. If you need help, you can use the ‘Catch the Dots’ project to help you.</p></li>
+<li><p>If you haven’t already, create a new variable called <code class="blockdata">lives</code>. Your spaceship should start with 3 lives and lose a life whenever it collides with an enemy. Your game should also stop when you run out of lives. If you need help, you can use the ‘Catch the Dots’ project to help you.</p></li>
 <li><p>Draw a new sprite called ‘Game Over’, using the text tool.</p>
 <p><img src="invaders-game-over.png" alt="screenshot" /></p></li>
 <li><p>On your stage, broadcast a <code class="blockevents">game over</code> message just before the game ends.</p>
