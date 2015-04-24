@@ -50,7 +50,7 @@
 <li><p>Abre IDLE, el editor que viene con Python. Todo nuestro código se escribirá con este editor. Cuando lo abras, verás una ventana donde aparecerán los errores y los resultados.</p></li>
 <li><p>En caso que no lo hayas hecho ya, ves a “Archivo -&gt; Nueva Ventana”. Una ventana vacía aparecerá, con el título de ‘<em>Sin Título</em>’ en la barra de título.<br />Ahora deberías tener dos ventanas abiertas, una para escribir el programa y otra para mostrar el resultado. Asegúrate de escribir en la ventana correcta!</p></li>
 <li><p>Escribe el siguiente código en la nueva ventana:</p>
-<pre class="{.language-python}"><code>print(&quot;Hola, Mundo!&quot;)</code></pre></li>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="dt">print</span>(<span class="st">&quot;Hola, Mundo!&quot;</span>)</code></pre></li>
 <li><p>Asegúrate que no estás en la ventana de la Shell de Python, y guarda tu código.</p></li>
 </ol>
 <p>Lo puedes hacer seleccionando Archivo -&gt; Guardar. Cuando te pidan un nombre de archivo, escribe <code>hola.py</code>, y guarda el archivo en tu escritorio. Luego selecciona Ejecutar -&gt; Ejecutar Módulo.</p>
@@ -66,26 +66,24 @@
 <p>Lo siguiente que vamos a hacer es divertirnos un poco con las tortugas. Una tortuga es un robot muy chiquitito que dibuja en tu pantalla. Podemos hacer que se mueva usando comandos de Python.</p>
 <ol>
 <li><p>Abre una nueva ventana en tu terminal (Desde el menú Archivo) y escribe lo siguiente (forward significa ade:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-forward(100)
-</code></pre></li>
+forward(<span class="dv">100</span>)</code></pre></li>
 <li><p>Guarda tu programa como mitortuga.py y elije la opción Ejecutar -&gt; Ejecutar Módulo. ¿Ves cómo la tortuga se mueve 100 píxeles hacia adelante? La tortuga tiene pegado un lápiz y dibuja líneas al moverse alrededor de la pantalla.</p>
 <p><strong>Súper Pista:</strong> Cuando guardes programas de Python en un archivo siempre deberías darle un nombre que acabe en ‘.py’.</p></li>
 <li><p>Vamos a hacer que la tortuga se mueva por la pantalla! Puedes usar <code>backward(distancia)</code> para que la tortuga vaya hacia atrás, para que gire puedes usar <code>right(ángulo)</code> y <code>left(ángulo)</code>. Por ejemplo <code>backward(20)</code> le dice a la tortuga que se mueva hacia atrás 20 píxeles, y <code>right(90)</code> le dice la tortuga que gire hacia la derecha 90 grados. Si le das más de una instrucción, éstas se ejecutarán en orden.</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-forward(100)
-right(120)
-forward(100)
-left(90)
-backward(100)
-left(90)
-forward(50)
-</code></pre></li>
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)
+forward(<span class="dv">100</span>)
+left(<span class="dv">90</span>)
+backward(<span class="dv">100</span>)
+left(<span class="dv">90</span>)
+forward(<span class="dv">50</span>)</code></pre></li>
 </ol>
 <section id="angulos-y-grados" class="level3">
 <h3>Ángulos y Grados</h3>
@@ -127,33 +125,33 @@ Oeste     |     Este
 <p>Vamos a hacer un cuadrado diciéndole a la tortuga que se mueva siguiendo la forma de un cuadrado.</p>
 <ol>
 <li><p>Abre un nuevo archivo en IDLE, y escribe el siguiente código:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-forward(100)
-right(90)
-forward(100)
-right(90)
-forward(100)
-right(90)
-forward(100)
-right(90)</code></pre>
+forward(<span class="dv">100</span>)
+right(<span class="dv">90</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">90</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">90</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">90</span>)</code></pre>
 <p>Guarda tu programa y elige Ejecutar -&gt; Nuevo Módulo. ¿Ves un cuadrado? La tortuga gira 90 grados cuatro veces, y acaba mirando en la misma dirección que había empezado. Girar 90, 90, 90 y 90 hace que la tortuga gire 360 grados en total (4x9 = 36)</p>
 <p>¿Y si queremos hacer un triángulo? Un triángulo tiene tres esquinas, así que tenemos que girar tres veces. Si queremos acabar mirando en la misma dirección, necesitaremos que la tortuga gire un total de 360 grados, como en el caso del cuadrado. Así que giraremos 120 grados, luego 120 grados más y una última vez 120 grados. (120 + 120 + 120 = 360)</p></li>
 <li><p>Para dibujar un triángulo, edita tu código para que sea como lo que ponemos a continuación:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-forward(100)
-right(120)
-forward(100)
-right(120)
-forward(100)
-right(120)</code></pre></li>
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)</code></pre></li>
 <li><p>Ejecuta tu código. ¿Tienes un triángulo?</p></li>
 </ol>
 <section id="elije-un-color" class="level3">
@@ -161,21 +159,21 @@ right(120)</code></pre></li>
 <p>¿Cual es tu color favorito? puedes cambiar el color de las líneas usando la función <code>pencolor</code> (Python utiliza inglés americano), y tambien puedes cambiar el tamaño de la línea usando <code>pensize</code>:</p>
 <ol>
 <li><p>Edita el código de antes para que sea como el del siguiente ejemplo:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-pensize(10)
-pencolor(&quot;red&quot;)
-forward(100)
-right(120)
-pencolor(&quot;blue&quot;)
-forward(100)
-right(120)
-pencolor(&quot;green&quot;)
-forward(100)
-right(120)</code></pre></li>
+pensize(<span class="dv">10</span>)
+pencolor(<span class="st">&quot;red&quot;</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)
+pencolor(<span class="st">&quot;blue&quot;</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)
+pencolor(<span class="st">&quot;green&quot;</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)</code></pre></li>
 <li><p>Ejecuta tu codigo, ¿qué se dibuja en la pantalla?<br />Este código dibuja un triángulo de líneas anchas en tres colores diferentes.</p></li>
 <li><p>Intenta cambia los colores en tu código, ejecútalo y mira a ver qué sucede.<br />La tortuga conoce cientos de colores diferentes, no sólo rojo, azul y verde. Intenta usar tu color favorito!<br />Puedes especificar los colores en <strong>hex</strong> (hexadecimal) tal y como hicimos en CSS. En lugar de usar <code>pencolor(&quot;red&quot;)</code> podrías usar <code>pencolor(&quot;#FF0000&quot;)</code>.<br />¿Qué color es el #FF4F00?</p></li>
 </ol>
@@ -186,39 +184,38 @@ right(120)</code></pre></li>
 <p>El último programa usaba las mismas instrucciones una y otra vez. En lugar de escribirlos, vamos a pedirle al ordenador que los repita por nosotros. Cuando estudiabas <strong>Scratch</strong> aprendiste el concepto de <em>iteración</em> cuando usaste los bloques <code>Para Siempre</code> y <code>Repitir</code>/<code>Repitir Hasta Que</code>. En Python los bucles <strong>for</strong> se usan cuando tienes un trozo de codigo que quieres repetir un número de veces. En este caso, queremos repetir el código (indentado, que está metido hacia adentro) 4 veces (por que un cuadrado tiene 4 lados).</p>
 <ol>
 <li><p>Abre un nuevo archivo y escribe lo siguiente:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-for count in range(4):
-    forward(100)
-    right(90)
-</code></pre></li>
+<span class="kw">for</span> count in <span class="dt">range</span>(<span class="dv">4</span>):
+    forward(<span class="dv">100</span>)
+    right(<span class="dv">90</span>)</code></pre></li>
 <li><p>Guarda el programa y ejecuta el programa: Ejecutar -&gt; Ejecutar Módulo.</p>
 <p>Fíjate que el programa está <em>indentado</em>, o desplazado a la derecha dentro del bucle. Python utiliza espacios en blanco para saber qué instrucciones hay que repetir. Puedes utilizar el tabulador (tecla Tab) para indentar tu código.</p></li>
 <li><p>Vamos a ver qué ocurre si sólo indentamos <code>forward</code>, para ello, edita tu programa para que diga:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-for count in range(4):
-    forward(100)
-right(90)</code></pre></li>
+<span class="kw">for</span> count in <span class="dt">range</span>(<span class="dv">4</span>):
+    forward(<span class="dv">100</span>)
+right(<span class="dv">90</span>)</code></pre></li>
 <li><p>Fíjate que <code>forward</code> está indentado y <code>right</code> no lo está, ¿verdad? ¿Qué crees que hace el programa? prueba de ejecutarlo para descubrirlo.</p>
 <p>¿Te ha salido una línea recta? Python repetirá la instrucción <code>forward</code> cuatro veces y <em>luego</em> girará a la derecha. Python utiliza espacios en blanco para agrupar instrucciones, de la misma manera que en Scratch teníamos los bloques. ¿Te acuerdas? Python se quejará si el código no está debidamente tabulado.</p></li>
 <li><p>Vamos a dejar el programa como lo teníamos al principio y que nos dibuje un cuadrado, pero en lugar de usar números en el código vamos a asignar variables. Nos ayudará a ver qué hace realmente el programa, y además nos ayudará a que no nos repitamos una y otra vez.</p>
 <p>Cambia el programa para que contenga lo siguiente:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-lados = 4
-distancia = 100
-angulo = 90
-for count in range(lados):
+lados = <span class="dv">4</span>
+distancia = <span class="dv">100</span>
+angulo = <span class="dv">90</span>
+<span class="kw">for</span> count in <span class="dt">range</span>(lados):
     forward(distancia)
     right(angulo)</code></pre></li>
 <li><p>Guarda el programa y ejecuta el programa: Ejecutar -&gt; Ejecutar Módulo.</p></li>
@@ -243,16 +240,16 @@ for count in range(lados):
 <p>Si necesitamos girar 360 grados en total, podemos calcular el ángulo que necesitaremos. Para un cuadrado, <code>360 / 4</code> es 90, para un triángulo, <code>360/3</code> es 120.</p>
 <ol>
 <li><p>Cambia tu prorama para calcular el ángulo de la siguiente manera.</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-lados = 4
-distancia = 20
+lados = <span class="dv">4</span>
+distancia = <span class="dv">20</span>
 
-angulo = 360/lados
-for count in range(lados):
+angulo = <span class="dv">360</span>/lados
+<span class="kw">for</span> count in <span class="dt">range</span>(lados):
     forward(distancia)
     right(angulo)</code></pre></li>
 <li><p>Ahora cambia el número de lados. Comprueba que Python lo haga bien. Intenta dibujar un hexágono (6 lados), o cualquier número de lados que quieras!</p></li>
@@ -262,20 +259,20 @@ for count in range(lados):
 <h2>Paso 6: Forma Sólida</h2>
 <ol>
 <li><p>Podemos pedirle a la tortuga que rellene las formas con un color usando las instrucciones <code>begin_fill()</code> y <code>end_fill()</code>. Cambia tu código y añade éstas instrucciones dentro:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-lados = 4
-distancia = 20
+lados = <span class="dv">4</span>
+distancia = <span class="dv">20</span>
 
-fillcolor(&#39;red&#39;)
-pencolor(&#39;red&#39;)
+fillcolor(<span class="st">&#39;red&#39;</span>)
+pencolor(<span class="st">&#39;red&#39;</span>)
 begin_fill()
 
-angulo = 360/lados
-for count in range(lados):
+angulo = <span class="dv">360</span>/lados
+<span class="kw">for</span> count in <span class="dt">range</span>(lados):
     forward(distancia)
     right(angulo)
 end_fill()</code></pre>
@@ -289,18 +286,18 @@ end_fill()</code></pre>
 <p>Si quieres mover la tortuga sin dejar ningún rastro detrás puedes usar la instrucción <code>penup()</code> y <code>pendown()</code> para hacer que la tortuga dibuje o no.</p>
 <ol>
 <li><p>En un nuevo archivo, intenta lo siguiente:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-pencolor(&#39;red&#39;)
+pencolor(<span class="st">&#39;red&#39;</span>)
 
-for count in range(20):
+<span class="kw">for</span> count in <span class="dt">range</span>(<span class="dv">20</span>):
     penup()
-    forward(10)
+    forward(<span class="dv">10</span>)
     pendown()
-    forward(20)</code></pre></li>
+    forward(<span class="dv">20</span>)</code></pre></li>
 <li><p>Este código debería dibujar una línea de guiones a lo largo de la pantalla. Ejecútalo y verás!!</p></li>
 </ol>
 <section id="home-origen-en-la-pantalla." class="level3">
@@ -318,7 +315,7 @@ for count in range(20):
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

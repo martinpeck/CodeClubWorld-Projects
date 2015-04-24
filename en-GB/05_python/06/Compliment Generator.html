@@ -40,46 +40,46 @@
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>In your projects so far, you’ve used a variable to store a single piece of data, such as a name or a score. But what if you want to store lots of data? In Python, you can use a <em>list</em> to store lots of data in 1 variable:</p>
-<pre class="{.language-python}"><code>bigPlanets = [ &quot;jupiter&quot; , &quot;saturn&quot; , &quot;uranus&quot; , &quot;neptune&quot;]</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">bigPlanets = [ <span class="st">&quot;jupiter&quot;</span> , <span class="st">&quot;saturn&quot;</span> , <span class="st">&quot;uranus&quot;</span> , <span class="st">&quot;neptune&quot;</span>]</code></pre>
 <p>This list of text is also known as an <em>array</em> of text. To access items in the list, you just need to know the position of the item. Run this program to give yourself a better idea of how lists work:</p>
-<pre class="{.language-python}"><code>bigPlanets = [ &quot;jupiter&quot; , &quot;saturn&quot; , &quot;uranus&quot; , &quot;neptune&quot;]
-print( bigPlanets )
-print( bigPlanets[0] )
-print( bigPlanets[1] )
-print( bigPlanets[2] )
-print( bigPlanets[3] )</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python">bigPlanets = [ <span class="st">&quot;jupiter&quot;</span> , <span class="st">&quot;saturn&quot;</span> , <span class="st">&quot;uranus&quot;</span> , <span class="st">&quot;neptune&quot;</span>]
+<span class="dt">print</span>( bigPlanets )
+<span class="dt">print</span>( bigPlanets[<span class="dv">0</span>] )
+<span class="dt">print</span>( bigPlanets[<span class="dv">1</span>] )
+<span class="dt">print</span>( bigPlanets[<span class="dv">2</span>] )
+<span class="dt">print</span>( bigPlanets[<span class="dv">3</span>] )</code></pre>
 <p><img src="compliment-planets.png" alt="screenshot" /></p>
 <p>As you can see, positions start at 0 and not 1, so <code>bigPlanets[1]</code> is “saturn” (the second item) and not “jupiter”.</p></li>
 <li><p>You can use a list called <code>compliments</code> to store all of the possible compliments for your compliment generator program, and then use <code>choice(compliments)</code> to choose a random compliment for the user:</p>
-<pre class="{.language-python}"><code>from random import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> random <span class="ch">import</span> *
 
-print(&quot;Compliment Generator&quot;)
-print(&quot;--------------------&quot;)
+<span class="dt">print</span>(<span class="st">&quot;Compliment Generator&quot;</span>)
+<span class="dt">print</span>(<span class="st">&quot;--------------------&quot;</span>)
 
-compliments = [ &quot;Great job on that thing you did. Really super.&quot; ,
-                &quot;You have really really nice programming skills.&quot; ,
-                &quot;You make an excellent human.&quot;
+compliments = [ <span class="st">&quot;Great job on that thing you did. Really super.&quot;</span> ,
+                <span class="co">&quot;You have really really nice programming skills.&quot;</span> ,
+                <span class="co">&quot;You make an excellent human.&quot;</span>
               ]
 
-#print a random item in the &#39;compliments&#39; list
-print(choice(compliments))
-print(&quot;You&#39;re welcome!&quot;)</code></pre>
+<span class="co">#print a random item in the &#39;compliments&#39; list</span>
+<span class="dt">print</span>(choice(compliments))
+<span class="dt">print</span>(<span class="st">&quot;You&#39;re welcome!&quot;</span>)</code></pre>
 <p><img src="compliment-list.png" alt="screenshot" /></p></li>
 <li><p>You could make your compliments a little more interesting, by combining random items from 2 different lists:</p>
-<pre class="{.language-python}"><code>from random import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> random <span class="ch">import</span> *
 
-print(&quot;Compliment Generator&quot;)
-print(&quot;--------------------&quot;)
+<span class="dt">print</span>(<span class="st">&quot;Compliment Generator&quot;</span>)
+<span class="dt">print</span>(<span class="st">&quot;--------------------&quot;</span>)
 
-adjectives = [ &quot;amazing&quot; , &quot;above-average&quot; , &quot;excellent&quot; ]
-hobbies = [ &quot;riding a bike&quot; , &quot;programming&quot; , &quot;making a cup of tea&quot; ]
+adjectives = [ <span class="st">&quot;amazing&quot;</span> , <span class="st">&quot;above-average&quot;</span> , <span class="st">&quot;excellent&quot;</span> ]
+hobbies = [ <span class="st">&quot;riding a bike&quot;</span> , <span class="st">&quot;programming&quot;</span> , <span class="st">&quot;making a cup of tea&quot;</span> ]
 
-name = input(&quot;What is your name?: &quot;)
-print( &quot;Here is your compliment&quot; , name , &quot;:&quot; )
+name = <span class="dt">input</span>(<span class="st">&quot;What is your name?: &quot;</span>)
+<span class="dt">print</span>( <span class="st">&quot;Here is your compliment&quot;</span> , name , <span class="st">&quot;:&quot;</span> )
 
-#get a random item from both lists, and add them to the compliment
-print( name , &quot;you are&quot; , choice(adjectives) , &quot;at&quot; , choice(hobbies) )
-print( &quot;You&#39;re welcome!&quot; )</code></pre>
+<span class="co">#get a random item from both lists, and add them to the compliment</span>
+<span class="dt">print</span>( name , <span class="st">&quot;you are&quot;</span> , choice(adjectives) , <span class="st">&quot;at&quot;</span> , choice(hobbies) )
+<span class="dt">print</span>( <span class="st">&quot;You&#39;re welcome!&quot;</span> )</code></pre>
 <p><img src="compliment-2lists.png" alt="screenshot" /></p></li>
 </ul>
 </section>
@@ -100,46 +100,46 @@ print( &quot;You&#39;re welcome!&quot; )</code></pre>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Using what you know about <code>while</code> loops and <code>if</code> statements, you could modify your program to keep giving out compliments until the user decides to quit:</p>
-<pre class="{.language-python}"><code>from random import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> random <span class="ch">import</span> *
 
-#the program loops as long as this variable is &#39;True&#39;
-running = True
+<span class="co">#the program loops as long as this variable is &#39;True&#39;</span>
+running = <span class="ot">True</span>
 
-adjectives = [ &quot;amazing&quot; , &quot;above-average&quot; , &quot;excellent&quot; ]
-hobbies = [ &quot;riding a bike&quot; , &quot;programming&quot; , &quot;making a cup of tea&quot; ]
+adjectives = [ <span class="st">&quot;amazing&quot;</span> , <span class="st">&quot;above-average&quot;</span> , <span class="st">&quot;excellent&quot;</span> ]
+hobbies = [ <span class="st">&quot;riding a bike&quot;</span> , <span class="st">&quot;programming&quot;</span> , <span class="st">&quot;making a cup of tea&quot;</span> ]
 
-print(&quot;Compliment Generator&quot;)
-print(&quot;--------------------&quot;)
+<span class="dt">print</span>(<span class="st">&quot;Compliment Generator&quot;</span>)
+<span class="dt">print</span>(<span class="st">&quot;--------------------&quot;</span>)
 
-name = input(&quot;What is your name?: &quot;)
+name = <span class="dt">input</span>(<span class="st">&quot;What is your name?: &quot;</span>)
 
-print(&#39;&#39;&#39;
-Menu
-  c = get compliment
-  q = quit
-&#39;&#39;&#39;)
+<span class="dt">print</span>(<span class="st">&#39;&#39;&#39;</span>
+<span class="st">Menu</span>
+<span class="st">  c = get compliment</span>
+<span class="st">  q = quit</span>
+<span class="st">&#39;&#39;&#39;</span>)
 
-while running == True:
+<span class="kw">while</span> running == <span class="ot">True</span>:
 
-    menuChoice = input(&quot;\n&gt;_&quot;).lower()
+    menuChoice = <span class="dt">input</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&gt;_&quot;</span>).lower()
 
-    #&#39;c&#39; for a compliment
-    if menuChoice == &#39;c&#39;:
+    <span class="co">#&#39;c&#39; for a compliment</span>
+    <span class="kw">if</span> menuChoice == <span class="st">&#39;c&#39;</span>:
 
-        print( &quot;Here is your compliment&quot; , name , &quot;:&quot; )
+        <span class="dt">print</span>( <span class="st">&quot;Here is your compliment&quot;</span> , name , <span class="st">&quot;:&quot;</span> )
 
-        #get a random item from both lists, and add them to the compliment
-        print( name , &quot;you are&quot; , choice(adjectives) , &quot;at&quot; , choice(hobbies) )
-        print( &quot;You&#39;re welcome!&quot; )
+        <span class="co">#get a random item from both lists, and add them to the compliment</span>
+        <span class="dt">print</span>( name , <span class="st">&quot;you are&quot;</span> , choice(adjectives) , <span class="st">&quot;at&quot;</span> , choice(hobbies) )
+        <span class="dt">print</span>( <span class="st">&quot;You&#39;re welcome!&quot;</span> )
 
-    #&#39;q&#39; to quit
-    elif menuChoice == &#39;q&#39;:
+    <span class="co">#&#39;q&#39; to quit</span>
+    <span class="kw">elif</span> menuChoice == <span class="st">&#39;q&#39;</span>:
 
-        running = False
+        running = <span class="ot">False</span>
 
-    else:
+    <span class="kw">else</span>:
 
-        print(&quot;Please choose a valid option!&quot;)</code></pre>
+        <span class="dt">print</span>(<span class="st">&quot;Please choose a valid option!&quot;</span>)</code></pre>
 <p><img src="compliment-loop.png" alt="screenshot" /></p>
 <p>Remember that the the <code>while</code> loop continues to run as long as the variable <code>running</code> is set to <code>True</code>. If the user inputs <code>q</code> to quit, <code>running</code> is set to <code>False</code>.</p></li>
 </ul>
@@ -155,76 +155,76 @@ while running == True:
 <ul>
 <li><p>Your compliment generator is starting to take shape, but it has a problem: what if your user can’t ride a bike or make a cup of tea? In that case, your compliments won’t be true, and won’t cheer them up!</p>
 <p>Let’s modify your program, so that the user can choose to add or remove items from the <code>hobbies</code> list, to allow them to personalise the compliments they receive:</p>
-<pre class="{.language-python}"><code>from random import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> random <span class="ch">import</span> *
 
-running = True
-adjectives = [ &quot;amazing&quot; , &quot;above-average&quot; , &quot;excellent&quot; ]
-hobbies = [ &quot;riding a bike&quot; , &quot;programming&quot; , &quot;making a cup of tea&quot; ]
+running = <span class="ot">True</span>
+adjectives = [ <span class="st">&quot;amazing&quot;</span> , <span class="st">&quot;above-average&quot;</span> , <span class="st">&quot;excellent&quot;</span> ]
+hobbies = [ <span class="st">&quot;riding a bike&quot;</span> , <span class="st">&quot;programming&quot;</span> , <span class="st">&quot;making a cup of tea&quot;</span> ]
 
-print(&quot;Compliment Generator&quot;)
-print(&quot;--------------------&quot;)
+<span class="dt">print</span>(<span class="st">&quot;Compliment Generator&quot;</span>)
+<span class="dt">print</span>(<span class="st">&quot;--------------------&quot;</span>)
 
-name = input(&quot;What is your name?: &quot;)
+name = <span class="dt">input</span>(<span class="st">&quot;What is your name?: &quot;</span>)
 
-print(&#39;&#39;&#39;
-Menu
-  c = get compliment
-  a = add hobby to list
-  d = delete hobby from list
-  p = print hobbies
-  q = quit
-&#39;&#39;&#39;)
+<span class="dt">print</span>(<span class="st">&#39;&#39;&#39;</span>
+<span class="st">Menu</span>
+<span class="st">  c = get compliment</span>
+<span class="st">  a = add hobby to list</span>
+<span class="st">  d = delete hobby from list</span>
+<span class="st">  p = print hobbies</span>
+<span class="st">  q = quit</span>
+<span class="st">&#39;&#39;&#39;</span>)
 
-while running == True:
+<span class="kw">while</span> running == <span class="ot">True</span>:
 
-    menuChoice = input(&quot;\n&gt;_&quot;).lower()
+    menuChoice = <span class="dt">input</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&gt;_&quot;</span>).lower()
 
-    #&#39;c&#39; for a compliment
-    if menuChoice == &#39;c&#39;:
+    <span class="co">#&#39;c&#39; for a compliment</span>
+    <span class="kw">if</span> menuChoice == <span class="st">&#39;c&#39;</span>:
 
-        print( &quot;Here is your compliment&quot; , name , &quot;:&quot; )
+        <span class="dt">print</span>( <span class="st">&quot;Here is your compliment&quot;</span> , name , <span class="st">&quot;:&quot;</span> )
 
-        #get a random item from both lists, and add them to the compliment
-        print( name , &quot;you are&quot; , choice(adjectives) , &quot;at&quot; , choice(hobbies) )
-        print( &quot;You&#39;re welcome!&quot; )
+        <span class="co">#get a random item from both lists, and add them to the compliment</span>
+        <span class="dt">print</span>( name , <span class="st">&quot;you are&quot;</span> , choice(adjectives) , <span class="st">&quot;at&quot;</span> , choice(hobbies) )
+        <span class="dt">print</span>( <span class="st">&quot;You&#39;re welcome!&quot;</span> )
 
-    #&#39;a&#39; to add a hobby
-    elif menuChoice == &#39;a&#39;:
+    <span class="co">#&#39;a&#39; to add a hobby</span>
+    <span class="kw">elif</span> menuChoice == <span class="st">&#39;a&#39;</span>:
 
-        itemToAdd = input(&quot;Please enter the hobby to add: &quot;)
+        itemToAdd = <span class="dt">input</span>(<span class="st">&quot;Please enter the hobby to add: &quot;</span>)
         hobbies.append(itemToAdd)
 
-    #&#39;d&#39; to delete a hobby
-    elif menuChoice == &#39;d&#39;:
+    <span class="co">#&#39;d&#39; to delete a hobby</span>
+    <span class="kw">elif</span> menuChoice == <span class="st">&#39;d&#39;</span>:
 
-        itemToDelete = input(&quot;Please enter the hobby to remove: &quot;)
+        itemToDelete = <span class="dt">input</span>(<span class="st">&quot;Please enter the hobby to remove: &quot;</span>)
         hobbies.remove(itemToDelete)
 
-    #&#39;p&#39; to print the hobbies list
-    elif menuChoice == &#39;p&#39;:
-        print(hobbies)
+    <span class="co">#&#39;p&#39; to print the hobbies list</span>
+    <span class="kw">elif</span> menuChoice == <span class="st">&#39;p&#39;</span>:
+        <span class="dt">print</span>(hobbies)
 
-    #&#39;q&#39; to quit
-    elif menuChoice == &#39;q&#39;:
+    <span class="co">#&#39;q&#39; to quit</span>
+    <span class="kw">elif</span> menuChoice == <span class="st">&#39;q&#39;</span>:
 
-        running = False
+        running = <span class="ot">False</span>
 
-    else:
+    <span class="kw">else</span>:
 
-        print(&quot;Please choose a valid option!&quot;)</code></pre>
+        <span class="dt">print</span>(<span class="st">&quot;Please choose a valid option!&quot;</span>)</code></pre>
 <p>As you can see, you can use <code>append()</code> to add to a list, and <code>remove()</code> to remove an item. Run this program, and personalise the hobbies in the list to suit you. Ask the program for compliments until you’re in a good mood!</p></li>
 <li><p>When testing the program above, did you run into any problems? At the moment, your compliment generator crashes if you try and remove a compliment that isn’t in the list:</p>
 <p><img src="compliment-error.png" alt="screenshot" /></p>
 <p>You can fix this problem, by first checking that the item to remove exists in the list. Replace your code to remove a hobby with this code:</p>
-<pre class="{.language-python}"><code>    #&#39;d&#39; to delete a hobby
-    elif menuChoice == &#39;d&#39;:
+<pre class="sourceCode python"><code class="sourceCode python">    <span class="co">#&#39;d&#39; to delete a hobby</span>
+    <span class="kw">elif</span> menuChoice == <span class="st">&#39;d&#39;</span>:
 
-        itemToDelete = input(&quot;Please enter the hobby to remove: &quot;)
-        #only remove an item if it&#39;s in the list
-        if itemToDelete in hobbies:
+        itemToDelete = <span class="dt">input</span>(<span class="st">&quot;Please enter the hobby to remove: &quot;</span>)
+        <span class="co">#only remove an item if it&#39;s in the list</span>
+        <span class="kw">if</span> itemToDelete in hobbies:
             hobbies.remove(itemToDelete)
-        else:
-            print(&quot;Hobby not in list!&quot;)</code></pre>
+        <span class="kw">else</span>:
+            <span class="dt">print</span>(<span class="st">&quot;Hobby not in list!&quot;</span>)</code></pre>
 <p>Now run the program and try to delete a hobby that isn’t in the list:</p>
 <p><img src="compliment-errorfix.png" alt="screenshot" /></p></li>
 </ul>
@@ -237,8 +237,8 @@ while running == True:
 <p>Another problem with the program is that it is possible to add the same hobby more than once:</p>
 <p><img src="compliment-hobbiesx2.png" alt="screenshot" /></p>
 <p>Can you fix this problem, so that a hobby can only be added if it isn’t already in the list:</p>
-<pre class="{.language-python}"><code>if itemToAdd not in hobbies:
-    #add code here...</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">if</span> itemToAdd not in hobbies:
+    <span class="co">#add code here...</span></code></pre>
 </section>
 <section id="save-your-project-4" class="level2 save">
 <h2>Save Your Project</h2>
@@ -262,7 +262,7 @@ while running == True:
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

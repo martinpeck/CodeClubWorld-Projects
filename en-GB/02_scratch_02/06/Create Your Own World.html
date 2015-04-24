@@ -40,7 +40,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
       
 <section id="introduction" class="level1 intro">
 <h1>Introduction</h1>
-<p>In this project you’ll learn how to create your own open-world adventure game.</p>
+<p>In this project you’ll learn how to create your own open world adventure game.</p>
 <div class="scratch-preview">
     <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34248822/?autostart=true" frameborder="0"></iframe>
     <img src="world-final.png">
@@ -48,7 +48,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 </section>
 <section id="step-1-coding-your-player" class="level1 activity">
 <h1>Step 1: Coding your player</h1>
-<p>Let’s start by creating a player, that can move around your world.</p>
+<p>Let’s start by creating a player that can move around your world.</p>
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
@@ -57,7 +57,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <p><img src="world-resources.png" alt="screenshot" /></p></li>
 <li><p>Add the image ‘room1.png’ as a new stage backdrop, and the image ‘player.png’ as a new sprite. If you don’t have these images you can draw them yourself! Here’s how your project should look:</p>
 <p><img src="world-player.png" alt="screenshot" /></p></li>
-<li><p>Let’s use the arrow keys to move the player around. When the player presses the up arrow, you want the player to move up, by changing it’s y-coordinate. Add this code to the player sprite:</p>
+<li><p>Let’s use the arrow keys to move the player around. When the player presses the up arrow, you want the player to move up, by changing its y coordinate. Add this code to the player sprite:</p>
 <p><img src="5dc449bfeadb0a31c1ef6259301ab177cea91074.png" alt="    when flag clicked
     forever
         if &lt;key [up arrow v] pressed? &gt; then
@@ -66,7 +66,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
     end" /></p></li>
 <li><p>Test out your player by clicking the flag and then holding down the up arrow. Does your player move up?</p>
 <p><img src="world-up.png" alt="screenshot" /></p></li>
-<li><p>To move the player to the left, you need to add another <code class="blockcontrol">if</code> block to your player, which changes the x-coordinate:</p>
+<li><p>To move the player to the left, you need to add another <code class="blockcontrol">if</code> block to your player, which changes the x coordinate:</p>
 <p><img src="6b1a41c76f0708b99b70cdea2a7b2669261128c9.png" alt="    when flag clicked
     forever
         if &lt;key [up arrow v] pressed? &gt; then
@@ -85,9 +85,9 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <section id="save-your-project" class="level2 save">
 <h2>Save your project</h2>
 <ul>
-<li><p>Test out your player again, and you’ll see they have the ability to walk through the light-grey walls.</p>
+<li><p>Test out your player again, and you’ll see they have the ability to walk through the light grey walls.</p>
 <p><img src="world-walls.png" alt="screenshot" /></p></li>
-<li><p>To fix this, you need to move the player, but then move them back if they’re touching a light-grey wall. Here’s the code you’ll need:</p>
+<li><p>To fix this, you need to move the player, but then move them back if they’re touching a light grey wall. Here’s the code you’ll need:</p>
 <p><img src="76417041f57060a12ae2700bd0e5c69d3fcac98c.png" alt="    when flag clicked
     forever
         if &lt;key [up arrow v] pressed? &gt; then
@@ -98,7 +98,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
         end
     end" /></p>
 <p>Notice that the new <code class="blockcontrol">if</code><code class="blocksensing">touching color</code> block is <em>inside</em> the <code class="blockcontrol">if</code><code class="blocksensing">key [up arrow]</code> block.</p></li>
-<li><p>Test this new code, by moving below the wall - you shouldn’t be able to move up into it.</p>
+<li><p>Test this new code by moving below the wall - you shouldn’t be able to move up into it.</p>
 <p><img src="world-walls-test.png" alt="screenshot" /></p></li>
 <li><p>Let’s do the same for the left arrow, moving back if the player is touching a wall. This is how your player code should look so far:</p>
 <p><img src="world-wall-code.png" alt="screenshot" /></p></li>
@@ -106,7 +106,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 </section>
 <section id="challenge-fixing-your-players-movement" class="level2 challenge">
 <h2>Challenge: Fixing your player’s movement</h2>
-<p>Add code to your player, so that you can’t walk through walls in any direction. Use the code you already have to help you!</p>
+<p>Add code to your player so that you can’t walk through walls in any direction. Use the code you already have to help you!</p>
 </section>
 <section id="save-your-project-1" class="level2 save">
 <h2>Save your project</h2>
@@ -128,7 +128,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
         go to x: (-200) y: (0)
         change [room v] by (1)
     end" /></p></li>
-<li><p>Add this code to the <em>start</em> of your player code (before the <code class="blockcontrol">forever</code> loop, to make sure that everything is reset when the flag is clicked:</p>
+<li><p>Add this code to the <em>start</em> of your player code (before the <code class="blockcontrol">forever</code> loop) to make sure that everything is reset when the flag is clicked:</p>
 <p><img src="46a4671c5018ee67c2c9e19386a34fc349a254c5.png" alt="    set [room v] to (1)
     go to x: (-200) y: (0)
     switch backdrop to [room1 v]" /></p></li>
@@ -190,7 +190,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 </section>
 <section id="step-4-people" class="level1 activity">
 <h1>Step 4: People</h1>
-<p>Let’s add other people to your world, that your player can interact with.</p>
+<p>Let’s add other people to your world that your player can interact with.</p>
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
@@ -206,10 +206,10 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
             say []
         end
     end" /></p></li>
-<li><p>You could also allow your player to move, by using these two blocks:</p>
+<li><p>You could also allow your person to move, by using these two blocks:</p>
 <p><img src="eb643086f777fb6d33d6fc8bccdeae2d9b07d156.png" alt="    move (1) steps
     if on edge, bounce" /></p>
-<p>Your player will act differently, depending on whether you place this code inside the <code class="blockcontrol">forever</code> loop or the <code class="blockcontrol">if</code> block. Try both and see which you prefer.</p>
+<p>Your person will act differently, depending on whether you place this code inside the <code class="blockcontrol">forever</code> loop or the <code class="blockcontrol">if</code> block. Try both and see which you prefer.</p>
 <p><img src="world-person-test.png" alt="screenshot" /></p></li>
 <li><p>Have you noticed that your person flips upside-down. To stop this, click the sprite’s information icon (<code class="blockmotion">i</code>), and click the dot to fix to rotation style.</p>
 <p><img src="world-person-rotate.png" alt="screenshot" /></p></li>
@@ -252,7 +252,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Add a new variable valled <code class="blockdata">coins</code> to your project.</p></li>
-<li><p>Add a new ‘coin’ sprite to your project.</p></li>
+<li><p>Add a new ‘coins’ sprite to your project.</p></li>
 </ul>
 <p><img src="world-coins.png" alt="screenshot" /></p>
 <ul>
@@ -290,7 +290,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
     hide" /></p></li>
 <li><p>Test out your key, to see if you can collect it, and add it to your inventory. Remember to add code to your stage to empty your inventory at the start.</p>
 <p><img src="006c8d2be29435890cf80d85c5f4ce119fdba54d.png" alt="    delete (all v) of [inventory v]" /></p></li>
-<li><p>Create a new sprite from your ‘door-blue.png’ image, and place your blue door across the gap in the 2 walls.</p>
+<li><p>Create a new sprite from your ‘door-blue.png’ image, and place your blue door across the gap in the two walls.</p>
 <p><img src="world-door.png" alt="screenshot" /></p></li>
 <li><p>Add code to your door, so that it is only visible in room 3.</p></li>
 <li><p>You’ll need to hide your blue door to allow your player to pass once you have the blue key in your inventory.</p>
@@ -328,7 +328,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

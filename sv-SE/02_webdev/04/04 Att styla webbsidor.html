@@ -42,13 +42,13 @@
 <ul>
 <li>Öppna index.html från Felix-mappen som vi gjorde förra lektionen.</li>
 <li><p>I head-taggen behöver vi ha en <strong>style-tagg</strong>.</p>
-<pre class="{.language-markup}"><code>&lt;style&gt;
-&lt;/style&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;style&gt;</span>
+<span class="kw">&lt;/style&gt;</span></code></pre>
 <p>Alla våra stylingar kommer att ligga mellan dessa två delar. Enkelt. Generellt så ser css-kod ut så här:</p></li>
 </ul>
-<pre class="{.language-css}"><code>selector {
-    property: value;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css">selector <span class="kw">{</span>
+    <span class="kw">property:</span> value<span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 <ul>
 <li>Kan du hitta ‘{‘ och ‘}’ tangenterna på ditt tangentbord?</li>
 <li>Kan du hitta ‘:’ och ‘;’ då?</li>
@@ -60,9 +60,9 @@
 <h1>Steg 2: Att lägga till färger</h1>
 <p>Nu lägger vi till lite färg med hjälp av färgpaletten! På engelska heter färgpaletten color property. Color utan ett u, det är lite förvirrande eftersom att det är den amerikanska stavningen, även om CSS faktiskt uppfanns av en norsk snubbe. Men du kommer att vänja dig, glöm bara inte u:et på engelskalektionen!</p>
 <p>Låt oss göra så att<code>h1</code> blir röd istället för svart.</p>
-<pre class="{.language-css}"><code>h1 {
-    color: red;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css">h1 <span class="kw">{</span>
+    <span class="kw">color:</span> <span class="dt">red</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 <section id="spara-din-fil-och-oppna-den-i-din-webblasare" class="level2 save">
 <h2><strong>SPARA</strong> din fil och <strong>ÖPPNA</strong> den i din webbläsare</h2>
 <p>Nu är texten röd, w00t! Det finns olika sätt att berätta värdet på färgen. Det finns 16 grundläggande namn på färger, de är aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, och yellow.</p>
@@ -82,9 +82,9 @@
 <p>Ett sätt att göra det är att sätta <code>&lt;span&gt;</code> taggar på båda sidor om ordet, så här:</p>
 <p><code>&lt;span&gt;orange&lt;/span&gt;</code></p>
 <p>Sedan kan vi styla span-taggen i head-taggen.</p>
-<pre class="{.language-css}"><code>span {
-    color: orange;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css">span <span class="kw">{</span>
+    <span class="kw">color:</span> orange<span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 <section id="save__din-fil-och-view-den-i-din-webblasare-.save" class="level2">
 <h2>__SAVE__din fil och <strong>VIEW</strong> den i din webbläsare { .save}</h2>
 </section>
@@ -92,30 +92,30 @@
 <section id="steg-4-bakgrund" class="level1 activity">
 <h1>Steg 4: Bakgrund</h1>
 <p>Vi kan lägga till färger till bakgrunden också, inte bara till texten. Till exempel:</p>
-<pre class="{.language-css}"><code>body {
-    background-color: #D2FAFC;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css">body <span class="kw">{</span>
+    <span class="kw">background-color:</span> <span class="dt">#D2FAFC</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 <p>Det här gör hela bakgrunden ljusblå. Du kan välja vilken färg du vill från listan på <a href="http://www.colourpicker.com">www.colourpicker.com</a> som genererar de nummer du behöver, detta nummer kan du sedan kopiera och klistra in i din kod.</p>
 <p>Försök med:</p>
-<pre class="{.language-css}"><code>h1 {
-    background-color: black;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css">h1 <span class="kw">{</span>
+    <span class="kw">background-color:</span> <span class="dt">black</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 <p>Eftersom att vi redan definierat, eller förklarat, <code>h1</code> kan vi bara skriva in färgen tillsammans med background-color, vi behöver alltså inte skriva ut allt igen.</p>
-<pre class="{.language-css}"><code>h1 {
-    background-color: black;
-    color: red;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css">h1 <span class="kw">{</span>
+    <span class="kw">background-color:</span> <span class="dt">black</span><span class="kw">;</span>
+    <span class="kw">color:</span> <span class="dt">red</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 <section id="spara__din-fil-och-oppna-den-i-din-webblasare-.save" class="level2">
 <h2>__SPARA__din fil och <strong>ÖPPNA</strong> den i din webbläsare { .save}</h2>
 </section>
 <section id="kul-med-text" class="level2">
 <h2>Kul med text</h2>
 <p>Kanske ska den ‘försvunna’ rubriken vara <strong>större</strong> och alla ord inledas med stora bokstäver? Vi kan bestämma storleken på texten genom att använda <code>font-size</code>. Värdena kan variera men de vanligaste är 12, 14, 16, 32, 48 och 72 pixlar. Just nu kan vi prova 72px. (px betyder pixel).</p>
-<pre class="{.language-css}"><code>h1 {
-    background-color: black;
-    color: red;
-    font-size: 72px;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css">h1 <span class="kw">{</span>
+    <span class="kw">background-color:</span> <span class="dt">black</span><span class="kw">;</span>
+    <span class="kw">color:</span> <span class="dt">red</span><span class="kw">;</span>
+    <span class="kw">font-size:</span> <span class="dt">72px</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 <p>Försök nu att göra rubrikens inledande bokstäver stora bara genom att använda <code>text-transform:uppercase;</code> Vi kan också göra den understruken genom att använda <code>text-decoration:underline;</code></p>
 </section>
 <section id="spara__din-fil-och-oppna-den-i-din-webblasare-.save-1" class="level2">
@@ -133,12 +133,12 @@
 <ul>
 <li>Vi vill att all vår text på just den här webbsidan ska vara centrerad, därför skriver vi som i rutan här nedanför. Lägg dock märke till att vi använder den amerikanska stavningen för ordet center.</li>
 </ul>
-<pre class="{.language-css}"><code>body {
-    background-color: #F8FAF4;
-    text-align: center;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css">body <span class="kw">{</span>
+    <span class="kw">background-color:</span> <span class="dt">#F8FAF4</span><span class="kw">;</span>
+    <span class="kw">text-align:</span> <span class="dt">center</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 <p>Lade du märke till att allt på sidan flyttade sig åt mitten när du skrev ‘text-align: center’ i body-sektionen? Anledningen är att allt inne i body-sektionen får samma stil. Det här händer när ett element ligger inuti ett annat, som i det här exemplet:</p>
-<pre class="{.language-markup}"><code>&lt;p&gt;Har du sett Felix? &lt;em&gt;snälla&lt;/em&gt; kontakta hans ägare&lt;/p&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p&gt;</span>Har du sett Felix? <span class="kw">&lt;em&gt;</span>snälla<span class="kw">&lt;/em&gt;</span> kontakta hans ägare<span class="kw">&lt;/p&gt;</span></code></pre>
 <p>Ordet ‘snälla’ kommer ha stilen som de får av <code>&lt;p&gt;</code> elementet tillsammans med stilen som det får från <code>&lt;em&gt;</code> elementet. Element kan nämligen liksom “ärva” stilar som deras föräldrar har. Men var försiktig, en del stilar är inte ärftliga. Vi kommer lära oss om dessa senare.</p>
 <section id="spara__din-fil-och-oppna-den-i-din-webblasare-.save-2" class="level2">
 <h2>__SPARA__din fil och <strong>ÖPPNA</strong> den i din webbläsare { .save}</h2>
@@ -155,7 +155,7 @@
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

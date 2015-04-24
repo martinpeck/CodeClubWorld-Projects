@@ -42,8 +42,8 @@
 <li>To get the code you can use on your web page, click <code>Embed</code>.</li>
 </ul>
 <p>It will look something like this:</p>
-<pre class="{.langauge-markup}"><code>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/FxhGIajRsq4&quot;
-   frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;iframe</span><span class="ot"> width=</span><span class="st">&quot;560&quot;</span><span class="ot"> height=</span><span class="st">&quot;315&quot;</span><span class="ot"> src=</span><span class="st">&quot;http://www.youtube.com/embed/FxhGIajRsq4&quot;</span>
+<span class="ot">   frameborder=</span><span class="st">&quot;0&quot;</span><span class="ot"> allowfullscreen</span><span class="kw">&gt;&lt;/iframe&gt;</span></code></pre>
 <p>This specific code fragment would add a CodeClub video to your page. Just copy and past it where you would like the video to appear.</p>
 <p>Notice the <code>width</code> and <code>height</code> attributes. They allow you to control how big will the video be on the page, so feel free to change them.</p>
 </section>
@@ -54,8 +54,8 @@
 <li>Click the <code>Share</code> button on the video player.</li>
 <li>On the right hand side there is an Embed box. Click it to select the code and copy it. It will look a bit like this:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>&lt;iframe src=&quot;http://player.vimeo.com/video/44738167&quot; width=&quot;600&quot; height=&quot;338&quot;
-   frameborder=&quot;0&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;iframe</span><span class="ot"> src=</span><span class="st">&quot;http://player.vimeo.com/video/44738167&quot;</span><span class="ot"> width=</span><span class="st">&quot;600&quot;</span><span class="ot"> height=</span><span class="st">&quot;338&quot;</span>
+<span class="ot">   frameborder=</span><span class="st">&quot;0&quot;</span><span class="ot"> webkitAllowFullScreen mozallowfullscreen allowFullScreen</span><span class="kw">&gt;&lt;/iframe&gt;</span></code></pre>
 <ul>
 <li>Paste the code where you would like the video to appear on the page. Notice the <code>width</code> and <code>height</code> attributes. They allow you to control how big will the video be on the page, so feel free to change them.</li>
 </ul>
@@ -66,42 +66,42 @@
 <ul>
 <li>To place a video on your page you will need to add a <code>video</code> tag. Just like the <code>&lt;img&gt;</code> tag is has the <code>src</code> attribute pointing to the file:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;video src=&quot;spaceship_landing.mp4&quot;&gt;
-    &lt;/video&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;video</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.mp4&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/video&gt;</span></code></pre>
 <p>Sadly the annoying thing about adding video that was is that not every browser can play all of the video formats. You will have to save it in at least <code>.mp4</code> and <code>.ogv</code> formats, which will work in most browsers.</p>
 <p>To let the browser know we have more than one format of video ready, write it like this:</p>
-<pre class="{.langauge-markup}"><code>    &lt;video&gt;
-        &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
-        &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
-    &lt;/video&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;video&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.ogv&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/ogg&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.mp4&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/mp4&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/video&gt;</span></code></pre>
 <ul>
 <li>To add a picture that will be seen before the video plays, you can use a <code>poster</code> attribute:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot;&gt;
-        &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
-        &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
-    &lt;/video&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;video</span><span class="ot"> poster=</span><span class="st">&quot;spaceship_landing.jpg&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.ogv&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/ogg&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.mp4&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/mp4&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/video&gt;</span></code></pre>
 <ul>
 <li>If you want to automatically play the video, you can add the <code>autoplay</code> keyword, like this:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot; autoplay&gt;
-        &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
-        &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
-    &lt;/video&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;video</span><span class="ot"> poster=</span><span class="st">&quot;spaceship_landing.jpg&quot;</span><span class="ot"> autoplay</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.ogv&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/ogg&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.mp4&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/mp4&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/video&gt;</span></code></pre>
 <ul>
 <li>To display video controls, such as the play button, the volume and so on you can add the <code>controls</code> keyword:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot; controls&gt;
-        &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
-        &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
-    &lt;/video&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;video</span><span class="ot"> poster=</span><span class="st">&quot;spaceship_landing.jpg&quot;</span><span class="ot"> controls</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.ogv&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/ogg&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.mp4&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/mp4&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/video&gt;</span></code></pre>
 <ul>
 <li>You can also control the size of the video using the <code>width</code> and <code>height</code> attributes. Write this:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot; width=&quot;600&quot; height=&quot;400&quot;&gt;
-        &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
-        &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
-    &lt;/video&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;video</span><span class="ot"> poster=</span><span class="st">&quot;spaceship_landing.jpg&quot;</span><span class="ot"> width=</span><span class="st">&quot;600&quot;</span><span class="ot"> height=</span><span class="st">&quot;400&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.ogv&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/ogg&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.mp4&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/mp4&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/video&gt;</span></code></pre>
 </section>
 <section id="adding-an-audio-file-from-your-computer" class="level1 activity">
 <h1>Adding an audio file from your computer</h1>
@@ -109,34 +109,34 @@
 <ul>
 <li>To place the audio on page write this:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;audio src=&quot;spaceship.mp3&quot;&gt;
-    &lt;/audio&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;audio</span><span class="ot"> src=</span><span class="st">&quot;spaceship.mp3&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/audio&gt;</span></code></pre>
 <p>Notice the <code>src</code> attribute which points to the file.</p>
 <p>Just like with video, not every browser can play every type of audio file, so to make sure as many people as possible can hear the audio you have to add the file in more than one format, at least in <code>.mp3</code> and <code>.oga</code>.</p>
-<pre class="{.langauge-markup}"><code>    &lt;audio&gt;
-        &lt;source src=&quot;spaceship.mp3&quot; type=&#39;audio/mp3&#39;&gt;
-        &lt;source src=&quot;spaceship.ogg&quot; type=&#39;audio/ogg; codecs=vorbis&#39;&gt;
-    &lt;/audio&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;audio&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship.mp3&quot;</span><span class="ot"> type=</span><span class="st">&#39;audio/mp3&#39;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship.ogg&quot;</span><span class="ot"> type=</span><span class="st">&#39;audio/ogg; codecs=vorbis&#39;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/audio&gt;</span></code></pre>
 <ul>
 <li>To add the controls you need to add the <code>controls</code> keyword:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;audio controls&gt;
-        &lt;source src=&quot;spaceship.mp3&quot; type=&#39;audio/mp3&#39;&gt;
-        &lt;source src=&quot;spaceship.ogg&quot; type=&#39;audio/ogg; codecs=vorbis&#39;&gt;
-    &lt;/audio&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;audio</span><span class="ot"> controls</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship.mp3&quot;</span><span class="ot"> type=</span><span class="st">&#39;audio/mp3&#39;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship.ogg&quot;</span><span class="ot"> type=</span><span class="st">&#39;audio/ogg; codecs=vorbis&#39;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/audio&gt;</span></code></pre>
 <ul>
 <li>If you want the audio to play as soon as the page loads, you can add the <code>autoplay</code> keyword, like this:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;audio controls autoplay&gt;
-        &lt;source src=&quot;spaceship.mp3&quot; type=&#39;audio/mp3&#39;&gt;
-        &lt;source src=&quot;spaceship.ogg&quot; type=&#39;audio/ogg; codecs=vorbis&#39;&gt;
-    &lt;/audio&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;audio</span><span class="ot"> controls autoplay</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship.mp3&quot;</span><span class="ot"> type=</span><span class="st">&#39;audio/mp3&#39;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship.ogg&quot;</span><span class="ot"> type=</span><span class="st">&#39;audio/ogg; codecs=vorbis&#39;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/audio&gt;</span></code></pre>
 </section>
     </main>
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

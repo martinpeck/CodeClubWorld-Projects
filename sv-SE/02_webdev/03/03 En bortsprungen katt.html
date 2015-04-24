@@ -41,26 +41,26 @@
 <li>Gör ett nytt dokument som heter ‘index.html’ och spara det i mappen <strong>Felix</strong></li>
 <li>Starta upp ditt dokument så som du lärt dig under tidigare lektioner</li>
 </ul>
-<pre class="{.language-markup}"><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
+<span class="kw">&lt;html&gt;</span>
+    <span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;/head&gt;</span>
+    <span class="kw">&lt;body&gt;</span>
+    <span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
 <ul>
 <li>Gör en titel och en rubrik. Kom ihåg att titeln ska skrivas i head-taggen och rubriken ska skrivas i body-taggen. Använd “En bortsprungen katt” som titel, och bortsprungen som h1. Precis under <code>&lt;h1&gt;</code> kan vi göra en <code>&lt;h2&gt;</code> där det står “Katten Felix”.</li>
 </ul>
-<pre class="{.language-markup}"><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;En bortsprungen katt&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Bortsprungen&lt;/h1&gt;
-        &lt;h2&gt;Katten Felix&lt;/h2&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
+<span class="kw">&lt;html&gt;</span>
+    <span class="kw">&lt;head&gt;</span>
+        <span class="kw">&lt;title&gt;</span>En bortsprungen katt<span class="kw">&lt;/title&gt;</span>
+    <span class="kw">&lt;/head&gt;</span>
+    <span class="kw">&lt;body&gt;</span>
+        <span class="kw">&lt;h1&gt;</span>Bortsprungen<span class="kw">&lt;/h1&gt;</span>
+        <span class="kw">&lt;h2&gt;</span>Katten Felix<span class="kw">&lt;/h2&gt;</span>
+    <span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
 </section>
 <section id="steg-2" class="level1 activity">
 <h1>Steg 2</h1>
@@ -68,24 +68,24 @@
 <ul>
 <li>Skriv nu taggen <code>&lt;img&gt;</code> som du normalt gör, men istället för att skriva bildens URL i src-attributet så skriver vi bara <code>felix.jpg</code>. Glöm inte att skriva in ett alt-attribut!</li>
 </ul>
-<pre class="{.language-markup}"><code>&lt;img src=&quot;felix.jpg&quot; alt=&quot;Bild på Felix&quot;&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;img</span><span class="ot"> src=</span><span class="st">&quot;felix.jpg&quot;</span><span class="ot"> alt=</span><span class="st">&quot;Bild på Felix&quot;</span><span class="kw">&gt;</span></code></pre>
 <section id="spara-din-fil-och-granska-den-i-en-webblasare." class="level2 save">
 <h2>Spara din fil och granska den i en webbläsare.</h2>
 <ul>
 <li>Bilden är ganska stor så vi vill göra den lite mindre. Det kan vi göra genom att använda attributen höjd (height) och bredd (width). Vi specificerar inte bredden i centimeter, meter, tum eller fot utan i något som kallas för <em>pixlar</em>. Jag ska köra på 400 pixlar för den här bilden.</li>
 </ul>
-<pre class="{.language-markup}"><code>&lt;img src=&quot;felix.jpg&quot; alt=&quot;bild på Felix&quot; width=&quot;400&quot;&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;img</span><span class="ot"> src=</span><span class="st">&quot;felix.jpg&quot;</span><span class="ot"> alt=</span><span class="st">&quot;bild på Felix&quot;</span><span class="ot"> width=</span><span class="st">&quot;400&quot;</span><span class="kw">&gt;</span></code></pre>
 </section>
 </section>
 <section id="steg-3" class="level1 activity">
 <h1>Steg 3</h1>
 <p>Under bilden ska vi skriva in en beskrivning av Felix och uppge ett par detaljer om var och när han försvann. För att göra detta räcker det att skriva några meningar.</p>
-<pre class="{.language-markup}"><code>&lt;p&gt;Felix är en väldigt snäll katt. Han gillar att kela, sitta framför tv:n och sin leksaksmus. Han har orange päls. &lt;/p&gt;
-&lt;p&gt;Han försvann från trädgården under gårdagen.&lt;/p&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p&gt;</span>Felix är en väldigt snäll katt. Han gillar att kela, sitta framför tv:n och sin leksaksmus. Han har orange päls. <span class="kw">&lt;/p&gt;</span>
+<span class="kw">&lt;p&gt;</span>Han försvann från trädgården under gårdagen.<span class="kw">&lt;/p&gt;</span></code></pre>
 <p>Vi behöver också information om hur man kan kontakta ägaren om någon har sett eller hittar Felix.</p>
-<pre class="{.language-markup}"><code>&lt;p&gt;Har du sett Felix? Snälla kontakta hans ägare på felixägare@email.com&lt;/p&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p&gt;</span>Har du sett Felix? Snälla kontakta hans ägare på felixägare@email.com<span class="kw">&lt;/p&gt;</span></code></pre>
 <p>Det här är bara en låtsasemailadress men låt oss göra så att om någon klickar på den så öppnas deras mailklient. Vi gör det här på nästan samma sätt som vi gör en länk men istället för ett <strong>url</strong> läger vi in ett <code>mailto</code> så här:</p>
-<pre class="{.language-markup}"><code>&lt;p&gt;Har du sett Felix? Snälla kontakta hans ägare på &lt;a href=&quot;mailto:felixägare@email.com&quot;&gt;felixägare@email.com&lt;/a&gt;&lt;/p&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p&gt;</span>Har du sett Felix? Snälla kontakta hans ägare på <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;mailto:felixägare@email.com&quot;</span><span class="kw">&gt;</span>felixägare@email.com<span class="kw">&lt;/a&gt;&lt;/p&gt;</span></code></pre>
 <section id="spara-din-fil-och-granska-den-i-en-webblasare" class="level2 save">
 <h2>Spara din fil och granska den i en webbläsare!</h2>
 </section>
@@ -93,9 +93,9 @@
 <section id="steg-4-lagg-till-fet--och-kursiv-stil" class="level1 activity">
 <h1>Steg 4: Lägg till fet- och kursiv stil</h1>
 <p>Vi vill verkligen att någon ska hitta Felix, därför vill vi lägga till <em>betoning</em> på ‘snälla’. Vi gör det med hjälp av en em-tag.</p>
-<pre class="{.language-markup}"><code>&lt;p&gt;Har du sett Felix? &lt;em&gt;Snälla&lt;/em&gt; kontakta hans ägare på felixägare@email.com&lt;/p&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p&gt;</span>Har du sett Felix? <span class="kw">&lt;em&gt;</span>Snälla<span class="kw">&lt;/em&gt;</span> kontakta hans ägare på felixägare@email.com<span class="kw">&lt;/p&gt;</span></code></pre>
 <p>Vi vill också att ‘tack’ ska stå ut, det kan vi göra genom att lägga till fet stil.</p>
-<pre class="{.language-markup}"><code>&lt;p&gt;&lt;strong&gt;Tack!&lt;/strong&gt;&lt;p&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p&gt;&lt;strong&gt;</span>Tack!<span class="kw">&lt;/strong&gt;&lt;p&gt;</span></code></pre>
 <section id="spara-din-fil-och-granska-den-i-en-webblasare.-1" class="level2 save">
 <h2>Spara din fil och granska den i en webbläsare.</h2>
 <p>Har du lagt märke till hur ‘snälla’ nu är i <em>kursiv stil</em> och tack är <strong>fet stil</strong>?</p>
@@ -104,27 +104,27 @@
 <section id="steg-5-kommentarer" class="level1 activity">
 <h1>Steg 5: Kommentarer</h1>
 <p>Ibland är det användbart att skriva kommentarer i själv html-filen. När vi säger kommentarer så menar vi saker som kan vara användbart för andra människor som läser filen, och inget som webbläsaren ska kunna förstå och visa. Vi gör det genom att använda en speciell kod:</p>
-<pre class="{.language-markup}"><code>&lt;!-- Skriv vad som helst här --&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="co">&lt;!-- Skriv vad som helst här --&gt;</span></code></pre>
 <p>Allt som står mellan pilarna är kommentaren. Låt oss lägga in kommentaren i vår fil och säga att det här är ett Code Club-projekt och att Felix inte finns på riktigt.</p>
-<pre class="{.language-markup}"><code>&lt;!-- Det här är ett Code Club-projekt. Felix finns egentligen inte på riktigt och är inte bortsprungen --&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="co">&lt;!-- Det här är ett Code Club-projekt. Felix finns egentligen inte på riktigt och är inte bortsprungen --&gt;</span></code></pre>
 </section>
 <section id="steg-6-mer-metadata-det-ar-saker-som-du-kan-skriva-i-sidhuvudet" class="level1 activity">
 <h1>Steg 6: Mer metadata (det är saker som du kan skriva i sidhuvudet)</h1>
 <ul>
 <li>Nu lägger vi till vem det var som skrev webbsidan, så att alla som tittar på filen vet att det är du som gjort den.</li>
 </ul>
-<pre class="{.language-markup}"><code>&lt;meta name=&quot;author&quot; content=&quot;#&quot;&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;author&quot;</span><span class="ot"> content=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span></code></pre>
 <ul>
 <li>Byt ut # mot ditt namn. Det är också vanligt att man skriver till vilket språk som webbsidan är på. Vi gör det genom att lägga till ett attribut till <code>&lt;html&gt;</code>-taggen.</li>
 </ul>
-<pre class="{.language-markup}"><code>&lt;html lang=&quot;sv&quot;&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html</span><span class="ot"> lang=</span><span class="st">&quot;sv&quot;</span><span class="kw">&gt;</span></code></pre>
 <p><em>sv</em> står för svenska.</p>
 <p>Det är också en bra övning att lägga till teckenuppsättningen (eller alfabetet) som du har använt för att skriva dokumentet. Vi använder oftast <strong>UTF-8</strong>.</p>
-<pre class="{.language-markup}"><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;UTF-8&quot;</span><span class="kw">&gt;</span></code></pre>
 <p>Vi kan också lägga till en beskrivning av webbsidan.</p>
-<pre class="{.language-markup}"><code>    &lt;meta name=&quot;beskrivning&quot; content=&quot;en sida till för att hitta den bortsprungna katten Felix&quot;&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;beskrivning&quot;</span><span class="ot"> content=</span><span class="st">&quot;en sida till för att hitta den bortsprungna katten Felix&quot;</span><span class="kw">&gt;</span></code></pre>
 <p>Och ett par nyckelord, separerade med ett komma</p>
-<pre class="{.language-markup}"><code>&lt;meta name=&quot;nyckelord&quot; content=&quot;Felix, katt, bortsprungen&quot;&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;nyckelord&quot;</span><span class="ot"> content=</span><span class="st">&quot;Felix, katt, bortsprungen&quot;</span><span class="kw">&gt;</span></code></pre>
 <p><img src="screenshot_jsbin.png" alt="screenshot" /></p>
 <section id="prova-ocksa" class="level2 try">
 <h2>Pröva också:</h2>
@@ -139,7 +139,7 @@
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

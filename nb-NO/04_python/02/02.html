@@ -38,12 +38,11 @@
 <li><p>Åpne IDLE-editoren, og åpne en ny fil ved å trykke <code>File &gt; New Window</code>,<br />og la oss begynne.</p>
 <p>Husk at du skal ha to vinduer åpne. Det ene er ‘Python Shell’ og det andre er for å skrive kode i.</p>
 <p>Som sist vil den første linjen alltid være <code>from turtle import *</code> for å fortelle Python at vi vil tegne ved hjelp av skilpadde-biblioteket!</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-for n in range(4):
-    forward(100)
-    right(90)
-</code></pre></li>
+<span class="kw">for</span> n in <span class="dt">range</span>(<span class="dv">4</span>):
+    forward(<span class="dv">100</span>)
+    right(<span class="dv">90</span>)</code></pre></li>
 <li><p>Lagre det som en ny fil, og kjør programmet fra menyen ved å trykke <code>Run &gt; Run Module</code>.</p>
 <p>Husk at <code>for n in range(4)</code> gjentar koden, og at koden må grupperes med mellomrom (innrykk) for å være en del av for-løkken. Bruk ‘Tab’ (knappen over Caps-Lock) for å flytte kode.</p></li>
 </ol>
@@ -56,13 +55,13 @@ for n in range(4):
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Endre programmet så det ser slik ut:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-sides = 4
-length = 100
-angle = 360/sides
+sides = <span class="dv">4</span>
+length = <span class="dv">100</span>
+angle = <span class="dv">360</span>/sides
 
-for n in range(sides):
+<span class="kw">for</span> n in <span class="dt">range</span>(sides):
     forward(length)
     right(angle)</code></pre></li>
 <li><p>Kjør det ved å trykke <code>Run &gt; Run Module</code> fra menyen. Får du den samme firkanten som før? Sjekk at det virker før du går videre.</p></li>
@@ -76,20 +75,20 @@ for n in range(sides):
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Vi endrer koden og legger til <code>def poly():</code>. Pass på at koden har riktig innrykk (du kan merke den og trykke Tab) og bruk den nye prosedyren. (Å bruke en prosedyre heter å kalle prosedyren).</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-def poly():
-    sides = 4
-    length = 100
-    angle = 360/sides
+<span class="kw">def</span> poly():
+    sides = <span class="dv">4</span>
+    length = <span class="dv">100</span>
+    angle = <span class="dv">360</span>/sides
 
-    for n in range(sides):
+    <span class="kw">for</span> n in <span class="dt">range</span>(sides):
         forward(length)
         right(angle)
 
-pencolor(&#39;red&#39;)
+pencolor(<span class="st">&#39;red&#39;</span>)
 poly()
-right(180)
+right(<span class="dv">180</span>)
 poly()</code></pre></li>
 <li><p>Kjør programmet. Hvis det virker skal to røde firkanter bli tegnet.</p></li>
 </ol>
@@ -103,20 +102,20 @@ poly()</code></pre></li>
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Endre koden så den ser slik ut:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-def poly(sides, length):
-    angle = 360/sides
+<span class="kw">def</span> poly(sides, length):
+    angle = <span class="dv">360</span>/sides
 
-    for n in range(sides):
+    <span class="kw">for</span> n in <span class="dt">range</span>(sides):
         forward(length)
         right(angle)
 
-pencolor(&#39;red&#39;)
-poly(4, 100)
-right(180)
-pencolor(&#39;blue&#39;)
-poly(3, 150)</code></pre></li>
+pencolor(<span class="st">&#39;red&#39;</span>)
+poly(<span class="dv">4</span>, <span class="dv">100</span>)
+right(<span class="dv">180</span>)
+pencolor(<span class="st">&#39;blue&#39;</span>)
+poly(<span class="dv">3</span>, <span class="dv">150</span>)</code></pre></li>
 <li><p>Kjør den og se hva som skjer.</p>
 <p>La oss ta dette litt sakte, for dette er ganske kule greier. Istedenfor å bestemme variablene i prosedyren, sier vi at prosedyren tar noen verdier som har navn, og så bruker vi verdiene der vi trenger dem.</p>
 <p>Vi flyttet noen verdier ut av prosedyren, og flyttet dem til den delen av koden som bruker dem. Nå kan vi, med en eneste prosedyre, tegne <em>hvilken som helst</em> form, med <em>hvilken som helst farge</em>. Jeg vet ikke hva du tenker, men dette imponerer meg hver gang jeg tenker på det: Vi kan lære datamaskinen nye triks, og så få den til å gjøre triksene.</p></li>
@@ -131,13 +130,13 @@ poly(3, 150)</code></pre></li>
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Selv om skilpadden er en liten robot som kan tegne, kan den også flytte seg uten å tegne. Husk at vi kan bruke <code>penup()</code> og <code>pendown()</code> for å slå av og på at skilpadden setter spor. Åpne en ny Python-fil, og skriv inn koden under:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-length = 200
-for num in range(8):
-    forward(length/16)
+length = <span class="dv">200</span>
+<span class="kw">for</span> num in <span class="dt">range</span>(<span class="dv">8</span>):
+    forward(length/<span class="dv">16</span>)
     penup()
-    forward(length/16)
+    forward(length/<span class="dv">16</span>)
     pendown()</code></pre></li>
 <li><p>Dette programmet tegner en stiplet linje over skjermen. Kjør det og sjekk!</p></li>
 </ol>
@@ -150,26 +149,26 @@ for num in range(8):
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Endre koden så den ser ut som følgende:</p>
-<pre class="{.language-python}"><code>from turtle import *
-speed(11)
-shape(&quot;turtle&quot;)
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-def dashpoly(sides, length):
-    angle = 360/sides
+<span class="kw">def</span> dashpoly(sides, length):
+    angle = <span class="dv">360</span>/sides
 
-    for n in range(sides):
-        for num in range(8):
-            forward(length/16)
+    <span class="kw">for</span> n in <span class="dt">range</span>(sides):
+        <span class="kw">for</span> num in <span class="dt">range</span>(<span class="dv">8</span>):
+            forward(length/<span class="dv">16</span>)
             penup()
-            forward(length/16)
+            forward(length/<span class="dv">16</span>)
             pendown()
         right(angle)
 
-pencolor(&#39;red&#39;)
-dashpoly(4, 100)
-right(180)
-pencolor(&#39;blue&#39;)
-dashpoly(3, 150)</code></pre></li>
+pencolor(<span class="st">&#39;red&#39;</span>)
+dashpoly(<span class="dv">4</span>, <span class="dv">100</span>)
+right(<span class="dv">180</span>)
+pencolor(<span class="st">&#39;blue&#39;</span>)
+dashpoly(<span class="dv">3</span>, <span class="dv">150</span>)</code></pre></li>
 <li><p>Kjør koden og se hva den gjør.</p>
 <p>Vi har to for-løkker inni hverandre, en ytre og en indre. Den ytre løkken <code>for n in range(sides)</code> tegner hver kant av figuren, og hver gang kjører den indre løkken <code>for num in range(8)</code> som tegner stiplete linjer.</p>
 <p>Den ytre løkken bruker variabelen <code>n</code> for å holde styr på hvor mange ganger den har gjentatt seg selv, og den indre løkken bruker variabelen <code>num</code> på tilsvarende måte. Du må bruke forskjellige variabelnavn inni løkken, ellers roter du det bare til.</p></li>
@@ -182,29 +181,29 @@ dashpoly(3, 150)</code></pre></li>
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>La oss bruke prosedyrer igjen for å rydde opp i koden. Endre koden fra steg 6 og la oss dele koden i biter.</p>
-<pre class="{.language-python}"><code>from turtle import *
-speed(11)
-shape(&quot;turtle&quot;)
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-def dashforward(length):
-    for num in range(8):
-        forward(length/16)
+<span class="kw">def</span> dashforward(length):
+    <span class="kw">for</span> num in <span class="dt">range</span>(<span class="dv">8</span>):
+        forward(length/<span class="dv">16</span>)
         penup()
-        forward(length/16)
+        forward(length/<span class="dv">16</span>)
         pendown()
 
-def dashpoly(sides, length):
-    angle = 360/sides
+<span class="kw">def</span> dashpoly(sides, length):
+    angle = <span class="dv">360</span>/sides
 
-    for n in range(sides):
+    <span class="kw">for</span> n in <span class="dt">range</span>(sides):
         dashforward(length)
         right(angle)
 
-pencolor(&#39;red&#39;)
-dashpoly(4, 100)
-right(180)
-pencolor(&#39;blue&#39;)
-dashpoly(3, 150)</code></pre></li>
+pencolor(<span class="st">&#39;red&#39;</span>)
+dashpoly(<span class="dv">4</span>, <span class="dv">100</span>)
+right(<span class="dv">180</span>)
+pencolor(<span class="st">&#39;blue&#39;</span>)
+dashpoly(<span class="dv">3</span>, <span class="dv">150</span>)</code></pre></li>
 <li><p>Kjør koden og se at den gjør akkurat det samme som før.</p>
 <p>Trikset er at istedenfor å bygge programmer ved å klippe og lime, kan vi definere nye kommandoer og gjenbruke dem. Da blir koden kortere og litt lettere å forstå.</p></li>
 </ol>
@@ -217,24 +216,23 @@ dashpoly(3, 150)</code></pre></li>
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>I en ny fil, skriv inn følgende:</p>
-<pre class="{.language-python}"><code>
-from turtle import *
-from random import randrange, choice
-colors = [&#39;red&#39;, &#39;blue&#39;, &#39;green&#39;]
+<pre class="sourceCode python"><code class="sourceCode python">
+<span class="ch">from</span> turtle <span class="ch">import</span> *
+<span class="ch">from</span> random <span class="ch">import</span> randrange, choice
+colors = [<span class="st">&#39;red&#39;</span>, <span class="st">&#39;blue&#39;</span>, <span class="st">&#39;green&#39;</span>]
 
 
-def poly(sides, length):
-    angle = 360/sides
+<span class="kw">def</span> poly(sides, length):
+    angle = <span class="dv">360</span>/sides
 
-    for n in range(sides):
+    <span class="kw">for</span> n in <span class="dt">range</span>(sides):
         forward(length)
         right(angle)
 
-for count in range(10):
+<span class="kw">for</span> count in <span class="dt">range</span>(<span class="dv">10</span>):
     pencolor(choice(colors))
-    right(randrange(0,360))
-    poly(randrange(3,9), randrange(10,30))
-</code></pre></li>
+    right(randrange(<span class="dv">0</span>,<span class="dv">360</span>))
+    poly(randrange(<span class="dv">3</span>,<span class="dv">9</span>), randrange(<span class="dv">10</span>,<span class="dv">30</span>))</code></pre></li>
 <li><p>Lagre og kjør koden</p>
 <p>Programmet skal tegne ti figurer i forskjellige farger med forskjellig størrelse. Linjen <code>from random import randrange, random</code> gir oss to nye prosedyrer, <code>randrange()</code> og <code>choice()</code>.</p>
 <p><code>randrange()</code> plukker ut et tall mellom det laveste og det høyeste tallet vi gir inn, så <code>randrange(1, 10)</code> velger et tall mellom 1 og 9 (Python begynner med 1, og stopper rett før 10).</p>
@@ -247,7 +245,7 @@ for count in range(10):
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

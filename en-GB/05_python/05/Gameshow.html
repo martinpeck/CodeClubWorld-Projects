@@ -40,84 +40,82 @@
 <ul>
 <li><p>Imagine a gameshow, where there is an amazing prize behind one of 3 doors. If you pick the correct door, you win the prize! Pick the wrong door, and you get nothing!</p>
 <p>You can play this game by running the following program:</p>
-<pre class="{.language-python}"><code>from random import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> random <span class="ch">import</span> *
 
-#print the 3 doors and the game instructions
-print(&#39;&#39;&#39;
-Gameshow!
-=========
+<span class="co">#print the 3 doors and the game instructions</span>
+<span class="dt">print</span>(<span class="st">&#39;&#39;&#39;</span>
+<span class="st">Gameshow!</span>
+<span class="st">=========</span>
 
-There&#39;s a prize behind one of the 3 doors!
-Guess the correct door to win the prize!
-  _____   _____   _____
- |     | |     | |     |
- | [1] | | [2] | | [3] |
- |   o | |   o | |   o |
- |_____| |_____| |_____|
+<span class="st">There&#39;s a prize behind one of the 3 doors!</span>
+<span class="st">Guess the correct door to win the prize!</span>
+<span class="st">  _____   _____   _____</span>
+<span class="st"> |     | |     | |     |</span>
+<span class="st"> | [1] | | [2] | | [3] |</span>
+<span class="st"> |   o | |   o | |   o |</span>
+<span class="st"> |_____| |_____| |_____|</span>
 
-Choose a door (1, 2 or 3):
-&#39;&#39;&#39;)
+<span class="st">Choose a door (1, 2 or 3):</span>
+<span class="st">&#39;&#39;&#39;</span>)
 
-#get the chosen door and store it as an integer (whole number)
-chosenDoor = input()
-chosenDoor = int(chosenDoor)
+<span class="co">#get the chosen door and store it as an integer (whole number)</span>
+chosenDoor = <span class="dt">input</span>()
+chosenDoor = <span class="dt">int</span>(chosenDoor)
 
-#randomly choose the winning door number (between 1 and 3)
-winningDoor = randint(1,3)
+<span class="co">#randomly choose the winning door number (between 1 and 3)</span>
+winningDoor = randint(<span class="dv">1</span>,<span class="dv">3</span>)
 
-#show the player the winning and chosen door numbers
-print(&quot;The chosen door is&quot;, chosenDoor)
-print(&quot;The winning door is&quot;, winningDoor)
+<span class="co">#show the player the winning and chosen door numbers</span>
+<span class="dt">print</span>(<span class="st">&quot;The chosen door is&quot;</span>, chosenDoor)
+<span class="dt">print</span>(<span class="st">&quot;The winning door is&quot;</span>, winningDoor)
 
-#player wins if the chosen door and winning door number are the same
-if chosenDoor == winningDoor:
-    print(&quot;Well done!&quot;)
-else:
-    print(&quot;Unlucky!&quot;)
-</code></pre>
+<span class="co">#player wins if the chosen door and winning door number are the same</span>
+<span class="kw">if</span> chosenDoor == winningDoor:
+    <span class="dt">print</span>(<span class="st">&quot;Well done!&quot;</span>)
+<span class="kw">else</span>:
+    <span class="dt">print</span>(<span class="st">&quot;Unlucky!&quot;</span>)</code></pre>
 <p><img src="gameshow.png" alt="screenshot" /></p>
 <p>Here’s how the program works: first, a random number between 1 and 3 is chosen, which is the door containing the prize. <code>randint(1,3)</code> means ‘choose a random integer between 1 and 3’. The program then asks the player for their choice of door, and says “Well done!” if the two numbers are the same or “Unlucky!” if they are different.</p>
 <p>A random number is used so that the winning door is different every time. However, Python can’t generate random numbers without importing the code to do this, which is why the <code>random</code> library is imported at the top of the program.</p>
 <p>The lines starting with <code>#</code> are comments. These comments are ignored by Python, but are really useful for reminding you what your program does! Try to use comments in your code from now on, to make difficult bits of your programs easier to understand.</p></li>
 <li><p>Using what you already know about loops, you could easily improve this game to allow the player to have 3 guesses, instead of just 1. Run the following program:</p>
-<pre class="{.language-python}"><code>from random import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> random <span class="ch">import</span> *
 
-#print the 3 doors and the game instructions
-print(&#39;&#39;&#39;
-Gameshow!
-=========
+<span class="co">#print the 3 doors and the game instructions</span>
+<span class="dt">print</span>(<span class="st">&#39;&#39;&#39;</span>
+<span class="st">Gameshow!</span>
+<span class="st">=========</span>
 
-There&#39;s a prize behind one of the 3 doors!
-Guess the correct door to win the prize!
-  _____   _____   _____
- |     | |     | |     |
- | [1] | | [2] | | [3] |
- |   o | |   o | |   o |
- |_____| |_____| |_____|
-&#39;&#39;&#39;)
+<span class="st">There&#39;s a prize behind one of the 3 doors!</span>
+<span class="st">Guess the correct door to win the prize!</span>
+<span class="st">  _____   _____   _____</span>
+<span class="st"> |     | |     | |     |</span>
+<span class="st"> | [1] | | [2] | | [3] |</span>
+<span class="st"> |   o | |   o | |   o |</span>
+<span class="st"> |_____| |_____| |_____|</span>
+<span class="st">&#39;&#39;&#39;</span>)
 
-#allow the player 3 attempts
-for attempt in range(3):
+<span class="co">#allow the player 3 attempts</span>
+<span class="kw">for</span> attempt in <span class="dt">range</span>(<span class="dv">3</span>):
 
-    print(&quot;\nChoose a door (1, 2 or 3):&quot;)
+    <span class="dt">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Choose a door (1, 2 or 3):&quot;</span>)
 
-    #get the chosen door and store it as an integer (whole number)
-    chosenDoor = input()
-    chosenDoor = int(chosenDoor)
+    <span class="co">#get the chosen door and store it as an integer (whole number)</span>
+    chosenDoor = <span class="dt">input</span>()
+    chosenDoor = <span class="dt">int</span>(chosenDoor)
 
-    #randomly choose the winning door number (between 1 and 3)
-    winningDoor = randint(1,3)
+    <span class="co">#randomly choose the winning door number (between 1 and 3)</span>
+    winningDoor = randint(<span class="dv">1</span>,<span class="dv">3</span>)
 
-    #show the player the winning and chosen door numbers
-    print(&quot;The chosen door is&quot;, chosenDoor)
-    print(&quot;The winning door is&quot;, winningDoor)
+    <span class="co">#show the player the winning and chosen door numbers</span>
+    <span class="dt">print</span>(<span class="st">&quot;The chosen door is&quot;</span>, chosenDoor)
+    <span class="dt">print</span>(<span class="st">&quot;The winning door is&quot;</span>, winningDoor)
 
-    #player wins if the chosen door and winning door number are the same
-    if chosenDoor == winningDoor:
-        print(&quot;Well done!&quot;)
-    else:
-        print(&quot;Unlucky!&quot;)
-</code></pre>
+    <span class="co">#player wins if the chosen door and winning door number are the same</span>
+    <span class="kw">if</span> chosenDoor == winningDoor:
+        <span class="dt">print</span>(<span class="st">&quot;Well done!&quot;</span>)
+    <span class="kw">else</span>:
+        <span class="dt">print</span>(<span class="st">&quot;Unlucky!&quot;</span>)</code></pre>
 <p><img src="gameshow-loop3.png" alt="screenshot" /></p>
 <p>In this program, notice that the code for printing the 3 doors is <em>outside</em> of the loop, as they only need to be printed once. The code for generating random numbers and asking the player to pick a door is <em>inside</em> the loop, as these will each need to be done 3 times. If the code for choosing a random winning door was outside of the loop, then the winning door would be the same door for each of the 3 guesses.</p>
 <p>Also, <code>\n</code> in the line <code>print(&quot;\nChoose a door (1, 2 or 3):&quot;)</code> prints a new blank line to the screen. This is done to split up the printed text, to make it easier to read.</p></li>
@@ -140,61 +138,61 @@ for attempt in range(3):
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Instead of making your program loop a set number of times, it might be more interesting to let the player choose how long they want to play for. To do this, you’ll need to use a different loop, called a <code>while</code> loop. Try out this program:</p>
-<pre class="{.language-python}"><code>from random import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> random <span class="ch">import</span> *
 
-#the user changes this variable to end the game
-playing = True
+<span class="co">#the user changes this variable to end the game</span>
+playing = <span class="ot">True</span>
 
-score = 0
+score = <span class="dv">0</span>
 
-#print the 3 doors and the game instructions
-print(&#39;&#39;&#39;
-Gameshow!
-=========
+<span class="co">#print the 3 doors and the game instructions</span>
+<span class="dt">print</span>(<span class="st">&#39;&#39;&#39;</span>
+<span class="st">Gameshow!</span>
+<span class="st">=========</span>
 
-There&#39;s a prize behind one of the 3 doors!
-Guess the correct door to win the prize!
-  _____   _____   _____
- |     | |     | |     |
- | [1] | | [2] | | [3] |
- |   o | |   o | |   o |
- |_____| |_____| |_____|
-&#39;&#39;&#39;)
+<span class="st">There&#39;s a prize behind one of the 3 doors!</span>
+<span class="st">Guess the correct door to win the prize!</span>
+<span class="st">  _____   _____   _____</span>
+<span class="st"> |     | |     | |     |</span>
+<span class="st"> | [1] | | [2] | | [3] |</span>
+<span class="st"> |   o | |   o | |   o |</span>
+<span class="st"> |_____| |_____| |_____|</span>
+<span class="st">&#39;&#39;&#39;</span>)
 
-#repeat as long as the &#39;playing&#39; variable is set to &#39;True&#39;
-while playing == True:
+<span class="co">#repeat as long as the &#39;playing&#39; variable is set to &#39;True&#39;</span>
+<span class="kw">while</span> playing == <span class="ot">True</span>:
 
-    print(&quot;\nChoose a door (1, 2 or 3):&quot;)
+    <span class="dt">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Choose a door (1, 2 or 3):&quot;</span>)
 
-    #get the chosen door and store it as an integer (whole number)
-    chosenDoor = input()
-    chosenDoor = int(chosenDoor)
+    <span class="co">#get the chosen door and store it as an integer (whole number)</span>
+    chosenDoor = <span class="dt">input</span>()
+    chosenDoor = <span class="dt">int</span>(chosenDoor)
 
-    #randomly choose the winning door number (between 1 and 3)
-    winningDoor = randint(1,3)
+    <span class="co">#randomly choose the winning door number (between 1 and 3)</span>
+    winningDoor = randint(<span class="dv">1</span>,<span class="dv">3</span>)
 
-    #show the player the winning and chosen door numbers
-    print(&quot;The chosen door is&quot;, chosenDoor)
-    print(&quot;The winning door is&quot;, winningDoor)
+    <span class="co">#show the player the winning and chosen door numbers</span>
+    <span class="dt">print</span>(<span class="st">&quot;The chosen door is&quot;</span>, chosenDoor)
+    <span class="dt">print</span>(<span class="st">&quot;The winning door is&quot;</span>, winningDoor)
 
-    #player wins if the chosen door and winning door number are the same
-    if chosenDoor == winningDoor:
-        print(&quot;Well done!&quot;)
-        score = score + 1
-    else:
-        print(&quot;Unlucky!&quot;)
+    <span class="co">#player wins if the chosen door and winning door number are the same</span>
+    <span class="kw">if</span> chosenDoor == winningDoor:
+        <span class="dt">print</span>(<span class="st">&quot;Well done!&quot;</span>)
+        score = score + <span class="dv">1</span>
+    <span class="kw">else</span>:
+        <span class="dt">print</span>(<span class="st">&quot;Unlucky!&quot;</span>)
 
-    print(&quot;Your score is now&quot;, score)
+    <span class="dt">print</span>(<span class="st">&quot;Your score is now&quot;</span>, score)
 
-    #ask the player if they want to keep playing
-    print(&quot;\nDo you want to play again? (y/n)&quot;)
-    answer = input()
-    #end the game if the player types &#39;n&#39;
-    if answer == &#39;n&#39;:
-        playing = False
+    <span class="co">#ask the player if they want to keep playing</span>
+    <span class="dt">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Do you want to play again? (y/n)&quot;</span>)
+    answer = <span class="dt">input</span>()
+    <span class="co">#end the game if the player types &#39;n&#39;</span>
+    <span class="kw">if</span> answer == <span class="st">&#39;n&#39;</span>:
+        playing = <span class="ot">False</span>
 
-print(&quot;Thanks for playing.&quot;)
-print(&quot;Your final score is&quot;, score)</code></pre>
+<span class="dt">print</span>(<span class="st">&quot;Thanks for playing.&quot;</span>)
+<span class="dt">print</span>(<span class="st">&quot;Your final score is&quot;</span>, score)</code></pre>
 <p><img src="gameshow-while.png" alt="screenshot" /></p>
 <p>A <code>while</code> loop allows your program to repeat <em>until</em> something happens to stop it. In this program, you want to keep playing the game as long as the variable <code>playing</code> is set to <code>True</code>. If the player decides that they don’t want to play again and inputs <code>n</code>, the variable <code>playing</code> is set to <code>False</code>, and the loop stops running. The name for data that is either <code>True</code> or <code>False</code> is <em>Boolean</em> data.</p></li>
 <li><p>Get someone to test out your game, to make sure that it runs until they input <code>n</code> to end the game.</p></li>
@@ -218,56 +216,56 @@ print(&quot;Your final score is&quot;, score)</code></pre>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Instead of looping the game until the player decides to quit, you could instead loop the game until the player scores 3 points. The aim of the game could then be to score 3 points in as few attempts as possible:</p>
-<pre class="{.language-python}"><code>from random import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> random <span class="ch">import</span> *
 
-#this variable stores the number of times the game is played
-attempts = 0
+<span class="co">#this variable stores the number of times the game is played</span>
+attempts = <span class="dv">0</span>
 
-score = 0
+score = <span class="dv">0</span>
 
-#print the 3 doors and the game instructions
-print(&#39;&#39;&#39;
-Gameshow!
-=========
+<span class="co">#print the 3 doors and the game instructions</span>
+<span class="dt">print</span>(<span class="st">&#39;&#39;&#39;</span>
+<span class="st">Gameshow!</span>
+<span class="st">=========</span>
 
-There&#39;s a prize behind one of the 3 doors!
-Guess the correct door 3 times in as few attempts as possible!
-  _____   _____   _____
- |     | |     | |     |
- | [1] | | [2] | | [3] |
- |   o | |   o | |   o |
- |_____| |_____| |_____|
-&#39;&#39;&#39;)
+<span class="st">There&#39;s a prize behind one of the 3 doors!</span>
+<span class="st">Guess the correct door 3 times in as few attempts as possible!</span>
+<span class="st">  _____   _____   _____</span>
+<span class="st"> |     | |     | |     |</span>
+<span class="st"> | [1] | | [2] | | [3] |</span>
+<span class="st"> |   o | |   o | |   o |</span>
+<span class="st"> |_____| |_____| |_____|</span>
+<span class="st">&#39;&#39;&#39;</span>)
 
-#repeat as long as the score is less than 3
-while score &lt; 3:
+<span class="co">#repeat as long as the score is less than 3</span>
+<span class="kw">while</span> score &lt; <span class="dv">3</span>:
 
-    #add 1 to the number of attempts
-    attempts = attempts + 1
+    <span class="co">#add 1 to the number of attempts</span>
+    attempts = attempts + <span class="dv">1</span>
 
-    print(&quot;\nAttempt&quot;, attempts, &quot;: Choose a door (1, 2 or 3):&quot;)
+    <span class="dt">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Attempt&quot;</span>, attempts, <span class="st">&quot;: Choose a door (1, 2 or 3):&quot;</span>)
 
-    #get the chosen door and store it as an integer (whole number)
-    chosenDoor = input()
-    chosenDoor = int(chosenDoor)
+    <span class="co">#get the chosen door and store it as an integer (whole number)</span>
+    chosenDoor = <span class="dt">input</span>()
+    chosenDoor = <span class="dt">int</span>(chosenDoor)
 
-    #randomly choose the winning door number (between 1 and 3)
-    winningDoor = randint(1,3)
+    <span class="co">#randomly choose the winning door number (between 1 and 3)</span>
+    winningDoor = randint(<span class="dv">1</span>,<span class="dv">3</span>)
 
-    #show the player the winning and chosen door numbers
-    print(&quot;The chosen door is&quot;, chosenDoor)
-    print(&quot;The winning door is&quot;, winningDoor)
+    <span class="co">#show the player the winning and chosen door numbers</span>
+    <span class="dt">print</span>(<span class="st">&quot;The chosen door is&quot;</span>, chosenDoor)
+    <span class="dt">print</span>(<span class="st">&quot;The winning door is&quot;</span>, winningDoor)
 
-    #player wins if the chosen door and winning door number are the same
-    if chosenDoor == winningDoor:
-        print(&quot;Well done!&quot;)
-        score = score + 1
-    else:
-        print(&quot;Unlucky!&quot;)
+    <span class="co">#player wins if the chosen door and winning door number are the same</span>
+    <span class="kw">if</span> chosenDoor == winningDoor:
+        <span class="dt">print</span>(<span class="st">&quot;Well done!&quot;</span>)
+        score = score + <span class="dv">1</span>
+    <span class="kw">else</span>:
+        <span class="dt">print</span>(<span class="st">&quot;Unlucky!&quot;</span>)
 
-    print(&quot;Your score is now&quot;, score)
+    <span class="dt">print</span>(<span class="st">&quot;Your score is now&quot;</span>, score)
 
-print(&quot;\n** You did it! That look you&quot;, attempts, &quot;attempts **&quot;)</code></pre>
+<span class="dt">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">** You did it! That look you&quot;</span>, attempts, <span class="st">&quot;attempts **&quot;</span>)</code></pre>
 <p>The <code>while</code> loop in this program continues to run as long as the score is less than 3 (<code>while score &lt; 3:</code>). Once the score gets to 3, the program ends, and the number of attempts is printed.</p></li>
 </ul>
 </section>
@@ -283,17 +281,17 @@ print(&quot;\n** You did it! That look you&quot;, attempts, &quot;attempts **&qu
 <ul>
 <li>You can use a <code>while</code> loop to run the game as long as the player wants to keep playing:</li>
 </ul>
-<pre class="{.language-python}"><code>while playing == True:</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">while</span> playing == <span class="ot">True</span>:</code></pre>
 <ul>
 <li>If the user enters <code>n</code> because they wish to stick with the score they have, you can set the <code>playing</code> variable to <code>False</code>:</li>
 </ul>
-<pre class="{.language-python}"><code>if answer == &#39;n&#39;:
-    playing = False</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">if</span> answer == <span class="st">&#39;n&#39;</span>:
+    playing = <span class="ot">False</span></code></pre>
 <ul>
 <li>At the end of the program (outside of the <code>while</code> loop), you can say “Well done!” to the player if their score is exactly 21:</li>
 </ul>
-<pre class="{.language-python}"><code>if score == 21:
-    print(&quot;Well done!&quot;)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">if</span> score == <span class="dv">21</span>:
+    <span class="dt">print</span>(<span class="st">&quot;Well done!&quot;</span>)</code></pre>
 </section>
 <section id="save-your-project-3" class="level2 save">
 <h2>Save Your Project</h2>
@@ -303,7 +301,7 @@ print(&quot;\n** You did it! That look you&quot;, attempts, &quot;attempts **&qu
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

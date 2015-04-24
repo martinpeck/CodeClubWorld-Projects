@@ -45,7 +45,7 @@
 <li>On Linux, open up a Terminal, and type <code>idle</code> and press enter.</li>
 </ul></li>
 <li><p>Click <code>File → New Window</code>, and type the following into the window that appears:</p>
-<pre class="{.language-python}"><code>print(&quot;Hello, how are you?&quot;)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="dt">print</span>(<span class="st">&quot;Hello, how are you?&quot;</span>)</code></pre>
 <p>This program will print some text to the screen. Notice that the text you want to print is surrounded by speech marks (<code>&quot;</code>). Here’s an image showing what you need to do:</p>
 <p><img src="ascii-hello.png" alt="screenshot" /></p></li>
 <li><p>Save the file, by clicking <code>File → Save</code>, and name the file <code>hello.py</code> or something similar. Don’t forget to type the <code>.py</code> bit at the end, which tells the computer that it’s a Python file. Without it, your program won’t be colour coded, which can be really helpful.</p>
@@ -77,15 +77,15 @@
 <li><p>Let’s print something much more fun than text… ASCII art! ASCII art is creating pictures out of text. Here’s an example - it’s meant to be a dog!</p>
 <p><img src="ascii-dog.png" alt="screenshot" /></p>
 <p>To make this masterpiece, you can type the following into the IDLE editor and run the program:</p>
-<pre class="{.language-python}"><code>print(&quot;A picture of a dog...&quot;)
-print(&quot; 0____  &quot;)
-print(&quot;  ||||  &quot;)</code></pre></li>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="dt">print</span>(<span class="st">&quot;A picture of a dog...&quot;</span>)
+<span class="dt">print</span>(<span class="st">&quot; 0____  &quot;</span>)
+<span class="dt">print</span>(<span class="st">&quot;  ||||  &quot;</span>)</code></pre></li>
 <li><p>If you prefer, you can use 3 single quotes (<code>'''</code>) instead of speech marks, which allows you to print multiple lines of text with 1 print statement. Like this:</p>
-<pre class="{.language-python}"><code>print(&#39;&#39;&#39;
-A picture of a dog...
- 0____
-  ||||
-&#39;&#39;&#39;)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="dt">print</span>(<span class="st">&#39;&#39;&#39;</span>
+<span class="st">A picture of a dog...</span>
+<span class="st"> 0____</span>
+<span class="st">  ||||</span>
+<span class="st">&#39;&#39;&#39;</span>)</code></pre>
 <p>If you run this program, you’ll see it prints the same dog as before.</p></li>
 </ul>
 </section>
@@ -107,17 +107,17 @@ A picture of a dog...
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Python can also do calculations using text! What do you get if you multiply <code>&quot;hello&quot;</code> by 5? Let’s ask Python, by running this program:</p>
-<pre class="{.language-python}"><code>print(&quot;hello&quot; * 5)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="dt">print</span>(<span class="st">&quot;hello&quot;</span> * <span class="dv">5</span>)</code></pre>
 <p>The star <code>*</code> in the program above is a multiply sign. Run the program above, and you should see the answer:</p>
 <p><img src="ascii-textcalc.png" alt="screenshot" /></p></li>
 <li><p>You can make the printed text above easier to read, by putting a space after the word <code>&quot;hello&quot;</code> in your program:</p>
-<pre class="{.language-python}"><code>print(&quot;hello &quot; * 5)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="dt">print</span>(<span class="st">&quot;hello &quot;</span> * <span class="dv">5</span>)</code></pre>
 <p>Run this program and you’ll see that the output is a little easier to read than before.</p></li>
 <li><p>If <code>&quot;hello &quot;</code> multiplied by 5 is <code>&quot;hello hello hello hello hello &quot;</code>, then what is <code>&quot;hello&quot; - 7</code>? Does this calculation even make sense?</p>
 <p><img src="ascii-minus.png" alt="screenshot" /></p>
 <p>Oops, you’ve broken it! Instead of an answer, we get an error message. It looks like that calculation doesn’t make sense in Python!</p></li>
 <li><p>How about addition? What answer do you think <code>&quot;hello &quot; +  &quot;world</code>&quot; would give? Try it out, by running the following program:</p>
-<pre class="{.language-python}"><code>print(&quot;hello &quot; + &quot;world&quot;)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="dt">print</span>(<span class="st">&quot;hello &quot;</span> + <span class="st">&quot;world&quot;</span>)</code></pre>
 <p><img src="ascii-textadd.png" alt="screenshot" /></p>
 <p>Does it give you the answer you expected?</p></li>
 </ul>
@@ -128,9 +128,9 @@ A picture of a dog...
 <section id="challenge-words-and-numbers" class="level2 challenge">
 <h2>Challenge: Words and numbers</h2>
 <p>What does the following program print to the screen? See if you can guess correctly before running the program.</p>
-<pre class="{.language-python}"><code>print(&quot;ha &quot;*4)
-print(&quot;ba&quot; + &quot;na&quot;*2)
-print(&quot;He&quot; + &quot;l&quot;*2 + &quot;o&quot; + &quot;!&quot;*10)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="dt">print</span>(<span class="st">&quot;ha &quot;</span>*<span class="dv">4</span>)
+<span class="dt">print</span>(<span class="st">&quot;ba&quot;</span> + <span class="st">&quot;na&quot;</span>*<span class="dv">2</span>)
+<span class="dt">print</span>(<span class="st">&quot;He&quot;</span> + <span class="st">&quot;l&quot;</span>*<span class="dv">2</span> + <span class="st">&quot;o&quot;</span> + <span class="st">&quot;!&quot;</span>*<span class="dv">10</span>)</code></pre>
 <p>Can you make up any words of your own?</p>
 </section>
 <section id="save-your-project-5" class="level2 save">
@@ -143,18 +143,18 @@ print(&quot;He&quot; + &quot;l&quot;*2 + &quot;o&quot; + &quot;!&quot;*10)</code
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Now that you know how to do calculations on text, now what? Why is it useful? Well, let’s say you wanted to draw an ASCII art rectangle that is 30 characters long and 3 characters high. You could either draw it the hard way, like this:</p>
-<pre class="{.language-python}"><code>print(&quot;##############################&quot;)
-print(&quot;##############################&quot;)
-print(&quot;##############################&quot;)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="dt">print</span>(<span class="st">&quot;##############################&quot;</span>)
+<span class="dt">print</span>(<span class="st">&quot;##############################&quot;</span>)
+<span class="dt">print</span>(<span class="st">&quot;##############################&quot;</span>)</code></pre>
 <p>Or you could save time and draw it the easy way, like this:</p>
-<pre class="{.language-python}"><code>print(&quot;#&quot; * 30)
-print(&quot;#&quot; * 30)
-print(&quot;#&quot; * 30)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="dt">print</span>(<span class="st">&quot;#&quot;</span> * <span class="dv">30</span>)
+<span class="dt">print</span>(<span class="st">&quot;#&quot;</span> * <span class="dv">30</span>)
+<span class="dt">print</span>(<span class="st">&quot;#&quot;</span> * <span class="dv">30</span>)</code></pre>
 <p>Both give you exactly the same rectangle printed to the screen:</p>
 <p><img src="ascii-rect.png" alt="screenshot" /></p></li>
 <li><p>You could even use calculations to make interesting patterns, like this wave:</p>
-<pre class="{.language-python}"><code>print(&quot;/\  &quot;*10)
-print(&quot;  \/&quot;*10)</code></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="dt">print</span>(<span class="st">&quot;/\  &quot;</span>*<span class="dv">10</span>)
+<span class="dt">print</span>(<span class="st">&quot;  \/&quot;</span>*<span class="dv">10</span>)</code></pre>
 <p><img src="ascii-wave.png" alt="screenshot" /></p></li>
 </ul>
 </section>
@@ -175,7 +175,7 @@ print(&quot;  \/&quot;*10)</code></pre>
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

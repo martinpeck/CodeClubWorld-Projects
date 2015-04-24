@@ -62,7 +62,7 @@
 <li>Finn en av <code>&lt;img&gt;</code> taggene. Vi har akkurat prøvd å feilstave en tagg og nettleseren var ikke sikker på hva den skal gjøre med det. Men hva hvis vi feilstaver attributtet?</li>
 </ul>
 <p>Inne i <code>&lt;img&gt;</code> taggen har vi <code>href</code> og <code>alt</code> attributter:</p>
-<pre class="{.language-markup}"><code>&lt;img href = &quot;kattunge.jpg&quot; alt = &quot;Dette er en kattunge.&quot; /&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;img</span><span class="ot"> href</span> <span class="ot">=</span> <span class="st">&quot;kattunge.jpg&quot;</span><span class="ot"> alt</span> <span class="ot">=</span> <span class="st">&quot;Dette er en kattunge.&quot;</span> <span class="kw">/&gt;</span></code></pre>
 <p>Prøv å endre <code>href</code> til noe annet. Lagre dokumentet og oppdater i nettleseren.</p>
 <p>Å nei! Kattungen er borte!</p>
 <p>Plutselig vet ikke nettleseren hvor den skal se etter bildet den skal vise - den ser etter filnavnet i <code>href</code> atributten som ikke lenger er der.</p>
@@ -70,7 +70,7 @@
 <ul>
 <li>Nå fjern det andre anførselstegnet (<code>&quot;</code>) fra <code>alt</code> attributtet av dette bildet: den etter teksten, slik at du ender opp med dette:</li>
 </ul>
-<pre class="{.language-markup}"><code>&lt;img href=&quot;kattunge.jpg&quot; alt=&quot;Dette er en kattunge. /&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;img</span><span class="ot"> href=</span><span class="st">&quot;kattunge.jpg&quot;</span><span class="ot"> alt=</span><span class="st">&quot;Dette er en kattunge. /&gt;</span></code></pre>
 <p>Lagre og oppdater i nettleseren.</p>
 <p>Den neste taggen forsvant. Hvorfor? Nettleseren vil tro at alt etter <code>alt =&quot;</code>og før neste sitatmerke (<code>&quot;</code>) er ekstra tekst for dette bildet, inkludert slutten av bildekoden og neste åpnings-taggen.</p>
 <p>Fiks det igjen ved å legge til et anførselstegn etter <code>alt</code> teksten.</p>
@@ -88,17 +88,17 @@
 </ul>
 <p><strong>Er du ferdig? Flott! La oss nå linke de to sidene du har laget sammen.</strong></p>
 <p>Når vi har linket til deler av den samme siden, kunne vi bare peke linken til en bestemt id på siden, som dette:</p>
-<pre class="{.language-markup}"><code>&lt;a href=&quot;#kattunge&quot;&gt; Klikk for å se en kattunge &lt;/ a&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#kattunge&quot;</span><span class="kw">&gt;</span> Klikk for å se en kattunge <span class="er">&lt;</span>/ a&gt;</code></pre>
 <p>Som da tok deg til noe sånt som dette:</p>
-<pre class="{.language-markup}"><code>&lt;div id=&quot;kattunge&quot;&gt;
-&lt;img src = &quot;kattunge.jpg&quot; alt = &quot;Dette er en kattunge.&quot; /&gt;
-&lt;/ div&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;kattunge&quot;</span><span class="kw">&gt;</span>
+<span class="kw">&lt;img</span><span class="ot"> src</span> <span class="ot">=</span> <span class="st">&quot;kattunge.jpg&quot;</span><span class="ot"> alt</span> <span class="ot">=</span> <span class="st">&quot;Dette er en kattunge.&quot;</span> <span class="kw">/&gt;</span>
+<span class="er">&lt;</span>/ div&gt;</code></pre>
 <p>Hvis du vil koble til en annen side, trenger vi ikke å inkludere hashsymbolet (<code>#</code>), men i stedet må vi si hvilken fil vi vil linken skal ta oss til.</p>
 <p>Så for å linke fra <code>om_meg_side_2.html</code> til <code>om_meg.html</code> skriver vi slik:</p>
-<pre class="{.language-markup}"><code>&lt;a href=&quot;om_meg.html&quot;&gt; Gå til Om Meg siden &lt;/ a&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;om_meg.html&quot;</span><span class="kw">&gt;</span> Gå til Om Meg siden <span class="er">&lt;</span>/ a&gt;</code></pre>
 <p>Du kan endre anker teksten til noe annet, som tittelen på siden hvis du har endret det.</p>
 <p>For å linke tilbake fra <code>om_meg.html</code> til <code>om_meg_side_2.html</code> må du skrive det slik:</p>
-<pre class="{.language-markup}"><code>&lt;a href=&quot;om_meg_side_2.html&quot;&gt; Gå til min andre side &lt;/ a&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;om_meg_side_2.html&quot;</span><span class="kw">&gt;</span> Gå til min andre side <span class="er">&lt;</span>/ a&gt;</code></pre>
 <p>Gratulerer! Du har laget ditt eget nettsted.</p>
 </section>
 <section id="publiser-nettsiden-din-pa-internett-ekstra-aktivitet" class="level1 activity">
@@ -126,7 +126,7 @@
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

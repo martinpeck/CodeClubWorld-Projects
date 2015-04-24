@@ -64,7 +64,7 @@
 <li>Hitta en av <code>&lt;img&gt;</code> taggarna. Vi har precis provat att stava fel på taggnamnet och webbläsaren förstod inte vad den skulle göra. Men hur blir det om vi stavar fel på attributet?</li>
 </ul>
 <p>Inuti <code>&lt;img&gt;</code> -taggen har vi <code>href</code> och <code>alt</code> -attributen:</p>
-<pre class="{.language-markup}"><code>&lt;img href=&quot;kitten.jpg&quot; alt=&quot;Det här är en kattunge.&quot; /&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;img</span><span class="ot"> href=</span><span class="st">&quot;kitten.jpg&quot;</span><span class="ot"> alt=</span><span class="st">&quot;Det här är en kattunge.&quot;</span> <span class="kw">/&gt;</span></code></pre>
 <ul>
 <li>Prova att ändra <code>href</code> till något annat. Spara dokumentet och uppdatera webbläsaren.</li>
 </ul>
@@ -73,7 +73,7 @@
 <li>Ändra tillbaka till <code>href</code> så att vi kan fortsätta titta på kattungen.</li>
 <li>Ta nu bort det andra citatet (<code>&quot;</code>) från<code>alt</code>-attributet på denna bild: den efter texten, så att du ser följande:</li>
 </ul>
-<pre class="{.language-markup}"><code>&lt;img href=&quot;kitten.jpg&quot; alt=&quot;Det här är en kattunge&quot; /&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;img</span><span class="ot"> href=</span><span class="st">&quot;kitten.jpg&quot;</span><span class="ot"> alt=</span><span class="st">&quot;Det här är en kattunge&quot;</span> <span class="kw">/&gt;</span></code></pre>
 <ul>
 <li>Spara och uppdatera webbläsaren.</li>
 </ul>
@@ -97,17 +97,17 @@
 </ul>
 <p><strong>Är du klar? Toppen! Låt oss nu länka dessa två sidor som du har skapat.</strong></p>
 <p>När vi har att länkat till delar av samma sida, kan vi peka länkar till ett specifikt id på en sida, som det här:</p>
-<pre class="{.language-markup}"><code>&lt;a href=&quot;#kitten&quot;&gt;Klicka för att se kattungen&lt;/a&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#kitten&quot;</span><span class="kw">&gt;</span>Klicka för att se kattungen<span class="kw">&lt;/a&gt;</span></code></pre>
 <p>Som sedan visade något som det här:</p>
-<pre class="{.language-markup}"><code>&lt;div id=&quot;kitten&quot;&gt;
-    &lt;img src=&quot;kitten.jpg&quot; alt=&quot;Det här är en kattunge.&quot; /&gt;
-&lt;/div&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;kitten&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;img</span><span class="ot"> src=</span><span class="st">&quot;kitten.jpg&quot;</span><span class="ot"> alt=</span><span class="st">&quot;Det här är en kattunge.&quot;</span> <span class="kw">/&gt;</span>
+<span class="kw">&lt;/div&gt;</span></code></pre>
 <p>För att länka till en annan sida behöver vi inte inkludera hash-symbolen (<code>#</code>), istället behöver vi beskriva vilken fil vi vill att länken ska ta oss till.</p>
 <p>Att länka från <code>about_me_page_2.html</code> till <code>about_me.html</code> skriv då följande:</p>
-<pre class="{.language-markup}"><code>&lt;a href=&quot;about_me.html&quot;&gt;Gå till sidan om mig&lt;/a&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;about_me.html&quot;</span><span class="kw">&gt;</span>Gå till sidan om mig<span class="kw">&lt;/a&gt;</span></code></pre>
 <p>Du kan ändra texten till något annat, som till exempel titeln på sidan om du har ändrat den.</p>
 <p>För att länka tillbaka från <code>about_me.html</code> till <code>about_me_page_2.html</code> behöver du skriva följande:</p>
-<pre class="{.language-markup}"><code>&lt;a href=&quot;about_me_page_2.html&quot;&gt;Gå till min andra sida&lt;/a&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;about_me_page_2.html&quot;</span><span class="kw">&gt;</span>Gå till min andra sida<span class="kw">&lt;/a&gt;</span></code></pre>
 <p>Grattis! Du har precis skapat din alldeles egna webbsida.</p>
 </section>
 <section id="att-lagga-din-websida-pa-webben-extra-aktivitet" class="level1 activity">
@@ -135,7 +135,7 @@
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

@@ -68,23 +68,23 @@
 <ul>
 <li>As the player’s input is stored as text, any questions with a numerical answer should also be represented as text. For example:</li>
 </ul>
-<pre class="{.language-python}"><code>if answer == &quot;4&quot;:
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">if</span> answer == <span class="st">&quot;4&quot;</span>:
     ...</code></pre>
 <p>and <em>not</em>:</p>
-<pre class="{.language-python}"><code>if answer == 4:
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">if</span> answer == <span class="dv">4</span>:
     ...</code></pre>
 <p>As an alternative, it is also possible to cast the player’s answer to a number, and then compare the two numbers:</p>
-<pre class="{.language-python}"><code>answer = int(answer)
-if answer == 4:
+<pre class="sourceCode python"><code class="sourceCode python">answer = <span class="dt">int</span>(answer)
+<span class="kw">if</span> answer == <span class="dv">4</span>:
     ...</code></pre>
 <ul>
 <li><p>Each <code>if</code>/<code>else</code>/<code>elif</code> statement should end with a colon.</p></li>
 <li><p>The body of each <code>if</code>/<code>else</code>/<code>elif</code> statement should be uniformly indented. It is recommended that the Tab key is used for this, as it makes indentation mistakes easier to spot. For example, the following program will not run:</p></li>
 </ul>
-<pre class="{.language-python}"><code>if answer == &quot;variable&quot;:
-   print(&quot;Well done&quot;)
-  print(&quot;---------&quot;)
-    print(&quot; :) &quot;)
+<pre class="sourceCode python"><code class="sourceCode python"><span class="kw">if</span> answer == <span class="st">&quot;variable&quot;</span>:
+   <span class="dt">print</span>(<span class="st">&quot;Well done&quot;</span>)
+  <span class="dt">print</span>(<span class="st">&quot;---------&quot;</span>)
+    <span class="dt">print</span>(<span class="st">&quot; :) &quot;</span>)
  )</code></pre>
 <ul>
 <li>Children should remember the difference between <code>=</code> (used for variable assignment) and <code>==</code> (used for checking equality).</li>
@@ -94,7 +94,7 @@ if answer == 4:
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <!-- Google Analytics -->

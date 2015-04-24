@@ -42,8 +42,8 @@
 <li>För att få fram koden som du kan använda på din hemsida, klicka på <code>Embed</code>.</li>
 </ul>
 <p>Det kommer se ut ungefär såhär:</p>
-<pre class="{.langauge-markup}"><code>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/FxhGIajRsq4&quot;
-   frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;iframe</span><span class="ot"> width=</span><span class="st">&quot;560&quot;</span><span class="ot"> height=</span><span class="st">&quot;315&quot;</span><span class="ot"> src=</span><span class="st">&quot;http://www.youtube.com/embed/FxhGIajRsq4&quot;</span>
+<span class="ot">   frameborder=</span><span class="st">&quot;0&quot;</span><span class="ot"> allowfullscreen</span><span class="kw">&gt;&lt;/iframe&gt;</span></code></pre>
 <p>Just det här fragmentet med kod skulle lägga till en Code Club-film till din webbsida. Det är bara att kopiera och klistra in det på det stället på webbsidan där du vill att filmen ska ligga.</p>
 <p>Lägg märke till attributen <code>width</code> och <code>height</code>. De gör så att du kan bestämma hur stor del av sidan som filmrutan ska täcka, därför kan du ändra dem till de mått som du tycker passar.</p>
 </section>
@@ -54,8 +54,8 @@
 <li>Klicka på <code>Share</code>-knappen på filmspelaren.</li>
 <li>På höger sida finns en Embed-ruta. Klicka på den för att markera koden och kopiera den sedan. Det kommer se ut ungefär såhär:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>&lt;iframe src=&quot;http://player.vimeo.com/video/44738167&quot; width=&quot;600&quot; height=&quot;338&quot;
-   frameborder=&quot;0&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;iframe</span><span class="ot"> src=</span><span class="st">&quot;http://player.vimeo.com/video/44738167&quot;</span><span class="ot"> width=</span><span class="st">&quot;600&quot;</span><span class="ot"> height=</span><span class="st">&quot;338&quot;</span>
+<span class="ot">   frameborder=</span><span class="st">&quot;0&quot;</span><span class="ot"> webkitAllowFullScreen mozallowfullscreen allowFullScreen</span><span class="kw">&gt;&lt;/iframe&gt;</span></code></pre>
 <ul>
 <li>Klistra in koden på det stället på webbsidan där du vill att filmen ska ligga. Lägg märke till <code>width</code> och <code>height</code> attributen. De gör så att du kan bestämma hur stor del av sidan som filmrutan ska täcka, därför kan du ändra dem till de mått som du tycker passar.</li>
 </ul>
@@ -66,42 +66,42 @@
 <ul>
 <li>För att lägga upp en film på din sida behöver du lägga till en <code>video</code>-tagg. Precis som <code>&lt;img&gt;</code>-taggen har den ett <code>src</code>-attribut som pekar mot filen:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;video src=&quot;spaceship_landing.mp4&quot;&gt;
-    &lt;/video&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;video</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.mp4&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/video&gt;</span></code></pre>
 <p>Tyvärr är det irriterande med att lägga upp en film att inte alla webbläsare kan spela upp alla videoformat. Du behöver spara din egen film i formaten <code>.mp4</code> och <code>.ogv</code> minst, eftersom att de formaten i alla fall fungerar i de flesta webbläsare.</p>
 <p>För att se till att webbläsaren förstår att det finns mer än ett videoformat tillgängligt, skriv så här:</p>
-<pre class="{.langauge-markup}"><code>    &lt;video&gt;
-        &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
-        &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
-    &lt;/video&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;video&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.ogv&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/ogg&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.mp4&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/mp4&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/video&gt;</span></code></pre>
 <ul>
 <li>För att lägga till en bild som visas innan filmen spelas upp kan du använda dig av ett <code>poster</code>-attribut:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot;&gt;
-        &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
-        &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
-    &lt;/video&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;video</span><span class="ot"> poster=</span><span class="st">&quot;spaceship_landing.jpg&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.ogv&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/ogg&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.mp4&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/mp4&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/video&gt;</span></code></pre>
 <ul>
 <li>Om du vill att filmen spelas automatiskt kan du lägga till nyckelordet <code>autoplay</code>, såhär:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot; autoplay&gt;
-        &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
-        &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
-    &lt;/video&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;video</span><span class="ot"> poster=</span><span class="st">&quot;spaceship_landing.jpg&quot;</span><span class="ot"> autoplay</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.ogv&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/ogg&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.mp4&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/mp4&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/video&gt;</span></code></pre>
 <ul>
 <li>För att visa filmreglagen, som till exempel knapparna för play och volym kan du lägga till nyckelordet <code>controls</code>:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot; controls&gt;
-        &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
-        &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
-    &lt;/video&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;video</span><span class="ot"> poster=</span><span class="st">&quot;spaceship_landing.jpg&quot;</span><span class="ot"> controls</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.ogv&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/ogg&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.mp4&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/mp4&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/video&gt;</span></code></pre>
 <ul>
 <li>Du kan också bestämma storleken på filmen genom att använda <code>width</code> och <code>height</code> attributen. Skriv såhär:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;video poster=&quot;spaceship_landing.jpg&quot; width=&quot;600&quot; height=&quot;400&quot;&gt;
-        &lt;source src=&quot;spaceship_landing.ogv&quot; type=&quot;video/ogg&quot;&gt;
-        &lt;source src=&quot;spaceship_landing.mp4&quot; type=&quot;video/mp4&quot;&gt;
-    &lt;/video&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;video</span><span class="ot"> poster=</span><span class="st">&quot;spaceship_landing.jpg&quot;</span><span class="ot"> width=</span><span class="st">&quot;600&quot;</span><span class="ot"> height=</span><span class="st">&quot;400&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.ogv&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/ogg&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship_landing.mp4&quot;</span><span class="ot"> type=</span><span class="st">&quot;video/mp4&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/video&gt;</span></code></pre>
 </section>
 <section id="lagg-till-en-ljudfil-fran-din-dator" class="level1 activity">
 <h1>Lägg till en ljudfil från din dator</h1>
@@ -109,34 +109,34 @@
 <ul>
 <li>För att lägga upp ljudet på en sida, skriv såhär:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;audio src=&quot;spaceship.mp3&quot;&gt;
-    &lt;/audio&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;audio</span><span class="ot"> src=</span><span class="st">&quot;spaceship.mp3&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/audio&gt;</span></code></pre>
 <p>Lägg märke till <code>src</code>-attributet som pekar mot filen.</p>
 <p>Precis som med filmfiler så kan inte alla webbläsare spela upp alla typer av ljudfiler, så för att se till att så många som möjligt ska kunna höra ljudet måste du lägga upp ljudfilen i så många olika format som möjligt, du bör åtminstone lägga upp <code>.mp3</code> och <code>.oga</code>.</p>
-<pre class="{.langauge-markup}"><code>    &lt;audio&gt;
-        &lt;source src=&quot;spaceship.mp3&quot; type=&#39;audio/mp3&#39;&gt;
-        &lt;source src=&quot;spaceship.ogg&quot; type=&#39;audio/ogg; codecs=vorbis&#39;&gt;
-    &lt;/audio&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;audio&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship.mp3&quot;</span><span class="ot"> type=</span><span class="st">&#39;audio/mp3&#39;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship.ogg&quot;</span><span class="ot"> type=</span><span class="st">&#39;audio/ogg; codecs=vorbis&#39;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/audio&gt;</span></code></pre>
 <ul>
 <li>För att lägga till reglagen använd dig av nyckelordet <code>controls</code>:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;audio controls&gt;
-        &lt;source src=&quot;spaceship.mp3&quot; type=&#39;audio/mp3&#39;&gt;
-        &lt;source src=&quot;spaceship.ogg&quot; type=&#39;audio/ogg; codecs=vorbis&#39;&gt;
-    &lt;/audio&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;audio</span><span class="ot"> controls</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship.mp3&quot;</span><span class="ot"> type=</span><span class="st">&#39;audio/mp3&#39;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship.ogg&quot;</span><span class="ot"> type=</span><span class="st">&#39;audio/ogg; codecs=vorbis&#39;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/audio&gt;</span></code></pre>
 <ul>
 <li>Om du vill att ljudet ska spelas så fort webbsidan har laddat kan du använda nyckelordet <code>autoplay</code>, så här:</li>
 </ul>
-<pre class="{.langauge-markup}"><code>    &lt;audio controls autoplay&gt;
-        &lt;source src=&quot;spaceship.mp3&quot; type=&#39;audio/mp3&#39;&gt;
-        &lt;source src=&quot;spaceship.ogg&quot; type=&#39;audio/ogg; codecs=vorbis&#39;&gt;
-    &lt;/audio&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html">    <span class="kw">&lt;audio</span><span class="ot"> controls autoplay</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship.mp3&quot;</span><span class="ot"> type=</span><span class="st">&#39;audio/mp3&#39;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;source</span><span class="ot"> src=</span><span class="st">&quot;spaceship.ogg&quot;</span><span class="ot"> type=</span><span class="st">&#39;audio/ogg; codecs=vorbis&#39;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;/audio&gt;</span></code></pre>
 </section>
     </main>
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">
