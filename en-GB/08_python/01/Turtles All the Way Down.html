@@ -49,29 +49,29 @@ ____/\___/      \___/\___
 <ul>
 <li>Drawing The first is easy. Like we always do, the first line of the file is always <code>from turtle import *</code> so Python knows we want to draw. Copy the program into a new file.</li>
 </ul>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-    def first():
-        forward(30)
+    <span class="kw">def</span> first():
+        forward(<span class="dv">30</span>)
 
     first()</code></pre>
 <p>We’re going to put all the shapes in functions. The second one looks easy too, let’s add it to the file we’re writing.</p>
 <ul>
 <li>Edit your code so it looks like the following:</li>
 </ul>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-    def first():
-        forward(30)
+    <span class="kw">def</span> first():
+        forward(<span class="dv">30</span>)
 
-    def second():
-        forward(30)
-        left(60)
-        forward(30)
-        right(120)
-        forward(30)
-        left(60)
-        forward(30)
+    <span class="kw">def</span> second():
+        forward(<span class="dv">30</span>)
+        left(<span class="dv">60</span>)
+        forward(<span class="dv">30</span>)
+        right(<span class="dv">120</span>)
+        forward(<span class="dv">30</span>)
+        left(<span class="dv">60</span>)
+        forward(<span class="dv">30</span>)
 
     second()</code></pre>
 <ul>
@@ -158,31 +158,31 @@ mountain(3)</code></pre></li>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Let’s just add one last thing to the mountain file, change it to look like the following, adding a new function <code>snowflake</code>:</p>
-<pre class="{.language-python}"><code>
-from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python">
+<span class="ch">from</span> turtle <span class="ch">import</span> *
 
-def mountain(depth, length):
-    if depth == 1:
+<span class="kw">def</span> mountain(depth, length):
+    <span class="kw">if</span> depth == <span class="dv">1</span>:
            forward(length)
-    else:
-        newdepth = depth -1
+    <span class="kw">else</span>:
+        newdepth = depth -<span class="dv">1</span>
         mountain(newdepth, length)
-        left(60)
+        left(<span class="dv">60</span>)
         mountain(newdepth, length)
-        right(120)
+        right(<span class="dv">120</span>)
         mountain(newdepth, length)
-        left(60)
+        left(<span class="dv">60</span>)
         mountain(newdepth, length)
 
-def snowflake(depth, length):
+<span class="kw">def</span> snowflake(depth, length):
     mountain(depth, length)
-    right(120)
+    right(<span class="dv">120</span>)
     mountain(depth, length)
-    right(120)
+    right(<span class="dv">120</span>)
     mountain(depth, length)
-    right(120)
+    right(<span class="dv">120</span>)
 
-snowflake(4,5)</code></pre></li>
+snowflake(<span class="dv">4</span>,<span class="dv">5</span>)</code></pre></li>
 </ul>
 <p>This picture is known as the Koch Snowflake. If you like, try playing with the angles and seeing what happens.</p>
 <p>This is called a fractal, because the larger picture is made up of smaller versions of itself.</p>
@@ -219,17 +219,17 @@ ___| |__|         |__| |___
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Let’s open a new file and try to draw the second picture, which is what we’ll be repeating:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-forward(30)
-left(90)
-forward(30)
-right(90)
-forward(30)
-right(90)
-forward(30)
-left(90)
-forward(30)</code></pre></li>
+forward(<span class="dv">30</span>)
+left(<span class="dv">90</span>)
+forward(<span class="dv">30</span>)
+right(<span class="dv">90</span>)
+forward(<span class="dv">30</span>)
+right(<span class="dv">90</span>)
+forward(<span class="dv">30</span>)
+left(<span class="dv">90</span>)
+forward(<span class="dv">30</span>)</code></pre></li>
 <li><p>Run it, and you should get this:</p>
 <pre><code>
         ___________
@@ -248,30 +248,30 @@ ________|         |________</code></pre></li>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Open up a new file in IDLE and copy the following code into it:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-def box(depth, length):
-    if depth == 1:
+<span class="kw">def</span> box(depth, length):
+    <span class="kw">if</span> depth == <span class="dv">1</span>:
            forward(length)
-    else:
-        newdepth = depth -1
+    <span class="kw">else</span>:
+        newdepth = depth -<span class="dv">1</span>
 
-        # What should go here?
-        # Copy the bumpy line code here, but
-        # use box(newdepth, length) instead of forward(100)
-        # Ask for help if you are unsure
+        <span class="co"># What should go here?</span>
+        <span class="co"># Copy the bumpy line code here, but</span>
+        <span class="co"># use box(newdepth, length) instead of forward(100)</span>
+        <span class="co"># Ask for help if you are unsure</span>
 
-def xcurve(depth, length):
+<span class="kw">def</span> xcurve(depth, length):
     box(depth, length)
-    left(90)
+    left(<span class="dv">90</span>)
     box(depth, length)
-    left(90)
+    left(<span class="dv">90</span>)
     box(depth, length)
-    left(90)
+    left(<span class="dv">90</span>)
     box(depth, length)
-    left(90)
+    left(<span class="dv">90</span>)
 
-xcurve(4,5)</code></pre></li>
+xcurve(<span class="dv">4</span>,<span class="dv">5</span>)</code></pre></li>
 <li><p>We’ve left the special case out for you to fill in; it should be trying to draw the bumpy line, but calling <code>box(newdepth, length)</code> to do it. Your code should look very much like the mountain and snowflake.</p></li>
 </ul>
 </section>
@@ -310,42 +310,42 @@ xcurve(4,5)</code></pre></li>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Let’s open a new file and try it out.</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-def triforce(depth, length):
+<span class="kw">def</span> triforce(depth, length):
 
-    if depth == 0:
+    <span class="kw">if</span> depth == <span class="dv">0</span>:
         pendown()
         forward(length)
-        left(120)
+        left(<span class="dv">120</span>)
         forward(length)
-        left(120)
+        left(<span class="dv">120</span>)
         forward(length)
-        left(120)
+        left(<span class="dv">120</span>)
         penup()
-    else:
+    <span class="kw">else</span>:
         penup()
-        newlength = length/2
-        newdepth = depth - 1
+        newlength = length/<span class="dv">2</span>
+        newdepth = depth - <span class="dv">1</span>
 
         triforce(newdepth, newlength)
         forward(newlength)
         triforce(newdepth, newlength)
 
-        left(120)
+        left(<span class="dv">120</span>)
         forward(newlength)
-        right(120)
+        right(<span class="dv">120</span>)
         triforce(newdepth, newlength)
 
-        right(120)
+        right(<span class="dv">120</span>)
         forward(newlength)
-        left(120)
+        left(<span class="dv">120</span>)
 
 
-speed(11)
+speed(<span class="dv">11</span>)
 penup()
-setpos(-255,-255)
-triforce(7, 512)</code></pre></li>
+setpos(-<span class="dv">255</span>,-<span class="dv">255</span>)
+triforce(<span class="dv">7</span>, <span class="dv">512</span>)</code></pre></li>
 </ul>
 <p>You might have noticed, we’re using a new command <code>setpos</code> to move the turtle robot to the corner of the screen.</p>
 <ul>
@@ -363,32 +363,32 @@ triforce(7, 512)</code></pre></li>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>If you like, instead of triangles we can draw it with circles! Open up a new file and try the following code:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-def bubble(depth, length):
-    if depth == 0:
+<span class="kw">def</span> bubble(depth, length):
+    <span class="kw">if</span> depth == <span class="dv">0</span>:
         pendown()
-        circle(length/2)
+        circle(length/<span class="dv">2</span>)
         penup()
-    else:
+    <span class="kw">else</span>:
         penup()
-        newlength = length/2
-        newdepth = depth - 1
+        newlength = length/<span class="dv">2</span>
+        newdepth = depth - <span class="dv">1</span>
         bubble(newdepth, newlength)
         forward(newlength)
         bubble(newdepth, newlength)
-        left(120)
+        left(<span class="dv">120</span>)
         forward(newlength)
-        right(120)
+        right(<span class="dv">120</span>)
         bubble(newdepth, newlength)
-        right(120)
+        right(<span class="dv">120</span>)
         forward(newlength)
-        left(120)
+        left(<span class="dv">120</span>)
 
-speed(11)
+speed(<span class="dv">11</span>)
 penup()
-setpos(-255,-255)
-bubble(6, 512)</code></pre></li>
+setpos(-<span class="dv">255</span>,-<span class="dv">255</span>)
+bubble(<span class="dv">6</span>, <span class="dv">512</span>)</code></pre></li>
 <li>What happens? What does it look like? We’ve used the <code>circle</code> command to draw a circle on the screen, which takes a radius.</li>
 <li><p>Try changing the circle’s radius, replace <code>circle(length/2)</code> with <code>circle(length)</code>, this will draw a bigger circle instead.</p></li>
 </ul>
@@ -398,7 +398,7 @@ bubble(6, 512)</code></pre></li>
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

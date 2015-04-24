@@ -50,7 +50,7 @@
 <ul>
 <li>If you edit the RPG.py file, you can see that the map is coded as a dictionary of rooms:</li>
 </ul>
-<p>```{.language-python}<br /> #a dictionary linking a room to other room positions<br /> rooms = {</p>
+<p>```python<br /> #a dictionary linking a room to other room positions<br /> rooms = {</p>
 <pre><code>          1 : {  &quot;name&quot;  : &quot;Hall&quot; ,
                  &quot;south&quot; : 2
               } ,        
@@ -67,7 +67,7 @@
 </ul>
 <p><img src="rpg-dining.png" alt="screenshot" /></p>
 <p>This new dining room is linked to the hall (to the west). Let’s add this new room into the code:</p>
-<p>```{.language-python}<br /> #a dictionary linking a room to other room positions<br /> rooms = {</p>
+<p>```python<br /> #a dictionary linking a room to other room positions<br /> rooms = {</p>
 <pre><code>          1 : {  &quot;name&quot;  : &quot;Hall&quot; ,
                  &quot;south&quot; : 2 ,
                  &quot;east&quot;  : 3
@@ -109,7 +109,7 @@
 <ul>
 <li>Adding an item into a room is easy. You can just add it to the dictionary of a room. For example, let’s put a key in the hall.</li>
 </ul>
-<p>```{.language-python}<br /> #a dictionary linking a room to other room positions<br /> rooms = {</p>
+<p>```python<br /> #a dictionary linking a room to other room positions<br /> rooms = {</p>
 <pre><code>          1 : {  &quot;name&quot;  : &quot;Hall&quot; ,
                  &quot;south&quot; : 2 ,
                  &quot;east&quot;  : 3 ,
@@ -151,7 +151,7 @@
 <ul>
 <li>Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:</li>
 </ul>
-<p>```{.language-python}<br /> #a dictionary linking a room to other room positions<br /> rooms = {</p>
+<p>```python<br /> #a dictionary linking a room to other room positions<br /> rooms = {</p>
 <pre><code>          1 : {  &quot;name&quot;  : &quot;Hall&quot; ,
                  &quot;south&quot; : 2 ,
                  &quot;east&quot;  : 3 ,
@@ -172,7 +172,7 @@
 <ul>
 <li>You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game.</li>
 </ul>
-<p><code>{.language-python}       #player loses if they enter a room with a monster       if &quot;item&quot; in rooms[currentRoom] and &quot;monster&quot; in rooms[currentRoom][&quot;item&quot;]:           print(&quot;A monster has got you... GAME OVER!&quot;)           print(&quot;Press any key to quit&quot;)           input()           break</code></p>
+<p><code>python       #player loses if they enter a room with a monster       if &quot;item&quot; in rooms[currentRoom] and &quot;monster&quot; in rooms[currentRoom][&quot;item&quot;]:           print(&quot;A monster has got you... GAME OVER!&quot;)           print(&quot;Press any key to quit&quot;)           input()           break</code></p>
 <p>This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room.</p>
 <ul>
 <li>Test out your code by going into the kitchen, which now contains a monster.</li>
@@ -205,7 +205,7 @@
 <li><p>Use the guidance in step 2 above to add a potion to the dining room (or another room in your house).</p></li>
 <li><p>To allow the player to win the game when they get to the garden with the key and the potion, add this code to the end of your game:</p></li>
 </ul>
-<p><code>{.language-python}       #player wins if they get to the garden with a key and a shield       if currentRoom == 4 and 'key' in inventory and 'potion' in inventory:           print(&quot;You escaped the house... YOU WIN!&quot;)           print(&quot;Press any key to quit&quot;)           input()           break</code></p>
+<p><code>python       #player wins if they get to the garden with a key and a shield       if currentRoom == 4 and 'key' in inventory and 'potion' in inventory:           print(&quot;You escaped the house... YOU WIN!&quot;)           print(&quot;Press any key to quit&quot;)           input()           break</code></p>
 <p>Again, make sure this code is indented, and in line with the code above it. This code means that the message <code>...YOU WIN!</code> is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory. If you have more than 4 rooms, you may have to use a different room number for your garden in the code above.</p>
 <ul>
 <li>Test your game to make sure the player can win!</li>
@@ -214,7 +214,7 @@
 <ul>
 <li>Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the <code>showInstructions()</code> function to include more information.</li>
 </ul>
-<p><code>{.language-python}   def showInstructions():       #print a main menu, the commands and instructions       print('''   RPG Game   ========   Instructions:     Get to the garden     ...   ========   Commands:     go [direction]     get [item]   ''')</code></p>
+<p><code>python   def showInstructions():       #print a main menu, the commands and instructions       print('''   RPG Game   ========   Instructions:     Get to the garden     ...   ========   Commands:     go [direction]     get [item]   ''')</code></p>
 <p>You will need to add instructions to tell the user what items they need to collect, and what they need to avoid!</p>
 <p><img src="rpg-instructions.png" alt="screenshot" /></p>
 </section>
@@ -233,7 +233,7 @@
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

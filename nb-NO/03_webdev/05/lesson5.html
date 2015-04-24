@@ -50,19 +50,19 @@
 </ul>
 <p>Ikke alle skrifttyper finnes på alle datamaskiner, så vi trenger å oppgi en <strong>fall-back font</strong> (en skrifttype vi kan falle tilbake på om førstevalget vårt ikke finnes på datamaskinen) også. Disse er ganske generiske som “sans serif”, “serif”.</p>
 <p>La oss prøve å endre skrifttype på overskriften ved hjelp av <code>font-family</code>-egenskapen.</p>
-<pre class="{.language-css}"><code>h1 {
-    color: red;
-    background-color:black;
-    font-size:72px;
-    text-transform:uppercase;
-    text-decoration:underline;
-    text-decoration:blink;
-    font-family:impact, sans-serif;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css">h1 <span class="kw">{</span>
+    <span class="kw">color:</span> <span class="dt">red</span><span class="kw">;</span>
+    <span class="kw">background-color:</span><span class="dt">black</span><span class="kw">;</span>
+    <span class="kw">font-size:</span><span class="dt">72px</span><span class="kw">;</span>
+    <span class="kw">text-transform:</span><span class="dt">uppercase</span><span class="kw">;</span>
+    <span class="kw">text-decoration:</span><span class="dt">underline</span><span class="kw">;</span>
+    <span class="kw">text-decoration:</span><span class="dt">blink</span><span class="kw">;</span>
+    <span class="kw">font-family:</span>impact, <span class="dt">sans-serif</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 <p>Og skriften i avsnittene…</p>
-<pre class="{.language-css}"><code>p {
-    font-family:georgia, &#39;times new roman&#39;, serif;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css">p <span class="kw">{</span>
+    <span class="kw">font-family:</span>georgia, <span class="st">&#39;times new roman&#39;</span>, <span class="dt">serif</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 <section id="lagre-filen-og-se-pa-den-i-nettleseren" class="level2 save">
 <h2><strong>LAGRE</strong> filen og se på den i nettleseren</h2>
 <p>Prøv noen av de forskjellige skrifttypene for å se hvilken du liker best. Legg merke til hvordan vi skiller mellom hver skrifttype med et komma, og hvis skrifttypen har et navn med mer enn ett ord trenger vi å sette det i anførselstegn.</p>
@@ -71,35 +71,35 @@
 <p><img src="fonts.png" alt="screenshot" /></p>
 <p>Finn en skrifttype du liker og prøv den på websiden!</p>
 <p>Du kan gjøre teksten <strong>fet</strong>, <em>kursiv</em> eller begge deler med <code>font-style</code>. La oss endre email teksten (husk den er inni en <code>&lt;a&gt;</code>-tag).</p>
-<pre class="{.language-css}"><code>a {
-    font-style:bold;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css">a <span class="kw">{</span>
+    <span class="kw">font-style:</span><span class="dt">bold</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 </section>
 <section id="lagre-filen-og-se-pa-den-i-nettlerseren" class="level2 save">
 <h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
 <p>Teksten har blitt fet! La oss se hvordan den ser ut i kursiv. Kursiv på engelsk er <code>italic</code>.</p>
-<pre class="{.language-css}"><code>a {
-    font-style:italic;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css">a <span class="kw">{</span>
+    <span class="kw">font-style:</span><span class="dt">italic</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 </section>
 <section id="lagre-filen-og-se-pa-den-i-nettlerseren-1" class="level2 save">
 <h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
 <p>Det finnes også en <code>font-style</code>-verdi som heter ‘oblique’. Hvordan ser den ut?</p>
 <p>Vi kan til og med si hvor fet en tekst skal være ved å bruke egenskapen <code>font-weight</code>. Den tar verdiene <code>normal</code>, <code>bold</code>, <code>bolder</code> og <code>lighter</code>. Du kan også bruke tall, 100, 200, 300, 400, 500, 600, 700, 800 og 900, hvor 100 er den tynneste teksten og 900 er den tykkeste. Normal tekst er det samme som 400 og “bold” er det samme som 700. Men ikke alle skrifttypene har alle disse, så det er tryggere å bare bruke normal og bold. Overskrifter er normalt bold som standard. Hvis vi ikke ønsker at <code>h2</code>-overskiften vår skal være fet, må vi skrive:</p>
-<pre class="{.language-css}"><code>h2 {
-    font-weight:normal;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css">h2 <span class="kw">{</span>
+    <span class="kw">font-weight:</span><span class="dt">normal</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 <p>Prøv da vel!</p>
 </section>
 </section>
 <section id="steg-2-pyntekanter" class="level1 activity">
 <h1>Steg 2: Pyntekanter!</h1>
 <p>La oss legge til en ramme rundt bildet:</p>
-<pre class="{.language-css}"><code>img {
-    border-color:green;
-    border-width:5px;
-    border-style:solid;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css">img <span class="kw">{</span>
+    <span class="kw">border-color:</span><span class="dt">green</span><span class="kw">;</span>
+    <span class="kw">border-width:</span><span class="dt">5px</span><span class="kw">;</span>
+    <span class="kw">border-style:</span><span class="dt">solid</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 <section id="lagre-filen-og-se-pa-den-i-nettlerseren-2" class="level2 save">
 <h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
 <p>Prøv å endre fargen (<code>border-color</code>), bredden (<code>border-width</code>) og pyntekanten (<code>border-style</code>) til du er fornøyd. Noen verdier for <code>border-style</code> er <code>dashed</code>, <code>dotted</code>, <code>double</code>, <code>groove</code>, <code>ridge</code>, <code>inset</code> og <code>outset</code>.</p>
@@ -109,20 +109,20 @@
 <section id="steg-3-ider-og-klasser" class="level1 activity">
 <h1>Steg 3: IDer og klasser</h1>
 <p>Vi ønsker å <strong>utheve</strong> kontakt-avsnittet. Vi kan ikke bruke <code>&lt;p&gt;</code>-taggen fordi det vil endre alle avsnittene. For å gjøre slik at en stil gjelder bare for ett element, bruker vi noe som kalles ID. Vi trenger å redigere HTML-filen slik:</p>
-<pre class="{.language-markup}"><code>&lt;p id =&quot;uthevet&quot;&gt;Har du sett Felix? &lt;em&gt;Vennligst&lt;/em&gt; kontakt eieren hans på &lt;a href=&quot;mailto:eierentilfelix@email.com&quot;&gt;eierentilfelix@email.com&lt;/a&lt;/p&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p</span><span class="ot"> id</span> <span class="ot">=</span><span class="st">&quot;uthevet&quot;</span><span class="kw">&gt;</span>Har du sett Felix? <span class="kw">&lt;em&gt;</span>Vennligst<span class="kw">&lt;/em&gt;</span> kontakt eieren hans på <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;mailto:eierentilfelix@email.com&quot;</span><span class="kw">&gt;</span>eierentilfelix@email.com<span class="kw">&lt;/a</span><span class="er">&lt;/p</span><span class="kw">&gt;</span></code></pre>
 <p>så kan vi style den IDen som så:</p>
-<pre class="{.language-css}"><code>#uthevet {
-    color:red;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css"><span class="fl">#uthevet</span> <span class="kw">{</span>
+    <span class="kw">color:</span><span class="dt">red</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 <section id="lagre-filen-og-se-pa-den-i-nettlerseren-3" class="level2 save">
 <h2><strong>LAGRE</strong> filen og se på den i nettlerseren</h2>
 <p>En ID er unik og kan bare brukes én gang per side. Så hva hvis vi ønsket at to av avsnittene skal ha en større tekststørrelse? Vi kan gjøre det ved hjelp av klasser. Først må vi gi klassenavn til de avsnittene vi ønsker å endre.</p>
-<pre class="{.language-markup}"><code>&lt;p class=&quot;stor&quot;&gt;Han forvant fra hagen i går.&lt;/p&gt;
-&lt;p class=&quot;stor&quot;&gt;&lt;strong&gt;Takk!&lt;/strong&gt;&lt;p&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p</span><span class="ot"> class=</span><span class="st">&quot;stor&quot;</span><span class="kw">&gt;</span>Han forvant fra hagen i går.<span class="kw">&lt;/p&gt;</span>
+<span class="kw">&lt;p</span><span class="ot"> class=</span><span class="st">&quot;stor&quot;</span><span class="kw">&gt;&lt;strong&gt;</span>Takk!<span class="kw">&lt;/strong&gt;&lt;p&gt;</span></code></pre>
 <p>Vi styler en klasse sånn (med en <code>.</code> i stedet for <code>#</code>):</p>
-<pre class="{.language-css}"><code>.stor {
-    font-size:24px;
-}</code></pre>
+<pre class="sourceCode css"><code class="sourceCode css"><span class="fl">.stor</span> <span class="kw">{</span>
+    <span class="kw">font-size:</span><span class="dt">24px</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
 </section>
 <section id="ting-du-kan-prve" class="level2 try">
 <h2>Ting du kan prøve</h2>
@@ -137,7 +137,7 @@
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

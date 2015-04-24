@@ -41,11 +41,11 @@
 <ul>
 <li>Open IDLE, and open a new window.</li>
 <li><p>Write in the following code:</p>
-<pre class="{.language-python}"><code>from random import choice
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> random <span class="ch">import</span> choice
 
-word = choice([&quot;code&quot;, &quot;club&quot;])
+word = choice([<span class="st">&quot;code&quot;</span>, <span class="st">&quot;club&quot;</span>])
 
-print(word)</code></pre></li>
+<span class="dt">print</span>(word)</code></pre></li>
 <li>Save your program, and run it. What word does it print?</li>
 <li><p>Run it again, does it print a different word?</p></li>
 </ul>
@@ -59,36 +59,36 @@ print(word)</code></pre></li>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>With the same file, edit the code so it looks like this</p>
-<pre class="{.language-python}"><code>from random import choice
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> random <span class="ch">import</span> choice
 
-word = choice([&quot;code&quot;, &quot;club&quot;])
+word = choice([<span class="st">&quot;code&quot;</span>, <span class="st">&quot;club&quot;</span>])
 
-out = &quot;&quot;
+out = <span class="st">&quot;&quot;</span>
 
-for letter in word:
-    out = out + &quot;_&quot;
+<span class="kw">for</span> letter in word:
+    out = out + <span class="st">&quot;_&quot;</span>
 
-print(&quot;Guess a letter in the word:&quot;, out)</code></pre></li>
+<span class="dt">print</span>(<span class="st">&quot;Guess a letter in the word:&quot;</span>, out)</code></pre></li>
 <li>Save and run the program.</li>
 <li>You should see “Guess a letter in the word: ____”, in the output window (the other window, not the one you’ve written your program in.) We use a for loop to build up some text with an underscore <code>_</code> for each letter in the word. The word “code” put in, will write out <code>____</code> to the screen.</li>
 <li><p>Let’s guess a letter! Change the code to look like this:</p>
-<pre class="{.language-python}"><code>from random import choice
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> random <span class="ch">import</span> choice
 
-word = choice([&quot;code&quot;, &quot;club&quot;])
+word = choice([<span class="st">&quot;code&quot;</span>, <span class="st">&quot;club&quot;</span>])
 
-out = &quot;&quot;
+out = <span class="st">&quot;&quot;</span>
 
-for letter in word:
-    out = out + &quot;_&quot;
+<span class="kw">for</span> letter in word:
+    out = out + <span class="st">&quot;_&quot;</span>
 
-print(&quot;Guess a letter in the word, then press enter:&quot;, out)
+<span class="dt">print</span>(<span class="st">&quot;Guess a letter in the word, then press enter:&quot;</span>, out)
 
-guess = input()
+guess = <span class="dt">input</span>()
 
-if guess in word:
-    print(&quot;Yay&quot;)
-else:
-    print(&quot;Nope&quot;)</code></pre></li>
+<span class="kw">if</span> guess in word:
+    <span class="dt">print</span>(<span class="st">&quot;Yay&quot;</span>)
+<span class="kw">else</span>:
+    <span class="dt">print</span>(<span class="st">&quot;Nope&quot;</span>)</code></pre></li>
 </ul>
 <p>We use a new function <code>input()</code> to find out what the player typed. We use <code>if</code> to find out if the letter was in the word. We’ve got the essentials down, so let’s continue onward.</p>
 <p>(Python 2 Note: Use <code>raw_input</code> if you’re on an old version of python)</p>
@@ -101,38 +101,38 @@ else:
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>In the same file, edit the code to look like this:</p>
-<pre class="{.language-python}"><code>from random import choice
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> random <span class="ch">import</span> choice
 
-word = choice([&quot;code&quot;, &quot;club&quot;])
+word = choice([<span class="st">&quot;code&quot;</span>, <span class="st">&quot;club&quot;</span>])
 
 guessed = []
 
-while True:
+<span class="kw">while</span> <span class="ot">True</span>:
 
-    out = &quot;&quot;
-    for letter in word:
-        if letter in guessed:
+    out = <span class="st">&quot;&quot;</span>
+    <span class="kw">for</span> letter in word:
+        <span class="kw">if</span> letter in guessed:
             out = out + letter
-        else:
-            out = out + &quot;_&quot;
+        <span class="kw">else</span>:
+            out = out + <span class="st">&quot;_&quot;</span>
 
-    if out == word:
-        print(&quot;You guessed&quot;, word)
-        break
+    <span class="kw">if</span> out == word:
+        <span class="dt">print</span>(<span class="st">&quot;You guessed&quot;</span>, word)
+        <span class="kw">break</span>
 
 
-    print(&quot;Guess the word:&quot;, out)
-    guess = input()
+    <span class="dt">print</span>(<span class="st">&quot;Guess the word:&quot;</span>, out)
+    guess = <span class="dt">input</span>()
 
-    if guess in guessed:
-        print(&quot;Already guessed&quot;, guess)
-    elif guess in word:
-        print(&quot;Yay&quot;)
+    <span class="kw">if</span> guess in guessed:
+        <span class="dt">print</span>(<span class="st">&quot;Already guessed&quot;</span>, guess)
+    <span class="kw">elif</span> guess in word:
+        <span class="dt">print</span>(<span class="st">&quot;Yay&quot;</span>)
         guessed.append(guess)
-    else:
-        print(&quot;Nope&quot;)
+    <span class="kw">else</span>:
+        <span class="dt">print</span>(<span class="st">&quot;Nope&quot;</span>)
 
-    print()</code></pre></li>
+    <span class="dt">print</span>()</code></pre></li>
 <li><p>Run the code, try guessing the letters. What we’ve done is put a loop, like <code>forever</code> in scratch, that will keep asking for letters from the player, until they guess the word. We also use a list, <code>guessed</code>, which we add the letters to when they’re right. This program will loop forever until all the letters are guessed.</p></li>
 </ul>
 </section>
@@ -143,37 +143,42 @@ while True:
 <section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>Edit the existing file, and change it to look like the following:<br />```{.language-python}<br />from random import choice</p>
-<p>word = choice([“code”, “club”])</p>
-<p>guessed = []<br />wrong = []</p>
-<p>while True:</p>
-<pre><code>out = &quot;&quot;
-for letter in word:
-    if letter in guessed:
-        out = out + letter
-    else:
-        out = out + &quot;_&quot;
+<li><p>Edit the existing file, and change it to look like the following:</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> random <span class="ch">import</span> choice
 
-if out == word:
-    print(&quot;You guessed&quot;, word)
-    break
+word = choice([<span class="st">&quot;code&quot;</span>, <span class="st">&quot;club&quot;</span>])
 
-print(&quot;Guess the word:&quot;, out)
+guessed = []
+wrong = []
 
-guess = input()
+<span class="kw">while</span> <span class="ot">True</span>:
 
-if guess in guessed or guess in wrong:
-    print(&quot;Already guessed&quot;, guess)
-elif guess in word:
-    print(&quot;Yay&quot;)
-    guessed.append(guess)
-else:
-    print(&quot;Nope&quot;)
-    wrong.append(guess)
+    out = <span class="st">&quot;&quot;</span>
+    <span class="kw">for</span> letter in word:
+        <span class="kw">if</span> letter in guessed:
+            out = out + letter
+        <span class="kw">else</span>:
+            out = out + <span class="st">&quot;_&quot;</span>
 
-print()</code></pre></li>
+    <span class="kw">if</span> out == word:
+        <span class="dt">print</span>(<span class="st">&quot;You guessed&quot;</span>, word)
+        <span class="kw">break</span>
+
+    <span class="dt">print</span>(<span class="st">&quot;Guess the word:&quot;</span>, out)
+
+    guess = <span class="dt">input</span>()
+
+    <span class="kw">if</span> guess in guessed or guess in wrong:
+        <span class="dt">print</span>(<span class="st">&quot;Already guessed&quot;</span>, guess)
+    <span class="kw">elif</span> guess in word:
+        <span class="dt">print</span>(<span class="st">&quot;Yay&quot;</span>)
+        guessed.append(guess)
+    <span class="kw">else</span>:
+        <span class="dt">print</span>(<span class="st">&quot;Nope&quot;</span>)
+        wrong.append(guess)
+
+    <span class="dt">print</span>()</code></pre></li>
 </ul>
-<p>```</p>
 <p>We’re using a new list, <code>wrong</code>, to store all the guesses that weren’t right</p>
 <p>Only one last thing before the game is complete, which is to only have a few chances to guess.</p>
 </section>
@@ -184,48 +189,48 @@ print()</code></pre></li>
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Edit the file, to introduce a new variable, <code>tries</code>:</p>
-<pre class="{.language-python}"><code>from random import choice
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> random <span class="ch">import</span> choice
 
-word = choice([&quot;code&quot;, &quot;club&quot;])
+word = choice([<span class="st">&quot;code&quot;</span>, <span class="st">&quot;club&quot;</span>])
 
 guessed = []
 wrong = []
 
-tries = 7
+tries = <span class="dv">7</span>
 
-while tries &gt; 0:
+<span class="kw">while</span> tries &gt; <span class="dv">0</span>:
 
-    out = &quot;&quot;
-    for letter in word:
-        if letter in guessed:
+    out = <span class="st">&quot;&quot;</span>
+    <span class="kw">for</span> letter in word:
+        <span class="kw">if</span> letter in guessed:
             out = out + letter
-        else:
-            out = out + &quot;_&quot;
+        <span class="kw">else</span>:
+            out = out + <span class="st">&quot;_&quot;</span>
 
-    if out == word:
-        break
+    <span class="kw">if</span> out == word:
+        <span class="kw">break</span>
 
-    print(&quot;Guess the word:&quot;, out)
-    print(tries, &quot;chances left&quot;)
+    <span class="dt">print</span>(<span class="st">&quot;Guess the word:&quot;</span>, out)
+    <span class="dt">print</span>(tries, <span class="st">&quot;chances left&quot;</span>)
 
-    guess = input()
+    guess = <span class="dt">input</span>()
 
-    if guess in guessed or guess in wrong:
-        print(&quot;Already guessed&quot;, guess)
-    elif guess in word:
-        print(&quot;Yay&quot;)
+    <span class="kw">if</span> guess in guessed or guess in wrong:
+        <span class="dt">print</span>(<span class="st">&quot;Already guessed&quot;</span>, guess)
+    <span class="kw">elif</span> guess in word:
+        <span class="dt">print</span>(<span class="st">&quot;Yay&quot;</span>)
         guessed.append(guess)
-    else:
-        print(&quot;Nope&quot;)
-        tries = tries - 1
+    <span class="kw">else</span>:
+        <span class="dt">print</span>(<span class="st">&quot;Nope&quot;</span>)
+        tries = tries - <span class="dv">1</span>
         wrong.append(guess)
 
-    print()
+    <span class="dt">print</span>()
 
-if tries:
-    print(&quot;You guessed&quot;, word)
-else:
-    print(&quot;You didn&#39;t get&quot;, word)</code></pre></li>
+<span class="kw">if</span> tries:
+    <span class="dt">print</span>(<span class="st">&quot;You guessed&quot;</span>, word)
+<span class="kw">else</span>:
+    <span class="dt">print</span>(<span class="st">&quot;You didn&#39;t get&quot;</span>, word)</code></pre></li>
 <li><p>Run the file, and see what happens when you guess wrong letters</p></li>
 </ul>
 </section>
@@ -236,9 +241,9 @@ else:
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Find the line in the source code:</p>
-<pre class="{.language-python}"><code>word = choice([&quot;code&quot;, &quot;club&quot;])</code></pre></li>
+<pre class="sourceCode python"><code class="sourceCode python">word = choice([<span class="st">&quot;code&quot;</span>, <span class="st">&quot;club&quot;</span>])</code></pre></li>
 <li><p>Edit it to add more words, why not try</p>
-<pre class="{.language-python}"><code>word = choice([&quot;code&quot;, &quot;club&quot;, &quot;robot&quot;, &quot;party&quot;])</code></pre></li>
+<pre class="sourceCode python"><code class="sourceCode python">word = choice([<span class="st">&quot;code&quot;</span>, <span class="st">&quot;club&quot;</span>, <span class="st">&quot;robot&quot;</span>, <span class="st">&quot;party&quot;</span>])</code></pre></li>
 </ul>
 <p>Remember to put the words in quotes, and put a comma between them to make a list of words.</p>
 </section>
@@ -247,7 +252,7 @@ else:
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

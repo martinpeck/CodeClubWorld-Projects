@@ -41,26 +41,26 @@
 <li>Make a new document called <code>index.html</code> and save it inside the folder called <strong>Felix</strong>.</li>
 <li>Now set up your document like you learnt in the previous session.</li>
 </ul>
-<pre class="{.language-markup}"><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
+<span class="kw">&lt;html&gt;</span>
+    <span class="kw">&lt;head&gt;</span>
+    <span class="kw">&lt;/head&gt;</span>
+    <span class="kw">&lt;body&gt;</span>
+    <span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
 <ul>
 <li>Add a title and headings. Remember the title goes in the head and the headings go in the body. Try using “Felix the cat is missing” as a title, and “Missing” as the h1. Right beneath the <code>&lt;h1&gt;</code> we can make an <code>&lt;h2&gt;</code> saying “Felix the cat”.</li>
 </ul>
-<pre class="{.language-markup}"><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt; Felix the cat is missing &lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Missing&lt;/h1&gt;
-        &lt;h2&gt;Felix the cat&lt;/h2&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span>
+<span class="kw">&lt;html&gt;</span>
+    <span class="kw">&lt;head&gt;</span>
+        <span class="kw">&lt;title&gt;</span> Felix the cat is missing <span class="kw">&lt;/title&gt;</span>
+    <span class="kw">&lt;/head&gt;</span>
+    <span class="kw">&lt;body&gt;</span>
+        <span class="kw">&lt;h1&gt;</span>Missing<span class="kw">&lt;/h1&gt;</span>
+        <span class="kw">&lt;h2&gt;</span>Felix the cat<span class="kw">&lt;/h2&gt;</span>
+    <span class="kw">&lt;/body&gt;</span>
+<span class="kw">&lt;/html&gt;</span></code></pre>
 </section>
 <section id="step-2" class="level1 activity">
 <h1>Step 2:</h1>
@@ -68,24 +68,24 @@
 <ul>
 <li>Now, write the <code>&lt;img&gt;</code> tag like you would normally, but in the src attribute, instead of writing a URL we just write <code>felix.jpg</code>. And don’t forget to put in an alt attribute!</li>
 </ul>
-<pre class="{.language-markup}"><code>&lt;img src=&quot;felix.jpg&quot; alt=&quot;picture of Felix&quot;&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;img</span><span class="ot"> src=</span><span class="st">&quot;felix.jpg&quot;</span><span class="ot"> alt=</span><span class="st">&quot;picture of Felix&quot;</span><span class="kw">&gt;</span></code></pre>
 <section id="save-your-file-and-view-it-in-a-browser." class="level2 save">
 <h2>Save your file and view it in a browser.</h2>
 <ul>
 <li>The image is quite large, so we want to make it a bit smaller. We can do this by using height or width attributes (or both). We don’t specify the width in centimetres or metres or inches or feet, but in something called <em>pixels</em>. I’m going to go with 400 pixels for this image.</li>
 </ul>
-<pre class="{.language-markup}"><code>&lt;img src=&quot;felix.jpg&quot; alt=&quot;picture of Felix&quot; width=&quot;400&quot;&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;img</span><span class="ot"> src=</span><span class="st">&quot;felix.jpg&quot;</span><span class="ot"> alt=</span><span class="st">&quot;picture of Felix&quot;</span><span class="ot"> width=</span><span class="st">&quot;400&quot;</span><span class="kw">&gt;</span></code></pre>
 </section>
 </section>
 <section id="step-3" class="level1 activity">
 <h1>Step 3:</h1>
 <p>Underneath the picture we should write a description of Felix, and give some details of when and where he went missing. For this we can just write some paragraphs.</p>
-<pre class="{.language-markup}"><code>&lt;p&gt;Felix is a very nice cat. He likes cuddles, sitting in front of the radiator and his toy mouse. His fur is orange. &lt;/p&gt;
-&lt;p&gt;He went missing from the garden yesterday.&lt;/p&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p&gt;</span>Felix is a very nice cat. He likes cuddles, sitting in front of the radiator and his toy mouse. His fur is orange. <span class="kw">&lt;/p&gt;</span>
+<span class="kw">&lt;p&gt;</span>He went missing from the garden yesterday.<span class="kw">&lt;/p&gt;</span></code></pre>
 <p>We also need some information about how to contact the owners if anyone has seen or found Felix.</p>
-<pre class="{.language-markup}"><code>&lt;p&gt;Have you seen Felix? Please contact his owners at felixowners@email.com&lt;/p&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p&gt;</span>Have you seen Felix? Please contact his owners at felixowners@email.com<span class="kw">&lt;/p&gt;</span></code></pre>
 <p>That’s just a pretend email address, but let’s make it so that if someone clicks on it, it opens up their email client. We do this almost the same way we make a link, but instead of a <strong>URL</strong> we put in a <code>mailto</code> like this:</p>
-<pre class="{.language-markup}"><code>&lt;p&gt;Have you seen Felix? Please contact his owners at &lt;a href=&quot;mailto:felixowners@email.com&quot;&gt;felixowners@email.com&lt;/a&gt;&lt;/p&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p&gt;</span>Have you seen Felix? Please contact his owners at <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;mailto:felixowners@email.com&quot;</span><span class="kw">&gt;</span>felixowners@email.com<span class="kw">&lt;/a&gt;&lt;/p&gt;</span></code></pre>
 <section id="save-your-document-and-check-if-it-works-in-a-browser" class="level2 save">
 <h2>Save your document and check if it works in a browser!</h2>
 </section>
@@ -93,9 +93,9 @@
 <section id="step-4-adding-strong-text-and-emphasis" class="level1 activity">
 <h1>Step 4: Adding strong text and emphasis</h1>
 <p>We really want people to find Felix, so we want to add some <em>emphasis</em> to ‘please’. We do this with the em tag.</p>
-<pre class="{.language-markup}"><code>&lt;p&gt;Have you seen Felix? &lt;em&gt;Please&lt;/em&gt; contact his owners at felixowners@email.com&lt;/p&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p&gt;</span>Have you seen Felix? <span class="kw">&lt;em&gt;</span>Please<span class="kw">&lt;/em&gt;</span> contact his owners at felixowners@email.com<span class="kw">&lt;/p&gt;</span></code></pre>
 <p>We also want ‘thank you’ to stand out, which we can do by adding the strong tag.</p>
-<pre class="{.language-markup}"><code>&lt;p&gt;&lt;strong&gt;Thank you!&lt;/strong&gt;&lt;p&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p&gt;&lt;strong&gt;</span>Thank you!<span class="kw">&lt;/strong&gt;&lt;p&gt;</span></code></pre>
 <section id="save-your-document-and-view-it-in-the-browser." class="level2 save">
 <h2>Save your document and view it in the browser.</h2>
 <p>Notice how ‘please’ is now in <em>italics</em> and ‘thank you’ is <strong>bold</strong>?</p>
@@ -104,27 +104,27 @@
 <section id="step-5-comments" class="level1 activity">
 <h1>Step 5: Comments</h1>
 <p>Sometimes it is useful to write comments in the HTML file itself. By comments we mean stuff that is meant for humans to read if they’re viewing the file, and not for the browser to read and display. We do that by using the special code:</p>
-<pre class="{.language-markup}"><code>&lt;!-- write anything here --&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="co">&lt;!-- write anything here --&gt;</span></code></pre>
 <p>Anything between the arrows is a comment. Let’s put a comment in our file saying this is a Code Club project and Felix is not real.</p>
-<pre class="{.language-markup}"><code>&lt;!-- This is a Code Club project. Felix is not real and not really missing --&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="co">&lt;!-- This is a Code Club project. Felix is not real and not really missing --&gt;</span></code></pre>
 </section>
 <section id="step-6-more-metadata-thats-just-stuff-that-goes-in-the-head" class="level1 activity">
 <h1>Step 6: More metadata (that’s just stuff that goes in the head)</h1>
 <ul>
 <li>Let’s add who wrote the webpage to the webpage, so anyone viewing the file knows it’s you.</li>
 </ul>
-<pre class="{.language-markup}"><code>&lt;meta name=&quot;author&quot; content=&quot;#&quot;&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;author&quot;</span><span class="ot"> content=</span><span class="st">&quot;#&quot;</span><span class="kw">&gt;</span></code></pre>
 <ul>
 <li>Replace the # with your name. It’s also common to add what language the website is in. We do this by adding an attribute to the <code>&lt;html&gt;</code> tag.</li>
 </ul>
-<pre class="{.language-markup}"><code>&lt;html lang=&quot;en&quot;&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;html</span><span class="ot"> lang=</span><span class="st">&quot;en&quot;</span><span class="kw">&gt;</span></code></pre>
 <p><em>en</em> stands for English.</p>
 <p>It’s also good practice to add the character set (or alphabet) the document is written in. We usually use <strong>UTF-8</strong>.</p>
-<pre class="{.language-markup}"><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;UTF-8&quot;</span><span class="kw">&gt;</span></code></pre>
 <p>We can also add a description of the webpage.</p>
-<pre class="{.language-markup}"><code>&lt;meta name=&quot;description&quot; content=&quot;a page dedicated to finding the missing cat Felix&quot;&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;description&quot;</span><span class="ot"> content=</span><span class="st">&quot;a page dedicated to finding the missing cat Felix&quot;</span><span class="kw">&gt;</span></code></pre>
 <p>And some keywords, separated by commas.</p>
-<pre class="{.language-markup}"><code>&lt;meta name=&quot;keywords&quot; content=&quot;Felix, cat, missing&quot;&gt;</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;meta</span><span class="ot"> name=</span><span class="st">&quot;keywords&quot;</span><span class="ot"> content=</span><span class="st">&quot;Felix, cat, missing&quot;</span><span class="kw">&gt;</span></code></pre>
 <p><img src="screenshot_jsbin.png" alt="screenshot" /></p>
 <section id="further-study" class="level2 try">
 <h2>Further study:</h2>
@@ -139,7 +139,7 @@
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

@@ -68,9 +68,9 @@
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Først må vi lære python alfabetet. Åpne IDLE og lag en ny fil med koden<br />under:</p>
-<pre class="{.language-python}"><code>alphabet = &quot;abcdefghijklmnopqrstuvwxyzæøå&quot;
+<pre class="sourceCode python"><code class="sourceCode python">alphabet = <span class="st">&quot;abcdefghijklmnopqrstuvwxyzæøå&quot;</span>
 
-print(len(alphabet))</code></pre></li>
+<span class="dt">print</span>(<span class="dt">len</span>(alphabet))</code></pre></li>
 <li><p>Når du kjører dette programmet skal det skrive ut 29. Pass på at du har med alle bokstavene, ellers kommer ikke den hemmelige koden din til å virke.</p>
 <p>Hvis du er fornøyd med alfabetet ditt kan vi begynne å kode en bokstav.</p></li>
 </ol>
@@ -83,52 +83,52 @@ print(len(alphabet))</code></pre></li>
 <ol>
 <li><p>Akkurat som vi gjorde med hjulet ovenfor kan vi finne posisjonen til en bokstav ved å telle forover, og så bruke bokstaven vi ender opp med.</p>
 <p>Skriv inn koden under og kjør den:</p>
-<pre class="{.language-python}"><code>alphabet = &quot;abcdefghijklmnopqrstuvwxyzæøå&quot;
+<pre class="sourceCode python"><code class="sourceCode python">alphabet = <span class="st">&quot;abcdefghijklmnopqrstuvwxyzæøå&quot;</span>
 
-letter = &quot;a&quot;
-secret = 3
+letter = <span class="st">&quot;a&quot;</span>
+secret = <span class="dv">3</span>
 
 pos = alphabet.find(letter)
 
 newpos = (pos + secret)
 
-if newpos &gt;= 29:
-    newpos = newpos - 29
+<span class="kw">if</span> newpos &gt;= <span class="dv">29</span>:
+    newpos = newpos - <span class="dv">29</span>
 
 secretletter = alphabet[newpos]
 
-print(secretletter)</code></pre>
+<span class="dt">print</span>(secretletter)</code></pre>
 <p>Vi slår opp hvor “a” er i alfabetet og legger til det hemmelige tallet vårt for å telle fremover. Vi sjekker om vi har gått rundt, hvis vi har det må vi gå en hel runde tilbake igjen ved å trekke fra 29 (dette er litt som med gradene, å trekke fra 360 gjør at vi er akkurat der vi var). Så slår vi opp i alfabetet igjen for å se hvilken hemmelige bokstav vi fikk.</p></li>
 <li><p>Kjør koden og se hva som skjer.</p></li>
 <li><p>La oss ta en titt på koden igjen, men vi tar det sakte.</p>
 <p>Du trenger ikke å skrive dette! Alt som står bak firkant-tegnet bryr python seg vanligvis ikke om, det er bare kommentarer til mennesker som skal lese koden.</p>
-<pre class="{.language-python}"><code>
-# alphabet er navnet på teksten fra a til å
-alphabet = &quot;abcdefghijklmnopqrstuvwxyz&quot;
+<pre class="sourceCode python"><code class="sourceCode python">
+<span class="co"># alphabet er navnet på teksten fra a til å</span>
+alphabet = <span class="st">&quot;abcdefghijklmnopqrstuvwxyz&quot;</span>
 
-# Den hemmelige bokstaven (letter) og det hemmelige tallet (secret) vi
-# bruker for å kode det
-letter = &quot;a&quot;
-secret = 3
+<span class="co"># Den hemmelige bokstaven (letter) og det hemmelige tallet (secret) vi</span>
+<span class="co"># bruker for å kode det</span>
+letter = <span class="st">&quot;a&quot;</span>
+secret = <span class="dv">3</span>
 
-# Finn posisjonen til bokstaven
-# og python vil gi oss et tall fra 0 til 28 (python teller fra 0)
+<span class="co"># Finn posisjonen til bokstaven</span>
+<span class="co"># og python vil gi oss et tall fra 0 til 28 (python teller fra 0)</span>
 pos = alphabet.find(letter)
 
-# gå like langt fremover som det hemmelige tallet sier vi skal
+<span class="co"># gå like langt fremover som det hemmelige tallet sier vi skal</span>
 newpos = (pos + secret)
 
-# Hvis vi har telt for langt, må vi gå en runde tilbake for å få et tall
-# mellom 0 og 28
-if newpos &gt;= 29:
-    newpos = newpos - 29
+<span class="co"># Hvis vi har telt for langt, må vi gå en runde tilbake for å få et tall</span>
+<span class="co"># mellom 0 og 28</span>
+<span class="kw">if</span> newpos &gt;= <span class="dv">29</span>:
+    newpos = newpos - <span class="dv">29</span>
 
-# Slå opp denne posisjonen for å se hvilken bokstav i alfabetet som står
-# der
+<span class="co"># Slå opp denne posisjonen for å se hvilken bokstav i alfabetet som står</span>
+<span class="co"># der</span>
 secretletter = alphabet[newpos]
 
-# og skriv dette ut på skjermen
-print(secretletter)</code></pre>
+<span class="co"># og skriv dette ut på skjermen</span>
+<span class="dt">print</span>(secretletter)</code></pre>
 <p>Det er mye python-ting som skjer her, men ikke bli skremt om du ikke forstår alt til å begynne med. Mye av dette er akkurat som i scratch. <code>if newpos &gt;= 29</code> er bare en <code>if</code>-setning, en ting som bare kjører koden under hvis det som står etter <code>if</code> er sant. En <code>if</code>-setning bruker en innrykksblokk, akkurat som <code>for</code> og <code>def</code> som vi har sett tidligere.</p></li>
 </ol>
 <p>Nå som vi kan kode en bokstav, hva med å dekode en?</p>
@@ -141,21 +141,21 @@ print(secretletter)</code></pre>
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Forsøk å skriv inn denne koden og kjør den:</p>
-<pre class="{.language-python}"><code>alphabet = &quot;abcdefghijklmnopqrstuvwxyzæøå&quot;
+<pre class="sourceCode python"><code class="sourceCode python">alphabet = <span class="st">&quot;abcdefghijklmnopqrstuvwxyzæøå&quot;</span>
 
-secret = 17
-secretletter = &quot;r&quot;
+secret = <span class="dv">17</span>
+secretletter = <span class="st">&quot;r&quot;</span>
 
 pos = alphabet.find(secretletter)
 
 newpos = pos - secret
 
-if newpos &lt; 0:
-    newpos = newpos + 29
+<span class="kw">if</span> newpos &lt; <span class="dv">0</span>:
+    newpos = newpos + <span class="dv">29</span>
 
 letter = alphabet[newpos]
 
-print(letter)</code></pre></li>
+<span class="dt">print</span>(letter)</code></pre></li>
 </ol>
 </section>
 <section id="oppgave-4-bygge-funksjoner" class="level2 activity">
@@ -168,32 +168,32 @@ print(letter)</code></pre></li>
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Lag en fil som ser slik ut:</p>
-<pre class="{.language-python}"><code>alphabet = &quot;abcdefghijklmnopqrstuvwxyzæøå&quot;
+<pre class="sourceCode python"><code class="sourceCode python">alphabet = <span class="st">&quot;abcdefghijklmnopqrstuvwxyzæøå&quot;</span>
 
-def encode(letter, secret):
+<span class="kw">def</span> encode(letter, secret):
     pos = alphabet.find(letter)
 
     newpos = (pos + secret)
 
-    if newpos &gt;= 29:
-        newpos = newpos - 29
+    <span class="kw">if</span> newpos &gt;= <span class="dv">29</span>:
+        newpos = newpos - <span class="dv">29</span>
 
-    return alphabet[newpos]
+    <span class="kw">return</span> alphabet[newpos]
 
 
 
-def decode(letter, secret):
+<span class="kw">def</span> decode(letter, secret):
     pos = alphabet.find(letter)
 
     newpos = (pos - secret)
 
-    if newpos &lt; 0:
-        newpos = newpos + 29
+    <span class="kw">if</span> newpos &lt; <span class="dv">0</span>:
+        newpos = newpos + <span class="dv">29</span>
 
-    return alphabet[newpos]
+    <span class="kw">return</span> alphabet[newpos]
 
-print(encode(&quot;a&quot;, 17))
-print(decode(&quot;r&quot;, 17))</code></pre>
+<span class="dt">print</span>(encode(<span class="st">&quot;a&quot;</span>, <span class="dv">17</span>))
+<span class="dt">print</span>(decode(<span class="st">&quot;r&quot;</span>, <span class="dv">17</span>))</code></pre>
 <p>Husk at du kan bruke ‘Tab’ i IDLE for å få innrykk. Du kan også merke deler av koden og rykke alt inn på en gang.</p></li>
 <li><p>Prøv å kode og dekode noen bokstaver!</p></li>
 </ol>
@@ -206,32 +206,32 @@ print(decode(&quot;r&quot;, 17))</code></pre>
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Under de nye funksjonene fra forrige oppgave kan du skrive inn koden under (med andre ord: behold det du gjorde i oppgave 4, og legg til koden under).</p>
-<pre class="{.language-python}"><code>
-secret = 17
-message = &quot;hello world&quot;
+<pre class="sourceCode python"><code class="sourceCode python">
+secret = <span class="dv">17</span>
+message = <span class="st">&quot;hello world&quot;</span>
 
-output = &quot;&quot;
+output = <span class="st">&quot;&quot;</span>
 
-for character in message:
-    if character in alphabet:
+<span class="kw">for</span> character in message:
+    <span class="kw">if</span> character in alphabet:
         output = output +  encode(character, secret)
-    else:
+    <span class="kw">else</span>:
         output = output + character
 
 
-print(output)
+<span class="dt">print</span>(output)
 
-secret = 17
-message = &quot;yvååc kcfåu&quot;
-output = &quot;&quot;
+secret = <span class="dv">17</span>
+message = <span class="st">&quot;yvååc kcfåu&quot;</span>
+output = <span class="st">&quot;&quot;</span>
 
-for character in message:
-    if character in alphabet:
+<span class="kw">for</span> character in message:
+    <span class="kw">if</span> character in alphabet:
         output = output + decode(character, secret)
-    else:
+    <span class="kw">else</span>:
         output = output + character
 
-print(output)</code></pre></li>
+<span class="dt">print</span>(output)</code></pre></li>
 <li><p>Kjør programmet og se hva som skjer.</p>
 <p>Den første delen av koden burde skrive ut “yvååc kcfåu”, som er den hemmelige versjonen av “hello world”. Den andre delen dekoder det igjen og skriver ut “hello world”</p></li>
 </ol>
@@ -249,7 +249,7 @@ print(output)</code></pre></li>
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

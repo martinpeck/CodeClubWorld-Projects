@@ -52,7 +52,7 @@
 <li><p>Åpne IDLE, editoren som følger med Python. Vi kommer til å skrive all koden vår i denne editoren. Når du åpner den ser du et Output-vindu. I dette vinduet kommer feilmeldinger og resultater til å dukke opp.</p></li>
 <li><p>Hvis du ikke har gjort det ennå, velg <code>File -&gt; New Window</code>. Et tomt vindu<br />dukker opp, med ‘<em>Untitled</em>’ i tittelfeltet.<br />Du skal ha to vinduer åpne nå, et for å skrive programmet ditt i, og et<br />annet for å vise resultater i. Pass på at du skriver i det riktige!</p></li>
 <li><p>Skrive følgende kode inn i det nye vinduet:</p>
-<pre class="{.language-python}"><code>print(&quot;Hello, World!&quot;)</code></pre></li>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="dt">print</span>(<span class="st">&quot;Hello, World!&quot;</span>)</code></pre></li>
 <li><p>Dobbeltsjekk at du ikke er i Output-vinduet og lagre koden din.</p></li>
 </ol>
 <p>Du kan lagre ved å velge <code>File -&gt; Save</code>. Når du blir bedt om å skrive inn et<br />filnavn, skriv hello.py, og lagre filen på skrivebordet ditt. Så kan du<br />velge <code>Run -&gt; Run Module</code>.</p>
@@ -71,26 +71,24 @@
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Åpne et nytt kodevindu (Fra <code>File</code> menyen) og skriv dette:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-forward(100)
-</code></pre></li>
+forward(<span class="dv">100</span>)</code></pre></li>
 <li><p>Lagre programmet ditt som myturtle.py og velg <code>Run -&gt; Run Module</code>. Ser du hvordan skilpadden beveget seg 100 punkter fremover på skjermen? Skilpadden har en penn festet til seg, så den tegner linjer når den beveger seg rundt.</p>
 <p><strong>ProTip:</strong> Python-filer skal alltid ha filnavn som slutter med <code>.py</code>.</p></li>
 <li><p>La oss få skilpadden til å bevege seg rundt på skjermen! Forsøk å bruke <code>backward(distance)</code> i tillegg til å snu den ved å bruke <code>right(angle)</code> og <code>left(angle)</code>. Instruksjonen <code>backward(20)</code> forteller for eksempel skilpadden at den skal bevege seg bakover 20 pixler, og <code>right(90)</code> forteller den at den skal snu seg 90 grader til høyre. Du kan gi den mer enn en instruksjon om gangen, de blir utført i rekkefølge.</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-forward(100)
-right(120)
-forward(100)
-left(90)
-backward(100)
-left(90)
-forward(50)
-</code></pre></li>
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)
+forward(<span class="dv">100</span>)
+left(<span class="dv">90</span>)
+backward(<span class="dv">100</span>)
+left(<span class="dv">90</span>)
+forward(<span class="dv">50</span>)</code></pre></li>
 </ol>
 <section id="vinkler-og-grader" class="level3">
 <h3>Vinkler og grader</h3>
@@ -135,33 +133,33 @@ Vest      |      Øst
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Åpne en ny fil i IDLE og skriv inn følgende kode:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-forward(100)
-right(90)
-forward(100)
-right(90)
-forward(100)
-right(90)
-forward(100)
-right(90)</code></pre>
+forward(<span class="dv">100</span>)
+right(<span class="dv">90</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">90</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">90</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">90</span>)</code></pre>
 <p>Lagre programmet ditt og velg <code>Run -&gt; New Module</code>. Ser du en firkant? Skilpadden snur seg 90 grader fire ganger, og ender opp med å se den samme retningen som den starten. å snu 90, 90, 90 og så 90 grader igjen snur skilpadden totalt 360 grader.</p>
 <p>Hva med en trekant? En trekant har tre hjørner, så vi må snu tre ganger. Hvis vi vil ende opp i samme retning, må vi snu 360 grader, akkurat som med firkanten. Derfor snur vi 120 grader, deretter 120 grader og så en gang til.</p></li>
 <li><p>Endre koden din til å se ut som koden under for å få den til å tegne en<br />trekant:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-forward(100)
-right(120)
-forward(100)
-right(120)
-forward(100)
-right(120)</code></pre></li>
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)</code></pre></li>
 <li><p>Kjør koden. Ser du en trekant?</p></li>
 </ol>
 <section id="velg-en-farge" class="level3">
@@ -173,21 +171,21 @@ right(120)</code></pre></li>
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Endre koden fra eksemplet over til å se ut som det neste eksemplet, ved å legge til disse nye kommandoene:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-pensize(10)
-pencolor(&quot;red&quot;)
-forward(100)
-right(120)
-pencolor(&quot;blue&quot;)
-forward(100)
-right(120)
-pencolor(&quot;green&quot;)
-forward(100)
-right(120)</code></pre></li>
+pensize(<span class="dv">10</span>)
+pencolor(<span class="st">&quot;red&quot;</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)
+pencolor(<span class="st">&quot;blue&quot;</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)
+pencolor(<span class="st">&quot;green&quot;</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)</code></pre></li>
 <li><p>Kjør koden din, hva tegner den på skjermen?<br />Denne koden tegner en tykk trekant i tre forskjellige farver.</p></li>
 <li><p>Forsøk å endre fargene i koden din, kjør den og se hva som skjer.<br />Skilpadden kan mange hundre forskjellige farger, ikke bare blå, rød og<br />grønn. Forsøk med din yndlingsfarge! Du kan også bruke farger i <strong>hex</strong> som<br />vi gjorde med CSS. Istedenfor å bruke <code>pencolor(&quot;red&quot;)</code> kan du bruke hex<br /><code>pencolor(&quot;#FF0000&quot;)</code>. Hvilken farge er #FF4F00?</p></li>
 </ol>
@@ -200,39 +198,38 @@ right(120)</code></pre></li>
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Åpne en ny fil go skriv inn følgende:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-for count in range(4):
-    forward(100)
-    right(90)
-</code></pre></li>
+<span class="kw">for</span> count in <span class="dt">range</span>(<span class="dv">4</span>):
+    forward(<span class="dv">100</span>)
+    right(<span class="dv">90</span>)</code></pre></li>
 <li><p>Lagre programmet og velg: Run -&gt; Run module.</p>
 <p>Legg merke til at koden er skjøvet inn, <em>indentert</em>, eller dyttet til venstre under for-løkken. Python bruker mellomrom for å vite hvilke kommandoer som skal gjentas. Du kan bruke Tab-tasten for å få IDLE til å <em>indentere</em>, eller bruke Shift-Tab til å ta dem bort.</p></li>
 <li><p>La oss se hva som skjer hvis vi bare indenterer (skyver inn) <code>forward</code>. Gjør om programmet ditt så det ser ut som dette:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-for count in range(4):
-    forward(100)
-right(90)</code></pre></li>
+<span class="kw">for</span> count in <span class="dt">range</span>(<span class="dv">4</span>):
+    forward(<span class="dv">100</span>)
+right(<span class="dv">90</span>)</code></pre></li>
 <li><p>Legg merke til at <code>forward</code> er indendert og <code>right</code> ikke er det. Hva<br />tror du dette programmet gjør? Forsøk å kjøre det og finn det ut.</p>
 <p>Fikk du en rett linje? Python vil gjenta <code>forward</code> fire ganger, og deretter snu til høyre. Python bruker mellomrom for å gruppere kommandoer sammen, akkurat som Scratch bruker blokker. Python klager til deg om du ikke har fått mellomrommene riktig.</p></li>
 <li><p>La oss endre programmet tilbake slik at det lager en firkant igjen, men istedenfor å bruke tall i koden skal vi gi tallene navn. Dette gjør det lettere å se hva programmet gjør, og gjør at vi slipper å gjenta oss selv.</p>
 <p>Endre filen så den ser slik ut:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-sides = 4
-length = 100
-angle = 90
-for count in range(sides):
+sides = <span class="dv">4</span>
+length = <span class="dv">100</span>
+angle = <span class="dv">90</span>
+<span class="kw">for</span> count in <span class="dt">range</span>(sides):
     forward(length)
     right(angle)</code></pre></li>
 <li><p>Lagre programmet og velg: <code>Run -&gt; Run module</code>.</p></li>
@@ -258,16 +255,16 @@ for count in range(sides):
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Endre programmet ditt til å regne ut vinkelen.</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-sides = 4
-length = 20
+sides = <span class="dv">4</span>
+length = <span class="dv">20</span>
 
-angle = 360/sides
-for count in range(sides):
+angle = <span class="dv">360</span>/sides
+<span class="kw">for</span> count in <span class="dt">range</span>(sides):
     forward(length)
     right(angle)</code></pre></li>
 <li><p>Nå kan du endre antall sider, klarer Python å gjøre jobben riktig? Prøv<br />med så mange kanter du vil!</p></li>
@@ -280,20 +277,20 @@ for count in range(sides):
 <h2>Sjekkliste</h2>
 <ol>
 <li><p>Vi kan be skilpadden om å fylle figurene med en farge ved å bruke <code>begin_fill()</code> og <code>end_fill()</code>. Endre koden din til å bruke disse kommandoene:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-sides = 4
-length = 20
+sides = <span class="dv">4</span>
+length = <span class="dv">20</span>
 
-fillcolor(&#39;red&#39;)
-pencolor(&#39;red&#39;)
+fillcolor(<span class="st">&#39;red&#39;</span>)
+pencolor(<span class="st">&#39;red&#39;</span>)
 begin_fill()
 
-angle = 360/sides
-for count in range(sides):
+angle = <span class="dv">360</span>/sides
+<span class="kw">for</span> count in <span class="dt">range</span>(sides):
     forward(length)
     right(angle)
 end_fill()</code></pre>
@@ -310,18 +307,18 @@ end_fill()</code></pre>
 <p>Hvis du vil flytte skilpadden uten at den skal sette spor etter seg, kan du<br />bruke <code>penup()</code> og <code>pendown()</code> for å slå av og på at skilpadden skal tegne.</p>
 <ol>
 <li><p>Forsøk dette i en ny fil:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-pencolor(&#39;red&#39;)
+pencolor(<span class="st">&#39;red&#39;</span>)
 
-for count in range(20):
+<span class="kw">for</span> count in <span class="dt">range</span>(<span class="dv">20</span>):
     penup()
-    forward(10)
+    forward(<span class="dv">10</span>)
     pendown()
-    forward(20)</code></pre></li>
+    forward(<span class="dv">20</span>)</code></pre></li>
 <li><p>Dette burde tegne en stiplet strek over skjermen din. Kjør det og se!</p></li>
 </ol>
 <section id="hjem-kjre-hjem-pa-skjermen" class="level3">
@@ -338,7 +335,7 @@ for count in range(20):
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">

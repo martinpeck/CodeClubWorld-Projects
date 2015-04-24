@@ -52,7 +52,7 @@
 <li><p>Ouvre IDLE, l’éditeur fourni avec Python. Tout notre code sera écrit dans cet éditeur. Quand tu ouvres l’éditeur, tu verras une fenêtre <code>Python Shell</code>, où les résultats et les erreurs de ton programme s’afficheront.</p></li>
 <li><p>Si tu ne l’as pas encore fait, clique sur <code>File -&gt; New Window</code>. Une nouvelle fenêtre vide s’affichera, avec ‘<em>Untitled</em>’ dans la barre de titre.<br />Tu devrais avoir deux fenêtres ouvertes maintenant, une pour écrire ton programme, et l’autre pour afficher la sortie de ton programme. Sois sûr d’écrire dans la bonne !</p></li>
 <li><p>Tape le code suivant dans la nouvelle fenêtre :</p>
-<pre class="{.language-python}"><code>print(&quot;Bonjour tout le monde !&quot;)</code></pre></li>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="dt">print</span>(<span class="st">&quot;Bonjour tout le monde !&quot;</span>)</code></pre></li>
 <li><p>Vérifie que tu ne sois pas dans la fenêtre appelée <code>Python Shell</code>, et enregistre ton code.</p></li>
 </ol>
 <p>Pour enregistrer ton code, clique sur <code>File -&gt; Save</code>. Quand l’éditeur te demande un nom de fichier, tape <code>hello.py</code>, et enregistre le fichier sur ton Bureau. Clique ensuite sur <code>Run -&gt; Run Module</code> pour lancer ton programme.</p>
@@ -73,26 +73,24 @@
 <h2>Check-list</h2>
 <ol>
 <li><p>Ouvre une nouvelle fenêtre de code, et écrit le code suivant :</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-forward(100)
-</code></pre></li>
+forward(<span class="dv">100</span>)</code></pre></li>
 <li><p>Enregistre ton programme dans le fichier <code>myturtle.py</code> et clique sur <code>Run -&gt; Run Module</code>. Regarde la tortue, est-ce qu’elle a avancé de 100 pixels ? La tortue a un crayon attaché, et trace des lignes quand elle se déplace sur l’écran.</p>
 <p><strong>ProTip:</strong> Les fichiers contenant des programmes en Python doivent toujours avoir un nom qui termine par ‘.py’.</p></li>
 <li><p>Essayons de faire bouger la tortue sur notre canevas ! Essaye d’utiliser <code>backward(distance)</code>, et aussi de tourner la tortue en utilisant <code>right(angle)</code> et <code>left(angle)</code>. Par exemple, <code>backward(20)</code> dit à la tortue de reculer de 20 pixels, et <code>right(90)</code> dit à la tortue de tourner vers la droite de 90 degrés. Tu peux donner plus d’une instruction à la fois, elles seront exécutées dans l’ordre.</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-forward(100)
-right(120)
-forward(100)
-left(90)
-backward(100)
-left(90)
-forward(50)
-</code></pre></li>
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)
+forward(<span class="dv">100</span>)
+left(<span class="dv">90</span>)
+backward(<span class="dv">100</span>)
+left(<span class="dv">90</span>)
+forward(<span class="dv">50</span>)</code></pre></li>
 </ol>
 <section id="angles-et-degres" class="level3">
 <h3>Angles et degrés</h3>
@@ -137,33 +135,33 @@ Ouest     |      Est
 <h2>Check-list</h2>
 <ol>
 <li><p>Ouvre un nouveau fichier dans IDLE, et tape-y le code suivant:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-forward(100)
-right(90)
-forward(100)
-right(90)
-forward(100)
-right(90)
-forward(100)
-right(90)</code></pre>
+forward(<span class="dv">100</span>)
+right(<span class="dv">90</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">90</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">90</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">90</span>)</code></pre>
 <p>Enregistre ton programme et clique sur <code>Run -&gt; Run Module</code>. Est-ce que tu peux voir un carré ? La tortue tourne de 90 degrés quatre fois, et termine dans la même direction qu’au début. En tournant 90 degrés, puis 90 degrés, puis 90 degrés, et encore 90 degrés, la tortue tourne de 360 degrés au total.</p>
 <p>Et si on essayait un triangle? Un triangle a trois angles, donc il faut faire tourner la tortue trois fois. Si l’on veut finir dans la même direction, nous allons devoir tourner un total de 360 degrés, comme pour le carré. Donc nous allons tourner de 120 degrés, puis encore de 120 degrés, et une fois de plus.</p></li>
 <li><p>Change ton code pour qu’il ressemble au suivant, pour dessiner un triangle:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-forward(100)
-right(120)
-forward(100)
-right(120)
-forward(100)
-right(120)</code></pre></li>
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)</code></pre></li>
 <li><p>Exécute ton code. Est-ce que tu as un triangle?</p></li>
 </ol>
 <section id="choisis-une-couleur" class="level3">
@@ -171,21 +169,21 @@ right(120)</code></pre></li>
 <p>Quelle est ta couleur préférée? Tu peux changer la couleur des lignes en utilisant la fonction <code>pencolor</code> (Python est écrit en anglais), et tu peux changer la taille du crayon en utilisant <code>pensize</code>:</p>
 <ol>
 <li><p>Change le code de l’exercice précédent pour qu’il soit identique au code suivant, en ajoutant ces nouvelles commandes:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-pensize(10)
-pencolor(&quot;red&quot;)
-forward(100)
-right(120)
-pencolor(&quot;blue&quot;)
-forward(100)
-right(120)
-pencolor(&quot;green&quot;)
-forward(100)
-right(120)</code></pre></li>
+pensize(<span class="dv">10</span>)
+pencolor(<span class="st">&quot;red&quot;</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)
+pencolor(<span class="st">&quot;blue&quot;</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)
+pencolor(<span class="st">&quot;green&quot;</span>)
+forward(<span class="dv">100</span>)
+right(<span class="dv">120</span>)</code></pre></li>
 <li><p>Lance ton programme, qu’est ce qu’il dessine à l’écran?<br />Ce code dessine un triangle avec une ligne épaisse, et en utilisant trois couleurs différentes.</p></li>
 <li><p>Essaye de changer les couleurs dans ton code, exécute ton programme, et observe ce qu’il se passe.<br />La tortue connait des centaines de couleurs différentes, pas uniquement le rouge, bleu et vert. Essaye d’utiliser ta couleur préférée!<br />Tu peux aussi indiquer les couleurs en <strong>hex</strong> comme nous le faisions en CSS. Au lieu d’utiliser <code>pencolor(&quot;red&quot;)</code>, tu peux te servir de <code>pencolor(&quot;#FF0000&quot;)</code>.<br />De quelle couleur est #FF4F00?</p></li>
 </ol>
@@ -199,39 +197,38 @@ right(120)</code></pre></li>
 <h2>Check-list</h2>
 <ol>
 <li><p>Ouvre un nouveau fichier et tape le code suivant à l’intérieur:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-for count in range(4):
-    forward(100)
-    right(90)
-</code></pre></li>
+<span class="kw">for</span> count in <span class="dt">range</span>(<span class="dv">4</span>):
+    forward(<span class="dv">100</span>)
+    right(<span class="dv">90</span>)</code></pre></li>
 <li><p>Enregistre ton programme et clique sur: <code>Run -&gt; Run module</code>.</p>
 <p>Remarque que le programme est <em>indenté</em>, ou décalé vers la droite sous la boucle <code>for</code>. Python se sert des espaces afin de savoir quelles commandes il doit répéter. Tu peux utiliser la touche Tabulation pour ajouter des tabulations, et le raccourci Majuscule-Tabulation pour en enlever.</p></li>
 <li><p>Essayons de voir ce qu’il se passe si l’on indente que <code>forward</code>, et change ton programme pour qu’il ressemble au suivant:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-for count in range(4):
-    forward(100)
-right(90)</code></pre></li>
+<span class="kw">for</span> count in <span class="dt">range</span>(<span class="dv">4</span>):
+    forward(<span class="dv">100</span>)
+right(<span class="dv">90</span>)</code></pre></li>
 <li><p>Tu as remarqué que <code>forward</code> est indenté, mais que <code>right</code> ne l’est pas ? Que fait ce programme, à ton avis ? Essaye de l’exécuter pour savoir ?</p>
 <p>Est-ce que tu obtiens une ligne droite ? Python répète <code>forward</code> quatre fois, et seulement <em>ensuite</em> tourne vers la droite. Python se sert des espaces pour grouper des commandes ensemble, de la même manière que Scratch utilise des blocs. Python se plaint si le code n’est pas aligné correctement.</p></li>
 <li><p>Change le programme pour revenir a la version précédente, pour vérifier qu’il dessine un carré, mais au lieu d’utiliser des nombres dans le code, nous pouvons utiliser des noms. Cela rend le programme plus facile à comprendre, et cela permet aussi d’arrêter de répéter le même code..</p>
 <p>Change ton fichier pour qu’il ressemble à ceci:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-sides = 4
-length = 100
-angle = 90
-for count in range(sides):
+sides = <span class="dv">4</span>
+length = <span class="dv">100</span>
+angle = <span class="dv">90</span>
+<span class="kw">for</span> count in <span class="dt">range</span>(sides):
     forward(length)
     right(angle)</code></pre></li>
 <li><p>Enregistre ton programme et clique sur <code>Run -&gt; Run module</code>.</p></li>
@@ -259,16 +256,16 @@ for count in range(sides):
 <h2>Check-list</h2>
 <ol>
 <li><p>Modifie ton programme pour calculer l’angle de la manière suivante:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-sides = 4
-length = 20
+sides = <span class="dv">4</span>
+length = <span class="dv">20</span>
 
-angle = 360/sides
-for count in range(sides):
+angle = <span class="dv">360</span>/sides
+<span class="kw">for</span> count in <span class="dt">range</span>(sides):
     forward(length)
     right(angle)</code></pre></li>
 <li><p>Maintenant change le nombre de côtés. Est-ce que Python dessine les formes correctement ? Essaye de dessiner un hexagone (six côtés), ou n’importe quel autre nombre de côtés !</p></li>
@@ -281,20 +278,20 @@ for count in range(sides):
 <h2>Check-list</h2>
 <ol>
 <li><p>Nous pouvons demander à la tortue de remplir nos formes avec une couleur, en utilisant <code>begin_fill()</code> et <code>end_fill()</code>. Change ton code pour<br />ajouter ces commandes:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-sides = 4
-length = 20
+sides = <span class="dv">4</span>
+length = <span class="dv">20</span>
 
-fillcolor(&#39;red&#39;)
-pencolor(&#39;red&#39;)
+fillcolor(<span class="st">&#39;red&#39;</span>)
+pencolor(<span class="st">&#39;red&#39;</span>)
 begin_fill()
 
-angle = 360/sides
-for count in range(sides):
+angle = <span class="dv">360</span>/sides
+<span class="kw">for</span> count in <span class="dt">range</span>(sides):
     forward(length)
     right(angle)
 end_fill()</code></pre>
@@ -311,18 +308,18 @@ Il faut utiliser <code>begin_fill()</code> pour dire à la tortue que tu commenc
 <p>Si tu veux faire bouger la tortue sans laisser de marque derrière elle, tu peux utiliser <code>penup()</code> et <code>pendown()</code> pour activer ou désactiver le crayon.</p>
 <ol>
 <li><p>Dans un nouveau fichier, essaye le code suivant:</p>
-<pre class="{.language-python}"><code>from turtle import *
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> turtle <span class="ch">import</span> *
 
-speed(11)
-shape(&quot;turtle&quot;)
+speed(<span class="dv">11</span>)
+shape(<span class="st">&quot;turtle&quot;</span>)
 
-pencolor(&#39;red&#39;)
+pencolor(<span class="st">&#39;red&#39;</span>)
 
-for count in range(20):
+<span class="kw">for</span> count in <span class="dt">range</span>(<span class="dv">20</span>):
     penup()
-    forward(10)
+    forward(<span class="dv">10</span>)
     pendown()
-    forward(20)</code></pre></li>
+    forward(<span class="dv">20</span>)</code></pre></li>
 <li><p>Ce programme devrait dessiner une ligne en pointillés à l’écran. Lance ton programme et regarde !</p></li>
 </ol>
 <section id="maison-point-de-depart-a-lecran." class="level3 protip">
@@ -340,7 +337,7 @@ for count in range(20):
 
     <aside class="legal-notice copyright">
       <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
-      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent.</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
     </aside>
 
     <div id="legend">
