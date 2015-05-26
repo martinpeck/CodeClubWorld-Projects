@@ -31,45 +31,49 @@
       
 <section id="introduction" class="level1 intro">
 <h1>Introduction</h1>
-<p>You are going to learn how to make a game, in which you’ll use the mouse to control a boat. You must try to get to the desert island, avoiding the wooden barriers. The white arrows boost your boat and make it go faster.</p>
+<p>You are going to learn how to make a game, in which you’ll use the mouse to navigate a boat to a desert island.</p>
 <div class="scratch-preview">
-    <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/29125780/?autostart=false" frameborder="0"></iframe>
+    <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/.../?autostart=false" frameborder="0"></iframe>
     <img src="boat-final.png">
 </div>
 </section>
-<section id="step-1-controlling-a-boat" class="level1 activity">
-<h1>Step 1: Controlling a boat</h1>
+<section id="step-1-planning-your-game" class="level1 activity">
+<h1>Step 1: Planning your game</h1>
 <section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.</p></li>
-<li><p>For this project, you should have a ‘Project Resources’ folder, containing all of the images you’ll need. Make sure that you can find this folder, and ask your club leader if you can’t find it.</p>
-<p><img src="boat-resources.png" alt="screenshot" /></p></li>
-<li><p>From this ‘Project Resources’ folder, import ‘background.png’ as the stage backdrop and ‘boat.png’ as a new sprite. If you don’t have these images you can draw them yourself!</p></li>
-<li><p>Rename your sprite ‘Player 1’, shrink it slightly, and move it to the bottom of the stage.</p>
-<p>Your project should look like this:</p>
+<li><p>Click on your stage backdrop and plan out your level. You should add:</p>
+<ul>
+<li>Wood that your boat has to avoid;</li>
+<li>A desert island that your boat has to get to.</li>
+</ul>
+<p>Here’s how your game could look:</p>
 <p><img src="boat-bg.png" alt="screenshot" /></p></li>
+</ul>
+</section>
+</section>
+<section id="step-2-controlling-the-boat" class="level1 activity">
+<h1>Step 2: Controlling the boat</h1>
+<section id="activity-checklist-1" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li><p>If your club leader has given you a ‘Resources’ folder, click ‘Upload sprite from file’ and add the ‘boat.png’ image. You should shrink the sprite and put it in it’s starting position.</p>
+<p><img src="boat-boat.png" alt="screenshot" /></p>
+<p>If you don’t have the boat.png image, you can draw your own boat instead!</p></li>
 <li><p>You are going to control the boat with your mouse. Add this code to your boat:</p>
-<p><img src="39a2432456b573ef4b212d4262054de2491d5dee.png" alt="    when flag clicked
+<p><img src="700c1ceb961cb5d08742261f56cda26c0cd41c7f.png" alt="    when flag clicked
     point in direction (0 v)
-    go to x: (-215) y: (-160)
+    go to x: (-190) y: (-150)
     forever
         point towards [mouse-pointer v]
         move (1) steps
     end" /></p></li>
 <li><p>Test out your boat, by clicking the flag and moving the mouse. Does the boat sail towards the mouse?</p>
 <p><img src="boat-mouse.png" alt="screenshot" /></p></li>
-<li><p>Have a look what happens when the boat reaches the mouse pointer.</p>
+<li><p>What happens if the boat reaches the mouse pointer?</p>
 <p>To stop this happening, you’ll need to add an <code class="blockcontrol">if</code> block to your code, so that the boat only moves if it is more than 5 pixels away from the mouse.</p>
-<p><img src="568d93fbdcc1cb05960d899424f53af744a04c38.png" alt="    when flag clicked
-    point in direction (0 v)
-    go to x: (-215) y: (-160)
-    forever
-        if &lt; (distance to [mouse-pointer v]) &gt; [5] &gt; then
-            point towards [mouse-pointer v]
-            move (1) steps
-        end
-    end" /></p></li>
+<p><img src="boat-pointer.png" alt="screenshot" /></p></li>
 <li><p>Test out your boat again, to check whether the problem has been fixed.</p></li>
 </ul>
 </section>
@@ -77,25 +81,25 @@
 <h2>Save your project</h2>
 </section>
 </section>
-<section id="step-2-crashing" class="level1 activity new-page">
-<h1>Step 2: Crashing!</h1>
+<section id="step-3-crashing" class="level1 activity new-page">
+<h1>Step 3: Crashing!</h1>
 <p>Your boat can sail through the wooden barriers! Let’s fix that.</p>
-<section id="activity-checklist-1" class="level2 check">
+<section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>You’ll need 2 costumes for your boat, one normal costume, and one for when the boat crashes. Duplicate your boat costume, and name them ‘hit’ and ‘not hit’.</p></li>
+<li><p>You’ll need 2 costumes for your boat, one normal costume, and one for when the boat crashes. Duplicate your boat costume, and name them ‘normal’ and ‘hit’.</p></li>
 <li><p>Click on your ‘hit’ costume, and choose the ‘Select’ tool to grab bits of the boat and move and rotate them around. Make your boat look as if it’s crashed.</p>
 <p><img src="boat-hit-costume.png" alt="screenshot" /></p></li>
-<li><p>Add this code to your boat, inside the <code class="blockcontrol">forever</code> loop, so that it crashes when it touches any brown wooden barriers:</p>
-<p><img src="ce04d2285bcd5d9088e1b614fb0914b646dd9053.png" alt="    if &lt;touching color [#A36400]?&gt; then
+<li><p>Add this code to your boat, inside the <code class="blockcontrol">forever</code> loop, so that it crashes when it touches any brown wooden bits:</p>
+<p><img src="3c2d29d189e581cb0841eae60263e96e37721f48.png" alt="    if &lt;touching color [#603C15]?&gt; then
         switch costume to [hit v]
         say [Noooooo!] for (1) secs
-        switch costume to [not hit v]
+        switch costume to [normal v]
         point in direction (0 v)
         go to x: (-215) y: (-160)
     end" /></p>
 <p>This code is inside the <code class="blockcontrol">forever</code> loop, so that your code keeps checking if the boat has crashed.</p></li>
-<li><p>You should also make sure that your boat always starts looking like it’s ‘not hit’.</p></li>
+<li><p>You should also make sure that your boat always starts looking like it’s ‘normal’.</p></li>
 <li><p>Now if you try to sail through a wooden barrier, you should see that your boat crashes and moves back to the start.</p>
 <p><img src="boat-crash.png" alt="screenshot" /></p></li>
 </ul>
@@ -106,7 +110,7 @@
 <section id="challenge-winning" class="level2 challenge">
 <h2>Challenge: Winning!</h2>
 <p>Can you add another <code class="blockcontrol">if</code> statement to your boat’s code, so that the player wins when they get to the desert island?</p>
-<p>When the boat gets to the yellow sand, it should say ‘YEAH!’ and then the game should stop. You’ll need to use this code:</p>
+<p>When the boat gets to the yellow desert island, it should say ‘YEAH!’ and then the game should stop. You’ll need to use this code:</p>
 <p><img src="73c1164e5db914bda5dd4334af548eb5707a4894.png" alt="    say [YEAH!] for (1) secs
     stop [all v]" /></p>
 <p><img src="boat-win.png" alt="screenshot" /></p>
@@ -122,15 +126,15 @@
 <h2>Save your project</h2>
 </section>
 </section>
-<section id="step-3-time-trial" class="level1 activity">
-<h1>Step 3: Time Trial</h1>
-<p>Let’s add a timer to the game, so that the player has to get to the desert island as fast as possible.</p>
-<section id="activity-checklist-2" class="level2 check">
+<section id="step-4-time-trial" class="level1 activity">
+<h1>Step 4: Time Trial</h1>
+<p>Let’s add a timer to your game, so that the player has to get to the desert island as fast as possible.</p>
+<section id="activity-checklist-3" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>Add a new variable called <code class="blockdata">time</code> to your stage. You can also change the display of your new variable. If you need help, have a look at the ‘Balloons’ project.</p>
 <p><img src="boat-variable.png" alt="screenshot" /></p></li>
-<li><p>Add this code to your <em>stage</em>, so that the timer counts up until the boat reaches the desert island:</p>
+<li><p>Add this code to your <strong>stage</strong>, so that the timer counts up until the boat reaches the desert island:</p>
 <p><img src="9a546495c1f7a4ee1f5046b3e98fca33ac8da890.png" alt="    when flag clicked
     set [time v] to [0]
     forever
@@ -145,10 +149,10 @@
 <h2>Save your project</h2>
 </section>
 </section>
-<section id="step-4-obstacles-and-power-ups" class="level1 activity">
-<h1>Step 4: Obstacles and power-ups</h1>
+<section id="step-5-obstacles-and-power-ups" class="level1 activity">
+<h1>Step 5: Obstacles and power-ups</h1>
 <p>This game is <em>far</em> too easy - let’s add things to make it more interesting.</p>
-<section id="activity-checklist-3" class="level2 check">
+<section id="activity-checklist-4" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
 <li><p>First let’s add some ‘boosts’ to your game, which will speed up the boat. Edit your stage backdrop and add in some white booster arrows.</p>
@@ -157,17 +161,12 @@
 <p><img src="6c8cd55913519c8b515ef96f59d638036847e3cf.png" alt="    if &lt;touching color [#FFFFFF]?&gt; then
         move (3) steps
     end" /></p></li>
-<li><p>You can also add in a spinning gate, which your boat has to avoid. Add in a new sprite called ‘Gate’, which looks like this:</p>
-<p><img src="boat-gate.png" alt="screenshot" /></p></li>
-<li><p>Make sure that the colour of the gate is the same as the other wooden barriers.</p>
-<p><img src="boat-colour.png" alt="screenshot" /></p></li>
+<li><p>You can also add in a spinning gate, which your boat has to avoid. Add in a new sprite called ‘gate’, which looks like this:</p>
+<p><img src="boat-gate.png" alt="screenshot" /></p>
+<p>Make sure that the colour of the gate is the same as the other wooden barriers.</p></li>
 <li><p>Set the center of the gate sprite.</p>
 <p><img src="boat-center.png" alt="screenshot" /></p></li>
-<li><p>Add this code to your gate, to make it spin slowly:</p>
-<p><img src="0cb6c807daa231f738b8bf3e3d3f36f24aee9f12.png" alt="    when flag clicked
-    forever
-        turn right (1) degrees
-    end" /></p></li>
+<li><p>Add code to your gate, to make it spin slowly <code class="blockcontrol">forever</code>.</p></li>
 <li><p>Test out your game. You should now have a spinning gate that you must avoid.</p>
 <p><img src="boat-gate-test.png" alt="screenshot" /></p></li>
 </ul>
@@ -177,25 +176,22 @@
 </section>
 <section id="challenge-more-obstacles" class="level2 challenge new-page">
 <h2>Challenge: More obstacles!</h2>
-<p>Can you add more obstacles to your game? Here are some ideas to help you:</p>
-<ul>
-<li>You could add more wood to your backdrop, to make your game more difficult.</li>
-</ul>
-<p><img src="boat-wood.png" alt="screenshot" /></p>
+<p>Can you add more obstacles to your game? Here are some ideas:</p>
 <ul>
 <li>You could add green slime to your backdrop, which slows the player down when they touch it. You can use a <code class="blockcontrol">wait</code> block to do this:</li>
 </ul>
 <p><img src="1af1cc4ab5f68b76e1475e040a978b0459e970ba.png" alt="    wait (0.01) secs" /></p>
 <p><img src="boat-algae.png" alt="screenshot" /></p>
 <ul>
-<li>You could add a moving object, like a log or a shark! These blocks may help you:</li>
+<li>You could add a moving object, like a log or a shark!</li>
 </ul>
+<p><img src="boat-obstacles.png" alt="screenshot" /></p>
+<p>These blocks may help you:</p>
 <p><img src="eb643086f777fb6d33d6fc8bccdeae2d9b07d156.png" alt="    move (1) steps
     if on edge, bounce" /></p>
 <p>If your new object isn’t brown, you’ll need to add to your boat code:</p>
-<p><img src="eef030e2647bb63c6081393fa28a7f74f41ba2e7.png" alt="    if &lt;  &lt;touching color [#A36400]?&gt; or &lt;touching [shark v]?&gt; &gt; then
+<p><img src="00db15f2f0577139cc5e7beb61d4df607d1c969e.png" alt="    if &lt;  &lt;touching color [#603C15]?&gt; or &lt;touching [shark v]?&gt; &gt; then
     end" /></p>
-<p><img src="boat-log.png" alt="screenshot" /></p>
 </section>
 <section id="save-your-project-6" class="level2 save">
 <h2>Save your project</h2>
@@ -210,7 +206,7 @@
 <ul>
 <li>Change Player 2’s starting position, by changing this code:</li>
 </ul>
-<p><img src="89902bc83f21bcfec826c653d29a3e6c27026a6c.png" alt="    go to x: (-215) y: (-160)" /></p>
+<p><img src="e41254e3e808156804103386a96e16b323a0b4f3.png" alt="    go to x: (-190) y: (-150)" /></p>
 <ul>
 <li>Delete the code that uses the mouse to control the boat:</li>
 </ul>

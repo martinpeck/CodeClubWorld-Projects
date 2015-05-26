@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html class="world"  lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Scratch Card - Recorder — Code Club World Projects</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.ico">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Scratch Card - Recorder</h1>
+      <span class="level-indicator">Level 5</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Archived Scratch Projects</a></li><li class="breadcrumbs-item current">Recorder</li></ul></nav>
+
+          <section class="registration-note">
+        <p>All Code Clubs <u>must be registered</u>. Registered clubs appear on the map at <a href="http://www.codeclubworld.org/">codeclubworld.org</a> - if your club is not on the map then visit <a href="http://jumpto.cc/18CpLPy">jumpto.cc/18CpLPy</a> to find out what to do.</p>
+      </section>
+    
+    <main class="main lesson-steps" role="main">
+<section id="activity-checklist" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>Create two new lists (for all sprites). Call one of them <code class="blockred">instrument</code> and the other <code class="blockred">timing</code>.</li>
+<li>Create a new variable (for all sprites) called <code class="blockorange">recording</code></li>
+<li><p>For each of your instruments (drum, piano, each sound sample etc.), you will need to add the following items to the <code class="blockbrown">when I receive</code> block.</p>
+<p><img src="eb614ca81c5fc7c20b7656ab5d3ec6544f1c1b94.png" alt="if &lt;(recording) = (1)&gt; then
+    add (timer) to [timing v]
+    add (cat) to [instrument v]" /></p></li>
+<li><p>Change the word “cat” in <code class="blockred">add [cat] to [instrument v]</code> to match the name of the message used to play this sound.</p>
+<p><img src="8506db9b2091b5e88d57923ca09696456e26607c.png" alt="when I receive [drum v]
+    play drum (48 v) for (0.2) beats
+    if &lt;(recording) = (1)&gt; then
+        add (timer) to [timing v]
+        add (cat) to [instrument v]
+    end
+    set size to (110) %
+    wait (0.1) secs
+    set size to (100) %" /></p></li>
+<li>Draw a new sprite and give it a red circle costume. Name this sprite “Record”. <img src="record-costume.png" alt="record costume" /></li>
+<li><p>Create a script that sets <code class="blockorange">recording</code> to 1 and deletes all of <code class="blockred">instrument</code> and <code class="blockred">timing</code> when clicked.</p></li>
+</ul>
+</section>
+<section id="test-your-project" class="level2 flag">
+<h2>Test your project</h2>
+<p>Try clicking the record button. What happens when you play instruments?</p>
+<ul>
+<li>Create another sprite and give it a costume in the shape of a green arrow. Call this “Play”. <img src="play-costume.png" alt="play costume" /></li>
+<li>Create a new variable called <code class="blockorange">index</code> for Play only.</li>
+<li><p>Now we need to make the playback actually do something. Add this script to “Play”</p>
+<p><img src="45f72af84f0ce305663d54da75e22bc8e3a3a63f.png" alt="when Play clicked
+    set [recording v] to (0)
+    set [index v] to (1)
+    reset timer
+    forever
+        if &lt;(item (index) of [timing v]) &lt; (timer)&gt; then
+            broadcast (item (index) of [instrument v])
+            change [index v] by (1)
+            if &lt;(index) &gt; (length of [timing v])&gt; then
+                stop script
+            end
+        end
+    end" /></p></li>
+</ul>
+</section>
+<section id="test-your-project-1" class="level2 flag">
+<h2>Test your project</h2>
+<p>Press the green play button. what happens?</p>
+<p>Now click the red record button and play some instruments. When you’re done, press the green play button again. What happens?</p>
+<p>Play some more instruments without pressing record. Then play the green play button again. What happens?</p>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
+    </aside>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

@@ -33,7 +33,7 @@
 <h1>Introduction</h1>
 <p>You are going to learn how to program your own talking robot!</p>
 <div class="scratch-preview">
-    <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26762091/?autostart=true" frameborder="0"></iframe>
+    <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26762091/?autostart=false" frameborder="0"></iframe>
     <img src="chatbot-final.png">
 </div>
 </section>
@@ -61,7 +61,7 @@
 </section>
 <section id="step-2-a-talking-chatbot" class="level1 activity">
 <h1>Step 2: A talking chatbot</h1>
-<p>Now that you have a chatbot with a personality, let’s program it to talk to us.</p>
+<p>Now that you have a chatbot with a personality, let’s program it to talk to you.</p>
 <section id="activity-checklist-1" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
@@ -69,27 +69,27 @@
 <p><img src="a7c6827858087ae1f7d21c8b7960fcf89e897987.png" alt="    when this sprite clicked
     ask [Hey! What&#39;s your name?] and wait
     say [What a lovely name!] for (2) secs" /></p></li>
-<li><p>Click your chatbot to test it out. After you are asked your name, type it into the box along the bottom of the stage, and click the tick (or press return).</p>
+<li><p>Click your chatbot to test it out. After you are asked your name, type it into the box along the bottom of the stage.</p>
 <p><img src="chatbot-text.png" alt="screenshot" /></p></li>
-<li><p>Your chatbot simply replies “What a lovely name!” every time. You can personalise your chatbot’s reply, by making use of the user’s answer. Change the chatbot’s code, so that it looks like this:</p>
+<li><p>Your chatbot simply replies <code>What a lovely name!</code> every time. You can personalise your chatbot’s reply, by making use of the user’s answer. Change the chatbot’s code, so that it looks like this:</p>
 <p><img src="8e2aee42822915eafead46c2ca2b2a2240c1c9c2.png" alt="    when this sprite clicked
     ask [Hey! What&#39;s your name?] and wait
     say &lt;join [Hi] (answer)&gt; for (2) secs" /></p>
 <p>To create the last block, you’ll need to first drag on a green <code class="blockoperators">join</code> block, and drag it on to the <code class="blocklooks">say</code> block.</p>
 <p><img src="chatbot-join.png" alt="screenshot" /></p>
-<p>You can then change the text “hello” to say “Hi”, and drag the light blue <code class="blocksensing">answer</code> block (from the ‘Sensing’ section) onto the text “world”.</p>
+<p>You can then change the text <code>hello</code> to say <code>Hi</code>, and drag the light blue <code class="blocksensing">answer</code> block (from the ‘Sensing’ section) onto the text <code>world</code>.</p>
 <p><img src="chatbot-answer.png" alt="screenshot" /></p></li>
 <li><p>Test out this new program. Does it work as you expected? Can you fix any problems that you can see? (Hint: you can try adding in a space somewhere!)</p></li>
-<li><p>It may be that you want to store the user’s name in a variable, so that you can use it again later. Create a new variable called ‘name’. If you’ve forgotten how to do this, the previous ‘Balloons’ project will help you.</p></li>
-<li><p>The information that you entered is already stored in a special variable called ‘answer’. Go to the Sensing group of blocks and click the answer block so that a tick appears. The current value in ‘answer’ should then be shown on the top-left of the stage.</p></li>
+<li><p>It may be that you want to store the user’s name in a variable, so that you can use it again later. Create a new variable called <code class="blockdata">name</code>. If you’ve forgotten how to do this, the ‘Balloons’ project will help you.</p></li>
+<li><p>The information that you entered is already stored in a special variable called <code class="blocksensing">answer</code>. Go to the Sensing group of blocks and click the answer block so that a tick appears. The current value in <code class="blocksensing">answer</code> should then be shown on the top-left of the stage.</p></li>
 <li><p>Once you’ve created your new variable, make sure that your chatbot’s code looks like this:</p>
 <p><img src="d9ce2c3f13fac0bbe6695a0bcbfc64785cb71915.png" alt="    when this sprite clicked
     ask [Hey! What&#39;s your name?] and wait
     set [name v] to (answer)
     say &lt;join [Hi ] (name)&gt; for (2) secs" /></p></li>
-<li><p>If you test your program again, you’ll notice that the answer is stored in the ‘name’ variable, and is shown in the top-left of the stage. The ‘name’ variable should now contain the same value as the ‘answer’ variable.</p>
+<li><p>If you test your program again, you’ll notice that the answer is stored in the <code class="blockdata">name</code> variable, and is shown in the top-left of the stage. The <code class="blockdata">name</code> variable should now contain the same value as the <code class="blocksensing">answer</code> variable.</p>
 <p><img src="chatbot-variable.png" alt="screenshot" /></p>
-<p>If you’d rather not see the variable on your stage, you can click the tick next to the variable name in the ‘Scripts’ tab to hide it.</p></li>
+<p>If you’d rather not see the variables on your stage, you can click the tick next to the variable names in the ‘Scripts’ tab to hide them.</p></li>
 </ul>
 </section>
 <section id="save-your-project-1" class="level2 save">
@@ -110,7 +110,7 @@
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>Let’s get your chatbot to ask the user a question which has a ‘yes’ or ‘no’ answer. Here’s an example, but you can change the question if you like:</p>
+<li><p>Let’s get your chatbot to ask the user a question which has a <code>yes</code> or <code>no</code> answer. Here’s an example, but you can change the question if you like:</p>
 <p><img src="8fbde95e8843327e9f58d464ea9ef41eec91f161.png" alt="    when this sprite clicked
     ask [Hey! What&#39;s your name?] and wait
     set [name v] to (answer)
@@ -120,8 +120,8 @@
         say [That&#39;s great to hear!] for (2) secs
     end" /></p>
 <p>Notice that now you’ve stored the user’s name in a variable, you can use it as much as you like.</p></li>
-<li><p>To test this program properly, you’ll need to test it twice - once typing ‘no’ as your answer, and once typing ‘yes’. You should only get a response from your chatbot <code class="blockcontrol">if</code> you answer ‘yes’.</p></li>
-<li><p>The trouble with your chatbot is that it doesn’t give a reply if the user answers ‘no’. You can fix this, by changing the <code class="blockcontrol">if</code> block to an <code class="blockcontrol">if/else</code> block, so that your code now looks like this:</p>
+<li><p>To test this program properly, you’ll need to test it twice - once typing <code>no</code> as your answer, and once typing <code>yes</code>. You should only get a response from your chatbot <code class="blockcontrol">if</code> you answer <code>yes</code>.</p></li>
+<li><p>The trouble with your chatbot is that it doesn’t give a reply if the user answers <code>no</code>. You can fix this, by changing the <code class="blockcontrol">if</code> block to an <code class="blockcontrol">if/else</code> block, so that your code now looks like this:</p>
 <p><img src="1c759e65c33e4ff5c64e317cdb10411a71b76296.png" alt="    when this sprite clicked
     ask [Hey! What&#39;s your name?] and wait
     set [name v] to (answer)
@@ -132,7 +132,7 @@
     else
         say [Oh no!] for (2) secs
     end" /></p></li>
-<li><p>If you test your code, you’ll now see that you get a response when you answer ‘yes’ or ‘no’. Your chatbot should reply with “That’s great to hear!” when you answer ‘yes’, but will reply with “Oh no!” if you type anything other than yes (<code class="blockcontrol">else</code> means ‘otherwise’).</p>
+<li><p>If you test your code, you’ll now see that you get a response when you answer <code>yes</code> or <code>no</code>. Your chatbot should reply with <code>That's great to hear!</code> when you answer <code>yes</code>, but will reply with <code>Oh no!</code> if you type anything other than <code>yes</code> (<code class="blockcontrol">else</code> means ‘otherwise’).</p>
 <p><img src="chatbot-else.png" alt="screenshot" /></p></li>
 <li><p>You can put any code inside an <code class="blockcontrol">if</code> or <code class="blockcontrol">else</code> block, not just code to make your chatbot speak. For example, you can change the chatbot’s costume to match the response.</p>
 <p>If you have a look at your chatbot’s costumes, you may see that there is more than one. (If not, you can always add more yourself!)</p>
@@ -160,7 +160,7 @@
 </section>
 <section id="challenge-more-decisions" class="level2 challenge">
 <h2>Challenge: More decisions</h2>
-<p>Program your chatbot to ask another question - something with a ‘yes’ or ‘no’ answer. Can you make your chatbot respond to the answer?</p>
+<p>Program your chatbot to ask another question - something with a <code>yes</code> or <code>no</code> answer. Can you make your chatbot respond to the answer?</p>
 <p><img src="chatbot-joke.png" alt="screenshot" /></p>
 </section>
 <section id="save-your-project-4" class="level2 save">
@@ -182,9 +182,9 @@
     end" /></p></li>
 <li><p>You also need to make sure that your chatbot is outside when you start talking to it. Add this block to the top of your chatbot code:</p>
 <p><img src="chatbot-outside.png" alt="screenshot" /></p></li>
-<li><p>Test your program, and answer ‘yes’ when asked if you want to go home. You should see that the chatbot’s location has changed.</p>
+<li><p>Test your program, and answer <code>yes</code> when asked if you want to go home. You should see that the chatbot’s location has changed.</p>
 <p><img src="chatbot-backdrop.png" alt="screenshot" /></p></li>
-<li><p>Does your chatbot change location if you type ‘no’? What about if you type ‘I’m not sure’?</p></li>
+<li><p>Does your chatbot change location if you type <code>no</code>? What about if you type <code>I'm not sure</code>?</p></li>
 </ul>
 </section>
 <section id="save-your-project-5" class="level2 save">
