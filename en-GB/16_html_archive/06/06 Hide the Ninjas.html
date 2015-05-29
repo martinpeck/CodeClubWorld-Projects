@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="world"  lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Hide the ninjas — Code Club World Projects</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.ico">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Hide the ninjas</h1>
+      <span class="level-indicator">HTML&amp;CSS 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Archived HTML &amp; CSS Projects</a></li><li class="breadcrumbs-item current">Hide the ninjas</li></ul></nav>
+
+          <section class="note registration-note">
+        <p>All Code Clubs <u>must be registered</u>. Registered clubs appear on the map at <a href="http://www.codeclubworld.org/">codeclubworld.org</a> - if your club is not on the map then visit <a href="http://jumpto.cc/18CpLPy">jumpto.cc/18CpLPy</a> to find out what to do.</p>
+      </section>
+    
+    <main class="main lesson-steps" role="main">
+      
+<section id="introduction" class="level2 intro">
+<h2>Introduction</h2>
+<p>This project will build on your knowledge of CSS-fu.</p>
+<p>Five ninjas arrived in town and need to hide before anyone notices them. Using your own ninja-like CSS skills to get them into a safe spot. You can move the ninjas themselves, and some of the objects in the street too. Quick! There is no time!</p>
+<p><img src="ninjas.png" alt="screenshot" /></p>
+</section>
+<section id="step-1-meet-the-ninjas" class="level1 activity">
+<h1>Step 1: Meet the ninjas</h1>
+<ul>
+<li>Open up the file called <code>ninjas.html</code> in the code editor. Open it up in the browser as well.</li>
+<li>Read through the code. Can you guess which parts correspond to what objects in the street? Notice that we are using two languages: HTML to add all elements to the page, and CSS placed between the <code>style</code> tags.</li>
+<li>The elements we will be playing with are the images (<code>&lt;img&gt;</code> tags). We can control their position using CSS.</li>
+</ul>
+<p><strong>Let’s move a ninja</strong></p>
+<ul>
+<li>Each one of the ninjas is named using the <code>id</code> attribute. Let’s move Alex The Ninja first. Find Alex’s corresponding CSS rule.</li>
+<li>Change the value of <code>left</code> to <code>100px</code> and <code>top</code> to <code>320px</code>. When <code>position</code> property is set to <code>absolute</code> it means we will be describing the position in relation to ninja’s parent element - in this case the <code>&lt;div&gt;</code> with <code>id</code> <code>street_corner</code>. <code>px</code> means <code>pixel</code>. <code>left</code> describes how far to move the ninja from the left edge (by how many pixels), and <code>top</code> tells the browser how far to move it down from the top edge.</li>
+<li>Change <code>left</code> to <code>right</code> and <code>top</code> to <code>bottom</code>. Now your code tells the browser to put the ninja a <code>100px</code> to the left of the right edge, and <code>320px</code> up from the bottom edge.</li>
+</ul>
+<p>Pixels describe the smallest physical point your monitor can display. They are often used to describe the screen dimensions.</p>
+</section>
+<section id="step-2-lets-try-to-describe-it-differently" class="level1 activity">
+<h1>Step 2: Let’s try to describe it differently</h1>
+<p>Now you know how to use pixel positioning. This isn’t the only way we can describe the positions on the screen, so let’s look at some other options we have.</p>
+<ul>
+<li>Find the <code>wheelie_bin</code> element in the CSS.</li>
+</ul>
+<p>100% describes the full width of the available screen space. As we are positioning ninjas and other object in relation to the <code>street_corner</code>, which is 600 pixels wide, in our case 100% will equal <code>600px</code>. If we were to draw a bigger street corner, for example <code>800px</code> wide, then 100% would mean <code>800px</code>. Depending on context, sizes described in percentages will have different meanings.</p>
+</section>
+<section id="step-3-one-more-unit-type" class="level1 activity">
+<h1>Step 3: One more unit type</h1>
+<p>As if we didn’t already have enough unit types, we will try another one! You know how to use pixels and percentages, so now let’s try <code>ems</code>.</p>
+<p><code>Em</code> is a measurement type borrowed from the field of typography , which concerns itself with the appearance of letters and text. One em is equal to the current font size. Notice that at the top of the CSS we set <code>font-size</code> on the <code>body</code> element to 20px, so one <code>em</code> will appear as 20 pixels.</p>
+<ul>
+<li>Find the <code>bicycle</code> in the CSS. Apart from the <code>em</code> bit it should be familiar to you. See if you can move the bicycle to hide Sam The Ninja.</li>
+<li>We’ve mentioned that the size of the <code>em</code> is based on the font size. To see it in practice, find <code>body</code> in the CSS. Change the <code>font-size</code> value to 30px. What happened? Because now each <code>em</code> is 30 pixels wide and 30 pixels tall all elements using this measurement have shifted their position!</li>
+</ul>
+</section>
+<section id="step-4-quick-hide-the-ninjas" class="level1 activity">
+<h1>Step 4: Quick, hide the ninjas!</h1>
+<p>Now that you know how to move the elements on the screen it’s time to help the ninjas. Use different ways of describing their position. Remember, you can also move some of the objects. Which unit do you feel most comfortable using? Find the best way to provide the best hiding. Good luck!</p>
+<section id="things-to-try" class="level2 try">
+<h2>Things to try</h2>
+<ul>
+<li>Can you figure out how to make ninjas appear in front of some of the street objects? What would happen if you copied the <code>&lt;img&gt;</code> tag for the ninja after the <code>&lt;img&gt;</code> tag that displays the object?</li>
+<li>Can you add some more objects to the scene? You could add images from your computer or ones you find on the internet.</li>
+</ul>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
+    </aside>
+
+    <div id="legend">
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

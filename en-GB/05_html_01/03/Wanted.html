@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="world"  lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Wanted! — Code Club World Projects</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.ico">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Wanted!</h1>
+      <span class="level-indicator">HTML &amp; CSS 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">HTML &amp; CSS 1</a></li><li class="breadcrumbs-item current">Wanted!</li></ul></nav>
+
+          <section class="note registration-note">
+        <p>All Code Clubs <u>must be registered</u>. Registered clubs appear on the map at <a href="http://www.codeclubworld.org/">codeclubworld.org</a> - if your club is not on the map then visit <a href="http://jumpto.cc/18CpLPy">jumpto.cc/18CpLPy</a> to find out what to do.</p>
+      </section>
+    
+    <main class="main lesson-steps" role="main">
+      <section id="heads-up" class="note beta">
+<h1>Heads Up!</h1>
+<p>This project is new. That means we’re still testing it, and there’s a small chance there could be some bugs or typos. If you’re a club leader trying out this project, please complete <a href="https://docs.google.com/forms/d/15QLeJ_aDklioXl5cUyUK1KqZ7lUhCiewl3qiwXOg41M/viewform?usp=send_form" target="_blank">this short questionnaire</a> (or email <script type="text/javascript">
+<!--
+h='&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;';a='&#64;';n='&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#112;&#114;&#x6f;&#106;&#x65;&#x63;&#116;&#x73;&#32;&#x61;&#116;&#32;&#x63;&#x6f;&#100;&#x65;&#x63;&#108;&#x75;&#98;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#32;&#100;&#x6f;&#116;&#32;&#x75;&#x6b;</noscript>) to let us know how it went!</p>
+</section>
+      
+<section id="introduction" class="level1 intro">
+<h1>Introduction</h1>
+<p>In this project, you’ll learn how to make your own poster.</p>
+<p><img src="wanted-final.png" alt="screenshot" /></p>
+</section>
+<section id="step-1-styling-your-poster" class="level1 activity">
+<h1>Step 1: Styling your poster</h1>
+<p>Let’s start by editing the CSS code for the poster.</p>
+<section id="activity-checklist" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>Open this trinket: <a href="http://jumpto.cc/web-wanted" target="_blank">jumpto.cc/web-wanted</a>. If you’re reading this online, you can also use the embedded version of this trinket below.</li>
+</ul>
+<div class="trinket">
+    <iframe src="https://trinket.io/embed/html/58318bee1f" width="100%" height="550" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+    </iframe>
+</div>
+<ul>
+<li><p>If you go to line 7, you’ll notice that there are already CSS properties for the <code>div</code> containing the different parts of the poster.</p>
+<pre><code>div {
+    text-align: center;
+    overflow: hidden;
+    border: 2px solid black;
+    width: 300px;
+}   </code></pre></li>
+<li><p>Let’s start by altering the <code>text-align</code> property:</p>
+<pre><code>text-align: center;</code></pre>
+<p>What happens when you change the word <code>center</code> to <code>left</code> or <code>right</code>?</p></li>
+<li><p>How about the <code>border</code> property?</p>
+<pre><code>border: 2px solid black;</code></pre>
+<p><code>2px</code> in the code above means 2 pixels. What happens when you change <code>2px solid black</code> to <code>4px dotted red</code>?</p></li>
+<li><p>Change the <code>width</code> of the poster to <code>400px</code>. What happens to the poster?</p></li>
+<li><p>Let’s add some CSS to set the background colour of the poster. Go to the end of line 11 of your code and press return, so that you have a new blank line.</p>
+<p><img src="wanted-newline.png" alt="screenshot" /></p>
+<p>Type the following code on your new blank line:</p>
+<pre><code>background: yellow;</code></pre>
+<p>Make sure that you type in the code <em>exactly</em> as it is above. You should notice that the background of the <code>&lt;div&gt;</code> is now yellow.</p>
+<p><img src="wanted-background.png" alt="screenshot" /></p></li>
+</ul>
+</section>
+<section id="challenge-improving-your-poster" class="level2 challenge">
+<h2>Challenge: Improving your poster</h2>
+<p>Add the following CSS property to your <code>div</code> style:</p>
+<pre><code>border-radius: 40px;</code></pre>
+<p>What does this property do? What happens if you change the number in the code above?</p>
+</section>
+<section id="save-your-project" class="level2 save">
+<h2>Save Your Project</h2>
+</section>
+</section>
+<section id="step-2-styling-images" class="level1 activity">
+<h1>Step 2: Styling images</h1>
+<p>Let’s improve the style of the image in the poster.</p>
+<section id="activity-checklist-1" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li><p>At the moment, there aren’t any CSS properties for your <code>&lt;img&gt;</code> tag, so let’s add some!</p>
+<p>Firstly, add the following code underneath the CSS for your div:</p>
+<pre><code>img {
+
+}</code></pre>
+<p><img src="wanted-img-css.png" alt="screenshot" /></p></li>
+<li><p>We can now add CSS properties for images between the <code>{</code> and <code>}</code> curly brackets.</p>
+<p>For example, add this code between the curly brackets to set the width of the image:</p>
+<pre><code>width: 100px;</code></pre>
+<p>You’ll see that the size of the image changes, so that it’s width is 100 pixels.</p>
+<p><img src="wanted-img-width.png" alt="screenshot" /></p></li>
+<li><p>You can also add a border around the image with this code:</p>
+<pre><code>border: 1px solid black;</code></pre></li>
+<li><p>Have you noticed that there’s not much space between the image and the border?</p>
+<p><img src="wanted-img-border.png" alt="screenshot" /></p>
+<p>You can fix this by adding some padding around the image:</p>
+<pre><code>padding: 10px;</code></pre>
+<p>Padding is the space between the content (in this case an image) and it’s border.</p>
+<p><img src="wanted-img-padding.png" alt="screenshot" /></p>
+<p>What do you think would happen if you changed the padding to <code>50px</code>?</p></li>
+</ul>
+</section>
+<section id="challenge-improving-your-image" class="level2 challenge">
+<h2>Challenge: Improving your image</h2>
+<p>Can you give your image a background colour? Or a rounded border?</p>
+</section>
+<section id="save-your-project-1" class="level2 save">
+<h2>Save Your Project</h2>
+</section>
+</section>
+<section id="step-3-styling-headings" class="level1 activity">
+<h1>Step 3: Styling headings</h1>
+<p>Let’s improve the style of the <code>&lt;h1&gt;</code> heading.</p>
+<section id="activity-checklist-2" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li><p>Add the following code underneath your image’s CSS:</p>
+<pre><code>h1 {
+
+}</code></pre>
+<p>This is where you’ll add CSS properties for your main <code>&lt;h1&gt;</code> heading.</p></li>
+<li><p>To change the font of your <code>&lt;h1&gt;</code> headings, add the following code between the curly brackets:</p>
+<pre><code>font-family: Impact;</code></pre></li>
+<li><p>You can also change the size of the heading:</p>
+<pre><code>font-size: 50pt;</code></pre></li>
+<li><p>Have you noticed that there’s a big space between the <code>&lt;h1&gt;</code> heading and the stuff around it?</p>
+<p><img src="wanted-h1-margin.png" alt="screenshot" /></p>
+<p>This is because there’s a margin around the heading. A margin is the space between the element (in this case a heading) and the other stuff around it.</p>
+<p>You can make the margin smaller with this code:</p>
+<pre><code>margin: 10px;</code></pre>
+<p><img src="wanted-h1-margin-small.png" alt="screenshot" /></p></li>
+<li><p>You can also underline your heading:</p>
+<pre><code>text-decoration: underline;</code></pre></li>
+</ul>
+</section>
+<section id="challenge-make-your-poster-awesome" class="level2 challenge">
+<h2>Challenge: Make your poster awesome!</h2>
+<p>Add more CSS code to style your <code>&lt;h3&gt;</code> headings and your paragraphs.</p>
+<p><img src="wanted-final.png" alt="screenshot" /></p>
+<p>Here’s a list of some CSS properties you can use:</p>
+<pre><code>color: black;
+background: white;
+font-family: Arial / Comic Sans MS / Courier / Impact / Tahoma;
+font-size: 12pt;
+font-weight: bold;
+text-decoration: underline overline line-through;
+margin: 10px;
+padding: 10px;
+width: 100px;
+height: 100px;</code></pre>
+</section>
+<section id="save-your-project-2" class="level2 save">
+<h2>Save Your Project</h2>
+</section>
+<section id="challenge-advertise-an-event" class="level2 challenge">
+<h2>Challenge: Advertise an event!</h2>
+<p>Can you make a poster for an event happening at your school? It could be a play, a sporting event, or even a poster advertising your Code Club!</p>
+</section>
+<section id="save-your-project-3" class="level2 save">
+<h2>Save Your Project</h2>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
+    </aside>
+
+    <div id="legend">
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
