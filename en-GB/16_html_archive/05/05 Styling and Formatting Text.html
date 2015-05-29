@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="world"  lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Styling and formatting text — Code Club World Projects</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.ico">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Styling and formatting text</h1>
+      <span class="level-indicator">HTML&amp;CSS 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Languages</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">English</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Archived HTML &amp; CSS Projects</a></li><li class="breadcrumbs-item current">Styling and formatting text</li></ul></nav>
+
+          <section class="note registration-note">
+        <p>All Code Clubs <u>must be registered</u>. Registered clubs appear on the map at <a href="http://www.codeclubworld.org/">codeclubworld.org</a> - if your club is not on the map then visit <a href="http://jumpto.cc/18CpLPy">jumpto.cc/18CpLPy</a> to find out what to do.</p>
+      </section>
+    
+    <main class="main lesson-steps" role="main">
+      
+<section id="introduction" class="level2 intro">
+<h2><strong>Introduction:</strong></h2>
+<p>In this session we are going to learn how to style text with different fonts, colours and sizes. We’ll also learn how to add background colours and borders. We will be using the same project you worked on last time, so make sure you open the index.html from the Felix folder.</p>
+</section>
+<section id="step-1-fonts" class="level1 activity">
+<h1>Step 1: Fonts</h1>
+<p>We can change the look of the text by changing the <strong>font</strong>. The most common fonts are called</p>
+<ul>
+<li>Arial</li>
+<li>Courier New, Courier</li>
+<li>Garamond</li>
+<li>Georgia</li>
+<li>Lucida Sans, Lucida Grande, Lucida</li>
+<li>Palatino Linotype</li>
+<li>Tahoma</li>
+<li>Times New Roman, Times</li>
+<li>Trebuchet</li>
+<li>Verdana</li>
+</ul>
+<p>Not all fonts exist on all computers, so we need to provide <strong>fall-back fonts</strong> as well. These are very generic like ‘sans serif’, ‘serif’.</p>
+<p>Let’s try changing the font of the headline using the <code>font-family</code> property.</p>
+<pre class="sourceCode css"><code class="sourceCode css">h1 <span class="kw">{</span>
+    <span class="kw">color:</span> <span class="dt">red</span><span class="kw">;</span>
+    <span class="kw">background-color:</span> <span class="dt">black</span><span class="kw">;</span>
+    <span class="kw">font-family:</span> impact, <span class="dt">sans-serif</span><span class="kw">;</span>
+    <span class="kw">font-size:</span> <span class="dt">72px</span><span class="kw">;</span>
+    <span class="kw">text-decoration:</span> <span class="dt">underline</span><span class="kw">;</span>
+    <span class="kw">text-transform:</span> <span class="dt">uppercase</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<p>And the font of the paragraphs…</p>
+<pre class="sourceCode css"><code class="sourceCode css">p <span class="kw">{</span>
+    <span class="kw">font-family:</span> Georgia, <span class="st">&#39;Times New Roman&#39;</span>, <span class="dt">serif</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<section id="save-and-view." class="level2 save">
+<h2><strong>Save</strong> and <strong>view</strong>.</h2>
+<p>Try some of the different fonts to see which ones you like best. Notice how we separate each font with a comma, and if the font has a name with more than one word we need to put it inside quotation marks.</p>
+<p>Which of the fonts we mentioned do you think looks best? Which one do you think is easiest to read?</p>
+<p>Do you have other fonts on your computer than the ones mentioned? (you probably do). Try opening a program like Word or Pages, all the fonts stored on the computer can usually be found there.</p>
+<p><img src="fonts.png" alt="screenshot" /></p>
+<p>Find one you like and try it out on the website!</p>
+<p>You can make text <strong>bold</strong>, <em>italic</em> or both with the font-style property. Let’s change the email text (remember it’s inside an <code>&lt;a&gt;</code> tag).</p>
+<pre class="sourceCode css"><code class="sourceCode css">a <span class="kw">{</span>
+    <span class="kw">font-style:</span> <span class="dt">bold</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+</section>
+<section id="save-and-view.-1" class="level2 save">
+<h2><strong>Save</strong> and <strong>view</strong>.</h2>
+<p>Or we could make it italic.</p>
+<pre class="sourceCode css"><code class="sourceCode css">a <span class="kw">{</span>
+    <span class="kw">font-style:</span> <span class="dt">italic</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+</section>
+<section id="save-and-view.-2" class="level2 save">
+<h2><strong>Save</strong> and <strong>view</strong>.</h2>
+<p>There’s also a font-style value called ‘oblique’. What does that look like?</p>
+<p>We can even say how bold some text should be using the property <code>font-weight</code>. It takes the values <code>normal</code>, <code>bold</code>, <code>bolder</code>, <code>lighter</code>. You can also use numbers, 100, 200, 300, 400, 500, 600, 700, 800, and 900, where 100 is the thinnest text and 900 is the thickest (boldest text). Normal text is the same as 400, bold is the same as 700. However, not all the fonts have all these, so it’s safer to just use normal and bold. Headlines are normally bold by default. If we wanted our <code>h2</code> to not be bold, we need to write:</p>
+<pre class="sourceCode css"><code class="sourceCode css">h2 <span class="kw">{</span>
+    <span class="kw">font-weight:</span> <span class="dt">normal</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<p>Try it!</p>
+</section>
+</section>
+<section id="step-2-borders" class="level1 activity">
+<h1>Step 2: Borders!</h1>
+<p>Let’s add a border around the image</p>
+<pre class="sourceCode css"><code class="sourceCode css">img <span class="kw">{</span>
+    <span class="kw">border-color:</span> <span class="dt">green</span><span class="kw">;</span>
+    <span class="kw">border-style:</span> <span class="dt">solid</span><span class="kw">;</span>
+    <span class="kw">border-width:</span> <span class="dt">5px</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<section id="save-and-view.-3" class="level2 save">
+<h2><strong>Save</strong> and <strong>view</strong>.</h2>
+<p>Try changing the color, width and border-style until you are happy. Some values for border-syle are <code>dashed</code>, <code>dotted</code>, <code>double</code>, <code>groove</code>, <code>ridge</code>, <code>inset</code>, <code>outset</code>.</p>
+<p>You can put borders around all kinds of elements, why not try a few more.</p>
+</section>
+</section>
+<section id="step-3-ids-and-classes" class="level1 activity">
+<h1>Step 3: IDs and classes</h1>
+<p>We want to make the contact paragraph <strong>highlighted</strong>. We can’t use the <code>&lt;p&gt;</code> tag because that would change all the paragraphs. To make a style apply only to one element, we use something called IDs. We need to edit the html to this:</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p</span><span class="ot"> id</span> <span class="ot">=</span><span class="st">&quot;highlight&quot;</span><span class="kw">&gt;</span>Have you seen Felix? <span class="kw">&lt;em&gt;</span>Please<span class="kw">&lt;/em&gt;</span> contact his owners at <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;mailto:felixowners@email.com&quot;</span><span class="kw">&gt;</span>felixowners@email.com<span class="kw">&lt;/a&gt;&lt;/p&gt;</span></code></pre>
+<p>Then we can style the ID like so:</p>
+<pre class="sourceCode css"><code class="sourceCode css"><span class="fl">#highlight</span> <span class="kw">{</span>
+    <span class="kw">color:</span> <span class="dt">red</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+<section id="save-and-view.-4" class="level2 save">
+<h2><strong>Save</strong> and <strong>view</strong>.</h2>
+<p>An ID is unique and can only be used once per page. So what if we wanted to make two of the paragraphs have a larger font-size? We can do that by using classes. First we need to give class names to the paragraphs we want changing.</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p</span><span class="ot"> class=</span><span class="st">&quot;large&quot;</span><span class="kw">&gt;</span>He went missing from the garden yesterday.<span class="kw">&lt;/p&gt;</span>
+<span class="kw">&lt;p</span><span class="ot"> class=</span><span class="st">&quot;large&quot;</span><span class="kw">&gt;&lt;strong&gt;</span>Thank you!<span class="kw">&lt;/strong&gt;&lt;/p&gt;</span></code></pre>
+<p>we style a class like this (with a <code>.</code> instead of a <code>#</code>):</p>
+<pre class="sourceCode css"><code class="sourceCode css"><span class="fl">.large</span> <span class="kw">{</span>
+    <span class="kw">font-size:</span><span class="dt">24px</span><span class="kw">;</span>
+<span class="kw">}</span></code></pre>
+</section>
+<section id="further-study" class="level2 try">
+<h2>Further study:</h2>
+<ul>
+<li>How would you change the page to make it look better? Why not try using your favourite fonts and colours?</li>
+<li>If you finish early you can go back and style the html like we did in previous lessons.</li>
+<li>By the way, did you know that the background property does not only take values that are colours, but also images?</li>
+</ul>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
+    </aside>
+
+    <div id="legend">
+        <div>
+            <img src="../../../img/check.png" alt="Activity Checklist" />
+            <div class="caption"><span class="check_text">Activity Checklist</span></div>
+            <div class="description">Follow these <span class="check_text upper">instructions</span> one by one</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Test your Project" />
+          <div class="caption"><span class="flag_text">Test your Project</span></div>
+          <div class="description">Click on the green flag to <span class="flag_text upper">test</span> your code</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Save your Project" />
+          <div class="caption"><span class="save_text">Save your Project</span></div>
+          <div class="description">Make sure to <span class="save_text upper">save</span> your work now</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
