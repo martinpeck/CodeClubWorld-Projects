@@ -87,9 +87,7 @@
 <ul>
 <li><p>Let’s create a script for the spaceship, by using code blocks. You can find the blocks in the ‘Scripts’ tab, and they are all colour-coded! Drag these 2 blocks into the code area to the right, making sure that they are connected together (like Lego blocks).</p>
 <p><img src="space-animate.png" alt="screenshot" /></p>
-<p>Change the numbers in the code blocks, so that the code is exactly the same as in the image above. Here is the code that you should add:</p>
-<p><img src="d792667c8019a1792e1be19d98c7c6e4574ceab0.png" alt="    point towards [Earth v]
-    glide (1) secs to x:(0) y: (0)" /></p>
+<p>Change the numbers in the code blocks, so that the code is exactly the same as in the image above.</p>
 <p>To make the <code class="blockmotion">point towards Earth</code> block, you’ll have to drag on the block, and then click the down arrow to select your ‘Earth’ sprite.</p>
 <p><img src="space-select.png" alt="screenshot" /></p></li>
 <li><p>If you click on the code blocks to run the code, you should see the spaceship turn and move towards the centre of the stage.</p>
@@ -132,43 +130,19 @@
 </section>
 <section id="step-3-animating-using-loops" class="level1 activity new-page">
 <h1>Step 3: Animating using loops</h1>
+<p>Another way of animating the spaceship is to tell it to move a small amount, lots of times.</p>
 <section id="activity-checklist-2" class="level2 check">
 <h2>Activity Checklist</h2>
 <ul>
-<li><p>Another way of animating the spaceship is to tell it to move a small amount (say 4 steps), lots of times. Delete the <code class="blockmotion">glide</code> block from your code, by right-clicking on the block and clicking ‘delete’. You can also delete code by dragging it off the script area, back into the code blocks area.</p></li>
+<li><p>Delete the <code class="blockmotion">glide</code> block from your code, by right-clicking on the block and clicking ‘delete’. You can also delete code by dragging it off the script area, back into the code blocks area.</p></li>
 <li><p>Once you’ve removed your code, add this code instead:</p>
-<p><img src="d10e44982a83fda63956959cd59f78a4491fcde6.png" alt="    when FLAG clicked
-    point in direction (0 v)
-    go to x:(-150) y:(-150)
-    wait (1) secs
-    point towards [Earth v]
-    repeat (100)
-        move (4) steps
-    end" /></p></li>
-<li><p>The <code class="blockcontrol">repeat</code> block is used to repeat something lots of times, and is also known as a ‘loop’. If you click the flag to try out this new code, you’ll see that it does pretty much the same thing as before.</p></li>
-<li><p>Using a loop to move the spaceship means that you can add more code inside the <code class="blockcontrol">repeat (100)</code> loop to do interesting things. Add the <code class="blocklooks">change color effect by 25</code> block into the loop (from the ‘Looks’ section), to repeatedly change the colour of the spaceship as it moves:</p>
-<p><img src="09eb92ccbd3b5fb738429709e75d02293bd14f3e.png" alt="    when FLAG clicked
-    point in direction (0 v)
-    go to x:(-150) y:(-150)
-    wait (1) secs
-    point towards [Earth v]
-    repeat (100)
-        move (4) steps
-        change [color v] effect by (25)
-    end" /></p></li>
+<p><img src="space-loop.png" alt="screenshot" /></p></li>
+<li><p>The <code class="blockcontrol">repeat</code> block is used to repeat something lots of times, and is also known as a <strong>loop</strong>. If you click the flag to try out this new code, you’ll see that it does pretty much the same thing as before.</p></li>
+<li><p>You can add more code to your loop, to do interesting things. Add the <code class="blocklooks">change color effect by 25</code> block into the loop (from the ‘Looks’ section), to repeatedly change the colour of the spaceship as it moves:</p>
+<p><img src="space-colour.png" alt="screenshot" /></p></li>
 <li><p>Click the flag to see your new animation.</p></li>
-<li><p>You can also improve your animation, by making the spaceship get smaller as it moves towards the Earth. Remember to also add code to the top of your animation, to make your spaceship full size to start with.</p>
-<p><img src="3ff3ab9c5732306100d5e03519168acc1fa0c1be.png" alt="    when FLAG clicked
-    set size to (100)%
-    point in direction (0 v)
-    go to x:(-150) y:(-150)
-    wait (1) secs
-    point towards [Earth v]
-    repeat (100)
-        move (4) steps
-        change [color v] effect by (25)
-        change size by (-1)
-    end" /></p></li>
+<li><p>You can also make your spaceship get smaller as it moves towards the Earth. Remember to also add code to the top of your animation, to make your spaceship full size to start with.</p>
+<p><img src="space-size.png" alt="screenshot" /></p></li>
 <li><p>If you try out your animation now, you’ll see that it looks much better than before!</p></li>
 </ul>
 </section>
