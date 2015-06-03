@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="world"  lang="ca-ES">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="LAa8xdL-G6vOe9RSZnECSduS5m1BMiM8U2erQku5yIE" />
+
+    <title>Felix i Herbert — Code Club World Projects</title>
+    <link rel="shortcut icon" href="../../../img/ccw_favicon.ico">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="../../../css/master.min.css">
+  </head>
+
+  <body class="index-template world">
+    <header class="header" role="banner">
+      <a class="home-link" href="../../../index.html"><img alt="" class="logo" height="100" src="../../../img/ccw_logo.png"></a>
+      <h1 class="title">Felix i Herbert</h1>
+      <span class="level-indicator">Scratch 1</span>
+    </header>
+
+    <nav class="breadcrumbs"><ul class="breadcrumbs-list"><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../../index.html">Idiomes</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../../index.html">Català</a></li><li class="breadcrumbs-item"><a class="breadcrumbs-link" href="../index.html">Scratch 1</a></li><li class="breadcrumbs-item current">Felix i Herbert</li></ul></nav>
+
+          <section class="note registration-note">
+        <p>All Code Clubs <u>must be registered</u>. Registered clubs appear on the map at <a href="http://www.codeclubworld.org/">codeclubworld.org</a> - if your club is not on the map then visit <a href="http://jumpto.cc/18CpLPy">jumpto.cc/18CpLPy</a> to find out what to do.</p>
+      </section>
+    
+    <main class="main lesson-steps" role="main">
+      
+<section id="felix-i-herbert" class="level1">
+<h1>Fèlix i Herbert</h1>
+<p><strong>Introducció:</strong><br />Construirem un joc on <strong>el gat Fèlix</strong> i el ratolí <strong>Herbert</strong> jugen a atrapar. Vosaltres controlareu en Herbert amb el ratolí i heu d’intentar evitar que en Fèlix us atrapi. Quant més temps eviteu que us atrapi més punts guanyareu, però no us deixeu agafar perquè perdreu punts!</p>
+<section id="pas-1-en-felix-segueix-el-punter-del-ratoli" class="level2">
+<h2>PAS 1: En Fèlix segueix el punter del ratolí</h2>
+<ol>
+<li>Creeu un nou projecte.</li>
+<li>Feu doble clic al escenari i canvieu a la pestanya dels fons, llavors seleccioneu el fons <strong>indoors/hall</strong>. Suprimiu el fons blanc original.</li>
+<li>Canvieu el nom del personatge per Fèlix.</li>
+<li>Assegureu-vos que en Fèlix només miri a esquerra utilitzant el bloc __“fixa la rotació a__:</li>
+<li>Creeu aquest programa:</li>
+</ol>
+<p><img src="2be1c358df526ccdb2006621c02fc894bc42e875.png" alt="quan la @ es premi
+fixa la rotació a [left-right v]
+per sempre
+   apunta cap a [punter del ratolí v]
+   mou-te (10) passos
+   següent vestit
+   toca el tambor (3 v) durant (0.3) pulsacions
+fi" /></p>
+<section id="proveu-el-projecte" class="level3">
+<h3>Proveu el projecte</h3>
+<p><strong>Feu clic a la bandera verda.</strong><br />En Fèlix, segueix el punter del ratolí? Quan es mou, us sembla com si caminés? Es mou a una velocitat adequada?</p>
+</section>
+</section>
+<section id="pas-2-en-felix-persegueix-en-herbert" class="level2">
+<h2>PAS 2: En Fèlix persegueix en Herbert</h2>
+<p><strong>A continuació volem que en Fèlix persegueixi en Herbert, enlloc del punter del ratolí.</strong></p>
+<ol>
+<li>Creeu un nou personatge escollint <strong>animals-mouse1</strong></li>
+<li>Canvieu el nom del personatge per Herbert.</li>
+<li>Editeu el vestit i feu-l’ho més petit que el de’n Fèlix.<br />Proveu fent 6 clics al botó <strong>encongir</strong>.</li>
+<li>Assegureu-vos que en Herbert només miri a esquerra i dreta utilitzant el bloc <strong>“fixa la roació a”</strong>.</li>
+<li>Doneu-li aquest programa a en Herbert:</li>
+</ol>
+<p><img src="7c185f4afe03631da97ccfc2f242e3bfde6b17b1.png" alt="quan la @ es premi
+fixa la rotació a [left-right v]
+per sempre
+   vés a [punter del ratolí v]
+   apunta cap a [Felix v]
+fi" /></p>
+<section id="proveu-el-projecte-1" class="level3">
+<h3>Proveu el projecte</h3>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+<p>En Herbert, segueix el punter del ratolí? En Fèlix persegueix al Herbert?</p>
+</section>
+</section>
+<section id="pas-3-en-felix-diu-quan-ha-atrapat-en-herbert" class="level2">
+<h2>PAS 3: En Fèlix diu quan ha atrapat en Herbert</h2>
+<p><strong>Volem que en Fèlix sàpiga quan ha atrapat en Herbert i que ens ho digui.</strong></p>
+<ol>
+<li>Modifiqueu el programa d’en Felix així:</li>
+</ol>
+<p><img src="caf537fc13571d58c8cfd0d78d5d888ad96ec0b2.png" alt="quan la @ es premi
+fixa la rotació a [left-right v]
+per sempre
+   apunta cap a [punter del ratolí v]
+   mou-te (10) passos
+   següent vestit
+   toca el tambor (3 v) durant (0.3) pulsacions
+   si &lt;tocant [herbert v]?&gt;
+      digues [Atrapat!] durant (1) segons
+   fi
+fi" /></p>
+<section id="proveu-el-projecte-2" class="level3">
+<h3>Proveu el projecte</h3>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+<p>En Fèlix diu quan ha atrapat en Herbert?</p>
+</section>
+</section>
+<section id="pas-4-en-herbert-es-converteix-en-un-fantasma-quan-latrapen" class="level2">
+<h2>PAS 4: En Herbert es converteix en un fantasma quan l’atrapen</h2>
+<p><strong>En lloc de que en Fèlix digui quelcom, volem que en Herbert es converteixi en un fantasma quan l’atrapin.</strong></p>
+<ol>
+<li>Canvieu el programa d’en Fèlix per tal d’enviar aquest missatge quan atrapi en Herbert.</li>
+</ol>
+<p><img src="6e6d553f628542a4d1d1b684b9bda3df6da97d43.png" alt="quan la @ es premi
+fixa la rotació a [left-right v]
+per sempre
+   apunta cap a [punter del ratolí v]
+   mou-te (10) passos
+   mou-te (20) passos
+   següent vestit
+   toca el tambor [3 v] durant (0.3) pulsacions
+   si &lt;tocant [herbert v]?&gt; llavors
+      envia a tots [caught v]
+      toca el tambor [17 v] durant (0.2) pulsacions
+      espera (1) segons
+   fi
+fi" /></p>
+<ol>
+<li>Importeu un nou vestit per en Herbert de <strong>fantasy/ghost2-a</strong>.</li>
+<li>Editeu-l’ho per fer-l’ho més petit. N’hi hauria d’haver prou amb sis clics al botó <strong>encongir</strong>.</li>
+<li>Canvieu els noms dels vestitsde’n Herbert de manera que vestit de ratolí s’anomeni <strong>‘viu’</strong> i el de fantasma <strong>’fantasma</strong>’.</li>
+<li>Creeu un nou programa per tal de convertir en Herbert en un fantasma:</li>
+</ol>
+<p><img src="709bc42d99784621734bd97761f72c9d882c8386.png" alt="en rebre [caught v]
+canvia el vestit a [fantasma v]
+espera (1) segons
+canvia el vestit a [viu v]" /></p>
+<section id="proveu-el-projecte-3" class="level3">
+<h3>Proveu el projecte</h3>
+<p><strong>Feu clic a la bandera verda.</strong></p>
+<p>Quan atrapeu en Herbert, es converteix en un fantasma?<br />En Fèlix fa els sons adequats en cada moment?<br />En Fèlix roman quiet prou temps per a que en Herbert es pugui escapar?</p>
+</section>
+</section>
+<section id="pas-5-actualitzar-el-marcador" class="level2">
+<h2>PAS 5: Actualitzar el marcador</h2>
+<p><strong>Afegirem un marcador de manera que sabrem com de bé mantenim al Herbert en vida.<br />Començarem amb el marcador a zero i l’incrementarem una unitat cada segon. Si en Fèlix atrapa en Herbert, reduirem el marcador en cent unitats.</strong></p>
+<ol>
+<li><p>Creeu una variable per a tots els personatges en el menu de dalt, i anomeneu-la <strong>puntuació</strong>.</p></li>
+<li><p>Creeu aquests dos programes a l’escenari</p></li>
+</ol>
+<p><img src="db3824a879acd9fd8728fba676f40d63a3de6ca8.png" alt="quan la @ es premi
+fixa [score v] a [0]
+per sempre
+   augmenta [score v] en (1)
+   espera (1) segons
+fi
+
+en rebre [caught v]
+augmenta [score v] en (-100)" /></p>
+<section id="proveu-el-projecte-4" class="level3">
+<h3>Proveu el projecte</h3>
+<p><strong>Feu click a la bandera verda.</strong></p>
+<p>El marcador, augmenta una unitat per segon?<br />Quan en Fèlix atrapa en Herbert, el marcador disminueix cent unitats?<br />Què passa quan atrapeu en Herbert abans que el marcador arrivi a cent unitats?<br />Quan comenceu una nova partida, el marcador torna a zero?</p>
+<p>Deseu el projecte</p>
+<p><strong>Molt bé, heu acabat. Ara ja podeu gaudir del joc!</strong></p>
+<p>No us oblideu que podeu compartir el joc amb amics i familiars fent clic a <strong>Comparteix</strong> al menú.</p>
+</section>
+</section>
+</section>
+    </main>
+
+    <aside class="legal-notice copyright">
+      <p>These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclubworld.org/">www.codeclubworld.org</a>.<br />This coursework is developed in the open on GitHub, at <a href="https://github.com/CodeClub/">www.github.com/CodeClub</a>. Come and join us!</p>
+      <p>&copy; 2015 Code Club. This content is for non-commercial use only and we reserve the right at any time to withdraw permission for use. Use of Code Club’s trade marks (including but not limited to its name and logo) requires prior written consent. Please read our <a href="https://www.codeclub.org.uk/terms-and-conditions">terms and conditions</a> before volunteering or hosting a Code Club.</p>
+    </aside>
+
+    <div id="legend">
+        <div>
+            <img src="../../../img/check.png" alt="Llista de Tasques" />
+            <div class="caption"><span class="check_text">Llista de Tasques</span></div>
+            <div class="description">Segueix aquestes <span class="check_text upper">instruccions</span> una a una</div>
+        </div>
+        <div>
+          <img src="../../../img/flag.png" alt="Prova el Projecte" />
+          <div class="caption"><span class="flag_text">Prova el Projecte</span></div>
+          <div class="description">Clica la bandera verda per <span class="flag_text upper">provar</span> el teu programa</div>
+        </div>
+        <div>
+          <img src="../../../img/save.png" alt="Desa el teu Projecte" />
+          <div class="caption"><span class="save_text">Desa el teu Projecte</span></div>
+          <div class="description">Assegura't de <span class="save_text upper">desar</span> el que has fet</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../../js/lesson.js"></script>
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30750176-5']);
+      _gaq.push(['_setDomainName', 'projects.codeclubworld.org']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
